@@ -1663,10 +1663,43 @@ regente:{
 `,
   
 
-}
+},
+
+  sequenciaNegativa: {
+   1:`➢ SEQUÊNCIA DE 1 – Iniciativa e Determinação
+Esta sequência pode impor dificuldades que afetam motivação,
+iniciativa e coragem para agir e se arriscar.`,
+
+2:`➢ SEQUÊNCIA DE 2 – Autoconfiança
+Pode afetar autoestima, gerar timidez, insegurança e dependência
+emocional ou material.`,
+
+3:`➢ SEQUÊNCIA DE 3 – Comunicação e Expressão
+Dificuldades para se expressar, dialogar e interagir socialmente.`,
+
+4:`➢ SEQUÊNCIA DE 4 – Carreira e Profissão
+Obstáculos profissionais, dificuldades financeiras e estabilidade.`,
+
+5:`➢ SEQUÊNCIA DE 5 – Instabilidade
+Mudanças constantes, altos e baixos e dificuldade em se firmar.`,
+
+6:`➢ SEQUÊNCIA DE 6 – Afeto e Sentimentos
+Decepções emocionais e dificuldades em relações.`,
+
+7:`➢ SEQUÊNCIA DE 7 – Medo e Isolamento
+Tendência ao isolamento, frustrações e conflitos internos.`,
+
+8:`➢ SEQUÊNCIA DE 8 – Problemas Emocionais e Financeiros
+Perdas, injustiças e instabilidade material.`,
+
+9:`➢ SEQUÊNCIA DE 9 – Perdas e Frustrações
+Dificuldades financeiras, emocionais e sensação de estagnação.`
+  }
+
+};  
 
 
-};
+
 
 
 
