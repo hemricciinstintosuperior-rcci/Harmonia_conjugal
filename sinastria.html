@@ -218,7 +218,37 @@ button:hover{
 
 <div class="resultadoFinal" id="compat"></div>
 
+<!-- MAPA DO BEBÊ -->
+<div class="bloco">
+
+  <!-- BLOCO ESQUERDO BEBÊ -->
+  <div class="card">
+    <h3>Mapa do Bebê</h3>
+
+    <input type="text" id="nomeBebe" placeholder="Nome do bebê">
+
+    <button onclick="gerarBebe()">Gerar Mapa do Bebê</button>
+
+    <div class="abas">
+      <button onclick="abrirModal('mB')">Motivação</button>
+      <button onclick="abrirModal('iB')">Influência</button>
+      <button onclick="abrirModal('pB')">Personalidade</button>
+    </div>
+
+  </div>
+
+  <!-- PIRÂMIDE BEBÊ -->
+  <div class="card">
+    <h3>Pirâmide</h3>
+    <div id="piramideBebe" class="piramide"></div>
+    <div id="regenteBebe" class="regente"></div>
+  </div>
+
 </div>
+
+</div>
+
+
 
 <!-- MODAL -->
 <div id="modal" class="modal">
@@ -499,6 +529,10 @@ if(tipo==="h1") texto = textos.harmonia[dados1.proposito];
   if(tipo==="pr2") texto="Propósito: "+dados2.proposito;
 if(tipo==="h2") texto = textos.harmonia[dados2.proposito];
 
+if(tipo==="mB") texto="Motivação: "+dadosBebe.motivacao;
+if(tipo==="iB") texto="Influência: "+dadosBebe.influencia;
+if(tipo==="pB") texto="Personalidade: "+dadosBebe.personalidade;
+
   abrirModalTexto(texto);
 }
 
@@ -538,6 +572,22 @@ function gerar(){
   );
 
   document.getElementById("compat").innerHTML = compatibilidadeRH();
+}
+
+function gerarBebe(){
+
+  const nomeBebe = document.getElementById("nomeBebe").value;
+
+  if(!nomeBebe) return;
+
+  // calcular apenas pelo nome
+  dadosBebe = calcularPessoa(nomeBebe, null);
+
+  gerarPiramide(
+    dadosBebe.valores,
+    document.getElementById("piramideBebe"),
+    document.getElementById("regenteBebe")
+  );
 }
 
 </script>
