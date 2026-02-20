@@ -454,14 +454,9 @@ let numeroSequencia = null;
 
 if (marcacoes[l].has(idx)){
 
-  sequenciaDetectada = true;
-numeroSequencia = n;
+  numeroSequencia = n;
 
-    if(numeroSequencia === null){
-        numeroSequencia = n;
-    }
-
-    return `<span class="negativo">${n}</span>`;
+  return `<span class="negativo">${n}</span>`;
 }
 
       return n;
@@ -489,17 +484,17 @@ elementoRegente.innerHTML = `
   </div>
 `;
 
- if (elementoRegente.id === "regente1") {
-    dados1.sequenciaNegativa = sequenciaDetectada;
+if (elementoRegente.id === "regente1") {
+    dados1.sequenciaNegativa = numeroSequencia;
 }
 
 if (elementoRegente.id === "regente2") {
-    dados2.sequenciaNegativa = sequenciaDetectada;
+    dados2.sequenciaNegativa = numeroSequencia;
 }
 
 if (elementoRegente.id === "regenteBebe") {
-    dadosBebe.sequenciaNegativa = sequenciaDetectada;
-} 
+    dadosBebe.sequenciaNegativa = numeroSequencia;
+}
 }
 
 function mostrarSequenciaNegativa(idRegente){
@@ -510,10 +505,10 @@ function mostrarSequenciaNegativa(idRegente){
   else if (idRegente === "regente2") dados = dados2;
   else if (idRegente === "regenteBebe") dados = dadosBebe;
 
-  if (!dados || !dados.sequenciaNegativa){
+if (!dados || dados.sequenciaNegativa == null){
     abrirModalTexto("Nenhuma sequência negativa encontrada.");
     return;
-  }
+}
 
   abrirModalTexto(textos.sequenciaNegativa[dados.sequenciaNegativa]);
 }
