@@ -176,6 +176,7 @@ button:hover{
 <button onclick="abrirModal('d1')">Caminho</button>
 <button onclick="abrirModal('pr1')">Propósito</button>
 <button onclick="abrirModal('h1')">Harmonia</button>
+ <button onclick="abrirModal('a1')">Ano Pessoal</button> 
 </div>
 
 </div>
@@ -224,6 +225,7 @@ button:hover{
 <button onclick="abrirModal('d2')">Caminho</button>
 <button onclick="abrirModal('pr2')">Propósito</button>
 <button onclick="abrirModal('h2')">Harmonia</button>
+<button onclick="abrirModal('a2')">Ano Pessoal</button>  
 </div>
 
 </div>
@@ -334,6 +336,22 @@ function reduzir(n){
   }
   return n;
 }
+
+function calcularAnoPessoal(data){
+
+  if(!data) return 0;
+
+  const [ano, mes, dia] = data.split("-").map(Number);
+
+  const anoAtual = new Date().getFullYear();
+
+  const soma =
+    reduzir(dia) +
+    reduzir(mes) +
+    reduzir(anoAtual);
+
+  return reduzir(soma);
+}  
 
 // =====================
 // CALCULO COMPLETO
@@ -600,6 +618,7 @@ function abrirModal(tipo){
   if(tipo==="d1") texto = textos.CaminhodeVida[dados1.caminho];
   if(tipo==="pr1") texto = textos.proposito[dados1.proposito];
   if(tipo==="h1") texto = textos.harmonia[dados1.proposito];
+  if(tipo==="a1") texto = textos.anoPessoal[dados1.anoPessoal];
 
   // ---------------- PESSOA 2 ----------------
 
@@ -609,6 +628,7 @@ function abrirModal(tipo){
   if(tipo==="d2") texto = textos.CaminhodeVida[dados2.caminho];
   if(tipo==="pr2") texto = textos.proposito[dados2.proposito];
   if(tipo==="h2") texto = textos.harmonia[dados2.proposito];
+  if(tipo==="a2") texto = textos.anoPessoal[dados2.anoPessoal];
 
   // ---------------- BEBÊ ----------------
 
@@ -644,6 +664,8 @@ function gerar(){
 
   dados1 = calcularPessoa(nome1, data1);
   dados2 = calcularPessoa(nome2, data2);
+  dados1.anoPessoal = calcularAnoPessoal(data1);
+dados2.anoPessoal = calcularAnoPessoal(data2);
 
   gerarPiramide(dados1.valores,
     document.getElementById("piramide1"),
