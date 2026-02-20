@@ -360,7 +360,8 @@ function calcularPessoa(nome, data){
 // =====================
 function gerarPiramide(valores, elementoPiramide, elementoRegente){
 
-let sequenciaDetectada = null;  
+let sequenciaDetectada = null;
+let numeroSequencia = null;
 
   if(!valores || valores.length === 0){
     elementoPiramide.innerHTML="";
@@ -427,9 +428,13 @@ let sequenciaDetectada = null;
 
     html += linhas[l].map((n,idx)=>{
 
- if (marcacoes[l].has(idx)){
+if (marcacoes[l].has(idx)){
 
-    sequenciaDetectada = true; // 👈 AQUI
+    sequenciaDetectada = true;
+
+    if(numeroSequencia === null){
+        numeroSequencia = n;
+    }
 
     return `<span class="negativo">${n}</span>`;
 }
@@ -472,7 +477,7 @@ if (elementoRegente.id === "regenteBebe") {
 } 
 }
 
-function mostrarSequenciaNegativa(idRegente) {
+function mostrarSequenciaNegativa(idRegente){
 
   let dados;
 
@@ -480,16 +485,13 @@ function mostrarSequenciaNegativa(idRegente) {
   else if (idRegente === "regente2") dados = dados2;
   else if (idRegente === "regenteBebe") dados = dadosBebe;
 
-  if (!dados || !dados.sequenciaNegativa) {
+  if (!dados || !dados.sequenciaNegativa){
     abrirModalTexto("Nenhuma sequência negativa encontrada.");
     return;
   }
 
-  const texto = textosSequenciaNegativa[dados.sequenciaNegativa] ||
-    "Sequência negativa detectada, mas texto não encontrado.";
-
-  abrirModalTexto(texto);
-}  
+  abrirModalTexto(textos.sequenciaNegativa[dados.sequenciaNegativa]);
+}
 
 // =====================
 // COMPATIBILIDADE RH
