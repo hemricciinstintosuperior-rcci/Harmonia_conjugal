@@ -706,6 +706,65 @@ if (dadosBebe.sequenciaNegativa == null) {
     "❌ Este nome possui sequência negativa e não é harmônico.";
 
 }
+
+
+function abrirPremiumSinastria(){
+
+  const nome1 = document.getElementById("nome1").value;
+  const nome2 = document.getElementById("nome2").value;
+  const data1 = document.getElementById("data1").value;
+  const data2 = document.getElementById("data2").value;
+
+  if(!dados1 || !dados2){
+    alert("Calcule a sinastria primeiro.");
+    return;
+  }
+
+  const pacote = {
+
+    pessoa1:{
+      nome:nome1,
+      data:data1,
+      piramide: document.getElementById("piramide1").innerHTML,
+      regente:  document.getElementById("regente1").innerHTML,
+      anoPessoal: dados1.anoPessoal
+    },
+
+    pessoa2:{
+      nome:nome2,
+      data:data2,
+      piramide: document.getElementById("piramide2").innerHTML,
+      regente:  document.getElementById("regente2").innerHTML,
+      anoPessoal: dados2.anoPessoal
+    },
+
+    sinastria:{
+      numero: chaveSinastria(dados1.proposito,dados2.proposito),
+      texto: textos.sinastria[chaveSinastria(dados1.proposito,dados2.proposito)]
+    },
+
+    compatibilidadeRH: compatibilidadeRH(),
+
+    bebe:{
+      nome: document.getElementById("nomeBebe").value,
+      piramide: document.getElementById("piramideBebe").innerHTML,
+      regente: document.getElementById("regenteBebe").innerHTML
+    }
+
+  };
+
+  localStorage.setItem(
+    "relatorioSinastria",
+    JSON.stringify(pacote)
+  );
+
+  window.open(
+    "https://hemricciinstintosuperior-rcci.github.io/premiumsinastria.html_conjugal,
+    "_blank"
+  );
+}
+
+  
  // 🔒 BLOQUEIO CÓPIA
 // =======================
 document.oncontextmenu=()=>false;
