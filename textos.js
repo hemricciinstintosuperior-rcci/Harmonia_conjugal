@@ -1146,7 +1146,30 @@ regente:{
 9:"Sabedoria e Sacrifício. A Potência Regente 9 representa prudência sabedoria e renúncia. Rege a vida pelo autoconhecimento e busca de significado. No aspecto positivo manifesta maturidade espiritualidade e altruísmo. No aspecto negativo pode gerar isolamento pessimismo e apego ao passado. A Potência Regente 9 ensina que a sabedoria nasce da experiência",
   },
 
+ sequenciaNegativa: {
+
+  1: "Sequência de 1 – Tendência a egoísmo excessivo, individualismo extremo e dificuldade de cooperação.",
+
+  2: "Sequência de 2 – Pode gerar insegurança, dependência emocional, baixa autoestima e sensibilidade exagerada.",
+
+  3: "Sequência de 3 – Indica dispersão, imaturidade emocional, dificuldades de foco e instabilidade criativa.",
+
+  4: "Sequência de 4 – Obstáculos profissionais, rigidez mental, dificuldades financeiras e excesso de controle.",
+
+  5: "Sequência de 5 – Instabilidade, mudanças bruscas, impulsividade e dificuldade em se fixar.",
+
+  6: "Sequência de 6 – Conflitos afetivos, excesso de responsabilidade ou desequilíbrio emocional familiar.",
+
+  7: "Sequência de 7 – Isolamento, frieza emocional, excesso de crítica e distanciamento social.",
+
+  8: "Sequência de 8 – Problemas com autoridade, desequilíbrio material e conflitos ligados a poder.",
+
+  9: "Sequência de 9 – Dificuldade de encerramentos, apego ao passado e sofrimento emocional prolongado."
+
+
   
+
+};   
  sinastria : {
 
   // ENERGIA 1
@@ -1662,33 +1685,10 @@ regente:{
 <p>Para que essa combinação prospere, é fundamental que desenvolvam equilíbrio entre altruísmo e vida pessoal. Quando há maturidade, essa união pode ser profundamente amorosa, inspiradora e voltada para crescimento espiritual conjunto.</p>
 `,
   
-
+ }
 },
 
-sequenciaNegativa: {
 
-  1: "Sequência de 1 – Tendência a egoísmo excessivo, individualismo extremo e dificuldade de cooperação.",
-
-  2: "Sequência de 2 – Pode gerar insegurança, dependência emocional, baixa autoestima e sensibilidade exagerada.",
-
-  3: "Sequência de 3 – Indica dispersão, imaturidade emocional, dificuldades de foco e instabilidade criativa.",
-
-  4: "Sequência de 4 – Obstáculos profissionais, rigidez mental, dificuldades financeiras e excesso de controle.",
-
-  5: "Sequência de 5 – Instabilidade, mudanças bruscas, impulsividade e dificuldade em se fixar.",
-
-  6: "Sequência de 6 – Conflitos afetivos, excesso de responsabilidade ou desequilíbrio emocional familiar.",
-
-  7: "Sequência de 7 – Isolamento, frieza emocional, excesso de crítica e distanciamento social.",
-
-  8: "Sequência de 8 – Problemas com autoridade, desequilíbrio material e conflitos ligados a poder.",
-
-  9: "Sequência de 9 – Dificuldade de encerramentos, apego ao passado e sofrimento emocional prolongado."
-
-
-  }
-
-};  
 
 
 
