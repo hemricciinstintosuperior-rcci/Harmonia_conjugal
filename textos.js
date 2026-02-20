@@ -1688,7 +1688,11 @@ regente:{
  }
 };
 
-
+// =======================
+// 🔒 BLOQUEIO CÓPIA
+// =======================
+document.oncontextmenu=()=>false;
+document.onselectstart=()=>false
 
 
 
