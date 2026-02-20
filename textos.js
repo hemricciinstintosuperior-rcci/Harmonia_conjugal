@@ -1,4 +1,4 @@
-<script>
+
 const textos = {
 
 motivacao: {
@@ -1665,4 +1665,3 @@ regente = {
 
 };  
 
-</script>
