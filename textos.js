@@ -1169,7 +1169,7 @@ regente:{
 
   
 
-};   
+},  
  sinastria : {
 
   // ENERGIA 1
