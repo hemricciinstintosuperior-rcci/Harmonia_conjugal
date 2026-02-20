@@ -442,9 +442,9 @@ function gerarPiramide(valores, elementoPiramide, elementoRegente){
 
   const regente = linhas[linhas.length-1][0];
 
-  elementoRegente.innerHTML =
-  `<button onclick="abrirModalTexto('Regente ${regente}: texto conectado ao JS')">
-    Regente: ${regente}
+elementoRegente.innerHTML =
+  `<button onclick="abrirModalTexto(textos.regente[${regente}])">
+     Regente: ${regente}
    </button>`;
 }
 
