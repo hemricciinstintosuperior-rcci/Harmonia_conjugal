@@ -1641,7 +1641,7 @@ Este é o ano de encerramento, cura e preparação para uma nova fase da vida.`
 <p>Para que essa combinação prospere, é fundamental que desenvolvam equilíbrio entre altruísmo e vida pessoal. Quando há maturidade, essa união pode ser profundamente amorosa, inspiradora e voltada para crescimento espiritual conjunto.</p>
 `,
 
-};  
+}  
 
 regente = {
  1:´Início e Liderança. A Potência Regente 1 representa o princípio da individualidade, da iniciativa e da força criadora. Ela rege toda a vida do indivíduo impulsionando-o a agir liderar e abrir caminhos próprios. É a energia do começo da autonomia e da afirmação do eu. No aspecto positivo manifesta liderança natural coragem criatividade inteligência estratégica capacidade de decisão e forte espírito de independência. Indica personalidade ativa inovadora e determinada com potencial para posições de destaque. No aspecto negativo pode gerar egoísmo autoritarismo impulsividade orgulho excessivo e dificuldade em aceitar limites. Quando desequilibrada pode levar ao isolamento e conflitos. A Potência Regente 1 ensina que o verdadeiro líder domina a si mesmo antes de dominar o mundo´,
@@ -1661,7 +1661,7 @@ regente = {
 8:´Justiça e Equilíbrio Universal. A Potência Regente 8 representa lei do equilíbrio causa e efeito e justiça universal. Rege a vida pela harmonização de forças opostas. No aspecto positivo manifesta ética responsabilidade e liderança equilibrada. No aspecto negativo pode gerar fanatismo rigidez moral e autoritarismo. A Potência Regente 8 ensina que toda ação gera consequências´,
 
 9:´Sabedoria e Sacrifício. A Potência Regente 9 representa prudência sabedoria e renúncia. Rege a vida pelo autoconhecimento e busca de significado. No aspecto positivo manifesta maturidade espiritualidade e altruísmo. No aspecto negativo pode gerar isolamento pessimismo e apego ao passado. A Potência Regente 9 ensina que a sabedoria nasce da experiência´,
-}
+},
 
 
 
