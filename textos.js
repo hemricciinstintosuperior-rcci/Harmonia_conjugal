@@ -1126,7 +1126,7 @@ Evite resistir às mudanças. Finalizações são necessárias para novos começ
 Este é o ano de encerramento, cura e preparação para uma nova fase da vida.`  
   },
 
- Sinastria = {
+ Sinastria : {
 
   // ENERGIA 1
   "1-1": `
@@ -1643,7 +1643,7 @@ Este é o ano de encerramento, cura e preparação para uma nova fase da vida.`
 
 }  
 
-regente = {
+regente:{
  1:´Início e Liderança. A Potência Regente 1 representa o princípio da individualidade, da iniciativa e da força criadora. Ela rege toda a vida do indivíduo impulsionando-o a agir liderar e abrir caminhos próprios. É a energia do começo da autonomia e da afirmação do eu. No aspecto positivo manifesta liderança natural coragem criatividade inteligência estratégica capacidade de decisão e forte espírito de independência. Indica personalidade ativa inovadora e determinada com potencial para posições de destaque. No aspecto negativo pode gerar egoísmo autoritarismo impulsividade orgulho excessivo e dificuldade em aceitar limites. Quando desequilibrada pode levar ao isolamento e conflitos. A Potência Regente 1 ensina que o verdadeiro líder domina a si mesmo antes de dominar o mundo´,
 
 2:´Sensibilidade e Intuição. A Potência Regente 2 representa percepção espiritual sensibilidade emocional e compreensão do invisível. Rege a vida através da intuição empatia e busca por equilíbrio interior. No aspecto positivo manifesta intuição aguçada espiritualidade diplomacia cooperação e profundidade emocional. No aspecto negativo pode gerar insegurança dependência indecisão passividade e fantasia excessiva levando à fuga da realidade. A Potência Regente 2 ensina que a verdadeira força nasce da sensibilidade consciente´,
