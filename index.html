@@ -497,6 +497,18 @@ if (elementoRegente.id === "regente2") {
 if (elementoRegente.id === "regenteBebe") {
     dadosBebe.sequenciaNegativa = numeroSequencia;
 }
+if (elementoRegente.id === "regenteBebe") {
+
+  const resultado = document.getElementById("resultadoBebe");
+
+  if (numeroSequencia == null) {
+    resultado.innerHTML = "✅ Este nome é harmônico.";
+  } else {
+    resultado.innerHTML = "❌ Este nome possui sequência negativa e não é harmônico.";
+  }
+
+}
+  
 }
 
 function mostrarSequenciaNegativa(idRegente){
