@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Sinastria Amorosa</title>
+<title>Sinastria para Relacionamento Conjugal</title>
 
 <style>
 body{
@@ -360,6 +360,8 @@ function calcularPessoa(nome, data){
 // =====================
 function gerarPiramide(valores, elementoPiramide, elementoRegente){
 
+let sequenciaDetectada = null;  
+
   if(!valores || valores.length === 0){
     elementoPiramide.innerHTML="";
     elementoRegente.innerHTML="";
@@ -425,9 +427,12 @@ function gerarPiramide(valores, elementoPiramide, elementoRegente){
 
     html += linhas[l].map((n,idx)=>{
 
-      if(marcacoes[l].has(idx)){
-        return `<span class="negativo">${n}</span>`;
-      }
+    if (marcacoes[i].has(idx)){
+
+    sequenciaDetectada = true; // 👈 AQUI
+
+    return `<span class="negativo">${n}</span>`;
+}
 
       return n;
 
@@ -440,13 +445,51 @@ function gerarPiramide(valores, elementoPiramide, elementoRegente){
   // REGENTE
   // ============================
 
-  const regente = linhas[linhas.length-1][0];
+ const regente = linhas[linhas.length - 1][0];
 
-elementoRegente.innerHTML =
-  `<button onclick="abrirModalTexto(textos.regente[${regente}])">
-     Regente: ${regente}
-   </button>`;
+elementoRegente.innerHTML = `
+  <div class="botoes-piramide">
+    <button onclick="abrirModalTexto(textosRegente[${regente}])">
+      Regente: ${regente}
+    </button>
+
+    <button onclick="mostrarSequenciaNegativa('${elementoRegente.id}')">
+      Sequência Negativa
+    </button>
+  </div>
+`;
+
+ if (elementoRegente.id === "regente1") {
+    dados1.sequenciaNegativa = sequenciaDetectada;
 }
+
+if (elementoRegente.id === "regente2") {
+    dados2.sequenciaNegativa = sequenciaDetectada;
+}
+
+if (elementoRegente.id === "regenteBebe") {
+    dadosBebe.sequenciaNegativa = sequenciaDetectada;
+} 
+}
+
+function mostrarSequenciaNegativa(idRegente) {
+
+  let dados;
+
+  if (idRegente === "regente1") dados = dados1;
+  else if (idRegente === "regente2") dados = dados2;
+  else if (idRegente === "regenteBebe") dados = dadosBebe;
+
+  if (!dados || !dados.sequenciaNegativa) {
+    abrirModalTexto("Nenhuma sequência negativa encontrada.");
+    return;
+  }
+
+  const texto = textosSequenciaNegativa[dados.sequenciaNegativa] ||
+    "Sequência negativa detectada, mas texto não encontrado.";
+
+  abrirModalTexto(texto);
+}  
 
 // =====================
 // COMPATIBILIDADE RH
