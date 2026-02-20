@@ -1147,7 +1147,7 @@ regente:{
   },
 
   
- Sinastria : {
+ sinastria : {
 
   // ENERGIA 1
   "1-1": `
