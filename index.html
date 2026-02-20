@@ -494,7 +494,7 @@ function mostrarSinastria(){
 
   const chave = chaveSinastria(dados1.proposito, dados2.proposito);
 
-  const texto = textosSinastria[chave] || 
+ const texto = textos.sinastria[chave] ||
   `Compatibilidade entre ${dados1.proposito} e ${dados2.proposito}.`;
 
   abrirModalTexto(texto);
