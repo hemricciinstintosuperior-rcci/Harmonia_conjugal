@@ -1,835 +1,6 @@
 <script>
 const textos = {
 
-  // ======================
-  // DIA DE NASCIMENTO (1–31)
-  // ======================
-  dia: {
-    1: `DESBRAVADOR – DIA 1
-
-O nascimento no dia 1 revela uma essência pioneira. Este número simboliza o início, a individualidade e a força criadora. Representa a energia da liderança, da autonomia e da coragem de abrir caminhos onde antes não existiam.
-
-TALENTOS NATURAIS  
-Existe uma necessidade profunda de independência. Pessoas do dia 1 possuem impulso natural para liderar, iniciar projetos e assumir responsabilidades. Sua mente é rápida, estratégica e orientada para soluções. Existe forte instinto para negócios, tomada de decisões e empreendedorismo.
-
-FUNCIONAMENTO PSICOLÓGICO  
-O número 1 funciona a partir da autoafirmação. A identidade é construída através da conquista e da realização pessoal. Há grande necessidade de autonomia e liberdade de ação. Rotina excessiva, hierarquia rígida ou ambientes limitantes geram frustração e impaciência.
-
-POTENCIAL DE REALIZAÇÃO  
-Quando equilibrado, o dia 1 produz líderes, criadores, inventores e pessoas capazes de transformar ideias em realidade. A força de vontade, a coragem e a visão estratégica tornam possível alcançar prosperidade e reconhecimento.
-
-DESAFIOS E SOMBRA  
-O excesso de individualismo pode gerar autoritarismo, impaciência e dificuldade em trabalhar em equipe. Quando frustrado, pode agir de forma impulsiva e tentar forçar resultados. O orgulho pode dificultar pedidos de ajuda.
-
-CAMINHO DE EQUILÍBRIO  
-Aprender a cooperar sem perder a autonomia é a chave do sucesso. Quando integra liderança com sensibilidade, o número 1 alcança realização material e reconhecimento duradouro.`,
-    
-    2: `PACIFICADOR – DIA 2
-
-O nascimento no dia 2 revela uma natureza sensível, intuitiva e profundamente relacional. Este número simboliza cooperação, diplomacia e percepção emocional.
-
-TALENTOS NATURAIS  
-Grande capacidade de mediação, empatia e sensibilidade. Percebe ambientes, emoções e intenções com facilidade. Possui talento natural para relações humanas, parcerias e trabalhos em equipe.
-
-FUNCIONAMENTO PSICOLÓGICO  
-O número 2 busca harmonia. Existe forte necessidade de aceitação e pertencimento. Ambientes conflituosos afetam profundamente seu equilíbrio emocional.
-
-POTENCIAL DE REALIZAÇÃO  
-Pode se destacar como conselheiro, mediador, terapeuta, educador ou em áreas que envolvam pessoas. É o “poder por trás do poder”.
-
-DESAFIOS E SOMBRA  
-Excesso de sensibilidade pode gerar insegurança, dependência emocional e dificuldade de decisão. Tendência a absorver problemas alheios.
-
-CAMINHO DE EQUILÍBRIO  
-Desenvolver autoestima e confiança transforma a sensibilidade em grande força.`,
-    
-    3: `CARISMÁTICO – DIA 3
-
-O dia 3 representa expressão, criatividade e comunicação.
-
-TALENTOS NATURAIS  
-Talento artístico, comunicação, humor e carisma. Capacidade natural de inspirar e motivar pessoas.
-
-FUNCIONAMENTO PSICOLÓGICO  
-Precisa de estímulo e liberdade criativa. Rotina e monotonia geram desmotivação.
-
-POTENCIAL DE REALIZAÇÃO  
-Grande potencial em artes, comunicação, vendas, marketing e ensino.
-
-DESAFIOS E SOMBRA  
-Dispersão, procrastinação e dificuldade em finalizar projetos.
-
-CAMINHO DE EQUILÍBRIO  
-Disciplina transforma talento em realização.`,
-
-    4: `DISCIPLINADO – DIA 4
-
-O nascimento no dia 4 simboliza estrutura, estabilidade e construção sólida. Este número representa ordem, responsabilidade e confiabilidade.
-
-TALENTOS NATURAIS  
-Grande capacidade de organização, planejamento e disciplina. Pessoas do dia 4 são trabalhadoras, persistentes e confiáveis. Possuem talento natural para administração, engenharia, gestão e qualquer atividade que exija método e precisão.
-
-FUNCIONAMENTO PSICOLÓGICO  
-Busca segurança e estabilidade. Prefere caminhos seguros, estruturados e previsíveis. Valoriza tradição, família e responsabilidade.
-
-POTENCIAL DE REALIZAÇÃO  
-É capaz de construir patrimônios, carreiras sólidas e projetos duradouros. Sua constância é seu maior diferencial.
-
-DESAFIOS E SOMBRA  
-Rigidez, teimosia, excesso de controle e dificuldade em aceitar mudanças. Pode resistir a novas ideias.
-
-CAMINHO DE EQUILÍBRIO  
-Aprender a flexibilizar e aceitar o novo acelera o sucesso e evita frustrações desnecessárias.`,
-
-    5: `INDEPENDENTE – DIA 5
-
-O dia 5 representa liberdade, movimento e transformação.
-
-TALENTOS NATURAIS  
-Versatilidade, adaptabilidade e curiosidade intensa. Capacidade de aprender rapidamente e se reinventar.
-
-FUNCIONAMENTO PSICOLÓGICO  
-Precisa de liberdade e mudança constante. Rotina e limitação geram inquietação.
-
-POTENCIAL DE REALIZAÇÃO  
-Talento para comunicação, viagens, vendas, marketing, tecnologia e empreendedorismo.
-
-DESAFIOS E SOMBRA  
-Impulsividade, dispersão e dificuldade em manter disciplina.
-
-CAMINHO DE EQUILÍBRIO  
-Disciplina + liberdade = grande sucesso material e pessoal.`,
-
-    6: `ZELOSO – DIA 6
-
-Número do amor, cuidado e responsabilidade emocional.
-
-TALENTOS NATURAIS  
-Empatia, cuidado, senso de responsabilidade e forte vínculo familiar.
-
-FUNCIONAMENTO PSICOLÓGICO  
-Necessidade profunda de cuidar e proteger pessoas.
-
-POTENCIAL DE REALIZAÇÃO  
-Talento para educação, saúde, psicologia, terapias e mediação.
-
-DESAFIOS E SOMBRA  
-Carregar problemas alheios, excesso de cobrança e dependência emocional.
-
-CAMINHO DE EQUILÍBRIO  
-Aprender a cuidar sem se sacrificar.`,
-
-    7: `PERFECCIONISTA – DIA 7
-
-Número da introspecção, análise e espiritualidade.
-
-TALENTOS NATURAIS  
-Investigação, pesquisa, filosofia e conhecimento profundo.
-
-FUNCIONAMENTO PSICOLÓGICO  
-Precisa de solitude, silêncio e tempo para reflexão.
-
-POTENCIAL DE REALIZAÇÃO  
-Ciência, tecnologia, espiritualidade e pesquisa.
-
-DESAFIOS E SOMBRA  
-Isolamento, excesso de crítica e dificuldade emocional.
-
-CAMINHO DE EQUILÍBRIO  
-Aprender a confiar e compartilhar emoções.`,
-
-    8: `ORIGINAL – DIA 8
-
-Número do poder, ambição e realização material.
-
-TALENTOS NATURAIS  
-Liderança, estratégia, visão financeira e capacidade de gestão.
-
-FUNCIONAMENTO PSICOLÓGICO  
-Busca sucesso, status e reconhecimento.
-
-POTENCIAL DE REALIZAÇÃO  
-Negócios, finanças, liderança e empreendedorismo.
-
-DESAFIOS E SOMBRA  
-Autoritarismo, materialismo excessivo e rigidez emocional.
-
-CAMINHO DE EQUILÍBRIO  
-Usar poder com ética e propósito.`,
-
-    9: `UNIVERSALISTA – DIA 9
-
-Número do humanitarismo e visão coletiva.
-
-TALENTOS NATURAIS  
-Empatia universal, compaixão e inspiração.
-
-FUNCIONAMENTO PSICOLÓGICO  
-Busca propósito e significado.
-
-POTENCIAL DE REALIZAÇÃO  
-Artes, causas sociais, educação e espiritualidade.
-
-DESAFIOS E SOMBRA  
-Idealismo excessivo e dificuldade de desapego.
-
-CAMINHO DE EQUILÍBRIO  
-Equilibrar idealismo com praticidade.`,
-
-    10: `DIA 10 — O Ambicioso Visionário
-Essência: liderança ampliada, autonomia e realização material com propósito.
-Quem nasce no dia 10 carrega a vibração do pioneirismo do número 1 amplificada pelo zero, símbolo de potencial ilimitado. Trata-se de uma personalidade naturalmente voltada à liderança, à conquista e à construção de resultados concretos. Existe um impulso interno constante para avançar, evoluir e assumir o controle da própria trajetória.
-
-Potenciais e talentos
-O 10 indica iniciativa, coragem e forte capacidade de planejamento. Essas pessoas costumam enxergar caminhos onde outros veem obstáculos. São organizadoras, estrategistas e capazes de iniciar projetos que exigem determinação e visão de longo prazo.
-Há forte magnetismo pessoal e facilidade em conquistar confiança. Frequentemente são vistas como referência, guia ou exemplo dentro de ambientes profissionais e sociais. Existe também uma habilidade natural para empreender, administrar e estruturar projetos complexos.
-
-Desafios e sombras
-O lado desafiador surge quando a necessidade de controle se transforma em rigidez, competitividade excessiva ou dificuldade em aceitar ajuda. Pode haver impaciência com ritmos mais lentos e frustração quando os resultados não aparecem rapidamente.
-Também existe tendência a assumir responsabilidades demais e carregar o peso do mundo nas costas, o que pode gerar tensão, ansiedade ou esgotamento.
-
-Integração e evolução
-O aprendizado principal é equilibrar liderança com colaboração. Quando aprende a dividir responsabilidades e confiar nos outros, o nascido no dia 10 alcança realizações expressivas e duradouras.`,
-
-  11: `DIA 11 — O Idealista Inspirador
-Essência: intuição elevada, sensibilidade espiritual e missão de inspirar.
-O 11 é considerado um número mestre. Representa sensibilidade ampliada, percepção intuitiva e grande potencial de inspiração. Pessoas desse dia sentem que possuem uma missão maior, mesmo que nem sempre saibam explicá-la racionalmente.
-
-Potenciais e talentos
-Existe uma capacidade natural de motivar e despertar pessoas. O 11 possui carisma, empatia e sensibilidade emocional acima da média. Pode se destacar em aconselhamento, arte, comunicação, espiritualidade e áreas que envolvem orientação humana.
-Possui imaginação rica, visão idealista e capacidade de perceber nuances invisíveis aos demais.
-
-Desafios e sombras
-A intensidade emocional pode gerar ansiedade, insegurança ou sensação de inadequação. Muitas vezes o 11 sente que não pertence totalmente ao mundo prático.
-Pode oscilar entre entusiasmo e desânimo, entre confiança e dúvida. O excesso de sensibilidade também pode torná-lo vulnerável às críticas.
-
-Integração e evolução
-O grande aprendizado é transformar sensibilidade em força. Quando aprende a confiar na própria intuição, torna-se uma poderosa fonte de inspiração e orientação para outras pessoas.`,
-
-12: `DIA 12 — O Comunicador Criativo
-Essência: expressão, criatividade e influência social.
-O número 12 combina a iniciativa do 1 com a sensibilidade do 2, resultando em uma personalidade comunicativa, expressiva e altamente criativa.
-
-Potenciais e talentos
-É um comunicador nato. Possui talento para falar, escrever, ensinar, persuadir e transmitir ideias. Costuma ter humor leve, imaginação fértil e capacidade de animar ambientes.
-Pode brilhar em áreas artísticas, comunicação, marketing, educação e entretenimento.
-
-Desafios e sombras
-A dispersão é o principal desafio. Pode assumir compromissos demais e ter dificuldade em finalizar projetos. Existe tendência a buscar aprovação externa e medo de rejeição.
-Oscilações emocionais e impaciência podem gerar ansiedade.
-
-Integração e evolução
-O aprendizado é disciplina criativa: focar energia em poucos projetos e levá-los até o fim. Assim, transforma talento em realização concreta.`,
-
-13: `DIA 13 — O Construtor Transformador
-Essência: disciplina, estrutura e capacidade de reconstrução.
-O 13 é um número de transformação profunda. Representa trabalho, persistência e construção sólida.
-
-Potenciais e talentos
-Indica organização, disciplina e forte ética de trabalho. Pessoas do dia 13 possuem grande capacidade de reconstruir situações difíceis e transformar desafios em oportunidades.
-São confiáveis, resilientes e capazes de construir bases duradouras.
-
-Desafios e sombras
-Pode haver rigidez, excesso de controle e dificuldade em lidar com mudanças inesperadas. Às vezes sente que precisa trabalhar mais que os outros para alcançar reconhecimento.
-Também pode reprimir emoções e parecer distante.
-
-Integração e evolução
-O aprendizado é equilibrar disciplina com flexibilidade. Quando aprende a aceitar mudanças, torna-se uma força extraordinária de construção e estabilidade.`,
-
-14: `DIA 14 — O Espírito Livre
-Essência: movimento, liberdade e adaptação constante.
-O 14 carrega energia de mudança, versatilidade e expansão.
-
-Potenciais e talentos
-Pessoas desse dia são curiosas, adaptáveis e abertas a novas experiências. Possuem mente rápida, espírito aventureiro e facilidade para se reinventar.
-São ótimas em ambientes dinâmicos, viagens, comércio, comunicação e inovação.
-
-Desafios e sombras
-A busca constante por novidade pode gerar instabilidade, impulsividade e dificuldade em manter compromissos.
-Existe risco de excessos, dispersão e decisões precipitadas.
-
-Integração e evolução
-O aprendizado é desenvolver equilíbrio e disciplina. Quando aprende a canalizar sua energia, o 14 alcança grande sucesso e liberdade verdadeira.`,
-
-16: `DIA 16 — O BUSCADOR DA VERDADE
-Quem nasce no dia 16 carrega uma vibração profundamente mental, investigativa e transformadora. Este número representa a busca incessante pela verdade, pelo conhecimento oculto e pela compreensão da essência da vida. Existe aqui uma combinação poderosa de intelecto, sensibilidade e introspecção.
-
-Potencial positivo
-O 16 é um número de percepção elevada. Pessoas dessa vibração possuem mente analítica, capacidade investigativa e grande profundidade emocional. São naturalmente atraídas por filosofia, espiritualidade, psicologia, ciência, pesquisa e tudo que exige reflexão profunda.
-
-Possuem facilidade em perceber padrões ocultos e compreender aquilo que a maioria não enxerga. A mente funciona como um radar investigativo, sempre questionando e buscando respostas mais profundas.
-
-Existe também forte potencial para:
-
-estudos avançados
-autoconhecimento
-espiritualidade
-pesquisa científica
-investigação e análise
-
-Quando equilibradas, tornam-se sábias, lúcidas e extremamente conscientes.
-
-Desafios e sombra
-A vibração 16 traz lições intensas de desapego do ego. Pode existir tendência ao isolamento, ao perfeccionismo extremo e ao distanciamento emocional.
-
-Quando em desequilíbrio:
-tornam-se excessivamente críticas
-podem afastar pessoas por rigidez mental
-desenvolvem ceticismo exagerado
-tornam-se introspectivas demais
-podem cair em melancolia ou frustração
-
-A mente pode virar aliada ou inimiga. O maior desafio é aprender a equilibrar razão e emoção.
-
-Caminho evolutivo
-O aprendizado principal é desenvolver humildade emocional e abrir o coração tanto quanto abre a mente. Quando isso acontece, o 16 torna-se um verdadeiro sábio.`,
-
-17: `DIA 17 — O ESTRATEGISTA DO PODER
-O nascimento no dia 17 indica uma vibração extremamente ambiciosa, estratégica e voltada para realização material e reconhecimento social.
-
-Potencial positivo
-Este número une inteligência prática com visão de longo prazo. É uma vibração de liderança, gestão e capacidade de realização concreta.
-
-Indica talento para:
-administração
-empreendedorismo
-liderança
-gestão financeira
-tomada de decisões
-
-Possuem grande capacidade de planejar e enxergar o cenário completo antes de agir. Sabem estruturar projetos e alcançar metas com persistência.
-
-Desafios e sombra
-O principal desafio do 17 é o orgulho e o controle. Existe tendência a:
-
-excesso de rigidez
-dificuldade em aceitar opiniões
-centralização de poder
-apego ao status
-
-Quando em desequilíbrio, podem tornar-se autoritários ou obcecados por sucesso.
-
-Caminho evolutivo
-A grande lição é aprender a liderar sem dominar. Quando equilibrado, o 17 transforma ambição em legado.`,
-
-18: `DIA 18 — O LÍDER HUMANITÁRIO
-O dia 18 traz uma vibração de liderança voltada ao coletivo. É o número do idealismo aplicado à ação.
-
-Potencial positivo
-Existe forte vocação para ajudar pessoas, liderar grupos e promover mudanças sociais. Possuem empatia elevada e visão ampla da humanidade.
-
-Talentos naturais:
-liderança social
-política e causas coletivas
-ensino e orientação
-aconselhamento
-comunicação de ideias
-Possuem magnetismo e poder de influência.
-
-Desafios e sombra
-Podem tornar-se excessivamente críticos, exigentes e frustrados com o mundo. Tendência a:
-revolta com injustiças
-
-impaciência com limitações humanas
-excesso de responsabilidade emocional
-
-Caminho evolutivo
-Aprender a ajudar sem carregar o peso do mundo nas costas.`,
-
-19: `DIA 19 — O INDEPENDENTE ABSOLUTO
-O 19 representa autonomia, força pessoal e busca intensa por identidade própria.
-
-Potencial positivo
-Indica coragem, iniciativa e capacidade de superar desafios sozinho. Pessoas dessa vibração possuem espírito pioneiro e determinação extraordinária.
-
-Talentos:
-empreendedorismo
-liderança independente
-superação de desafios
-autonomia profissional
-
-Desafios e sombra
-O desafio é o ego e o isolamento emocional. Podem:
-
-resistir a ajuda
-afastar pessoas
-tornar-se teimosos
-sofrer com frustrações de expectativas
-
-Caminho evolutivo
-Aprender que independência não significa solidão.`,
-
-20: `DIA 20 — O DIPLOMATA EMOCIONAL
-O dia 20 carrega uma vibração de sensibilidade, diplomacia e percepção emocional elevada.
-
-Potencial positivo
-Possuem empatia profunda e habilidade natural para mediação de conflitos. São ótimos conselheiros e estrategistas sociais.
-
-Talentos:
-diplomacia
-aconselhamento
-mediação
-estratégia humana
-comunicação emocional
-Desafios e sombra
-
-Podem tornar-se excessivamente sensíveis e dependentes da aprovação externa.
-
-Tendências:
-insegurança emocional
-indecisão
-necessidade de validação
-medo de desapontar pessoas
-
-Caminho evolutivo
-Desenvolver autoconfiança emocional.`,
-
-21: `Versátil Inspirador — Dia 21
-
-O nascimento no dia 21 combina criatividade, sociabilidade e uma forte necessidade de expressão pessoal. Trata-se de uma vibração naturalmente expansiva, comunicativa e inspiradora, que encontra realização ao interagir com o mundo e compartilhar ideias, sentimentos e experiências.
-
-Aspectos positivos  
-Existe uma energia leve, carismática e motivadora que facilita conexões sociais e oportunidades. Pessoas deste dia costumam possuir facilidade para comunicação, vendas, ensino, arte, marketing ou qualquer área que envolva expressão e contato humano. São naturalmente otimistas e têm grande capacidade de entusiasmar os outros.
-
-Há uma forte criatividade e imaginação, acompanhadas por senso de humor, charme e habilidade social. Essa vibração costuma atrair amizades, parcerias e oportunidades com relativa facilidade. Quando direcionada, pode gerar grande sucesso profissional e reconhecimento público.
-
-Aspectos desafiadores  
-A dispersão é o principal desafio desta vibração. Existe tendência a iniciar muitas atividades ao mesmo tempo e dificuldade em manter foco até a conclusão. A necessidade constante de estímulo pode gerar inquietação, ansiedade e sensação de vazio quando a vida entra em rotina.
-
-Oscilações emocionais e períodos de desmotivação podem surgir quando expectativas não são atendidas rapidamente. Existe também tendência a prometer mais do que consegue cumprir.
-
-Aprendizado evolutivo  
-O grande crescimento ocorre quando aprende a disciplinar a própria criatividade. Ao unir foco com expressão, essa vibração pode transformar talento natural em realização concreta e duradoura.`,
-
-22: `Construtor Visionário — Dia 22
-
-O dia 22 carrega uma vibração de grande potencial de realização material e construção de projetos duradouros. É considerado um número mestre, associado à capacidade de transformar sonhos em realidade concreta.
-
-Aspectos positivos  
-Existe uma combinação rara entre visão e capacidade prática. Pessoas deste dia têm talento natural para planejar, estruturar e materializar ideias de grande escala. Possuem senso estratégico, disciplina e capacidade de trabalho acima da média.
-
-Podem se destacar em liderança, empreendedorismo, arquitetura, engenharia, gestão ou qualquer área que envolva organização e construção de algo sólido. Quando equilibradas, tornam-se verdadeiros realizadores de projetos importantes para a sociedade.
-
-Aspectos desafiadores  
-O medo do fracasso pode ser um bloqueio significativo. A consciência do próprio potencial pode gerar insegurança, procrastinação ou abandono de projetos antes da conclusão.
-
-A pressão interna por perfeição pode gerar ansiedade, autocobrança excessiva e sensação constante de responsabilidade.
-
-Aprendizado evolutivo  
-O crescimento ocorre quando confia em sua própria capacidade e aceita agir mesmo diante do medo. Ao unir visão, disciplina e coragem, essa vibração pode alcançar realizações extraordinárias.`,
-
-23: `Explorador Comunicador — Dia 23
-
-A vibração do dia 23 representa movimento, liberdade, comunicação e adaptabilidade. Existe uma energia curiosa, dinâmica e altamente versátil.
-
-Aspectos positivos  
-Possui grande facilidade para comunicação, aprendizado e adaptação a mudanças. Pessoas deste dia costumam ser criativas, rápidas mentalmente e com grande capacidade de improvisação.
-
-Existe talento natural para marketing, vendas, viagens, comércio, ensino, tecnologia e comunicação em geral. São carismáticas, sociáveis e capazes de lidar com diferentes ambientes e culturas com facilidade.
-
-Aspectos desafiadores  
-A inquietação pode levar à impulsividade e dificuldade de compromisso. Há tendência a evitar rotina, responsabilidades prolongadas ou situações que limitem a liberdade.
-
-Podem surgir dispersão, ansiedade e dificuldade de concluir projetos. O excesso de estímulos pode gerar instabilidade emocional.
-
-Aprendizado evolutivo  
-O desenvolvimento ocorre quando aprende a equilibrar liberdade com responsabilidade. Ao direcionar sua energia para objetivos claros, pode alcançar grande sucesso e realização pessoal.`,
-
-24: `Guardião Afetivo — Dia 24
-
-O dia 24 está profundamente ligado ao amor, cuidado, responsabilidade e construção de relações duradouras. É uma vibração de proteção, acolhimento e harmonia.
-
-Aspectos positivos  
-Existe forte senso de responsabilidade afetiva. Pessoas deste dia tendem a valorizar família, relacionamentos e estabilidade emocional. Possuem talento natural para cuidar, orientar e apoiar outras pessoas.
-
-São confiáveis, leais e dedicadas. Podem se destacar em áreas ligadas à educação, saúde, terapias, assistência social ou qualquer atividade voltada ao cuidado humano.
-
-Aspectos desafiadores  
-O excesso de responsabilidade emocional pode gerar sobrecarga, preocupação excessiva e tendência ao sacrifício pessoal. Existe risco de assumir problemas alheios e negligenciar as próprias necessidades.
-
-Podem surgir ansiedade, culpa e medo de desapontar as pessoas.
-
-Aprendizado evolutivo  
-O crescimento ocorre quando aprende a equilibrar cuidado com limites saudáveis. Ao cuidar de si com a mesma dedicação que oferece aos outros, alcança harmonia e realização emocional.`,
-
-25: `DIA 25 — O INVESTIGADOR (Refinado)
-O nascido no dia 25 carrega uma mente analítica, investigativa e profundamente intuitiva. Existe nele uma necessidade intensa de compreender o mundo em profundidade. Não se satisfaz com respostas superficiais; busca a verdade por trás das aparências.
-Possui natureza introspectiva e observadora. Prefere analisar antes de agir. Seu raciocínio combina lógica e intuição, o que lhe permite perceber padrões, comportamentos e intenções com grande precisão. Muitas vezes percebe o que os outros não conseguem explicar.
-Tem grande capacidade de aprendizado, pesquisa e especialização. Quando direciona sua mente para um objetivo, pode atingir níveis elevados de conhecimento.
-
-Potencial positivo
-• Inteligência analítica e investigativa
-• Intuição profunda
-• Capacidade de estudo e especialização
-• Discernimento e visão estratégica
-• Autonomia mental e independência
-
-Desafios e sombra
-O excesso de análise pode gerar insegurança e procrastinação. Pode duvidar demais de si mesmo e perder oportunidades por medo de errar.
-Tende ao isolamento emocional. Pode guardar sentimentos e parecer distante ou frio.
-Perfeccionismo intelectual pode gerar ansiedade, crítica excessiva e autossabotagem.
-
-Caminho de evolução
-Aprender a confiar mais em suas decisões e equilibrar razão com emoção. Quando aprende a agir com confiança, transforma-se em uma mente brilhante e orientadora.`,
-
-26: `DIA 26 — O CONSTRUTOR DO PODER
-O dia 26 combina liderança, ambição e capacidade administrativa. Existe forte energia de realização material e construção de estabilidade.
-Possui visão prática, senso estratégico e talento natural para organização, gestão e liderança.
-
-É alguém que deseja conquistar segurança, reconhecimento e prosperidade através do próprio esforço.
-
-Potencial positivo
-• Liderança natural
-• Disciplina e perseverança
-• Talento para negócios e finanças
-• Organização e planejamento
-• Responsabilidade e maturidade
-
-Desafios e sombra
-Pode tornar-se controlador, rígido ou excessivamente exigente.
-Medo de perder controle pode gerar ansiedade e tensão constante.
-Existe tendência a priorizar trabalho e resultados em detrimento da vida emocional.
-
-Caminho de evolução
-Aprender a equilibrar ambição com sensibilidade. Quando integra coração e razão, torna-se um grande realizador e líder confiável.`,
-
-27: `DIA 27 — O VISIONÁRIO HUMANITÁRIO
-O dia 27 representa sabedoria, sensibilidade e visão ampla da vida. Existe forte vocação humanitária e idealista.
-Possui mente criativa, sensível e filosófica. Tem facilidade para compreender pessoas e enxergar além do óbvio.
-
-Potencial positivo
-• Empatia e sensibilidade
-• Criatividade e inspiração
-• Intuição desenvolvida
-• Visão humanitária
-• Capacidade de aconselhamento
-
-Desafios e sombra
-Pode viver conflitos emocionais intensos e oscilações internas.
-Tendência a absorver problemas dos outros e esquecer de si.
-Idealismo excessivo pode gerar frustração com a realidade.
-
-Caminho de evolução
-Aprender a cuidar de si antes de salvar o mundo. Quando encontra equilíbrio emocional, torna-se guia e inspiração para muitos.`,
-
-28: `DIA 28 — O ESTRATEGISTA
-O dia 28 traz forte energia de liderança estratégica e independência.
-Possui mente empreendedora, visão prática e talento para iniciar projetos. Tem facilidade para enxergar oportunidades.
-
-Potencial positivo
-• Liderança e iniciativa
-• Autoconfiança e coragem
-• Capacidade de iniciar projetos
-• Espírito empreendedor
-• Independência e determinação
-
-Desafios e sombra
-Pode perder interesse rapidamente e abandonar projetos.
-Oscila entre entusiasmo e desmotivação.
-Precisa aprender constância e persistência.
-
-Caminho de evolução
-Disciplina e continuidade são a chave. Quando aprende a concluir o que começa, alcança grande sucesso.`,
-
-29: `DIA 29 — O SENSITIVO
-O dia 29 representa intensa sensibilidade emocional e intuição elevada.
-Possui imaginação rica, percepção profunda e forte conexão emocional com o mundo.
-
-Potencial positivo
-• Intuição poderosa
-• Sensibilidade e empatia
-• Criatividade emocional
-• Imaginação fértil
-• Capacidade de inspiração
-
-Desafios e sombra
-Oscilações emocionais podem gerar insegurança.
-Tendência à melancolia e ansiedade.
-Pode absorver energias e problemas externos.
-
-Caminho de evolução
-Fortalecer autoestima e estabilidade emocional. Quando aprende a confiar em si, transforma sensibilidade em força.`,
-
-30: `DIA 30 — O COMUNICADOR CRIATIVO
-O dia 30 traz energia criativa, comunicativa e imaginativa.
-Possui talento para expressão verbal, artística e social.
-
-Potencial positivo
-• Comunicação e criatividade
-• Carisma e sociabilidade
-• Imaginação fértil
-• Expressão artística
-• Inspiração social
-
-Desafios e sombra
-
-Pode dispersar energia e perder foco.
-Tendência à teimosia e resistência a críticas.
-Precisa desenvolver disciplina e foco.
-
-Caminho de evolução
-Canalizar criatividade com disciplina. Quando encontra direção, torna-se grande comunicador e inspirador.`,
-
-31: `DIA 31 — O CONSTRUTOR DA ESTABILIDADE
-O dia 31 representa disciplina, perseverança e construção sólida.
-Possui natureza prática, organizada e determinada.
-
-Potencial positivo
-• Persistência e disciplina
-• Organização e responsabilidade
-• Talento para planejamento
-• Confiabilidade e estabilidade
-• Capacidade de construção a longo prazo
-
-Desafios e sombra
-Pode tornar-se rígido e resistente a mudanças.
-Medo do novo pode limitar oportunidades.
-
-Caminho de evolução
-Equilibrar segurança com abertura ao novo. Quando integra inovação à disciplina, constrói legado duradouro.`,
-
-
-
-  },
-
-  // ======================
-  comportamento: {
-1: `COMPORTAMENTO 1 — Determinado e Convicto
-O 1 é o Número do Comportamento das pessoas nascidas nos dias 01, 10, 19 e 28 de cada mês. 
-O comportamento 1 revela uma mente independente, reservada e fortemente orientada à autonomia emocional. Pessoas com essa vibração tendem a lidar com dificuldades de forma solitária, preferindo encontrar soluções por conta própria em vez de pedir ajuda.
-Existe uma forte necessidade de controle sobre a própria vida e decisões. Internamente, essa pessoa busca provar a si mesma que é capaz de superar qualquer obstáculo sem depender dos outros.
-
-Potenciais positivos
-Grande força interior e capacidade de auto-superação
-Coragem para enfrentar desafios sem recuar
-Determinação, iniciativa e espírito de liderança
-Honestidade emocional e senso de responsabilidade
-Capacidade de resistir à pressão externa
-Essa vibração cria indivíduos resilientes, confiáveis e capazes de assumir responsabilidades difíceis quando necessário.
-
-Desafios emocionais
-Apesar da aparência forte, existe uma tendência à autocrítica severa e dificuldade em reconhecer fragilidades. Pedir ajuda pode ser interpretado como fraqueza, o que leva ao isolamento emocional.
-A teimosia e a rigidez mental podem dificultar mudanças necessárias, mantendo a pessoa presa a decisões que já não são benéficas.
-
-Caminho de evolução
-O crescimento acontece quando aprende a confiar nos outros e dividir responsabilidades. A verdadeira força não está em fazer tudo sozinho, mas em saber quando permitir apoio.`,
-
-2: `COMPORTAMENTO 2 — Romântico e Emotivo
-O 2 é o Número do Comportamento das pessoas nascidas nos dias 02, 11, 20 e 29 do mês. 
-O comportamento 2 representa uma mente sensível, diplomática e altamente emocional. Essa vibração reage aos conflitos buscando harmonia e evitando confrontos diretos.
-A pessoa sente profundamente o ambiente e as emoções alheias, muitas vezes absorvendo sentimentos como se fossem próprios.
-
-Potenciais positivos
-Empatia e capacidade natural de compreender os outros
-Diplomacia e talento para resolver conflitos
-Sensibilidade artística e emocional
-Facilidade para cooperação e trabalho em equipe
-Intuição aguçada
-São pessoas conciliadoras, que naturalmente buscam paz e equilíbrio nas relações.
-
-Desafios emocionais
-A insegurança e a necessidade de aprovação podem gerar dependência emocional. O medo do conflito pode levar à fuga de problemas importantes.
-Existe tendência à preocupação excessiva, ansiedade e dificuldade em tomar decisões firmes.
-
-Caminho de evolução
-O crescimento surge quando aprende a confiar em si mesma e desenvolver firmeza emocional. A harmonia verdadeira exige coragem para enfrentar conflitos quando necessário.`,
-
-3: `COMPORTAMENTO 3 — Otimista e Despreocupado
-O 3 é o Número do Comportamento das pessoas nascidas nos dias 3, 12, 21 ou 30 do mês. 
-O comportamento 3 revela uma mente leve, criativa e orientada à expressão. Essa vibração reage aos desafios com entusiasmo, criatividade e comunicação.
-Dificuldades são frequentemente enfrentadas com humor, charme e capacidade de adaptação.
-
-Potenciais positivos
-Comunicação natural e poder de persuasão
-Criatividade e pensamento flexível
-Capacidade de motivar e inspirar pessoas
-Otimismo diante das adversidades
-Facilidade de adaptação social
-Essa vibração favorece pessoas carismáticas e capazes de influenciar ambientes positivamente.
-
-Desafios emocionais
-Pode haver tendência à superficialidade, dispersão e procrastinação. Problemas podem ser evitados através de distrações em vez de enfrentamento direto.
-O excesso de otimismo pode gerar promessas não cumpridas e dificuldade de manter disciplina.
-
-Caminho de evolução
-O equilíbrio surge quando a criatividade é direcionada com foco e responsabilidade.`,
-
-4: `COMPORTAMENTO 4
-Prudente, observador e resistente
-O 4 é o Número do Comportamento das pessoas nascidas nos dias 4, 13, 22 e 31 do mês. 
-O Número do Comportamento 4 indica uma postura psicológica defensiva e analítica diante da vida. Quando confrontada com desafios, essa pessoa tende a reagir com cautela, disciplina e necessidade de segurança. Sua resposta emocional costuma ser baseada na lógica, na organização e na busca por estabilidade.
-
-Aspectos positivos
-Psicologicamente, o comportamento 4 reage às dificuldades com firmeza, responsabilidade e resistência emocional. Prefere enfrentar os problemas com planejamento e trabalho constante, acreditando que tudo pode ser resolvido com esforço e método.
-
-É alguém que:
-Observa antes de agir
-Analisa riscos cuidadosamente
-Valoriza estabilidade e previsibilidade
-Confia no esforço contínuo
-Prefere soluções práticas a soluções emocionais
-
-Em momentos difíceis, tende a se fortalecer através da rotina, da disciplina e do trabalho. Sua segurança emocional nasce da sensação de controle e estrutura.
-
-Aspectos negativos
-Quando em desequilíbrio, o comportamento 4 reage ao medo criando rigidez emocional. Pode se tornar:
-
-Excessivamente teimoso
-Defensivo e resistente a mudanças
-Desconfiado
-Crítico e pessimista
-Preso a padrões antigos
-
-Pode reagir às dificuldades tentando controlar tudo ao redor, desenvolvendo ansiedade quando as coisas saem do planejado.
-
-Desenvolvimento psicológico
-O aprendizado desse comportamento é desenvolver flexibilidade emocional.
-Quando aprende a confiar mais na vida e menos no controle absoluto, transforma sua resistência em verdadeira força interior.`,
-
-5: `COMPORTAMENTO 5
-Impulsivo, adaptável e inquieto
-O 5 é o Número do Comportamento das pessoas nascidas nos dias 5, 14 e 23 do mês. 
-O comportamento 5 reage à vida através do movimento, da curiosidade e da necessidade de liberdade. Diante de dificuldades, prefere agir rapidamente, experimentar e mudar de direção se necessário.
-
-Aspectos positivos
-Psicologicamente, esse comportamento responde ao estresse com ação e adaptação.
-Ao invés de se prender ao problema, busca novas possibilidades.
-
-É alguém que:
-Aprende com experiências
-Se adapta rapidamente a mudanças
-Mantém mente aberta
-Busca soluções criativas
-Não teme o desconhecido
-
-Sua força emocional está na capacidade de recomeçar sempre que necessário.
-Aspectos negativos
-Quando em desequilíbrio, reage com:
-
-Impulsividade
-Ansiedade
-Fuga de responsabilidades
-Instabilidade emocional
-Dificuldade de manter compromissos
-Pode evitar lidar profundamente com problemas, preferindo escapar através de distrações ou mudanças constantes.
-
-Desenvolvimento psicológico
-Seu crescimento está em aprender disciplina emocional.
-Quando equilibra liberdade com responsabilidade, transforma inquietação em evolução.`,
-
-6: `COMPORTAMENTO 6
-Afetivo, protetor e sensível
-O 6 é o Número do Comportamento das pessoas nascidas nos dias 6, 15 e 24 do mês. 
-O comportamento 6 responde às dificuldades através do cuidado, do afeto e da necessidade de proteger quem ama.
-
-Aspectos positivos
-Psicologicamente reage buscando harmonia e apoio emocional.
-Sua primeira reação diante de conflitos é tentar cuidar, conciliar e proteger.
-
-É alguém que:
-Busca segurança emocional
-Valoriza vínculos afetivos
-Se preocupa com o bem-estar dos outros
-Tem grande empatia
-Procura resolver conflitos com amor
-Sua força emocional está no sentimento de pertencimento.
-Aspectos negativos
-Quando em desequilíbrio, reage com:
-Dependência emocional
-Carência afetiva
-Necessidade excessiva de aprovação
-Ciúmes
-Sentimento de rejeição
-Pode assumir responsabilidades emocionais que não são suas.
-
-Desenvolvimento psicológico
-Precisa aprender autovalorização e limites emocionais.
-Quando equilibra cuidado com autonomia, transforma amor em força emocional.`,
-
-7: `COMPORTAMENTO 7
-Reservado, analítico e introspectivo
-O 7 é o Número do Comportamento das pessoas nascidas nos dias 7, 16 e 25 do mês. 
-O comportamento 7 reage às dificuldades através da introspecção, reflexão e necessidade de compreensão profunda.
-
-Aspectos positivos
-Psicologicamente prefere se afastar para pensar antes de agir.
-Busca compreender o significado das experiências.
-
-É alguém que:
-Analisa profundamente os problemas
-Busca respostas internas
-Desenvolve autocontrole emocional
-Valoriza conhecimento e sabedoria
-Sua força está na capacidade de observar antes de agir.
-Aspectos negativos
-Quando em desequilíbrio:
-Se isola emocionalmente
-Reprime sentimentos
-Desconfia das pessoas
-Torna-se excessivamente crítico
-Pode fugir de conflitos emocionais através do distanciamento.
-
-Desenvolvimento psicológico
-Precisa aprender conexão emocional e confiança.
-Quando equilibra mente e emoção, transforma análise em sabedoria.`,
-
-8: `COMPORTAMENTO 8
-Controlador, estratégico e resiliente
-O 8 é o Número do Comportamento das pessoas nascidas nos dias 8, 17 e 26 do mês. 
-O comportamento 8 reage às dificuldades buscando controle, poder pessoal e resultados concretos.
-
-Aspectos positivos
-Psicologicamente enfrenta desafios com determinação e resistência.
-Não foge de problemas — enfrenta e resolve.
-
-É alguém que:
-Assume responsabilidade
-Mantém autocontrole emocional
-Age com estratégia
-Busca segurança material e emocional
-Sua força está na capacidade de agir sob pressão.
-Aspectos negativos
-Quando em desequilíbrio:
-Torna-se controlador
-Autoritário
-Impaciente
-Obcecado por resultados
-Pode reagir ao medo tentando controlar tudo e todos.
-
-Desenvolvimento psicológico
-Precisa aprender confiança e flexibilidade emocional.
-Quando equilibra força com sensibilidade, torna-se líder equilibrado.`,
-
-9: `COMPORTAMENTO 9
-Intenso, idealista e emocional
-O 9 é o Número do Comportamento das pessoas nascidas nos dias 9, 18 e 27 do mês. 
-O comportamento 9 reage às dificuldades com intensidade emocional e forte senso de justiça.
-
-Aspectos positivos
-Psicologicamente enfrenta problemas movido por valores, ideais e emoções profundas.
-
-É alguém que:
-Busca sentido nas experiências
-Tem forte empatia
-Deseja ajudar os outros
-Reage com coragem às injustiças
-Sua força está na paixão pela vida e pelas pessoas.
-Aspectos negativos
-Quando em desequilíbrio:
-Reage com explosões emocionais
-Guarda ressentimentos
-Tem dificuldade em perdoar
-Vive oscilações emocionais
-Pode reagir de forma exagerada às frustrações.
-
-Desenvolvimento psicológico
-Precisa aprender equilíbrio emocional e desapego.
-Quando amadurece, transforma intensidade em sabedoria emocional.`
-
-
-
-  },
-
 motivacao: {
 1: `Você possui uma necessidade profunda de independência e autonomia. Sua maior motivação é dirigir a própria vida e tomar decisões baseadas em suas convicções pessoais. Existe dentro de você um forte impulso de liderança e a sensação de que precisa estar no controle do próprio destino. Essa força interior lhe concede coragem para assumir responsabilidades, tomar decisões ousadas e iniciar caminhos que outras pessoas evitariam. Você não teme desafios e, muitas vezes, até se fortalece diante deles. 
 
@@ -1572,53 +743,7 @@ Seu desafio é agir com compaixão e realismo ao mesmo tempo.`
 
   },
 
-  maturidade: {
-1:`Maturidade 1
-Com o amadurecimento cresce a necessidade de independência, liderança e reconhecimento. A confiança nos próprios instintos aumenta e o desejo de progresso se intensifica. Você tende a assumir o comando das situações e buscar recompensas pelo esforço realizado. Deve evitar arrogância, rigidez e impaciência com limitações. 
 
-A iniciativa e determinação tornam-se cada vez mais fortes. Construir relações e alianças será essencial para o equilíbrio. Muitos 1’s indicam cuidado com autoritarismo e egoísmo. Poucos 1’s indicam fortalecimento da autonomia e do sucesso pessoal.`,
-
-2:`Maturidade 2
-A maturidade fortalece a habilidade de cooperação, diplomacia e sensibilidade emocional. Cresce a necessidade de conexão e harmonia nos relacionamentos. A percepção das motivações alheias torna-se mais clara e o talento para mediação aumenta. 
-
-É importante desenvolver autoconfiança e limites emocionais. A influência acontece mais pela persuasão do que pela imposição. Pode haver pouca valorização externa, mas grande satisfação em conquistas coletivas. Muitos 2’s indicam sensibilidade excessiva. Poucos 2’s indicam crescimento da capacidade de trabalhar em equipe.`,
-
-3:`Maturidade 3
-Com o tempo surge maior extroversão, criatividade e desejo de prazer e socialização. A comunicação melhora e a popularidade tende a crescer. Há busca por leveza, diversão e expressão pessoal. O desafio é evitar dispersão, superficialidade e falta de disciplina. 
-
-A maturidade traz mais alegria e vida social ativa. Desenvolver foco e priorização será essencial. Muitos 3’s indicam tendência à irresponsabilidade. Poucos 3’s indicam relaxamento e maior capacidade de aproveitar a vida.`,
-
-4:`Maturidade 4
-A maturidade fortalece praticidade, organização e realismo. Cresce a necessidade de rotina, estabilidade e realização através do esforço. Pode surgir medo de mudanças e tendência à rigidez. É importante manter abertura para oportunidades e espontaneidade. 
-
-A fase madura favorece conquistas concretas e segurança para família e amigos. Desenvolver empatia e flexibilidade será essencial. Muitos 4’s indicam risco de teimosia e intolerância. Poucos 4’s indicam aprendizado sobre disciplina e organização.`,
-
-5:`Maturidade 5
-Com o passar dos anos cresce o desejo de liberdade, variedade e novas experiências. A curiosidade e a vontade de viajar e conhecer pessoas aumentam. Pode surgir inquietação com rotina e compromissos rígidos. A criatividade e o carisma tornam-se mais fortes. 
-
-O desafio é manter disciplina e foco. Existe tendência a iniciar projetos e perder interesse rapidamente. Muitos 5’s indicam dispersão de energia. Poucos 5’s indicam maior adaptação às mudanças e disposição para riscos.`,
-
-6:`Maturidade 6
-A maturidade amplia o desejo de cuidar, proteger e orientar pessoas próximas. Cresce o senso de responsabilidade com família e relações. Surge o papel natural de conselheiro e apoio emocional. O desafio é evitar sobrecarga e perfeccionismo. 
-
-É importante cuidar de si com a mesma dedicação dada aos outros. Muitos 6’s indicam idealismo e exigência excessiva. Poucos 6’s indicam fortalecimento dos vínculos afetivos.`,
-
-7:`Maturidade 7
-Com a maturidade aumenta a busca por conhecimento, sentido e autoconhecimento. Cresce o interesse por filosofia, espiritualidade e estudo profundo. Surge maior necessidade de privacidade e reflexão. O desafio é evitar isolamento e excesso de crítica. 
-
-A sabedoria interior torna-se mais evidente com o tempo. Muitos 7’s indicam tendência ao isolamento. Poucos 7’s indicam aprofundamento intelectual e especialização.`,
-
-8:`MT 8
-A maturidade reduz a obsessão por sucesso material e aumenta o foco no equilíbrio pessoal. Cresce o desejo de usar poder e recursos para beneficiar outros. Surge maior reconhecimento e influência social. O desafio é evitar arrogância e apego ao dinheiro. 
-
-Integridade e justiça tornam-se fundamentais. Muitos 8’s indicam risco de ganância. Poucos 8’s indicam oportunidade de estabilidade e tranquilidade.`,
-
-9:`Maturidade 9
-Com o tempo cresce o desejo de contribuir para o bem coletivo e deixar legado positivo. A sensibilidade social e o idealismo aumentam. Surge forte interesse por cultura, arte e causas humanitárias. O desafio é equilibrar generosidade com autocuidado. 
-
-Evite impor ajuda ou negligenciar suas próprias necessidades. Muitos 9’s indicam risco de arrogância e alienação. Poucos 9’s indicam sensação de pertencimento e realização.`
-
-  },
 
   relacionamento: {
    1:`A vibração 1 está ligada a pessoas intensas, apaixonadas e imaginativas. Seus sentimentos costumam nascer de sonhos, fantasias e idealizações, podendo ser muito fortes no início, mas tendem a enfraquecer quando não encontram base racional e estabilidade emocional.
@@ -1877,804 +1002,7 @@ A felicidade surge quando alinham amor e realidade.`
 
   },
 
-ciclos:{ 1:{
-  1:`Este período representa a fase inicial de formação da individualidade e da autonomia. A pessoa aprende a afirmar sua identidade, desenvolver iniciativa e construir autoconfiança desde cedo. A infância e a juventude exigem equilíbrio entre liberdade e orientação, permitindo a construção de responsabilidade e maturidade emocional. A presença de figuras de autoridade confiáveis torna-se essencial para servir de modelo e referência. Surge a necessidade de descobrir desejos, talentos e vocação, iniciando a construção da identidade profissional. A disciplina deve existir sem excesso de rigidez, favorecendo a autonomia consciente. Experiências dessa fase moldam fortemente o caráter e a estabilidade futura. Quando bem orientada, a pessoa inicia a vida adulta com iniciativa, liderança e segurança. Caso contrário, podem surgir dúvidas, instabilidade emocional e dificuldade de definição profissional. Este ciclo incentiva coragem, independência e autodescoberta. É uma fase de aprendizado prático e construção do caráter. As bases do futuro são estabelecidas aqui. A consciência dos próprios limites deve ser desenvolvida. A busca por autonomia é constante. O desenvolvimento pessoal torna-se prioridade.`,
 
-2:`Este ciclo enfatiza sensibilidade, cooperação e desenvolvimento emocional. A infância tende a ser marcada por forte influência familiar e necessidade de proteção, exigindo equilíbrio entre autonomia e apoio. Surge a necessidade de construir autoconfiança e capacidade de decisão. A pessoa aprende paciência, empatia e flexibilidade nas relações. Pode demonstrar timidez ou insegurança ao expressar opiniões, refletindo a busca por identidade emocional. A fase favorece introspecção e autoconhecimento, permitindo descobertas importantes para a vida adulta. Relações afetivas exercem grande impacto no desenvolvimento psicológico. O estímulo à independência é fundamental para evitar dependência excessiva. Desenvolve-se o senso de cooperação e sensibilidade social. A maturidade emocional começa a ser construída gradualmente. A busca por harmonia torna-se central. O ambiente familiar influencia profundamente as decisões futuras. A pessoa aprende a confiar em sua percepção. O crescimento acontece de forma gradual e sensível. Este período fortalece vínculos e inteligência emocional.`,
-
-3:`Este ciclo simboliza alegria, criatividade e sociabilidade. A infância e juventude são marcadas por leveza, entusiasmo e necessidade de expressão. A pessoa demonstra carisma, imaginação e forte necessidade de interação social. A busca por diversão pode reduzir o foco em responsabilidades e estudos. Surge a necessidade de aprender disciplina e compromisso. A criatividade e a comunicação se destacam intensamente. Este período favorece descobertas, amizades e expansão social. A pessoa aprende a expressar emoções e ideias com liberdade. A responsabilidade deve ser desenvolvida gradualmente. É uma fase de experimentação e aprendizado social. A motivação vem da alegria e da convivência. A construção de compromissos torna-se necessária. O desenvolvimento artístico pode ser estimulado. A fase favorece autoconhecimento emocional. A base da comunicação futura é construída aqui.`,
-
-4:`Este ciclo exige disciplina, responsabilidade e organização. A infância pode trazer limitações e necessidade de regras claras. Surge o aprendizado sobre esforço, rotina e persistência. A pessoa aprende a respeitar limites e desenvolver autodisciplina. O excesso de rigidez pode gerar resistência ou insegurança. O equilíbrio entre disciplina e liberdade é essencial. A fase favorece construção de bases materiais e educacionais. O esforço dedicado aos estudos torna-se fundamental. A responsabilidade cresce gradualmente. A pessoa aprende a valorizar estabilidade e segurança. Surge a necessidade de planejamento e foco. A maturidade é construída por meio do trabalho e da dedicação. A autonomia é conquistada progressivamente. A base da vida profissional começa a se formar. Este ciclo constrói estrutura e estabilidade para o futuro.`,
-
-5:`Este ciclo é marcado por movimento, liberdade e mudanças constantes. A pessoa aprende a lidar com novas experiências e desafios. Surge forte necessidade de autonomia e experimentação. A supervisão familiar torna-se essencial para evitar excessos. A energia física e mental é intensa. O período favorece aprendizado por experiências práticas. Mudanças e transformações são frequentes. A pessoa busca novas ideias e pessoas inspiradoras. O desafio é desenvolver responsabilidade e constância. Pode haver dificuldade em manter foco e estabilidade. A orientação adequada garante segurança futura. A curiosidade e o dinamismo são características marcantes. A fase estimula independência e adaptação. A busca por liberdade deve ser equilibrada com compromisso. O aprendizado vem da experiência direta com a vida.`,
-
-6:`Este ciclo destaca responsabilidade, família e cooperação. A pessoa aprende a assumir deveres gradualmente. Surge a necessidade de sentir pertencimento e harmonia familiar. Pode haver dificuldade inicial de adaptação social. A fase favorece desenvolvimento de empatia e compromisso. A convivência com pessoas inspiradoras torna-se essencial. O apoio emocional influencia profundamente o crescimento. A vocação começa a se revelar. O senso de responsabilidade se fortalece progressivamente. A pessoa aprende a equilibrar necessidades pessoais e coletivas. Surge o desejo de contribuir com o grupo. A maturidade emocional cresce lentamente. O ambiente familiar exerce forte influência. A fase favorece estabilidade emocional futura. A base da vida afetiva é construída aqui.`,
-
-7:`Este ciclo representa introspecção, sensibilidade e autoconhecimento. A pessoa pode demonstrar timidez e necessidade de isolamento. Surge a busca por compreensão interior e reflexão profunda. O incentivo à socialização é essencial para equilíbrio emocional. Pode haver dificuldade em expressar sentimentos. A autoestima precisa ser fortalecida. O apoio familiar torna-se fundamental. A fase favorece desenvolvimento intelectual e espiritual. A pessoa aprende a confiar em si mesma. O isolamento excessivo deve ser evitado. A introspecção pode gerar sabedoria e maturidade. O estímulo ao diálogo é essencial. A conexão com o mundo exterior precisa ser cultivada. A fase desenvolve consciência emocional profunda. O crescimento ocorre de forma interiorizada.`,
-
-8:`Este ciclo simboliza ambição, poder pessoal e desenvolvimento material. A pessoa demonstra liderança e senso de justiça desde cedo. Surge interesse por conquistas e responsabilidades. A fase favorece construção de valores e capacidade de julgamento. A disciplina torna-se essencial para o sucesso futuro. O jovem busca reconhecimento e espaço social. A orientação adequada define resultados futuros. A ambição precisa ser equilibrada com ética. A capacidade de decisão cresce intensamente. A pessoa aprende a lidar com poder e responsabilidade. O foco material pode se intensificar. O equilíbrio emocional garante estabilidade futura. A fase desenvolve senso de autoridade e liderança. A base das conquistas é construída aqui. O crescimento ocorre por meio da responsabilidade.`,
-
-9:`Este ciclo é marcado por sensibilidade, compaixão e transformações profundas. A pessoa desenvolve empatia e visão humanitária. Pode sentir-se incompreendida ou deslocada. A criatividade e a sensibilidade emocional são intensas. Surge necessidade de propósito e significado. A fase exige orientação emocional cuidadosa. Pode haver sensação de solidão ou confusão. O desenvolvimento espiritual e emocional é intenso. A pessoa aprende tolerância e aceitação. A busca por vocação pode ser desafiadora. Grandes mudanças e adaptações marcam o período. A maturidade emocional cresce lentamente. A fase prepara para profundas transformações futuras. O crescimento ocorre por meio da compreensão da vida. Este ciclo encerra a fase formativa com forte aprendizado emocional.` },
-
-2:{ 1:`Este ciclo marca o início das grandes realizações e da busca por independência. A pessoa passa a confirmar se as escolhas feitas anteriormente estão corretas e começa a estruturar sua carreira e estabilidade financeira. Surge a necessidade de assumir responsabilidades e construir o próprio caminho com autonomia. É uma fase de grande energia, ambição e iniciativa. As conquistas dependem principalmente do esforço pessoal e da determinação. O reconhecimento profissional tende a crescer gradualmente. Este período exige coragem para enfrentar desafios e superar obstáculos. A autoconfiança se fortalece através das realizações. O objetivo é chegar ao próximo ciclo com estabilidade e direção definida. A independência torna-se prioridade. O trabalho intenso traz recompensas. O desenvolvimento pessoal ganha destaque. A construção do futuro se torna concreta. A iniciativa determina os resultados. É uma fase de afirmação e conquistas.`,
-
-2:`Este ciclo enfatiza cooperação, diplomacia e trabalho em equipe. Surge a necessidade de alinhar objetivos pessoais com interesses coletivos. A paciência e a sensibilidade tornam-se fundamentais para alcançar metas. A pessoa aprende a negociar, conciliar e construir parcerias. O crescimento ocorre por meio da colaboração e do apoio mútuo. É importante evitar dependência excessiva ou submissão. O equilíbrio emocional favorece conquistas duradouras. O sucesso surge através de estratégias e planejamento. A fase pede discrição e observação. O progresso acontece de forma gradual e constante. A diplomacia abre oportunidades. A convivência social ganha importância. A realidade deve ser encarada com maturidade. O trabalho em equipe impulsiona resultados. Este período fortalece vínculos e cooperação.`,
-
-3:`Este ciclo traz leveza, expansão e expressão pessoal. A pessoa sente maior alegria, criatividade e sociabilidade. Surge o desejo de se comunicar, aprender e desenvolver talentos. A vida social tende a se expandir e novas oportunidades surgem. É um período favorável ao crescimento intelectual e artístico. A autoconfiança aumenta com a expressão das ideias. O desafio é evitar dispersão e superficialidade. A criatividade deve ser direcionada a objetivos concretos. O entusiasmo favorece novas conquistas. O prazer em viver se intensifica. A comunicação torna-se ferramenta essencial. Novas experiências ampliam horizontes. O aprendizado ocorre com facilidade. A felicidade motiva o crescimento. Este ciclo incentiva criatividade e expansão pessoal.`,
-
-4:`Este ciclo exige dedicação, planejamento e construção de bases sólidas. A prioridade passa a ser estabilidade profissional e segurança material. O trabalho disciplinado torna-se essencial para alcançar objetivos. A pessoa aprende a valorizar organização e persistência. O progresso ocorre através do esforço constante. A rotina torna-se necessária para crescimento estruturado. Este é um período de consolidação e amadurecimento. A responsabilidade aumenta significativamente. A construção de um legado torna-se prioridade. A disciplina garante resultados duradouros. A motivação deve vir do propósito pessoal. O foco substitui a impulsividade. A estabilidade começa a se formar. O crescimento é gradual e seguro. Este ciclo constrói segurança e estrutura.`,
-
-5:`Este é um ciclo de mudanças intensas e oportunidades inesperadas. A vida torna-se dinâmica, exigindo adaptação constante. A pessoa aprende a lidar com liberdade e responsabilidade. Novas experiências ampliam a visão de mundo. A flexibilidade torna-se essencial para o sucesso. Mudanças repentinas podem ocorrer com frequência. A fase favorece expansão pessoal e profissional. A curiosidade impulsiona novas descobertas. O desafio é evitar impulsividade e instabilidade. A liberdade deve ser usada com sabedoria. O crescimento ocorre por meio da experiência. Novas oportunidades surgem rapidamente. A capacidade de adaptação define resultados. Este ciclo ensina o valor da liberdade consciente. A transformação torna-se constante.`,
-
-6:`Este ciclo destaca responsabilidade afetiva, parcerias e compromissos. Surge a necessidade de cooperação e equilíbrio nas relações. A pessoa aprende a compartilhar responsabilidades. O desenvolvimento acontece através da união com outras pessoas. Parcerias podem trazer crescimento significativo. O individualismo deve dar lugar à colaboração. A harmonia torna-se essencial para o progresso. O compromisso fortalece conquistas. A vida afetiva ganha importância. O equilíbrio emocional favorece estabilidade. O sucesso vem do esforço conjunto. A flexibilidade melhora relacionamentos. A maturidade emocional se intensifica. Este ciclo fortalece vínculos e responsabilidades.`,
-
-7:`Este ciclo favorece introspecção, estudo e autoconhecimento. A pessoa sente necessidade de compreender sua essência. Surge o desejo de aperfeiçoamento pessoal e intelectual. O crescimento ocorre por meio da reflexão. A busca por conhecimento se intensifica. A disciplina mental torna-se essencial. O sucesso depende de concentração e foco. A intuição se fortalece gradualmente. O isolamento pode ser necessário para crescimento interior. O aprendizado profundo traz sabedoria. As oportunidades surgem naturalmente. A pessoa aprende a confiar em si mesma. O desenvolvimento ocorre de dentro para fora. Este ciclo fortalece autoconfiança e maturidade.`,
-
-8:`Este ciclo está ligado às conquistas materiais e ao poder de realização. A dedicação ao trabalho e aos objetivos financeiros aumenta. O senso de justiça e responsabilidade torna-se essencial. As recompensas são proporcionais ao esforço. O equilíbrio emocional garante sucesso. O autocontrole evita perdas e impulsividade. Grandes oportunidades podem surgir. A liderança se fortalece naturalmente. A confiança impulsiona conquistas. O planejamento financeiro torna-se importante. O sucesso exige ética e disciplina. A ambição deve ser equilibrada com sabedoria. Este ciclo favorece prosperidade e estabilidade.`,
-
-9:`Este ciclo representa transformação, desapego e amadurecimento emocional. A pessoa desenvolve empatia e visão humanitária. Surge a necessidade de reavaliar valores e objetivos. O desapego de mágoas e frustrações torna-se necessário. A maturidade emocional se fortalece. Mudanças profundas podem ocorrer. A vida pede renovação e crescimento interior. O passado deve ser compreendido e superado. A compaixão ganha destaque. O desenvolvimento espiritual se intensifica. Este período prepara para novas fases da vida. A transformação traz sabedoria. O crescimento ocorre por meio do desapego. Este ciclo encerra uma etapa com evolução e consciência.` },
-
-3:{ 1:`No terceiro ciclo de vida, o número 1 representa uma fase de renovação, autonomia e redescoberta da própria identidade. Surge uma nova percepção sobre a vida, sobre si mesmo e sobre as decisões tomadas ao longo da jornada. A pessoa passa a compreender melhor suas motivações, suas qualidades e a influência de suas escolhas no caminho percorrido. É um período de iniciativa, coragem e autoconfiança, no qual o desejo de continuar realizando e conquistando permanece forte. Quando a trajetória anterior foi produtiva, há sensação de realização, vitalidade e disposição para continuar evoluindo. Caso contrário, podem surgir frustrações, arrependimentos e sensação de oportunidades perdidas. Este ciclo incentiva novos objetivos, independência emocional e continuidade do crescimento pessoal. É momento de assumir a própria história, reconhecer conquistas e buscar novos desafios com maturidade, determinação e confiança nas próprias capacidades.`,
-
-2:`Neste ciclo, o número 2 traz uma fase de harmonia emocional, aproximação afetiva e fortalecimento dos vínculos sociais. A pessoa tende a sentir maior conexão com os outros e consigo mesma, tornando-se mais sensível, espontânea e receptiva. Surge a oportunidade de expressar sentimentos com mais naturalidade, superar inseguranças e desenvolver relações mais profundas e verdadeiras. Quando a vida foi conduzida de forma equilibrada, há sensação de paz interior, satisfação emocional e convivência harmoniosa. Caso contrário, podem surgir sentimentos de mágoa, ressentimento ou comparação com conquistas alheias. Este período favorece empatia, diplomacia, cooperação e reconciliação. A maturidade emocional torna-se uma ferramenta poderosa para viver relações mais saudáveis e significativas. É uma fase de sensibilidade, compreensão e crescimento através das relações humanas.`,
-
-3:`O número 3 representa uma fase de expressão, criatividade e redescoberta da alegria de viver. Surge a necessidade de compartilhar sentimentos, ideias e experiências, fortalecendo a comunicação e o contato social. A criatividade se expande e pode trazer novas atividades, amizades e interesses. Quando a trajetória foi bem construída, há entusiasmo, leveza e prazer em viver novas experiências. Caso contrário, podem surgir sentimentos de rejeição, impulsividade ou falta de direção. O desafio é manter o foco e evitar desperdício de energia em atividades sem propósito. Este ciclo incentiva autenticidade, convivência social e desenvolvimento de talentos. É uma fase de redescoberta emocional e de valorização da vida através da criatividade, comunicação e alegria.`,
-
-4:`O número 4 traz um período de continuidade, responsabilidade e senso de dever cumprido. A pessoa sente necessidade de manter-se ativa, produtiva e útil, buscando estabilidade e segurança. Surge maior preocupação com justiça, valores morais e organização da vida. Quando a jornada anterior foi bem conduzida, há sensação de realização e satisfação com o caminho percorrido. Caso contrário, podem surgir frustração, ressentimento ou sensação de falta de conquistas. Este ciclo reforça disciplina, perseverança e construção de legado. É uma fase de maturidade prática, comprometimento e fortalecimento das bases construídas ao longo da vida.`,
-
-5:`O número 5 indica um período de movimento, mudanças e adaptação. Mesmo na maturidade, surgem novas oportunidades, experiências e desafios que exigem flexibilidade e prudência. A pessoa busca segurança, mas também deseja continuar evoluindo e explorando novas possibilidades. Quando a vida foi bem conduzida, há entusiasmo, abertura para mudanças e vontade de continuar crescendo. Caso contrário, podem surgir insegurança, apego ao passado ou falta de motivação. Este ciclo incentiva liberdade consciente, adaptação e aproveitamento das oportunidades. É uma fase de transformação e expansão contínua.`,
-
-6:`O número 6 representa uma fase de harmonia, vínculos afetivos e realização emocional. As relações ganham grande importância, trazendo sensação de pertencimento e apoio. Quando a trajetória foi equilibrada, há sentimento de ser amado, respeitado e valorizado. Caso contrário, podem surgir sentimentos de inutilidade ou solidão. Este ciclo estimula amor, cooperação e equilíbrio emocional. É um período de estabilidade afetiva, convivência familiar e satisfação pessoal através das relações.`,
-
-7:`O número 7 simboliza a fase de introspecção, sabedoria e autoconhecimento. É um período de reflexão, aprendizado e crescimento interior. Quando a vida foi bem conduzida, há serenidade, compreensão e desejo de compartilhar conhecimento. Caso contrário, podem surgir isolamento, tristeza ou sensação de vazio. Este ciclo favorece espiritualidade, aprendizado e reconexão com a essência. É uma fase de sabedoria e evolução interior.`,
-
-8:`O número 8 representa a fase das recompensas e compensações. As conquistas materiais e profissionais tornam-se evidentes, refletindo escolhas passadas. Quando a trajetória foi correta, há prosperidade, reconhecimento e sensação de poder pessoal. Caso contrário, podem surgir perdas, frustrações ou arrependimentos. Este ciclo reforça justiça, responsabilidade e colheita dos resultados da vida. É a fase das recompensas e aprendizados finais.`,
-
-9:`O número 9 marca a fase de reflexão profunda, desapego e compreensão da vida. Surge o desejo de contribuir com o mundo e buscar significado maior. Quando a vida foi bem conduzida, há sensação de realização e paz interior. Caso contrário, podem surgir arrependimentos e sensação de tempo perdido. Este ciclo incentiva compaixão, sabedoria e aceitação. É o encerramento da jornada com aprendizado, maturidade e compreensão do sentido da vida.`}
-
-
-},
-  
-  
- momentos:{
-
-1:{
-1:`1º MOMENTO DECISIVO — INÍCIO DA VIDA
-
-Reflete o início da vida, época em que a pessoa se encontra mais influenciável.
-
-MOMENTO DECISIVO 1
-
-O desafio deste período é desenvolver força de vontade. A criança deve ser incentivada desde cedo a fazer escolhas e tomar decisões próprias, para que futuramente saiba avaliar o momento certo de agir e compreenda que caberá a ela colocar seus projetos em prática.
-
-Este é o momento de aprender o valor da independência e da iniciativa. Toda a juventude deve ser dedicada ao desenvolvimento das próprias ideias, evitando egoísmo, teimosia e egocentrismo.
-
-É uma fase essencial para desenvolver liderança e individualidade. As amizades formadas aqui influenciarão profundamente o futuro, sendo fundamental escolher pessoas confiáveis.
-
-Este período exige coragem, determinação e confiança. O sucesso dependerá principalmente da própria iniciativa.`,
-
-2:`1º MOMENTO DECISIVO — INÍCIO DA VIDA
-
-Reflete o início da vida, época em que a pessoa se encontra mais influenciável.
-
-MOMENTO DECISIVO 2
-
-O desafio deste período é desenvolver paciência. A criança não deve ser protegida em excesso, pois isso pode gerar dificuldade em lidar com a realidade no futuro.
-
-Este período exige cooperação, sensibilidade e orientação adequada. A personalidade e o temperamento estão sendo formados, definindo a forma de reagir à vida.
-
-Aprender a cooperar, analisar decisões com cuidado e cultivar amizades sinceras será essencial para o desenvolvimento emocional equilibrado.`,
-
-3:`1º MOMENTO DECISIVO — INÍCIO DA VIDA
-
-Reflete o início da vida, época em que a pessoa se encontra mais influenciável.
-
-MOMENTO DECISIVO 3
-
-O desafio deste período é refinar a autoexpressão. Trata-se de uma fase criativa e social, mas que exige disciplina para evitar dispersão.
-
-É importante aprender a controlar emoções, fazer escolhas responsáveis e desenvolver concentração.
-
-A vida pode parecer leve e fácil, porém a seriedade será essencial para construir conquistas duradouras.`,
-
-4:`1º MOMENTO DECISIVO — INÍCIO DA VIDA
-
-Reflete o início da vida, época em que a pessoa se encontra mais influenciável.
-
-MOMENTO DECISIVO 4
-
-O desafio deste período é organizar o futuro. É o momento de aprender responsabilidade, disciplina e valor do esforço.
-
-A educação recebida aqui define a estrutura das conquistas futuras.
-
-Com dedicação, planejamento e persistência, será possível construir bases sólidas para a vida adulta.`,
-
-5:`1º MOMENTO DECISIVO — INÍCIO DA VIDA
-
-Reflete o início da vida, época em que a pessoa se encontra mais influenciável.
-
-MOMENTO DECISIVO 5
-
-O desafio é aprender a aproveitar oportunidades com responsabilidade. É um período de experiências, mudanças e aprendizado.
-
-A criança deve aprender a respeitar regras, limites e autoridade, desenvolvendo maturidade emocional.
-
-A liberdade deve ser equilibrada com responsabilidade para garantir estabilidade futura.`,
-
-6:`1º MOMENTO DECISIVO — INÍCIO DA VIDA
-
-Reflete o início da vida, época em que a pessoa se encontra mais influenciável.
-
-MOMENTO DECISIVO 6
-
-O desafio é desenvolver responsabilidade emocional. Este período ensina convivência, cooperação e equilíbrio nas relações.
-
-É importante aprender a cuidar dos outros sem abandonar as próprias necessidades.
-
-Diplomacia, empatia e cordialidade devem ser desenvolvidas desde cedo.`,
-
-7:`1º MOMENTO DECISIVO — INÍCIO DA VIDA
-
-Reflete o início da vida, época em que a pessoa se encontra mais influenciável.
-
-MOMENTO DECISIVO 7
-
-O desafio é desenvolver autoconfiança e autoestima. A criança deve ser incentivada a se relacionar e evitar isolamento.
-
-É fundamental desenvolver interesse pela vida prática e aprender a enfrentar desafios com segurança.
-
-Este período constrói valores e a base da maturidade futura.`,
-
-8:`1º MOMENTO DECISIVO — INÍCIO DA VIDA
-
-Reflete o início da vida, época em que a pessoa se encontra mais influenciável.
-
-MOMENTO DECISIVO 8
-
-O desafio é desenvolver senso de justiça e equilíbrio. Este período exige estudo, disciplina e organização.
-
-É importante aprender a lidar com responsabilidades e desenvolver autocontrole.
-
-Uma boa formação permitirá alcançar objetivos ainda no início da vida adulta.`,
-
-9:`1º MOMENTO DECISIVO — INÍCIO DA VIDA
-
-Reflete o início da vida, época em que a pessoa se encontra mais influenciável.
-
-MOMENTO DECISIVO 9
-
-O desafio é desenvolver empatia e visão humanitária. Este pode ser um período sensível, exigindo compreensão e tolerância.
-
-A convivência com diferentes pessoas e experiências desenvolve maturidade emocional.
-
-É uma fase de descobertas que prepara para os próximos ciclos da vida.`
-
-  },
-
-2:{
-1:`2º Momento Decisivo —
-Este período marca uma fase de escolhas importantes, maior autonomia e aumento das responsabilidades pessoais. O desenvolvimento individual passa a exigir atitude, coragem e posicionamento diante da vida.
-
-O desafio deste período é manter entusiasmo, autoconfiança e iniciativa.  
-É um momento que exige coragem para agir e assumir o controle da própria trajetória. A pessoa deve confiar em suas ideias e acreditar em sua capacidade de realização.  
-As decisões tomadas agora terão impacto direto no futuro, por isso é essencial agir com firmeza e determinação.  
-A independência deve ser desenvolvida com responsabilidade e maturidade.  
-É importante aprender a lidar com obstáculos sem perder a motivação.  
-A autossuficiência emocional se torna um objetivo importante.  
-Este é o momento de iniciar projetos e assumir riscos calculados.  
-A coragem será uma aliada essencial.  
-O excesso de dúvida pode gerar perdas de oportunidades.  
-A persistência será recompensada.  
-A autoconfiança deve ser fortalecida diariamente.  
-A iniciativa pessoal será determinante para o sucesso.  
-A vida exige ação e posicionamento.  
-É o início da consolidação da identidade adulta.  
-A determinação moldará os resultados futuros.`,
-
-2:`2º Momento Decisivo —
-Esta fase simboliza um período de amadurecimento emocional, cooperação e desenvolvimento das relações humanas.
-
-O desafio deste período é agir com estratégia e paciência.  
-A diplomacia torna-se fundamental para o crescimento.  
-Parcerias e relações ganham importância significativa.  
-A pessoa aprende a trabalhar em equipe e compartilhar responsabilidades.  
-É essencial desenvolver sensibilidade emocional e capacidade de negociação.  
-Decisões precipitadas devem ser evitadas.  
-O sucesso virá através da cooperação e do equilíbrio.  
-A empatia facilita oportunidades e alianças importantes.  
-O crescimento ocorre de forma gradual e constante.  
-A intuição deve ser equilibrada com a razão.  
-Aprender a esperar o momento certo é essencial.  
-O apoio de outras pessoas pode abrir caminhos importantes.  
-A maturidade emocional fortalece resultados duradouros.  
-A harmonia nas relações favorece o progresso.  
-O equilíbrio será a chave deste período.`,
-
-3:`2º Momento Decisivo —
-Esta etapa traz expansão social, criatividade e necessidade de expressão pessoal.
-
-O desafio é manter foco e disciplina.  
-A criatividade se intensifica e novas oportunidades surgem.  
-A vida social tende a se expandir rapidamente.  
-É importante evitar dispersão e superficialidade.  
-Talentos comunicativos podem se desenvolver com facilidade.  
-A expressão pessoal torna-se essencial.  
-A motivação cresce através da interação com pessoas.  
-A alegria pode impulsionar conquistas importantes.  
-É necessário direcionar energia para objetivos concretos.  
-A disciplina garante resultados duradouros.  
-O excesso de entusiasmo pode gerar instabilidade.  
-O aprendizado ocorre por meio da experiência.  
-A comunicação abre portas e oportunidades.  
-A organização transforma ideias em realidade.  
-O equilíbrio entre prazer e responsabilidade será essencial.`,
-
-4:`2º Momento Decisivo —
-Este período representa construção, disciplina e preparação para estabilidade futura.
-
-O desafio é construir bases sólidas.  
-O trabalho passa a exigir dedicação e persistência.  
-A responsabilidade aumenta significativamente.  
-A organização torna-se essencial para o sucesso.  
-A disciplina será a principal aliada.  
-Resultados surgem através do esforço constante.  
-É um período de consolidação e amadurecimento.  
-A rotina pode se tornar necessária para crescimento.  
-O foco deve substituir a impulsividade.  
-O planejamento garante segurança futura.  
-A estabilidade começa a se formar.  
-A paciência se torna fundamental.  
-O progresso é gradual e seguro.  
-A determinação constrói conquistas duradouras.  
-A consistência define os resultados.`,
-
-5:`2º Momento Decisivo —
-Esta fase simboliza mudanças, liberdade e necessidade de adaptação.
-
-O desafio é aprender a se libertar com responsabilidade.  
-Mudanças inesperadas podem ocorrer com frequência.  
-A flexibilidade torna-se essencial.  
-A vida pede adaptação constante.  
-Novas experiências ampliam a visão de mundo.  
-O impulso por liberdade cresce intensamente.  
-É importante evitar impulsividade excessiva.  
-A curiosidade impulsiona descobertas importantes.  
-A transformação é inevitável.  
-A instabilidade deve ser administrada com sabedoria.  
-A experiência se torna a maior fonte de aprendizado.  
-O crescimento surge através das mudanças.  
-A coragem favorece novas oportunidades.  
-O equilíbrio evita perdas desnecessárias.  
-A liberdade consciente conduz ao progresso.`,
-
-6:`2º Momento Decisivo —
-Esta etapa destaca responsabilidade afetiva, vínculos e compromissos.
-
-O desafio é manter harmonia com as pessoas.  
-Relacionamentos ganham importância significativa.  
-A cooperação se torna essencial.  
-A pessoa aprende a compartilhar responsabilidades.  
-O compromisso fortalece conquistas.  
-A vida afetiva ganha destaque.  
-A maturidade emocional cresce intensamente.  
-É importante manter equilíbrio nas relações.  
-A empatia favorece oportunidades.  
-O individualismo deve ser reduzido.  
-A colaboração impulsiona o crescimento.  
-A harmonia cria estabilidade emocional.  
-O apoio mútuo gera segurança.  
-As parcerias trazem aprendizado valioso.  
-O equilíbrio emocional garante progresso.`,
-
-7:`2º Momento Decisivo —
-Este período favorece introspecção, aprendizado e redefinição de objetivos.
-
-O desafio é agir com praticidade.  
-A busca por conhecimento se intensifica.  
-O autoconhecimento torna-se essencial.  
-A reflexão orienta decisões importantes.  
-É necessário evitar isolamento excessivo.  
-A disciplina mental fortalece resultados.  
-A concentração se torna indispensável.  
-O desenvolvimento ocorre de dentro para fora.  
-A intuição cresce gradualmente.  
-O foco direciona o crescimento.  
-O aprendizado profundo traz sabedoria.  
-A preparação para novas fases se inicia.  
-O silêncio pode favorecer decisões importantes.  
-A mente busca respostas e direção.  
-A maturidade intelectual se fortalece.`,
-
-8:`2º Momento Decisivo —
-Esta fase está ligada à realização material, poder e conquistas.
-
-O desafio é agir com ética e responsabilidade.  
-O trabalho ganha intensidade.  
-A ambição cresce naturalmente.  
-A liderança se fortalece gradualmente.  
-O planejamento financeiro se torna essencial.  
-O autocontrole evita perdas.  
-Grandes oportunidades podem surgir.  
-A disciplina garante resultados concretos.  
-A confiança impulsiona conquistas.  
-O equilíbrio emocional favorece o sucesso.  
-A justiça torna-se fundamental.  
-A responsabilidade aumenta significativamente.  
-O esforço traz recompensas proporcionais.  
-A visão estratégica orienta decisões.  
-A prosperidade depende da disciplina.`,
-
-9:`2º Momento Decisivo —
-Este período representa transformação, desapego e amadurecimento emocional.
-
-O desafio é encerrar ciclos com sabedoria.  
-Mudanças profundas podem ocorrer.  
-A empatia se fortalece gradualmente.  
-O passado deve ser compreendido e superado.  
-A compaixão ganha destaque.  
-O crescimento interior se intensifica.  
-A maturidade emocional se amplia.  
-A vida pede renovação e evolução.  
-É momento de rever valores e objetivos.  
-O desapego traz libertação.  
-A consciência se expande.  
-A espiritualidade pode ganhar importância.  
-A transformação traz aprendizado profundo.  
-O encerramento prepara novos começos.  
-A evolução emocional se torna evidente.`
-},
-  
-
-3:{
-1:`3º Momento Decisivo —
-Nesta fase a maturidade já está consolidada e os resultados passam a depender diretamente da sua iniciativa, foco e determinação.
-
-3º Momento n°1
-É hora de sair da inércia e agir com coragem para realizar planos.  
-O período exige atenção ao ambiente e às oportunidades.  
-Será necessário reavaliar conquistas e redefinir objetivos.  
-As bases construídas anteriormente devem ser colocadas em prática.  
-O crescimento depende da disposição para se arriscar.  
-O desenvolvimento de habilidades continua essencial.  
-As relações sociais ganham importância estratégica.  
-Algumas amizades contribuirão, outras poderão prejudicar.  
-É necessário avaliar influências com cuidado.  
-A expansão social pode abrir novos caminhos.  
-O aperfeiçoamento constante será indispensável.  
-Os resultados serão proporcionais ao esforço aplicado.  
-A persistência fortalece as conquistas.  
-O foco determina o sucesso deste período.  
-A determinação conduz à realização.`,
-
-2:`3º Momento Decisivo —
-Este período exige equilíbrio emocional, cooperação e confiança para consolidar conquistas e seguir avançando.
-
-3º Momento n°2
-Podem surgir dúvidas se a autoestima não estiver fortalecida.  
-Será necessário manter a individualidade com flexibilidade.  
-Parcerias e cooperação tornam-se essenciais.  
-A paciência facilitará conquistas importantes.  
-Relacionamentos podem impulsionar resultados.  
-A impaciência poderá gerar atrasos e conflitos.  
-É momento de avaliar a realidade com clareza.  
-Evite ilusões e promessas vazias.  
-Aprenda com erros e aproveite acertos passados.  
-Este período separa passado e futuro.  
-A análise da própria trajetória será essencial.  
-A cooperação facilitará o crescimento.  
-A maturidade emocional favorece decisões.  
-A disciplina fortalece resultados.  
-A clareza conduz ao progresso.`,
-
-3:`3º Momento Decisivo —
-O foco e a disciplina tornam-se fundamentais para aproveitar oportunidades e alcançar reconhecimento.
-
-3º Momento n°3
-A concentração será a chave do sucesso.  
-Evite dispersar energia em atividades improdutivas.  
-É momento de expandir e ocupar novos espaços.  
-A sociabilidade pode abrir portas importantes.  
-A cooperação favorece conquistas.  
-Selecione bem amizades e parcerias.  
-Não force situações, permita que fluam naturalmente.  
-A organização evita sobrecarga e desgaste.  
-A responsabilidade precisa ser assumida.  
-A vida pede reorganização produtiva.  
-A experiência acumulada deve ser utilizada.  
-A disciplina garante estabilidade.  
-O crescimento depende da constância.  
-O equilíbrio evita desgaste emocional.  
-O foco conduz à realização.`,
-
-4:`3º Momento Decisivo —
-Este período favorece a construção definitiva de bases sólidas e duradouras para o futuro.
-
-3º Momento n°4
-Disciplina e dedicação serão essenciais.  
-Encare dificuldades de forma prática e realista.  
-Não permita que limitações impeçam o progresso.  
-O esforço contínuo trará resultados concretos.  
-A responsabilidade define os caminhos futuros.  
-Aprender a lidar com pressão será necessário.  
-Os resultados dependerão da dedicação aplicada.  
-A vida será vista de forma mais realista.  
-A confiança deve ser mantida.  
-A persistência gera conquistas duradouras.  
-O trabalho consistente fortalece a estabilidade.  
-O compromisso garante progresso.  
-A maturidade favorece segurança.  
-A determinação impulsiona resultados.  
-A dedicação conduz ao sucesso.`,
-
-5:`3º Momento Decisivo —
-Esta fase exige adaptação, mudanças e abertura para novas oportunidades.
-
-3º Momento n°5
-Será necessário abandonar o que já não serve.  
-Mudanças trarão crescimento e expansão.  
-A liberdade será conquistada através da adaptação.  
-Novas experiências ampliarão a visão de mundo.  
-Evite agir impulsivamente.  
-Mudanças podem ocorrer inesperadamente.  
-A prudência será essencial nas decisões.  
-A flexibilidade facilita o progresso.  
-A cautela evita instabilidade.  
-A experiência orienta escolhas importantes.  
-O equilíbrio emocional reduz riscos.  
-A adaptação fortalece o crescimento.  
-A mudança pode gerar oportunidades.  
-A calma favorece decisões assertivas.  
-A prudência garante estabilidade.`,
-
-6:`3º Momento Decisivo —
-Este período representa encerramentos, transições e preparação para uma nova etapa de vida.
-
-3º Momento n°6
-Novas ideias e conceitos devem ser incorporados.  
-Mudanças podem ocorrer de forma significativa.  
-A serenidade será essencial para o progresso.  
-O foco deve estar na felicidade e segurança.  
-Novas oportunidades podem surgir.  
-O equilíbrio emocional será indispensável.  
-A cooperação favorece resultados positivos.  
-Ajude sem abrir mão da individualidade.  
-Evite negligenciar suas necessidades.  
-O período favorece crescimento emocional.  
-A harmonia fortalece conquistas.  
-A adaptação facilita a evolução.  
-A experiência traz maturidade.  
-O equilíbrio conduz à estabilidade.  
-A transição prepara novos caminhos.`,
-
-7:`3º Momento Decisivo —
-Este momento pede propósito, autoconhecimento e renovação pessoal.
-
-3º Momento n°7
-É hora de redefinir valores e prioridades.  
-Deixe para trás o que não faz mais sentido.  
-Velhos hábitos e relações devem ser reavaliados.  
-Evite excesso de introspecção.  
-Aja com praticidade nas questões materiais.  
-Resolva pendências gradualmente.  
-Liberte-se de frustrações e ressentimentos.  
-Seja participativo e menos crítico.  
-A paciência será essencial.  
-A organização facilita o progresso.  
-Encare desafios com confiança.  
-O autoconhecimento fortalece decisões.  
-A disciplina garante evolução.  
-A persistência evita retrocessos.  
-O propósito conduz à transformação.`,
-
-8:`3º Momento Decisivo —
-Este pode ser um período de grandes conquistas e reconhecimento.
-
-3º Momento n°8
-Planejamento e organização serão essenciais.  
-O sucesso dependerá da dedicação.  
-A liderança ganha destaque.  
-Evite apego excessivo ao material.  
-A ganância pode gerar prejuízos.  
-Escolha bem parcerias e colaboradores.  
-A racionalidade favorece resultados.  
-A disciplina garante progresso.  
-A prudência evita problemas.  
-A maturidade fortalece decisões.  
-O esforço traz reconhecimento.  
-A ética protege conquistas.  
-A perseverança gera prosperidade.  
-O equilíbrio evita desgaste.  
-A dedicação conduz à realização.`,
-
-9:`3º Momento Decisivo —
-Este período favorece reflexão, encerramentos e fortalecimento dos valores pessoais.
-
-3º Momento n°9
-É hora de consolidar aprendizados.  
-Novas oportunidades podem surgir.  
-O reconhecimento será resultado das atitudes.  
-Relacione-se de forma mais humana e empática.  
-Resgate valores e relações importantes.  
-Finalize pendências do passado.  
-Evite julgamentos e preconceitos.  
-Busque crescimento pessoal e espiritual.  
-Promova mudanças positivas ao seu redor.  
-Valorize a condição humana.  
-A maturidade favorece sabedoria.  
-A experiência fortalece decisões.  
-O desapego traz liberdade emocional.  
-O encerramento prepara novos ciclos.  
-A evolução conduz à plenitude.`
-},
- 
-
-4:{
-1:`Quarto Momento Decisivo — Reflete o resultado de todas as decisões tomadas ao longo da vida. Nesta fase a maturidade permite compreender com clareza o propósito, a direção e a intencionalidade da própria jornada. Surge uma percepção profunda de significado, realização e consciência pessoal. Este é o momento das recompensas, da serenidade e da sabedoria.
-
-Quarto Momento  n°1
-Agora você possui condições de reunir suas ideias e agir com consciência do momento certo. Esta é a fase de assumir as consequências e colher os resultados das decisões tomadas anteriormente. Nada é irreversível, mas daqui em diante os resultados dependerão essencialmente de sua atitude. Será necessário manter foco absoluto em seus objetivos e promover mudanças necessárias para continuar avançando. Muitas vezes será preciso revisitar o passado, reavaliar ideias e atitudes para identificar o que ainda pode ser realizado e quais desafios permanecem. Este é o momento de sair da zona de conforto e agir com coragem. As bases já foram construídas; agora é hora de colocá-las em prática. Caso contrário, poderá surgir sensação de repetição e estagnação. Será preciso enfrentar limitações, retomar caminhos interrompidos e superar obstáculos antigos. O sucesso dependerá da sua iniciativa, determinação e capacidade de assumir a própria história com responsabilidade.`,
-
-2:`Quarto Momento Decisivo — Reflete o resultado de todas as decisões tomadas ao longo da vida. Nesta fase a maturidade permite compreender com clareza o propósito, a direção e a intencionalidade da própria jornada.
-
-Quarto Momento  n°2
-Este período simboliza a chegada do futuro que antes parecia distante e pode trazer insegurança diante do que ainda está por vir. Será necessário equilíbrio entre conquistas e sensibilidade nas relações. É um momento para fortalecer parcerias, aceitar ajuda e agir com cooperação. Se cultivar paciência e participação ativa na vida das pessoas, poderá viver fase de grandes realizações. Caso contrário, impaciência poderá gerar conflitos e atrasos. Este é um período de transição definitiva entre passado e futuro. Avalie sua trajetória para não repetir erros. Não é hora de buscar destaque individual, mas de construir alianças e concluir objetivos pendentes. Confie na criatividade, mas evite ilusões. Observe a realidade com clareza antes de decidir. Ouça conselhos, mas valorize apenas o que for útil.`,
-
-3:`Quarto Momento Decisivo — Reflete o resultado de todas as decisões tomadas ao longo da vida. Nesta fase a maturidade permite compreender com clareza o propósito, a direção e a intencionalidade da própria jornada.
-
-Quarto Momento  n°3
-Se a vida foi conduzida com sabedoria, este pode ser um período extremamente agradável. Surge satisfação com conquistas e liberdade para expressar ideias e sentimentos. Há energia, sociabilidade e sensação de reconhecimento. A prosperidade pode crescer em diversas áreas da vida. O desafio será compreender que a realização é consequência da superação dos obstáculos. É momento de ocupar a posição desejada, ampliar contatos e aproveitar a vida. Entretanto, será necessário organização para não acumular responsabilidades. Delegar tarefas será essencial. Este é o momento de valorizar conquistas e expressar sua experiência com maturidade e entusiasmo.`,
-
-4:`Quarto Momento Decisivo — Reflete o resultado de todas as decisões tomadas ao longo da vida. Nesta fase a maturidade permite compreender com clareza o propósito e a direção da própria jornada.
-
-Quarto Momento  n°4
-Este será um período de paciência, dedicação e realismo. Será necessário enfrentar limitações com coragem e perseverança. Agora você encara a realidade de forma mais clara, reconhecendo quem realmente é. Este é o momento de cumprir obrigações e assumir responsabilidades com maturidade. Os resultados serão proporcionais ao esforço aplicado. Apoiar familiares e pessoas próximas será importante, mas sem negligenciar suas próprias necessidades. Aprender a lidar com pressão sem perder a autoconfiança será fundamental. Com persistência, será possível conquistar objetivos ainda não alcançados.`,
-
-5:`Quarto Momento Decisivo — Reflete o resultado de todas as decisões tomadas ao longo da vida. Nesta fase surge uma compreensão profunda da jornada.
-
-Quarto Momento  n°5
-Este pode ser um período libertador. Surge a necessidade de abandonar o que se tornou obsoleto e iniciar novas experiências. Mudanças poderão parecer difíceis no início, mas trarão benefícios futuros. A liberdade aumenta, mas exige responsabilidade e prudência. Evite impulsividade e excessos. O equilíbrio será essencial para aproveitar as oportunidades. É momento de desenvolver habilidades negligenciadas e dar continuidade ao que foi iniciado anteriormente. O crescimento virá da adaptação consciente às mudanças.`,
-
-6:`Quarto Momento Decisivo — Reflete o resultado de todas as decisões tomadas ao longo da vida. A maturidade permite compreender novas responsabilidades.
-
-Quarto Momento  n°6
-Este período encerra uma fase importante e inicia outra. Parte das expectativas já foi alcançada, mas novos aprendizados surgem. Pode ser fase serena e harmoniosa se responsabilidades foram bem conduzidas. Caso contrário, poderá trazer desafios emocionais. É momento de cooperação, apoio e equilíbrio nas relações. Novas oportunidades surgem quando valores esquecidos são resgatados. A harmonia será alcançada ao ajudar os outros sem se anular. O equilíbrio entre dever e felicidade será a chave.`,
-
-7:`Quarto Momento Decisivo — Reflete o resultado de todas as decisões tomadas ao longo da vida e revela a essência construída ao longo da jornada.
-
-Quarto Momento  n°7
-Este período marca a busca pelo verdadeiro sentido da vida. Velhos hábitos e relações que perderam significado devem ser deixados para trás. Será necessário desapego e renovação interior. Determinação será essencial para concluir projetos abandonados. Resolver pendências será prioridade. Este é o momento de libertar-se de ressentimentos e seguir com leveza. A sabedoria adquirida permitirá redefinir prioridades e seguir confiante.`,
-
-8:`Quarto Momento Decisivo — Reflete o resultado de todas as decisões tomadas ao longo da vida e o momento das grandes realizações.
-Quarto Momento  n°8
-
-Este pode ser um período de reconhecimento e conquistas materiais. O controle da própria vida torna-se evidente. Será necessário planejamento, organização e disciplina para alcançar objetivos. Evite orgulho e ganância. O sucesso verdadeiro depende de ética e equilíbrio. Se agir com prudência e justiça, poderá alcançar reconhecimento duradouro e satisfação pessoal.`,
-
-9:`Quarto Momento Decisivo — Reflete o resultado de todas as decisões tomadas ao longo da vida e representa sabedoria e realização interior.
-Quarto Momento  n°9
-
-Este é um período de reconhecimento e crescimento espiritual. Você será valorizado por quem é, não pelo que aparenta. O momento favorece reconciliações, novos relacionamentos e expansão de horizontes. É tempo de encerrar pendências e libertar-se de julgamentos e preconceitos. A generosidade e a compreensão tornam-se prioridades. A maturidade permite aproveitar oportunidades com serenidade e discernimento.`
-
-}
-
-},
-  
-
-desafios:{
-1:{
-0:`Desafio 0 — O Desafio da Escolha
-
-Neste primeiro período da vida, a pessoa está em fase de formação do caráter e descoberta da própria identidade. Não existe um desafio único dominante, pois o maior aprendizado é justamente aprender a escolher. Desde cedo surgem pequenas decisões que começam a moldar o futuro e influenciar a personalidade. 
-
-A criança e o jovem são fortemente influenciados pelo ambiente, pela família e pelas experiências iniciais. Por isso, a indecisão e o desânimo podem surgir com facilidade. 
-
-O desafio aqui é desenvolver força de vontade, senso de direção e capacidade de tomar decisões conscientes. A pessoa precisa aprender a confiar em si mesma e compreender que toda escolha gera consequências.
-
-É necessário aprender a agir com autonomia, mesmo diante de dúvidas e inseguranças. Este desafio exige o desenvolvimento gradual da iniciativa, da disciplina e da responsabilidade. 
-
-Também pede equilíbrio emocional para lidar com erros e frustrações. A construção da identidade depende diretamente da capacidade de decidir e agir. Este período prepara a base do caráter e da maturidade futura.`,
-
-1:`Desafio 1 — Desenvolver a Iniciativa
-
-Durante a infância e a juventude surge a necessidade de aprender independência e autoconfiança. A pessoa será colocada em situações que exigirão posicionamento e defesa das próprias ideias. Será necessário escolher entre agradar os outros ou seguir suas convicções. 
-
-Este desafio exige coragem para agir e assumir responsabilidades desde cedo. O jovem aprende a lidar com frustrações e a fortalecer a própria vontade. Muitas experiências serão baseadas em tentativa e erro. A iniciativa precisa ser desenvolvida gradualmente. A timidez e a dependência devem ser superadas. 
-
-É importante aprender a agir sem esperar aprovação constante. A confiança no próprio julgamento torna-se essencial. Este desafio ensina liderança interior e determinação. O respeito próprio nasce da ação consciente. A autonomia emocional começa a se formar. Este período prepara a base da identidade pessoal.`,
-
-2:`Desafio 2 — Desenvolver a Autoconfiança
-
-Na fase inicial da vida, a sensibilidade é intensa e a autoestima ainda está sendo construída. A pessoa pode sentir insegurança e medo de julgamento. Este desafio exige vencer inibições e fortalecer a confiança interior. Será necessário aprender a confiar nos próprios instintos e habilidades. 
-
-Situações surgirão para testar a capacidade emocional. A comparação com outras pessoas pode gerar dúvidas. Por isso, a autovalorização deve ser desenvolvida gradualmente. A pessoa aprende a tomar decisões sem depender da aprovação externa. A timidez deve ser superada com prática e experiência. O equilíbrio emocional torna-se fundamental. Este desafio ensina segurança interior e confiança nas próprias capacidades.`,
-
-3:`Desafio 3 — Desenvolver a Competência
-
-Este desafio aparece durante o período escolar e social. A pessoa aprende a organizar ideias e desenvolver talentos. Surge a necessidade de expressar criatividade e inteligência. O desafio é aprender a concluir o que começa. A dispersão e a procrastinação devem ser controladas. 
-
-A responsabilidade cresce gradualmente. A disciplina começa a ser exigida. A pessoa aprende a lidar com críticas e expectativas. O reconhecimento vem com esforço e dedicação. Este desafio ensina organização, foco e produtividade.`,
-
-4:`Desafio 4 — Desenvolver a Disciplina
-
-Durante a infância e juventude, a disciplina precisa ser construída através de hábitos e rotina. A pessoa deve aprender organização, responsabilidade e constância. O desafio é evitar preguiça, desorganização e falta de foco. A persistência torna-se essencial para alcançar objetivos. O esforço contínuo gera resultados duradouros. A disciplina prepara para a vida adulta. Este desafio constrói estabilidade e responsabilidade.`,
-  
-5:`Desafio 5 — Desenvolver a Responsabilidade
-
-Durante a infância e a juventude surge o desejo de liberdade, curiosidade e experimentação. A pessoa sente necessidade de explorar o mundo e viver novas experiências, mas ainda não compreende totalmente as consequências de suas escolhas. Este desafio ensina a equilibrar liberdade e responsabilidade desde cedo. A impulsividade, a ansiedade e o desejo de prazer imediato precisam ser compreendidos e controlados. A criança e o jovem aprendem gradualmente que toda ação gera consequências e que escolhas impensadas podem trazer dificuldades futuras. Será necessário aprender limites, disciplina emocional e compromisso com aquilo que se inicia. 
-
-A pessoa precisa compreender que liberdade verdadeira exige maturidade e autocontrole. Este período ensina a importância de assumir compromissos, respeitar regras e desenvolver estabilidade emocional. Também é necessário aprender a lidar com frustrações sem fugir das responsabilidades. A formação do caráter depende da capacidade de assumir deveres desde cedo. Este desafio prepara a transição para a vida adulta com mais equilíbrio e consciência.`,
-
-6:`Desafio 6 — Desenvolver a Tolerância
-
-Desde os primeiros anos de vida surgem as experiências de convivência com família, escola e sociedade. A criança aprende que nem sempre o mundo funciona conforme seus desejos. Este desafio ensina empatia, compreensão e respeito pelas diferenças. 
-
-A pessoa pode sentir frustração ao perceber que não pode controlar tudo ao seu redor. Será necessário aprender a ouvir, ceder e conviver de forma harmoniosa com outras pessoas. O excesso de exigência e perfeccionismo deve ser suavizado com compreensão e flexibilidade. 
-
-Este período ensina que cada pessoa possui suas próprias ideias e valores. A tolerância começa a se desenvolver através da convivência e da cooperação. A pessoa aprende a respeitar limites e a agir com equilíbrio emocional. Este desafio constrói maturidade afetiva e capacidade de relacionamento saudável. A base da vida social é construída aqui.`,
-
-7:`Desafio 7 — Desenvolver a Confiança Interior
-
-Durante a infância e adolescência surgem medos, inseguranças e dúvidas sobre o próprio valor. A pessoa pode sentir necessidade de se proteger ou se isolar diante de dificuldades. Este desafio ensina a confiar em si mesma e desenvolver autoestima. Situações surgirão para fortalecer a coragem e a segurança emocional. 
-
-Será necessário aprender a lidar com críticas, frustrações e momentos de solidão. A confiança interior cresce com experiências e superação de obstáculos. A pessoa aprende a reconhecer suas qualidades e limitações. O medo deve ser transformado em aprendizado e crescimento. Este período constrói força emocional e autonomia psicológica. A confiança adquirida aqui será essencial na vida adulta.`,
-
-8:`Desafio 8 — Desenvolver o Equilíbrio e os Valores
-
-Na fase inicial da vida surgem os primeiros aprendizados sobre valores, justiça e responsabilidade. A pessoa começa a compreender o valor das conquistas e dos recursos materiais. Este desafio ensina equilíbrio entre desejo e consciência. A criança e o jovem precisam aprender que conquistas exigem esforço e dedicação. O senso de justiça e responsabilidade começa a se formar. 
-
-A pessoa aprende a lidar com recompensas, limites e consequências. É importante desenvolver ética, respeito e equilíbrio emocional. Este período prepara a base para lidar com poder, dinheiro e responsabilidades futuras. A maturidade começa a se consolidar através da compreensão de valores. Este desafio constrói caráter, equilíbrio e senso de justiça.`  
-
-  },
-
-2:{
-0:`Desafio 0 — O Desafio da Escolha (Fase Adulta)
-
-Na fase adulta, o desafio da escolha ganha um peso ainda maior. A vida já apresenta caminhos definidos, responsabilidades assumidas e consequências reais para cada decisão. Este período exige maturidade para escolher com consciência e responsabilidade. 
-
-A pessoa aprende que cada escolha molda diretamente o futuro. Surge a necessidade de alinhar decisões com valores pessoais. O desafio é manter foco, direção e coerência de propósito. 
-
-A indecisão pode gerar estagnação e frustração. A maturidade exige assumir consequências com coragem. Este período fortalece autonomia, clareza e responsabilidade nas escolhas.`,
-  
- 1:`Desafio 1 — Desenvolver a Iniciativa (Fase Adulta)
-
-Na fase adulta a vida exige decisões concretas, independência e posicionamento firme diante das circunstâncias. Este desafio marca o momento em que a pessoa deixa definitivamente a dependência emocional do passado e passa a assumir o controle da própria vida. As escolhas tornam-se mais sérias e as consequências mais visíveis. 
-
-Será necessário agir com coragem, assumir responsabilidades e confiar no próprio julgamento. Situações surgirão exigindo liderança, iniciativa e capacidade de decisão. A pessoa aprenderá que não pode esperar aprovação constante dos outros para agir. O medo de errar deve ser substituído pela coragem de tentar. Este período exige autonomia, autoconfiança e atitude prática. 
-
-A vida pede ação, movimento e coragem para iniciar novos projetos. O crescimento depende da capacidade de assumir riscos calculados. Este desafio fortalece identidade, liderança e independência.`,
-
-2:`Desafio 2 — Desenvolver a Autoconfiança (Fase Adulta)
-
-Durante a vida adulta surgem pressões sociais, profissionais e emocionais que testam a autoconfiança. A pessoa é desafiada a confiar em sua capacidade de decisão e julgamento. 
-
-Será necessário aprender a manter segurança emocional mesmo diante de críticas ou oposição. Este período exige equilíbrio entre sensibilidade e firmeza. 
-
-A pessoa aprende a confiar em suas competências e habilidades adquiridas ao longo da vida. Relações profissionais e pessoais exigirão diplomacia e maturidade emocional. O desafio é agir com segurança sem perder a empatia. 
-
-A confiança passa a ser construída através das experiências e conquistas. A insegurança deve ser transformada em aprendizado. Este período fortalece autoestima, estabilidade emocional e confiança nas próprias escolhas.`,
-
-3:`Desafio 3 — Desenvolver a Competência (Fase Adulta)
-
-A vida adulta exige produtividade, responsabilidade e eficiência. Este desafio ensina a organizar talentos e direcionar energia para objetivos concretos. A pessoa aprende a valorizar suas habilidades e a utilizá-las de forma prática. 
-
-O excesso de autocrítica pode gerar insegurança e bloqueios. Será necessário desenvolver disciplina mental e foco. O desafio pede equilíbrio entre responsabilidade e leveza emocional. 
-
-A pessoa deve aprender a administrar tempo, energia e prioridades. 
-
-A maturidade profissional cresce através da experiência. Este período exige organização, planejamento e constância. A competência se desenvolve com prática e dedicação contínua. Este desafio fortalece eficiência, responsabilidade e realização profissional.`,
-
-4:`Desafio 4 — Desenvolver a Disciplina (Fase Adulta)
-
-A fase adulta exige estrutura, organização e compromisso com objetivos de longo prazo. Este desafio representa a construção de estabilidade material e profissional. A pessoa aprende a valorizar planejamento, constância e esforço contínuo. 
-
-A vida pede responsabilidade, foco e persistência. A procrastinação e a dispersão devem ser superadas. Será necessário criar rotinas produtivas e manter consistência nas ações. O crescimento acontece através do trabalho disciplinado. Este período exige perseverança e visão prática da realidade. 
-
-A disciplina torna-se a base das conquistas futuras. Este desafio constrói segurança, estabilidade e realização duradoura.`,
-  
-5:`Desafio 5 — Desenvolver a Responsabilidade (Fase Adulta)
-
-Na fase adulta a liberdade precisa caminhar junto com responsabilidade. Este desafio ensina a equilibrar desejos pessoais com compromissos assumidos. A pessoa aprende que decisões impulsivas podem gerar consequências duradouras. A vida exige maturidade emocional e estabilidade nas escolhas. Será necessário aprender a administrar mudanças com prudência. 
-
-O desafio pede controle da impulsividade e equilíbrio emocional. Relacionamentos e carreira exigirão compromisso e constância. A pessoa aprende a construir bases sólidas para o futuro. A liberdade deixa de ser fuga e passa a ser escolha consciente. Este período fortalece maturidade, equilíbrio e responsabilidade nas decisões.`,
-
-6:`Desafio 6 — Desenvolver a Tolerância (Fase Adulta)
-
-A vida adulta traz convivência intensa com pessoas diferentes, exigindo compreensão e empatia. Este desafio ensina a respeitar opiniões, limites e diferenças. A pessoa aprende que não possui todas as respostas. Será necessário desenvolver flexibilidade emocional e maturidade nas relações. 
-
-O perfeccionismo e a rigidez devem ser transformados em compreensão. Este período pede equilíbrio entre idealismo e realidade. Relações familiares e profissionais exigirão cooperação. O desafio é agir com empatia sem perder identidade. A tolerância torna-se essencial para a harmonia emocional. Este período fortalece compreensão, empatia e maturidade nas relações.`,
-
-7:`Desafio 7 — Desenvolver a Confiança (Fase Adulta)
-
-Na vida adulta surgem situações que testam fé, coragem e autoconhecimento. Este desafio ensina a confiar em si mesmo e na vida. A pessoa aprende a superar medos e inseguranças acumuladas. Será necessário enfrentar dúvidas e incertezas com maturidade. 
-
-A introspecção torna-se ferramenta de crescimento pessoal. Este período exige equilíbrio entre razão e intuição. A pessoa aprende a pedir ajuda e aceitar apoio. A confiança se fortalece através das experiências vividas. O desafio é transformar medo em sabedoria. Este período fortalece autoconhecimento, confiança e maturidade emocional.`,
-
-8:`Desafio 8 — Desenvolver a Modéstia (Fase Adulta)
-
-Este desafio ensina a lidar com poder, dinheiro e conquistas com equilíbrio. A pessoa aprende a usar recursos de forma ética e responsável. O sucesso deve ser acompanhado de humildade e consciência. Será necessário evitar orgulho excessivo e materialismo. O desafio pede equilíbrio entre ambição e valores humanos. 
-
-A pessoa aprende a compartilhar conquistas e valorizar parcerias. O poder deve ser usado com sabedoria e justiça. Este período fortalece ética, equilíbrio e responsabilidade social. A verdadeira realização surge quando o sucesso beneficia também outras pessoas.`  
-  },
-
-3:{
-0:`Desafio 0 — O Desafio da Escolha (Fase Final da Vida)
-
-Na fase final da vida, o desafio da escolha assume um significado mais profundo e reflexivo. A pessoa passa a compreender que todas as decisões tomadas ao longo da existência construíram a realidade presente. Surge a necessidade de avaliar o caminho percorrido com honestidade e maturidade. Este período convida à sabedoria, ao desapego e à aceitação das próprias escolhas. É o momento de compreender que cada experiência teve um propósito no desenvolvimento pessoal. 
-
-A reflexão torna-se ferramenta essencial para encontrar paz interior. O desafio consiste em aceitar erros, valorizar acertos e compreender a própria história. A vida pede serenidade, compreensão e equilíbrio emocional. Surge a oportunidade de fortalecer o caráter e a consciência espiritual. 
-
-A pessoa aprende a escolher com base na sabedoria acumulada. O foco deixa de ser conquista e passa a ser significado. A clareza de valores torna-se prioridade. A aceitação substitui a ansiedade. O perdão torna-se libertador. A escolha consciente conduz à paz e à plenitude interior.`,
-
-1:`Desafio 1 — Desenvolver a Iniciativa (Fase Final da Vida)
-
-Neste período, o desafio da iniciativa assume um caráter de autonomia emocional e espiritual. A pessoa aprende a confiar plenamente em si mesma e em sua trajetória. Surge a necessidade de reafirmar a própria identidade com maturidade. 
-
-A independência torna-se interna e emocional. O desafio é manter coragem para continuar evoluindo e tomando decisões conscientes. A pessoa aprende que nunca é tarde para agir. Este período exige determinação para concluir projetos e resolver pendências. A autoconfiança deve ser mantida mesmo diante das limitações naturais da idade. O aprendizado consiste em agir com sabedoria e segurança. 
-
-A vida pede decisões firmes e coerentes com os próprios valores. Surge a necessidade de fortalecer a autoestima. O passado deixa de ser peso e torna-se aprendizado. A coragem transforma arrependimentos em crescimento. O objetivo é manter autonomia emocional. A iniciativa torna-se símbolo de liberdade interior.`,
-
-2:`Desafio 2 — Desenvolver a Autoconfiança (Fase Final da Vida)
-
-Na maturidade avançada, o desafio da autoconfiança torna-se essencial para manter a serenidade. A pessoa aprende a confiar em sua experiência e sabedoria acumuladas. Surge a necessidade de abandonar inseguranças e comparações. O desafio é reconhecer o próprio valor independentemente de reconhecimento externo. 
-
-A vida pede tranquilidade emocional e equilíbrio interior. A confiança deve vir da consciência de tudo o que foi vivido. Este período favorece a aceitação de si mesmo. A pessoa aprende a valorizar suas conquistas e aprendizados. 
-
-A insegurança dá lugar à sabedoria. O objetivo é fortalecer a paz interior. A maturidade traz clareza e discernimento. Surge a capacidade de confiar no próprio julgamento. A experiência torna-se fonte de segurança. A serenidade substitui a ansiedade. A autoconfiança torna-se base para viver com dignidade e equilíbrio.`,
-
-3:`Desafio 3 — Desenvolver a Competência (Fase Final da Vida)
-
-Neste período, a competência assume a forma de sabedoria prática e emocional. A pessoa aprende a utilizar sua experiência para orientar e inspirar outras pessoas. O desafio é valorizar a própria trajetória e reconhecer suas habilidades. Surge a necessidade de compartilhar conhecimento e aprendizados. A maturidade pede organização emocional e clareza mental. O objetivo é manter a mente ativa e produtiva. 
-
-A pessoa aprende a expressar ideias com segurança e serenidade. A experiência torna-se ferramenta de contribuição social. O desafio é evitar autocrítica excessiva e valorizar conquistas. A vida pede equilíbrio entre ação e reflexão. A competência torna-se legado. Surge o desejo de contribuir com o coletivo. 
-
-A sabedoria substitui a necessidade de aprovação. O aprendizado transforma-se em orientação para outros. A realização surge ao compartilhar conhecimento e experiência.`,
-
-4:`Desafio 4 — Desenvolver a Disciplina (Fase Final da Vida)
-
-Na fase final da vida, a disciplina torna-se sinônimo de equilíbrio e constância. A pessoa aprende a organizar sua vida com serenidade e propósito. Surge a necessidade de manter hábitos saudáveis e rotina equilibrada. O desafio é preservar a estabilidade emocional e mental. 
-
-A disciplina torna-se ferramenta de qualidade de vida. A maturidade exige responsabilidade consigo mesmo. O foco passa a ser bem-estar e harmonia. A pessoa aprende a valorizar o tempo de forma consciente. A organização traz tranquilidade e segurança. O objetivo é manter equilíbrio físico, mental e emocional. 
-
-A disciplina fortalece a autonomia e a independência. Surge a necessidade de simplificar a vida. O essencial ganha mais importância que o urgente. A constância gera estabilidade e paz interior. A disciplina torna-se base para uma vida serena e equilibrada.`,
-
-5:`Desafio 5 — Desenvolver a Responsabilidade (Fase Final da Vida)
-
-Neste período da vida, o desafio da responsabilidade ganha um significado mais profundo e consciente. A pessoa compreende que todas as experiências vividas exigem agora maturidade emocional para serem integradas com equilíbrio. Surge a necessidade de assumir plenamente as consequências das escolhas feitas ao longo da jornada. 
-
-O desafio é manter estabilidade emocional e agir com prudência diante das mudanças naturais da vida. A liberdade passa a ser vivida com responsabilidade e serenidade. É o momento de valorizar segurança, estabilidade e equilíbrio nas decisões. A pessoa aprende a lidar com mudanças sem impulsividade. A maturidade convida ao autocontrole e à reflexão antes de agir. O passado deixa de ser peso e torna-se aprendizado. 
-
-O objetivo é viver com consciência e responsabilidade emocional. Surge a necessidade de preservar relações importantes e manter harmonia. A estabilidade torna-se prioridade. A responsabilidade fortalece a segurança interior. O equilíbrio substitui a impulsividade. A vida pede prudência, maturidade e sabedoria.`,
-
-6:`Desafio 6 — Desenvolver a Tolerância (Fase Final da Vida)
-
-Na fase final da vida, o desafio da tolerância torna-se essencial para a paz interior. A pessoa aprende a aceitar diferenças e compreender as imperfeições humanas. Surge a necessidade de abandonar julgamentos rígidos e expectativas irreais. 
-
-O desafio é cultivar empatia e compreensão nas relações. A maturidade ensina que cada pessoa possui sua própria jornada. O objetivo é viver com mais leveza e aceitação. A tolerância fortalece vínculos e evita conflitos desnecessários. A pessoa aprende a valorizar o amor e a harmonia familiar. 
-
-O perdão torna-se ferramenta de libertação emocional. A vida pede compreensão e generosidade. Surge a necessidade de enxergar o mundo com mais compaixão. 
-
-O equilíbrio emocional substitui a crítica excessiva. A tolerância traz serenidade e paz interior. O aprendizado transforma-se em sabedoria emocional. A vida torna-se mais leve quando existe compreensão.`,
-
-7:`Desafio 7 — Desenvolver a Confiança (Fase Final da Vida)
-
-Este período traz o desafio de confiar na própria jornada e nos aprendizados adquiridos. A pessoa aprende a superar medos e inseguranças acumulados ao longo da vida. Surge a necessidade de fortalecer a fé em si mesma e na vida. 
-
-O desafio é abandonar o ceticismo e cultivar confiança interior. A maturidade convida à reflexão e ao autoconhecimento. A pessoa aprende a valorizar silêncio, introspecção e espiritualidade. 
-
-O objetivo é encontrar paz interior e significado. A confiança torna-se base para viver com serenidade. Surge a necessidade de aceitar o fluxo natural da vida. O autoconhecimento traz segurança emocional. 
-
-A sabedoria substitui a dúvida constante. A pessoa aprende a confiar na própria intuição. O passado transforma-se em fonte de aprendizado. A confiança interior fortalece a estabilidade emocional. A vida pede serenidade, fé e aceitação.`,
-
-8:`Desafio 8 — Desenvolver a Modéstia (Fase Final da Vida)
-
-Na maturidade, o desafio da modéstia convida à reflexão sobre o verdadeiro valor das conquistas. A pessoa aprende a enxergar poder e recursos com equilíbrio e sabedoria. Surge a necessidade de utilizar experiência e conhecimento para beneficiar outras pessoas. 
-
-O desafio é abandonar orgulho excessivo e cultivar humildade. A vida pede simplicidade e gratidão. A maturidade ensina que reconhecimento verdadeiro vem da contribuição ao coletivo. 
-
-O objetivo é valorizar o legado construído. A pessoa aprende a compartilhar conhecimento e experiências. O sucesso passa a ser medido pela contribuição humana. Surge a necessidade de agir com justiça e generosidade. A modéstia fortalece relações e traz equilíbrio emocional. 
-
-O poder torna-se ferramenta de auxílio e orientação. A sabedoria substitui a ambição excessiva. A vida pede equilíbrio, dignidade e generosidade. A modéstia conduz à realização e à paz interior.`
-}
-},
 
 anoPessoal:{
 1:`ANO PESSOAL 1 — INÍCIO DE CICLO, AÇÃO E RENOVAÇÃO
@@ -2798,70 +1126,535 @@ Evite resistir às mudanças. Finalizações são necessárias para novos começ
 Este é o ano de encerramento, cura e preparação para uma nova fase da vida.`  
   },
 
-  deficiencias: {
-    1:`Deficiência n°1
- Você precisa desenvolver mais iniciativa e determinação em sua vida. A vontade deve ser fortalecida, aprendendo a agir com independência e segurança. Será necessário defender suas ideias e tomar decisões próprias com firmeza. 
- 
- A vida colocará pessoas fortes em seu caminho para que aprenda a se posicionar e se impor. Trabalhe sua autoconfiança e confie mais em suas habilidades. 
-    
-Evite procrastinar e não se anule diante das opiniões alheias. Aprenda a agir sem medo do julgamento. Fortaleça sua coragem para iniciar novos projetos. Evite depender de outras pessoas para agir. Acredite no próprio potencial e desenvolva autonomia emocional.
+const textosSinastria = {
 
-Consequências: até aprender essa lição poderá sentir desmotivação, indecisão e medo de arriscar. Pode tornar-se dependente de orientação externa, submisso e inseguro para tomar decisões importantes.`,
-2:`Deficiência n°2
-Você deve desenvolver diplomacia, flexibilidade e cooperação. Aprenda a trabalhar em equipe e agir com sensibilidade às necessidades dos outros. Nem sempre será necessário receber reconhecimento por tudo que faz. 
+  // ENERGIA 1
+  "1-1": `
+<h3>Harmonia Conjugal – Energia 1 com Energia 1</h3>
 
-Desenvolva empatia, escuta e capacidade de conciliar ideias. Evite impor suas opiniões de forma rígida. Aprenda a colaborar, fazer parcerias e agir com equilíbrio emocional. Seja mais sociável e aberto a relacionamentos. Trabalhe a confiança nas interações humanas. 
+<p>Quando duas pessoas com Energia 1 se encontram, a relação é marcada por intensidade, independência e forte desejo de realização. Ambos possuem personalidade determinada, iniciativa natural e vontade constante de conquistar novos desafios. Essa dupla dificilmente se acomoda, pois o número 1 vibra ação, liderança e individualidade.</p>
 
-A diplomacia será essencial para alcançar seus objetivos.
-Consequências: até aprender essa lição poderá evitar interações sociais, sentir timidez e isolamento, dificultando projetos e realizações pessoais.`,
-3:`Deficiência n°3
-Você precisa aprender a se expressar com leveza e confiança. A autocrítica excessiva pode gerar insegurança e timidez. Evite buscar perfeição impossível em tudo que faz. 
+<p>O ponto positivo dessa união está no incentivo mútuo ao crescimento. Existe admiração pela coragem, pela força de vontade e pela capacidade de enfrentar obstáculos. O casal compartilha o desejo de liberdade e progresso, podendo transformar a relação em uma parceria dinâmica, cheia de projetos, aventuras e metas ousadas. Essa combinação também favorece empreendimentos em conjunto, já que ambos possuem espírito empreendedor.</p>
 
-Desenvolva alegria, espontaneidade e comunicação aberta. Aprenda a ouvir críticas sem se sentir atacado. Permita-se ser mais descontraído e bem-humorado. Trabalhe a expressão de ideias e emoções com naturalidade. Desenvolva confiança ao falar e se posicionar. 
-Aceite suas imperfeições com maturidade.
+<p>Por outro lado, a mesma intensidade que une também pode gerar conflitos. Dois números 1 juntos podem disputar liderança, entrar em competição ou ter dificuldade em ceder, pois nenhum deles aprecia sentir-se controlado. A impaciência e o orgulho podem provocar discussões, especialmente quando falta flexibilidade emocional.</p>
 
-Consequências: até aprender essa lição poderá sentir-se inibido, irritadiço e incompreendido, prejudicando relações e oportunidades profissionais.`,
-4:`Deficiência n°4
-Você precisa desenvolver disciplina, organização e perseverança. É necessário construir bases sólidas para sua vida. Aprenda a aceitar regras e cumprir responsabilidades com dedicação. 
+<p>Para que essa combinação floresça, é essencial que aprendam a trabalhar em equipe sem anular a individualidade de cada um. Quando transformam a competitividade em motivação e o ego em incentivo mútuo, formam uma dupla poderosa. Respeitando os espaços pessoais e celebrando as conquistas juntos, dois números 1 podem construir uma relação forte, produtiva e cheia de realizações.</p>
+`,
+  "1-2": `
+<h3>Harmonia Conjugal – Energia 1 com Energia 2</h3>
 
-Desenvolva paciência e constância nos projetos. Aja com método, planejamento e responsabilidade. Seja coerente e persistente em seus objetivos. Trabalhe a organização e o foco nas tarefas. Aprenda a valorizar rotina e estabilidade.
+<p>A união entre a Energia 1 e a Energia 2 representa o encontro entre ação e sensibilidade. O número 1 traz iniciativa, liderança e independência, enquanto o número 2 vibra diplomacia, empatia e desejo de cooperação. Essa combinação cria uma dinâmica complementar, na qual força e delicadeza precisam aprender a caminhar juntas.</p>
 
-Consequências: até aprender essa lição poderá sentir-se perdido, desmotivado e frustrado, trabalhando muito para obter poucos resultados.`,
-5:`Deficiência n°5
-Você precisa aprender a arriscar mais e viver novas experiências. Supere o medo da mudança e da liberdade. Amplie sua visão de mundo e desenvolva adaptabilidade. 
+<p>Nos aspectos positivos, essa relação pode ser extremamente equilibrada. O número 2 oferece apoio emocional, compreensão e harmonia, ajudando o número 1 a suavizar atitudes impulsivas. Já o número 1 proporciona direção, coragem e segurança, incentivando o número 2 a desenvolver mais confiança e determinação. Quando existe respeito, formam uma parceria estável e produtiva.</p>
 
-Aprenda com experiências ao invés de agir impulsivamente. Controle a impulsividade e busque equilíbrio. Seja mais sociável e aberto ao novo. Desenvolva coragem para explorar oportunidades. Aprenda a lidar com mudanças com maturidade.
+<p>Os desafios surgem quando o número 1 se torna autoritário ou impaciente, desconsiderando a sensibilidade do número 2. Por outro lado, o número 2 pode se tornar excessivamente dependente ou inseguro, o que pode frustrar o espírito independente do número 1. Se não houver equilíbrio, a relação pode oscilar entre liderança excessiva e submissão emocional.</p>
 
-Consequências: até aprender essa lição poderá enfrentar instabilidade, frustrações e dificuldade em se firmar profissionalmente.`,
-6:`Deficiência n°6
-Você precisa desenvolver comprometimento emocional e responsabilidade afetiva. Aprenda a demonstrar sentimentos e estabelecer vínculos duradouros. Desenvolva empatia, carinho e compreensão. 
+<p>Para que essa harmonia floresça, é fundamental que o número 1 aprenda a valorizar a importância da paciência e do diálogo, enquanto o número 2 desenvolve firmeza e autoconfiança. Quando ambos compreendem que não competem, mas se complementam, essa combinação pode gerar uma união forte, equilibrada e emocionalmente enriquecedora.</p>
+`,
+ "1-3": `
+<h3>Harmonia Conjugal – Energia 1 com Energia 3</h3>
 
-Evite controlar pessoas ou relações. Trabalhe a maturidade emocional e a aceitação das diferenças. 
+<p>A combinação entre a Energia 1 e a Energia 3 cria uma relação dinâmica, estimulante e marcada por forte expressão individual. O número 1 representa liderança, iniciativa e determinação, enquanto o número 3 vibra comunicação, criatividade e entusiasmo. Juntos, formam um casal que tende a viver experiências intensas e movimentadas, com constante troca de ideias e estímulos.</p>
 
-Desenvolva relações sinceras e equilibradas. Aprenda a lidar com responsabilidades afetivas com serenidade.
+<p>Nos aspectos positivos, essa união favorece crescimento e inspiração mútua. O número 3 ajuda o número 1 a desenvolver leveza emocional e maior flexibilidade, enquanto o número 1 oferece foco e direção para que o número 3 transforme ideias em realizações concretas. Existe admiração recíproca: o 3 valoriza a coragem do 1, e o 1 sente-se energizado pelo otimismo e pela espontaneidade do 3.</p>
 
-Consequências: até aprender essa lição poderá sentir solidão, carência afetiva e dificuldades em manter relacionamentos estáveis.`,
-7:`Deficiência n°7
-Você precisa aprofundar conhecimentos e confiar mais nas pessoas. Evite isolamento excessivo e desconfiança constante. Desenvolva comunicação emocional e expressão de sentimentos. 
+<p>Os desafios surgem quando a impulsividade do número 1 se torna excessiva ou quando a dispersão natural do número 3 gera instabilidade. O número 1 pode enxergar o 3 como pouco disciplinado, enquanto o número 3 pode considerar o 1 rígido ou autoritário. Diferenças de ritmo e prioridade podem provocar atritos se não houver diálogo e compreensão.</p>
 
-Aprenda a equilibrar introspecção com convivência social. Busque autoconhecimento sem se afastar da realidade. Trabalhe a confiança e a objetividade nas decisões.
+<p>Para que essa combinação prospere, é essencial que o número 1 respeite a liberdade criativa do número 3 e que o número 3 reconheça a importância da determinação e da organização trazidas pelo número 1. Quando equilibrados, formam um casal carismático, criativo e capaz de transformar entusiasmo em conquistas duradouras.</p>
+`,
+  "1-4": `
+<h3>Harmonia Conjugal – Energia 1 com Energia 4</h3>
 
-Consequências: até aprender essa lição poderá sentir indecisão, insegurança e dificuldade em realizar sonhos e objetivos.`,
-8:`Deficiência n°8
-Você precisa desenvolver prudência e responsabilidade com recursos materiais. Aprenda a administrar bens com equilíbrio e honestidade. Valorize disciplina financeira e organização. 
+<p>A união entre a Energia 1 e a Energia 4 é marcada pelo encontro entre iniciativa e estrutura. O número 1 representa liderança, coragem e impulso criador, enquanto o número 4 simboliza disciplina, estabilidade e senso prático. Essa combinação tende a formar uma parceria sólida, onde ação e organização caminham juntas.</p>
 
-Evite decisões impulsivas relacionadas ao dinheiro. Desenvolva responsabilidade e visão prática.
+<p>Nos aspectos positivos, o número 1 inspira o 4 a ousar mais e a expandir seus horizontes, enquanto o número 4 oferece ao 1 base, planejamento e persistência para transformar ideias em resultados concretos. Existe complementaridade natural: o 1 inicia, o 4 consolida. Juntos, podem construir projetos duradouros e alcançar objetivos com consistência.</p>
 
-Consequências: até aprender essa lição poderá enfrentar instabilidade financeira e dificuldades em administrar recursos e oportunidades.`,
-9:`Deficiência n°9
-Você precisa desenvolver altruísmo e compaixão. Aprenda a enxergar a vida de forma mais ampla e generosa. 
+<p>Os desafios aparecem quando o número 1 se torna impaciente diante da cautela do 4, ou quando o 4 se mostra excessivamente rígido frente à impulsividade do 1. Diferenças no ritmo de ação podem gerar tensão, principalmente se faltar flexibilidade emocional ou abertura para adaptação.</p>
 
-Desenvolva tolerância, empatia e solidariedade. Aprenda a abrir mão do orgulho e perdoar. 
+<p>Para que essa relação prospere, o número 1 deve reconhecer o valor da disciplina e da estabilidade trazidas pelo 4, enquanto o número 4 precisa aceitar a necessidade de inovação e movimento do 1. Quando existe respeito mútuo, essa combinação forma uma base forte, equilibrada e orientada para conquistas sólidas ao longo do tempo.</p>
+`,
+"1-5": `
+<h3>Harmonia Conjugal – Energia 1 com Energia 5</h3>
 
-Trabalhe a compreensão e a visão humanitária.
+<p>A combinação entre a Energia 1 e a Energia 5 cria uma relação intensa, dinâmica e marcada pelo desejo de liberdade. O número 1 representa liderança, iniciativa e determinação, enquanto o número 5 vibra movimento, versatilidade e espírito aventureiro. Juntos, formam um casal que dificilmente se acomoda na rotina e busca constantemente novas experiências.</p>
 
-Consequências: enfrentará desafios emocionais que estimularão crescimento espiritual e sensibilidade humana.`
+<p>Nos aspectos positivos, essa união é estimulante e cheia de vitalidade. O número 5 incentiva o número 1 a ser mais flexível e aberto a mudanças, enquanto o número 1 oferece direção e foco para que o 5 canalize sua energia de forma produtiva. Existe forte atração pela independência mútua, o que pode fortalecer o respeito individual dentro da relação.</p>
 
+<p>Os desafios surgem quando o número 1 tenta impor controle ou quando o número 5 demonstra instabilidade ou necessidade excessiva de liberdade. O 1 pode sentir insegurança diante da imprevisibilidade do 5, enquanto o 5 pode se sentir limitado pela intensidade e pelo desejo de domínio do 1. A falta de equilíbrio pode gerar conflitos ligados à autonomia e compromisso.</p>
+
+<p>Para que essa combinação funcione, é fundamental que o número 1 desenvolva maior flexibilidade e que o número 5 compreenda a importância da responsabilidade emocional. Quando há maturidade, essa união pode se tornar vibrante, moderna e cheia de crescimento, mantendo a chama da paixão e da motivação sempre acesa.</p>
+`,
+ "1-6": `
+<h3>Harmonia Conjugal – Energia 1 com Energia 6</h3>
+
+<p>A união entre a Energia 1 e a Energia 6 combina liderança com responsabilidade afetiva. O número 1 representa iniciativa, independência e ambição, enquanto o número 6 vibra amor, cuidado, proteção e compromisso com a família. Essa combinação pode gerar uma relação intensa, onde força e afeto precisam encontrar equilíbrio.</p>
+
+<p>Nos aspectos positivos, o número 6 oferece ao número 1 estabilidade emocional e apoio constante, criando um ambiente seguro para que o 1 conquiste seus objetivos. O número 1, por sua vez, traz dinamismo e direção à relação, estimulando o 6 a sair da zona de conforto e expandir seus horizontes. Quando alinhados, formam uma parceria produtiva e voltada à construção de algo sólido.</p>
+
+<p>Os desafios aparecem quando o número 1 prioriza excessivamente suas metas pessoais e o número 6 sente falta de atenção ou valorização emocional. O 6 pode se tornar controlador por excesso de cuidado, enquanto o 1 pode reagir com impaciência diante de cobranças afetivas. Diferenças na forma de demonstrar amor podem gerar conflitos se não houver diálogo claro.</p>
+
+<p>Para que essa combinação prospere, o número 1 deve reconhecer a importância do compromisso emocional trazido pelo 6, enquanto o número 6 precisa respeitar a necessidade de autonomia do 1. Quando há maturidade e equilíbrio, essa união pode resultar em uma relação estável, protetora e orientada para realizações duradouras.</p>
+`,
+"1-7": `
+<h3>Harmonia Conjugal – Energia 1 com Energia 7</h3>
+
+<p>A combinação entre a Energia 1 e a Energia 7 une ação e profundidade. O número 1 simboliza liderança, iniciativa e impulso para conquistas externas, enquanto o número 7 representa introspecção, análise e busca por conhecimento interior. Essa relação tende a ser marcada por contrastes entre dinamismo e reflexão.</p>
+
+<p>Nos aspectos positivos, o número 1 pode estimular o 7 a confiar mais na própria capacidade de agir e se expor ao mundo, enquanto o número 7 oferece ao 1 sabedoria, estratégia e visão mais profunda das situações. Existe potencial para crescimento intelectual e espiritual quando ambos aprendem a respeitar suas diferenças naturais.</p>
+
+<p>Os desafios surgem quando o número 1 interpreta a reserva do 7 como frieza ou distanciamento, e o número 7 percebe o 1 como impulsivo ou superficial. O ritmo acelerado do 1 pode incomodar o 7, que precisa de tempo para refletir e processar emoções. A falta de compreensão pode gerar afastamento emocional.</p>
+
+<p>Para que essa união funcione, o número 1 deve desenvolver paciência e aprender a valorizar a profundidade do 7, enquanto o número 7 precisa evitar isolamento excessivo e comunicar suas necessidades com clareza. Quando equilibrados, podem formar uma parceria que une coragem e sabedoria, ação e consciência.</p>
+`,
+"1-8": `
+<h3>Harmonia Conjugal – Energia 1 com Energia 8</h3>
+
+<p>A união entre a Energia 1 e a Energia 8 é marcada por ambição, liderança e forte desejo de realização material. O número 1 representa iniciativa, coragem e impulso pioneiro, enquanto o número 8 simboliza poder, estratégia e capacidade de administração. Essa combinação tende a formar um casal determinado, voltado para conquistas concretas e crescimento financeiro ou profissional.</p>
+
+<p>Nos aspectos positivos, o número 1 traz dinamismo e ousadia, abrindo caminhos e iniciando projetos, enquanto o número 8 contribui com visão estratégica e habilidade para estruturar e consolidar resultados. Existe grande potencial para prosperidade quando ambos trabalham em parceria, unindo iniciativa e planejamento.</p>
+
+<p>Os desafios surgem quando a disputa por liderança ou controle se intensifica. Tanto o 1 quanto o 8 possuem personalidade forte e podem entrar em conflitos de poder. Se não houver equilíbrio, a relação pode se tornar competitiva, com dificuldades para dividir decisões ou ceder espaço.</p>
+
+<p>Para que essa combinação prospere, é fundamental que aprendam a compartilhar responsabilidades e respeitar a autoridade um do outro. Quando existe maturidade emocional e foco comum, essa união pode se tornar extremamente produtiva, poderosa e orientada para grandes realizações.</p>
+`,
+"1-9": `
+<h3>Harmonia Conjugal – Energia 1 com Energia 9</h3>
+
+<p>A combinação entre a Energia 1 e a Energia 9 une individualidade e altruísmo. O número 1 representa liderança, iniciativa e foco em conquistas pessoais, enquanto o número 9 vibra compaixão, generosidade e visão humanitária. Essa relação pode ser marcada por intensidade emocional e forte senso de propósito.</p>
+
+<p>Nos aspectos positivos, o número 9 amplia a visão do número 1, incentivando-o a agir com mais consciência coletiva e sensibilidade. O número 1, por sua vez, oferece direção e coragem para que o 9 transforme ideais em ações concretas. Quando equilibrados, formam uma união inspiradora, capaz de unir força e empatia.</p>
+
+<p>Os desafios surgem quando o número 1 se mostra excessivamente individualista ou quando o número 9 se sacrifica além do necessário. O 1 pode enxergar o 9 como emocional demais, enquanto o 9 pode considerar o 1 centrado apenas em si. Diferenças na forma de lidar com sentimentos e prioridades podem gerar conflitos.</p>
+
+<p>Para que essa combinação prospere, é essencial que o número 1 desenvolva maior sensibilidade e que o número 9 estabeleça limites saudáveis. Quando existe equilíbrio, essa união pode resultar em crescimento espiritual, maturidade emocional e uma relação que une ação e propósito elevado.</p>
+`,
+
+  // ENERGIA 2
+"2-2": `
+<h3>Harmonia Conjugal – Energia 2 com Energia 2</h3>
+
+<p>A união entre duas Energias 2 é marcada por sensibilidade, cooperação e forte conexão emocional. O número 2 vibra empatia, diplomacia e necessidade de parceria, o que torna essa combinação naturalmente voltada para o diálogo e o entendimento mútuo. É uma relação baseada em apoio recíproco e busca constante por harmonia.</p>
+
+<p>Nos aspectos positivos, ambos valorizam o companheirismo e demonstram cuidado genuíno um pelo outro. Existe grande capacidade de escuta, compreensão e adaptação, o que favorece estabilidade afetiva. Essa combinação tende a evitar conflitos diretos, priorizando o equilíbrio emocional e a preservação da união.</p>
+
+<p>Os desafios surgem quando a sensibilidade excessiva gera insegurança ou dependência emocional. Dois números 2 podem evitar confrontos importantes por medo de desagradar, acumulando sentimentos não expressos. A falta de firmeza nas decisões também pode tornar a relação vulnerável a influências externas.</p>
+
+<p>Para que essa união prospere, é essencial que ambos desenvolvam maior assertividade e aprendam a expressar suas necessidades com clareza. Quando equilibrados, formam um casal extremamente harmonioso, afetuoso e capaz de construir uma relação estável baseada no respeito e na cooperação.</p>
+`,
+"2-3": `
+<h3>Harmonia Conjugal – Energia 2 com Energia 3</h3>
+
+<p>A combinação entre a Energia 2 e a Energia 3 une sensibilidade e expressão. O número 2 representa empatia, diplomacia e necessidade de parceria, enquanto o número 3 vibra comunicação, criatividade e entusiasmo. Essa relação tende a ser leve, sociável e emocionalmente conectada, quando há equilíbrio entre sentimento e expressão.</p>
+
+<p>Nos aspectos positivos, o número 3 traz alegria e espontaneidade para a vida do número 2, estimulando maior confiança e abertura emocional. O número 2, por sua vez, oferece apoio, compreensão e estabilidade afetiva, ajudando o 3 a manter vínculos mais profundos e consistentes. Existe potencial para uma relação comunicativa e cheia de troca emocional.</p>
+
+<p>Os desafios surgem quando o número 3 demonstra dispersão ou superficialidade emocional, o que pode gerar insegurança no número 2. Já o 2 pode se tornar excessivamente sensível ou dependente, sentindo-se afetado por palavras ou atitudes impulsivas do 3. Diferenças na forma de lidar com emoções podem provocar mal-entendidos.</p>
+
+<p>Para que essa combinação prospere, o número 3 deve cultivar maior responsabilidade emocional, enquanto o número 2 precisa fortalecer sua autoconfiança. Quando existe maturidade, essa união pode se tornar harmoniosa, criativa e emocionalmente enriquecedora, equilibrando sensibilidade e expressão.</p>
+`,
+"2-4": `
+<h3>Harmonia Conjugal – Energia 2 com Energia 4</h3>
+
+<p>A união entre a Energia 2 e a Energia 4 combina sensibilidade e estabilidade. O número 2 representa diplomacia, empatia e necessidade de conexão emocional, enquanto o número 4 simboliza disciplina, responsabilidade e estrutura. Essa relação tende a buscar segurança e construção sólida ao longo do tempo.</p>
+
+<p>Nos aspectos positivos, o número 4 oferece base, compromisso e organização, proporcionando ao número 2 a sensação de segurança emocional que tanto valoriza. O número 2, por sua vez, traz suavidade e compreensão, ajudando o 4 a desenvolver maior flexibilidade e sensibilidade nas relações. Juntos, podem formar uma parceria estável e confiável.</p>
+
+<p>Os desafios surgem quando o número 4 demonstra rigidez excessiva ou dificuldade em expressar sentimentos, o que pode gerar insegurança no número 2. Já o número 2 pode se mostrar indeciso ou excessivamente emocional, o que pode frustrar o senso prático do 4. Diferenças no modo de agir e reagir precisam ser administradas com maturidade.</p>
+
+<p>Para que essa combinação prospere, é essencial que o número 4 aprenda a expressar emoções com mais abertura e que o número 2 desenvolva firmeza nas decisões. Quando equilibrados, constroem uma relação baseada em confiança, estabilidade e apoio mútuo.</p>
+`,
+"2-5": `
+<h3>Harmonia Conjugal – Energia 2 com Energia 5</h3>
+
+<p>A combinação entre a Energia 2 e a Energia 5 une sensibilidade e liberdade. O número 2 representa empatia, parceria e necessidade de estabilidade emocional, enquanto o número 5 vibra movimento, mudança e desejo de independência. Essa relação pode ser estimulante, mas exige equilíbrio entre segurança e autonomia.</p>
+
+<p>Nos aspectos positivos, o número 5 traz entusiasmo e novas experiências para a vida do número 2, incentivando-o a sair da zona de conforto. O número 2 oferece apoio emocional e compreensão, criando um espaço afetivo onde o 5 pode se sentir acolhido. Quando existe respeito mútuo, a relação pode ser dinâmica e emocionalmente enriquecedora.</p>
+
+<p>Os desafios surgem quando o número 5 demonstra instabilidade ou necessidade excessiva de liberdade, gerando insegurança no número 2. Já o número 2 pode se tornar dependente ou excessivamente sensível, o que pode fazer o 5 sentir-se pressionado. Diferenças na forma de lidar com compromisso podem provocar conflitos.</p>
+
+<p>Para que essa união prospere, o número 2 deve fortalecer sua autoconfiança e evitar apego excessivo, enquanto o número 5 precisa cultivar responsabilidade emocional e constância. Quando existe maturidade, essa combinação pode unir sensibilidade e aventura de maneira equilibrada.</p>
+`,
+"2-6": `
+<h3>Harmonia Conjugal – Energia 2 com Energia 6</h3>
+
+<p>A união entre a Energia 2 e a Energia 6 é marcada por afeto, cuidado e forte necessidade de vínculo emocional. O número 2 representa sensibilidade, parceria e diplomacia, enquanto o número 6 simboliza amor, responsabilidade e dedicação à família. Essa combinação tende a formar uma relação acolhedora e voltada para estabilidade afetiva.</p>
+
+<p>Nos aspectos positivos, ambos valorizam o compromisso e a construção de um ambiente harmonioso. O número 6 oferece proteção, segurança e senso de responsabilidade, enquanto o número 2 contribui com empatia, compreensão e capacidade de adaptação. Juntos, podem criar uma união baseada em apoio mútuo e cuidado genuíno.</p>
+
+<p>Os desafios surgem quando a sensibilidade do número 2 encontra o excesso de responsabilidade ou controle do número 6. O 6 pode assumir postura protetora em excesso, enquanto o 2 pode demonstrar insegurança ou dificuldade em impor limites. A dependência emocional pode se tornar um ponto de tensão se não houver equilíbrio.</p>
+
+<p>Para que essa combinação prospere, é fundamental que ambos desenvolvam autonomia emocional e comunicação clara. Quando existe maturidade, essa união tende a ser estável, amorosa e orientada para construção de laços duradouros e sólidos.</p>
+`,
+"2-7": `
+<h3>Harmonia Conjugal – Energia 2 com Energia 7</h3>
+
+<p>A combinação entre a Energia 2 e a Energia 7 une sensibilidade e profundidade. O número 2 representa empatia, parceria e necessidade de conexão emocional, enquanto o número 7 vibra introspecção, análise e busca por conhecimento interior. Essa relação tende a ser marcada por forte intensidade emocional e reflexiva.</p>
+
+<p>Nos aspectos positivos, o número 2 ajuda o 7 a se abrir emocionalmente e a confiar mais na troca afetiva, enquanto o número 7 oferece ao 2 visão profunda, sabedoria e maturidade intelectual. Quando há equilíbrio, formam uma união que pode crescer tanto emocional quanto espiritualmente.</p>
+
+<p>Os desafios surgem quando o número 7 demonstra distanciamento ou excesso de reserva, o que pode gerar insegurança no número 2. Já o número 2 pode se mostrar sensível demais, pressionando o 7 por respostas emocionais imediatas. Diferenças no modo de expressar sentimentos podem criar ruídos na comunicação.</p>
+
+<p>Para que essa combinação prospere, o número 7 precisa aprender a compartilhar seus pensamentos e emoções com maior abertura, enquanto o número 2 deve desenvolver segurança interna e evitar dependência emocional. Quando há compreensão mútua, essa união pode ser profunda, intuitiva e enriquecedora.</p>
+`,
+"2-8": `
+<h3>Harmonia Conjugal – Energia 2 com Energia 8</h3>
+
+<p>A união entre a Energia 2 e a Energia 8 combina sensibilidade e poder de realização. O número 2 representa diplomacia, empatia e necessidade de parceria, enquanto o número 8 vibra ambição, autoridade e foco em resultados concretos. Essa combinação pode gerar uma relação estratégica, desde que haja equilíbrio emocional.</p>
+
+<p>Nos aspectos positivos, o número 8 oferece direção, segurança material e firmeza, proporcionando ao número 2 estabilidade e proteção. O número 2 contribui com compreensão, flexibilidade e habilidade para mediar conflitos, suavizando a intensidade do 8. Quando trabalham juntos, podem formar uma parceria sólida e produtiva.</p>
+
+<p>Os desafios surgem quando o número 8 se torna excessivamente controlador ou focado apenas em objetivos externos, deixando o número 2 emocionalmente inseguro. Já o número 2 pode demonstrar indecisão ou sensibilidade excessiva, o que pode frustrar o senso prático do 8. Diferenças na forma de lidar com emoções e responsabilidades podem gerar tensão.</p>
+
+<p>Para que essa combinação prospere, o número 8 precisa desenvolver maior sensibilidade emocional, enquanto o número 2 deve fortalecer sua autoconfiança e firmeza. Quando existe maturidade, essa união pode unir estratégia e empatia, formando uma relação equilibrada e orientada para conquistas duradouras.</p>
+`,
+"2-9": `
+<h3>Harmonia Conjugal – Energia 2 com Energia 9</h3>
+
+<p>A combinação entre a Energia 2 e a Energia 9 une sensibilidade e idealismo. O número 2 representa parceria, empatia e necessidade de conexão emocional, enquanto o número 9 vibra compaixão, altruísmo e visão humanitária. Essa relação tende a ser marcada por forte intensidade emocional e desejo de construir algo com significado.</p>
+
+<p>Nos aspectos positivos, o número 9 amplia a percepção do número 2, incentivando-o a enxergar além das emoções imediatas. O número 2 oferece apoio, compreensão e estabilidade afetiva, criando um ambiente onde o 9 pode expressar seus ideais com segurança. Juntos, podem formar uma união baseada em solidariedade e propósito.</p>
+
+<p>Os desafios surgem quando o número 9 se envolve excessivamente com questões externas ou causas coletivas, fazendo o número 2 sentir-se negligenciado. Já o número 2 pode demonstrar dependência emocional ou insegurança diante da natureza expansiva do 9. Diferenças na prioridade entre vida pessoal e causas maiores podem gerar conflitos.</p>
+
+<p>Para que essa combinação prospere, é essencial que o número 9 equilibre seu altruísmo com atenção à relação, enquanto o número 2 fortaleça sua autonomia emocional. Quando existe maturidade, essa união pode se tornar profunda, compassiva e orientada para crescimento espiritual e emocional.</p>
+`,
+
+  // ENERGIA 3
+"3-3": `
+<h3>Harmonia Conjugal – Energia 3 com Energia 3</h3>
+
+<p>A união entre duas Energias 3 é marcada por alegria, comunicação e intensa troca criativa. O número 3 vibra expressão, entusiasmo e sociabilidade, o que torna essa combinação naturalmente leve e dinâmica. Trata-se de uma relação que valoriza diversão, diálogo e experiências compartilhadas.</p>
+
+<p>Nos aspectos positivos, ambos estimulam a criatividade e mantêm o relacionamento vivo e movimentado. Existe facilidade na comunicação e forte conexão mental. O casal tende a ser sociável, carismático e aberto a novas ideias, evitando monotonia e excesso de rigidez.</p>
+
+<p>Os desafios surgem quando a dispersão e a falta de foco se tornam predominantes. Dois números 3 podem evitar responsabilidades mais profundas ou transformar conflitos em ironias e superficialidade. A dificuldade em lidar com emoções intensas pode gerar instabilidade se não houver maturidade.</p>
+
+<p>Para que essa união prospere, é fundamental que desenvolvam disciplina emocional e responsabilidade afetiva. Quando equilibrados, formam um casal vibrante, criativo e inspirador, capaz de manter entusiasmo e crescimento contínuo na relação.</p>
+`,
+"3-4": `
+<h3>Harmonia Conjugal – Energia 3 com Energia 4</h3>
+
+<p>A combinação entre a Energia 3 e a Energia 4 une criatividade e estrutura. O número 3 representa comunicação, entusiasmo e espontaneidade, enquanto o número 4 simboliza disciplina, organização e responsabilidade. Essa relação pode equilibrar leveza e estabilidade quando há compreensão mútua.</p>
+
+<p>Nos aspectos positivos, o número 3 traz alegria e flexibilidade para a vida do número 4, ajudando-o a sair da rigidez e aproveitar mais os momentos. O número 4 oferece segurança, planejamento e consistência, permitindo que o 3 transforme ideias criativas em realizações concretas. Existe potencial para crescimento equilibrado quando cada um valoriza o que o outro oferece.</p>
+
+<p>Os desafios surgem quando o número 4 considera o 3 disperso ou irresponsável, enquanto o número 3 pode enxergar o 4 como rígido ou excessivamente crítico. Diferenças no ritmo de ação e na forma de lidar com compromissos podem gerar conflitos se não houver diálogo claro.</p>
+
+<p>Para que essa combinação prospere, o número 3 precisa desenvolver maior foco e constância, enquanto o número 4 deve cultivar flexibilidade e abertura emocional. Quando existe maturidade, essa união pode se tornar produtiva, equilibrada e enriquecedora para ambos.</p>
+`,
+"3-5": `
+<h3>Harmonia Conjugal – Energia 3 com Energia 5</h3>
+
+<p>A união entre a Energia 3 e a Energia 5 é marcada por dinamismo, entusiasmo e desejo de liberdade. O número 3 representa comunicação, criatividade e sociabilidade, enquanto o número 5 vibra movimento, aventura e versatilidade. Essa combinação tende a formar um casal vibrante, aberto a novas experiências e pouco inclinado à rotina.</p>
+
+<p>Nos aspectos positivos, ambos compartilham espírito expansivo e curiosidade natural. O número 5 estimula o 3 a explorar novos horizontes, enquanto o número 3 fortalece a expressão e o entusiasmo dentro da relação. Existe forte conexão social e mental, favorecendo momentos leves e cheios de energia.</p>
+
+<p>Os desafios surgem quando a instabilidade se torna predominante. Tanto o 3 quanto o 5 podem demonstrar dispersão ou dificuldade em manter compromissos mais profundos. A busca constante por novidade pode gerar falta de foco ou superficialidade emocional se não houver maturidade.</p>
+
+<p>Para que essa união prospere, é fundamental que desenvolvam responsabilidade afetiva e equilíbrio entre liberdade e compromisso. Quando existe consciência e direção, essa combinação pode resultar em uma relação estimulante, criativa e cheia de crescimento mútuo.</p>
+`,
+"3-6": `
+<h3>Harmonia Conjugal – Energia 3 com Energia 6</h3>
+
+<p>A combinação entre a Energia 3 e a Energia 6 une expressão e responsabilidade afetiva. O número 3 representa comunicação, criatividade e entusiasmo, enquanto o número 6 simboliza amor, cuidado e compromisso com a família. Essa relação pode equilibrar leveza e profundidade emocional quando há compreensão mútua.</p>
+
+<p>Nos aspectos positivos, o número 3 traz alegria e dinamismo para a vida do número 6, ajudando a manter o relacionamento vivo e estimulante. O número 6 oferece estabilidade, dedicação e segurança emocional, criando uma base sólida para que o 3 se sinta apoiado. Juntos, podem formar uma união carinhosa e sociável.</p>
+
+<p>Os desafios surgem quando o número 3 demonstra dispersão ou imaturidade emocional, o que pode gerar insegurança no número 6. Já o número 6 pode se tornar excessivamente protetor ou exigente, fazendo o 3 sentir-se limitado. Diferenças na forma de lidar com responsabilidade e compromisso podem provocar tensão.</p>
+
+<p>Para que essa combinação prospere, o número 3 deve desenvolver maior constância e responsabilidade afetiva, enquanto o número 6 precisa cultivar flexibilidade e permitir maior liberdade criativa ao parceiro. Quando equilibrados, formam uma relação harmoniosa, amorosa e enriquecedora.</p>
+`,
+"3-7": `
+<h3>Harmonia Conjugal – Energia 3 com Energia 7</h3>
+
+<p>A combinação entre a Energia 3 e a Energia 7 une expressão e profundidade. O número 3 representa comunicação, criatividade e entusiasmo, enquanto o número 7 simboliza introspecção, análise e busca por conhecimento interior. Essa relação tende a ser marcada por contrastes entre leveza social e profundidade reflexiva.</p>
+
+<p>Nos aspectos positivos, o número 3 pode ajudar o 7 a se expressar com mais espontaneidade e a participar mais ativamente do mundo social. O número 7, por sua vez, oferece ao 3 maior profundidade, discernimento e maturidade intelectual. Quando existe respeito pelas diferenças, essa união pode estimular crescimento mental e emocional.</p>
+
+<p>Os desafios surgem quando o número 3 considera o 7 reservado ou distante, enquanto o número 7 pode enxergar o 3 como superficial ou excessivamente expansivo. Diferenças no ritmo emocional e na necessidade de introspecção podem gerar mal-entendidos.</p>
+
+<p>Para que essa combinação prospere, o número 3 deve desenvolver maior sensibilidade às necessidades de silêncio e reflexão do 7, enquanto o número 7 precisa aprender a comunicar seus sentimentos com mais clareza. Quando equilibrados, podem formar uma relação que une criatividade e sabedoria.</p>
+`,
+"3-8": `
+<h3>Harmonia Conjugal – Energia 3 com Energia 8</h3>
+
+<p>A união entre a Energia 3 e a Energia 8 combina expressão criativa e poder de realização. O número 3 representa comunicação, entusiasmo e sociabilidade, enquanto o número 8 simboliza ambição, liderança e foco em resultados concretos. Essa combinação pode gerar uma relação dinâmica e produtiva quando há alinhamento de objetivos.</p>
+
+<p>Nos aspectos positivos, o número 3 traz leveza, criatividade e capacidade de comunicação, ajudando o número 8 a suavizar posturas rígidas e ampliar sua visão estratégica. O número 8 oferece direção, disciplina e força para que o 3 transforme ideias em conquistas reais. Juntos, podem formar uma parceria com grande potencial de crescimento material e social.</p>
+
+<p>Os desafios surgem quando o número 8 demonstra excesso de controle ou foco exclusivo em metas externas, deixando o número 3 sentir-se limitado ou desvalorizado. Já o número 3 pode agir de forma dispersa ou pouco comprometida, o que pode gerar tensão com o senso de responsabilidade do 8.</p>
+
+<p>Para que essa combinação prospere, o número 3 precisa desenvolver maior constância e responsabilidade, enquanto o número 8 deve cultivar flexibilidade e abertura emocional. Quando existe equilíbrio, essa união pode unir criatividade e poder de realização de maneira harmoniosa e produtiva.</p>
+`,
+"3-9": `
+<h3>Harmonia Conjugal – Energia 3 com Energia 9</h3>
+
+<p>A combinação entre a Energia 3 e a Energia 9 une expressão criativa e idealismo humanitário. O número 3 representa comunicação, entusiasmo e sociabilidade, enquanto o número 9 simboliza compaixão, generosidade e visão ampla da vida. Essa relação tende a ser vibrante, inspiradora e marcada por forte intensidade emocional.</p>
+
+<p>Nos aspectos positivos, o número 3 traz leveza e dinamismo ao número 9, ajudando-o a expressar seus ideais de forma mais acessível e prática. O número 9, por sua vez, oferece profundidade emocional e propósito ao número 3, ampliando sua visão além do superficial. Quando equilibrados, podem formar uma união criativa e inspiradora.</p>
+
+<p>Os desafios surgem quando o número 3 demonstra dispersão ou falta de profundidade, o que pode frustrar o idealismo do número 9. Já o número 9 pode se envolver excessivamente com questões externas ou causas coletivas, fazendo o número 3 sentir-se em segundo plano. Diferenças na forma de lidar com prioridades podem gerar tensão.</p>
+
+<p>Para que essa combinação prospere, o número 3 deve desenvolver maior responsabilidade emocional, enquanto o número 9 precisa equilibrar seu altruísmo com atenção à relação. Quando há maturidade, essa união pode ser alegre, significativa e orientada para crescimento mútuo.</p>
+`,
+
+  // ENERGIA 4
+"4-4": `
+<h3>Harmonia Conjugal – Energia 4 com Energia 4</h3>
+
+<p>A união entre duas Energias 4 é marcada por estabilidade, disciplina e compromisso. O número 4 representa estrutura, responsabilidade e construção sólida. Quando duas pessoas com essa vibração se encontram, a relação tende a ser baseada em segurança, organização e objetivos bem definidos.</p>
+
+<p>Nos aspectos positivos, ambos valorizam esforço, dedicação e constância. Existe forte senso de responsabilidade com a relação, o que favorece compromissos duradouros e planejamento de longo prazo. Essa combinação costuma buscar estabilidade financeira e segurança material, construindo bases firmes ao longo do tempo.</p>
+
+<p>Os desafios surgem quando a rigidez se torna excessiva. Dois números 4 podem se tornar críticos, inflexíveis ou excessivamente focados em deveres, deixando a espontaneidade de lado. A rotina pode se tornar pesada se não houver momentos de leveza e renovação emocional.</p>
+
+<p>Para que essa união prospere, é fundamental que aprendam a flexibilizar regras e a incluir mais espontaneidade na convivência. Quando equilibrados, formam um casal sólido, confiável e orientado para estabilidade e construção duradoura.</p>
+`,
+"4-5": `
+<h3>Harmonia Conjugal – Energia 4 com Energia 5</h3>
+
+<p>A combinação entre a Energia 4 e a Energia 5 une estabilidade e liberdade. O número 4 representa disciplina, responsabilidade e necessidade de segurança, enquanto o número 5 vibra mudança, movimento e desejo de independência. Essa relação tende a ser desafiadora, pois envolve ritmos e prioridades diferentes.</p>
+
+<p>Nos aspectos positivos, o número 5 pode ajudar o 4 a sair da rigidez e experimentar novas possibilidades, trazendo leveza e dinamismo à relação. O número 4 oferece ao 5 estrutura, organização e segurança, criando uma base sólida para que as mudanças não se tornem instabilidade. Quando equilibrados, podem crescer muito juntos.</p>
+
+<p>Os desafios surgem quando o número 4 tenta controlar ou limitar a liberdade do 5, enquanto o 5 pode agir de forma imprevisível ou pouco comprometida, gerando insegurança no 4. Diferenças no modo de lidar com responsabilidade e autonomia podem provocar conflitos constantes.</p>
+
+<p>Para que essa combinação prospere, o número 4 deve desenvolver maior flexibilidade e abertura a mudanças, enquanto o número 5 precisa assumir responsabilidade emocional e compromisso. Quando há maturidade, essa união pode equilibrar segurança e liberdade de forma construtiva.</p>
+`,
+"4-6": `
+<h3>Harmonia Conjugal – Energia 4 com Energia 6</h3>
+
+<p>A união entre a Energia 4 e a Energia 6 combina responsabilidade e afeto. O número 4 representa estrutura, disciplina e compromisso, enquanto o número 6 simboliza amor, cuidado e dedicação à família. Essa combinação tende a formar uma relação estável, protetora e voltada para construção de base sólida.</p>
+
+<p>Nos aspectos positivos, ambos valorizam compromisso e segurança. O número 4 oferece organização e firmeza, criando estabilidade material e estrutural, enquanto o número 6 traz calor emocional, cuidado e senso de responsabilidade afetiva. Juntos, podem formar um casal dedicado à construção de um lar harmonioso.</p>
+
+<p>Os desafios surgem quando o número 4 se torna excessivamente rígido ou focado apenas em deveres, deixando o número 6 sentir falta de demonstrações emocionais. Por outro lado, o número 6 pode assumir postura controladora por excesso de cuidado, o que pode incomodar o senso de autonomia do 4.</p>
+
+<p>Para que essa combinação prospere, o número 4 deve desenvolver maior sensibilidade e expressão emocional, enquanto o número 6 precisa equilibrar proteção com respeito ao espaço individual. Quando há maturidade, essa união pode ser sólida, amorosa e duradoura.</p>
+`,
+"4-7": `
+<h3>Harmonia Conjugal – Energia 4 com Energia 7</h3>
+
+<p>A combinação entre a Energia 4 e a Energia 7 une estrutura e profundidade. O número 4 representa disciplina, responsabilidade e organização, enquanto o número 7 simboliza introspecção, análise e busca por conhecimento interior. Essa relação tende a ser séria, reflexiva e voltada para crescimento consistente.</p>
+
+<p>Nos aspectos positivos, o número 4 oferece base sólida e estabilidade para que o número 7 desenvolva suas reflexões com segurança. O número 7 contribui com visão estratégica, sabedoria e análise detalhada, ajudando o 4 a enxergar além do pragmatismo imediato. Juntos, podem formar uma parceria estruturada e intelectualmente estimulante.</p>
+
+<p>Os desafios surgem quando o número 4 demonstra rigidez excessiva, enquanto o número 7 se torna reservado ou distante emocionalmente. Diferenças na forma de expressar sentimentos podem gerar sensação de frieza ou incompreensão se não houver diálogo claro.</p>
+
+<p>Para que essa combinação prospere, o número 4 deve cultivar maior abertura emocional e flexibilidade, enquanto o número 7 precisa compartilhar seus pensamentos e sentimentos com mais clareza. Quando equilibrados, podem construir uma relação sólida, profunda e orientada para crescimento contínuo.</p>
+`,
+"4-8": `
+<h3>Harmonia Conjugal – Energia 4 com Energia 8</h3>
+
+<p>A união entre a Energia 4 e a Energia 8 é marcada por foco, disciplina e ambição. O número 4 representa organização, responsabilidade e construção sólida, enquanto o número 8 simboliza poder, liderança e busca por realização material. Essa combinação tende a formar uma parceria voltada para resultados concretos e estabilidade financeira.</p>
+
+<p>Nos aspectos positivos, ambos compartilham determinação e comprometimento com metas de longo prazo. O número 4 oferece estrutura e constância, enquanto o número 8 traz visão estratégica e capacidade de expansão. Juntos, podem construir uma relação forte, produtiva e orientada para crescimento material e social.</p>
+
+<p>Os desafios surgem quando a rigidez e o excesso de controle se tornam predominantes. Tanto o 4 quanto o 8 podem demonstrar postura autoritária ou inflexível, dificultando concessões e diálogo emocional. O foco excessivo em objetivos externos pode deixar a vida afetiva em segundo plano.</p>
+
+<p>Para que essa combinação prospere, é fundamental que desenvolvam maior flexibilidade emocional e aprendam a valorizar momentos de leveza dentro da relação. Quando equilibrados, formam uma união sólida, estratégica e capaz de alcançar grandes realizações juntos.</p>
+`,
+"4-9": `
+<h3>Harmonia Conjugal – Energia 4 com Energia 9</h3>
+
+<p>A combinação entre a Energia 4 e a Energia 9 une estrutura e idealismo. O número 4 representa disciplina, organização e construção sólida, enquanto o número 9 simboliza compaixão, generosidade e visão humanitária. Essa relação pode equilibrar pragmatismo e propósito quando há compreensão mútua.</p>
+
+<p>Nos aspectos positivos, o número 4 oferece base e estabilidade para que o número 9 desenvolva seus ideais de forma concreta. O número 9 amplia a visão do 4, trazendo sensibilidade e perspectiva mais ampla sobre a vida e as relações. Juntos, podem construir algo que una segurança material e significado emocional.</p>
+
+<p>Os desafios surgem quando o número 4 se mostra excessivamente rígido ou focado apenas em resultados práticos, enquanto o número 9 pode priorizar causas externas ou questões humanitárias em detrimento da vida pessoal. Diferenças nas prioridades podem gerar tensão se não houver alinhamento de valores.</p>
+
+<p>Para que essa combinação prospere, o número 4 deve desenvolver maior sensibilidade e abertura emocional, enquanto o número 9 precisa equilibrar seu altruísmo com responsabilidade prática. Quando há maturidade, essa união pode ser estável, significativa e orientada para construção com propósito.</p>
+`,
+
+  // ENERGIA 5
+"5-5": `
+<h3>Harmonia Conjugal – Energia 5 com Energia 5</h3>
+
+<p>A união entre duas Energias 5 é marcada por intensidade, liberdade e constante movimento. O número 5 vibra aventura, versatilidade e desejo de experiências novas. Quando duas pessoas com essa vibração se encontram, a relação tende a ser dinâmica, espontânea e pouco inclinada à rotina.</p>
+
+<p>Nos aspectos positivos, ambos compartilham espírito aventureiro e curiosidade natural. Existe entusiasmo, desejo de explorar o mundo juntos e forte atração pela novidade. A relação pode ser vibrante, moderna e cheia de estímulos, evitando monotonia e excesso de rigidez.</p>
+
+<p>Os desafios surgem quando a instabilidade se torna predominante. Dois números 5 podem demonstrar dificuldade em manter compromissos mais profundos ou em lidar com responsabilidades constantes. A necessidade de liberdade pode gerar conflitos se faltar maturidade emocional.</p>
+
+<p>Para que essa combinação prospere, é fundamental que desenvolvam responsabilidade afetiva e equilíbrio entre autonomia e compromisso. Quando existe consciência e direção, essa união pode ser estimulante, intensa e repleta de crescimento mútuo.</p>
+`,
+"5-6": `
+<h3>Harmonia Conjugal – Energia 5 com Energia 6</h3>
+
+<p>A combinação entre a Energia 5 e a Energia 6 une liberdade e responsabilidade afetiva. O número 5 representa movimento, independência e desejo de novas experiências, enquanto o número 6 simboliza compromisso, cuidado e dedicação à família. Essa relação pode ser intensa, mas exige equilíbrio entre autonomia e estabilidade.</p>
+
+<p>Nos aspectos positivos, o número 5 traz entusiasmo e renovação para a vida do número 6, evitando que a relação se torne excessivamente previsível. O número 6 oferece segurança emocional, proteção e senso de responsabilidade, criando base estável para o 5 se sentir acolhido. Quando há compreensão, essa união pode ser complementar.</p>
+
+<p>Os desafios surgem quando o número 5 demonstra instabilidade ou necessidade excessiva de liberdade, gerando insegurança no número 6. Já o número 6 pode se tornar controlador ou exigente, tentando impor estrutura ao espírito livre do 5. Diferenças na forma de lidar com compromisso podem gerar tensão.</p>
+
+<p>Para que essa combinação prospere, o número 5 deve desenvolver responsabilidade emocional, enquanto o número 6 precisa cultivar flexibilidade e confiar mais na autonomia do parceiro. Quando existe maturidade, essa união pode equilibrar aventura e compromisso de maneira harmoniosa.</p>
+`,
+"5-7": `
+<h3>Harmonia Conjugal – Energia 5 com Energia 7</h3>
+
+<p>A combinação entre a Energia 5 e a Energia 7 une movimento e introspecção. O número 5 representa liberdade, versatilidade e desejo de experiências novas, enquanto o número 7 simboliza análise, profundidade e busca por conhecimento interior. Essa relação tende a ser marcada por contrastes entre ação externa e reflexão interna.</p>
+
+<p>Nos aspectos positivos, o número 5 pode estimular o 7 a explorar o mundo com mais leveza e espontaneidade, enquanto o número 7 oferece ao 5 maior discernimento e profundidade nas decisões. Quando existe equilíbrio, essa união pode gerar crescimento intelectual e expansão de horizontes.</p>
+
+<p>Os desafios surgem quando o número 5 demonstra impulsividade ou instabilidade, o que pode incomodar o perfil analítico e reservado do 7. Já o número 7 pode parecer distante ou excessivamente crítico aos olhos do 5, gerando sensação de incompreensão. Diferenças no ritmo emocional podem provocar conflitos.</p>
+
+<p>Para que essa combinação prospere, o número 5 deve desenvolver maior constância e responsabilidade, enquanto o número 7 precisa comunicar suas necessidades com mais abertura. Quando há maturidade, essa união pode equilibrar liberdade e sabedoria de forma enriquecedora.</p>
+`,
+"5-8": `
+<h3>Harmonia Conjugal – Energia 5 com Energia 8</h3>
+
+<p>A união entre a Energia 5 e a Energia 8 combina liberdade e ambição. O número 5 representa movimento, versatilidade e desejo de independência, enquanto o número 8 simboliza poder, estratégia e foco em realizações materiais. Essa relação tende a ser intensa, dinâmica e orientada para crescimento externo.</p>
+
+<p>Nos aspectos positivos, o número 5 traz inovação e flexibilidade, ajudando o número 8 a se adaptar a mudanças e novas oportunidades. O número 8 oferece direção, disciplina e capacidade de transformar ideias em resultados concretos. Quando trabalham juntos, podem alcançar conquistas expressivas.</p>
+
+<p>Os desafios surgem quando o número 8 tenta impor controle ou excessiva autoridade, limitando o espírito livre do 5. Por outro lado, o número 5 pode agir de forma imprevisível ou pouco comprometida, gerando insegurança no 8. Diferenças na forma de lidar com poder e autonomia podem provocar conflitos.</p>
+
+<p>Para que essa combinação prospere, o número 5 deve assumir responsabilidade emocional e manter foco, enquanto o número 8 precisa desenvolver maior flexibilidade e abertura ao diálogo. Quando existe equilíbrio, essa união pode unir ousadia e estratégia de forma produtiva e estimulante.</p>
+`,
+"5-9": `
+<h3>Harmonia Conjugal – Energia 5 com Energia 9</h3>
+
+<p>A combinação entre a Energia 5 e a Energia 9 une liberdade e idealismo. O número 5 representa movimento, versatilidade e desejo de experiências novas, enquanto o número 9 simboliza compaixão, generosidade e visão humanitária. Essa relação tende a ser intensa, expansiva e marcada por forte carga emocional.</p>
+
+<p>Nos aspectos positivos, o número 5 traz dinamismo e renovação para a vida do número 9, estimulando ação prática para seus ideais. O número 9 amplia a visão do 5, incentivando-o a agir com maior consciência e sensibilidade. Juntos, podem formar uma união inspiradora e aberta a novas possibilidades.</p>
+
+<p>Os desafios surgem quando o número 5 demonstra instabilidade ou dificuldade em manter compromissos, o que pode frustrar o senso de propósito do número 9. Já o número 9 pode envolver-se excessivamente em causas externas, fazendo o 5 sentir-se limitado ou negligenciado. Diferenças na prioridade entre liberdade e compromisso podem gerar tensão.</p>
+
+<p>Para que essa combinação prospere, o número 5 deve desenvolver responsabilidade emocional e constância, enquanto o número 9 precisa equilibrar seu altruísmo com atenção à relação. Quando há maturidade, essa união pode ser vibrante, significativa e orientada para crescimento mútuo.</p>
+`,
+
+  // ENERGIA 6
+"6-6": `
+<h3>Harmonia Conjugal – Energia 6 com Energia 6</h3>
+
+<p>A união entre duas Energias 6 é marcada por afeto, responsabilidade e forte valorização da família. O número 6 simboliza amor, cuidado, proteção e compromisso com o bem-estar do outro. Quando duas pessoas com essa vibração se encontram, a relação tende a ser acolhedora, dedicada e orientada para estabilidade emocional.</p>
+
+<p>Nos aspectos positivos, ambos compartilham senso de responsabilidade afetiva e desejo de construir um lar harmonioso. Existe grande capacidade de cuidado, compreensão e apoio mútuo. Essa combinação favorece compromisso sério e vínculo duradouro.</p>
+
+<p>Os desafios surgem quando o excesso de zelo se transforma em controle ou cobrança emocional. Dois números 6 podem assumir postura protetora em demasia, gerando dependência ou pressão afetiva. A tendência a assumir muitas responsabilidades também pode gerar sobrecarga.</p>
+
+<p>Para que essa união prospere, é fundamental que desenvolvam equilíbrio entre cuidado e autonomia. Quando existe maturidade, essa combinação pode resultar em uma relação estável, amorosa e profundamente comprometida.</p>
+`,
+"6-7": `
+<h3>Harmonia Conjugal – Energia 6 com Energia 7</h3>
+
+<p>A combinação entre a Energia 6 e a Energia 7 une responsabilidade afetiva e profundidade interior. O número 6 representa amor, cuidado e compromisso familiar, enquanto o número 7 simboliza introspecção, análise e busca por conhecimento. Essa relação tende a equilibrar dedicação emocional e reflexão consciente.</p>
+
+<p>Nos aspectos positivos, o número 6 oferece acolhimento e segurança emocional ao número 7, criando ambiente favorável para que ele se expresse com mais confiança. O número 7 contribui com sabedoria, discernimento e visão estratégica, ajudando o 6 a ampliar sua compreensão da vida. Juntos, podem crescer emocional e espiritualmente.</p>
+
+<p>Os desafios surgem quando o número 7 demonstra distanciamento ou reserva excessiva, gerando insegurança no número 6. Já o número 6 pode se tornar protetor ou exigente demais, pressionando o 7 por demonstrações emocionais constantes. Diferenças na forma de lidar com sentimentos podem criar tensão.</p>
+
+<p>Para que essa combinação prospere, o número 6 deve respeitar o espaço e o tempo de reflexão do 7, enquanto o número 7 precisa comunicar suas necessidades com mais clareza. Quando há equilíbrio, essa união pode ser estável, profunda e enriquecedora.</p>
+`,
+"6-8": `
+<h3>Harmonia Conjugal – Energia 6 com Energia 8</h3>
+
+<p>A união entre a Energia 6 e a Energia 8 combina responsabilidade afetiva e ambição. O número 6 representa cuidado, proteção e compromisso familiar, enquanto o número 8 simboliza liderança, poder de realização e foco em conquistas materiais. Essa relação tende a buscar estabilidade tanto emocional quanto financeira.</p>
+
+<p>Nos aspectos positivos, o número 6 oferece acolhimento e equilíbrio emocional, criando base segura para que o número 8 desenvolva seus projetos e ambições. O número 8 contribui com direção, estratégia e capacidade de expansão, fortalecendo a estrutura da relação. Juntos, podem construir uma parceria sólida e produtiva.</p>
+
+<p>Os desafios surgem quando o número 8 prioriza excessivamente metas externas e deixa o número 6 sentir-se emocionalmente negligenciado. Já o número 6 pode assumir postura controladora ou protetora em excesso, tentando direcionar as decisões do 8. Diferenças na forma de expressar poder e afeto podem gerar conflitos.</p>
+
+<p>Para que essa combinação prospere, o número 8 deve cultivar maior sensibilidade emocional, enquanto o número 6 precisa equilibrar cuidado com respeito à autonomia do parceiro. Quando existe maturidade, essa união pode ser forte, estável e orientada para realizações duradouras.</p>
+`,
+"6-9": `
+<h3>Harmonia Conjugal – Energia 6 com Energia 9</h3>
+
+<p>A combinação entre a Energia 6 e a Energia 9 une responsabilidade afetiva e idealismo. O número 6 representa amor, cuidado e compromisso com a família, enquanto o número 9 simboliza compaixão, generosidade e visão humanitária. Essa relação tende a ser marcada por sensibilidade e forte carga emocional.</p>
+
+<p>Nos aspectos positivos, o número 6 oferece estabilidade, acolhimento e dedicação, criando base segura para que o número 9 expresse seus ideais. O número 9 amplia a visão do 6, incentivando-o a enxergar além do ambiente doméstico e a agir com maior consciência coletiva. Juntos, podem formar uma união generosa e significativa.</p>
+
+<p>Os desafios surgem quando o número 9 se envolve excessivamente em causas externas ou questões amplas, fazendo o número 6 sentir-se sobrecarregado ou negligenciado. Já o número 6 pode demonstrar excesso de proteção ou cobrança emocional, limitando a liberdade do 9. Diferenças nas prioridades podem gerar tensão se não houver alinhamento.</p>
+
+<p>Para que essa combinação prospere, o número 6 deve cultivar maior flexibilidade e confiança, enquanto o número 9 precisa equilibrar altruísmo com responsabilidade prática dentro da relação. Quando há maturidade, essa união pode ser amorosa, inspiradora e orientada para construção com propósito.</p>
+`,
+
+  // ENERGIA 7
+"7-7": `
+<h3>Harmonia Conjugal – Energia 7 com Energia 7</h3>
+
+<p>A união entre duas Energias 7 é marcada por profundidade, introspecção e busca por conhecimento. O número 7 simboliza análise, espiritualidade e necessidade de compreensão interior. Quando duas pessoas com essa vibração se encontram, a relação tende a ser reflexiva, reservada e intelectualmente estimulante.</p>
+
+<p>Nos aspectos positivos, ambos valorizam silêncio, estudo e desenvolvimento pessoal. Existe forte conexão mental e possibilidade de crescimento espiritual conjunto. Essa combinação favorece conversas profundas e entendimento intuitivo entre os parceiros.</p>
+
+<p>Os desafios surgem quando o distanciamento emocional se torna excessivo. Dois números 7 podem evitar demonstrações afetivas ou manter sentimentos guardados, criando sensação de frieza. A tendência ao isolamento pode dificultar a expressão clara das necessidades emocionais.</p>
+
+<p>Para que essa união prospere, é essencial que desenvolvam abertura emocional e comunicação mais direta. Quando equilibrados, formam uma relação profunda, consciente e orientada para crescimento interior compartilhado.</p>
+`,
+"7-8": `
+<h3>Harmonia Conjugal – Energia 7 com Energia 8</h3>
+
+<p>A combinação entre a Energia 7 e a Energia 8 une profundidade e poder de realização. O número 7 representa introspecção, análise e busca por conhecimento interior, enquanto o número 8 simboliza liderança, estratégia e foco em conquistas materiais. Essa relação tende a equilibrar reflexão e ação quando existe alinhamento.</p>
+
+<p>Nos aspectos positivos, o número 7 contribui com visão analítica e discernimento, ajudando o número 8 a tomar decisões mais conscientes e estratégicas. O número 8 oferece direção, força e capacidade de concretizar ideias, dando estrutura às percepções do 7. Juntos, podem formar uma parceria intelectualmente forte e orientada para resultados.</p>
+
+<p>Os desafios surgem quando o número 8 demonstra postura autoritária ou foco excessivo em poder e ambição, enquanto o número 7 pode se tornar distante ou crítico. Diferenças na forma de lidar com emoções e objetivos podem gerar tensão se não houver respeito mútuo.</p>
+
+<p>Para que essa combinação prospere, o número 8 deve desenvolver maior sensibilidade e escuta, enquanto o número 7 precisa comunicar suas reflexões com clareza e evitar isolamento excessivo. Quando há maturidade, essa união pode unir estratégia e sabedoria de maneira produtiva.</p>
+`,
+"7-9": `
+<h3>Harmonia Conjugal – Energia 7 com Energia 9</h3>
+
+<p>A combinação entre a Energia 7 e a Energia 9 une profundidade intelectual e idealismo humanitário. O número 7 representa introspecção, análise e busca por conhecimento interior, enquanto o número 9 simboliza compaixão, generosidade e visão ampla da vida. Essa relação tende a ser marcada por intensidade mental e sensibilidade emocional.</p>
+
+<p>Nos aspectos positivos, o número 7 contribui com discernimento e reflexão, ajudando o número 9 a estruturar seus ideais com maior clareza. O número 9 amplia a percepção do 7, incentivando-o a sair do isolamento e a aplicar seu conhecimento em benefício coletivo. Juntos, podem formar uma união profunda e inspiradora.</p>
+
+<p>Os desafios surgem quando o número 7 demonstra distanciamento emocional ou excesso de análise, enquanto o número 9 pode agir movido por emoções intensas ou envolvimento com causas externas. Diferenças na forma de expressar sentimentos podem gerar mal-entendidos.</p>
+
+<p>Para que essa combinação prospere, o número 7 deve cultivar maior abertura emocional, enquanto o número 9 precisa equilibrar sensibilidade com objetividade. Quando há maturidade, essa união pode ser significativa, consciente e orientada para crescimento interior e coletivo.</p>
+`,
+
+  // ENERGIA 8
+"8-8": `
+<h3>Harmonia Conjugal – Energia 8 com Energia 8</h3>
+
+<p>A união entre duas Energias 8 é marcada por ambição, liderança e forte desejo de conquista. O número 8 simboliza poder, estratégia e foco em realizações materiais. Quando duas pessoas com essa vibração se encontram, a relação tende a ser intensa, determinada e orientada para crescimento externo.</p>
+
+<p>Nos aspectos positivos, ambos compartilham visão estratégica e capacidade de administração. Existe grande potencial para prosperidade e construção de patrimônio, pois ambos valorizam disciplina, metas claras e resultados concretos. Essa combinação pode formar uma parceria poderosa e produtiva.</p>
+
+<p>Os desafios surgem quando a disputa por controle ou autoridade se intensifica. Dois números 8 podem entrar em conflitos de poder, dificultando concessões e diálogo emocional. O excesso de foco em objetivos externos pode deixar a vida afetiva em segundo plano.</p>
+
+<p>Para que essa combinação prospere, é essencial que aprendam a compartilhar liderança e desenvolver sensibilidade emocional. Quando há equilíbrio, essa união pode ser forte, estratégica e capaz de alcançar grandes realizações conjuntas.</p>
+`,
+"8-9": `
+<h3>Harmonia Conjugal – Energia 8 com Energia 9</h3>
+
+<p>A combinação entre a Energia 8 e a Energia 9 une poder de realização e idealismo humanitário. O número 8 representa liderança, estratégia e foco em conquistas materiais, enquanto o número 9 simboliza compaixão, generosidade e visão ampla da vida. Essa relação tende a equilibrar ambição e propósito quando há alinhamento de valores.</p>
+
+<p>Nos aspectos positivos, o número 8 oferece direção e capacidade de concretização, ajudando o número 9 a transformar ideais em ações práticas. O número 9 amplia a visão do 8, incentivando-o a agir com maior sensibilidade e consciência coletiva. Juntos, podem construir algo que una sucesso e significado.</p>
+
+<p>Os desafios surgem quando o número 8 demonstra postura excessivamente autoritária ou foco exclusivo em metas materiais, enquanto o número 9 pode priorizar causas externas ou questões emocionais em detrimento de resultados práticos. Diferenças nas prioridades podem gerar tensão se não houver diálogo claro.</p>
+
+<p>Para que essa combinação prospere, o número 8 deve cultivar maior sensibilidade emocional, enquanto o número 9 precisa equilibrar altruísmo com pragmatismo. Quando existe maturidade, essa união pode ser forte, inspiradora e orientada para conquistas com propósito.</p>
+`,
+
+  // ENERGIA 9
+ "9-9": `
+<h3>Harmonia Conjugal – Energia 9 com Energia 9</h3>
+
+<p>A união entre duas Energias 9 é marcada por intensidade emocional, compaixão e forte senso de idealismo. O número 9 simboliza generosidade, espiritualidade e visão humanitária. Quando duas pessoas com essa vibração se encontram, a relação tende a ser profunda, sensível e orientada para propósito elevado.</p>
+
+<p>Nos aspectos positivos, ambos compartilham empatia, compreensão e desejo de contribuir para algo maior. Existe potencial para uma conexão espiritual significativa, baseada em valores elevados e apoio mútuo. Essa combinação favorece crescimento emocional e consciência ampliada dentro da relação.</p>
+
+<p>Os desafios surgem quando o excesso de sensibilidade gera dramas emocionais ou quando ambos priorizam causas externas em detrimento da vida íntima. Dois números 9 podem absorver problemas do mundo ao redor, deixando a relação sobrecarregada emocionalmente.</p>
+
+<p>Para que essa combinação prospere, é fundamental que desenvolvam equilíbrio entre altruísmo e vida pessoal. Quando há maturidade, essa união pode ser profundamente amorosa, inspiradora e voltada para crescimento espiritual conjunto.</p>
+`,
+
+};  
+
+textos.regente = {
+  1: `Texto completo do Regente 1...`,
+  2: `Texto completo do Regente 2...`,
+  3: `Texto completo do Regente 3...`,
+  4: `Texto completo do Regente 4...`,
+  5: `Texto completo do Regente 5...`,
+  6: `Texto completo do Regente 6...`,
+  7: `Texto completo do Regente 7...`,
+  8: `Texto completo do Regente 8...`,
+  9: `Texto completo do Regente 9...`
 }
-};
+
+
+
 </script>
