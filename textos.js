@@ -1665,35 +1665,27 @@ regente:{
 
 },
 
-  sequenciaNegativa: {
-   1:`➢ SEQUÊNCIA DE 1 – Iniciativa e Determinação
-Esta sequência pode impor dificuldades que afetam motivação,
-iniciativa e coragem para agir e se arriscar.`,
+sequenciaNegativa: {
 
-2:`➢ SEQUÊNCIA DE 2 – Autoconfiança
-Pode afetar autoestima, gerar timidez, insegurança e dependência
-emocional ou material.`,
+  1: "Sequência de 1 – Tendência a egoísmo excessivo, individualismo extremo e dificuldade de cooperação.",
 
-3:`➢ SEQUÊNCIA DE 3 – Comunicação e Expressão
-Dificuldades para se expressar, dialogar e interagir socialmente.`,
+  2: "Sequência de 2 – Pode gerar insegurança, dependência emocional, baixa autoestima e sensibilidade exagerada.",
 
-4:`➢ SEQUÊNCIA DE 4 – Carreira e Profissão
-Obstáculos profissionais, dificuldades financeiras e estabilidade.`,
+  3: "Sequência de 3 – Indica dispersão, imaturidade emocional, dificuldades de foco e instabilidade criativa.",
 
-5:`➢ SEQUÊNCIA DE 5 – Instabilidade
-Mudanças constantes, altos e baixos e dificuldade em se firmar.`,
+  4: "Sequência de 4 – Obstáculos profissionais, rigidez mental, dificuldades financeiras e excesso de controle.",
 
-6:`➢ SEQUÊNCIA DE 6 – Afeto e Sentimentos
-Decepções emocionais e dificuldades em relações.`,
+  5: "Sequência de 5 – Instabilidade, mudanças bruscas, impulsividade e dificuldade em se fixar.",
 
-7:`➢ SEQUÊNCIA DE 7 – Medo e Isolamento
-Tendência ao isolamento, frustrações e conflitos internos.`,
+  6: "Sequência de 6 – Conflitos afetivos, excesso de responsabilidade ou desequilíbrio emocional familiar.",
 
-8:`➢ SEQUÊNCIA DE 8 – Problemas Emocionais e Financeiros
-Perdas, injustiças e instabilidade material.`,
+  7: "Sequência de 7 – Isolamento, frieza emocional, excesso de crítica e distanciamento social.",
 
-9:`➢ SEQUÊNCIA DE 9 – Perdas e Frustrações
-Dificuldades financeiras, emocionais e sensação de estagnação.`
+  8: "Sequência de 8 – Problemas com autoridade, desequilíbrio material e conflitos ligados a poder.",
+
+  9: "Sequência de 9 – Dificuldade de encerramentos, apego ao passado e sofrimento emocional prolongado."
+
+
   }
 
 };  
