@@ -37,7 +37,7 @@ Você deseja deixar marcas visíveis no mundo. O desafio é equilibrar ambição
 
   },
 
-  Influencia: {
+influencia: {
     1:`Influência 1 — Aparência de Liderança, Autoconfiança e Individualidade
 
 Você transmite a imagem de uma pessoa dinâmica, eficiente e extremamente segura. Em um primeiro contato, pode ser percebido tanto como alguém agressivo, individualista, egocêntrico e autocentrado, quanto como um líder natural, direto, decidido e com ideias originais. Sua presença sugere que você não se deixa intimidar facilmente e que possui controle emocional suficiente para enfrentar desafios com firmeza.
@@ -197,7 +197,7 @@ Equilibrar idealismo com praticidade.`
 
   },
 
-  Personalidade: {
+ personalidade: {
     1:`Personalidade 1 — Ambição, Independência e Determinação
 
 Você possui uma personalidade forte, independente e extremamente determinada. Sua natureza é individualista e orientada para conquistas. Existe em você um impulso constante de liderança, autonomia e realização pessoal.
@@ -641,7 +641,7 @@ O aprendizado principal é praticar desapego, compaixão e servir ao coletivo co
 
   },
 
-  Propósito: {
+ Proposito: {
 1:`Conhecer seus limites
 Propósito de Vida 1
 
@@ -745,7 +745,7 @@ Seu desafio é agir com compaixão e realismo ao mesmo tempo.`
 
 
 
-  relacionamento: {
+  harmonia: {
    1:`A vibração 1 está ligada a pessoas intensas, apaixonadas e imaginativas. Seus sentimentos costumam nascer de sonhos, fantasias e idealizações, podendo ser muito fortes no início, mas tendem a enfraquecer quando não encontram base racional e estabilidade emocional.
 Mesmo possuindo grande magnetismo pessoal e capacidade de convencer e influenciar o parceiro, quem possui essa vibração costuma demonstrar indecisão no campo afetivo. 
 
@@ -1004,7 +1004,7 @@ A felicidade surge quando alinham amor e realidade.`
 
 
 
-anoPessoal:{
+ anoPessoal:{
 1:`ANO PESSOAL 1 — INÍCIO DE CICLO, AÇÃO E RENOVAÇÃO
 
 Este é o ano que marca o início de um novo ciclo de nove anos. A energia da renovação se torna evidente e tudo começa a se reorganizar para um novo direcionamento de vida. Este período estabelece as bases de tudo aquilo que será construído nos próximos anos, portanto cada decisão tomada agora terá impacto direto no futuro. É o momento de agir, iniciar projetos e assumir o protagonismo da própria história. A vida pede coragem, independência e determinação.
@@ -1126,7 +1126,7 @@ Evite resistir às mudanças. Finalizações são necessárias para novos começ
 Este é o ano de encerramento, cura e preparação para uma nova fase da vida.`  
   },
 
-const textosSinastria = {
+ Sinastria = {
 
   // ENERGIA 1
   "1-1": `
@@ -1643,7 +1643,7 @@ const textosSinastria = {
 
 };  
 
-textos.regente = {
+regente = {
  1:´Início e Liderança. A Potência Regente 1 representa o princípio da individualidade, da iniciativa e da força criadora. Ela rege toda a vida do indivíduo impulsionando-o a agir liderar e abrir caminhos próprios. É a energia do começo da autonomia e da afirmação do eu. No aspecto positivo manifesta liderança natural coragem criatividade inteligência estratégica capacidade de decisão e forte espírito de independência. Indica personalidade ativa inovadora e determinada com potencial para posições de destaque. No aspecto negativo pode gerar egoísmo autoritarismo impulsividade orgulho excessivo e dificuldade em aceitar limites. Quando desequilibrada pode levar ao isolamento e conflitos. A Potência Regente 1 ensina que o verdadeiro líder domina a si mesmo antes de dominar o mundo´,
 
 2:´Sensibilidade e Intuição. A Potência Regente 2 representa percepção espiritual sensibilidade emocional e compreensão do invisível. Rege a vida através da intuição empatia e busca por equilíbrio interior. No aspecto positivo manifesta intuição aguçada espiritualidade diplomacia cooperação e profundidade emocional. No aspecto negativo pode gerar insegurança dependência indecisão passividade e fantasia excessiva levando à fuga da realidade. A Potência Regente 2 ensina que a verdadeira força nasce da sensibilidade consciente´,
@@ -1663,6 +1663,6 @@ textos.regente = {
 9:´Sabedoria e Sacrifício. A Potência Regente 9 representa prudência sabedoria e renúncia. Rege a vida pelo autoconhecimento e busca de significado. No aspecto positivo manifesta maturidade espiritualidade e altruísmo. No aspecto negativo pode gerar isolamento pessimismo e apego ao passado. A Potência Regente 9 ensina que a sabedoria nasce da experiência´,
 }
 
-
+};  
 
 </script>
