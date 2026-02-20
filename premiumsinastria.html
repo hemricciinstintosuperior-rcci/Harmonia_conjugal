@@ -2,116 +2,113 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Relatório Premium – Sinastria Amorosa</title>
+<title>Relatório Premium de Sinastria</title>
 
 <style>
 
 body{
-  font-family:"Times New Roman", serif;
+  font-family: "Times New Roman", serif;
   background:#f4f4f4;
   margin:0;
-  color:#111;
   line-height:1.8;
+  color:#111;
 }
 
 /* COLUNA CENTRAL */
 body > *{
-  max-width:1200px;
+  max-width:1100px;
   margin:auto;
-  padding-left:40px;
-  padding-right:40px;
-}
-
-/* BORDA ROMÂNTICA SUAVE */
-.secao, .capa{
-  background:white;
-  border-radius:12px;
-  box-shadow:0 0 25px rgba(0,0,0,0.05);
-  position:relative;
-  overflow:hidden;
-}
-
-.secao::before, .capa::before{
-  content:"❤ ❤ ❤ ❤ ❤ ❤ ❤ ❤ ❤ ❤ ❤ ❤ ❤ ❤ ❤ ❤";
-  position:absolute;
-  top:10px;
-  left:0;
-  width:100%;
-  text-align:center;
-  font-size:14px;
-  color:rgba(255,0,80,0.08);
-  letter-spacing:10px;
+  padding:40px;
 }
 
 /* CAPA */
 .capa{
   text-align:center;
   padding:140px 40px;
-  margin-bottom:60px;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 0 25px rgba(0,0,0,0.05);
+  page-break-after:always;
 }
 
 .titulo{
   font-size:40px;
-  letter-spacing:3px;
+  letter-spacing:2px;
+  margin-bottom:20px;
 }
 
-.subtitulo{
-  font-size:18px;
-  margin-top:10px;
-}
-
-.nomeCasal{
-  margin-top:70px;
-  font-size:24px;
-}
-
-.datas{
-  margin-top:20px;
-  font-size:18px;
+.sub{
+  font-size:22px;
+  margin-top:30px;
 }
 
 /* SEÇÕES */
 .secao{
-  margin-top:50px;
-  padding:40px;
+  background:white;
+  padding:35px;
+  margin-top:40px;
+  border-radius:10px;
+  box-shadow:0 0 20px rgba(0,0,0,0.05);
+  position:relative;
+}
+
+/* borda coração discreta */
+.secao::before{
+  content:"♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥";
+  position:absolute;
+  top:10px;
+  left:50%;
+  transform:translateX(-50%);
+  font-size:10px;
+  color:#e6b5c3;
+  letter-spacing:10px;
 }
 
 h2{
   font-size:30px;
+  margin-bottom:20px;
   border-bottom:1px solid #eee;
   padding-bottom:10px;
+}
+
+.explicacao{
+  font-style:italic;
   margin-bottom:25px;
+  white-space:pre-line;
 }
 
 .numero{
-  font-size:22px;
   font-weight:bold;
   margin-top:25px;
   margin-bottom:15px;
-}
-
-.negativo{
-  color:#d1003f;
-  font-weight:bold;
+  font-size:20px;
 }
 
 .piramide{
+  text-align:center;
   font-size:18px;
   line-height:1.6;
-  text-align:center;
-  margin-top:20px;
 }
 
-/* CONSIDERAÇÕES */
-.final{
-  margin-top:80px;
+.negativo{
+  color:#b1003f;
+  font-weight:bold;
 }
 
-/* IMPRESSÃO */
+.assinatura{
+  margin-top:100px;
+  text-align:right;
+  font-size:12px;
+  color:#777;
+}
+
 @media print{
-  body{background:white;}
-  .secao{page-break-inside:avoid;}
-  .capa{page-break-after:always;}
+  body{
+    background:white;
+  }
+  .secao{
+    page-break-inside:avoid;
+  }
   @page{
     size:A4;
     margin:20mm 15mm;
@@ -122,220 +119,135 @@ h2{
 </head>
 <body>
 
-<div id="relatorio">
-
-<!-- CAPA -->
 <div class="capa">
-  <div class="titulo">ANÁLISE VIBRACIONAL DA UNIÃO</div>
-  <div class="subtitulo">Relatório Premium de Compatibilidade Numerológica</div>
+  <div class="titulo">RELATÓRIO PREMIUM DE SINASTRIA</div>
+  <div class="sub" id="nomeCasal"></div>
+</div>
 
-  <div class="nomeCasal">
-    <strong>{{NOME1}}</strong> ❤ <strong>{{NOME2}}</strong>
-  </div>
-
-  <div class="datas">
-    {{DATA1}} &nbsp;&nbsp;•&nbsp;&nbsp; {{DATA2}}
-  </div>
+<!-- INTRODUÇÃO GERAL -->
+<div class="secao">
+<h2>Introdução Geral</h2>
+<div class="explicacao">
+Este relatório apresenta uma análise vibracional completa baseada na Numerologia Cabalística.
+O objetivo é revelar tendências individuais, compatibilidade energética,
+potenciais de harmonia e desafios na união do casal.
+</div>
 </div>
 
 <!-- PESSOA 1 -->
 <div class="secao">
-<h2>Pessoa 1</h2>
+<h2 id="tituloPessoa1"></h2>
+<div class="explicacao">
+A análise individual revela como as vibrações pessoais influenciam o relacionamento.
+Aqui estão os aspectos vibracionais que moldam a personalidade e o comportamento.
+</div>
 
-<div class="numero">Motivação {{M1}}</div>
-<div>{{TEXTO_M1}}</div>
-
-<div class="numero">Influência {{I1}}</div>
-<div>{{TEXTO_I1}}</div>
-
-<div class="numero">Personalidade {{P1}}</div>
-<div>{{TEXTO_P1}}</div>
-
-<div class="numero">Caminho {{C1}}</div>
-<div>{{TEXTO_C1}}</div>
-
-<div class="numero">Propósito {{PR1}}</div>
-<div>{{TEXTO_PR1}}</div>
-
-<div class="numero">Harmonia {{H1}}</div>
-<div>{{TEXTO_H1}}</div>
-
-<div class="numero">Ano Pessoal {{ANO1}}</div>
-<div>{{TEXTO_ANO1}}</div>
-
-<div class="numero">Pirâmide</div>
-<div class="piramide">{{PIRAMIDE1}}</div>
-
-<div class="numero">Regente {{REGENTE1}}</div>
-<div>{{TEXTO_REGENTE1}}</div>
-
-<div class="numero">Sequência Negativa</div>
-<div>{{SEQ1}}</div>
-
+<div id="conteudoPessoa1"></div>
 </div>
 
 <!-- PESSOA 2 -->
 <div class="secao">
-<h2>Pessoa 2</h2>
+<h2 id="tituloPessoa2"></h2>
+<div class="explicacao">
+A análise individual revela como as vibrações pessoais influenciam o relacionamento.
+Aqui estão os aspectos vibracionais que moldam a personalidade e o comportamento.
+</div>
 
-<div class="numero">Motivação {{M2}}</div>
-<div>{{TEXTO_M2}}</div>
-
-<div class="numero">Influência {{I2}}</div>
-<div>{{TEXTO_I2}}</div>
-
-<div class="numero">Personalidade {{P2}}</div>
-<div>{{TEXTO_P2}}</div>
-
-<div class="numero">Caminho {{C2}}</div>
-<div>{{TEXTO_C2}}</div>
-
-<div class="numero">Propósito {{PR2}}</div>
-<div>{{TEXTO_PR2}}</div>
-
-<div class="numero">Harmonia {{H2}}</div>
-<div>{{TEXTO_H2}}</div>
-
-<div class="numero">Ano Pessoal {{ANO2}}</div>
-<div>{{TEXTO_ANO2}}</div>
-
-<div class="numero">Pirâmide</div>
-<div class="piramide">{{PIRAMIDE2}}</div>
-
-<div class="numero">Regente {{REGENTE2}}</div>
-<div>{{TEXTO_REGENTE2}}</div>
-
-<div class="numero">Sequência Negativa</div>
-<div>{{SEQ2}}</div>
-
+<div id="conteudoPessoa2"></div>
 </div>
 
 <!-- SINASTRIA -->
 <div class="secao">
-<h2>Sinastria do Casal ❤</h2>
-
-<div class="numero">Número {{SIN_NUM}}</div>
-<div>{{SIN_TEXTO}}</div>
-
-<div class="numero">Compatibilidade Biológica</div>
-<div>{{RH}}</div>
-
+<h2>Sinastria do Casal</h2>
+<div class="explicacao">
+A sinastria representa o cruzamento vibracional entre duas pessoas,
+indicando afinidade energética, desafios e potencial de harmonia.
 </div>
 
-<!-- BEBÊ -->
+<div class="numero" id="numeroSin"></div>
+<div id="textoSin"></div>
+</div>
+
+<!-- COMPATIBILIDADE BIOLÓGICA -->
+<div class="secao">
+<h2>Compatibilidade Biológica</h2>
+<div class="explicacao">
+A compatibilidade biológica avalia a combinação do fator RH
+e possíveis cuidados necessários.
+</div>
+<div id="textoRH"></div>
+</div>
+
+<!-- MAPA DO BEBÊ -->
 <div class="secao">
 <h2>Mapa do Bebê</h2>
+<div class="explicacao">
+O nome do bebê também possui vibração própria.
+Esta análise revela tendências energéticas e possíveis sequências negativas.
+</div>
 
-<div class="numero">{{NOME_BEBE}}</div>
-<div>{{RESULTADO_BEBE}}</div>
-
-<div class="numero">Motivação {{MB}}</div>
-<div>{{TEXTO_MB}}</div>
-
-<div class="numero">Influência {{IB}}</div>
-<div>{{TEXTO_IB}}</div>
-
-<div class="numero">Personalidade {{PB}}</div>
-<div>{{TEXTO_PB}}</div>
-
-<div class="numero">Pirâmide</div>
-<div class="piramide">{{PIRAMIDE_BEBE}}</div>
-
-<div class="numero">Regente {{REGENTE_BEBE}}</div>
-<div>{{TEXTO_REGENTE_BEBE}}</div>
-
-<div class="numero">Sequência Negativa</div>
-<div>{{SEQ_BEBE}}</div>
-
+<div id="conteudoBebe"></div>
 </div>
 
 <!-- CONSIDERAÇÕES FINAIS -->
-<div class="secao final">
+<div class="secao">
 <h2>Considerações Finais</h2>
-<div>{{CONSIDERACOES}}</div>
+<div class="explicacao">
+A harmonia depende da consciência, maturidade e respeito mútuo.
+O conhecimento vibracional amplia a compreensão, mas o destino é construído
+pelas escolhas conscientes de cada indivíduo.
+</div>
 </div>
 
+<div class="assinatura">
+Instinto Superior • Relatório Confidencial
 </div>
 
 <script>
 
-localStorage.getItem("relatorioSinastria")
+const dados = JSON.parse(localStorage.getItem("relatorioSinastria"));
 
 if(!dados){
-  document.body.innerHTML="<h2 style='text-align:center;margin-top:120px'>Nenhum dado encontrado.</h2>";
+  document.body.innerHTML = "<h2 style='text-align:center;margin-top:150px'>Gere primeiro pelo site.</h2>";
   throw new Error("Sem dados");
 }
 
-function preencher(chave,valor){
-  document.body.innerHTML =
-  document.body.innerHTML.replaceAll(chave,valor ?? "");
-}
+/* CAPA */
+document.getElementById("nomeCasal").innerText =
+dados.pessoa1.nome + " & " + dados.pessoa2.nome;
 
-/* PREENCHIMENTO */
+/* TITULOS */
+document.getElementById("tituloPessoa1").innerText =
+"Análise Individual – " + dados.pessoa1.nome;
 
-preencher("{{NOME1}}",dados.pessoa1.nome);
-preencher("{{NOME2}}",dados.pessoa2.nome);
-preencher("{{DATA1}}",dados.pessoa1.data);
-preencher("{{DATA2}}",dados.pessoa2.data);
+document.getElementById("tituloPessoa2").innerText =
+"Análise Individual – " + dados.pessoa2.nome;
 
-preencher("{{M1}}",dados.pessoa1.motivacao);
-preencher("{{TEXTO_M1}}",dados.pessoa1.textos.motivacao);
-preencher("{{I1}}",dados.pessoa1.influencia);
-preencher("{{TEXTO_I1}}",dados.pessoa1.textos.influencia);
-preencher("{{P1}}",dados.pessoa1.personalidade);
-preencher("{{TEXTO_P1}}",dados.pessoa1.textos.personalidade);
-preencher("{{C1}}",dados.pessoa1.caminho);
-preencher("{{TEXTO_C1}}",dados.pessoa1.textos.caminho);
-preencher("{{PR1}}",dados.pessoa1.proposito);
-preencher("{{TEXTO_PR1}}",dados.pessoa1.textos.proposito);
-preencher("{{H1}}",dados.pessoa1.harmonia);
-preencher("{{TEXTO_H1}}",dados.pessoa1.textos.harmonia);
-preencher("{{ANO1}}",dados.pessoa1.anoPessoal);
-preencher("{{TEXTO_ANO1}}",dados.pessoa1.textos.anoPessoal);
-preencher("{{PIRAMIDE1}}",dados.pessoa1.piramide);
-preencher("{{REGENTE1}}",dados.pessoa1.regente);
-preencher("{{TEXTO_REGENTE1}}",dados.pessoa1.textos.regente);
-preencher("{{SEQ1}}",dados.pessoa1.textos.sequenciaNegativa);
+/* PESSOA 1 */
+document.getElementById("conteudoPessoa1").innerHTML =
+dados.pessoa1.piramide +
+dados.pessoa1.regente;
 
-preencher("{{M2}}",dados.pessoa2.motivacao);
-preencher("{{TEXTO_M2}}",dados.pessoa2.textos.motivacao);
-preencher("{{I2}}",dados.pessoa2.influencia);
-preencher("{{TEXTO_I2}}",dados.pessoa2.textos.influencia);
-preencher("{{P2}}",dados.pessoa2.personalidade);
-preencher("{{TEXTO_P2}}",dados.pessoa2.textos.personalidade);
-preencher("{{C2}}",dados.pessoa2.caminho);
-preencher("{{TEXTO_C2}}",dados.pessoa2.textos.caminho);
-preencher("{{PR2}}",dados.pessoa2.proposito);
-preencher("{{TEXTO_PR2}}",dados.pessoa2.textos.proposito);
-preencher("{{H2}}",dados.pessoa2.harmonia);
-preencher("{{TEXTO_H2}}",dados.pessoa2.textos.harmonia);
-preencher("{{ANO2}}",dados.pessoa2.anoPessoal);
-preencher("{{TEXTO_ANO2}}",dados.pessoa2.textos.anoPessoal);
-preencher("{{PIRAMIDE2}}",dados.pessoa2.piramide);
-preencher("{{REGENTE2}}",dados.pessoa2.regente);
-preencher("{{TEXTO_REGENTE2}}",dados.pessoa2.textos.regente);
-preencher("{{SEQ2}}",dados.pessoa2.textos.sequenciaNegativa);
+/* PESSOA 2 */
+document.getElementById("conteudoPessoa2").innerHTML =
+dados.pessoa2.piramide +
+dados.pessoa2.regente;
 
-preencher("{{SIN_NUM}}",dados.sinastria.numero);
-preencher("{{SIN_TEXTO}}",dados.sinastria.texto);
-preencher("{{RH}}",dados.compatibilidadeRH);
+/* SINASTRIA */
+document.getElementById("numeroSin").innerText =
+"Número " + dados.sinastria.numero;
 
-preencher("{{NOME_BEBE}}",dados.bebe.nome);
-preencher("{{RESULTADO_BEBE}}",dados.bebe.resultado);
-preencher("{{MB}}",dados.bebe.motivacao);
-preencher("{{TEXTO_MB}}",dados.bebe.textos.motivacao);
-preencher("{{IB}}",dados.bebe.influencia);
-preencher("{{TEXTO_IB}}",dados.bebe.textos.influencia);
-preencher("{{PB}}",dados.bebe.personalidade);
-preencher("{{TEXTO_PB}}",dados.bebe.textos.personalidade);
-preencher("{{PIRAMIDE_BEBE}}",dados.bebe.piramide);
-preencher("{{REGENTE_BEBE}}",dados.bebe.regente);
-preencher("{{TEXTO_REGENTE_BEBE}}",dados.bebe.textos.regente);
-preencher("{{SEQ_BEBE}}",dados.bebe.textos.sequenciaNegativa);
+document.getElementById("textoSin").innerText =
+dados.sinastria.texto;
 
-preencher("{{CONSIDERACOES}}",dados.consideracoes);
+/* RH */
+document.getElementById("textoRH").innerText =
+dados.compatibilidadeRH;
 
-setTimeout(()=>window.print(),1500);
+/* BEBÊ */
+document.getElementById("conteudoBebe").innerHTML =
+dados.bebe.piramide +
+dados.bebe.regente;
 
 </script>
 
