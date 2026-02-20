@@ -253,11 +253,13 @@ button:hover{
 
     <button onclick="gerarBebe()">Gerar Mapa do Bebê</button>
 
-    <div class="abas">
-      <button onclick="abrirModal('mB')">Motivação</button>
-      <button onclick="abrirModal('iB')">Influencia</button>
-      <button onclick="abrirModal('pB')">Personalidade</button>
-    </div>
+ <div class="abas">
+  <button onclick="abrirModal('mB')">Motivação</button>
+  <button onclick="abrirModal('iB')">Influencia</button>
+  <button onclick="abrirModal('pB')">Personalidade</button>
+</div>
+
+<div id="resultadoBebe"></div>
 
   </div>
 
@@ -659,5 +661,17 @@ function gerarBebe(){
     document.getElementById("regenteBebe")
   );
 }
+if (dadosBebe.sequenciaNegativa == null) {
+
+  document.getElementById("resultadoBebe").innerHTML =
+    "✅ Este nome é harmônico.";
+
+} else {
+
+  document.getElementById("resultadoBebe").innerHTML =
+    "❌ Este nome possui sequência negativa e não é harmônico.";
+
+}
+  
 
 </script>
