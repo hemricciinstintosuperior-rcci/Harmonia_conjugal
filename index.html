@@ -514,27 +514,37 @@ function abrirModalTexto(texto){
 }
 
 function abrirModal(tipo){
+
+
   let texto="";
-  if(tipo==="m1") texto="Motivação: "+dados1.motivacao;
-  if(tipo==="i1") texto="Influência: "+dados1.influencia;
-  if(tipo==="p1") texto="Personalidade: "+dados1.personalidade;
-  if(tipo==="d1") texto="Caminho: "+dados1.caminho;
-  if(tipo==="pr1") texto="Propósito: "+dados1.proposito;
-if(tipo==="h1") texto = textos.harmonia[dados1.proposito];
 
-  if(tipo==="m2") texto="Motivação: "+dados2.motivacao;
-  if(tipo==="i2") texto="Influência: "+dados2.influencia;
-  if(tipo==="p2") texto="Personalidade: "+dados2.personalidade;
-  if(tipo==="d2") texto="Caminho: "+dados2.caminho;
-  if(tipo==="pr2") texto="Propósito: "+dados2.proposito;
-if(tipo==="h2") texto = textos.harmonia[dados2.proposito];
+  // ---------------- PESSOA 1 ----------------
 
-if(tipo==="mB") texto="Motivação: "+dadosBebe.motivacao;
-if(tipo==="iB") texto="Influência: "+dadosBebe.influencia;
-if(tipo==="pB") texto="Personalidade: "+dadosBebe.personalidade;
+  if(tipo==="m1") texto = textos.motivacao[dados1.motivacao];
+  if(tipo==="i1") texto = textos.influencia[dados1.influencia];
+  if(tipo==="p1") texto = textos.personalidade[dados1.personalidade];
+  if(tipo==="d1") texto = textos.CaminhodeVida[dados1.caminho];
+  if(tipo==="pr1") texto = textos.proposito[dados1.proposito];
+  if(tipo==="h1") texto = textos.harmonia[dados1.proposito];
+
+  // ---------------- PESSOA 2 ----------------
+
+  if(tipo==="m2") texto = textos.motivacao[dados2.motivacao];
+  if(tipo==="i2") texto = textos.influencia[dados2.influencia];
+  if(tipo==="p2") texto = textos.personalidade[dados2.personalidade];
+  if(tipo==="d2") texto = textos.CaminhodeVida[dados2.caminho];
+  if(tipo==="pr2") texto = textos.proposito[dados2.proposito];
+  if(tipo==="h2") texto = textos.harmonia[dados2.proposito];
+
+  // ---------------- BEBÊ ----------------
+
+  if(tipo==="mB") texto = textos.motivacao[dadosBebe.motivacao];
+  if(tipo==="iB") texto = textos.influencia[dadosBebe.influencia];
+  if(tipo==="pB") texto = textos.personalidade[dadosBebe.personalidade];
 
   abrirModalTexto(texto);
 }
+
 
 function fecharModal(){
   document.getElementById("modal").style.display="none";
