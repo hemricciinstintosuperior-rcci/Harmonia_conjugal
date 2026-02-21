@@ -273,12 +273,16 @@ function montarBebe(b){
     <div class="bloco">
 
       <div class="numero">Motivação: ${b.motivacao ?? ""}</div>
+      <div>${b.textos?.motivacao ?? ""}</div>
 
       <div class="numero">Influência: ${b.influencia ?? ""}</div>
+      <div>${b.textos?.influencia ?? ""}</div>
 
       <div class="numero">Personalidade: ${b.personalidade ?? ""}</div>
+      <div>${b.textos?.personalidade ?? ""}</div>
 
       <div class="numero">${b.regente ?? ""}</div>
+      <div>${b.textos?.regente ?? ""}</div>
 
       <div class="piramide">${b.piramide ?? ""}</div>
 
