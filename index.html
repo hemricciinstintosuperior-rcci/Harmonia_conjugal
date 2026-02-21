@@ -389,14 +389,17 @@ function calcularPessoa(nome, data){
     proposito = reduzir(caminho+personalidade);
   }
 
-  return {
-    motivacao,
-    influencia,
-    personalidade,
-    caminho,
-    proposito,
-    valores
-  }
+const harmonia = proposito;
+
+return {
+  motivacao,
+  influencia,
+  personalidade,
+  caminho,
+  proposito,
+  harmonia,
+  valores
+}
 }
 
 // =====================
@@ -535,7 +538,7 @@ if (elementoRegente.id === "regenteBebe") {
 
   const resultado = document.getElementById("resultadoBebe");
 
-  if (numeroSequencia == null) {
+ if (!numerosSequencias || numerosSequencias.length === 0) {
     resultado.innerHTML = "✅ Este nome é harmônico.";
   } else {
     resultado.innerHTML = "❌ Este nome possui sequência negativa e não é harmônico.";
@@ -715,17 +718,7 @@ function gerarBebe(){
     document.getElementById("regenteBebe")
   );
 }
-if (dadosBebe.sequenciaNegativa == null) {
 
-  document.getElementById("resultadoBebe").innerHTML =
-    "✅ Este nome é harmônico.";
-
-} else {
-
-  document.getElementById("resultadoBebe").innerHTML =
-    "❌ Este nome possui sequência negativa e não é harmônico.";
-
-}
 
 
 function abrirPremiumSinastria(){
@@ -832,7 +825,7 @@ localStorage.setItem(
 
 
   window.open(
-    "https://hemricciinstintosuperior-rcci.github.io/Harmonia_conjugal/premiumsinastria.html ",
+    "https://hemricciinstintosuperior-rcci.github.io/Harmonia_conjugal/premiumsinastria.html",
     "_blank"
   );
 }
