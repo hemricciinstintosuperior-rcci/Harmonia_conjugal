@@ -809,11 +809,23 @@ const pacote = {
 
   biologico: compatibilidadeRH(),
 
-  bebe:{
-    nome: document.getElementById("nomeBebe").value,
-    piramide: document.getElementById("piramideBebe").innerHTML,
-    regente: document.getElementById("regenteBebe").innerText
+bebe:{
+  nome: document.getElementById("nomeBebe").value,
+
+  motivacao: numeroMotivacaoBebe,
+  influencia: numeroInfluenciaBebe,
+  personalidade: numeroPersonalidadeBebe,
+  regente: numeroRegenteBebe,
+
+  piramide: document.getElementById("piramideBebe").innerHTML,
+
+  textos:{
+    motivacao: textoMotivacaoBebe,
+    influencia: textoInfluenciaBebe,
+    personalidade: textoPersonalidadeBebe,
+    regente: textoRegenteBebe
   }
+}
 
 };
 
