@@ -282,10 +282,10 @@ function montarPessoa(p){
     <div>${p.textos.regente}</div>
 
 ${(p.textos.seqNegativa && p.textos.seqNegativa.trim() !== "") ? `
-   <div class="numero">Sequência Negativa: Existe</div>
+   <div class="numero">Sequência Negativa:  Identificada — Ponto de Ajuste Evolutivo</div>
    <div>${p.textos.seqNegativa}</div>
 ` : `
-   <div class="numero">Sequência Negativa: Não Existe</div>
+   <div class="numero">Sequência Negativa: Não Identificada — Estrutura Vibracional Harmônica</div>
 `}
 
     <div class="piramide">${p.piramide}</div>
@@ -315,10 +315,10 @@ function montarBebe(b){
       <div>${b.textos?.regente ?? ""}</div>
 
 ${(b.textos?.seqNegativa && b.textos.seqNegativa.trim() !== "") ? `
-   <div class="numero">Sequência Negativa: Identificada — Ponto de Ajuste Evolutivo </div>
+   <div class="numero">Sequência Negativa: Identificada — esse nome não é Harmônico para o bebe </div>
    <div>${b.textos.seqNegativa}</div>
 ` : `
-   <div class="numero">Sequência Negativa: Não Identificada — Estrutura Vibracional Harmônica</div>
+   <div class="numero">Sequência Positiva: Estrutura Vibracional Harmônica para o bebe</div>
 `}
 
       <div class="piramide">${b.piramide ?? ""}</div>
