@@ -284,6 +284,13 @@ function montarBebe(b){
       <div class="numero">${b.regente ?? ""}</div>
       <div>${b.textos?.regente ?? ""}</div>
 
+${(b.textos?.seqNegativa && b.textos.seqNegativa.trim() !== "") ? `
+   <div class="numero">Sequência Negativa: Existe</div>
+   <div>${b.textos.seqNegativa}</div>
+` : `
+   <div class="numero">Sequência Negativa: Não Existe</div>
+`}
+
       <div class="piramide">${b.piramide ?? ""}</div>
 
     </div>
