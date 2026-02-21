@@ -722,44 +722,89 @@ function abrirPremiumSinastria(){
     alert("Calcule a sinastria primeiro.");
     return;
   }
+const pacote = {
 
-  const pacote = {
+  pessoa1:{
+    nome: nome1,
+    data: data1,
 
-    pessoa1:{
-      nome:nome1,
-      data:data1,
-      piramide: document.getElementById("piramide1").innerHTML,
-      regente:  document.getElementById("regente1").innerHTML,
-      anoPessoal: dados1.anoPessoal
-    },
+    piramide: document.getElementById("piramide1").innerHTML,
+    regente: dados1.regente,
+    seqNegativa: dados1.seqNegativa,
 
-    pessoa2:{
-      nome:nome2,
-      data:data2,
-      piramide: document.getElementById("piramide2").innerHTML,
-      regente:  document.getElementById("regente2").innerHTML,
-      anoPessoal: dados2.anoPessoal
-    },
+    motivacao: dados1.motivacao,
+    influencia: dados1.influencia,
+    personalidade: dados1.personalidade,
+    caminho: dados1.caminho,
+    proposito: dados1.proposito,
+    harmonia: dados1.harmonia,
+    ano: dados1.anoPessoal,
 
-    sinastria:{
-      numero: chaveSinastria(dados1.proposito,dados2.proposito),
-      texto: textos.sinastria[chaveSinastria(dados1.proposito,dados2.proposito)]
-    },
-
-    compatibilidadeRH: compatibilidadeRH(),
-
-    bebe:{
-      nome: document.getElementById("nomeBebe").value,
-      piramide: document.getElementById("piramideBebe").innerHTML,
-      regente: document.getElementById("regenteBebe").innerHTML
+    textos:{
+      motivacao: textos.motivacao[dados1.motivacao],
+      influencia: textos.influencia[dados1.influencia],
+      personalidade: textos.personalidade[dados1.personalidade],
+      caminho: textos.caminho[dados1.caminho],
+      proposito: textos.proposito[dados1.proposito],
+      harmonia: textos.harmonia[dados1.harmonia],
+      ano: textos.anoPessoal[dados1.anoPessoal],
+      regente: textos.regente[dados1.regente],
+      seqNegativa: textos.seqNegativa[dados1.seqNegativa]
     }
+  },
 
-  };
+  pessoa2:{
+    nome: nome2,
+    data: data2,
 
-  localStorage.setItem(
-    "relatorioSinastria",
-    JSON.stringify(pacote)
-  );
+    piramide: document.getElementById("piramide2").innerHTML,
+    regente: dados2.regente,
+    seqNegativa: dados2.seqNegativa,
+
+    motivacao: dados2.motivacao,
+    influencia: dados2.influencia,
+    personalidade: dados2.personalidade,
+    caminho: dados2.caminho,
+    proposito: dados2.proposito,
+    harmonia: dados2.harmonia,
+    ano: dados2.anoPessoal,
+
+    textos:{
+      motivacao: textos.motivacao[dados2.motivacao],
+      influencia: textos.influencia[dados2.influencia],
+      personalidade: textos.personalidade[dados2.personalidade],
+      caminho: textos.caminho[dados2.caminho],
+      proposito: textos.proposito[dados2.proposito],
+      harmonia: textos.harmonia[dados2.harmonia],
+      ano: textos.anoPessoal[dados2.anoPessoal],
+      regente: textos.regente[dados2.regente],
+      seqNegativa: textos.seqNegativa[dados2.seqNegativa]
+    }
+  },
+
+  sinastria:{
+    numero: chaveSinastria(dados1.proposito, dados2.proposito),
+    texto: textos.sinastria[
+      chaveSinastria(dados1.proposito, dados2.proposito)
+    ]
+  },
+
+  biologico: compatibilidadeRH(),
+
+  bebe:{
+    nome: document.getElementById("nomeBebe").value,
+    piramide: document.getElementById("piramideBebe").innerHTML,
+    regente: document.getElementById("regenteBebe").innerText
+  }
+
+};
+
+localStorage.setItem(
+  "relatorioSinastria",
+  JSON.stringify(pacote)
+);
+
+
 
   window.open(
     "https://hemricciinstintosuperior-rcci.github.io/Harmonia_conjugal/premiumsinastria.html ",
