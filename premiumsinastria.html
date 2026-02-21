@@ -233,11 +233,15 @@ document.getElementById("conteudoBebe").innerHTML =
 dados.bebe;
 
 /* PDF AUTOMÁTICO */
-window.onload = function(){
-  setTimeout(()=>{
-    html2pdf().from(document.getElementById("relatorio")).save("Relatorio_Sinastria.pdf");
-  },1000);
+function gerarPDF(){
+    window.scrollTo(0,0);
+    setTimeout(()=>{
+        window.print();
+    }, 800);
 }
+
+setTimeout(gerarPDF, 1200);
+
 </script>
 
 </body>
