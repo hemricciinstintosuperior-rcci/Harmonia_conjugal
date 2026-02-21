@@ -276,26 +276,29 @@ ${(p.textos.seqNegativa && p.textos.seqNegativa.trim() !== "") ? `
 document.getElementById("conteudoP1").innerHTML = montarPessoa(dados.pessoa1);
 document.getElementById("conteudoP2").innerHTML = montarPessoa(dados.pessoa2);
 
-  
 function montarBebe(b){
-   return `
-      <div class="bloco">
-         <div class="numero">Motivação: ${b.motivacao}</div>
-         <div>${b.textos.motivacao}</div>
+  if(!b) return "";
 
-    
+  return `
+    <div class="bloco">
 
-         <div class="numero">Impressão: ${b.influencia}</div>
-         <div>${b.textos.influencia}</div>
+      <div class="numero">Motivação: ${b.motivacao ?? ""}</div>
+      <div>${b.textos?.motivacao ?? ""}</div>
 
-            <div class="numero">Personalidade: ${b.personalidade}</div>
-         <div>${b.textos.personalidade}</div>
-      </div>
-   `;
-}  
+      <div class="numero">Influência: ${b.influencia ?? ""}</div>
+      <div>${b.textos?.influencia ?? ""}</div>
+
+      <div class="numero">Personalidade: ${b.personalidade ?? ""}</div>
+      <div>${b.textos?.personalidade ?? ""}</div>
+
+      <div class="piramide">${b.piramide ?? ""}</div>
+
+    </div>
+  `;
+}
 document.getElementById("conteudoBebe").innerHTML = montarBebe(dados.bebe);
 console.log("BEBE:", dados.bebe);
-
+ `;
 /* SINASTRIA */
 document.getElementById("conteudoSinastria").innerHTML = `
 <div class="numero">Número: ${dados.sinastria.numero}</div>
