@@ -1,254 +1,226 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <title>Relatório Premium de Sinastria</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
 <style>
-
 body{
-  font-family: "Times New Roman", serif;
-  background:#f4f4f4;
+  font-family:"Times New Roman", serif;
+  background:#f5f5f5;
   margin:0;
-  line-height:1.8;
   color:#111;
+  line-height:1.8;
 }
 
-/* COLUNA CENTRAL */
-body > *{
-  max-width:1100px;
+.container{
+  max-width:1000px;
   margin:auto;
   padding:40px;
+  background:white;
+  box-shadow:0 0 30px rgba(0,0,0,0.05);
 }
 
-/* CAPA */
-.capa{
+h1,h2{
   text-align:center;
-  padding:140px 40px;
-  background:white;
-  border-radius:10px;
-  box-shadow:0 0 25px rgba(0,0,0,0.05);
-  page-break-after:always;
-}
-
-.titulo{
-  font-size:40px;
-  letter-spacing:2px;
-  margin-bottom:20px;
-}
-
-.sub{
-  font-size:22px;
-  margin-top:30px;
-}
-
-/* SEÇÕES */
-.secao{
-  background:white;
-  padding:35px;
-  margin-top:40px;
-  border-radius:10px;
-  box-shadow:0 0 20px rgba(0,0,0,0.05);
-  position:relative;
-}
-
-/* borda coração discreta */
-.secao::before{
-  content:"♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥";
-  position:absolute;
-  top:10px;
-  left:50%;
-  transform:translateX(-50%);
-  font-size:10px;
-  color:#e6b5c3;
-  letter-spacing:10px;
 }
 
 h2{
-  font-size:30px;
-  margin-bottom:20px;
+  margin-top:60px;
   border-bottom:1px solid #eee;
   padding-bottom:10px;
 }
 
-.explicacao{
+.intro{
   font-style:italic;
-  margin-bottom:25px;
-  white-space:pre-line;
+  margin-bottom:30px;
+}
+
+.bloco{
+  margin-top:40px;
 }
 
 .numero{
   font-weight:bold;
-  margin-top:25px;
-  margin-bottom:15px;
   font-size:20px;
+  margin-top:15px;
+}
+
+.assinatura{
+  text-align:right;
+  margin-top:80px;
+  font-size:14px;
+  color:#777;
 }
 
 .piramide{
   text-align:center;
-  font-size:18px;
-  line-height:1.6;
+  font-family:monospace;
+  margin-top:20px;
 }
 
-.negativo{
-  color:#b1003f;
+.vermelho{
+  color:red;
   font-weight:bold;
 }
-
-.assinatura{
-  margin-top:100px;
-  text-align:right;
-  font-size:12px;
-  color:#777;
-}
-
-@media print{
-  body{
-    background:white;
-  }
-  .secao{
-    page-break-inside:avoid;
-  }
-  @page{
-    size:A4;
-    margin:20mm 15mm;
-  }
-}
-
 </style>
 </head>
 <body>
 
-<div class="capa">
-  <div class="titulo">RELATÓRIO PREMIUM DE SINASTRIA</div>
-  <div class="sub" id="nomeCasal"></div>
-</div>
+<div class="container" id="relatorio">
 
-<!-- INTRODUÇÃO GERAL -->
-<div class="secao">
-<h2>Introdução Geral</h2>
-<div class="explicacao">
-Este relatório apresenta uma análise vibracional completa baseada na Numerologia Cabalística.
-O objetivo é revelar tendências individuais, compatibilidade energética,
-potenciais de harmonia e desafios na união do casal.
-</div>
+<!-- CAPA -->
+<h1>Relatório Premium de Sinastria</h1>
+<h2 id="nomeCasal"></h2>
+
+<div class="intro">
+Este relatório apresenta a análise vibracional completa do casal,
+incluindo aspectos individuais, cruzamento energético, compatibilidade
+biológica e projeção vibracional familiar.
 </div>
 
 <!-- PESSOA 1 -->
-<div class="secao">
-<h2 id="tituloPessoa1"></h2>
-<div class="explicacao">
-A análise individual revela como as vibrações pessoais influenciam o relacionamento.
-Aqui estão os aspectos vibracionais que moldam a personalidade e o comportamento.
+<h2 id="tituloP1"></h2>
+
+<div class="intro">
+A análise individual revela como as vibrações pessoais moldam
+personalidade, comportamento e influência nos relacionamentos.
 </div>
 
-<div id="conteudoPessoa1"></div>
-</div>
+<div id="conteudoP1"></div>
 
 <!-- PESSOA 2 -->
-<div class="secao">
-<h2 id="tituloPessoa2"></h2>
-<div class="explicacao">
-A análise individual revela como as vibrações pessoais influenciam o relacionamento.
-Aqui estão os aspectos vibracionais que moldam a personalidade e o comportamento.
+<h2 id="tituloP2"></h2>
+
+<div class="intro">
+A análise individual revela como as vibrações pessoais moldam
+personalidade, comportamento e influência nos relacionamentos.
 </div>
 
-<div id="conteudoPessoa2"></div>
-</div>
+<div id="conteudoP2"></div>
 
 <!-- SINASTRIA -->
-<div class="secao">
 <h2>Sinastria do Casal</h2>
-<div class="explicacao">
+
+<div class="intro">
 A sinastria representa o cruzamento vibracional entre duas pessoas,
 indicando afinidade energética, desafios e potencial de harmonia.
 </div>
 
-<div class="numero" id="numeroSin"></div>
-<div id="textoSin"></div>
-</div>
+<div id="conteudoSinastria"></div>
 
 <!-- COMPATIBILIDADE BIOLÓGICA -->
-<div class="secao">
 <h2>Compatibilidade Biológica</h2>
-<div class="explicacao">
-A compatibilidade biológica avalia a combinação do fator RH
-e possíveis cuidados necessários.
-</div>
-<div id="textoRH"></div>
+
+<div class="intro">
+A compatibilidade biológica analisa possíveis interações genéticas
+e energéticas entre o casal.
 </div>
 
+<div id="conteudoBiologico"></div>
+
 <!-- MAPA DO BEBÊ -->
-<div class="secao">
 <h2>Mapa do Bebê</h2>
-<div class="explicacao">
-O nome do bebê também possui vibração própria.
-Esta análise revela tendências energéticas e possíveis sequências negativas.
+
+<div class="intro">
+O mapa vibracional do bebê demonstra projeções energéticas
+resultantes da união do casal.
 </div>
 
 <div id="conteudoBebe"></div>
-</div>
 
 <!-- CONSIDERAÇÕES FINAIS -->
-<div class="secao">
 <h2>Considerações Finais</h2>
-<div class="explicacao">
-A harmonia depende da consciência, maturidade e respeito mútuo.
-O conhecimento vibracional amplia a compreensão, mas o destino é construído
-pelas escolhas conscientes de cada indivíduo.
-</div>
+
+<div>
+A harmonia entre duas pessoas depende não apenas da compatibilidade
+vibracional, mas também do nível de consciência e maturidade emocional.
+Este relatório serve como orientação estratégica.
 </div>
 
 <div class="assinatura">
-Instinto Superior • Relatório Confidencial
+Relatório desenvolvido por Instinto Superior
+</div>
+
 </div>
 
 <script>
-
 const dados = JSON.parse(localStorage.getItem("relatorioSinastria"));
 
 if(!dados){
-  document.body.innerHTML = "<h2 style='text-align:center;margin-top:150px'>Gere primeiro pelo site.</h2>";
+  document.body.innerHTML = "<h2 style='text-align:center;margin-top:120px'>Gere o relatório pelo index primeiro.</h2>";
   throw new Error("Sem dados");
 }
 
-/* CAPA */
+/* NOME DO CASAL */
 document.getElementById("nomeCasal").innerText =
 dados.pessoa1.nome + " & " + dados.pessoa2.nome;
 
 /* TITULOS */
-document.getElementById("tituloPessoa1").innerText =
-"Análise Individual – " + dados.pessoa1.nome;
+document.getElementById("tituloP1").innerText = "Análise Individual – " + dados.pessoa1.nome;
+document.getElementById("tituloP2").innerText = "Análise Individual – " + dados.pessoa2.nome;
 
-document.getElementById("tituloPessoa2").innerText =
-"Análise Individual – " + dados.pessoa2.nome;
+/* FUNÇÃO PARA MONTAR BLOCO INDIVIDUAL */
+function montarPessoa(p){
+  return `
+  <div class="bloco">
+    <div class="numero">Motivação: ${p.motivacao}</div>
+    <div>${p.textos.motivacao}</div>
 
-/* PESSOA 1 */
-document.getElementById("conteudoPessoa1").innerHTML =
-dados.pessoa1.piramide +
-dados.pessoa1.regente;
+    <div class="numero">Influência: ${p.influencia}</div>
+    <div>${p.textos.influencia}</div>
 
-/* PESSOA 2 */
-document.getElementById("conteudoPessoa2").innerHTML =
-dados.pessoa2.piramide +
-dados.pessoa2.regente;
+    <div class="numero">Personalidade: ${p.personalidade}</div>
+    <div>${p.textos.personalidade}</div>
+
+    <div class="numero">Caminho de Vida: ${p.caminho}</div>
+    <div>${p.textos.caminho}</div>
+
+    <div class="numero">Propósito: ${p.proposito}</div>
+    <div>${p.textos.proposito}</div>
+
+    <div class="numero">Ano Pessoal: ${p.ano}</div>
+    <div>${p.textos.ano}</div>
+
+    <div class="numero">Harmonia Individual: ${p.harmonia}</div>
+    <div>${p.textos.harmonia}</div>
+
+    <div class="numero">Regente: ${p.regente}</div>
+    <div>${p.textos.regente}</div>
+
+    <div class="numero">Sequência Negativa: ${p.seqNegativa}</div>
+    <div>${p.textos.seqNegativa}</div>
+
+    <div class="piramide">${p.piramide}</div>
+  </div>
+  `;
+}
+
+/* RENDERIZA */
+document.getElementById("conteudoP1").innerHTML = montarPessoa(dados.pessoa1);
+document.getElementById("conteudoP2").innerHTML = montarPessoa(dados.pessoa2);
 
 /* SINASTRIA */
-document.getElementById("numeroSin").innerText =
-"Número " + dados.sinastria.numero;
+document.getElementById("conteudoSinastria").innerHTML = `
+<div class="numero">Número: ${dados.sinastria.numero}</div>
+<div>${dados.sinastria.texto}</div>
+`;
 
-document.getElementById("textoSin").innerText =
-dados.sinastria.texto;
+/* BIOLOGICO */
+document.getElementById("conteudoBiologico").innerHTML =
+dados.biologico;
 
-/* RH */
-document.getElementById("textoRH").innerText =
-dados.compatibilidadeRH;
-
-/* BEBÊ */
+/* BEBE */
 document.getElementById("conteudoBebe").innerHTML =
-dados.bebe.piramide +
-dados.bebe.regente;
+dados.bebe;
 
+/* PDF AUTOMÁTICO */
+window.onload = function(){
+  setTimeout(()=>{
+    html2pdf().from(document.getElementById("relatorio")).save("Relatorio_Sinastria.pdf");
+  },1000);
+}
 </script>
 
 </body>
