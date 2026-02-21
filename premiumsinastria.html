@@ -259,7 +259,7 @@ function montarPessoa(p){
     <div class="numero">Regente: ${p.regente}</div>
     <div>${p.textos.regente}</div>
 
- ${(p.seqNegativa && p.seqNegativa.length > 0) ? `
+${(p.textos.seqNegativa && p.textos.seqNegativa.trim() !== "") ? `
    <div class="numero">Sequência Negativa: Existe</div>
    <div>${p.textos.seqNegativa}</div>
 ` : `
@@ -270,10 +270,27 @@ function montarPessoa(p){
   </div>
   `;
 }
-
 /* RENDERIZA */
 document.getElementById("conteudoP1").innerHTML = montarPessoa(dados.pessoa1);
 document.getElementById("conteudoP2").innerHTML = montarPessoa(dados.pessoa2);
+
+  
+function montarBebe(b){
+   return `
+      <div class="bloco">
+         <div class="numero">Motivação: ${b.motivacao}</div>
+         <div>${b.textos.motivacao}</div>
+
+         <div class="numero">Personalidade: ${b.personalidade}</div>
+         <div>${b.textos.personalidade}</div>
+
+         <div class="numero">Impressão: ${b.impressao}</div>
+         <div>${b.textos.impressao}</div>
+      </div>
+   `;
+}  
+document.getElementById("conteudoBebe").innerHTML = montarBebe(dados.bebe);
+
 
 /* SINASTRIA */
 document.getElementById("conteudoSinastria").innerHTML = `
