@@ -241,6 +241,10 @@ function gerarPDF(){
 }
 
 setTimeout(gerarPDF, 1200);
+ // 🔒 BLOQUEIO CÓPIA
+// =======================
+document.oncontextmenu=()=>false;
+document.onselectstart=()=>false; 
 
 </script>
 
