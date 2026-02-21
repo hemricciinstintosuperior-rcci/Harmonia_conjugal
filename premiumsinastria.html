@@ -189,11 +189,13 @@ Dar um nome harmônico é oferecer ao filho não apenas identidade, mas equilíb
    <div class="numero">Motivação: ${dados.bebe.motivacao}</div>
    <div>${dados.bebe.textos.motivacao}</div>
 
+  <div class="numero">influencia: ${dados.bebe.influencia}</div>
+   <div>${dados.bebe.textos.influencia}</div>
+
    <div class="numero">Personalidade: ${dados.bebe.personalidade}</div>
    <div>${dados.bebe.textos.personalidade}</div>
 
-   <div class="numero">Impressão: ${dados.bebe.impressao}</div>
-   <div>${dados.bebe.textos.impressao}</div>
+   
 </div>
 
 <!-- CONSIDERAÇÕES FINAIS -->
@@ -281,11 +283,13 @@ function montarBebe(b){
          <div class="numero">Motivação: ${b.motivacao}</div>
          <div>${b.textos.motivacao}</div>
 
-         <div class="numero">Personalidade: ${b.personalidade}</div>
-         <div>${b.textos.personalidade}</div>
+    
 
-         <div class="numero">Impressão: ${b.impressao}</div>
-         <div>${b.textos.impressao}</div>
+         <div class="numero">Impressão: ${b.influencia}</div>
+         <div>${b.textos.influencia}</div>
+
+            <div class="numero">Personalidade: ${b.personalidade}</div>
+         <div>${b.textos.personalidade}</div>
       </div>
    `;
 }  
