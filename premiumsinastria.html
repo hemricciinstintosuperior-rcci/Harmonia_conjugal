@@ -312,8 +312,7 @@ function montarBebe(b){
       <div class="numero">Personalidade: ${b.personalidade ?? ""}</div>
       <div>${b.textos?.personalidade ?? ""}</div>
 
-      <div class="numero">${b.regente ?? ""}</div>
-      <div>${b.textos?.regente ?? ""}</div>
+      
 
 ${(b.textos?.seqNegativa && b.textos.seqNegativa.trim() !== "") ? `
    <div class="numero">Sequência Negativa: Identificada — esse nome não é Harmônico para o bebe </div>
@@ -323,7 +322,8 @@ ${(b.textos?.seqNegativa && b.textos.seqNegativa.trim() !== "") ? `
 `}
 
       <div class="piramide">${b.piramide ?? ""}</div>
-
+<div class="numero">${b.regente ?? ""}</div>
+      <div>${b.textos?.regente ?? ""}</div>
     </div>
   `;
 }
