@@ -510,6 +510,17 @@ elementoRegente.innerHTML = `
 `;
 
 if (elementoRegente.id === "regente1") {
+    dados1.regente = regente;
+}
+if (elementoRegente.id === "regente2") {
+    dados2.regente = regente;
+}
+if (elementoRegente.id === "regenteBebe") {
+    dadosBebe.regente = regente;
+}
+  
+
+if (elementoRegente.id === "regente1") {
     dados1.sequenciaNegativa = numerosSequencias;;
 }
 
@@ -736,7 +747,7 @@ const pacote = {
 
     piramide: document.getElementById("piramide1").innerHTML,
     regente: dados1.regente,
-    seqNegativa: dados1.seqNegativa,
+   
 
     motivacao: dados1.motivacao,
     influencia: dados1.influencia,
@@ -755,7 +766,11 @@ const pacote = {
       harmonia: textos.harmonia[dados1.harmonia],
       ano: textos.anoPessoal[dados1.anoPessoal],
       regente: textos.regente[dados1.regente],
-      seqNegativa: textos.seqNegativa[dados1.seqNegativa]
+ seqNegativa: dados1.sequenciaNegativa
+  ? dados1.sequenciaNegativa
+      .map(n => textos.sequenciaNegativa[n])
+      .join("<br><br>")
+  : "",
     }
   },
 
@@ -765,7 +780,7 @@ const pacote = {
 
     piramide: document.getElementById("piramide2").innerHTML,
     regente: dados2.regente,
-    seqNegativa: dados2.seqNegativa,
+    
 
     motivacao: dados2.motivacao,
     influencia: dados2.influencia,
@@ -784,7 +799,11 @@ const pacote = {
       harmonia: textos.harmonia[dados2.harmonia],
       ano: textos.anoPessoal[dados2.anoPessoal],
       regente: textos.regente[dados2.regente],
-      seqNegativa: textos.seqNegativa[dados2.seqNegativa]
+      seqNegativa: dados2.sequenciaNegativa
+  ? dados2.sequenciaNegativa
+      .map(n => textos.sequenciaNegativa[n])
+      .join("<br><br>")
+  : "",
     }
   },
 
