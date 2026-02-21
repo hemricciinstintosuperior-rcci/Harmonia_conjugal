@@ -278,8 +278,7 @@ function montarPessoa(p){
     <div class="numero">Harmonia Individual: ${p.harmonia}</div>
     <div>${p.textos.harmonia}</div>
 
-    <div class="numero">Regente: ${p.regente}</div>
-    <div>${p.textos.regente}</div>
+
 
 ${(p.textos.seqNegativa && p.textos.seqNegativa.trim() !== "") ? `
    <div class="numero">Sequência Negativa:  Identificada — Ponto de Ajuste Evolutivo</div>
@@ -289,6 +288,8 @@ ${(p.textos.seqNegativa && p.textos.seqNegativa.trim() !== "") ? `
 `}
 
     <div class="piramide">${p.piramide}</div>
+        <div class="numero">Regente: ${p.regente}</div>
+    <div>${p.textos.regente}</div>
   </div>
   `;
 }
