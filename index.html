@@ -703,6 +703,9 @@ dados2.anoPessoal = calcularAnoPessoal(data2);
   document.getElementById("compat").innerHTML = compatibilidadeRH();
 }
 
+  
+let dadosBebe = null;
+  
 function gerarBebe(){
 
   const nomeBebe = document.getElementById("nomeBebe").value;
@@ -809,23 +812,24 @@ const pacote = {
 
   biologico: compatibilidadeRH(),
 
-bebe:{
+bebe: dadosBebe ? {
   nome: document.getElementById("nomeBebe").value,
 
-  motivacao: numeroMotivacaoBebe,
-  influencia: numeroInfluenciaBebe,
-  personalidade: numeroPersonalidadeBebe,
-  regente: numeroRegenteBebe,
+  motivacao: dadosBebe.motivacao,
+  influencia: dadosBebe.influencia,
+  personalidade: dadosBebe.personalidade,
+  regente: dadosBebe.regente,
 
   piramide: document.getElementById("piramideBebe").innerHTML,
 
   textos:{
-  motivacao: textos.motivacao[numeroMotivacaoBebe],
-  influencia: textos.influencia[numeroInfluenciaBebe],
-  personalidade: textos.personalidade[numeroPersonalidadeBebe],
-  regente: textos.regente[numeroRegenteBebe]
-}
-}
+    motivacao: textos.motivacao[dadosBebe.motivacao],
+    influencia: textos.influencia[dadosBebe.influencia],
+    personalidade: textos.personalidade[dadosBebe.personalidade],
+    regente: textos.regente[dadosBebe.regente]
+  }
+
+} : null
 
 };
 
