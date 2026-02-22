@@ -851,7 +851,10 @@ localStorage.setItem(
   );
 }
 
-  
+  <script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js");
+}
  // 🔒 BLOQUEIO CÓPIA
 // =======================
 document.oncontextmenu=()=>false;
