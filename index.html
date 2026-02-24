@@ -848,12 +848,16 @@ const pacote = {
     }
   },
 
-  sinastria:{
-    numero: chaveSinastria(dados1.proposito, dados2.proposito),
-    texto: textos.sinastria[
+sinastria:{
+  numero: chaveSinastria(dados1.proposito, dados2.proposito),
+  texto: (
+    textos.sinastria[
       chaveSinastria(dados1.proposito, dados2.proposito)
-    ]
-  },
+    ] || ""
+  )
+  .replaceAll("{nome1}", nome1)
+  .replaceAll("{nome2}", nome2)
+},
 
   biologico: compatibilidadeRH(),
 
