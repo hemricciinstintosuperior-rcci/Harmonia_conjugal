@@ -1270,7 +1270,7 @@ sinastria : {
 
   // ENERGIA 1
   "1-1": `
-<h3>Harmonia Conjugal – Energia 1 com Energia 1</h3>
+
 
 <p>Quando duas pessoas com mesma energia 1 se encontram, a relação é marcada por intensidade, independência e forte desejo de realização. Ambos possuem personalidade determinada, iniciativa natural e vontade constante de conquistar novos desafios. Essa dupla dificilmente se acomoda, pois o  1 vibra ação, liderança e individualidade.</p>
 
