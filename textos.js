@@ -1272,7 +1272,7 @@ sinastria : {
   "1-1": `
 <h3>Harmonia Conjugal – Energia 1 com Energia 1</h3>
 
-<p>Quando duas pessoas com Energia 1 se encontram, a relação é marcada por intensidade, independência e forte desejo de realização. Ambos possuem personalidade determinada, iniciativa natural e vontade constante de conquistar novos desafios. Essa dupla dificilmente se acomoda, pois o número 1 vibra ação, liderança e individualidade.</p>
+<p>Quando duas pessoas com mesma energia 1 se encontram, a relação é marcada por intensidade, independência e forte desejo de realização. Ambos possuem personalidade determinada, iniciativa natural e vontade constante de conquistar novos desafios. Essa dupla dificilmente se acomoda, pois o  1 vibra ação, liderança e individualidade.</p>
 
 <p>O ponto positivo dessa união está no incentivo mútuo ao crescimento. Existe admiração pela coragem, pela força de vontade e pela capacidade de enfrentar obstáculos. O casal compartilha o desejo de liberdade e progresso, podendo transformar a relação em uma parceria dinâmica, cheia de projetos, aventuras e metas ousadas. Essa combinação também favorece empreendimentos em conjunto, já que ambos possuem espírito empreendedor.</p>
 
@@ -1373,7 +1373,7 @@ sinastria : {
 "2-2": `
 <h3>Harmonia Conjugal – Energia 2 com Energia 2</h3>
 
-<p>A união entre duas Energias 2 é marcada por sensibilidade, cooperação e forte conexão emocional. O número 2 vibra empatia, diplomacia e necessidade de parceria, o que torna essa combinação naturalmente voltada para o diálogo e o entendimento mútuo. É uma relação baseada em apoio recíproco e busca constante por harmonia.</p>
+<p>A união entre duas Energias 2 é marcada por sensibilidade, cooperação e forte conexão emocional. A energia 2 vibra empatia, diplomacia e necessidade de parceria, o que torna essa combinação naturalmente voltada para o diálogo e o entendimento mútuo. É uma relação baseada em apoio recíproco e busca constante por harmonia.</p>
 
 <p>Nos aspectos positivos, ambos valorizam o companheirismo e demonstram cuidado genuíno um pelo outro. Existe grande capacidade de escuta, compreensão e adaptação, o que favorece estabilidade afetiva. Essa combinação tende a evitar conflitos diretos, priorizando o equilíbrio emocional e a preservação da união.</p>
 
@@ -1463,7 +1463,7 @@ sinastria : {
 "3-3": `
 <h3>Harmonia Conjugal – Energia 3 com Energia 3</h3>
 
-<p>A união entre duas Energias 3 é marcada por alegria, comunicação e intensa troca criativa. O número 3 vibra expressão, entusiasmo e sociabilidade, o que torna essa combinação naturalmente leve e dinâmica. Trata-se de uma relação que valoriza diversão, diálogo e experiências compartilhadas.</p>
+<p>A união entre duas Energias 3 é marcada por alegria, comunicação e intensa troca criativa. O 3 vibra expressão, entusiasmo e sociabilidade, o que torna essa combinação naturalmente leve e dinâmica. Trata-se de uma relação que valoriza diversão, diálogo e experiências compartilhadas.</p>
 
 <p>Nos aspectos positivos, ambos estimulam a criatividade e mantêm o relacionamento vivo e movimentado. Existe facilidade na comunicação e forte conexão mental. O casal tende a ser sociável, carismático e aberto a novas ideias, evitando monotonia e excesso de rigidez.</p>
 
@@ -1556,14 +1556,15 @@ sinastria : {
 "4-4": `
 <h3>Harmonia Conjugal – Energia 4 com Energia 4</h3>
 
-<p>A união entre duas Energias 4 é marcada por estabilidade, disciplina e compromisso. O número 4 representa estrutura, responsabilidade e construção sólida. Quando duas pessoas com essa vibração se encontram, a relação tende a ser baseada em segurança, organização e objetivos bem definidos.</p>
+<p>A união entre duas Energias 4 é marcada por estabilidade, disciplina e compromisso. O  4 representa estrutura, responsabilidade e construção sólida. Quando duas pessoas com essa vibração se encontram, a relação tende a ser baseada em segurança, organização e objetivos bem definidos.</p>
 
 <p>Nos aspectos positivos, ambos valorizam esforço, dedicação e constância. Existe forte senso de responsabilidade com a relação, o que favorece compromissos duradouros e planejamento de longo prazo. Essa combinação costuma buscar estabilidade financeira e segurança material, construindo bases firmes ao longo do tempo.</p>
 
-<p>Os desafios surgem quando a rigidez se torna excessiva. Dois números 4 podem se tornar críticos, inflexíveis ou excessivamente focados em deveres, deixando a espontaneidade de lado. A rotina pode se tornar pesada se não houver momentos de leveza e renovação emocional.</p>
+<p>Os desafios surgem quando a rigidez se torna excessiva. As duas pessoas com o potencial 4 podem se tornar críticos, inflexíveis ou excessivamente focados em deveres, deixando a espontaneidade de lado. A rotina pode se tornar pesada se não houver momentos de leveza e renovação emocional.</p>
 
 <p>Para que essa união prospere, é fundamental que aprendam a flexibilizar regras e a incluir mais espontaneidade na convivência. Quando equilibrados, formam um casal sólido, confiável e orientado para estabilidade e construção duradoura.</p>
 `,
+  
 "4-5": `
 <h3>Harmonia Conjugal – Energia 4 com Energia 5</h3>
 
@@ -1624,11 +1625,11 @@ sinastria : {
 "5-5": `
 <h3>Harmonia Conjugal – Energia 5 com Energia 5</h3>
 
-<p>A união entre duas Energias 5 é marcada por intensidade, liberdade e constante movimento. O número 5 vibra aventura, versatilidade e desejo de experiências novas. Quando duas pessoas com essa vibração se encontram, a relação tende a ser dinâmica, espontânea e pouco inclinada à rotina.</p>
+<p>A união entre duas Energias 5 é marcada por intensidade, liberdade e constante movimento. O  5 vibra aventura, versatilidade e desejo de experiências novas. Quando duas pessoas com essa vibração se encontram, a relação tende a ser dinâmica, espontânea e pouco inclinada à rotina.</p>
 
 <p>Nos aspectos positivos, ambos compartilham espírito aventureiro e curiosidade natural. Existe entusiasmo, desejo de explorar o mundo juntos e forte atração pela novidade. A relação pode ser vibrante, moderna e cheia de estímulos, evitando monotonia e excesso de rigidez.</p>
 
-<p>Os desafios surgem quando a instabilidade se torna predominante. Dois números 5 podem demonstrar dificuldade em manter compromissos mais profundos ou em lidar com responsabilidades constantes. A necessidade de liberdade pode gerar conflitos se faltar maturidade emocional.</p>
+<p>Os desafios surgem quando a instabilidade se torna predominante. Duas energias 5 podem demonstrar dificuldade em manter compromissos mais profundos ou em lidar com responsabilidades constantes. A necessidade de liberdade pode gerar conflitos se faltar maturidade emocional.</p>
 
 <p>Para que essa combinação prospere, é fundamental que desenvolvam responsabilidade afetiva e equilíbrio entre autonomia e compromisso. Quando existe consciência e direção, essa união pode ser estimulante, intensa e repleta de crescimento mútuo.</p>
 `,
@@ -1681,7 +1682,7 @@ sinastria : {
 "6-6": `
 <h3>Harmonia Conjugal – Energia 6 com Energia 6</h3>
 
-<p>A união entre duas Energias 6 é marcada por afeto, responsabilidade e forte valorização da família. O número 6 simboliza amor, cuidado, proteção e compromisso com o bem-estar do outro. Quando duas pessoas com essa vibração se encontram, a relação tende a ser acolhedora, dedicada e orientada para estabilidade emocional.</p>
+<p>A união entre duas Energias 6 é marcada por afeto, responsabilidade e forte valorização da família. A energia 6 simboliza amor, cuidado, proteção e compromisso com o bem-estar do outro. Quando duas pessoas com essa vibração se encontram, a relação tende a ser acolhedora, dedicada e orientada para estabilidade emocional.</p>
 
 <p>Nos aspectos positivos, ambos compartilham senso de responsabilidade afetiva e desejo de construir um lar harmonioso. Existe grande capacidade de cuidado, compreensão e apoio mútuo. Essa combinação favorece compromisso sério e vínculo duradouro.</p>
 
@@ -1727,7 +1728,7 @@ sinastria : {
 "7-7": `
 <h3>Harmonia Conjugal – Energia 7 com Energia 7</h3>
 
-<p>A união entre duas Energias 7 é marcada por profundidade, introspecção e busca por conhecimento. O número 7 simboliza análise, espiritualidade e necessidade de compreensão interior. Quando duas pessoas com essa vibração se encontram, a relação tende a ser reflexiva, reservada e intelectualmente estimulante.</p>
+<p>A união entre duas Energias 7 é marcada por profundidade, introspecção e busca por conhecimento. A energia 7 simboliza análise, espiritualidade e necessidade de compreensão interior. Quando duas pessoas com essa vibração se encontram, a relação tende a ser reflexiva, reservada e intelectualmente estimulante.</p>
 
 <p>Nos aspectos positivos, ambos valorizam silêncio, estudo e desenvolvimento pessoal. Existe forte conexão mental e possibilidade de crescimento espiritual conjunto. Essa combinação favorece conversas profundas e entendimento intuitivo entre os parceiros.</p>
 
@@ -1762,7 +1763,7 @@ sinastria : {
 "8-8": `
 <h3>Harmonia Conjugal – Energia 8 com Energia 8</h3>
 
-<p>A união entre duas Energias 8 é marcada por ambição, liderança e forte desejo de conquista. O número 8 simboliza poder, estratégia e foco em realizações materiais. Quando duas pessoas com essa vibração se encontram, a relação tende a ser intensa, determinada e orientada para crescimento externo.</p>
+<p>A união entre duas Energias 8 é marcada por ambição, liderança e forte desejo de conquista. A energia 8 simboliza poder, estratégia e foco em realizações materiais. Quando duas pessoas com essa vibração se encontram, a relação tende a ser intensa, determinada e orientada para crescimento externo.</p>
 
 <p>Nos aspectos positivos, ambos compartilham visão estratégica e capacidade de administração. Existe grande potencial para prosperidade e construção de patrimônio, pois ambos valorizam disciplina, metas claras e resultados concretos. Essa combinação pode formar uma parceria poderosa e produtiva.</p>
 
@@ -1786,7 +1787,7 @@ sinastria : {
  "9-9": `
 <h3>Harmonia Conjugal – Energia 9 com Energia 9</h3>
 
-<p>A união entre duas Energias 9 é marcada por intensidade emocional, compaixão e forte senso de idealismo. O número 9 simboliza generosidade, espiritualidade e visão humanitária. Quando duas pessoas com essa vibração se encontram, a relação tende a ser profunda, sensível e orientada para propósito elevado.</p>
+<p>A união entre duas Energias 9 é marcada por intensidade emocional, compaixão e forte senso de idealismo. A energia 9 simboliza generosidade, espiritualidade e visão humanitária. Quando duas pessoas com essa vibração se encontram, a relação tende a ser profunda, sensível e orientada para propósito elevado.</p>
 
 <p>Nos aspectos positivos, ambos compartilham empatia, compreensão e desejo de contribuir para algo maior. Existe potencial para uma conexão espiritual significativa, baseada em valores elevados e apoio mútuo. Essa combinação favorece crescimento emocional e consciência ampliada dentro da relação.</p>
 
