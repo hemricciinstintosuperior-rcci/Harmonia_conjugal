@@ -639,35 +639,12 @@ function mostrarSinastria(){
 
   if(!dados1 || !dados2) return;
 
-  // Pegar nomes digitados
-  const nome1 = document.getElementById("nome1").value.trim();
-  const nome2 = document.getElementById("nome2").value.trim();
+  const chave = chaveSinastria(dados1.proposito, dados2.proposito);
 
-  // Pegar os números de propósito/harmonia
-  const energia1 = dados1.proposito;
-  const energia2 = dados2.proposito;
+ const texto = textos.sinastria[chave] ||
+  `Compatibilidade entre ${dados1.proposito} e ${dados2.proposito}.`;
 
-  // Padronizar chave (menor-maior)
-  const chave = chaveSinastria(energia1, energia2);
-
-  // Puxar texto da sinastria
-  let textoBase = textos.sinastria[chave] || 
-      `A combinação entre a Energia ${energia1} e a Energia ${energia2}.`;
-
-  // Substituir placeholders pelos nomes reais
-  textoBase = textoBase
-      .replaceAll("{nome1}", nome1)
-      .replaceAll("{nome2}", nome2);
-
-  // Montar texto final para o modal
-  const textoFinal = `
-      <h3>Harmonia Conjugal – ${nome1} com ${nome2}</h3>
-      <p><strong>${nome1}</strong> vibra na Energia ${energia1}, enquanto <strong>${nome2}</strong> expressa a Energia ${energia2}.</p>
-      <br>
-      ${textoBase}
-  `;
-
-  abrirModalTexto(textoFinal);
+  abrirModalTexto(texto);
 }
 
 // =====================
@@ -853,16 +830,12 @@ const pacote = {
     }
   },
 
-sinastria:{
-  numero: chaveSinastria(dados1.proposito, dados2.proposito),
-  texto: (
-    textos.sinastria[
+  sinastria:{
+    numero: chaveSinastria(dados1.proposito, dados2.proposito),
+    texto: textos.sinastria[
       chaveSinastria(dados1.proposito, dados2.proposito)
-    ] || ""
-  )
-  .replaceAll("{nome1}", nome1)
-  .replaceAll("{nome2}", nome2)
-},
+    ]
+  },
 
   biologico: compatibilidadeRH(),
 
@@ -899,7 +872,7 @@ localStorage.setItem(
     "_blank"
   );
 }
-</script>
+
   <script>
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("sw.js");
