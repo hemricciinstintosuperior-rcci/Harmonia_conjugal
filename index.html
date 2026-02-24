@@ -639,27 +639,32 @@ function mostrarSinastria(){
 
   if(!dados1 || !dados2) return;
 
-  const nome1 = document.getElementById("nome1").value;
-  const nome2 = document.getElementById("nome2").value;
+  // Pegar nomes digitados
+  const nome1 = document.getElementById("nome1").value.trim();
+  const nome2 = document.getElementById("nome2").value.trim();
 
+  // Pegar os números de propósito/harmonia
   const energia1 = dados1.proposito;
   const energia2 = dados2.proposito;
 
+  // Padronizar chave (menor-maior)
   const chave = chaveSinastria(energia1, energia2);
 
- let textoBase = textos.sinastria[chave] ||
-  `A combinação entre a Energia ${energia1} e a Energia ${energia2}.`;
+  // Puxar texto da sinastria
+  let textoBase = textos.sinastria[chave] || 
+      `A combinação entre a Energia ${energia1} e a Energia ${energia2}.`;
 
-// 👉 Substituir nomes se existirem placeholders
-textoBase = textoBase
-  .replaceAll("{nome1}", nome1)
-  .replaceAll("{nome2}", nome2);
+  // Substituir placeholders pelos nomes reais
+  textoBase = textoBase
+      .replaceAll("{nome1}", nome1)
+      .replaceAll("{nome2}", nome2);
 
+  // Montar texto final para o modal
   const textoFinal = `
-    <h3>Harmonia Conjugal – ${nome1} com ${nome2}</h3>
-    <p><strong>${nome1}</strong> vibra na Energia ${energia1}, enquanto <strong>${nome2}</strong> expressa a Energia ${energia2}.</p>
-    <br>
-    ${textoBase}
+      <h3>Harmonia Conjugal – ${nome1} com ${nome2}</h3>
+      <p><strong>${nome1}</strong> vibra na Energia ${energia1}, enquanto <strong>${nome2}</strong> expressa a Energia ${energia2}.</p>
+      <br>
+      ${textoBase}
   `;
 
   abrirModalTexto(textoFinal);
