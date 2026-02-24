@@ -140,6 +140,12 @@ button:hover{
   display:block;
   margin-bottom:12px;
 }
+
+/* Isso vai esconder o segundo título caso ele venha dentro do bloco de texto */
+#modalTexto h3:nth-of-type(2), 
+#modalTexto h2:nth-of-type(2) {
+    display: none !important;
+}  
 /* Isso força os campos a aparecerem e ficarem empilhados no celular */
 @media (max-width: 768px) {
     .container-inputs { /* Use a classe que envolve seus inputs */
