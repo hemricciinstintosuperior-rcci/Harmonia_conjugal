@@ -642,13 +642,18 @@ function mostrarSinastria(){
   const nome1 = document.getElementById("nome1").value;
   const nome2 = document.getElementById("nome2").value;
 
-  const chave = chaveSinastria(dados1.proposito, dados2.proposito);
+  const energia1 = dados1.proposito;
+  const energia2 = dados2.proposito;
+
+  const chave = chaveSinastria(energia1, energia2);
 
   const textoBase = textos.sinastria[chave] ||
-    "Compatibilidade não encontrada.";
+    `A combinação entre a Energia ${energia1} e a Energia ${energia2}.`;
 
   const textoFinal = `
     <h3>Harmonia Conjugal – ${nome1} com ${nome2}</h3>
+    <p><strong>${nome1}</strong> vibra na Energia ${energia1}, enquanto <strong>${nome2}</strong> expressa a Energia ${energia2}.</p>
+    <br>
     ${textoBase}
   `;
 
