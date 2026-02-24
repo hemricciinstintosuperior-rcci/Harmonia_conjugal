@@ -639,12 +639,20 @@ function mostrarSinastria(){
 
   if(!dados1 || !dados2) return;
 
+  const nome1 = document.getElementById("nome1").value;
+  const nome2 = document.getElementById("nome2").value;
+
   const chave = chaveSinastria(dados1.proposito, dados2.proposito);
 
- const texto = textos.sinastria[chave] ||
-  `Compatibilidade entre ${dados1.proposito} e ${dados2.proposito}.`;
+  const textoBase = textos.sinastria[chave] ||
+    "Compatibilidade não encontrada.";
 
-  abrirModalTexto(texto);
+  const textoFinal = `
+    <h3>Harmonia Conjugal – ${nome1} com ${nome2}</h3>
+    ${textoBase}
+  `;
+
+  abrirModalTexto(textoFinal);
 }
 
 // =====================
