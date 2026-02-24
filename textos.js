@@ -1272,25 +1272,94 @@ A lição fundamental deste período é o desapego e a busca por uma nova forma 
 "1-1": `
 <h3>Harmonia Conjugal – {nome1} e {nome2}</h3>
 
-<p>{nome1} vibra na Energia 1, associada à liderança, iniciativa e impulso de conquista. {nome2} também carrega a Energia 1 como missão de vida. Quando duas vibrações 1 se encontram, a relação tende a ser intensa, dinâmica e marcada por forte desejo de realização.</p>
+<p>{nome1} e {nome2} compartilham a Energia 1, a energia da liderança, iniciativa e individualidade. Essa união tem grande potencial para ação conjunta e realização de objetivos.</p>
 
-<p>Ambos possuem espírito independente, capacidade de decisão e tendência natural ao protagonismo. Existe admiração mútua pela força de ação e pela coragem diante dos desafios. Essa combinação favorece projetos ambiciosos e metas ousadas, pois há disposição para enfrentar obstáculos sem recuar.</p>
+<p>Ambos possuem foco próprio e capacidade de decisão marcante, podendo se inspirar mutuamente a buscar crescimento e conquistas. O dinamismo é intenso.</p>
 
-<p>O ponto de atenção surge quando a necessidade de liderar se transforma em competição. Como a Energia 1 valoriza autonomia, pode haver resistência em ceder espaço ou dividir decisões importantes. Pequenos desacordos podem se tornar disputas se o diálogo não for cultivado.</p>
+<p>O desafio está em equilibrar egos e vontades, já que cada um tende a assumir a liderança e impor seus objetivos.</p>
 
-<p>Quando {nome1} e {nome2} compreendem que liderança também pode ser compartilhada, a relação se fortalece. A união passa a ser produtiva, estratégica e marcada por grandes realizações em conjunto.</p>
+<p>Com diálogo aberto, planejamento conjunto e respeito mútuo, {nome1} e {nome2} podem transformar o potencial individual em ação coordenada e poderosa.</p>
+
+<p>Essa relação é marcada pela coragem, determinação e capacidade de inovar, sempre buscando oportunidades de crescimento pessoal e compartilhado.</p>
+
+<p>Quando há harmonia, a parceria cria um ambiente estimulante e produtivo, onde ambos se motivam a superar desafios e atingir metas.</p>
+
+<p>É fundamental que ambos aprendam a ceder e valorizar a contribuição do outro para evitar conflitos desnecessários.</p>
+
+<p>O casal é capaz de gerar impacto significativo ao unir força de vontade e visão clara dos objetivos.</p>
+
+<p>Existem momentos de competição saudável, que fortalecem a parceria e incentivam o desenvolvimento individual.</p>
+
+<p>O respeito à individualidade e a tomada de decisões conjuntas tornam a relação duradoura e inspiradora.</p>
+
+<p>Essa energia comum proporciona grande capacidade de liderança conjunta e realização de projetos.</p>
+
+<p>Ambos podem atuar como motivadores um do outro, aumentando a produtividade e a confiança na relação.</p>
+
+<p>É um relacionamento que exige maturidade emocional e senso de colaboração para prosperar plenamente.</p>
+
+<p>Quando bem equilibrado, traz satisfação profunda e senso de propósito compartilhado.</p>
+
+<p>A união fortalece a autoconfiança de ambos, permitindo crescimento e evolução contínuos.</p>
+
+<p>Os desafios servem como oportunidades para desenvolver paciência, empatia e habilidades de comunicação.</p>
+
+<p>Essa combinação de energias é ideal para projetos conjuntos, liderança e tomada de decisões estratégicas.</p>
+
+<p>O casal deve cultivar harmonia, evitando conflitos por excesso de competitividade ou teimosia.</p>
+
+<p>É uma parceria de grande energia, criatividade e determinação, capaz de gerar resultados notáveis.</p>
+
+<p>Com atenção ao equilíbrio e à cooperação, {nome1} e {nome2} podem construir uma vida de realizações mútuas e compartilhadas.</p>
 `,
+
+
+   
 "1-2": `
 <h3>Harmonia Conjugal – {nome1} e {nome2}</h3>
 
-<p>{nome1} vibra na Energia 1, ligada à iniciativa e independência. {nome2} traz como missão a Energia 2, associada à cooperação e sensibilidade emocional. Essa união combina ação com diplomacia, criando uma dinâmica complementar.</p>
+<p>{nome1} vibra na Energia 1, marcada por iniciativa, liderança e força de ação, enquanto {nome2} expressa a Energia 2, da sensibilidade, diplomacia e cooperação.</p>
 
-<p>{nome1} tende a assumir direção e propor movimento. {nome2} possui habilidade para perceber nuances emocionais e fortalecer vínculos afetivos. Quando existe equilíbrio, a firmeza da Energia 1 encontra apoio na capacidade conciliadora da Energia 2.</p>
+<p>Essa combinação permite que a determinação de {nome1} encontre apoio e equilíbrio na intuição e na empatia de {nome2}.</p>
 
-<p>Os desafios surgem quando a liderança se torna imposição ou quando a sensibilidade se transforma em insegurança. Ritmos diferentes podem gerar tensão se expectativas não forem alinhadas com clareza.</p>
+<p>O desafio surge quando {nome1} assume o controle excessivamente e {nome2} se sente pressionado a ceder demais.</p>
 
-<p>Ao desenvolver comunicação madura, {nome1} aprende a agir com mais escuta, enquanto {nome2} fortalece autoconfiança. Assim, a união tende a se tornar estável, construtiva e emocionalmente equilibrada.</p>
+<p>Com diálogo e reconhecimento das qualidades de cada um, a relação floresce e cria um ambiente harmonioso.</p>
+
+<p>{nome2} ajuda {nome1} a perceber perspectivas diferentes, suavizando decisões impulsivas e trazendo equilíbrio à parceria.</p>
+
+<p>{nome1} inspira {nome2} a agir com mais coragem e confiança, motivando-o a sair da zona de conforto.</p>
+
+<p>O casal aprende a combinar iniciativa com diplomacia, encontrando soluções que beneficiam ambos.</p>
+
+<p>O respeito mútuo fortalece a confiança e aumenta a capacidade de superação de desafios.</p>
+
+<p>Essa união permite que ações individuais sejam coordenadas com atenção às necessidades do parceiro.</p>
+
+<p>Quando existe harmonia, surgem momentos de cumplicidade profunda e realização conjunta.</p>
+
+<p>A energia 2 complementa a energia 1, trazendo sensibilidade, paciência e capacidade de mediação em situações difíceis.</p>
+
+<p>{nome1} e {nome2} desenvolvem juntos habilidades de negociação, comunicação e cooperação.</p>
+
+<p>O relacionamento incentiva crescimento pessoal e aprendizado contínuo para ambos.</p>
+
+<p>O equilíbrio entre assertividade e receptividade cria um ambiente seguro e acolhedor.</p>
+
+<p>{nome1} lidera, mas aprende a valorizar a contribuição estratégica e emocional de {nome2}.</p>
+
+<p>{nome2} apoia, mas mantém sua voz ativa, ajudando a moldar decisões importantes.</p>
+
+<p>O casal pode transformar diferenças em força, criando soluções criativas e eficazes.</p>
+
+<p>Essa combinação traz estabilidade, compreensão e realização compartilhada.</p>
+
+<p>Os desafios são oportunidades para reforçar a parceria, confiança e respeito mútuo.</p>
+
+<p>Com atenção à cooperação, {nome1} e {nome2} constroem uma vida equilibrada e cheia de propósito.</p>
 `,
+
+   
 "1-3": `
 <h3>Harmonia Conjugal – {nome1} e {nome2}</h3>
 
