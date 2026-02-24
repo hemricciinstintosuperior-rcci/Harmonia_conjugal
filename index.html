@@ -639,12 +639,25 @@ function mostrarSinastria(){
 
   if(!dados1 || !dados2) return;
 
-  const chave = chaveSinastria(dados1.proposito, dados2.proposito);
+  const nome1 = document.getElementById("nome1").value;
+  const nome2 = document.getElementById("nome2").value;
 
- const texto = textos.sinastria[chave] ||
-  `Compatibilidade entre ${dados1.proposito} e ${dados2.proposito}.`;
+  const energia1 = dados1.proposito;
+  const energia2 = dados2.proposito;
 
-  abrirModalTexto(texto);
+  const chave = chaveSinastria(energia1, energia2);
+
+  const textoBase = textos.sinastria[chave] ||
+    `A combinação entre a Energia ${energia1} e a Energia ${energia2}.`;
+
+  const textoFinal = `
+    <h3>Harmonia Conjugal – ${nome1} com ${nome2}</h3>
+    <p><strong>${nome1}</strong> vibra na Energia ${energia1}, enquanto <strong>${nome2}</strong> expressa a Energia ${energia2}.</p>
+    <br>
+    ${textoBase}
+  `;
+
+  abrirModalTexto(textoFinal);
 }
 
 // =====================
