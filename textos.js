@@ -1280,185 +1280,411 @@ A lição fundamental deste período é o desapego e a busca por uma nova forma 
 
 <p>Quando {nome1} e {nome2} compreendem que liderança também pode ser compartilhada, a relação se fortalece. A união passa a ser produtiva, estratégica e marcada por grandes realizações em conjunto.</p>
 `,
-  "1-2": `
-<h3>Harmonia Conjugal – Energia 1 com Energia 2</h3>
+"1-2": `
+<h3>Harmonia Conjugal – {nome1} e {nome2}</h3>
 
-<p>A união entre a Energia 1 e a Energia 2 representa o encontro entre ação e sensibilidade. O número 1 traz iniciativa, liderança e independência, enquanto o número 2 vibra diplomacia, empatia e desejo de cooperação. Essa combinação cria uma dinâmica complementar, na qual força e delicadeza precisam aprender a caminhar juntas.</p>
+<p>{nome1} vibra na Energia 1, ligada à iniciativa e independência. {nome2} traz como missão a Energia 2, associada à cooperação e sensibilidade emocional. Essa união combina ação com diplomacia, criando uma dinâmica complementar.</p>
 
-<p>Nos aspectos positivos, essa relação pode ser extremamente equilibrada. O número 2 oferece apoio emocional, compreensão e harmonia, ajudando o número 1 a suavizar atitudes impulsivas. Já o número 1 proporciona direção, coragem e segurança, incentivando o número 2 a desenvolver mais confiança e determinação. Quando existe respeito, formam uma parceria estável e produtiva.</p>
+<p>{nome1} tende a assumir direção e propor movimento. {nome2} possui habilidade para perceber nuances emocionais e fortalecer vínculos afetivos. Quando existe equilíbrio, a firmeza da Energia 1 encontra apoio na capacidade conciliadora da Energia 2.</p>
 
-<p>Os desafios surgem quando o número 1 se torna autoritário ou impaciente, desconsiderando a sensibilidade do número 2. Por outro lado, o número 2 pode se tornar excessivamente dependente ou inseguro, o que pode frustrar o espírito independente do número 1. Se não houver equilíbrio, a relação pode oscilar entre liderança excessiva e submissão emocional.</p>
+<p>Os desafios surgem quando a liderança se torna imposição ou quando a sensibilidade se transforma em insegurança. Ritmos diferentes podem gerar tensão se expectativas não forem alinhadas com clareza.</p>
 
-<p>Para que essa harmonia floresça, é fundamental que o número 1 aprenda a valorizar a importância da paciência e do diálogo, enquanto o número 2 desenvolve firmeza e autoconfiança. Quando ambos compreendem que não competem, mas se complementam, essa combinação pode gerar uma união forte, equilibrada e emocionalmente enriquecedora.</p>
+<p>Ao desenvolver comunicação madura, {nome1} aprende a agir com mais escuta, enquanto {nome2} fortalece autoconfiança. Assim, a união tende a se tornar estável, construtiva e emocionalmente equilibrada.</p>
 `,
- "1-3": `
-<h3>Harmonia Conjugal – Energia 1 com Energia 3</h3>
+"1-3": `
+<h3>Harmonia Conjugal – {nome1} e {nome2}</h3>
 
-<p>A combinação entre a Energia 1 e a Energia 3 cria uma relação dinâmica, estimulante e marcada por forte expressão individual. O número 1 representa liderança, iniciativa e determinação, enquanto o número 3 vibra comunicação, criatividade e entusiasmo. Juntos, formam um casal que tende a viver experiências intensas e movimentadas, com constante troca de ideias e estímulos.</p>
+<p>{nome1} carrega a Energia 1 como missão, marcada por liderança e determinação. {nome2} vibra na Energia 3, ligada à comunicação, criatividade e expansão social. Essa combinação une direção com expressão.</p>
 
-<p>Nos aspectos positivos, essa união favorece crescimento e inspiração mútua. O número 3 ajuda o número 1 a desenvolver leveza emocional e maior flexibilidade, enquanto o número 1 oferece foco e direção para que o número 3 transforme ideias em realizações concretas. Existe admiração recíproca: o 3 valoriza a coragem do 1, e o 1 sente-se energizado pelo otimismo e pela espontaneidade do 3.</p>
+<p>{nome1} tende a agir com foco e objetividade. {nome2} acrescenta leveza, entusiasmo e capacidade de transformar situações através da palavra e da criatividade. Juntos, podem formar uma parceria estimulante e dinâmica.</p>
 
-<p>Os desafios surgem quando a impulsividade do número 1 se torna excessiva ou quando a dispersão natural do número 3 gera instabilidade. O número 1 pode enxergar o 3 como pouco disciplinado, enquanto o número 3 pode considerar o 1 rígido ou autoritário. Diferenças de ritmo e prioridade podem provocar atritos se não houver diálogo e compreensão.</p>
+<p>O desafio aparece quando a necessidade de resultados imediatos entra em conflito com a natureza mais flexível e exploratória da Energia 3. Diferenças de ritmo exigem compreensão e adaptação.</p>
 
-<p>Para que essa combinação prospere, é essencial que o número 1 respeite a liberdade criativa do número 3 e que o número 3 reconheça a importância da determinação e da organização trazidas pelo número 1. Quando equilibrados, formam um casal carismático, criativo e capaz de transformar entusiasmo em conquistas duradouras.</p>
+<p>Quando existe alinhamento, a liderança de {nome1} ganha brilho e expressão através de {nome2}. A união passa a ser vibrante, produtiva e marcada por crescimento contínuo.</p>
 `,
-  "1-4": `
-<h3>Harmonia Conjugal – Energia 1 com Energia 4</h3>
+"1-4": `
+<h3>Harmonia Conjugal – {nome1} e {nome2}</h3>
 
-<p>A união entre a Energia 1 e a Energia 4 é marcada pelo encontro entre iniciativa e estrutura. O número 1 representa liderança, coragem e impulso criador, enquanto o número 4 simboliza disciplina, estabilidade e senso prático. Essa combinação tende a formar uma parceria sólida, onde ação e organização caminham juntas.</p>
+<p>{nome1} vibra na Energia 1, associada à liderança e iniciativa. {nome2} carrega como missão a Energia 4, ligada à estrutura, disciplina e construção sólida. Essa união combina impulso com organização.</p>
 
-<p>Nos aspectos positivos, o número 1 inspira o 4 a ousar mais e a expandir seus horizontes, enquanto o número 4 oferece ao 1 base, planejamento e persistência para transformar ideias em resultados concretos. Existe complementaridade natural: o 1 inicia, o 4 consolida. Juntos, podem construir projetos duradouros e alcançar objetivos com consistência.</p>
+<p>{nome1} tende a agir com rapidez e foco em resultados. {nome2} valoriza planejamento, estabilidade e segurança. Quando trabalham em sintonia, a determinação da Energia 1 encontra base firme na consistência da Energia 4.</p>
 
-<p>Os desafios aparecem quando o número 1 se torna impaciente diante da cautela do 4, ou quando o 4 se mostra excessivamente rígido frente à impulsividade do 1. Diferenças no ritmo de ação podem gerar tensão, principalmente se faltar flexibilidade emocional ou abertura para adaptação.</p>
+<p>O desafio surge quando a pressa de avançar entra em conflito com a necessidade de planejamento detalhado. {nome1} pode considerar excesso de cautela, enquanto {nome2} pode perceber impulsividade. Diferenças de ritmo exigem ajuste consciente.</p>
 
-<p>Para que essa relação prospere, o número 1 deve reconhecer o valor da disciplina e da estabilidade trazidas pelo 4, enquanto o número 4 precisa aceitar a necessidade de inovação e movimento do 1. Quando existe respeito mútuo, essa combinação forma uma base forte, equilibrada e orientada para conquistas sólidas ao longo do tempo.</p>
+<p>Com maturidade, {nome1} aprende a respeitar processos e {nome2} se permite agir com mais ousadia. A relação tende a se tornar produtiva, estável e orientada para realizações concretas e duradouras.</p>
 `,
 "1-5": `
-<h3>Harmonia Conjugal – Energia 1 com Energia 5</h3>
+<h3>Harmonia Conjugal – {nome1} e {nome2}</h3>
 
-<p>A combinação entre a Energia 1 e a Energia 5 cria uma relação intensa, dinâmica e marcada pelo desejo de liberdade. O número 1 representa liderança, iniciativa e determinação, enquanto o número 5 vibra movimento, versatilidade e espírito aventureiro. Juntos, formam um casal que dificilmente se acomoda na rotina e busca constantemente novas experiências.</p>
+<p>{nome1} traz a Energia 1 como missão, marcada por liderança e autonomia. {nome2} vibra na Energia 5, associada à liberdade, movimento e busca por novas experiências. Essa combinação é dinâmica e intensa.</p>
 
-<p>Nos aspectos positivos, essa união é estimulante e cheia de vitalidade. O número 5 incentiva o número 1 a ser mais flexível e aberto a mudanças, enquanto o número 1 oferece direção e foco para que o 5 canalize sua energia de forma produtiva. Existe forte atração pela independência mútua, o que pode fortalecer o respeito individual dentro da relação.</p>
+<p>{nome1} busca direção clara e objetivos definidos. {nome2} valoriza mudanças, variedade e expansão de horizontes. Quando há sintonia, a iniciativa da Energia 1 encontra entusiasmo e adaptabilidade na Energia 5.</p>
 
-<p>Os desafios surgem quando o número 1 tenta impor controle ou quando o número 5 demonstra instabilidade ou necessidade excessiva de liberdade. O 1 pode sentir insegurança diante da imprevisibilidade do 5, enquanto o 5 pode se sentir limitado pela intensidade e pelo desejo de domínio do 1. A falta de equilíbrio pode gerar conflitos ligados à autonomia e compromisso.</p>
+<p>Os desafios aparecem quando controle e necessidade de liberdade entram em tensão. {nome1} pode desejar maior estabilidade, enquanto {nome2} precisa de espaço para explorar. Se não houver diálogo, pode surgir sensação de limitação.</p>
 
-<p>Para que essa combinação funcione, é fundamental que o número 1 desenvolva maior flexibilidade e que o número 5 compreenda a importância da responsabilidade emocional. Quando há maturidade, essa união pode se tornar vibrante, moderna e cheia de crescimento, mantendo a chama da paixão e da motivação sempre acesa.</p>
+<p>Quando compreendem que independência pode coexistir com compromisso, {nome1} e {nome2} constroem uma relação vibrante, cheia de crescimento, experiências marcantes e evolução constante.</p>
 `,
- "1-6": `
-<h3>Harmonia Conjugal – Energia 1 com Energia 6</h3>
+"1-6": `
+<h3>Harmonia Conjugal – {nome1} e {nome2}</h3>
 
-<p>A união entre a Energia 1 e a Energia 6 combina liderança com responsabilidade afetiva. O número 1 representa iniciativa, independência e ambição, enquanto o número 6 vibra amor, cuidado, proteção e compromisso com a família. Essa combinação pode gerar uma relação intensa, onde força e afeto precisam encontrar equilíbrio.</p>
+<p>{nome1} vibra na Energia 1, ligada à iniciativa e protagonismo. {nome2} carrega a Energia 6 como missão, associada ao cuidado, responsabilidade afetiva e compromisso familiar. Essa união une liderança com dedicação emocional.</p>
 
-<p>Nos aspectos positivos, o número 6 oferece ao número 1 estabilidade emocional e apoio constante, criando um ambiente seguro para que o 1 conquiste seus objetivos. O número 1, por sua vez, traz dinamismo e direção à relação, estimulando o 6 a sair da zona de conforto e expandir seus horizontes. Quando alinhados, formam uma parceria produtiva e voltada à construção de algo sólido.</p>
+<p>{nome1} tende a focar metas e conquistas. {nome2} prioriza harmonia, proteção e construção de vínculos sólidos. Quando existe equilíbrio, a força da Energia 1 encontra acolhimento na estabilidade emocional da Energia 6.</p>
 
-<p>Os desafios aparecem quando o número 1 prioriza excessivamente suas metas pessoais e o número 6 sente falta de atenção ou valorização emocional. O 6 pode se tornar controlador por excesso de cuidado, enquanto o 1 pode reagir com impaciência diante de cobranças afetivas. Diferenças na forma de demonstrar amor podem gerar conflitos se não houver diálogo claro.</p>
+<p>O desafio surge quando ambição externa entra em conflito com demandas afetivas. {nome1} pode direcionar energia excessiva para objetivos individuais, enquanto {nome2} busca maior presença emocional.</p>
 
-<p>Para que essa combinação prospere, o número 1 deve reconhecer a importância do compromisso emocional trazido pelo 6, enquanto o número 6 precisa respeitar a necessidade de autonomia do 1. Quando há maturidade e equilíbrio, essa união pode resultar em uma relação estável, protetora e orientada para realizações duradouras.</p>
+<p>Com compreensão mútua, {nome1} aprende a valorizar o cuidado como força, e {nome2} reconhece a importância da autonomia. A relação tende a se tornar estruturada, protetiva e orientada para crescimento conjunto.</p>
 `,
 "1-7": `
-<h3>Harmonia Conjugal – Energia 1 com Energia 7</h3>
+<h3>Harmonia Conjugal – {nome1} e {nome2}</h3>
 
-<p>A combinação entre a Energia 1 e a Energia 7 une ação e profundidade. O número 1 simboliza liderança, iniciativa e impulso para conquistas externas, enquanto o número 7 representa introspecção, análise e busca por conhecimento interior. Essa relação tende a ser marcada por contrastes entre dinamismo e reflexão.</p>
+<p>{nome1} carrega a Energia 1 como missão de liderança e ação. {nome2} vibra na Energia 7, associada à introspecção, sabedoria e busca por conhecimento profundo. Essa união combina dinamismo com reflexão.</p>
 
-<p>Nos aspectos positivos, o número 1 pode estimular o 7 a confiar mais na própria capacidade de agir e se expor ao mundo, enquanto o número 7 oferece ao 1 sabedoria, estratégia e visão mais profunda das situações. Existe potencial para crescimento intelectual e espiritual quando ambos aprendem a respeitar suas diferenças naturais.</p>
+<p>{nome1} tende a agir com objetividade e foco externo. {nome2} valoriza análise, silêncio e aprofundamento interior. Quando existe respeito, a iniciativa encontra direção mais estratégica através da percepção analítica da Energia 7.</p>
 
-<p>Os desafios surgem quando o número 1 interpreta a reserva do 7 como frieza ou distanciamento, e o número 7 percebe o 1 como impulsivo ou superficial. O ritmo acelerado do 1 pode incomodar o 7, que precisa de tempo para refletir e processar emoções. A falta de compreensão pode gerar afastamento emocional.</p>
+<p>O desafio aparece quando impulsividade encontra reserva emocional. {nome1} pode desejar respostas rápidas, enquanto {nome2} necessita tempo para processar sentimentos e ideias.</p>
 
-<p>Para que essa união funcione, o número 1 deve desenvolver paciência e aprender a valorizar a profundidade do 7, enquanto o número 7 precisa evitar isolamento excessivo e comunicar suas necessidades com clareza. Quando equilibrados, podem formar uma parceria que une coragem e sabedoria, ação e consciência.</p>
+<p>Ao desenvolver compreensão dos diferentes ritmos, {nome1} e {nome2} constroem uma relação que une ação com sabedoria. A parceria tende a se tornar profunda, estratégica e espiritualmente enriquecedora.</p>
 `,
 "1-8": `
-<h3>Harmonia Conjugal – Energia 1 com Energia 8</h3>
+<h3>Harmonia Conjugal – {nome1} e {nome2}</h3>
 
-<p>A união entre a Energia 1 e a Energia 8 é marcada por ambição, liderança e forte desejo de realização material. O número 1 representa iniciativa, coragem e impulso pioneiro, enquanto o número 8 simboliza poder, estratégia e capacidade de administração. Essa combinação tende a formar um casal determinado, voltado para conquistas concretas e crescimento financeiro ou profissional.</p>
+<p>{nome1} vibra na Energia 1, associada à liderança pessoal. {nome2} traz a Energia 8 como missão, ligada ao poder material, administração e realização no plano concreto. Essa combinação é forte e orientada para resultados.</p>
 
-<p>Nos aspectos positivos, o número 1 traz dinamismo e ousadia, abrindo caminhos e iniciando projetos, enquanto o número 8 contribui com visão estratégica e habilidade para estruturar e consolidar resultados. Existe grande potencial para prosperidade quando ambos trabalham em parceria, unindo iniciativa e planejamento.</p>
+<p>{nome1} possui iniciativa e espírito pioneiro. {nome2} apresenta visão estratégica e capacidade de organização financeira ou estrutural. Juntos, podem formar uma parceria ambiciosa e produtiva.</p>
 
-<p>Os desafios surgem quando a disputa por liderança ou controle se intensifica. Tanto o 1 quanto o 8 possuem personalidade forte e podem entrar em conflitos de poder. Se não houver equilíbrio, a relação pode se tornar competitiva, com dificuldades para dividir decisões ou ceder espaço.</p>
+<p>O ponto de tensão surge quando controle e autoridade entram em disputa. Ambos valorizam autonomia e reconhecimento, o que pode gerar conflitos se não houver divisão clara de responsabilidades.</p>
 
-<p>Para que essa combinação prospere, é fundamental que aprendam a compartilhar responsabilidades e respeitar a autoridade um do outro. Quando existe maturidade emocional e foco comum, essa união pode se tornar extremamente produtiva, poderosa e orientada para grandes realizações.</p>
+<p>Quando aprendem a alinhar objetivos e compartilhar liderança, {nome1} e {nome2} constroem uma união poderosa, focada em crescimento material, estabilidade e expansão conjunta.</p>
 `,
 "1-9": `
-<h3>Harmonia Conjugal – Energia 1 com Energia 9</h3>
+<h3>Harmonia Conjugal – {nome1} e {nome2}</h3>
 
-<p>A combinação entre a Energia 1 e a Energia 9 une individualidade e altruísmo. O número 1 representa liderança, iniciativa e foco em conquistas pessoais, enquanto o número 9 vibra compaixão, generosidade e visão humanitária. Essa relação pode ser marcada por intensidade emocional e forte senso de propósito.</p>
+<p>{nome1} carrega a Energia 1 como missão de afirmação, iniciativa e liderança. {nome2} vibra na Energia 9, associada ao humanitarismo, à compaixão e à visão ampla da existência. Essa união conecta força individual com consciência coletiva.</p>
 
-<p>Nos aspectos positivos, o número 9 amplia a visão do número 1, incentivando-o a agir com mais consciência coletiva e sensibilidade. O número 1, por sua vez, oferece direção e coragem para que o 9 transforme ideais em ações concretas. Quando equilibrados, formam uma união inspiradora, capaz de unir força e empatia.</p>
+<p>{nome1} possui impulso natural para abrir caminhos, tomar decisões e assumir o comando das situações. Há forte necessidade de autonomia, reconhecimento e realização pessoal.</p>
 
-<p>Os desafios surgem quando o número 1 se mostra excessivamente individualista ou quando o número 9 se sacrifica além do necessário. O 1 pode enxergar o 9 como emocional demais, enquanto o 9 pode considerar o 1 centrado apenas em si. Diferenças na forma de lidar com sentimentos e prioridades podem gerar conflitos.</p>
+<p>{nome2}, por sua vez, demonstra sensibilidade elevada, empatia e capacidade de compreender as dores e necessidades do outro. Sua energia é voltada para causas maiores e para o sentido espiritual da vida.</p>
 
-<p>Para que essa combinação prospere, é essencial que o número 1 desenvolva maior sensibilidade e que o número 9 estabeleça limites saudáveis. Quando existe equilíbrio, essa união pode resultar em crescimento espiritual, maturidade emocional e uma relação que une ação e propósito elevado.</p>
+<p>Quando equilibrados, {nome1} oferece direção e objetividade, enquanto {nome2} acrescenta profundidade emocional e propósito superior às conquistas do casal.</p>
+
+<p>Essa combinação pode gerar uma relação inspiradora, na qual metas concretas são guiadas por valores elevados e princípios humanitários.</p>
+
+<p>O desafio surge quando o foco individual de {nome1} entra em conflito com o idealismo abrangente de {nome2}. Pode haver divergências entre ambição pessoal e entrega ao coletivo.</p>
+
+<p>{nome1} pode considerar {nome2} excessivamente sensível ou desapegado de objetivos práticos. Já {nome2} pode enxergar {nome1} como demasiadamente centrado em si mesmo.</p>
+
+<p>Se houver maturidade, essas diferenças tornam-se complementares. A determinação de {nome1} ganha significado através da consciência expandida de {nome2}.</p>
+
+<p>No campo emocional, {nome2} tende a buscar profundidade e conexão espiritual, enquanto {nome1} valoriza demonstrações claras de admiração e apoio.</p>
+
+<p>O crescimento do casal ocorre quando ambos aprendem a respeitar o ritmo e a natureza energética um do outro.</p>
+
+<p>{nome1} precisa reconhecer a importância da sensibilidade e da generosidade de {nome2}. {nome2} deve compreender a necessidade de autonomia e afirmação de {nome1}.</p>
+
+<p>Essa relação pode ter forte impacto social, pois une ação concreta com consciência humanitária.</p>
+
+<p>Quando trabalham juntos, podem construir projetos que beneficiem não apenas a si mesmos, mas também outras pessoas ao redor.</p>
+
+<p>O equilíbrio é alcançado quando liderança e compaixão caminham lado a lado, sem competição de valores.</p>
+
+<p>Com diálogo, respeito e alinhamento de propósito, {nome1} e {nome2} estruturam uma união madura, consciente e transformadora.</p>
 `,
 
   // ENERGIA 2
 "2-2": `
-<h3>Harmonia Conjugal – Energia 2 com Energia 2</h3>
+<h3>Harmonia Conjugal – {nome1} e {nome2}</h3>
 
-<p>A união entre duas Energias 2 é marcada por sensibilidade, cooperação e forte conexão emocional. O número 2 vibra empatia, diplomacia e necessidade de parceria, o que torna essa combinação naturalmente voltada para o diálogo e o entendimento mútuo. É uma relação baseada em apoio recíproco e busca constante por harmonia.</p>
+<p>{nome1} e {nome2} vibram ambos na Energia 2, frequência associada à sensibilidade, cooperação e necessidade de vínculo emocional profundo. Essa é uma união baseada na troca afetiva e na busca constante por harmonia.</p>
 
-<p>Nos aspectos positivos, ambos valorizam o companheirismo e demonstram cuidado genuíno um pelo outro. Existe grande capacidade de escuta, compreensão e adaptação, o que favorece estabilidade afetiva. Essa combinação tende a evitar conflitos diretos, priorizando o equilíbrio emocional e a preservação da união.</p>
+<p>Ambos possuem natureza diplomática, evitando conflitos diretos e priorizando o entendimento mútuo. Existe forte desejo de agradar, acolher e manter a estabilidade emocional da relação.</p>
 
-<p>Os desafios surgem quando a sensibilidade excessiva gera insegurança ou dependência emocional. Dois números 2 podem evitar confrontos importantes por medo de desagradar, acumulando sentimentos não expressos. A falta de firmeza nas decisões também pode tornar a relação vulnerável a influências externas.</p>
+<p>A conexão tende a ser suave, intuitiva e marcada por empatia. {nome1} compreende facilmente os sentimentos de {nome2}, e o inverso também ocorre com naturalidade.</p>
 
-<p>Para que essa união prospere, é essencial que ambos desenvolvam maior assertividade e aprendam a expressar suas necessidades com clareza. Quando equilibrados, formam um casal extremamente harmonioso, afetuoso e capaz de construir uma relação estável baseada no respeito e na cooperação.</p>
+<p>Essa sintonia favorece companheirismo, cumplicidade e construção de um ambiente doméstico equilibrado e acolhedor.</p>
+
+<p>No entanto, por serem altamente sensíveis, podem absorver emoções negativas um do outro com intensidade, criando ciclos de insegurança ou dependência emocional.</p>
+
+<p>Há tendência a evitar confrontos necessários, o que pode gerar acúmulo silencioso de frustrações.</p>
+
+<p>Se ambos aguardarem sempre a iniciativa do outro, decisões importantes podem ser adiadas indefinidamente.</p>
+
+<p>A relação cresce quando desenvolvem firmeza emocional e aprendem a expressar insatisfações com clareza e maturidade.</p>
+
+<p>{nome1} e {nome2} precisam compreender que harmonia verdadeira não significa ausência de divergências, mas capacidade de resolvê-las com respeito.</p>
+
+<p>Existe grande potencial para parceria afetiva duradoura, pois ambos valorizam lealdade e estabilidade.</p>
+
+<p>No campo íntimo, a conexão tende a ser delicada e emocionalmente envolvente, baseada mais em vínculo do que em impulso.</p>
+
+<p>Essa união favorece projetos construídos em conjunto, especialmente aqueles que envolvem cooperação, cuidado ou apoio mútuo.</p>
+
+<p>O risco está na passividade excessiva, na dificuldade de impor limites externos ou na tendência a depender excessivamente da validação do parceiro.</p>
+
+<p>Quando fortalecem autoestima individual, a relação torna-se ainda mais sólida e equilibrada.</p>
+
+<p>A Energia 2 duplicada intensifica a necessidade de segurança emocional, tornando fundamental cultivar diálogo constante.</p>
+
+<p>Se houver maturidade, {nome1} e {nome2} constroem uma união sensível, protetora e profundamente conectada no plano emocional.</p>
 `,
 "2-3": `
-<h3>Harmonia Conjugal – Energia 2 com Energia 3</h3>
+<h3>Harmonia Conjugal – {nome1} e {nome2}</h3>
 
-<p>A combinação entre a Energia 2 e a Energia 3 une sensibilidade e expressão. O número 2 representa empatia, diplomacia e necessidade de parceria, enquanto o número 3 vibra comunicação, criatividade e entusiasmo. Essa relação tende a ser leve, sociável e emocionalmente conectada, quando há equilíbrio entre sentimento e expressão.</p>
+<p>{nome1} vibra na Energia 2, associada à sensibilidade, cooperação e necessidade de vínculo emocional. {nome2} manifesta a Energia 3, ligada à comunicação, criatividade e expressão expansiva. Essa combinação une emoção profunda com leveza expressiva.</p>
 
-<p>Nos aspectos positivos, o número 3 traz alegria e espontaneidade para a vida do número 2, estimulando maior confiança e abertura emocional. O número 2, por sua vez, oferece apoio, compreensão e estabilidade afetiva, ajudando o 3 a manter vínculos mais profundos e consistentes. Existe potencial para uma relação comunicativa e cheia de troca emocional.</p>
+<p>{nome1} tende a agir com cautela, buscando harmonia e estabilidade na relação. {nome2} possui natureza comunicativa, sociável e espontânea, trazendo dinamismo ao vínculo.</p>
 
-<p>Os desafios surgem quando o número 3 demonstra dispersão ou superficialidade emocional, o que pode gerar insegurança no número 2. Já o 2 pode se tornar excessivamente sensível ou dependente, sentindo-se afetado por palavras ou atitudes impulsivas do 3. Diferenças na forma de lidar com emoções podem provocar mal-entendidos.</p>
+<p>A princípio, existe forte atração complementar: {nome1} oferece acolhimento e escuta, enquanto {nome2} adiciona entusiasmo e movimento.</p>
 
-<p>Para que essa combinação prospere, o número 3 deve cultivar maior responsabilidade emocional, enquanto o número 2 precisa fortalecer sua autoconfiança. Quando existe maturidade, essa união pode se tornar harmoniosa, criativa e emocionalmente enriquecedora, equilibrando sensibilidade e expressão.</p>
+<p>{nome2} pode ajudar {nome1} a sair da introspecção excessiva, estimulando mais autoconfiança e exposição social.</p>
+
+<p>Por outro lado, {nome1} ensina {nome2} a aprofundar sentimentos e a desenvolver maior sensibilidade nas palavras e atitudes.</p>
+
+<p>O desafio surge quando a necessidade emocional de {nome1} encontra a leveza variável de {nome2}. A Energia 2 busca constância; a Energia 3 oscila conforme o ambiente.</p>
+
+<p>{nome1} pode sentir insegurança diante da sociabilidade intensa de {nome2}. Já {nome2} pode perceber {nome1} como excessivamente sensível ou dependente.</p>
+
+<p>Se não houver diálogo claro, podem surgir mal-entendidos causados por diferenças na forma de demonstrar afeto.</p>
+
+<p>No entanto, quando equilibrados, formam uma união rica em troca emocional e comunicação aberta.</p>
+
+<p>{nome2} traz alegria e criatividade para o cotidiano do casal. {nome1} sustenta o vínculo com cuidado e dedicação.</p>
+
+<p>A relação prospera quando a expressão de {nome2} é acolhida sem críticas, e a sensibilidade de {nome1} é respeitada sem desvalorização.</p>
+
+<p>No campo íntimo, há potencial para conexão emocional acompanhada de leveza e espontaneidade.</p>
+
+<p>Projetos artísticos, sociais ou comunicativos tendem a prosperar nessa união.</p>
+
+<p>É fundamental que {nome2} desenvolva constância emocional e que {nome1} fortaleça sua autonomia interna.</p>
+
+<p>Quando maturidade e compreensão estão presentes, essa combinação transforma diferenças em crescimento.</p>
+
+<p>{nome1} e {nome2} podem construir uma relação equilibrada, onde sensibilidade e expressão caminham juntas de forma complementar.</p>
 `,
 "2-4": `
-<h3>Harmonia Conjugal – Energia 2 com Energia 4</h3>
+<h3>Harmonia Conjugal – {nome1} e {nome2}</h3>
 
-<p>A união entre a Energia 2 e a Energia 4 combina sensibilidade e estabilidade. O número 2 representa diplomacia, empatia e necessidade de conexão emocional, enquanto o número 4 simboliza disciplina, responsabilidade e estrutura. Essa relação tende a buscar segurança e construção sólida ao longo do tempo.</p>
+<p>{nome1} vibra na Energia 2, associada à sensibilidade, cooperação e necessidade de conexão emocional. {nome2} manifesta a Energia 4, ligada à estrutura, disciplina e construção material. Essa união combina emoção com estabilidade prática.</p>
 
-<p>Nos aspectos positivos, o número 4 oferece base, compromisso e organização, proporcionando ao número 2 a sensação de segurança emocional que tanto valoriza. O número 2, por sua vez, traz suavidade e compreensão, ajudando o 4 a desenvolver maior flexibilidade e sensibilidade nas relações. Juntos, podem formar uma parceria estável e confiável.</p>
+<p>{nome1} tende a agir com diplomacia, buscando harmonia e evitando conflitos diretos. {nome2} possui postura mais firme, objetiva e orientada para resultados concretos.</p>
 
-<p>Os desafios surgem quando o número 4 demonstra rigidez excessiva ou dificuldade em expressar sentimentos, o que pode gerar insegurança no número 2. Já o número 2 pode se mostrar indeciso ou excessivamente emocional, o que pode frustrar o senso prático do 4. Diferenças no modo de agir e reagir precisam ser administradas com maturidade.</p>
+<p>Inicialmente, a relação pode se estruturar com base na segurança. {nome2} oferece estabilidade e direção, enquanto {nome1} contribui com acolhimento e compreensão.</p>
 
-<p>Para que essa combinação prospere, é essencial que o número 4 aprenda a expressar emoções com mais abertura e que o número 2 desenvolva firmeza nas decisões. Quando equilibrados, constroem uma relação baseada em confiança, estabilidade e apoio mútuo.</p>
+<p>{nome2} tende a organizar a vida material do casal, criando bases sólidas. {nome1} fortalece o vínculo afetivo, mantendo o equilíbrio emocional.</p>
+
+<p>O desafio surge quando a sensibilidade de {nome1} encontra a rigidez ou excesso de pragmatismo de {nome2}.</p>
+
+<p>{nome1} pode sentir falta de demonstrações afetivas mais frequentes. {nome2} pode considerar excessiva a necessidade emocional de {nome1}.</p>
+
+<p>Se não houver ajuste, a Energia 2 pode se sentir negligenciada, enquanto a Energia 4 pode se sentir pressionada emocionalmente.</p>
+
+<p>No entanto, quando conscientes, essa combinação torna-se altamente complementar.</p>
+
+<p>{nome1} suaviza a postura estruturada de {nome2}, tornando a relação menos rígida e mais empática.</p>
+
+<p>{nome2} ensina {nome1} a desenvolver maior firmeza, disciplina e segurança interna.</p>
+
+<p>No campo prático, há grande potencial para construção de patrimônio, projetos estáveis e planejamento de longo prazo.</p>
+
+<p>No campo emocional, é necessário cultivar diálogo constante para evitar distanciamento silencioso.</p>
+
+<p>{nome2} precisa aprender a verbalizar sentimentos. {nome1} precisa fortalecer sua autonomia emocional.</p>
+
+<p>Quando trabalham em conjunto, unem sensibilidade com responsabilidade.</p>
+
+<p>A relação prospera quando emoção e estrutura caminham lado a lado, sem que uma anule a outra.</p>
+
+<p>Com maturidade, {nome1} e {nome2} constroem uma união estável, protetora e duradoura, baseada em equilíbrio entre coração e solidez.</p>
 `,
+   
 "2-5": `
-<h3>Harmonia Conjugal – Energia 2 com Energia 5</h3>
+<h3>Harmonia Conjugal – {nome1} e {nome2}</h3>
 
-<p>A combinação entre a Energia 2 e a Energia 5 une sensibilidade e liberdade. O número 2 representa empatia, parceria e necessidade de estabilidade emocional, enquanto o número 5 vibra movimento, mudança e desejo de independência. Essa relação pode ser estimulante, mas exige equilíbrio entre segurança e autonomia.</p>
+<p>{nome1} vibra na Energia 2, associada à sensibilidade, parceria e necessidade de segurança emocional. {nome2} manifesta a Energia 5, ligada à liberdade, movimento e busca por experiências variadas. Essa combinação une estabilidade afetiva com desejo de expansão.</p>
 
-<p>Nos aspectos positivos, o número 5 traz entusiasmo e novas experiências para a vida do número 2, incentivando-o a sair da zona de conforto. O número 2 oferece apoio emocional e compreensão, criando um espaço afetivo onde o 5 pode se sentir acolhido. Quando existe respeito mútuo, a relação pode ser dinâmica e emocionalmente enriquecedora.</p>
+<p>{nome1} tende a priorizar vínculo, constância e profundidade emocional. {nome2} possui natureza inquieta, curiosa e adaptável, necessitando de estímulos constantes.</p>
 
-<p>Os desafios surgem quando o número 5 demonstra instabilidade ou necessidade excessiva de liberdade, gerando insegurança no número 2. Já o número 2 pode se tornar dependente ou excessivamente sensível, o que pode fazer o 5 sentir-se pressionado. Diferenças na forma de lidar com compromisso podem provocar conflitos.</p>
+<p>Inicialmente, pode haver forte atração, pois {nome2} se sente acolhido pela dedicação de {nome1}, enquanto {nome1} se encanta com o dinamismo e carisma de {nome2}.</p>
 
-<p>Para que essa união prospere, o número 2 deve fortalecer sua autoconfiança e evitar apego excessivo, enquanto o número 5 precisa cultivar responsabilidade emocional e constância. Quando existe maturidade, essa combinação pode unir sensibilidade e aventura de maneira equilibrada.</p>
+<p>{nome2} traz leveza, novidade e entusiasmo à relação. {nome1} oferece base emocional, apoio e escuta genuína.</p>
+
+<p>O desafio surge quando a necessidade de estabilidade de {nome1} confronta o desejo de liberdade de {nome2}.</p>
+
+<p>{nome1} pode sentir insegurança diante da imprevisibilidade da Energia 5. {nome2} pode perceber a Energia 2 como excessivamente dependente ou controladora.</p>
+
+<p>Se não houver diálogo claro, podem surgir conflitos relacionados a ciúmes, autonomia e limites individuais.</p>
+
+<p>Por outro lado, essa união pode promover grande crescimento pessoal para ambos.</p>
+
+<p>{nome1} aprende a desenvolver maior flexibilidade e confiança interna. {nome2} aprende a valorizar compromisso e responsabilidade emocional.</p>
+
+<p>No campo social, a relação tende a ser ativa, com movimentação constante e novas experiências compartilhadas.</p>
+
+<p>No campo íntimo, existe potencial para intensidade emocional combinada com espontaneidade.</p>
+
+<p>É fundamental que {nome2} compreenda a importância de transmitir segurança emocional. Da mesma forma, {nome1} precisa evitar tentativas de restringir a liberdade natural de {nome2}.</p>
+
+<p>Quando encontram equilíbrio, constroem uma relação que une estabilidade com aventura.</p>
+
+<p>A Energia 2 sustenta o vínculo; a Energia 5 impede que a rotina torne-se estagnada.</p>
+
+<p>Com maturidade e respeito às diferenças, {nome1} e {nome2} podem transformar contrastes em complementaridade evolutiva.</p>
+
+<p>Essa união prospera quando confiança e liberdade caminham juntas, sem anular a essência de cada um.</p>
 `,
+
+   
 "2-6": `
-<h3>Harmonia Conjugal – Energia 2 com Energia 6</h3>
+<h3>Harmonia Conjugal – {nome1} e {nome2}</h3>
 
-<p>A união entre a Energia 2 e a Energia 6 é marcada por afeto, cuidado e forte necessidade de vínculo emocional. O número 2 representa sensibilidade, parceria e diplomacia, enquanto o número 6 simboliza amor, responsabilidade e dedicação à família. Essa combinação tende a formar uma relação acolhedora e voltada para estabilidade afetiva.</p>
+<p>{nome1} vibra na Energia 2, associada à sensibilidade, diplomacia e necessidade de conexão emocional. {nome2} manifesta a Energia 6, ligada ao amor, responsabilidade afetiva e compromisso familiar. Essa combinação favorece vínculos profundos e estruturados no cuidado mútuo.</p>
 
-<p>Nos aspectos positivos, ambos valorizam o compromisso e a construção de um ambiente harmonioso. O número 6 oferece proteção, segurança e senso de responsabilidade, enquanto o número 2 contribui com empatia, compreensão e capacidade de adaptação. Juntos, podem criar uma união baseada em apoio mútuo e cuidado genuíno.</p>
+<p>{nome1} tende a buscar harmonia constante, evitando conflitos e priorizando o diálogo. {nome2} possui forte senso de responsabilidade emocional e desejo de proteger aqueles que ama.</p>
 
-<p>Os desafios surgem quando a sensibilidade do número 2 encontra o excesso de responsabilidade ou controle do número 6. O 6 pode assumir postura protetora em excesso, enquanto o 2 pode demonstrar insegurança ou dificuldade em impor limites. A dependência emocional pode se tornar um ponto de tensão se não houver equilíbrio.</p>
+<p>Existe grande potencial para uma relação estável, voltada à construção de lar, segurança e parceria duradoura.</p>
 
-<p>Para que essa combinação prospere, é fundamental que ambos desenvolvam autonomia emocional e comunicação clara. Quando existe maturidade, essa união tende a ser estável, amorosa e orientada para construção de laços duradouros e sólidos.</p>
+<p>{nome2} oferece direção afetiva e senso de dever dentro da relação. {nome1} contribui com sensibilidade, escuta ativa e capacidade de mediação.</p>
+
+<p>Ambos valorizam compromisso, fidelidade e equilíbrio emocional, o que fortalece a base do relacionamento.</p>
+
+<p>O desafio pode surgir quando a Energia 6 assume postura excessivamente controladora ou protetora.</p>
+
+<p>{nome1}, por ser mais sensível, pode absorver cobranças emocionais de forma intensa.</p>
+
+<p>Da mesma forma, {nome2} pode sentir que carrega responsabilidades maiores dentro da dinâmica do casal.</p>
+
+<p>Se não houver equilíbrio, podem surgir dependência emocional ou expectativas idealizadas sobre o parceiro.</p>
+
+<p>No entanto, quando conscientes, essa combinação tende a ser altamente compatível.</p>
+
+<p>{nome1} suaviza a rigidez eventual da Energia 6, trazendo flexibilidade emocional.</p>
+
+<p>{nome2} fortalece {nome1}, oferecendo segurança, proteção e direcionamento.</p>
+
+<p>No campo doméstico, há forte inclinação para organização, cuidado com o ambiente e valorização da família.</p>
+
+<p>No campo íntimo, a relação tende a ser afetiva, carinhosa e emocionalmente envolvente.</p>
+
+<p>O crescimento ocorre quando ambos aprendem a dividir responsabilidades sem sobrecarga.</p>
+
+<p>Com diálogo e maturidade, {nome1} e {nome2} constroem uma união sólida, protetora e orientada ao compromisso verdadeiro.</p>
+
+<p>Essa é uma combinação que favorece estabilidade emocional e construção duradoura quando há equilíbrio entre sensibilidade e responsabilidade.</p>
 `,
+
+   
 "2-7": `
-<h3>Harmonia Conjugal – Energia 2 com Energia 7</h3>
+<h3>Harmonia Conjugal – {nome1} e {nome2}</h3>
 
-<p>A combinação entre a Energia 2 e a Energia 7 une sensibilidade e profundidade. O número 2 representa empatia, parceria e necessidade de conexão emocional, enquanto o número 7 vibra introspecção, análise e busca por conhecimento interior. Essa relação tende a ser marcada por forte intensidade emocional e reflexiva.</p>
+<p>{nome1} vibra na Energia 2, associada à sensibilidade, cooperação e necessidade de vínculo emocional. {nome2} manifesta a Energia 7, ligada à introspecção, análise profunda e busca por conhecimento interior. Essa combinação une emoção relacional com profundidade mental e espiritual.</p>
 
-<p>Nos aspectos positivos, o número 2 ajuda o 7 a se abrir emocionalmente e a confiar mais na troca afetiva, enquanto o número 7 oferece ao 2 visão profunda, sabedoria e maturidade intelectual. Quando há equilíbrio, formam uma união que pode crescer tanto emocional quanto espiritualmente.</p>
+<p>{nome1} tende a priorizar proximidade, diálogo e harmonia constante. {nome2} possui natureza reservada, reflexiva e seletiva em suas demonstrações afetivas.</p>
 
-<p>Os desafios surgem quando o número 7 demonstra distanciamento ou excesso de reserva, o que pode gerar insegurança no número 2. Já o número 2 pode se mostrar sensível demais, pressionando o 7 por respostas emocionais imediatas. Diferenças no modo de expressar sentimentos podem criar ruídos na comunicação.</p>
+<p>Inicialmente, pode haver forte atração pela diferença: {nome1} sente-se intrigado pela profundidade de {nome2}, enquanto {nome2} percebe em {nome1} acolhimento e compreensão.</p>
 
-<p>Para que essa combinação prospere, o número 7 precisa aprender a compartilhar seus pensamentos e emoções com maior abertura, enquanto o número 2 deve desenvolver segurança interna e evitar dependência emocional. Quando há compreensão mútua, essa união pode ser profunda, intuitiva e enriquecedora.</p>
+<p>{nome1} oferece apoio emocional e disponibilidade afetiva. {nome2} acrescenta visão analítica e busca por sentido mais profundo na relação.</p>
+
+<p>O desafio surge quando a necessidade de proximidade da Energia 2 encontra o espaço e a solitude necessários à Energia 7.</p>
+
+<p>{nome1} pode interpretar o silêncio ou o distanciamento de {nome2} como frieza ou desinteresse.</p>
+
+<p>{nome2} pode sentir-se pressionado diante da demanda emocional constante de {nome1}.</p>
+
+<p>Se não houver entendimento, a relação pode alternar entre aproximação intensa e afastamentos periódicos.</p>
+
+<p>No entanto, quando há maturidade, essa união torna-se complementar.</p>
+
+<p>{nome1} ensina {nome2} a expressar sentimentos com maior abertura. {nome2} ensina {nome1} a desenvolver autonomia emocional e profundidade interior.</p>
+
+<p>No campo intelectual e espiritual, existe potencial para trocas significativas e crescimento conjunto.</p>
+
+<p>A relação tende a evoluir quando ambos respeitam o tempo e o espaço individual.</p>
+
+<p>{nome1} precisa compreender que introspecção não significa ausência de amor.</p>
+
+<p>{nome2} precisa reconhecer a importância de demonstrar afeto de forma mais clara.</p>
+
+<p>Quando equilibram emoção e introspecção, constroem vínculo baseado em respeito e aprendizado mútuo.</p>
+
+<p>Com diálogo consciente, {nome1} e {nome2} podem transformar diferenças em profundidade relacional e evolução interior compartilhada.</p>
 `,
+
+   
 "2-8": `
-<h3>Harmonia Conjugal – Energia 2 com Energia 8</h3>
+<h3>Harmonia Conjugal – {nome1} e {nome2}</h3>
 
-<p>A união entre a Energia 2 e a Energia 8 combina sensibilidade e poder de realização. O número 2 representa diplomacia, empatia e necessidade de parceria, enquanto o número 8 vibra ambição, autoridade e foco em resultados concretos. Essa combinação pode gerar uma relação estratégica, desde que haja equilíbrio emocional.</p>
+<p>{nome1} vibra na Energia 2, associada à sensibilidade, diplomacia e necessidade de conexão emocional. {nome2} manifesta a Energia 8, ligada ao poder material, ambição e capacidade de realização concreta. Essa combinação une emoção relacional com força de construção e liderança prática.</p>
 
-<p>Nos aspectos positivos, o número 8 oferece direção, segurança material e firmeza, proporcionando ao número 2 estabilidade e proteção. O número 2 contribui com compreensão, flexibilidade e habilidade para mediar conflitos, suavizando a intensidade do 8. Quando trabalham juntos, podem formar uma parceria sólida e produtiva.</p>
+<p>{nome1} tende a agir com cautela, buscando harmonia e equilíbrio nas decisões. {nome2} possui postura firme, estratégica e orientada para resultados objetivos.</p>
 
-<p>Os desafios surgem quando o número 8 se torna excessivamente controlador ou focado apenas em objetivos externos, deixando o número 2 emocionalmente inseguro. Já o número 2 pode demonstrar indecisão ou sensibilidade excessiva, o que pode frustrar o senso prático do 8. Diferenças na forma de lidar com emoções e responsabilidades podem gerar tensão.</p>
+<p>Inicialmente, pode haver forte atração pela complementaridade: {nome1} admira a segurança e determinação de {nome2}, enquanto {nome2} valoriza o apoio emocional e a lealdade de {nome1}.</p>
 
-<p>Para que essa combinação prospere, o número 8 precisa desenvolver maior sensibilidade emocional, enquanto o número 2 deve fortalecer sua autoconfiança e firmeza. Quando existe maturidade, essa união pode unir estratégia e empatia, formando uma relação equilibrada e orientada para conquistas duradouras.</p>
+<p>{nome2} traz estrutura financeira, visão de crescimento e capacidade de comando. {nome1} sustenta o vínculo com sensibilidade, escuta e cooperação.</p>
+
+<p>O desafio surge quando a intensidade prática da Energia 8 encontra a delicadeza emocional da Energia 2.</p>
+
+<p>{nome1} pode sentir-se emocionalmente pressionado diante da postura dominante de {nome2}. {nome2} pode considerar excessiva a sensibilidade ou indecisão de {nome1}.</p>
+
+<p>Se não houver equilíbrio, a relação pode assumir dinâmica de comando e submissão, gerando desgaste emocional.</p>
+
+<p>No entanto, quando conscientes, essa combinação possui grande potencial de estabilidade e crescimento material.</p>
+
+<p>{nome1} suaviza a rigidez eventual da Energia 8, humanizando decisões e trazendo empatia às situações práticas.</p>
+
+<p>{nome2} fortalece {nome1}, incentivando maior firmeza, autoconfiança e posicionamento.</p>
+
+<p>No campo profissional ou financeiro, o casal pode construir patrimônio e projetos sólidos.</p>
+
+<p>No campo emocional, é essencial que {nome2} desenvolva maior demonstração afetiva e que {nome1} fortaleça sua autonomia interna.</p>
+
+<p>A relação prospera quando poder e sensibilidade caminham juntos, sem competição de controle.</p>
+
+<p>{nome1} precisa evitar dependência emocional excessiva. {nome2} deve evitar autoritarismo ou frieza nas decisões.</p>
+
+<p>Quando há respeito às diferenças, formam uma união capaz de unir estabilidade material com apoio emocional verdadeiro.</p>
+
+<p>Com maturidade e diálogo, {nome1} e {nome2} constroem uma relação equilibrada entre coração e realização concreta.</p>
 `,
+
+   
 "2-9": `
-<h3>Harmonia Conjugal – Energia 2 com Energia 9</h3>
+<h3>Harmonia Conjugal – {nome1} e {nome2}</h3>
 
-<p>A combinação entre a Energia 2 e a Energia 9 une sensibilidade e idealismo. O número 2 representa parceria, empatia e necessidade de conexão emocional, enquanto o número 9 vibra compaixão, altruísmo e visão humanitária. Essa relação tende a ser marcada por forte intensidade emocional e desejo de construir algo com significado.</p>
+<p>{nome1} vibra na Energia 2, associada à sensibilidade, cooperação e necessidade de vínculo emocional profundo. {nome2} manifesta a Energia 9, ligada ao humanitarismo, compaixão e visão ampla da existência. Essa combinação une emoção relacional com consciência universal.</p>
 
-<p>Nos aspectos positivos, o número 9 amplia a percepção do número 2, incentivando-o a enxergar além das emoções imediatas. O número 2 oferece apoio, compreensão e estabilidade afetiva, criando um ambiente onde o 9 pode expressar seus ideais com segurança. Juntos, podem formar uma união baseada em solidariedade e propósito.</p>
+<p>{nome1} tende a priorizar a harmonia do casal, buscando estabilidade afetiva e reciprocidade constante. {nome2} possui natureza generosa, idealista e voltada para causas maiores que ultrapassam o interesse individual.</p>
 
-<p>Os desafios surgem quando o número 9 se envolve excessivamente com questões externas ou causas coletivas, fazendo o número 2 sentir-se negligenciado. Já o número 2 pode demonstrar dependência emocional ou insegurança diante da natureza expansiva do 9. Diferenças na prioridade entre vida pessoal e causas maiores podem gerar conflitos.</p>
+<p>Inicialmente, pode haver forte conexão emocional, pois a Energia 2 sente-se inspirada pela amplitude e profundidade da Energia 9.</p>
 
-<p>Para que essa combinação prospere, é essencial que o número 9 equilibre seu altruísmo com atenção à relação, enquanto o número 2 fortaleça sua autonomia emocional. Quando existe maturidade, essa união pode se tornar profunda, compassiva e orientada para crescimento espiritual e emocional.</p>
+<p>{nome2} enxerga em {nome1} acolhimento e parceria sincera. {nome1} percebe em {nome2} sensibilidade elevada e propósito humanitário.</p>
+
+<p>O desafio surge quando a necessidade de atenção exclusiva da Energia 2 encontra o espírito abrangente da Energia 9.</p>
+
+<p>{nome1} pode sentir insegurança diante da dedicação de {nome2} a causas externas ou a múltiplas responsabilidades emocionais.</p>
+
+<p>{nome2} pode considerar a Energia 2 excessivamente dependente ou centrada apenas na dinâmica do casal.</p>
+
+<p>Se não houver alinhamento, podem surgir frustrações relacionadas a expectativas afetivas diferentes.</p>
+
+<p>No entanto, quando conscientes, essa união possui forte potencial evolutivo.</p>
+
+<p>{nome1} ensina {nome2} a valorizar a intimidade e o cuidado cotidiano. {nome2} ensina {nome1} a expandir a visão além das inseguranças pessoais.</p>
+
+<p>No campo emocional, a relação pode ser profunda, compassiva e marcada por empatia.</p>
+
+<p>No campo espiritual, existe possibilidade de crescimento conjunto e desenvolvimento de propósito compartilhado.</p>
+
+<p>É fundamental que {nome2} reforce demonstrações de presença afetiva, enquanto {nome1} desenvolve maior autonomia emocional.</p>
+
+<p>Quando equilibram apego e universalidade, constroem vínculo maduro e significativo.</p>
+
+<p>Essa combinação prospera quando o amor do casal não limita, mas amplia a consciência de ambos.</p>
+
+<p>Com diálogo e maturidade, {nome1} e {nome2} podem formar uma união sensível, inspiradora e espiritualmente enriquecedora.</p>
 `,
 
+   
   // ENERGIA 3
 "3-3": `
 <h3>Harmonia Conjugal – Energia 3 com Energia 3</h3>
