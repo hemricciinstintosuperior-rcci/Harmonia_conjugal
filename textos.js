@@ -1269,16 +1269,16 @@ A lição fundamental deste período é o desapego e a busca por uma nova forma 
  sinastria : {
 
   // ENERGIA 1
-  "1-1": `
-<h3>Harmonia Conjugal – Energia 1 com Energia 1</h3>
+"1-1": `
+<h3>Harmonia Conjugal – {nome1} e {nome2}</h3>
 
-<p>Quando duas pessoas com Energia 1 se encontram, a relação é marcada por intensidade, independência e forte desejo de realização. Ambos possuem personalidade determinada, iniciativa natural e vontade constante de conquistar novos desafios. Essa dupla dificilmente se acomoda, pois o número 1 vibra ação, liderança e individualidade.</p>
+<p>{nome1} vibra na Energia 1, associada à liderança, iniciativa e impulso de conquista. {nome2} também carrega a Energia 1 como missão de vida. Quando duas vibrações 1 se encontram, a relação tende a ser intensa, dinâmica e marcada por forte desejo de realização.</p>
 
-<p>O ponto positivo dessa união está no incentivo mútuo ao crescimento. Existe admiração pela coragem, pela força de vontade e pela capacidade de enfrentar obstáculos. O casal compartilha o desejo de liberdade e progresso, podendo transformar a relação em uma parceria dinâmica, cheia de projetos, aventuras e metas ousadas. Essa combinação também favorece empreendimentos em conjunto, já que ambos possuem espírito empreendedor.</p>
+<p>Ambos possuem espírito independente, capacidade de decisão e tendência natural ao protagonismo. Existe admiração mútua pela força de ação e pela coragem diante dos desafios. Essa combinação favorece projetos ambiciosos e metas ousadas, pois há disposição para enfrentar obstáculos sem recuar.</p>
 
-<p>Por outro lado, a mesma intensidade que une também pode gerar conflitos. Dois números 1 juntos podem disputar liderança, entrar em competição ou ter dificuldade em ceder, pois nenhum deles aprecia sentir-se controlado. A impaciência e o orgulho podem provocar discussões, especialmente quando falta flexibilidade emocional.</p>
+<p>O ponto de atenção surge quando a necessidade de liderar se transforma em competição. Como a Energia 1 valoriza autonomia, pode haver resistência em ceder espaço ou dividir decisões importantes. Pequenos desacordos podem se tornar disputas se o diálogo não for cultivado.</p>
 
-<p>Para que essa combinação floresça, é essencial que aprendam a trabalhar em equipe sem anular a individualidade de cada um. Quando transformam a competitividade em motivação e o ego em incentivo mútuo, formam uma dupla poderosa. Respeitando os espaços pessoais e celebrando as conquistas juntos, dois números 1 podem construir uma relação forte, produtiva e cheia de realizações.</p>
+<p>Quando {nome1} e {nome2} compreendem que liderança também pode ser compartilhada, a relação se fortalece. A união passa a ser produtiva, estratégica e marcada por grandes realizações em conjunto.</p>
 `,
   "1-2": `
 <h3>Harmonia Conjugal – Energia 1 com Energia 2</h3>
@@ -1538,7 +1538,21 @@ A lição fundamental deste período é o desapego e a busca por uma nova forma 
 <p>Para que essa combinação prospere, o número 3 deve desenvolver maior responsabilidade emocional, enquanto o número 9 precisa equilibrar seu altruísmo com atenção à relação. Quando há maturidade, essa união pode ser alegre, significativa e orientada para crescimento mútuo.</p>
 `,
 
-  // ENERGIA 4
+ 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   // ENERGIA 4
 "4-4": `
 <h3>Harmonia Conjugal – Energia 4 com Energia 4</h3>
 
