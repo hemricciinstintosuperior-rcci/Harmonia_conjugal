@@ -292,25 +292,25 @@ function montarPessoa(p){
   return `
   <div class="bloco">
     <div class="numero">Motivação: ${p.motivacao}</div>
-    <div>${p.textos.motivacao}</div>
+    <div>${aplicarNomes(p.textos.motivacao)}</div>
 
     <div class="numero">Influência: ${p.influencia}</div>
-    <div>${p.textos.influencia}</div>
+    <div>${aplicarNomes(p.textos.influencia)}</div>
 
     <div class="numero">Personalidade: ${p.personalidade}</div>
-    <div>${p.textos.personalidade}</div>
+    <div>${aplicarNomes(p.textos.personalidade)}</div>
 
     <div class="numero">Caminho de Vida: ${p.caminho}</div>
-    <div>${p.textos.caminho}</div>
+    <div>${aplicarNomes(p.textos.caminho)}</div>
 
     <div class="numero">Propósito: ${p.proposito}</div>
-    <div>${p.textos.proposito}</div>
+    <div>${aplicarNomes(p.textos.proposito)}</div>
 
     <div class="numero">Ano Pessoal: ${p.ano}</div>
-    <div>${p.textos.ano}</div>
+    <div>${aplicarNomes(p.textos.ano)}</div>
 
     <div class="numero">Harmonia Individual: ${p.harmonia}</div>
-    <div>${p.textos.harmonia}</div>
+    <div>${aplicarNomes(p.textos.harmonia)}</div>
 
 
 
@@ -338,13 +338,13 @@ function montarBebe(b){
     <div class="bloco">
 
       <div class="numero">Motivação: ${b.motivacao ?? ""}</div>
-      <div>${b.textos?.motivacao ?? ""}</div>
+      <div>${aplicarNomes(b.textos?.motivacao ?? "")}</div>
 
       <div class="numero">Influência: ${b.influencia ?? ""}</div>
-      <div>${b.textos?.influencia ?? ""}</div>
+      <div>${aplicarNomes(b.textos?.influencia ?? "")}</div>
 
       <div class="numero">Personalidade: ${b.personalidade ?? ""}</div>
-      <div>${b.textos?.personalidade ?? ""}</div>
+      <div>${aplicarNomes(b.textos?.personalidade ?? "")}</div>
 
       
 
