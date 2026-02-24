@@ -647,14 +647,33 @@ function mostrarSinastria(){
 
   const chave = chaveSinastria(energia1, energia2);
 
-  const textoBase = textos.sinastria[chave] ||
+  let texto = textos.sinastria[chave] ||
     `A combinação entre a Energia ${energia1} e a Energia ${energia2}.`;
+
+  // -----------------------------
+  // SUBSTITUIÇÕES INTELIGENTES
+  // -----------------------------
+
+  const menor = Math.min(energia1, energia2);
+  const maior = Math.max(energia1, energia2);
+
+  const nomeMenor = (energia1 === menor) ? nome1 : nome2;
+  const nomeMaior = (energia1 === maior) ? nome1 : nome2;
+
+  // Energia X
+  texto = texto.replaceAll(`Energia ${menor}`, nomeMenor);
+  texto = texto.replaceAll(`Energia ${maior}`, nomeMaior);
+
+  // número X
+  texto = texto.replaceAll(`número ${menor}`, nomeMenor);
+  texto = texto.replaceAll(`número ${maior}`, nomeMaior);
+
+  texto = texto.replaceAll(`Número ${menor}`, nomeMenor);
+  texto = texto.replaceAll(`Número ${maior}`, nomeMaior);
 
   const textoFinal = `
     <h3>Harmonia Conjugal – ${nome1} com ${nome2}</h3>
-    <p><strong>${nome1}</strong> vibra na Energia ${energia1}, enquanto <strong>${nome2}</strong> expressa a Energia ${energia2}.</p>
-    <br>
-    ${textoBase}
+    ${texto}
   `;
 
   abrirModalTexto(textoFinal);
