@@ -653,7 +653,13 @@ function mostrarSinastria(){
   // -----------------------------
   // SUBSTITUIÇÕES INTELIGENTES
   // -----------------------------
+// número X
+  texto = texto.replaceAll(`número ${menor}`, nomeMenor);
+  texto = texto.replaceAll(`número ${maior}`, nomeMaior);
 
+  texto = texto.replaceAll(`Número ${menor}`, nomeMenor);
+  texto = texto.replaceAll(`Número ${maior}`, nomeMaior);
+  
   const menor = Math.min(energia1, energia2);
   const maior = Math.max(energia1, energia2);
 
@@ -662,7 +668,7 @@ function mostrarSinastria(){
 
   // Energia X
   texto = texto.replaceAll(`Energia ${menor}`, nomeMenor);
-  texto = texto.replaceAll(`Energia ${maior}`, nomeMaior);
+  
 
 
 
