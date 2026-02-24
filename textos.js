@@ -1264,7 +1264,8 @@ O estresse causado pela falta de resultados pode afetar drasticamente o seu âni
 No plano físico, essa carga de estresse constante é um fator de risco para o seu sistema nervoso e coração.
 Doenças somáticas e hipocondria podem aparecer como reflexo de uma mente que não encontra saída para os problemas.
 A lição fundamental deste período é o desapego e a busca por uma nova forma de enxergar o valor da vida.`
-}; 
+},
+
  sinastria : {
 
   // ENERGIA 1
