@@ -1283,9 +1283,9 @@ sinastria : {
 "1-2": `
 <h3>Harmonia Conjugal – Energia 1 com Energia 2</h3>
 
-<p>A união entre Energia 1 e Energia 2 representa o encontro entre ação e sensibilidade. Número 1 traz iniciativa, liderança e independência, enquanto número 2 vibra diplomacia, empatia e desejo de cooperação. Essa combinação cria uma dinâmica complementar, na qual força e delicadeza precisam aprender a caminhar juntas.</p>
+<p>A união entre Energia 1 e Energia 2 representa o encontro entre ação e sensibilidade. número 1 traz iniciativa, liderança e independência, enquanto número 2 vibra diplomacia, empatia e desejo de cooperação. Essa combinação cria uma dinâmica complementar, na qual força e delicadeza precisam aprender a caminhar juntas.</p>
 
-<p>Nos aspectos positivos, essa relação pode ser extremamente equilibrada. Número 2 oferece apoio emocional, compreensão e harmonia, ajudando número 1 a suavizar atitudes impulsivas. Já número 1 proporciona direção, coragem e segurança, incentivando número 2 a desenvolver mais confiança e determinação. Quando existe respeito, formam uma parceria estável e produtiva.</p>
+<p>Nos aspectos positivos, essa relação pode ser extremamente equilibrada. número 2 oferece apoio emocional, compreensão e harmonia, ajudando número 1 a suavizar atitudes impulsivas. Já número 1 proporciona direção, coragem e segurança, incentivando número 2 a desenvolver mais confiança e determinação. Quando existe respeito, formam uma parceria estável e produtiva.</p>
 
 <p>Os desafios surgem quando número 1 se torna autoritário ou impaciente, desconsiderando a sensibilidade de número 2. Por outro lado, número 2 pode se tornar excessivamente dependente ou inseguro, o que pode frustrar o espírito independente de número 1. Se não houver equilíbrio, a relação pode oscilar entre liderança excessiva e submissão emocional.</p>
 
