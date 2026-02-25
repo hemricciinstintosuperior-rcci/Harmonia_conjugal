@@ -1647,7 +1647,7 @@ sinastria : {
 "6-7": `
 <h3>Harmonia Conjugal – Energia 6 com Energia 7</h3>
 
-<p>Combinação entre Energia 6 e Energia 7 une responsabilidade afetiva e profundidade interior. número 6 representa amor, cuidado e compromisso familiar, enquanto número 7 simboliza introspecção, análise e busca por conhecimento. Relação tende a equilibrar dedicação emocional e reflexão consciente.</p>
+<p>Combinação entre número 6 e número 7 une responsabilidade afetiva e profundidade interior. número 6 representa amor, cuidado e compromisso familiar, enquanto número 7 simboliza introspecção, análise e busca por conhecimento. Relação tende a equilibrar dedicação emocional e reflexão consciente.</p>
 
 <p>Nos aspectos positivos, número 6 oferece acolhimento e segurança emocional a número 7, criando ambiente favorável para expressão com mais confiança. número 7 contribui com sabedoria, discernimento e visão estratégica, ajudando número 6 a ampliar compreensão da vida. Juntos, podem crescer emocional e espiritualmente.</p>
 
@@ -1659,7 +1659,7 @@ sinastria : {
 "6-8": `
 <h3>Harmonia Conjugal – Energia 6 com Energia 8</h3>
 
-<p>A união entre Energia 6 e Energia 8 combina responsabilidade afetiva e ambição. número 6 representa cuidado, proteção e compromisso familiar, enquanto número 8 simboliza liderança, poder de realização e foco em conquistas materiais. Relação tende a buscar estabilidade tanto emocional quanto financeira.</p>
+<p>A união entre número 6 e número 8 combina responsabilidade afetiva e ambição. número 6 representa cuidado, proteção e compromisso familiar, enquanto número 8 simboliza liderança, poder de realização e foco em conquistas materiais. Relação tende a buscar estabilidade tanto emocional quanto financeira.</p>
 
 <p>Nos aspectos positivos, número 6 oferece acolhimento e equilíbrio emocional, criando base segura para que número 8 desenvolva projetos e ambições. número 8 contribui com direção, estratégia e capacidade de expansão, fortalecendo estrutura da relação. Juntos, podem construir parceria sólida e produtiva.</p>
 
@@ -1671,7 +1671,7 @@ sinastria : {
 "6-9": `
 <h3>Harmonia Conjugal – Energia 6 com Energia 9</h3>
 
-<p>Combinação entre Energia 6 e Energia 9 une responsabilidade afetiva e idealismo. número 6 representa amor, cuidado e compromisso familiar, enquanto número 9 simboliza compaixão, generosidade e visão humanitária. Relação tende a ser marcada por sensibilidade e forte carga emocional.</p>
+<p>Combinação entre número 6 e número 9 une responsabilidade afetiva e idealismo. número 6 representa amor, cuidado e compromisso familiar, enquanto número 9 simboliza compaixão, generosidade e visão humanitária. Relação tende a ser marcada por sensibilidade e forte carga emocional.</p>
 
 <p>Nos aspectos positivos, número 6 oferece estabilidade, acolhimento e dedicação, criando base segura para que número 9 expresse ideais. número 9 amplia visão de número 6, incentivando enxergar além do ambiente doméstico e agir com maior consciência coletiva. Juntos, podem formar união generosa e significativa.</p>
 
@@ -1683,7 +1683,7 @@ sinastria : {
 "7-7": `
 <h3>Harmonia Conjugal – Energia 7 com Energia 7</h3>
 
-<p>A união entre duas Energias 7 é marcada por profundidade, introspecção e busca por conhecimento. A energia 7 simboliza análise, espiritualidade e necessidade de compreensão interior. Quando duas pessoas com essa vibração se encontram, a relação tende a ser reflexiva, reservada e intelectualmente estimulante.</p>
+<p>A união entre duas energias 7 é marcada por profundidade, introspecção e busca por conhecimento. A energia 7 simboliza análise, espiritualidade e necessidade de compreensão interior. Quando duas pessoas com essa vibração se encontram, a relação tende a ser reflexiva, reservada e intelectualmente estimulante.</p>
 
 <p>Nos aspectos positivos, ambos valorizam silêncio, estudo e desenvolvimento pessoal. Existe forte conexão mental e possibilidade de crescimento espiritual conjunto. Essa combinação favorece conversas profundas e entendimento intuitivo entre os parceiros.</p>
 
@@ -1697,7 +1697,7 @@ sinastria : {
 "7-8": `
 <h3>Harmonia Conjugal – Energia 7 com Energia 8</h3>
 
-<p>Combinação entre Energia 7 e Energia 8 une introspecção e ambição. número 7 representa análise, espiritualidade e busca por conhecimento interior, enquanto número 8 simboliza liderança, poder de realização e foco em conquistas materiais. Relação tende a equilibrar profundidade mental e ação estratégica.</p>
+<p>Combinação entre número 7 e número 8 une introspecção e ambição. número 7 representa análise, espiritualidade e busca por conhecimento interior, enquanto número 8 simboliza liderança, poder de realização e foco em conquistas materiais. Relação tende a equilibrar profundidade mental e ação estratégica.</p>
 
 <p>Nos aspectos positivos, número 7 oferece discernimento e visão analítica, auxiliando número 8 em decisões mais conscientes. número 8 contribui com determinação e capacidade de transformar ideias em resultados concretos. Juntos, podem formar parceria estratégica e intelectualmente forte.</p>
 
@@ -1709,7 +1709,7 @@ sinastria : {
 "7-9": `
 <h3>Harmonia Conjugal – Energia 7 com Energia 9</h3>
 
-<p>Combinação entre Energia 7 e Energia 9 une introspecção e idealismo. número 7 representa análise, busca por conhecimento e profundidade interior, enquanto número 9 simboliza compaixão, generosidade e visão humanitária. Relação tende a ser marcada por reflexão e propósito elevado.</p>
+<p>Combinação entre número 7 e número 9 une introspecção e idealismo. número 7 representa análise, busca por conhecimento e profundidade interior, enquanto número 9 simboliza compaixão, generosidade e visão humanitária. Relação tende a ser marcada por reflexão e propósito elevado.</p>
 
 <p>Nos aspectos positivos, número 7 oferece discernimento e pensamento crítico, ajudando número 9 a estruturar ideais de forma mais concreta. número 9 amplia visão de número 7, incentivando maior abertura emocional e engajamento com mundo ao redor. Juntos, podem desenvolver conexão espiritual significativa.</p>
 
@@ -1735,7 +1735,7 @@ sinastria : {
 "8-9": `
 <h3>Harmonia Conjugal – Energia 8 com Energia 9</h3>
 
-<p>Combinação entre Energia 8 e Energia 9 une ambição e idealismo. número 8 representa liderança, estratégia e foco em realizações materiais, enquanto número 9 simboliza compaixão, generosidade e visão humanitária. Relação tende a equilibrar poder de execução e propósito coletivo.</p>
+<p>Combinação entre número 8 e número 9 une ambição e idealismo. número 8 representa liderança, estratégia e foco em realizações materiais, enquanto número 9 simboliza compaixão, generosidade e visão humanitária. Relação tende a equilibrar poder de execução e propósito coletivo.</p>
 
 <p>Nos aspectos positivos, número 8 oferece direção, organização e capacidade de transformar projetos em resultados concretos. número 9 amplia visão de número 8, incentivando uso do poder com responsabilidade social e sensibilidade. Juntos, podem construir algo significativo tanto material quanto moralmente.</p>
 
