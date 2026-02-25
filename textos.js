@@ -1280,16 +1280,16 @@ sinastria : {
 
 <p>Para que essa combinação floresça, é essencial que aprendam a trabalhar em equipe sem anular a individualidade de cada um. Quando transformam a competitividade em motivação e o ego em incentivo mútuo, formam uma dupla poderosa. Respeitando os espaços pessoais e celebrando as conquistas juntos, dois números 1 podem construir uma relação forte, produtiva e cheia de realizações.</p>
 `,
-  "1-2": `
+"1-2": `
 <h3>Harmonia Conjugal – Energia 1 com Energia 2</h3>
 
-<p>A união entre a Energia 1 e a Energia 2 representa o encontro entre ação e sensibilidade. O número 1 traz iniciativa, liderança e independência, enquanto o número 2 vibra diplomacia, empatia e desejo de cooperação. Essa combinação cria uma dinâmica complementar, na qual força e delicadeza precisam aprender a caminhar juntas.</p>
+<p>A união entre Energia 1 e Energia 2 representa o encontro entre ação e sensibilidade. Número 1 traz iniciativa, liderança e independência, enquanto número 2 vibra diplomacia, empatia e desejo de cooperação. Essa combinação cria uma dinâmica complementar, na qual força e delicadeza precisam aprender a caminhar juntas.</p>
 
-<p>Nos aspectos positivos, essa relação pode ser extremamente equilibrada. O número 2 oferece apoio emocional, compreensão e harmonia, ajudando o número 1 a suavizar atitudes impulsivas. Já o número 1 proporciona direção, coragem e segurança, incentivando o número 2 a desenvolver mais confiança e determinação. Quando existe respeito, formam uma parceria estável e produtiva.</p>
+<p>Nos aspectos positivos, essa relação pode ser extremamente equilibrada. Número 2 oferece apoio emocional, compreensão e harmonia, ajudando número 1 a suavizar atitudes impulsivas. Já número 1 proporciona direção, coragem e segurança, incentivando número 2 a desenvolver mais confiança e determinação. Quando existe respeito, formam uma parceria estável e produtiva.</p>
 
-<p>Os desafios surgem quando o número 1 se torna autoritário ou impaciente, desconsiderando a sensibilidade do número 2. Por outro lado, o número 2 pode se tornar excessivamente dependente ou inseguro, o que pode frustrar o espírito independente do número 1. Se não houver equilíbrio, a relação pode oscilar entre liderança excessiva e submissão emocional.</p>
+<p>Os desafios surgem quando número 1 se torna autoritário ou impaciente, desconsiderando a sensibilidade de número 2. Por outro lado, número 2 pode se tornar excessivamente dependente ou inseguro, o que pode frustrar o espírito independente de número 1. Se não houver equilíbrio, a relação pode oscilar entre liderança excessiva e submissão emocional.</p>
 
-<p>Para que essa harmonia floresça, é fundamental que o número 1 aprenda a valorizar a importância da paciência e do diálogo, enquanto o número 2 desenvolve firmeza e autoconfiança. Quando ambos compreendem que não competem, mas se complementam, essa combinação pode gerar uma união forte, equilibrada e emocionalmente enriquecedora.</p>
+<p>Para que essa harmonia floresça, é fundamental que número 1 aprenda a valorizar a importância da paciência e do diálogo, enquanto número 2 desenvolve firmeza e autoconfiança. Quando ambos compreendem que não competem, mas se complementam, essa combinação pode gerar uma união forte, equilibrada e emocionalmente enriquecedora.</p>
 `,
  "1-3": `
 <h3>Harmonia Conjugal – Energia 1 com Energia 3</h3>
