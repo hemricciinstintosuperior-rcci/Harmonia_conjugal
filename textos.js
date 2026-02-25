@@ -1360,7 +1360,7 @@ sinastria : {
 
 "2-3": `
 <h3>Harmonia Conjugal – Energia número 2 com Energia número 3</h3>
-<p>A combinação entre Energia número 2 e Energia número 3 une sensibilidade e expressão. número 2 representa empatia, diplomacia e necessidade de parceria, enquanto número 3 vibra comunicação, criatividade e entusiasmo. Essa relação tende a ser leve, sociável e emocionalmente conectada quando há equilíbrio entre sentimento e expressão.</p>
+<p>A combinação entre número 2 e número 3 une sensibilidade e expressão. número 2 representa empatia, diplomacia e necessidade de parceria, enquanto número 3 vibra comunicação, criatividade e entusiasmo. Essa relação tende a ser leve, sociável e emocionalmente conectada quando há equilíbrio entre sentimento e expressão.</p>
 <p>Nos aspectos positivos, número 3 traz alegria e espontaneidade para vida de número 2, estimulando maior confiança e abertura emocional. número 2 oferece apoio, compreensão e estabilidade afetiva, ajudando número 3 a manter vínculos mais profundos e consistentes. Existe potencial para relação comunicativa e cheia de troca emocional.</p>
 <p>Os desafios surgem quando número 3 demonstra dispersão ou superficialidade emocional, podendo gerar insegurança em número 2. número 2 pode se tornar excessivamente sensível ou dependente, sentindo-se afetado por palavras ou atitudes impulsivas de número 3. Diferenças na forma de lidar com emoções podem provocar mal-entendidos.</p>
 <p>Para que essa combinação prospere, número 3 deve cultivar maior responsabilidade emocional, enquanto número 2 precisa fortalecer autoconfiança. Quando existe maturidade, essa união pode se tornar harmoniosa, criativa e emocionalmente enriquecedora.</p>
@@ -1368,7 +1368,7 @@ sinastria : {
 
 "2-4": `
 <h3>Harmonia Conjugal – Energia número 2 com Energia número 4</h3>
-<p>A união entre Energia número 2 e Energia número 4 combina sensibilidade e estabilidade. número 2 representa diplomacia, empatia e necessidade de conexão emocional, enquanto número 4 simboliza disciplina, responsabilidade e estrutura. Essa relação tende a buscar segurança e construção sólida ao longo do tempo.</p>
+<p>A união entre número 2 e número 4 combina sensibilidade e estabilidade. número 2 representa diplomacia, empatia e necessidade de conexão emocional, enquanto número 4 simboliza disciplina, responsabilidade e estrutura. Essa relação tende a buscar segurança e construção sólida ao longo do tempo.</p>
 <p>Nos aspectos positivos, número 4 oferece base, compromisso e organização, proporcionando sensação de segurança emocional para número 2. número 2 traz suavidade e compreensão, ajudando número 4 a desenvolver maior flexibilidade e sensibilidade nas relações. Podem formar parceria estável e confiável.</p>
 <p>Os desafios surgem quando número 4 demonstra rigidez excessiva ou dificuldade em expressar sentimentos, gerando insegurança em número 2. número 2 pode se mostrar indeciso ou excessivamente emocional, frustrando senso prático de número 4. Diferenças no modo de agir precisam ser administradas com maturidade.</p>
 <p>Para que essa combinação prospere, número 4 deve aprender a expressar emoções com mais abertura e número 2 desenvolver firmeza nas decisões. Quando equilibrados, constroem relação baseada em confiança e apoio mútuo.</p>
@@ -1376,7 +1376,7 @@ sinastria : {
 
 "2-5": `
 <h3>Harmonia Conjugal – Energia número 2 com Energia número 5</h3>
-<p>A combinação entre Energia número 2 e Energia número 5 une sensibilidade e liberdade. número 2 representa empatia, parceria e necessidade de estabilidade emocional, enquanto número 5 vibra movimento, mudança e independência. Essa relação pode ser estimulante, exigindo equilíbrio entre segurança e autonomia.</p>
+<p>A combinação entre número 2 e  número 5 une sensibilidade e liberdade. número 2 representa empatia, parceria e necessidade de estabilidade emocional, enquanto número 5 vibra movimento, mudança e independência. Essa relação pode ser estimulante, exigindo equilíbrio entre segurança e autonomia.</p>
 <p>Nos aspectos positivos, número 5 traz entusiasmo e novas experiências para vida de número 2, incentivando expansão além de zona de conforto. número 2 oferece apoio emocional e compreensão, criando espaço afetivo onde número 5 pode se sentir acolhido.</p>
 <p>Os desafios surgem quando número 5 demonstra instabilidade ou necessidade excessiva de liberdade, gerando insegurança em número 2. número 2 pode se tornar dependente ou excessivamente sensível, fazendo número 5 sentir-se pressionado.</p>
 <p>Para que essa união prospere, número 2 deve fortalecer autoconfiança e evitar apego excessivo, enquanto número 5 precisa cultivar responsabilidade emocional. Quando existe maturidade, essa combinação pode unir sensibilidade e aventura de forma equilibrada.</p>
@@ -1384,7 +1384,7 @@ sinastria : {
 
 "2-6": `
 <h3>Harmonia Conjugal – Energia número 2 com Energia número 6</h3>
-<p>A união entre Energia número 2 e Energia número 6 é marcada por afeto, cuidado e forte necessidade de vínculo emocional. número 2 representa sensibilidade, parceria e diplomacia, enquanto número 6 simboliza amor, responsabilidade e dedicação à família.</p>
+<p>A união entre número 2 e número 6 é marcada por afeto, cuidado e forte necessidade de vínculo emocional. número 2 representa sensibilidade, parceria e diplomacia, enquanto número 6 simboliza amor, responsabilidade e dedicação à família.</p>
 <p>Nos aspectos positivos, ambos valorizam compromisso e construção de ambiente harmonioso. número 6 oferece proteção e segurança, enquanto número 2 contribui com empatia e adaptação. Podem criar união baseada em apoio genuíno.</p>
 <p>Os desafios surgem quando sensibilidade de número 2 encontra excesso de responsabilidade ou controle de número 6. número 2 pode demonstrar insegurança ou dificuldade em impor limites.</p>
 <p>Para que essa combinação prospere, é fundamental desenvolver autonomia emocional e comunicação clara. Quando existe maturidade, união tende a ser estável e amorosa.</p>
@@ -1392,7 +1392,7 @@ sinastria : {
 
 "2-7": `
 <h3>Harmonia Conjugal – Energia número 2 com Energia número 7</h3>
-<p>A combinação entre Energia número 2 e Energia número 7 une sensibilidade e profundidade. número 2 representa empatia e conexão emocional, enquanto número 7 vibra introspecção e busca interior.</p>
+<p>A combinação entre número 2 e número 7 une sensibilidade e profundidade. número 2 representa empatia e conexão emocional, enquanto número 7 vibra introspecção e busca interior.</p>
 <p>Nos aspectos positivos, número 2 ajuda número 7 a se abrir emocionalmente, enquanto número 7 oferece visão profunda e maturidade intelectual para número 2.</p>
 <p>Os desafios surgem quando número 7 demonstra distanciamento, gerando insegurança em número 2. número 2 pode pressionar por respostas emocionais imediatas.</p>
 <p>Para prosperar, número 7 precisa compartilhar pensamentos com mais abertura e número 2 desenvolver segurança interna.</p>
@@ -1400,7 +1400,7 @@ sinastria : {
 
 "2-8": `
 <h3>Harmonia Conjugal – Energia número 2 com Energia número 8</h3>
-<p>A união entre Energia número 2 e Energia número 8 combina sensibilidade e realização. número 2 representa diplomacia e parceria, enquanto número 8 vibra ambição e foco em resultados.</p>
+<p>A união entre  número 2 e número 8 combina sensibilidade e realização. número 2 representa diplomacia e parceria, enquanto número 8 vibra ambição e foco em resultados.</p>
 <p>Nos aspectos positivos, número 8 oferece direção e firmeza, proporcionando estabilidade para número 2. número 2 contribui com compreensão e habilidade para mediar conflitos.</p>
 <p>Os desafios surgem quando número 8 se torna controlador ou excessivamente focado em metas externas, deixando número 2 emocionalmente inseguro.</p>
 <p>Para prosperar, número 8 deve desenvolver sensibilidade emocional e número 2 fortalecer autoconfiança.</p>
@@ -1408,7 +1408,7 @@ sinastria : {
 
 "2-9": `
 <h3>Harmonia Conjugal – Energia número 2 com Energia número 9</h3>
-<p>A combinação entre Energia número 2 e Energia número 9 une sensibilidade e idealismo. número 2 representa empatia e conexão emocional, enquanto número 9 vibra compaixão e visão humanitária.</p>
+<p>A combinação entre  número 2 e  número 9 une sensibilidade e idealismo. número 2 representa empatia e conexão emocional, enquanto número 9 vibra compaixão e visão humanitária.</p>
 <p>Nos aspectos positivos, número 9 amplia percepção de número 2. número 2 oferece apoio e estabilidade afetiva.</p>
 <p>Os desafios surgem quando número 9 se envolve excessivamente com questões externas, fazendo número 2 sentir-se negligenciado.</p>
 <p>Para prosperar, número 9 deve equilibrar altruísmo com atenção à relação, enquanto número 2 fortalece autonomia emocional.</p>
@@ -1431,7 +1431,7 @@ sinastria : {
 
 "3-4": `
 <h3>Harmonia Conjugal – Energia número 3 com Energia número 4</h3>
-<p>A combinação entre Energia número 3 e Energia número 4 une criatividade e estrutura. número 3 representa comunicação, entusiasmo e expressão, enquanto número 4 simboliza disciplina, organização e estabilidade. Essa relação tende a equilibrar leveza e responsabilidade quando existe maturidade.</p>
+<p>A combinação entre número 3 e  número 4 une criatividade e estrutura. número 3 representa comunicação, entusiasmo e expressão, enquanto número 4 simboliza disciplina, organização e estabilidade. Essa relação tende a equilibrar leveza e responsabilidade quando existe maturidade.</p>
 <p>Nos aspectos positivos, número 3 traz dinamismo e inspiração para vida de número 4, incentivando maior flexibilidade e abertura social. número 4 oferece base sólida, planejamento e segurança, ajudando número 3 a transformar ideias em resultados concretos.</p>
 <p>Os desafios surgem quando número 4 demonstra rigidez excessiva ou quando número 3 apresenta dispersão e falta de compromisso. número 3 pode sentir-se limitado por excesso de regras, enquanto número 4 pode enxergar número 3 como instável ou imaturo.</p>
 <p>Para que essa união prospere, número 3 precisa desenvolver disciplina e número 4 cultivar maior flexibilidade emocional. Quando existe equilíbrio, combinação pode resultar em relação produtiva e estável, sem perder criatividade.</p>
@@ -1439,7 +1439,7 @@ sinastria : {
 
 "3-5": `
 <h3>Harmonia Conjugal – Energia número 3 com Energia número 5</h3>
-<p>A união entre Energia número 3 e Energia número 5 é marcada por movimento, liberdade e intensa troca social. número 3 vibra comunicação e criatividade, enquanto número 5 representa aventura, mudança e versatilidade. Trata-se de combinação dinâmica e pouco inclinada à rotina.</p>
+<p>A união entre  número 3 e  número 5 é marcada por movimento, liberdade e intensa troca social. número 3 vibra comunicação e criatividade, enquanto número 5 representa aventura, mudança e versatilidade. Trata-se de combinação dinâmica e pouco inclinada à rotina.</p>
 <p>Nos aspectos positivos, ambos compartilham entusiasmo por experiências novas e contato social. Existe forte estímulo mental e emocional, mantendo relação viva e estimulante. número 3 aprecia espontaneidade de número 5, enquanto número 5 valoriza leveza e expressão de número 3.</p>
 <p>Os desafios surgem quando falta estabilidade ou compromisso mais profundo. número 5 pode demonstrar inquietação excessiva, enquanto número 3 pode dispersar foco emocional. Ausência de planejamento pode gerar instabilidade ao longo do tempo.</p>
 <p>Para prosperar, ambos precisam desenvolver responsabilidade afetiva e clareza nos objetivos da relação. Quando existe maturidade, essa união pode ser vibrante, criativa e cheia de crescimento.</p>
@@ -1447,7 +1447,7 @@ sinastria : {
 
 "3-6": `
 <h3>Harmonia Conjugal – Energia número 3 com Energia número 6</h3>
-<p>A combinação entre Energia número 3 e Energia número 6 une expressão e afeto. número 3 representa comunicação e entusiasmo, enquanto número 6 vibra cuidado, responsabilidade e dedicação à família. Essa relação tende a ser calorosa e emocionalmente significativa.</p>
+<p>A combinação entre  número 3 e  número 6 une expressão e afeto. número 3 representa comunicação e entusiasmo, enquanto número 6 vibra cuidado, responsabilidade e dedicação à família. Essa relação tende a ser calorosa e emocionalmente significativa.</p>
 <p>Nos aspectos positivos, número 6 oferece estabilidade e apoio emocional, enquanto número 3 traz leveza e alegria ao ambiente. Existe potencial para equilíbrio entre diversão e compromisso.</p>
 <p>Os desafios surgem quando número 6 demonstra excesso de responsabilidade ou cobrança emocional, fazendo número 3 sentir-se pressionado. número 3 pode parecer imaturo ou pouco comprometido diante de expectativas de número 6.</p>
 <p>Para prosperar, número 3 deve assumir maior responsabilidade emocional e número 6 cultivar flexibilidade. Quando equilibrados, podem formar relação harmoniosa e afetiva.</p>
@@ -1455,7 +1455,7 @@ sinastria : {
 
 "3-7": `
 <h3>Harmonia Conjugal – Energia número 3 com Energia número 7</h3>
-<p>A união entre Energia número 3 e Energia número 7 combina expressão e introspecção. número 3 vibra comunicação e sociabilidade, enquanto número 7 representa análise, profundidade e busca interior.</p>
+<p>A união entre  número 3 e  número 7 combina expressão e introspecção. número 3 vibra comunicação e sociabilidade, enquanto número 7 representa análise, profundidade e busca interior.</p>
 <p>Nos aspectos positivos, número 3 estimula número 7 a se abrir socialmente, enquanto número 7 oferece profundidade intelectual e reflexão para número 3. Essa troca pode enriquecer ambos.</p>
 <p>Os desafios surgem quando número 7 se mostra reservado demais e número 3 busca interação constante. Diferenças de ritmo emocional podem gerar distanciamento.</p>
 <p>Para prosperar, número 3 deve respeitar necessidade de espaço de número 7, enquanto número 7 precisa comunicar pensamentos com mais clareza.</p>
@@ -1463,7 +1463,7 @@ sinastria : {
 
 "3-8": `
 <h3>Harmonia Conjugal – Energia número 3 com Energia número 8</h3>
-<p>A combinação entre Energia número 3 e Energia número 8 une criatividade e ambição. número 3 representa expressão e entusiasmo, enquanto número 8 simboliza poder, estratégia e realização material.</p>
+<p>A combinação entre número 3 e  número 8 une criatividade e ambição. número 3 representa expressão e entusiasmo, enquanto número 8 simboliza poder, estratégia e realização material.</p>
 <p>Nos aspectos positivos, número 3 traz leveza e inovação para projetos de número 8, enquanto número 8 oferece foco e direção para ideias de número 3. Juntos, podem formar parceria produtiva.</p>
 <p>Os desafios surgem quando número 8 demonstra excesso de controle ou quando número 3 apresenta falta de disciplina. Conflitos podem ocorrer por diferenças de prioridade.</p>
 <p>Para prosperar, número 3 deve desenvolver consistência e número 8 cultivar sensibilidade emocional.</p>
@@ -1471,7 +1471,7 @@ sinastria : {
 
 "3-9": `
 <h3>Harmonia Conjugal – Energia número 3 com Energia número 9</h3>
-<p>A união entre Energia número 3 e Energia número 9 é marcada por criatividade e idealismo. número 3 vibra comunicação e entusiasmo, enquanto número 9 representa compaixão e visão humanitária.</p>
+<p>A união entre  número 3 e  número 9 é marcada por criatividade e idealismo. número 3 vibra comunicação e entusiasmo, enquanto número 9 representa compaixão e visão humanitária.</p>
 <p>Nos aspectos positivos, número 9 amplia percepção emocional de número 3, enquanto número 3 ajuda número 9 a expressar sentimentos com mais leveza. Existe potencial para relação inspiradora e socialmente ativa.</p>
 <p>Os desafios surgem quando número 3 demonstra superficialidade emocional ou quando número 9 se envolve excessivamente com causas externas.</p>
 <p>Para prosperar, ambos devem equilibrar expressão e responsabilidade emocional, fortalecendo compromisso e maturidade afetiva.</p>
@@ -1508,7 +1508,7 @@ sinastria : {
 "4-5": `
 <h3>Harmonia Conjugal – Energia 4 com Energia 5</h3>
 
-<p>A combinação entre Energia 4 e Energia 5 une estabilidade e liberdade. número 4 representa disciplina, responsabilidade e necessidade de segurança, enquanto número 5 vibra mudança, movimento e desejo de independência. Essa relação tende a ser desafiadora, pois envolve ritmos e prioridades diferentes.</p>
+<p>A combinação entre 4 e 5 une estabilidade e liberdade. número 4 representa disciplina, responsabilidade e necessidade de segurança, enquanto número 5 vibra mudança, movimento e desejo de independência. Essa relação tende a ser desafiadora, pois envolve ritmos e prioridades diferentes.</p>
 
 <p>Nos aspectos positivos, número 5 pode ajudar número 4 a sair da rigidez e experimentar novas possibilidades, trazendo leveza e dinamismo à relação. número 4 oferece a número 5 estrutura, organização e segurança, criando base sólida para que mudanças não se tornem instabilidade. Quando equilibrados, podem crescer muito juntos.</p>
 
@@ -1520,7 +1520,7 @@ sinastria : {
 "4-6": `
 <h3>Harmonia Conjugal – Energia 4 com Energia 6</h3>
 
-<p>A união entre Energia 4 e Energia 6 combina responsabilidade e afeto. número 4 representa estrutura, disciplina e compromisso, enquanto número 6 simboliza amor, cuidado e dedicação à família. Essa combinação tende a formar relação estável, protetora e voltada para construção de base sólida.</p>
+<p>A união entre  4 e  6 combina responsabilidade e afeto. número 4 representa estrutura, disciplina e compromisso, enquanto número 6 simboliza amor, cuidado e dedicação à família. Essa combinação tende a formar relação estável, protetora e voltada para construção de base sólida.</p>
 
 <p>Nos aspectos positivos, ambos valorizam compromisso e segurança. número 4 oferece organização e firmeza, criando estabilidade material e estrutural, enquanto número 6 traz calor emocional, cuidado e senso de responsabilidade afetiva. Juntos, podem formar casal dedicado à construção de lar harmonioso.</p>
 
@@ -1532,7 +1532,7 @@ sinastria : {
 "4-7": `
 <h3>Harmonia Conjugal – Energia 4 com Energia 7</h3>
 
-<p>A combinação entre Energia 4 e Energia 7 une estrutura e profundidade. número 4 representa disciplina, responsabilidade e organização, enquanto número 7 simboliza introspecção, análise e busca por conhecimento interior. Essa relação tende a ser séria, reflexiva e voltada para crescimento consistente.</p>
+<p>A combinação entre número 4 e número 7 une estrutura e profundidade. número 4 representa disciplina, responsabilidade e organização, enquanto número 7 simboliza introspecção, análise e busca por conhecimento interior. Essa relação tende a ser séria, reflexiva e voltada para crescimento consistente.</p>
 
 <p>Nos aspectos positivos, número 4 oferece base sólida e estabilidade para que número 7 desenvolva reflexões com segurança. número 7 contribui com visão estratégica, sabedoria e análise detalhada, ajudando número 4 a enxergar além do pragmatismo imediato. Juntos, podem formar parceria estruturada e intelectualmente estimulante.</p>
 
@@ -1544,7 +1544,7 @@ sinastria : {
 "4-8": `
 <h3>Harmonia Conjugal – Energia 4 com Energia 8</h3>
 
-<p>A união entre Energia 4 e Energia 8 é marcada por foco, disciplina e ambição. número 4 representa organização, responsabilidade e construção sólida, enquanto número 8 simboliza poder, liderança e busca por realização material. Essa combinação tende a formar parceria voltada para resultados concretos e estabilidade financeira.</p>
+<p>A união entre número 4 e número 8 é marcada por foco, disciplina e ambição. número 4 representa organização, responsabilidade e construção sólida, enquanto número 8 simboliza poder, liderança e busca por realização material. Essa combinação tende a formar parceria voltada para resultados concretos e estabilidade financeira.</p>
 
 <p>Nos aspectos positivos, ambos compartilham determinação e comprometimento com metas de longo prazo. número 4 oferece estrutura e constância, enquanto número 8 traz visão estratégica e capacidade de expansão. Juntos, podem construir relação forte, produtiva e orientada para crescimento material e social.</p>
 
@@ -1556,7 +1556,7 @@ sinastria : {
 "4-9": `
 <h3>Harmonia Conjugal – Energia 4 com Energia 9</h3>
 
-<p>A combinação entre Energia 4 e Energia 9 une estrutura e idealismo. número 4 representa disciplina, organização e construção sólida, enquanto número 9 simboliza compaixão, generosidade e visão humanitária. Essa relação pode equilibrar pragmatismo e propósito quando há compreensão mútua.</p>
+<p>A combinação entre número 4 e número 9 une estrutura e idealismo. número 4 representa disciplina, organização e construção sólida, enquanto número 9 simboliza compaixão, generosidade e visão humanitária. Essa relação pode equilibrar pragmatismo e propósito quando há compreensão mútua.</p>
 
 <p>Nos aspectos positivos, número 4 oferece base e estabilidade para que número 9 desenvolva ideais de forma concreta. número 9 amplia visão de número 4, trazendo sensibilidade e perspectiva mais ampla sobre vida e relações. Juntos, podem construir algo que una segurança material e significado emocional.</p>
 
@@ -1584,7 +1584,7 @@ sinastria : {
 "5-6": `
 <h3>Harmonia Conjugal – Energia 5 com Energia 6</h3>
 
-<p>Combinação entre Energia 5 e Energia 6 une liberdade e responsabilidade afetiva. número 5 representa movimento, independência e desejo de novas experiências, enquanto número 6 simboliza compromisso, cuidado e dedicação à família. Relação pode ser intensa, mas exige equilíbrio entre autonomia e estabilidade.</p>
+<p>Combinação entre número 5 e número 6 une liberdade e responsabilidade afetiva. número 5 representa movimento, independência e desejo de novas experiências, enquanto número 6 simboliza compromisso, cuidado e dedicação à família. Relação pode ser intensa, mas exige equilíbrio entre autonomia e estabilidade.</p>
 
 <p>Nos aspectos positivos, número 5 traz entusiasmo e renovação para vida de número 6, evitando que relação se torne excessivamente previsível. número 6 oferece segurança emocional, proteção e senso de responsabilidade, criando base estável para que número 5 se sinta acolhido. Quando há compreensão, união pode ser complementar.</p>
 
@@ -1596,7 +1596,7 @@ sinastria : {
 "5-7": `
 <h3>Harmonia Conjugal – Energia 5 com Energia 7</h3>
 
-<p>Combinação entre Energia 5 e Energia 7 une movimento e introspecção. número 5 representa liberdade, versatilidade e desejo de experiências novas, enquanto número 7 simboliza análise, profundidade e busca por conhecimento interior. Relação tende a ser marcada por contrastes entre ação externa e reflexão interna.</p>
+<p>Combinação entre número 5 e número 7 une movimento e introspecção. número 5 representa liberdade, versatilidade e desejo de experiências novas, enquanto número 7 simboliza análise, profundidade e busca por conhecimento interior. Relação tende a ser marcada por contrastes entre ação externa e reflexão interna.</p>
 
 <p>Nos aspectos positivos, número 5 pode estimular número 7 a explorar mundo com mais leveza e espontaneidade, enquanto número 7 oferece maior discernimento e profundidade nas decisões. Quando existe equilíbrio, união pode gerar crescimento intelectual e expansão de horizontes.</p>
 
@@ -1608,7 +1608,7 @@ sinastria : {
 "5-8": `
 <h3>Harmonia Conjugal – Energia 5 com Energia 8</h3>
 
-<p>União entre Energia 5 e Energia 8 combina liberdade e ambição. número 5 representa movimento, versatilidade e desejo de independência, enquanto número 8 simboliza poder, estratégia e foco em realizações materiais. Relação tende a ser intensa, dinâmica e orientada para crescimento externo.</p>
+<p>União entre número 5 e número 8 combina liberdade e ambição. número 5 representa movimento, versatilidade e desejo de independência, enquanto número 8 simboliza poder, estratégia e foco em realizações materiais. Relação tende a ser intensa, dinâmica e orientada para crescimento externo.</p>
 
 <p>Nos aspectos positivos, número 5 traz inovação e flexibilidade, ajudando número 8 a se adaptar a mudanças e novas oportunidades. número 8 oferece direção, disciplina e capacidade de transformar ideias em resultados concretos. Quando trabalham juntos, podem alcançar conquistas expressivas.</p>
 
@@ -1620,7 +1620,7 @@ sinastria : {
 "5-9": `
 <h3>Harmonia Conjugal – Energia 5 com Energia 9</h3>
 
-<p>Combinação entre Energia 5 e Energia 9 une liberdade e idealismo. número 5 representa movimento, versatilidade e desejo de experiências novas, enquanto número 9 simboliza compaixão, generosidade e visão humanitária. Relação tende a ser intensa, expansiva e marcada por forte carga emocional.</p>
+<p>Combinação entre número 5 e número 9 une liberdade e idealismo. número 5 representa movimento, versatilidade e desejo de experiências novas, enquanto número 9 simboliza compaixão, generosidade e visão humanitária. Relação tende a ser intensa, expansiva e marcada por forte carga emocional.</p>
 
 <p>Nos aspectos positivos, número 5 traz dinamismo e renovação para vida de número 9, estimulando ação prática para ideais. número 9 amplia visão de número 5, incentivando agir com maior consciência e sensibilidade. Juntos, podem formar união inspiradora e aberta a novas possibilidades.</p>
 
