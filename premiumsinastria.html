@@ -273,6 +273,13 @@ function aplicarNomes(texto) {
 
     let novoTexto = texto;
 
+    // 1. PRIMEIRO: Removemos as palavras indesejadas, mantendo os números soltos no texto
+    // Isso transforma "Energia 1" em apenas "1"
+    novoTexto = novoTexto.replace(/Energia\s+/gi, ""); 
+    novoTexto = novoTexto.replace(/número\s+/gi, "");
+    novoTexto = novoTexto.replace(/Número\s+/gi, "");
+
+    // 2. AGORA: O código procura o número solto e troca pelo "Relacionamento de + Nome"
     if (energia1 && energia2) {
         const menor = Math.min(energia1, energia2);
         const maior = Math.max(energia1, energia2);
@@ -280,23 +287,14 @@ function aplicarNomes(texto) {
         const nomeMenor = (energia1 === menor) ? nome1 : nome2;
         const nomeMaior = (energia1 === maior) ? nome1 : nome2;
 
-        // --- A MÁGICA ACONTECE AQUI ---
-        // Ele procura "Energia 1" e troca por "Relacionamento de Carlos"
-        // Ele procura "número 1" e troca por "Relacionamento de Carlos"
-        
-        const de = "Relacionamento de"; // O texto que você quer que apareça
+        const meuTexto = "Relacionamento de";
 
-        novoTexto = novoTexto.replaceAll(`Energia ${menor}`, `${de} ${nomeMenor}`);
-        novoTexto = novoTexto.replaceAll(`Energia ${maior}`, `${de} ${nomeMaior}`);
-        
-        novoTexto = novoTexto.replaceAll(`número ${menor}`, `${de} ${nomeMenor}`);
-        novoTexto = novoTexto.replaceAll(`número ${maior}`, `${de} ${nomeMaior}`);
-        
-        novoTexto = novoTexto.replaceAll(`Número ${menor}`, `${de} ${nomeMenor}`);
-        novoTexto = novoTexto.replaceAll(`Número ${maior}`, `${de} ${nomeMaior}`);
+        // Aqui ele troca o número "1" por "Relacionamento de Carlos", por exemplo
+        novoTexto = novoTexto.split(`${menor}`).join(`${meuTexto} ${nomeMenor}`);
+        novoTexto = novoTexto.split(`${maior}`).join(`${meuTexto} ${nomeMaior}`);
     }
 
-    // Substituições globais simples caso existam no texto
+    // Substituições extras de chaves caso existam
     novoTexto = novoTexto.replaceAll("{nome1}", nome1).replaceAll("{nome2}", nome2);
 
     return novoTexto;
