@@ -271,28 +271,33 @@ function aplicarNomes(texto) {
     const energia1 = dados.pessoa1?.proposito;
     const energia2 = dados.pessoa2?.proposito;
 
-    // Defina aqui o SEU TEXTO personalizado que vai substituir a palavra "Energia"
-    const meuTextoPersonalizado = "Relacionamento de"; // Você pode mudar para "União de", etc.
-
     let novoTexto = texto;
 
     if (energia1 && energia2) {
         const menor = Math.min(energia1, energia2);
         const maior = Math.max(energia1, energia2);
+        
         const nomeMenor = (energia1 === menor) ? nome1 : nome2;
         const nomeMaior = (energia1 === maior) ? nome1 : nome2;
 
-        // Esta parte remove "Energia X" e coloca "O SEU TEXTO + NOME"
-        // Exemplo: "Energia 1" vira "Relacionamento de Fulano"
-        novoTexto = novoTexto.replaceAll(`Energia ${menor}`, `${meuTextoPersonalizado} ${nomeMenor}`);
-        novoTexto = novoTexto.replaceAll(`Energia ${maior}`, `${meuTextoPersonalizado} ${nomeMaior}`);
+        // --- A MÁGICA ACONTECE AQUI ---
+        // Ele procura "Energia 1" e troca por "Relacionamento de Carlos"
+        // Ele procura "número 1" e troca por "Relacionamento de Carlos"
         
-        // Faz o mesmo para variações com "número" ou "Número"
-        novoTexto = novoTexto.replaceAll(`número ${menor}`, `${meuTextoPersonalizado} ${nomeMenor}`);
-        novoTexto = novoTexto.replaceAll(`número ${maior}`, `${meuTextoPersonalizado} ${nomeMaior}`);
-        novoTexto = novoTexto.replaceAll(`Número ${menor}`, `${meuTextoPersonalizado} ${nomeMenor}`);
-        novoTexto = novoTexto.replaceAll(`Número ${maior}`, `${meuTextoPersonalizado} ${nomeMaior}`);
+        const de = "Relacionamento de"; // O texto que você quer que apareça
+
+        novoTexto = novoTexto.replaceAll(`Energia ${menor}`, `${de} ${nomeMenor}`);
+        novoTexto = novoTexto.replaceAll(`Energia ${maior}`, `${de} ${nomeMaior}`);
+        
+        novoTexto = novoTexto.replaceAll(`número ${menor}`, `${de} ${nomeMenor}`);
+        novoTexto = novoTexto.replaceAll(`número ${maior}`, `${de} ${nomeMaior}`);
+        
+        novoTexto = novoTexto.replaceAll(`Número ${menor}`, `${de} ${nomeMenor}`);
+        novoTexto = novoTexto.replaceAll(`Número ${maior}`, `${de} ${nomeMaior}`);
     }
+
+    // Substituições globais simples caso existam no texto
+    novoTexto = novoTexto.replaceAll("{nome1}", nome1).replaceAll("{nome2}", nome2);
 
     return novoTexto;
 }
