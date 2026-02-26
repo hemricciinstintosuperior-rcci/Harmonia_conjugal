@@ -271,28 +271,31 @@ function aplicarNomes(texto) {
     const energia1 = dados.pessoa1?.proposito;
     const energia2 = dados.pessoa2?.proposito;
 
-    // Substituições básicas de chaves
-    let novoTexto = texto
-        .replaceAll("{nome1}", nome1)
-        .replaceAll("{nome2}", nome2);
+    // Defina aqui o SEU TEXTO personalizado que vai substituir a palavra "Energia"
+    const meuTextoPersonalizado = "Relacionamento de"; // Você pode mudar para "União de", etc.
 
-    // Lógica de "Energia X" e "Número X" (Igual ao seu Index)
+    let novoTexto = texto;
+
     if (energia1 && energia2) {
         const menor = Math.min(energia1, energia2);
         const maior = Math.max(energia1, energia2);
         const nomeMenor = (energia1 === menor) ? nome1 : nome2;
         const nomeMaior = (energia1 === maior) ? nome1 : nome2;
 
-        novoTexto = novoTexto.replaceAll(`Energia ${menor}`, nomeMenor);
-        novoTexto = novoTexto.replaceAll(`Energia ${maior}`, nomeMaior);
-        novoTexto = novoTexto.replaceAll(`número ${menor}`, nomeMenor);
-        novoTexto = novoTexto.replaceAll(`número ${maior}`, nomeMaior);
-        novoTexto = novoTexto.replaceAll(`Número ${menor}`, nomeMenor);
-        novoTexto = novoTexto.replaceAll(`Número ${maior}`, nomeMaior);
+        // Esta parte remove "Energia X" e coloca "O SEU TEXTO + NOME"
+        // Exemplo: "Energia 1" vira "Relacionamento de Fulano"
+        novoTexto = novoTexto.replaceAll(`Energia ${menor}`, `${meuTextoPersonalizado} ${nomeMenor}`);
+        novoTexto = novoTexto.replaceAll(`Energia ${maior}`, `${meuTextoPersonalizado} ${nomeMaior}`);
+        
+        // Faz o mesmo para variações com "número" ou "Número"
+        novoTexto = novoTexto.replaceAll(`número ${menor}`, `${meuTextoPersonalizado} ${nomeMenor}`);
+        novoTexto = novoTexto.replaceAll(`número ${maior}`, `${meuTextoPersonalizado} ${nomeMaior}`);
+        novoTexto = novoTexto.replaceAll(`Número ${menor}`, `${meuTextoPersonalizado} ${nomeMenor}`);
+        novoTexto = novoTexto.replaceAll(`Número ${maior}`, `${meuTextoPersonalizado} ${nomeMaior}`);
     }
 
     return novoTexto;
-}  
+}
 
 if(!dados){
   document.body.innerHTML = "<h2 style='text-align:center;margin-top:120px'>Gere o relatório pelo index primeiro.</h2>";
