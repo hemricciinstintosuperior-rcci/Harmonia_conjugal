@@ -263,6 +263,7 @@ O nome de um bebê não é apenas uma escolha bonita ou uma homenagem familiar. 
 
 <script>
 const dados = JSON.parse(localStorage.getItem("relatorioSinastria"));
+  
 function aplicarNomes(texto) {
     if (!texto) return "";
 
@@ -273,13 +274,6 @@ function aplicarNomes(texto) {
 
     let novoTexto = texto;
 
-    // 1. PRIMEIRO: Removemos as palavras indesejadas, mantendo os números soltos no texto
-    // Isso transforma "Energia 1" em apenas "1"
-    novoTexto = novoTexto.replace(/Energia\s+/gi, ""); 
-    novoTexto = novoTexto.replace(/número\s+/gi, "");
-    novoTexto = novoTexto.replace(/Número\s+/gi, "");
-
-    // 2. AGORA: O código procura o número solto e troca pelo "Relacionamento de + Nome"
     if (energia1 && energia2) {
         const menor = Math.min(energia1, energia2);
         const maior = Math.max(energia1, energia2);
@@ -287,15 +281,18 @@ function aplicarNomes(texto) {
         const nomeMenor = (energia1 === menor) ? nome1 : nome2;
         const nomeMaior = (energia1 === maior) ? nome1 : nome2;
 
-        const meuTexto = "Relacionamento de";
+        // 1. Tratamos o primeiro número (Menor)
+        // Removemos "Energia" e colocamos "Relacionamento de [Nome]"
+        novoTexto = novoTexto.split(`Energia ${menor}`).join(`Relacionamento de ${nomeMenor}`);
+        novoTexto = novoTexto.split(`número ${menor}`).join(`Relacionamento de ${nomeMenor}`);
+        novoTexto = novoTexto.split(`Número ${menor}`).join(`Relacionamento de ${nomeMenor}`);
 
-        // Aqui ele troca o número "1" por "Relacionamento de Carlos", por exemplo
-        novoTexto = novoTexto.split(`${menor}`).join(`${meuTexto} ${nomeMenor}`);
-        novoTexto = novoTexto.split(`${maior}`).join(`${meuTexto} ${nomeMaior}`);
+        // 2. Tratamos o segundo número (Maior)
+        // Removemos "Energia" e deixamos APENAS o Nome
+        novoTexto = novoTexto.split(`Energia ${maior}`).join(`${nomeMaior}`);
+        novoTexto = novoTexto.split(`número ${maior}`).join(`${nomeMaior}`);
+        novoTexto = novoTexto.split(`Número ${maior}`).join(`${nomeMaior}`);
     }
-
-    // Substituições extras de chaves caso existam
-    novoTexto = novoTexto.replaceAll("{nome1}", nome1).replaceAll("{nome2}", nome2);
 
     return novoTexto;
 }
