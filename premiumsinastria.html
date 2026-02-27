@@ -414,8 +414,12 @@ console.log("BEBE:", dados.bebe);
 let textoSemTituloRepetido = dados.sinastria.texto.replace(/<h[23]>.*?<\/h[23]>/gi, '');
 
 // 2. Aplicamos a formatação para trocar números pelos nomes
-const textoComParagrafos = aplicarNomes(textoSemTituloRepetido)
+const textoTratado = aplicarNomes(textoSemTituloRepetido)
+  .replace(/\\n/g, "\n"); // converte quebra escapada em quebra real
+
+const textoComParagrafos = textoTratado
   .split("\n")
+  .filter(p => p.trim() !== "")
   .map(p => `<p>${p.trim()}</p>`)
   .join("");
 
