@@ -17,55 +17,55 @@ Quando acredita em algo, demonstra determinação incomum e capacidade de supera
 
 Seu desafio é equilibrar independência com cooperação, aprendendo a liderar sem isolar-se.</p>`,
 
-2: `Sua motivação central é viver em harmonia, sentir-se amado e construir relações profundas e significativas. Você busca conexão emocional, parceria e reconhecimento afetivo. 
+2: `<p>Sua motivação central é viver em harmonia, sentir-se amado e construir relações profundas e significativas. Você busca conexão emocional, parceria e reconhecimento afetivo. </p>
 
-Existe uma necessidade genuína de ser útil, acolher, compreender e contribuir para a paz ao seu redor. Evitar conflitos é quase instintivo, pois a tensão emocional lhe causa grande desconforto. 
+<p>Existe uma necessidade genuína de ser útil, acolher, compreender e contribuir para a paz ao seu redor. Evitar conflitos é quase instintivo, pois a tensão emocional lhe causa grande desconforto. </p>
 
-Essa sensibilidade faz de você um conciliador natural, capaz de perceber nuances emocionais que passam despercebidas para outros. Entretanto, o desejo de agradar pode levar à autonegação e à dificuldade de impor limites. 
+<p>Essa sensibilidade faz de você um conciliador natural, capaz de perceber nuances emocionais que passam despercebidas para outros. Entretanto, o desejo de agradar pode levar à autonegação e à dificuldade de impor limites. </p>
 
-Seu crescimento acontece quando aprende a confiar na própria força interior e a expressar suas necessidades com segurança. Quando encontra equilíbrio, torna-se um poderoso agente de união, empatia e cooperação.`,
+<p>Seu crescimento acontece quando aprende a confiar na própria força interior e a expressar suas necessidades com segurança. Quando encontra equilíbrio, torna-se um poderoso agente de união, empatia e cooperação.</p>`,
 
-3: `Sua motivação é experimentar a alegria de viver, expressar sua criatividade e ser reconhecido pelo seu brilho pessoal. 
+3: `<p>Sua motivação é experimentar a alegria de viver, expressar sua criatividade e ser reconhecido pelo seu brilho pessoal. </p>
 
-Existe um impulso forte para se comunicar, inspirar e compartilhar entusiasmo. Você deseja viver em ambientes agradáveis, cercado por pessoas e experiências que alimentem sua imaginação. 
+<p>Existe um impulso forte para se comunicar, inspirar e compartilhar entusiasmo. Você deseja viver em ambientes agradáveis, cercado por pessoas e experiências que alimentem sua imaginação. </p>
 
-Possui talento natural para expressão verbal, artística ou social, e encontra satisfação ao transmitir ideias, histórias e emoções. Porém, a dispersão e o excesso de interesses podem dificultar a continuidade de projetos. Seu maior aprendizado é desenvolver foco e disciplina sem perder a leveza e o entusiasmo que fazem parte da sua essência.`,
+<p>Possui talento natural para expressão verbal, artística ou social, e encontra satisfação ao transmitir ideias, histórias e emoções. Porém, a dispersão e o excesso de interesses podem dificultar a continuidade de projetos. Seu maior aprendizado é desenvolver foco e disciplina sem perder a leveza e o entusiasmo que fazem parte da sua essência.</p>`,
 
-4: `Sua motivação principal é construir estabilidade, segurança e estrutura. 
+4: `<p>Sua motivação principal é construir estabilidade, segurança e estrutura.</p> 
 
-Você sente necessidade de organizar, planejar e criar bases sólidas para o futuro. 
+<p>Você sente necessidade de organizar, planejar e criar bases sólidas para o futuro. </p>
 
-Existe um forte desejo de ser confiável, responsável e respeitado pelo seu esforço e dedicação. 
+<p>Existe um forte desejo de ser confiável, responsável e respeitado pelo seu esforço e dedicação. </p>
 
-A previsibilidade lhe traz tranquilidade e a disciplina é sua aliada natural. Contudo, o excesso de rigidez pode limitar sua flexibilidade emocional e criatividade. 
+<p>A previsibilidade lhe traz tranquilidade e a disciplina é sua aliada natural. Contudo, o excesso de rigidez pode limitar sua flexibilidade emocional e criatividade. </p>
 
-Seu crescimento acontece quando aprende a equilibrar segurança com abertura ao novo.`,
+<p>Seu crescimento acontece quando aprende a equilibrar segurança com abertura ao novo.</p>`,
 
-5: `Você é movido pela liberdade, pela variedade e pela experiência. 
+5: `<p>Você é movido pela liberdade, pela variedade e pela experiência. </p>
 
-A rotina prolongada gera inquietação e sensação de aprisionamento. 
+<p>A rotina prolongada gera inquietação e sensação de aprisionamento. </p>
 
 Sua motivação é explorar, experimentar e viver intensamente. Mudanças e desafios estimulam sua mente e sua energia vital. 
 
 O risco existe quando a busca por novidades impede a constância necessária para concluir projetos. Seu aprendizado é encontrar equilíbrio entre aventura e compromisso.`,
 
-6: `Sua motivação nasce do desejo de amar, cuidar e proteger. Família, vínculos e responsabilidade emocional são pilares centrais. 
+6: `<p>Sua motivação nasce do desejo de amar, cuidar e proteger. Família, vínculos e responsabilidade emocional são pilares centrais. </p>
 
 Existe uma forte necessidade de sentir-se útil e necessário. Porém, o excesso de responsabilidade pode gerar sobrecarga emocional. Seu crescimento ocorre quando aprende a cuidar de si com a mesma dedicação que oferece aos outros.`,
 
-7: `Você é motivado pela busca do conhecimento, da verdade e da compreensão profunda da vida. 
+7: `<p>Você é motivado pela busca do conhecimento, da verdade e da compreensão profunda da vida. </p>
 
 Existe um impulso interior para analisar, estudar e compreender o mundo em níveis mais profundos. Valoriza o silêncio, a introspecção e a reflexão. 
 
-Seu desafio é equilibrar razão e emoção, permitindo-se conectar mais profundamente com as pessoas.`,
+<p>Seu desafio é equilibrar razão e emoção, permitindo-se conectar mais profundamente com as pessoas.</p>`,
 
-8: `Sua motivação está ligada ao sucesso, realização material e reconhecimento. 
+8: `<p>Sua motivação está ligada ao sucesso, realização material e reconhecimento.</p> 
 
 Existe um forte impulso de conquistar resultados concretos e exercer liderança. 
 
 Você deseja deixar marcas visíveis no mundo. O desafio é equilibrar ambição com sensibilidade e propósito humano.`,
 
-9: `Sua motivação é servir, contribuir e causar impacto positivo no mundo. 
+9: `<p>Sua motivação é servir, contribuir e causar impacto positivo no mundo. </p>
 
 Existe uma forte inclinação humanitária e desejo de ajudar. Você sente satisfação ao contribuir para algo maior do que si mesmo. O aprendizado está em equilibrar altruísmo com limites saudáveis.`
 
@@ -73,7 +73,7 @@ Existe uma forte inclinação humanitária e desejo de ajudar. Você sente satis
   },
 
 influencia: {
-    1:`Influência 1 — Aparência de Liderança, Autoconfiança e Individualidade
+    1:`<p>Influência 1 — Aparência de Liderança, Autoconfiança e Individualidade<p>
 
 Você transmite a imagem de uma pessoa dinâmica, eficiente e extremamente segura. 
 
@@ -81,9 +81,9 @@ Em um primeiro contato, pode ser percebido tanto como alguém agressivo, individ
 
 Sua presença sugere que você não se deixa intimidar facilmente e que possui controle emocional suficiente para enfrentar desafios com firmeza.
 
-A forma como você se apresenta ao mundo cria a impressão de uma pessoa capaz, determinada e independente. 
+<p>A forma como você se apresenta ao mundo cria a impressão de uma pessoa capaz, determinada e independente. 
 
-As pessoas tendem a enxergá-lo como alguém que sabe o que quer e que possui sua própria maneira de fazer as coisas. 
+As pessoas tendem a enxergá-lo como alguém que sabe o que quer e que possui sua própria maneira de fazer as coisas. </p>
 
 Sua influência faz com que seja percebido como pioneiro, inovador e criativo, alguém que não teme se arriscar nem se acovarda diante das dificuldades.
 
@@ -91,7 +91,7 @@ Você aparenta possuir forte iniciativa e grande autoconfiança.
 
 Essa energia transmite coragem e espírito de liderança, despertando respeito e admiração. Ao mesmo tempo, essa postura pode gerar certo distanciamento emocional, pois algumas pessoas podem sentir que você parece inacessível ou excessivamente dominante.
 
-Existe em sua influência uma aura de comando natural. 
+<p>Existe em sua influência uma aura de comando natural. </p>
 
 Os outros percebem que você não aceita facilmente pressão externa e que prefere agir de forma autônoma. Isso cria a imagem de alguém capaz de assumir responsabilidades e tomar decisões com rapidez.
 
