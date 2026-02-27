@@ -692,21 +692,38 @@ function abrirModalTexto(texto){
   document.getElementById("modalTexto").innerHTML = texto;
   document.getElementById("modal").style.display="block";
 }
-function formatarTextoPersonalizado(texto, nome) {
+// =====================
+// FUNÇÕES DE FORMATAÇÃO E MODAL (ATUALIZADAS)
+// =====================
+
+function formatarTextoPersonalizado(texto, nomeCompleto) {
   if (!texto) return "";
+  
+  // 1. Extrai apenas o primeiro nome e limpa espaços
+  let primeiroNome = nomeCompleto.trim().split(' ')[0];
+
+  // 2. Formata: Primeira letra Maiúscula, as outras minúsculas (Ex: JOÃO -> João)
+  if (primeiroNome) {
+      primeiroNome = primeiroNome.charAt(0).toUpperCase() + primeiroNome.slice(1).toLowerCase();
+  } else {
+      primeiroNome = "você"; // Fallback caso o nome esteja vazio
+  }
+
+  // 3. Substitui "Você" e "você" pelo primeiro nome em negrito
   let t = texto;
-  // Troca "Você" e "você" pelo nome digitado
-  t = t.replace(/Você/g, nome);
-  t = t.replace(/você/g, nome);
+  t = t.replace(/Você/g, `<strong>${primeiroNome}</strong>`);
+  t = t.replace(/você/g, `<strong>${primeiroNome}</strong>`);
+  
   return t;
 }
+
 function abrirModal(tipo) {
   let textoBase = "";
   let nomePessoa = "";
 
-  // 1. Identifica a pessoa e pega o nome e o texto bruto
+  // 1. Identifica a pessoa e pega o nome e o texto bruto do objeto 'textos'
   if (tipo.includes("1")) {
-    nomePessoa = document.getElementById("nome1").value || "Pessoa 1";
+    nomePessoa = document.getElementById("nome1").value;
     if(tipo==="m1") textoBase = textos.motivacao[dados1.motivacao];
     if(tipo==="i1") textoBase = textos.influencia[dados1.influencia];
     if(tipo==="p1") textoBase = textos.personalidade[dados1.personalidade];
@@ -716,7 +733,7 @@ function abrirModal(tipo) {
     if(tipo==="a1") textoBase = textos.anoPessoal[dados1.anoPessoal];
   } 
   else if (tipo.includes("2")) {
-    nomePessoa = document.getElementById("nome2").value || "Pessoa 2";
+    nomePessoa = document.getElementById("nome2").value;
     if(tipo==="m2") textoBase = textos.motivacao[dados2.motivacao];
     if(tipo==="i2") textoBase = textos.influencia[dados2.influencia];
     if(tipo==="p2") textoBase = textos.personalidade[dados2.personalidade];
@@ -726,14 +743,14 @@ function abrirModal(tipo) {
     if(tipo==="a2") textoBase = textos.anoPessoal[dados2.anoPessoal];
   }
   else if (tipo.includes("B")) {
-    nomePessoa = document.getElementById("nomeBebe").value || "O Bebê";
+    nomePessoa = document.getElementById("nomeBebe").value;
     if(tipo==="mB") textoBase = textos.motivacao[dadosBebe.motivacao];
     if(tipo==="iB") textoBase = textos.influencia[dadosBebe.influencia];
     if(tipo==="pB") textoBase = textos.personalidade[dadosBebe.personalidade];
   }
 
-  // 2. Chama a função que troca "você" pelo nome
-  const textoFinal = formatarTextoPersonalizado(textoBase, nomePessoa);
+  // 2. Chama a função que trata o nome e faz a substituição
+  const textoFinal = formatarTextoPersonalizado(textoBase, nomePessoa || "Você");
   
   // 3. Abre o modal com o texto já modificado
   abrirModalTexto(textoFinal);
