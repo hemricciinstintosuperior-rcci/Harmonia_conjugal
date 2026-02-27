@@ -533,73 +533,38 @@ if (marcacoes[l].has(idx)){
 
  const regente = linhas[linhas.length - 1][0];
 
-elementoRegente.innerHTML = `
-  <div class="botoes-piramide">
-    <button onclick="abrirModalTexto(textos.regente[${regente}])">
-      Regente: ${regente}
-    </button>
-
-    <button onclick="mostrarSequenciaNegativa('${elementoRegente.id}')">
-      Sequência Negativa
-    </button>
-  </div>
-`;
-
-if (elementoRegente.id === "regente1") {
-    dados1.regente = regente;
-}
-if (elementoRegente.id === "regente2") {
-    dados2.regente = regente;
-}
-if (elementoRegente.id === "regenteBebe") {
-    dadosBebe.regente = regente;
-}
+// Localize o final da função gerarPiramide e substitua por este trecho:
+  elementoRegente.innerHTML = `
+    <div class="botoes-piramide">
+      <button onclick="abrirModalRegente(textos.regente[${regente}], '${elementoRegente.id}')">
+        Regente: ${regente}
+      </button>
   
+      <button onclick="mostrarSequenciaNegativa('${elementoRegente.id}')">
+        Sequência Negativa
+      </button>
+    </div>
+  `;
 
-if (elementoRegente.id === "regente1") {
-    dados1.sequenciaNegativa = numerosSequencias;;
-}
-
-if (elementoRegente.id === "regente2") {
-    dados2.sequenciaNegativa = numerosSequencias;
-}
-
-if (elementoRegente.id === "regenteBebe") {
-   dadosBebe.sequenciaNegativa = numerosSequencias;
-}
-if (elementoRegente.id === "regenteBebe") {
-
-  const resultado = document.getElementById("resultadoBebe");
-
- if (!numerosSequencias || numerosSequencias.length === 0) {
-    resultado.innerHTML = "✅ Este nome é harmônico.";
-  } else {
-    resultado.innerHTML = "❌ Este nome possui sequência negativa e não é harmônico.";
-  }
-
-}
+  if (elementoRegente.id === "regente1") dados1.regente = regente;
+  if (elementoRegente.id === "regente2") dados2.regente = regente;
+  if (elementoRegente.id === "regenteBebe") dadosBebe.regente = regente;
   
-}
+  if (elementoRegente.id === "regente1") dados1.sequenciaNegativa = numerosSequencias;
+  if (elementoRegente.id === "regente2") dados2.sequenciaNegativa = numerosSequencias;
+  if (elementoRegente.id === "regenteBebe") dadosBebe.sequenciaNegativa = numerosSequencias;
 
-function mostrarSequenciaNegativa(idRegente){
-
-  let dados;
-
-  if (idRegente === "regente1") dados = dados1;
-  else if (idRegente === "regente2") dados = dados2;
-  else if (idRegente === "regenteBebe") dados = dadosBebe;
-
-  if (!dados || !dados.sequenciaNegativa || dados.sequenciaNegativa.length === 0){
-    abrirModalTexto("Nenhuma sequência negativa encontrada.");
-    return;
+  if (elementoRegente.id === "regenteBebe") {
+    const resultado = document.getElementById("resultadoBebe");
+    if (!numerosSequencias || numerosSequencias.length === 0) {
+      resultado.innerHTML = "✅ Este nome é harmônico.";
+    } else {
+      resultado.innerHTML = "❌ Este nome possui sequência negativa e não é harmônico.";
+    }
   }
+} // <--- Fim da função gerarPiramide
 
-  const textoFinal = dados.sequenciaNegativa
-    .map(n => textos.sequenciaNegativa[n])
-    .join("<br><br>");
 
-  abrirModalTexto(textoFinal);
-}
 
 // =====================
 // COMPATIBILIDADE RH
@@ -696,24 +661,24 @@ function abrirModalTexto(texto){
 // FUNÇÕES DE FORMATAÇÃO E MODAL (ATUALIZADAS)
 // =====================
 
+// ============================================
+// NOVAS FUNÇÕES DE FORMATAÇÃO E MODAL
+// ============================================
+
 function formatarTextoPersonalizado(texto, nomeCompleto) {
   if (!texto) return "";
   
-  // 1. Extrai apenas o primeiro nome e limpa espaços
+  // Extrai apenas o primeiro nome, remove espaços e corrige maiúsculas/minúsculas
   let primeiroNome = nomeCompleto.trim().split(' ')[0];
-
-  // 2. Formata: Primeira letra Maiúscula, as outras minúsculas (Ex: JOÃO -> João)
   if (primeiroNome) {
       primeiroNome = primeiroNome.charAt(0).toUpperCase() + primeiroNome.slice(1).toLowerCase();
   } else {
-      primeiroNome = "você"; // Fallback caso o nome esteja vazio
+      primeiroNome = "Você";
   }
 
-  // 3. Substitui "Você" e "você" pelo primeiro nome em negrito
+  // Substitui "você" ou "Você" pelo nome em negrito
   let t = texto;
-  t = t.replace(/Você/g, `<strong>${primeiroNome}</strong>`);
-  t = t.replace(/você/g, `<strong>${primeiroNome}</strong>`);
-  
+  t = t.replace(/você/gi, `<strong>${primeiroNome}</strong>`);
   return t;
 }
 
@@ -721,7 +686,6 @@ function abrirModal(tipo) {
   let textoBase = "";
   let nomePessoa = "";
 
-  // 1. Identifica a pessoa e pega o nome e o texto bruto do objeto 'textos'
   if (tipo.includes("1")) {
     nomePessoa = document.getElementById("nome1").value;
     if(tipo==="m1") textoBase = textos.motivacao[dados1.motivacao];
@@ -749,13 +713,43 @@ function abrirModal(tipo) {
     if(tipo==="pB") textoBase = textos.personalidade[dadosBebe.personalidade];
   }
 
-  // 2. Chama a função que trata o nome e faz a substituição
-  const textoFinal = formatarTextoPersonalizado(textoBase, nomePessoa || "Você");
-  
-  // 3. Abre o modal com o texto já modificado
-  abrirModalTexto(textoFinal);
+  abrirModalTexto(formatarTextoPersonalizado(textoBase, nomePessoa));
 }
 
+function abrirModalRegente(texto, idRegente) {
+    let nomeInput = "";
+    if (idRegente === "regente1") nomeInput = document.getElementById("nome1").value;
+    else if (idRegente === "regente2") nomeInput = document.getElementById("nome2").value;
+    else if (idRegente === "regenteBebe") nomeInput = document.getElementById("nomeBebe").value;
+
+    abrirModalTexto(formatarTextoPersonalizado(texto, nomeInput));
+}
+
+function mostrarSequenciaNegativa(idRegente){
+  let dados;
+  let nomeInput = "";
+
+  if (idRegente === "regente1") {
+    dados = dados1;
+    nomeInput = document.getElementById("nome1").value;
+  }
+  else if (idRegente === "regente2") {
+    dados = dados2;
+    nomeInput = document.getElementById("nome2").value;
+  }
+  else if (idRegente === "regenteBebe") {
+    dados = dadosBebe;
+    nomeInput = document.getElementById("nomeBebe").value;
+  }
+
+  if (!dados || !dados.sequenciaNegativa || dados.sequenciaNegativa.length === 0){
+    abrirModalTexto("Nenhuma sequência negativa encontrada.");
+    return;
+  }
+
+  const textoBruto = dados.sequenciaNegativa.map(n => textos.sequenciaNegativa[n]).join("<br><br>");
+  abrirModalTexto(formatarTextoPersonalizado(textoBruto, nomeInput));
+}
 
 function fecharModal(){
   document.getElementById("modal").style.display="none";
