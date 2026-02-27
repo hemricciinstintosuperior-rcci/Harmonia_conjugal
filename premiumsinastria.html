@@ -287,8 +287,17 @@ O nome de um bebê não é apenas uma escolha bonita ou uma homenagem familiar. 
 
 <script>
 const dados = JSON.parse(localStorage.getItem("relatorioSinastria"));
-  
-function aplicarNomes(texto) {
+
+// ============================================
+// FUNÇÃO PARA PEGAR PRIMEIRO NOME E FORMATAR
+// ============================================
+function formatarPrimeiroNome(nomeCompleto) {
+    if (!nomeCompleto) return "Você";
+    let primeiroNome = nomeCompleto.trim().split(' ')[0];
+    return primeiroNome.charAt(0).toUpperCase() + primeiroNome.slice(1).toLowerCase();
+}
+
+function aplicarNomes(texto, nomeProprio) {
     if (!texto) return "";
 
     const nome1 = dados.pessoa1?.nome || "";
@@ -298,19 +307,23 @@ function aplicarNomes(texto) {
 
     let novoTexto = texto;
 
+    // 1. Tratamento para Sinastria (Trocar Energias pelos nomes do casal)
     if (energia1 && energia2) {
         const menor = Math.min(energia1, energia2);
         const maior = Math.max(energia1, energia2);
-        
         const nomeMenor = (energia1 === menor) ? nome1 : nome2;
         const nomeMaior = (energia1 === maior) ? nome1 : nome2;
 
-        // Aqui ela apenas limpa a palavra "Energia" e coloca o Nome
-        // sem colocar "Relacionamento de" no meio do texto
         novoTexto = novoTexto.replace(new RegExp(`Energia ${menor}`, 'gi'), nomeMenor);
         novoTexto = novoTexto.replace(new RegExp(`Energia ${maior}`, 'gi'), nomeMaior);
         novoTexto = novoTexto.replace(new RegExp(`número ${menor}`, 'gi'), nomeMenor);
         novoTexto = novoTexto.replace(new RegExp(`número ${maior}`, 'gi'), nomeMaior);
+    }
+
+    // 2. Tratamento para "você" (Trocar pelo primeiro nome em negrito)
+    if (nomeProprio) {
+        const pNome = formatarPrimeiroNome(nomeProprio);
+        novoTexto = novoTexto.replace(/você/gi, `<strong>${pNome}</strong>`);
     }
 
     return novoTexto;
@@ -321,101 +334,86 @@ if(!dados){
   throw new Error("Sem dados");
 }
 
-/* NOME DO CASAL */
-document.getElementById("nomeCasal").innerText =
-dados.pessoa1.nome + " & " + dados.pessoa2.nome;
+/* NOME DO CASAL NA CAPA */
+document.getElementById("nomeCasal").innerText = dados.pessoa1.nome + " & " + dados.pessoa2.nome;
 
-/* TITULOS */
+/* TITULOS INDIVIDUAIS */
 document.getElementById("tituloP1").innerText = "Análise Individual – " + dados.pessoa1.nome;
 document.getElementById("tituloP2").innerText = "Análise Individual – " + dados.pessoa2.nome;
 
-/* FUNÇÃO PARA MONTAR BLOCO INDIVIDUAL */
+/* MONTAGEM DOS BLOCOS INDIVIDUAIS */
 function montarPessoa(p){
+  const nomeAtu = p.nome;
   return `
   <div class="bloco">
     <div class="numero">Motivação: ${p.motivacao}</div>
-    <div>${aplicarNomes(p.textos.motivacao)}</div>
+    <div>${aplicarNomes(p.textos.motivacao, nomeAtu)}</div>
 
     <div class="numero">Influência: ${p.influencia}</div>
-    <div>${aplicarNomes(p.textos.influencia)}</div>
+    <div>${aplicarNomes(p.textos.influencia, nomeAtu)}</div>
 
     <div class="numero">Personalidade: ${p.personalidade}</div>
-    <div>${aplicarNomes(p.textos.personalidade)}</div>
+    <div>${aplicarNomes(p.textos.personalidade, nomeAtu)}</div>
 
     <div class="numero">Caminho de Vida: ${p.caminho}</div>
-    <div>${aplicarNomes(p.textos.caminho)}</div>
+    <div>${aplicarNomes(p.textos.caminho, nomeAtu)}</div>
 
     <div class="numero">Propósito: ${p.proposito}</div>
-    <div>${aplicarNomes(p.textos.proposito)}</div>
+    <div>${aplicarNomes(p.textos.proposito, nomeAtu)}</div>
 
     <div class="numero">Ano Pessoal: ${p.ano}</div>
-    <div>${aplicarNomes(p.textos.ano)}</div>
+    <div>${aplicarNomes(p.textos.ano, nomeAtu)}</div>
 
     <div class="numero">Harmonia Individual: ${p.harmonia}</div>
-    <div>${aplicarNomes(p.textos.harmonia)}</div>
+    <div>${aplicarNomes(p.textos.harmonia, nomeAtu)}</div>
 
-
-
-${(p.textos.seqNegativa && p.textos.seqNegativa.trim() !== "") ? `
-   <div class="numero">Sequência Negativa:  Identificada — Ponto de Ajuste Evolutivo</div>
-   <div>${p.textos.seqNegativa}</div>
-` : `
-   <div class="numero">Sequência Positiva: Estrutura Vibracional Harmônica</div>
-`}
+    ${(p.textos.seqNegativa && p.textos.seqNegativa.trim() !== "") ? `
+       <div class="numero">Sequência Negativa: Identificada — Ponto de Ajuste Evolutivo</div>
+       <div>${aplicarNomes(p.textos.seqNegativa, nomeAtu)}</div>
+    ` : `
+       <div class="numero">Sequência Positiva: Estrutura Vibracional Harmônica</div>
+    `}
 
     <div class="piramide">${p.piramide}</div>
-        <div class="numero">Regente: ${p.regente}</div>
-    <div>${p.textos.regente}</div>
+    <div class="numero">Regente: ${p.regente}</div>
+    <div>${aplicarNomes(p.textos.regente, nomeAtu)}</div>
   </div>
   `;
 }
-/* RENDERIZA */
+
 document.getElementById("conteudoP1").innerHTML = montarPessoa(dados.pessoa1);
 document.getElementById("conteudoP2").innerHTML = montarPessoa(dados.pessoa2);
 
+/* MAPA DO BEBÊ */
 function montarBebe(b){
   if(!b) return "";
-
+  const nB = b.nome || "O Bebê";
   return `
     <div class="bloco">
-
       <div class="numero">Motivação: ${b.motivacao ?? ""}</div>
-      <div>${aplicarNomes(b.textos?.motivacao ?? "")}</div>
-
+      <div>${aplicarNomes(b.textos?.motivacao, nB)}</div>
       <div class="numero">Influência: ${b.influencia ?? ""}</div>
-      <div>${aplicarNomes(b.textos?.influencia ?? "")}</div>
-
+      <div>${aplicarNomes(b.textos?.influencia, nB)}</div>
       <div class="numero">Personalidade: ${b.personalidade ?? ""}</div>
-      <div>${aplicarNomes(b.textos?.personalidade ?? "")}</div>
+      <div>${aplicarNomes(b.textos?.personalidade, nB)}</div>
 
-      
-
-${(b.textos?.seqNegativa && b.textos.seqNegativa.trim() !== "") ? `
-   <div class="numero">Sequência Negativa: Identificada — esse nome não é Harmônico para o bebe </div>
-   <div>${b.textos.seqNegativa}</div>
-` : `
-   <div class="numero">Sequência Positiva: Estrutura Vibracional Harmônica para o bebe</div>
-`}
-
+      ${(b.textos?.seqNegativa && b.textos.seqNegativa.trim() !== "") ? `
+         <div class="numero">Sequência Negativa: Identificada para o nome ${nB}</div>
+         <div>${aplicarNomes(b.textos.seqNegativa, nB)}</div>
+      ` : `
+         <div class="numero">Sequência Positiva: Estrutura Vibracional Harmônica para o bebê</div>
+      `}
       <div class="piramide">${b.piramide}</div>
-<div class="numero">${b.regente}</div>
-      <div>${b.textos.regente}</div>
+      <div class="numero">Regente: ${b.regente}</div>
+      <div>${aplicarNomes(b.textos.regente, nB)}</div>
     </div>
   `;
 }
 document.getElementById("conteudoBebe").innerHTML = montarBebe(dados.bebe);
-console.log("BEBE:", dados.bebe);
 
 /* SINASTRIA */
-/* SINASTRIA - Atualizado para não repetir títulos */
-/* SINASTRIA */
-/* SINASTRIA */
-// 1. Removemos o título indesejado que vem dentro do texto original
 let textoSemTituloRepetido = dados.sinastria.texto.replace(/<h[23]>.*?<\/h[23]>/gi, '');
-
-// 2. Aplicamos a formatação para trocar números pelos nomes
-const textoTratado = aplicarNomes(textoSemTituloRepetido)
-  .replace(/\\n/g, "\n"); // converte quebra escapada em quebra real
+const textoTratado = aplicarNomes(textoSemTituloRepetido).replace(/\\n/g, "\n");
 
 const textoComParagrafos = textoTratado
   .split("\n")
@@ -423,38 +421,26 @@ const textoComParagrafos = textoTratado
   .map(p => `<p>${p.trim()}</p>`)
   .join("");
 
-const n1 = dados.pessoa1.nome;
-const n2 = dados.pessoa2.nome;
-
-// 3. Montamos o HTML final com apenas UM título centralizado
 document.getElementById("conteudoSinastria").innerHTML = `
     <h3 style="text-align:center; margin-bottom:20px; font-size:22px;">
-        Harmonia Conjugal – Relacionamento de ${n1} com ${n2}
+        Harmonia Conjugal – Relacionamento de ${dados.pessoa1.nome} com ${dados.pessoa2.nome}
     </h3>
-    
     <div class="numero">Índice de Harmonia: ${dados.sinastria.numero}</div>
     <div class="texto-limpo">${textoComParagrafos}</div>
 `;
-/* BIOLOGICO */
-document.getElementById("conteudoBiologico").innerHTML =
-dados.biologico;
 
-
+document.getElementById("conteudoBiologico").innerHTML = dados.biologico;
 
 /* PDF AUTOMÁTICO */
 function gerarPDF(){
     window.scrollTo(0,0);
-    setTimeout(()=>{
-        window.print();
-    }, 800);
+    setTimeout(()=>{ window.print(); }, 800);
 }
+setTimeout(gerarPDF, 1500);
 
-setTimeout(gerarPDF, 1200);
- // 🔒 BLOQUEIO CÓPIA
-// =======================
+// BLOQUEIO CÓPIA
 document.oncontextmenu=()=>false;
 document.onselectstart=()=>false; 
-
 </script>
 
 </body>
