@@ -2,7 +2,7 @@
 window.textos = {
 
 motivacao: {
-1: <p>Você possui uma necessidade profunda de independência e autonomia. </p>
+1: `<p>Você possui uma necessidade profunda de independência e autonomia. </p>
 
 <p>Sua maior motivação é dirigir a própria vida e tomar decisões baseadas em suas convicções pessoais. 
 Existe dentro de você um forte impulso de liderança e a sensação de que precisa estar no controle do próprio destino. </p>
@@ -11,11 +11,11 @@ Existe dentro de você um forte impulso de liderança e a sensação de que prec
 
 Você não teme desafios e, muitas vezes, até se fortalece diante deles. 
 
-A rotina, a limitação e a dependência emocional ou profissional tendem a sufocar sua energia. 
+<p>A rotina, a limitação e a dependência emocional ou profissional tendem a sufocar sua energia. 
 
 Quando acredita em algo, demonstra determinação incomum e capacidade de superar obstáculos com persistência admirável. No entanto, o excesso de autossuficiência pode torná-lo rígido, impaciente ou dominador. 
 
-Seu desafio é equilibrar independência com cooperação, aprendendo a liderar sem isolar-se.</p>
+Seu desafio é equilibrar independência com cooperação, aprendendo a liderar sem isolar-se.</p>`,
 
 2: `Sua motivação central é viver em harmonia, sentir-se amado e construir relações profundas e significativas. Você busca conexão emocional, parceria e reconhecimento afetivo. 
 
