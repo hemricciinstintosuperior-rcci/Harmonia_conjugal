@@ -2,1315 +2,817 @@
 window.textos = {
 
 motivacao: {
-1: `<p>Você possui uma necessidade profunda de independência e autonomia. </p>
+1: `<p><strong>você</strong> possui uma necessidade profunda de independência e autonomia.</p>
 
-<p>Sua maior motivação é dirigir a própria vida e tomar decisões baseadas em suas convicções pessoais. 
-Existe dentro de você um forte impulso de liderança e a sensação de que precisa estar no controle do próprio destino. </p>
+<p>A maior motivação de <strong>você</strong> é dirigir a própria vida e tomar decisões baseadas em convicções pessoais. 
+Existe dentro de <strong>você</strong> um forte impulso de liderança e a sensação de que precisa estar no controle do próprio destino.</p>
 
-<p>Essa força interior lhe concede coragem para assumir responsabilidades, tomar decisões ousadas e iniciar caminhos que outras pessoas evitariam. </p>
+<p>Essa força interior concede a <strong>você</strong> coragem para assumir responsabilidades, tomar decisões ousadas e iniciar caminhos que outras pessoas evitariam.</p>
 
-Você não teme desafios e, muitas vezes, até se fortalece diante deles. 
+<p><strong>você</strong> não teme desafios e, muitas vezes, até se fortalece diante deles.</p>
 
-<p>A rotina, a limitação e a dependência emocional ou profissional tendem a sufocar sua energia. 
+<p>A rotina, a limitação e a dependência emocional ou profissional tendem a sufocar a energia de <strong>você</strong>.</p>
 
-Quando acredita em algo, demonstra determinação incomum e capacidade de superar obstáculos com persistência admirável. No entanto, o excesso de autossuficiência pode torná-lo rígido, impaciente ou dominador. 
+<p>Quando acredita em algo, <strong>você</strong> demonstra uma determinação incomum e capacidade de superar obstáculos com persistência admirável. No entanto, o excesso de autossuficiência pode tornar <strong>você</strong> uma pessoa rígida, impaciente ou dominadora.</p>
 
-Seu desafio é equilibrar independência com cooperação, aprendendo a liderar sem isolar-se.</p>`,
+<p>O desafio de <strong>você</strong> é equilibrar independência com cooperação, aprendendo a liderar sem isolar-se.</p>`,
 
-2: `<p>Sua motivação central é viver em harmonia, sentir-se amado e construir relações profundas e significativas. Você busca conexão emocional, parceria e reconhecimento afetivo. </p>
+2: `<p>A motivação central de <strong>você</strong> é viver em harmonia, sentir-se uma pessoa amada e construir relações profundas e significativas. <strong>você</strong> busca conexão emocional, parceria e reconhecimento afetivo.</p>
 
-<p>Existe uma necessidade genuína de ser útil, acolher, compreender e contribuir para a paz ao seu redor. Evitar conflitos é quase instintivo, pois a tensão emocional lhe causa grande desconforto. </p>
+<p>Existe em <strong>você</strong> uma necessidade genuína de ser útil, acolher, compreender e contribuir para a paz ao seu redor. Evitar conflitos é quase instintivo para <strong>você</strong>, pois a tensão emocional causa um grande desconforto.</p>
 
-<p>Essa sensibilidade faz de você um conciliador natural, capaz de perceber nuances emocionais que passam despercebidas para outros. Entretanto, o desejo de agradar pode levar à autonegação e à dificuldade de impor limites. </p>
+<p>Essa sensibilidade faz de <strong>você</strong> uma pessoa conciliadora natural, capaz de perceber nuances emocionais que passam despercebidas para outros. Entretanto, o desejo de agradar pode levar <strong>você</strong> à autonegação e à dificuldade de impor limites.</p>
 
-<p>Seu crescimento acontece quando aprende a confiar na própria força interior e a expressar suas necessidades com segurança. Quando encontra equilíbrio, torna-se um poderoso agente de união, empatia e cooperação.</p>`,
+<p>O crescimento de <strong>você</strong> acontece quando aprende a confiar na própria força interior e a expressar suas necessidades com segurança. Quando encontra equilíbrio, <strong>você</strong> torna-se um poderoso agente de união, empatia e cooperação.</p>`,
 
-3: `<p>Sua motivação é experimentar a alegria de viver, expressar sua criatividade e ser reconhecido pelo seu brilho pessoal. </p>
+3: `<p>A motivação de <strong>você</strong> é experimentar a alegria de viver, expressar a criatividade e ser uma pessoa reconhecida pelo brilho pessoal.</p>
 
-<p>Existe um impulso forte para se comunicar, inspirar e compartilhar entusiasmo. Você deseja viver em ambientes agradáveis, cercado por pessoas e experiências que alimentem sua imaginação. </p>
+<p>Existe em <strong>você</strong> um impulso forte para se comunicar, inspirar e compartilhar entusiasmo. <strong>você</strong> deseja viver em ambientes agradáveis, cercado por pessoas e experiências que alimentem sua imaginação.</p>
 
-<p>Possui talento natural para expressão verbal, artística ou social, e encontra satisfação ao transmitir ideias, histórias e emoções. Porém, a dispersão e o excesso de interesses podem dificultar a continuidade de projetos. Seu maior aprendizado é desenvolver foco e disciplina sem perder a leveza e o entusiasmo que fazem parte da sua essência.</p>`,
+<p><strong>você</strong> possui um talento natural para a expressão verbal, artística ou social, e encontra satisfação ao transmitir ideias, histórias e emoções. Porém, a dispersão pode dificultar que <strong>você</strong> dê continuidade aos projetos. O maior aprendizado de <strong>você</strong> é desenvolver foco e disciplina sem perder a leveza.</p>`,
 
-4: `<p>Sua motivação principal é construir estabilidade, segurança e estrutura.</p> 
+4: `<p>A motivação principal de <strong>você</strong> é construir estabilidade, segurança e estrutura.</p> 
 
-<p>Você sente necessidade de organizar, planejar e criar bases sólidas para o futuro. </p>
+<p><strong>você</strong> sente a necessidade de organizar, planejar e criar bases sólidas para o futuro.</p>
 
-<p>Existe um forte desejo de ser confiável, responsável e respeitado pelo seu esforço e dedicação. </p>
+<p>Existe em <strong>você</strong> um forte desejo de ser alguém confiável, responsável e respeitado pelo esforço e dedicação.</p>
 
-<p>A previsibilidade lhe traz tranquilidade e a disciplina é sua aliada natural. Contudo, o excesso de rigidez pode limitar sua flexibilidade emocional e criatividade. </p>
+<p>A previsibilidade traz tranquilidade para <strong>você</strong> e a disciplina é sua aliada natural. Contudo, o excesso de rigidez pode limitar a flexibilidade emocional de <strong>você</strong>.</p>
 
-<p>Seu crescimento acontece quando aprende a equilibrar segurança com abertura ao novo.</p>`,
+<p>O crescimento de <strong>você</strong> acontece quando aprende a equilibrar a segurança com a abertura ao novo.</p>`,
 
-5: `<p>Você é movido pela liberdade, pela variedade e pela experiência. </p>
+5: `<p><strong>você</strong> é uma pessoa movida pela liberdade, pela variedade e pela experiência.</p>
 
-<p>A rotina prolongada gera inquietação e sensação de aprisionamento. </p>
+<p>A rotina prolongada gera em <strong>você</strong> uma inquietação e sensação de aprisionamento.</p>
 
-Sua motivação é explorar, experimentar e viver intensamente. Mudanças e desafios estimulam sua mente e sua energia vital. 
+<p>A motivação de <strong>você</strong> é explorar, experimentar e viver intensamente. Mudanças e desafios estimulam a mente e a energia vital de <strong>você</strong>.</p>
 
-O risco existe quando a busca por novidades impede a constância necessária para concluir projetos. Seu aprendizado é encontrar equilíbrio entre aventura e compromisso.`,
+<p>O risco existe quando a busca de <strong>você</strong> por novidades impede a constância necessária para concluir projetos. O aprendizado de <strong>você</strong> é encontrar o equilíbrio entre aventura e compromisso.</p>`,
 
-6: `<p>Sua motivação nasce do desejo de amar, cuidar e proteger. Família, vínculos e responsabilidade emocional são pilares centrais. </p>
+6: `<p>A motivação de <strong>você</strong> nasce do desejo de amar, cuidar e proteger. Para <strong>você</strong>, família, vínculos e responsabilidade emocional são pilares centrais.</p>
 
-Existe uma forte necessidade de sentir-se útil e necessário. Porém, o excesso de responsabilidade pode gerar sobrecarga emocional. Seu crescimento ocorre quando aprende a cuidar de si com a mesma dedicação que oferece aos outros.`,
+<p>Existe em <strong>você</strong> uma forte necessidade de sentir-se útil e necessário. Porém, o excesso de responsabilidade pode gerar em <strong>você</strong> uma sobrecarga emocional. O crescimento de <strong>você</strong> ocorre quando aprende a cuidar de si com a mesma dedicação que oferece aos outros.</p>`,
 
-7: `<p>Você é motivado pela busca do conhecimento, da verdade e da compreensão profunda da vida. </p>
+7: `<p><strong>você</strong> é uma pessoa motivada pela busca do conhecimento, da verdade e da compreensão profunda da vida.</p>
 
-Existe um impulso interior para analisar, estudar e compreender o mundo em níveis mais profundos. Valoriza o silêncio, a introspecção e a reflexão. 
+<p>Existe em <strong>você</strong> um impulso interior para analisar, estudar e compreender o mundo em níveis mais profundos. <strong>você</strong> valoriza o silêncio, a introspecção e a reflexão.</p>
 
-<p>Seu desafio é equilibrar razão e emoção, permitindo-se conectar mais profundamente com as pessoas.</p>`,
+<p>O desafio de <strong>você</strong> é equilibrar razão e emoção, permitindo-se conectar mais profundamente com as pessoas ao seu redor.</p>`,
 
-8: `<p>Sua motivação está ligada ao sucesso, realização material e reconhecimento.</p> 
+8: `<p>A motivação de <strong>você</strong> está ligada ao sucesso, à realização material e ao reconhecimento.</p> 
 
-Existe um forte impulso de conquistar resultados concretos e exercer liderança. 
+<p>Existe em <strong>você</strong> um forte impulso de conquistar resultados concretos e exercer liderança.</p>
 
-Você deseja deixar marcas visíveis no mundo. O desafio é equilibrar ambição com sensibilidade e propósito humano.`,
+<p><strong>você</strong> deseja deixar marcas visíveis no mundo. O desafio de <strong>você</strong> é equilibrar a ambição com a sensibilidade e o propósito humano.</p>`,
 
-9: `<p>Sua motivação é servir, contribuir e causar impacto positivo no mundo. </p>
+9: `<p>A motivação de <strong>você</strong> é servir, contribuir e causar um impacto positivo no mundo.</p>
 
-Existe uma forte inclinação humanitária e desejo de ajudar. Você sente satisfação ao contribuir para algo maior do que si mesmo. O aprendizado está em equilibrar altruísmo com limites saudáveis.`
-
-
-  },
+<p>Existe em <strong>você</strong> uma forte inclinação humanitária e o desejo de ajudar. <strong>você</strong> sente satisfação ao contribuir para algo maior do que si mesmo. O aprendizado de <strong>você</strong> está em equilibrar o altruísmo com limites saudáveis para si.</p>`
+},
 
 influencia: {
-    1:`<p>Influência 1 — Aparência de Liderança, Autoconfiança e Individualidade<p>
+1: `<p><strong>Influência 1 — Aparência de Liderança, Autoconfiança e Individualidade</strong></p>
 
-Você transmite a imagem de uma pessoa dinâmica, eficiente e extremamente segura. 
+<p><strong>você</strong> transmite a imagem de uma pessoa dinâmica, eficiente e extremamente segura. Em um primeiro contato, <strong>você</strong> pode ser percebido tanto como alguém líder natural, direto e decidido, quanto como alguém de ideias muito originais.</p>
 
-Em um primeiro contato, pode ser percebido tanto como alguém agressivo, individualista, egocêntrico e autocentrado, quanto como um líder natural, direto, decidido e com ideias originais. 
+<p>A presença de <strong>você</strong> sugere que <strong>você</strong> não se deixa intimidar facilmente e que possui controle emocional suficiente para enfrentar desafios com firmeza. A forma como <strong>você</strong> se apresenta ao mundo cria a impressão de uma pessoa capaz e independente.</p>
 
-Sua presença sugere que você não se deixa intimidar facilmente e que possui controle emocional suficiente para enfrentar desafios com firmeza.
+<p>As pessoas tendem a enxergar <strong>você</strong> como alguém que sabe o que quer. Essa influência faz com que <strong>você</strong> seja percebido como pioneiro e inovador, alguém que não se acovarda diante das dificuldades e aparenta possuir grande autoconfiança.</p>
 
-<p>A forma como você se apresenta ao mundo cria a impressão de uma pessoa capaz, determinada e independente. 
+<p><strong>Aspectos positivos:</strong> <strong>você</strong> aparenta força, iniciativa, criatividade e liderança. Inspira segurança e transmite firmeza nas decisões.</p>
 
-As pessoas tendem a enxergá-lo como alguém que sabe o que quer e que possui sua própria maneira de fazer as coisas. </p>
+<p><strong>Aspectos negativos:</strong> <strong>você</strong> pode aparentar arrogância ou excesso de individualismo para alguns. Algumas pessoas podem sentir que <strong>você</strong> parece pouco receptivo no início.</p>
 
-Sua influência faz com que seja percebido como pioneiro, inovador e criativo, alguém que não teme se arriscar nem se acovarda diante das dificuldades.
+<p><strong>Aprendizado:</strong> O desafio de <strong>você</strong> é desenvolver sensibilidade e cooperação. Quando <strong>você</strong> equilibra liderança com empatia, atrai pessoas dispostas a confiar plenamente em sua orientação.</p>`,
 
-Você aparenta possuir forte iniciativa e grande autoconfiança. 
+2: `<p><strong>Influência 2 — Aparência de Sensibilidade, Diplomacia e Receptividade</strong></p>
 
-Essa energia transmite coragem e espírito de liderança, despertando respeito e admiração. Ao mesmo tempo, essa postura pode gerar certo distanciamento emocional, pois algumas pessoas podem sentir que você parece inacessível ou excessivamente dominante.
+<p><strong>você</strong> transmite uma imagem sutil, gentil e cordial. As pessoas costumam perceber <strong>você</strong> como alguém educado, amistoso e fácil de se aproximar. A presença de <strong>você</strong> tende a despertar simpatia imediata.</p>
 
-<p>Existe em sua influência uma aura de comando natural. </p>
+<p>Essa influência cria a impressão de que <strong>você</strong> é alguém paciente e atencioso, capaz de ouvir com empatia. As pessoas costumam se sentir importantes e confortáveis ao lado de <strong>você</strong>, pois sua postura transmite acolhimento e respeito.</p>
 
-Os outros percebem que você não aceita facilmente pressão externa e que prefere agir de forma autônoma. Isso cria a imagem de alguém capaz de assumir responsabilidades e tomar decisões com rapidez.
+<p><strong>você</strong> aparenta ser um excelente ouvinte. A energia de <strong>você</strong> transmite suavidade e harmonia, fazendo com que os outros sintam que podem confiar em <strong>você</strong> para mediar conflitos e unir pessoas.</p>
 
-Aspectos positivos da influência:
-Você aparenta força, iniciativa, criatividade, liderança e independência. Inspira segurança, transmite firmeza nas decisões e demonstra coragem para enfrentar desafios. Sua imagem sugere competência, determinação e capacidade de abrir novos caminhos.
+<p><strong>Aspectos positivos:</strong> <strong>você</strong> aparenta gentileza, diplomacia, paciência e empatia. É visto como alguém confiável e acessível.</p>
 
-Aspectos negativos da influência:
-Pode aparentar arrogância, impulsividade, autoritarismo ou excesso de individualismo. Algumas pessoas podem sentir que você parece competitivo demais, pouco receptivo ou excessivamente voltado para si mesmo.
+<p><strong>Aspectos negativos:</strong> <strong>você</strong> pode aparentar insegurança ou passividade para alguns. Pode parecer que <strong>você</strong> depende demais da opinião dos outros.</p>
 
-Aprendizado e equilíbrio:
-O principal desafio dessa influência é desenvolver sensibilidade emocional e capacidade de cooperação. Aprender a ouvir, compartilhar decisões e demonstrar receptividade torna sua imagem mais acessível e inspiradora. Quando equilibra liderança com empatia, você atrai pessoas dispostas a confiar em suas ideias e seguir sua orientação.`,
+<p><strong>Aprendizado:</strong> O desafio de <strong>você</strong> é desenvolver firmeza sem perder a sensibilidade. Quando <strong>você</strong> se posiciona com segurança, passa a ser visto como alguém forte e gentil ao mesmo tempo.</p>`,
 
-    2:`Influência 2 — Aparência de Sensibilidade, Diplomacia e Receptividade
+3: `<p><strong>Influência 3 — Aparência de Carisma, Alegria e Expressividade</strong></p>
 
-Você transmite uma imagem sutil, gentil e cordial. As pessoas costumam percebê-lo como alguém educado, amistoso e fácil de se aproximar. Sua presença tende a despertar simpatia imediata, pois você aparenta ser acessível, compreensivo e disposto a cooperar. Em um primeiro contato, pode ser visto tanto como alguém tímido, passivo e indeciso, quanto como uma pessoa diplomática, equilibrada e profundamente sensível.
+<p><strong>você</strong> transmite uma imagem vibrante, leve e cheia de vida. As pessoas costumam perceber <strong>você</strong> como alguém divertido, comunicativo e inspirador. A presença de <strong>você</strong> chama atenção naturalmente pelo entusiasmo.</p>
 
-Sua influência cria a impressão de alguém paciente e atencioso, capaz de ouvir com empatia e compreender diferentes pontos de vista. As pessoas costumam se sentir importantes e confortáveis ao seu lado, pois sua postura transmite acolhimento e respeito. Existe uma sensação de tranquilidade e segurança emocional associada à sua presença.
+<p>Essa influência cria a impressão de que <strong>você</strong> é alguém muito agradável de conviver, que sabe animar ambientes. Os outros enxergam <strong>você</strong> como alguém confiante, espontâneo e envolvente.</p>
 
-Você aparenta ser um excelente ouvinte e alguém disposto a ajudar. Sua energia transmite suavidade e harmonia, fazendo com que os outros sintam que podem confiar em você. Essa característica faz com que seja visto como um mediador natural, alguém capaz de unir pessoas e amenizar conflitos.
+<p><strong>você</strong> aparenta possuir grande capacidade de comunicação e persuasão. A forma de <strong>você</strong> se expressar transmite convicção, fazendo com que as ideias de <strong>você</strong> pareçam sempre inspiradoras e cheias de imaginação.</p>
 
-No entanto, essa mesma suavidade pode gerar interpretações equivocadas. Algumas pessoas podem enxergar em você falta de iniciativa ou excesso de dependência. Pode parecer que você evita confrontos ou que prefere seguir decisões alheias em vez de impor sua própria vontade.
+<p><strong>Aspectos positivos:</strong> <strong>você</strong> aparenta alegria, carisma e criatividade. Inspira motivação e desperta interesse nas pessoas.</p>
 
-Aspectos positivos da influência:
-Você aparenta gentileza, diplomacia, paciência, empatia e capacidade de cooperação. Transmite harmonia, compreensão e sensibilidade emocional. É visto como alguém confiável, acessível e fácil de conviver.
+<p><strong>Aspectos negativos:</strong> <strong>você</strong> pode aparentar superficialidade ou dispersão. Algumas pessoas podem acreditar que <strong>você</strong> evita compromissos sérios.</p>
 
-Aspectos negativos da influência:
-Pode aparentar insegurança, passividade, indecisão ou excesso de sensibilidade. Algumas pessoas podem subestimar sua força interior ou acreditar que você depende demais da opinião dos outros.
+<p><strong>Aprendizado:</strong> O desafio de <strong>você</strong> é desenvolver foco. Quando <strong>você</strong> equilibra o entusiasmo com disciplina, torna-se uma pessoa admirável e muito confiável.</p>`,
 
-Aprendizado e equilíbrio:
-O desafio dessa influência é desenvolver firmeza e autoconfiança sem perder a sensibilidade. Quando você aprende a se posicionar com segurança, mantendo sua diplomacia natural, passa a ser visto não apenas como alguém gentil, mas também como alguém forte e confiável.`,
+4: `<p><strong>Influência 4 — Aparência de Segurança, Estabilidade e Confiabilidade</strong></p>
 
-    3:`Influência 3 — Aparência de Carisma, Alegria e Expressividade
+<p><strong>você</strong> transmite a imagem de uma pessoa séria, responsável e extremamente confiável. Desde o primeiro contato, as pessoas tendem a perceber em <strong>você</strong> alguém estável, disciplinado e digno de confiança.</p>
 
-Você transmite uma imagem vibrante, leve e cheia de vida. As pessoas costumam percebê-lo como alguém divertido, comunicativo e inspirador. Sua presença tende a chamar atenção naturalmente, pois você aparenta entusiasmo, criatividade e facilidade para se expressar. Em um primeiro contato, pode ser visto tanto como alguém disperso, inquieto e curioso, quanto como uma pessoa calorosa, otimista e extremamente sociável.
+<p>Os outros veem <strong>você</strong> como alguém em quem podem confiar para cumprir tarefas com precisão. A influência de <strong>você</strong> cria a impressão de segurança, firmeza e total respeito às regras estabelecidas.</p>
 
-Sua influência cria a impressão de alguém agradável de conviver, que sabe animar ambientes e trazer leveza às situações. Os outros frequentemente o enxergam como alguém confiante, espontâneo e capaz de enfrentar dificuldades com bom humor. Existe uma sensação de magnetismo pessoal que faz com que você seja percebido como interessante e envolvente.
+<p>É comum que <strong>você</strong> seja percebido como uma figura protetora, que valoriza a justiça e a honestidade. A postura de <strong>você</strong> sugere compromisso absoluto com aquilo que assume.</p>
 
-Você aparenta possuir grande capacidade de comunicação e persuasão. Sua forma de se expressar transmite convicção e entusiasmo, fazendo com que suas ideias pareçam inspiradoras. Muitas pessoas o enxergam como alguém criativo, expressivo e cheio de imaginação.
+<p><strong>Aspectos positivos:</strong> <strong>você</strong> transmite confiabilidade, responsabilidade e disciplina. A imagem de <strong>você</strong> inspira segurança e respeito imediato.</p>
 
-Entretanto, essa mesma expressividade pode gerar interpretações equivocadas. Algumas pessoas podem sentir que você parece superficial, dramático ou disperso. Pode surgir a impressão de que você evita responsabilidades ou que depende demais da aprovação externa.
+<p><strong>Aspectos negativos:</strong> <strong>você</strong> pode aparentar rigidez ou excesso de formalidade. Alguns podem ver <strong>você</strong> como uma pessoa resistente a mudanças.</p>
 
-Aspectos positivos da influência:
-Você aparenta alegria, carisma, criatividade, entusiasmo e sociabilidade. Inspira motivação, transmite leveza e desperta interesse nas pessoas. É visto como alguém comunicativo, divertido e cheio de energia.
+<p><strong>Aprendizado:</strong> O desafio de <strong>você</strong> é desenvolver flexibilidade. Quando <strong>você</strong> equilibra a disciplina com a abertura ao novo, sua imagem torna-se ainda mais poderosa.</p>`,
 
-Aspectos negativos da influência:
-Pode aparentar superficialidade, exagero emocional, dispersão ou necessidade excessiva de atenção. Algumas pessoas podem acreditar que você evita profundidade ou compromissos.
+5: `<p><strong>Influência 5 — Aparência de Liberdade, Versatilidade e Movimento</strong></p>
 
-Aprendizado e equilíbrio:
-O desafio dessa influência é desenvolver foco e constância. Quando você equilibra entusiasmo com disciplina e profundidade, passa a ser visto não apenas como alguém carismático, mas também como alguém confiável e admirável.`,
+<p><strong>você</strong> transmite a imagem de alguém livre, moderno e cheio de energia. As pessoas percebem <strong>você</strong> como alguém curioso e muito interessado em novidades. A presença de <strong>você</strong> sugere dinamismo.</p>
 
-    4:`Influência 4 — Aparência de Segurança, Estabilidade e Confiabilidade
+<p>A conversa de <strong>você</strong> costuma parecer envolvente e estimulante. Os outros veem <strong>você</strong> como alguém carismático e versátil, capaz de se adaptar a qualquer situação com facilidade.</p>
 
-Você transmite a imagem de uma pessoa séria, responsável e extremamente confiável. Desde o primeiro contato, as pessoas tendem a perceber em você alguém estável, disciplinado e digno de confiança. Sua presença sugere consistência, organização e compromisso com aquilo que assume.
+<p><strong>Aspectos positivos:</strong> <strong>você</strong> demonstra carisma, adaptabilidade e entusiasmo. <strong>você</strong> é visto como alguém que traz movimento por onde passa.</p>
 
-Os outros o veem como alguém em quem podem confiar para cumprir tarefas com precisão e responsabilidade. Sua influência cria a impressão de segurança, firmeza e respeito às regras. É comum que você seja percebido como uma figura protetora, que valoriza justiça, honestidade e estabilidade.
+<p><strong>Aspectos negativos:</strong> <strong>você</strong> pode aparentar impulsividade ou inquietação. Algumas pessoas podem achar que <strong>você</strong> é pouco comprometido com raízes.</p>
 
-Entretanto, essa mesma postura pode gerar a impressão de rigidez ou excesso de formalidade. Algumas pessoas podem vê-lo como inflexível, conservador ou resistente a mudanças.
+<p><strong>Aprendizado:</strong> O desafio de <strong>você</strong> é desenvolver constância. Ao manter a responsabilidade sem perder a liberdade, <strong>você</strong> alcança resultados incríveis.</p>`,
 
-Aspectos positivos da influência:
-Transmite confiabilidade, responsabilidade, disciplina e senso de dever. Inspira segurança e respeito.
+6: `<p><strong>Influência 6 — Aparência de Cuidado, Proteção e Responsabilidade Emocional</strong></p>
 
-Aspectos negativos da influência:
-Pode aparentar rigidez, conservadorismo, excesso de seriedade ou dificuldade em lidar com mudanças.
+<p><strong>você</strong> transmite uma imagem acolhedora, calorosa e profundamente humana. As pessoas costumam perceber em <strong>você</strong> alguém compreensivo e disposto a ajudar. A presença de <strong>você</strong> sugere empatia e cuidado.</p>
 
-Aprendizado e equilíbrio:
-O desafio é desenvolver flexibilidade e leveza. Quando equilibra disciplina com abertura, sua imagem torna-se ainda mais admirada.`,
+<p>Existe na influência de <strong>você</strong> uma aura de proteção. As pessoas sentem que podem confiar em <strong>você</strong> para compartilhar problemas e buscar conselhos. <strong>você</strong> transmite conforto e estabilidade nas relações.</p>
 
-    5:`Influência 5 — Aparência de Liberdade, Versatilidade e Movimento
+<p>Muitos percebem <strong>você</strong> como um conselheiro ou uma figura de apoio. A presença de <strong>você</strong> transmite a sensação de que <strong>você</strong> se preocupa genuinamente com o bem-estar coletivo.</p>
 
-Você transmite a imagem de alguém livre, moderno e cheio de energia. As pessoas o percebem como curioso, comunicativo e interessado em novidades. Sua presença sugere dinamismo, entusiasmo e facilidade de adaptação.
+<p><strong>Aspectos positivos:</strong> <strong>você</strong> aparenta generosidade, responsabilidade e equilíbrio. Inspira conforto e desperta confiança absoluta nas pessoas.</p>
 
-Sua conversa costuma parecer envolvente e estimulante, despertando curiosidade e interesse. Os outros o veem como alguém carismático e versátil.
+<p><strong>Aspectos negativos:</strong> <strong>você</strong> pode aparentar excesso de preocupação ou dificuldade em dizer não. Pode parecer que <strong>você</strong> assume problemas que não são seus.</p>
 
-Entretanto, essa energia pode gerar impressão de instabilidade ou inquietação. Algumas pessoas podem vê-lo como impulsivo ou pouco comprometido.
+<p><strong>Aprendizado:</strong> O desafio de <strong>você</strong> é desenvolver limites saudáveis. Quando <strong>você</strong> equilibra o cuidado com os outros e a própria autonomia, <strong>você</strong> se torna ainda mais admirado.</p>`,
 
-Aspectos positivos:
-Carisma, adaptabilidade, entusiasmo e versatilidade.
+7: `<p><strong>Influência 7 — Aparência de Mistério, Intelecto e Profundidade</strong></p>
 
-Aspectos negativos:
-Impulsividade, inquietação, dispersão.
+<p><strong>você</strong> transmite uma imagem reservada, observadora e profundamente intelectual. As pessoas percebem <strong>você</strong> como alguém sério, introspectivo e muito seletivo. A presença de <strong>você</strong> desperta curiosidade e respeito.</p>
 
-Aprendizado:
-Desenvolver constância e responsabilidade sem perder liberdade.`,
+<p>Existe uma aura de mistério associada a <strong>você</strong>. Os outros enxergam <strong>você</strong> como alguém analítico e interessado em compreender o significado oculto das coisas. <strong>você</strong> aparenta valorizar a sabedoria acima de tudo.</p>
 
-    6:`Influência 6 — Aparência de Cuidado, Proteção e Responsabilidade Emocional
+<p><strong>Aspectos positivos:</strong> <strong>você</strong> demonstra sabedoria, inteligência e grande capacidade de análise. <strong>você</strong> é respeitado pela sua profundidade intelectual.</p>
 
-Você transmite uma imagem acolhedora, calorosa e profundamente humana. Desde o primeiro contato, as pessoas costumam perceber em você alguém confiável, compreensivo e disposto a ajudar. Sua presença sugere empatia, responsabilidade afetiva e preocupação genuína com o bem-estar dos outros.
+<p><strong>Aspectos negativos:</strong> <strong>você</strong> pode aparentar distanciamento ou frieza. Algumas pessoas podem acreditar que <strong>você</strong> é uma pessoa inacessível.</p>
 
-Existe em sua influência uma aura de proteção e segurança emocional. As pessoas tendem a sentir que podem confiar em você, compartilhar problemas e buscar conselhos. É comum que seja visto como alguém que transmite conforto, estabilidade emocional e equilíbrio nas relações.
+<p><strong>Aprendizado:</strong> O desafio de <strong>você</strong> é desenvolver abertura emocional. Ao permitir maior proximidade, <strong>você</strong> compartilha seu brilho com o mundo de forma mais eficaz.</p>`,
 
-Sua postura cria a impressão de alguém sociável, gentil e naturalmente disposto a cuidar. Muitos o percebem como conselheiro, orientador ou figura de apoio. Sua presença transmite a sensação de que você se preocupa mais com o coletivo do que com interesses individuais.
+8: `<p><strong>Influência 8 — Aparência de Autoridade, Poder e Realização</strong></p>
 
-Entretanto, essa mesma energia pode gerar interpretações equivocadas. Algumas pessoas podem enxergar em você excesso de responsabilidade, indecisão ou tendência a se sacrificar pelos outros. Pode parecer que você assume problemas que não são seus ou que se envolve emocionalmente além do necessário.
+<p><strong>você</strong> transmite a imagem de alguém forte, ambicioso e muito determinado. As pessoas veem <strong>você</strong> como alguém capaz de liderar e alcançar resultados concretos com facilidade.</p>
 
-Aspectos positivos da influência:
-Você aparenta generosidade, responsabilidade, empatia, equilíbrio e confiabilidade. Inspira conforto, transmite segurança emocional e desperta confiança nas pessoas.
+<p>A presença de <strong>você</strong> sugere competência técnica, segurança e domínio. É comum que <strong>você</strong> seja visto como alguém influente e plenamente capaz de assumir grandes responsabilidades.</p>
 
-Aspectos negativos da influência:
-Pode aparentar excesso de preocupação, dificuldade em dizer não, tendência ao sacrifício ou necessidade de aprovação.
+<p><strong>Aspectos positivos:</strong> <strong>você</strong> emana liderança, poder pessoal e determinação. <strong>você</strong> é visto como alguém que realiza o que planeja.</p>
 
-Aprendizado e equilíbrio:
-O desafio é desenvolver limites emocionais saudáveis. Quando aprende a equilibrar cuidado com autonomia, sua imagem torna-se ainda mais forte, madura e admirada.`,
+<p><strong>Aspectos negativos:</strong> <strong>você</strong> pode aparentar rigidez ou controle excessivo. Alguns podem sentir que <strong>você</strong> foca demais no resultado e menos no sentimento.</p>
 
-    7:`Influência 7 — Aparência de Mistério, Intelecto e Profundidade
+<p><strong>Aprendizado:</strong> O desafio de <strong>você</strong> é equilibrar o poder com a empatia. Ao fazer isso, <strong>você</strong> se torna um líder inspirador e não apenas um chefe.</p>`,
 
-Você transmite uma imagem reservada, observadora e profundamente intelectual. As pessoas costumam percebê-lo como alguém sério, introspectivo e seletivo em suas relações. Sua presença desperta curiosidade e respeito.
+9: `<p><strong>Influência 9 — Aparência de Humanitarismo, Carisma e Idealismo</strong></p>
 
-Existe uma aura de mistério associada à sua influência. Os outros tendem a enxergá-lo como alguém analítico, reflexivo e interessado em compreender o significado das coisas. Você aparenta valorizar conhecimento, sabedoria e profundidade emocional.
+<p><strong>você</strong> transmite generosidade, sensibilidade e uma visão muito ampla da vida. As pessoas percebem <strong>você</strong> como alguém carismático, inspirador e preocupado com o bem do mundo.</p>
 
-Entretanto, essa postura pode gerar a impressão de distanciamento ou frieza. Algumas pessoas podem acreditar que você é inacessível ou pouco interessado em interações superficiais.
+<p>A influência de <strong>você</strong> cria a impressão de alguém humanitário e compreensivo, capaz de enxergar além das aparências. <strong>você</strong> parece estar sempre disposto a ajudar causas maiores.</p>
 
-Aspectos positivos:
-Sabedoria, inteligência, profundidade e análise.
+<p><strong>Aspectos positivos:</strong> <strong>você</strong> aparenta empatia, inspiração e generosidade. <strong>você</strong> atrai as pessoas pela sua visão elevada.</p>
 
-Aspectos negativos:
-Isolamento, frieza aparente, dificuldade de aproximação.
+<p><strong>Aspectos negativos:</strong> <strong>você</strong> pode aparentar um idealismo excessivo. Alguns podem achar que <strong>você</strong> está um pouco distante da realidade prática.</p>
 
-Aprendizado:
-Desenvolver abertura emocional e proximidade.`,
+<p><strong>Aprendizado:</strong> O desafio de <strong>você</strong> é equilibrar o idealismo com a praticidade. Ao trazer seus sonhos para o chão, <strong>você</strong> transforma o mundo de verdade.</p>`
+},
 
-    8:`Influência 8 — Aparência de Autoridade, Poder e Realização
+personalidade: {
+1: `<p><strong>Personalidade 1 — Ambição, Independência e Determinação</strong></p>
 
-Você transmite a imagem de alguém forte, ambicioso e determinado. As pessoas o veem como alguém capaz de liderar, conquistar e alcançar resultados concretos.
+<p><strong>você</strong> possui uma personalidade forte, independente e extremamente determinada. A natureza de <strong>você</strong> é individualista e totalmente orientada para conquistas. Existe em <strong>você</strong> um impulso constante de liderança, autonomia e realização pessoal.</p>
 
-Sua presença sugere competência, segurança e domínio. É comum que seja visto como alguém influente e capaz de assumir responsabilidades importantes.
+<p><strong>você</strong> é uma pessoa naturalmente autossuficiente, confiante e cheia de energia. <strong>você</strong> sente necessidade de liberdade para agir de acordo com suas próprias ideias e convicções. Quando <strong>você</strong> pode tomar decisões por conta própria, tende a expressar o melhor de si.</p>
 
-Aspectos positivos:
-Liderança, poder pessoal, determinação.
+<p>A ambição de <strong>você</strong> é intensa e a coragem impulsiona <strong>você</strong> a enfrentar desafios sem medo das consequências. <strong>você</strong> não teme correr riscos e demonstra disposição para explorar caminhos pouco convencionais quando acredita em seus objetivos.</p>
 
-Aspectos negativos:
-Rigidez, controle excessivo, frieza emocional.
+<p><strong>Aspectos positivos:</strong> Independência, coragem, liderança, iniciativa e originalidade marcante em <strong>você</strong>.</p>
 
-Aprendizado:
-Equilibrar poder com empatia.`,
+<p><strong>Aspectos negativos:</strong> <strong>você</strong> pode apresentar impulsividade, autoritarismo ou dificuldade em aceitar opiniões alheias.</p>
 
-    9:`Influência 9 — Aparência de Humanitarismo, Carisma e Idealismo
+<p><strong>Aprendizado:</strong> O sucesso de <strong>você</strong> depende do equilíbrio entre liderança e cooperação. Ao desenvolver empatia, a força de <strong>você</strong> se transforma em realização verdadeira.</p>`,
 
-Você transmite generosidade, sensibilidade e visão ampla da vida. As pessoas o percebem como alguém carismático, inspirador e preocupado com o bem coletivo.
+2: `<p><strong>Personalidade 2 — Sensibilidade, Cooperação e Diplomacia</strong></p>
 
-Sua influência cria a impressão de alguém humanitário, compreensivo e capaz de enxergar além das diferenças.
+<p><strong>você</strong> possui uma personalidade sensível, receptiva e profundamente voltada para o relacionamento humano. A natureza de <strong>você</strong> é cooperativa, paciente e conciliadora, com grande habilidade para lidar com pessoas.</p>
 
-Aspectos positivos:
-Empatia, inspiração, generosidade.
+<p><strong>você</strong> demonstra tato, delicadeza e uma percepção refinada das situações. <strong>você</strong> possui a capacidade de perceber nuances emocionais e “ler nas entrelinhas”. Essa habilidade faz de <strong>você</strong> uma pessoa mediadora natural e excelente negociadora.</p>
 
-Aspectos negativos:
-Idealismo excessivo, distanciamento emocional.
+<p>A personalidade de <strong>você</strong> se desenvolve melhor em ambientes colaborativos. Atuar nos bastidores costuma trazer melhores resultados para <strong>você</strong> do que assumir posições de liderança direta, pois sua sensibilidade é aguçada.</p>
 
-Aprendizado:
-Equilibrar idealismo com praticidade.`
+<p><strong>Aspectos positivos:</strong> Empatia, diplomacia, cooperação e sensibilidade emocional em <strong>você</strong>.</p>
 
-  },
+<p><strong>Aspectos negativos:</strong> <strong>você</strong> pode demonstrar indecisão, insegurança ou certa dependência emocional em alguns momentos.</p>
 
- personalidade: {
-    1:`Personalidade 1 — Ambição, Independência e Determinação
+<p><strong>Aprendizado:</strong> Ao desenvolver autoconfiança e firmeza, <strong>você</strong> permitirá que sua sensibilidade se transforme em uma grande força de influência social.</p>`,
 
-Você possui uma personalidade forte, independente e extremamente determinada. Sua natureza é individualista e orientada para conquistas. Existe em você um impulso constante de liderança, autonomia e realização pessoal.
+3: `<p><strong>Personalidade 3 — Expressividade, Otimismo e Inspiração</strong></p>
 
-Você é naturalmente autossuficiente, confiante e cheio de energia. Sente necessidade de liberdade para agir de acordo com suas próprias ideias e convicções. Quando pode tomar decisões por conta própria, tende a expressar o melhor de si e alcançar resultados expressivos.
+<p><strong>você</strong> possui uma personalidade expansiva, comunicativa e inspiradora. A energia de <strong>você</strong> é criativa, entusiasmada e naturalmente voltada para a expressão de ideias e sentimentos.</p>
 
-Sua ambição é intensa e sua coragem o impulsiona a enfrentar desafios sem medo das consequências. Você não teme correr riscos e demonstra disposição para explorar caminhos pouco convencionais quando acredita em seus objetivos.
+<p><strong>você</strong> se comunica com facilidade e possui um talento único para inspirar e motivar as pessoas ao redor. <strong>você</strong> age com espontaneidade e entusiasmo, especialmente quando acredita verdadeiramente no que está fazendo.</p>
 
-Possui grande capacidade de influenciar pessoas e formar opiniões. Sua presença costuma ser marcante, inspirando admiração em alguns e resistência em outros. Sua forte personalidade pode gerar tanto respeito quanto oposição.
+<p>Entretanto, <strong>você</strong> pode dispersar energia em muitos interesses ao mesmo tempo. O maior desafio para <strong>você</strong> é manter a disciplina necessária para concluir os projetos iniciados.</p>
 
-Entretanto, o lado desafiador dessa personalidade pode levá-lo ao egocentrismo, à impaciência e à tendência de dominar situações e pessoas. Seu desejo de decidir e controlar pode gerar conflitos e criar obstáculos em sua trajetória.
+<p><strong>Aspectos positivos:</strong> Criatividade, comunicação fluida, entusiasmo e poder de inspiração em <strong>você</strong>.</p>
 
-Aspectos positivos:
-Independência, coragem, liderança, iniciativa e originalidade.
+<p><strong>Aspectos negativos:</strong> <strong>você</strong> pode sofrer com dispersão, falta de disciplina ou tendência à procrastinação.</p>
 
-Aspectos negativos:
-Impulsividade, autoritarismo, egocentrismo e dificuldade em aceitar opiniões.
+<p><strong>Aprendizado:</strong> O crescimento de <strong>você</strong> acontece quando <strong>você</strong> desenvolve foco e constância em suas atividades diárias.</p>`,
 
-Aprendizado e equilíbrio:
-Seu sucesso depende diretamente do equilíbrio entre liderança e cooperação. Desenvolver empatia, escuta e flexibilidade permitirá que sua força se transforme em realização verdadeira.`,
+4: `<p><strong>Personalidade 4 — Disciplina, Estrutura e Pragmatismo</strong></p>
 
-    2:`Personalidade 2 — Sensibilidade, Cooperação e Diplomacia
+<p><strong>você</strong> possui uma personalidade fundamentada na estabilidade, na organização e no senso de responsabilidade. A forma de <strong>você</strong> agir é prática, cautelosa e orientada para resultados concretos.</p>
 
-Você possui uma personalidade sensível, receptiva e profundamente voltada para o relacionamento humano. Sua natureza é cooperativa, paciente e conciliadora, com grande habilidade para lidar com pessoas e compreender emoções.
+<p>Existe em <strong>você</strong> uma necessidade profunda de segurança e construção de bases sólidas. <strong>você</strong> tende a encarar a vida com seriedade. As pessoas percebem <strong>você</strong> como alguém confiável, persistente e que cumpre o que promete.</p>
 
-Você demonstra tato, delicadeza e percepção refinada das situações. Possui a capacidade de perceber nuances emocionais e “ler nas entrelinhas”, compreendendo necessidades e interesses alheios com facilidade. Essa habilidade faz de você um mediador natural e excelente negociador.
+<p>A personalidade de <strong>você</strong> valoriza o esforço e a constância. <strong>você</strong> não teme o trabalho árduo e entende que conquistas duradouras exigem paciência. <strong>você</strong> possui grande capacidade de concentração.</p>
 
-Sua personalidade se desenvolve melhor em ambientes colaborativos. Trabalhar em parceria ou atuar nos bastidores costuma trazer melhores resultados do que assumir posições de liderança direta, pois sua sensibilidade o torna altamente influenciável pelo ambiente emocional.
+<p><strong>Aspectos positivos:</strong> Disciplina, persistência, organização e forte ética de trabalho em <strong>você</strong>.</p>
 
-Entretanto, essa mesma sensibilidade pode gerar insegurança e indecisão. Você tende a evitar conflitos e pode adiar decisões importantes por medo de desagradar ou causar desequilíbrio.
+<p><strong>Aspectos negativos:</strong> <strong>você</strong> pode aparentar rigidez, teimosia ou excesso de preocupação com detalhes.</p>
 
-Aspectos positivos:
-Empatia, diplomacia, cooperação, sensibilidade e capacidade de mediação.
+<p><strong>Aprendizado:</strong> O crescimento de <strong>você</strong> acontece quando <strong>você</strong> aprende a confiar mais na flexibilidade e na criatividade, sem abandonar sua estrutura.</p>`,
 
-Aspectos negativos:
-Indecisão, insegurança, dependência emocional e dificuldade em se posicionar.
+5: `<p><strong>Personalidade 5 — Liberdade, Movimento e Versatilidade</strong></p>
 
-Aprendizado e equilíbrio:
-Desenvolver autoconfiança e firmeza permitirá que sua sensibilidade se transforme em grande força de influência.`,
+<p><strong>você</strong> possui uma personalidade marcada pelo dinamismo, pela curiosidade e pela necessidade constante de movimento. A forma de <strong>você</strong> agir é espontânea e aberta às experiências da vida.</p>
 
-    3:`Personalidade 3 — Expressividade, Otimismo e Inspiração
+<p>Existe em <strong>você</strong> uma forte necessidade de liberdade e variedade. <strong>você</strong> se sente motivado quando a vida oferece mudanças e novos desafios. A rotina excessiva costuma gerar em <strong>você</strong> uma sensação de aprisionamento.</p>
 
-Você possui uma personalidade expansiva, comunicativa e inspiradora. Sua energia é criativa, entusiasmada e naturalmente voltada para a expressão de ideias e sentimentos.
+<p>As pessoas percebem <strong>você</strong> como alguém carismático e cheio de energia. <strong>você</strong> tem facilidade para adaptar-se a diferentes contextos sociais e aprender coisas novas com extrema rapidez.</p>
 
-Você se comunica com facilidade e possui talento para inspirar e motivar pessoas. Age com espontaneidade e entusiasmo, especialmente quando acredita no que faz.
+<p><strong>Aspectos positivos:</strong> Versatilidade, adaptabilidade, carisma e espírito aventureiro em <strong>você</strong>.</p>
 
-Entretanto, pode dispersar energia em muitos interesses ao mesmo tempo, faltando disciplina para concluir projetos.
+<p><strong>Aspectos negativos:</strong> <strong>você</strong> pode apresentar impulsividade, instabilidade ou dificuldade em lidar com rotinas necessárias.</p>
 
-Aspectos positivos:
-Criatividade, comunicação, entusiasmo e inspiração.
+<p><strong>Aprendizado:</strong> O crescimento de <strong>você</strong> acontece quando <strong>você</strong> aprende a equilibrar sua liberdade com a disciplina necessária para alcançar grandes metas.</p>`,
 
-Aspectos negativos:
-Dispersão, falta de disciplina e tendência à procrastinação.
+6: `<p><strong>Personalidade 6 — Responsabilidade, Amor e Compromisso</strong></p>
 
-Aprendizado:
-Desenvolver foco e constância.`,
+<p><strong>você</strong> possui uma personalidade marcada pelo senso de responsabilidade, cuidado e dedicação ao próximo. A atitude natural de <strong>você</strong> diante da vida é proteger e contribuir para a harmonia.</p>
 
-4:`Personalidade 4 — Disciplina, Estrutura e Pragmatismo
+<p>Existe em <strong>você</strong> uma forte necessidade de criar vínculos e cuidar das relações. <strong>você</strong> age guiado pelo coração e pela empatia. As pessoas percebem <strong>você</strong> como alguém generoso e disposto a assumir responsabilidades.</p>
 
-Você possui uma personalidade fundamentada na estabilidade, na organização e no senso de responsabilidade. Sua forma de agir é prática, cautelosa e orientada para resultados concretos. Existe em você uma necessidade profunda de segurança, previsibilidade e construção de bases sólidas para o futuro.
+<p>A presença de <strong>você</strong> transmite segurança emocional e acolhimento. <strong>você</strong> possui um profundo senso de dever e frequentemente sente que precisa manter a paz em todos os relacionamentos.</p>
 
-Você tende a encarar a vida com seriedade e comprometimento. Suas atitudes são guiadas pela lógica, pelo planejamento e pelo desejo de fazer tudo da maneira correta. As pessoas o percebem como alguém confiável, persistente e digno de confiança, alguém que cumpre promessas e leva compromissos até o fim.
+<p><strong>Aspectos positivos:</strong> Amor, empatia, responsabilidade e grande capacidade de acolhimento em <strong>você</strong>.</p>
 
-Sua personalidade valoriza esforço, disciplina e constância. Você não teme o trabalho árduo e entende que conquistas duradouras exigem dedicação e paciência. Possui grande capacidade de concentração e perseverança, características que o tornam capaz de construir projetos de longo prazo com solidez.
+<p><strong>Aspectos negativos:</strong> <strong>você</strong> pode demonstrar controle excessivo ou tendência ao sacrifício exagerado pelos outros.</p>
 
-Você prefere seguir métodos seguros e comprovados. Mudanças repentinas ou situações imprevisíveis podem gerar desconforto, pois sua natureza busca estabilidade e controle. Sua prudência o protege de riscos desnecessários, mas também pode limitar oportunidades quando o medo do erro se torna excessivo.
+<p><strong>Aprendizado:</strong> O crescimento de <strong>você</strong> ocorre quando <strong>você</strong> aprende a cuidar de si com a mesma dedicação que oferece às outras pessoas.</p>`,
 
-Sua integridade é um dos seus maiores valores. Honestidade, justiça e responsabilidade são princípios que orientam sua conduta. As pessoas tendem a enxergá-lo como alguém correto, confiável e consistente em suas atitudes.
+7: `<p><strong>Personalidade 7 — Conhecimento, Profundidade e Interiorização</strong></p>
 
-Entretanto, o excesso de cautela pode levar à rigidez. Você pode se tornar resistente a novas ideias, conservador em excesso ou crítico demais consigo mesmo e com os outros. Sua necessidade de controle pode transformar desafios em fontes de ansiedade e frustração.
+<p><strong>você</strong> possui uma personalidade profundamente analítica, introspectiva e orientada pela busca da verdade. A forma de <strong>você</strong> agir é guiada pela necessidade de compreender a vida além das aparências.</p>
 
-Aspectos positivos:
-Disciplina, persistência, organização, responsabilidade, confiabilidade e forte ética de trabalho.
+<p>Existe em <strong>você</strong> uma inclinação natural para a reflexão e observação. Antes de agir, <strong>você</strong> prefere analisar e questionar. Sua mente investigativa busca sabedoria e entendimento genuíno.</p>
 
-Aspectos negativos:
-Rigidez, teimosia, conservadorismo, excesso de preocupação e dificuldade em lidar com mudanças.
+<p>As pessoas percebem <strong>você</strong> como alguém reservado e intelectualmente profundo. <strong>você</strong> valoriza sua privacidade e necessita de momentos de silêncio para reorganizar seus pensamentos.</p>
 
-Aprendizado e equilíbrio:
-Seu crescimento acontece quando aprende a confiar mais na flexibilidade e na criatividade. Ao permitir-se experimentar novas possibilidades, sua disciplina se transforma em uma poderosa ferramenta de realização e evolução pessoal.`,
+<p><strong>Aspectos positivos:</strong> Sabedoria, introspecção, capacidade analítica e profundo discernimento em <strong>você</strong>.</p>
 
+<p><strong>Aspectos negativos:</strong> <strong>você</strong> pode demonstrar isolamento, excesso de crítica ou dificuldade em confiar plenamente.</p>
 
-5:`Personalidade 5 — Liberdade, Movimento e Versatilidade
+<p><strong>Aprendizado:</strong> O crescimento de <strong>você</strong> ocorre quando <strong>você</strong> aprende a compartilhar sua sabedoria com o mundo, equilibrando razão e emoção.</p>`,
 
-Você possui uma personalidade marcada pelo dinamismo, pela curiosidade e pela necessidade constante de movimento. Sua forma de agir é espontânea, adaptável e aberta às experiências da vida. Existe em você uma forte necessidade de liberdade, variedade e expansão de horizontes.
+8: `<p><strong>Personalidade 8 — Poder, Realização e Liderança Material</strong></p>
 
-Você se sente motivado quando a vida oferece mudanças, desafios e novas possibilidades. Rotina excessiva, repetição e ambientes restritivos podem gerar inquietação e sensação de aprisionamento. Sua natureza busca novidade, aventura e aprendizado através da experiência direta.
+<p><strong>você</strong> possui uma personalidade forte, determinada e orientada para conquistas concretas. A forma de <strong>você</strong> agir é marcada pela ambição saudável e pela busca de resultados tangíveis.</p>
 
-As pessoas o percebem como alguém carismático, comunicativo e cheio de energia. Sua presença costuma trazer entusiasmo, leveza e movimento aos ambientes. Você tem facilidade para interagir com diferentes tipos de pessoas e adaptar-se a diferentes contextos sociais.
+<p>Existe em <strong>você</strong> uma poderosa necessidade de realização e crescimento. <strong>você</strong> entende a vida como um campo de desafios a serem superados com estratégia e perseverança. Sua postura transmite autoridade.</p>
 
-Sua personalidade é extremamente versátil. Você aprende rápido, se ajusta com facilidade e costuma encontrar soluções criativas para situações inesperadas. Mudanças não o intimidam; pelo contrário, costumam estimular sua motivação e sua criatividade.
+<p>As pessoas tendem a enxergar <strong>você</strong> como alguém competente e capaz de assumir grandes responsabilidades. A liderança de <strong>você</strong> surge naturalmente da sua capacidade de tomar decisões firmes.</p>
 
-Você possui forte ligação com os sentidos e com a experiência prática da vida. Gosta de explorar, experimentar e viver intensamente o presente. Essa característica o torna uma pessoa vibrante, curiosa e aberta ao mundo.
+<p><strong>Aspectos positivos:</strong> Liderança, disciplina, senso estratégico e grande capacidade de realização em <strong>você</strong>.</p>
 
-No entanto, o excesso de liberdade pode gerar dispersão. Existe tendência a iniciar muitos projetos e ter dificuldade em concluí-los. A impaciência pode levá-lo a buscar resultados rápidos ou abandonar tarefas quando perdem o estímulo inicial.
+<p><strong>Aspectos negativos:</strong> <strong>você</strong> pode aparentar autoritarismo, rigidez ou foco excessivo apenas no lado material.</p>
 
-A disciplina pode parecer limitadora, mas é justamente ela que transforma seu potencial em conquistas concretas. Sem direção, sua energia pode se dissipar em múltiplos interesses sem resultados duradouros.
+<p><strong>Aprendizado:</strong> O sucesso de <strong>você</strong> acontece quando <strong>você</strong> aprende a equilibrar o poder com a sensibilidade e a realização emocional.</p>`,
 
-Aspectos positivos:
-Versatilidade, adaptabilidade, comunicação, carisma, criatividade e espírito aventureiro.
+9: `<p><strong>Personalidade 9 — Humanitarismo, Idealismo e Consciência Universal</strong></p>
 
-Aspectos negativos:
-Impulsividade, dispersão, instabilidade, dificuldade com rotina e tendência a evitar responsabilidades.
+<p><strong>você</strong> possui uma personalidade marcada pela compaixão e por um profundo senso de justiça. A maneira de <strong>você</strong> agir demonstra forte preocupação com o bem-estar coletivo.</p>
 
-Aprendizado e equilíbrio:
-Seu crescimento acontece quando aprende a equilibrar liberdade com disciplina. Ao canalizar sua energia e manter foco, você transforma sua versatilidade em realização e expansão verdadeira.`,
+<p>Existe em <strong>você</strong> uma tendência natural a enxergar a vida sob uma perspectiva ampla. Os valores de <strong>você</strong> vão além do interesse pessoal. Sua presença transmite generosidade e abertura emocional.</p>
 
+<p>Muitas pessoas percebem em <strong>você</strong> alguém capaz de acolher sem julgamentos. <strong>você</strong> possui uma forte inclinação para causas humanitárias e sente que tem uma missão a cumprir no mundo.</p>
 
-6:`Personalidade 6 — Responsabilidade, Amor e Compromisso
+<p><strong>Aspectos positivos:</strong> Empatia, altruísmo, generosidade e capacidade de inspirar multidões em <strong>você</strong>.</p>
 
-Você possui uma personalidade marcada pelo senso de responsabilidade, cuidado e dedicação ao bem-estar das pessoas ao seu redor. Sua atitude natural diante da vida é proteger, acolher e contribuir para a harmonia dos ambientes em que vive.
+<p><strong>Aspectos negativos:</strong> <strong>você</strong> pode sofrer com idealismo excessivo, frustração emocional ou sensibilidade intensa demais.</p>
 
-Existe em você uma forte necessidade de criar vínculos, cuidar das relações e construir ambientes seguros e equilibrados. Sua forma de agir costuma ser guiada pelo coração, pela empatia e pelo desejo de ajudar.
+<p><strong>Aprendizado:</strong> O crescimento de <strong>você</strong> acontece quando <strong>você</strong> aprende a ajudar sem se anular, equilibrando o seu idealismo com a realidade prática.</p>`
+},
 
-As pessoas o percebem como alguém confiável, generoso e disposto a assumir responsabilidades. Sua presença transmite segurança emocional, acolhimento e estabilidade, o que faz com que muitos procurem seu apoio e orientação.
+CaminhodeVida: {
+1: `<p><strong>Caminho de Vida 1 — Ser autossuficiente e independente</strong></p>
 
-Você possui um profundo senso de dever. Frequentemente sente que precisa cuidar das pessoas, resolver conflitos e manter a harmonia nos relacionamentos. Essa característica faz de você um conselheiro natural.
+<p>O número um indica que <strong>você</strong> possui uma energia vibracional muito forte. Este é o caminho da coragem, da determinação e da honestidade. No destino de <strong>você</strong>, existe a marca de quem está frequentemente à frente do seu tempo.</p>
 
-Existe também uma forte ligação com valores familiares, afetivos e comunitários. A necessidade de sentir que é útil e importante para os outros é um dos motores de sua personalidade.
+<p><strong>você</strong> tende a seguir o próprio caminho, agindo como uma pessoa liderada pela voz interior. <strong>você</strong> demonstra total determinação e persistência em seguir as suas ideias inovadoras. Pode-se dizer que <strong>você</strong> é alguém privilegiado desde o nascimento pela sorte que acompanha seus passos.</p>
 
-Sua criatividade pode se manifestar em diversas áreas, especialmente naquelas que envolvem estética, arte, cuidado ou organização de ambientes. Você busca beleza, conforto e equilíbrio.
+<p><strong>você</strong> não tolera injustiça. Enquanto outros ficam estáticos, <strong>você</strong> será a primeira pessoa a levantar-se para tentar mudar as coisas. O grande talento de <strong>você</strong> é a predisposição para a liderança. A paixão e o entusiasmo de <strong>você</strong> são altamente contagiosos.</p>
 
-Entretanto, o excesso de responsabilidade pode transformar cuidado em sobrecarga. Há tendência a assumir problemas que não são seus ou a se sacrificar além do necessário.
+<p><strong>você</strong> ama os seus amigos e demonstra ser uma pessoa generosa. No entanto, <strong>você</strong> precisa aprender com os fracassos para fortalecer a própria confiança. O lado sombrio de <strong>você</strong> pode surgir como teimosia ou egoísmo quando está em desarmonia.</p>
 
-Quando desequilibrado, pode tornar-se controlador, possessivo ou excessivamente crítico, tentando impor sua visão de cuidado e proteção aos outros.
+<p><strong>Trabalho e Realização:</strong> No campo profissional, <strong>você</strong> é um líder nato. Para alcançar a plenitude, <strong>você</strong> deve permanecer fiel a si mesmo e ouvir sempre a própria intuição.</p>`,
 
-Aspectos positivos:
-Amor, empatia, responsabilidade, generosidade, senso de justiça e capacidade de acolhimento.
+2: `<p><strong>Caminho de Vida 2 — Ser cooperativo e discreto</strong></p>
 
-Aspectos negativos:
-Controle excessivo, ciúme, interferência na vida alheia, auto-sacrifício exagerado e dificuldade em estabelecer limites.
+<p>Se tivéssemos de descrever o caminho de <strong>você</strong> numa palavra, seria cooperação. <strong>você</strong> possui a alma de um diplomata natural, sendo uma pessoa conciliadora e pacificadora por excelência. <strong>você</strong> sempre pensa antes de agir.</p>
 
-Aprendizado e equilíbrio:
-Seu crescimento ocorre quando aprende a cuidar sem se sobrecarregar. Ao equilibrar amor próprio e cuidado com os outros, sua personalidade se torna uma poderosa fonte de harmonia e equilíbrio.`,
+<p><strong>você</strong> prefere trabalhar nos bastidores e muitas vezes evita os holofotes. <strong>você</strong> sente-se mais confortável apoiando causas e pessoas do que liderando de forma agressiva. <strong>você</strong> é o mecanismo oculto que mantém a máquina funcionando em harmonia.</p>
 
+<p>A capacidade de adaptação de <strong>você</strong> é imensa. <strong>você</strong> consegue compreender profundamente o próximo, mas deve ter cuidado para não perder a própria identidade no processo. A família e as parcerias são pilares fundamentais para <strong>você</strong>.</p>
 
-    7:`Personalidade 7 — Conhecimento, Profundidade e Interiorização
+<p><strong>Trabalho e Amor:</strong> <strong>você</strong> é um excelente mediador. No amor, <strong>você</strong> demonstra ser uma pessoa romântica e dedicada, que busca estabilidade acima de tudo.</p>
 
-Você possui uma personalidade profundamente analítica, introspectiva e orientada pela busca da verdade. Sua forma de agir é guiada pela necessidade de compreender a vida em níveis mais profundos, indo além das aparências e do superficial.
+<p><strong>Realização:</strong> O segredo do sucesso para <strong>você</strong> é desenvolver a independência e aprender a confiar plenamente em suas próprias capacidades.</p>`,
 
-Existe em você uma inclinação natural para a reflexão, o estudo e a observação. Antes de agir, prefere analisar, questionar e compreender todos os aspectos possíveis de uma situação.
+3: `<p><strong>Caminho de Vida 3 — Ser comprometido e compenetrado</strong></p>
 
-Sua mente é investigativa, curiosa e seletiva. Você busca conhecimento, sabedoria e entendimento genuíno, e raramente aceita explicações superficiais.
+<p>O caminho de <strong>você</strong> é o da criatividade, da expressão e da alegria de viver. <strong>você</strong> possui uma imaginação fértil e uma energia que naturalmente contagia todos ao redor. <strong>você</strong> é uma pessoa comunicativa e espontânea.</p>
 
-As pessoas o percebem como alguém reservado, sério e intelectualmente profundo. Sua postura transmite discrição, autocontrole e independência emocional.
+<p><strong>você</strong> tem uma grande capacidade de inspirar outras pessoas. A leveza e o bom humor de <strong>você</strong> ajudam a ultrapassar os momentos mais difíceis da vida. <strong>você</strong> é uma pessoa ambiciosa e deseja deixar uma marca positiva no mundo.</p>
 
-Você valoriza sua privacidade e necessita de momentos de silêncio e solitude para reorganizar seus pensamentos e emoções. O excesso de estímulos pode gerar desgaste e ansiedade.
+<p>No entanto, <strong>você</strong> pode sofrer com a dispersão ou a falta de disciplina. Às vezes, <strong>você</strong> sente dificuldade em concluir o que começou devido ao excesso de novos interesses que surgem no caminho.</p>
 
-Existe uma forte necessidade de compreender o sentido da vida, o funcionamento das pessoas e os mistérios da existência. Filosofia, espiritualidade, ciência ou psicologia costumam exercer forte atração sobre você.
+<p><strong>Trabalho e Saúde:</strong> <strong>você</strong> se destaca em áreas de comunicação e artes. <strong>você</strong> deve cuidar do seu sistema nervoso, evitando o desgaste emocional excessivo.</p>
 
-Sua prudência faz com que evite decisões impulsivas. Prefere amadurecer ideias antes de agir, buscando segurança e clareza.
+<p><strong>Realização:</strong> <strong>você</strong> alcançará o sucesso quando aprender a ter mais foco e confiar no poder transformador da sua própria criatividade.</p>`,
 
-Entretanto, o excesso de análise pode gerar procrastinação e dificuldade de ação. Às vezes pensa demais e age de menos.
+4: `<p><strong>Caminho de Vida 4 — Ser prático e organizado</strong></p>
 
-Quando desequilibrado, pode tornar-se distante, crítico, cético ou emocionalmente fechado, dificultando vínculos afetivos.
+<p>O caminho de <strong>você</strong> representa estrutura, disciplina e construção. <strong>você</strong> é o pilar da sociedade, alguém ligado ao trabalho duro e à estabilidade. <strong>você</strong> é uma pessoa confiável, persistente e extremamente metódica.</p>
 
-Aspectos positivos:
-Sabedoria, introspecção, capacidade analítica, prudência, profundidade intelectual e discernimento.
+<p><strong>você</strong> planeja, organiza e cumpre as suas obrigações até o fim. <strong>você</strong> valoriza as rotinas e a segurança. A autodisciplina é, sem dúvida, uma das maiores forças de <strong>você</strong>.</p>
 
-Aspectos negativos:
-Isolamento, excesso de crítica, pessimismo, dificuldade de confiar e tendência ao distanciamento emocional.
+<p>A vida de <strong>você</strong> exige esforço constante. Embora os resultados não venham de forma fácil, quando <strong>você</strong> persevera, é recompensado com uma segurança inabalável. Em desequilíbrio, <strong>você</strong> pode tornar-se uma pessoa rígida ou teimosa.</p>
 
-Aprendizado e equilíbrio:
-Seu crescimento ocorre quando aprende a equilibrar razão e emoção, pensamento e ação. Ao compartilhar sua sabedoria com o mundo, sua personalidade se torna fonte de conhecimento e orientação.`,
+<p><strong>Amor e Trabalho:</strong> No amor, <strong>você</strong> é fiel e leal. No trabalho, <strong>você</strong> destaca-se como excelente organizador, gestor ou profissional técnico de alta competência.</p>
 
-    8:`Personalidade 8 — Poder, Realização e Liderança Material
+<p><strong>Realização:</strong> O aprendizado de <strong>você</strong> é equilibrar o dever com o prazer, permitindo-se viver com um pouco mais de leveza e flexibilidade.</p>`,
 
-Você possui uma personalidade forte, determinada e orientada para conquistas concretas. Sua forma de agir é marcada pela ambição, pela organização e pela busca de resultados tangíveis.
+5: `<p><strong>Caminho de Vida 5 — Ser livre e experimentar a vida</strong></p>
 
-Existe em você uma poderosa necessidade de realização, reconhecimento e crescimento material. Você entende a vida como um campo de desafios a serem superados por meio de estratégia, disciplina e perseverança.
+<p>O caminho de <strong>você</strong> simboliza liberdade, movimento e expansão. <strong>você</strong> possui uma energia inquieta que impulsiona <strong>você</strong> a buscar constantemente por novidades, mudanças e desafios em todas as áreas.</p>
 
-Sua postura transmite autoridade, firmeza e segurança. As pessoas tendem a enxergar você como alguém confiável, competente e capaz de assumir responsabilidades importantes.
+<p>Para <strong>você</strong>, a rotina pode ser muito limitante. <strong>você</strong> precisa de estímulos constantes para se sentir uma pessoa viva e motivada. <strong>você</strong> é carismático e possui uma facilidade incrível para se adaptar a novos ambientes.</p>
 
-Você possui visão prática e estratégica, sendo naturalmente inclinado a planejar, organizar e estruturar projetos e objetivos de longo prazo.
+<p>A mente de <strong>você</strong> é aberta e criativa, permitindo enxergar soluções onde outros veem apenas problemas. No lado negativo, <strong>você</strong> pode apresentar impulsividade ou dificuldade em manter compromissos de longuíssimo prazo.</p>
 
-A liderança surge como consequência natural da sua capacidade de tomar decisões, assumir riscos e conduzir situações com firmeza.
+<p><strong>Trabalho e Amor:</strong> <strong>você</strong> prospera em áreas que envolvem viagens, marketing e inovação. No amor, <strong>você</strong> é uma pessoa intensa, mas que precisa de espaço e independência.</p>
 
-Existe grande facilidade para lidar com recursos materiais, administração, negócios e ambientes competitivos.
+<p><strong>Realização:</strong> O principal aprendizado de <strong>você</strong> é transformar a sua busca por liberdade em responsabilidade e a sua experiência em sabedoria real.</p>`,
 
-Você costuma enxergar a vida sob uma perspectiva ampla e realista, buscando sempre crescimento, progresso e estabilidade.
+6: `<p><strong>Caminho de Vida 6 — Ser proficiente e solidário</strong></p>
 
-Entretanto, o foco excessivo em resultados pode levar ao distanciamento emocional e à dificuldade de demonstrar vulnerabilidade.
+<p>O caminho de <strong>você</strong> representa amor, cuidado e compromisso. <strong>você</strong> possui um forte senso de dever e proteção, especialmente com a família. O lar e a harmonia emocional são os pilares da vida de <strong>você</strong>.</p>
 
-Quando desequilibrado, pode tornar-se autoritário, controlador, rígido ou excessivamente materialista, valorizando apenas conquistas externas.
+<p><strong>você</strong> é uma pessoa naturalmente generosa e empática. <strong>você</strong> possui uma grande capacidade de aconselhamento, tornando-se o porto seguro de muitos. <strong>você</strong> busca sempre por ambientes organizados e belos.</p>
 
-Aspectos positivos:
-Liderança, disciplina, ambição saudável, capacidade de realização, senso estratégico e responsabilidade.
+<p>Muitas vezes, <strong>você</strong> assume responsabilidades que não são suas por puro desejo de ajudar. No lado negativo, <strong>você</strong> pode tornar-se uma pessoa controladora ou acabar sacrificando as próprias necessidades em prol dos outros.</p>
 
-Aspectos negativos:
-Autoritarismo, rigidez, excesso de controle, materialismo e dificuldade de lidar com emoções.
+<p><strong>Trabalho e Saúde:</strong> <strong>você</strong> brilha na educação, saúde ou artes. <strong>você</strong> deve cuidar do equilíbrio emocional para não sobrecarregar o seu coração.</p>
 
-Aprendizado e equilíbrio:
-Seu crescimento acontece quando aprende a equilibrar poder e sensibilidade, sucesso material e realização emocional. Ao integrar força e humanidade, sua personalidade se torna uma poderosa força de construção e transformação.`,
+<p><strong>Realização:</strong> O grande segredo para <strong>você</strong> é aprender a cuidar de si mesmo com o mesmo carinho e dedicação que oferece ao mundo.</p>`,
 
-    9:`Personalidade 9 — Humanitarismo, Idealismo e Consciência Universal
+7: `<p><strong>Caminho de Vida 7 — Ser tolerante e desenvolver sabedoria interior</strong></p>
 
-Você possui uma personalidade marcada pela sensibilidade, pela compaixão e por um profundo senso de justiça. Sua maneira de agir demonstra forte preocupação com o coletivo e com o bem-estar das pessoas ao seu redor.
+<p>O caminho de <strong>você</strong> simboliza o conhecimento profundo e a busca pela verdade. <strong>você</strong> possui uma mente investigativa e analítica. <strong>você</strong> sente a necessidade de compreender os mistérios da existência.</p>
 
-Existe em você uma tendência natural a enxergar a vida sob uma perspectiva ampla e universal. Seus valores vão além do interesse pessoal, buscando significado, propósito e contribuição para algo maior.
+<p><strong>você</strong> é uma pessoa introspectiva e reservada, que valoriza a solitude para estudar e refletir. A intuição de <strong>você</strong> é uma força poderosa, mesmo que às vezes <strong>você</strong> tente ignorá-la em favor da pura lógica.</p>
 
-Sua presença transmite generosidade, compreensão e abertura emocional. Muitas pessoas percebem em você alguém capaz de ouvir, acolher e compreender sem julgamentos.
+<p>Muitas vezes, <strong>você</strong> sente que observa o mundo de fora, como se fosse diferente dos demais. No aspecto negativo, <strong>você</strong> pode desenvolver um certo isolamento ou excesso de criticismo com as pessoas ao redor.</p>
 
-Você possui forte inclinação para causas sociais, humanitárias ou espirituais. Existe uma necessidade interna de contribuir para a melhoria do mundo e das relações humanas.
+<p><strong>Trabalho e Amor:</strong> <strong>você</strong> destaca-se em pesquisas e áreas intelectuais. No amor, <strong>você</strong> busca uma conexão mental profunda; o superficial não atrai <strong>você</strong>.</p>
 
-Sua personalidade carrega um senso profundo de missão, como se houvesse sempre algo maior guiando suas ações e escolhas.
+<p><strong>Realização:</strong> O aprendizado de <strong>você</strong> é equilibrar a razão com a espiritualidade, transformando todo o seu conhecimento em sabedoria de vida.</p>`,
 
-Você demonstra grande empatia, sensibilidade e capacidade de se colocar no lugar do outro. Isso torna sua presença reconfortante e inspiradora.
+8: `<p><strong>Caminho de Vida 8 — Ser capaz de manter o equilíbrio pessoal</strong></p>
 
-Ao mesmo tempo, existe uma necessidade de reconhecimento e validação emocional. Você deseja que suas ações sejam compreendidas e valorizadas.
+<p>O caminho de <strong>você</strong> representa poder, autoridade e realização material. <strong>você</strong> possui uma grande ambição e visão estratégica. <strong>você</strong> nasceu para conquistar resultados e construir estabilidade financeira.</p>
 
-Quando equilibrado, torna-se uma personalidade inspiradora, generosa e capaz de influenciar positivamente muitas pessoas.
+<p><strong>você</strong> tem um forte senso de liderança e sente a necessidade de construir algo duradouro. A energia de <strong>você</strong> busca o equilíbrio constante entre o mundo material e o espiritual.</p>
 
-Porém, quando desequilibrado, pode tornar-se idealista em excesso, ingênuo, emocionalmente sobrecarregado ou frustrado com a realidade.
+<p><strong>você</strong> manifesta uma determinação admirável para superar obstáculos. No entanto, no aspecto negativo, <strong>você</strong> pode tornar-se uma pessoa excessivamente materialista ou autoritária se não vigiar suas atitudes.</p>
 
-Pode sentir que dá mais do que recebe, o que gera decepções e desânimo.
+<p><strong>Trabalho e Amor:</strong> <strong>você</strong> é excelente em negócios e política. <strong>você</strong> precisa aprender a não deixar o trabalho sufocar a sua vida afetiva.</p>
 
-Aspectos positivos:
-Empatia, altruísmo, compaixão, generosidade, visão humanitária e capacidade de inspirar.
+<p><strong>Realização:</strong> O aprendizado principal de <strong>você</strong> é usar o poder e os recursos conquistados com ética, sabedoria e generosidade.</p>`,
 
-Aspectos negativos:
-Idealismo excessivo, frustração emocional, tendência ao sacrifício exagerado, necessidade de reconhecimento e sensibilidade intensa.
+9: `<p><strong>Caminho de Vida 9 — Ser sensato, compassivo e humanitário</strong></p>
 
-Aprendizado e equilíbrio:
-Seu crescimento acontece quando aprende a ajudar sem se anular, a servir sem se sacrificar excessivamente e a equilibrar idealismo com realidade. Ao fazer isso, sua personalidade se torna uma poderosa força de transformação e inspiração coletiva.`
+<p>O caminho de <strong>você</strong> simboliza a compaixão universal e a conclusão de ciclos. <strong>você</strong> possui um forte senso humanitário e um desejo genuíno de contribuir para o bem de todos. <strong>você</strong> é uma pessoa empática e generosa.</p>
 
-  },
+<p><strong>você</strong> possui uma visão muito ampla da vida. <strong>você</strong> sente a necessidade de orientar e inspirar os outros. A energia de <strong>você</strong> está ligada ao desapego e à transformação constante.</p>
 
-  CaminhodeVida: {
-    1:`Ser autossuficiente e independente
-Caminho de Vida 1
+<p>No aspecto positivo, <strong>você</strong> manifesta uma espiritualidade elevada. No negativo, <strong>você</strong> pode sentir melancolia ou uma frustração excessiva com as imperfeições do mundo real.</p>
 
-O número um indica alguém com energia forte. Este é o caminho da coragem, determinação e honestidade. Uma pessoa número um está frequentemente à frente do seu tempo. A humanidade pode beneficiar muito com esses inovadores e com as suas ideias surpreendentes. Eles seguem o seu caminho sozinhos, indivíduos liderados por sua voz interior. Demonstram total determinação e persistência em seguir as suas ideias. Pode-se dizer que o número um é privilegiado desde o nascimento porque a sorte os segue.
+<p><strong>Trabalho e Saúde:</strong> <strong>você</strong> destaca-se em causas sociais, artes e ensino. <strong>você</strong> deve evitar a sobrecarga mental para manter a sua saúde em dia.</p>
 
-Estas pessoas não toleram injustiça. Enquanto outros ficam estáticos, o número um será o primeiro a levantar-se e tentar mudar as coisas. Não conseguem entender como algumas pessoas ficam felizes por serem meras espectadoras. Aqui reside o seu grande talento: a predisposição para serem líderes. A sua paixão, energia e entusiasmo são altamente contagiosos. São racionais, críticos e diligentes e reconhecem rapidamente o caminho certo.
+<p><strong>Realização:</strong> O destino de <strong>você</strong> é servir ao coletivo. <strong>você</strong> encontrará a paz ao praticar o desapego e viver com compaixão e equilíbrio.</p>`
+},
 
-O número um destaca-se devido à sua elevada energia. São autoritários e influentes. Precisam estar no centro das atenções e almejam reconhecimento constante. Ressentem-se quando outros se intrometem no que estão a fazer e não aceitam críticas facilmente. A sua principal característica é a atitude positiva perante a vida.
+proposito: {
+1: `<p><strong>Propósito de Vida 1 — Conhecer seus limites</strong></p>
 
-O número um ama os seus amigos. São generosos e atenciosos. Fazem amizades com facilidade e raramente terminam relacionamentos.
+<p><strong>você</strong> precisa viver sua vida com originalidade e coragem. O propósito de <strong>você</strong> exige que seja uma pessoa firme, decidida e independente para ter plena autonomia e liberdade de agir, sem ter que depender de outras pessoas para caminhar.</p>
 
-A vida trará fracassos para muitos número um. Precisam experimentar o fracasso para melhorar e trabalhar em si mesmos. Devem ver todos os fracassos como um passo mais perto do sucesso. A pior coisa para um número um seria perder a confiança, pois isso bloquearia as suas capacidades criativas.
+<p>Para que <strong>você</strong> tenha o controle total da própria vida, deve agir com confiança e determinação constante. <strong>você</strong> precisará aprender a dominar o ego e a expor os seus sentimentos com maturidade e clareza para todos ao redor.</p>
 
-Lado sombrio  
-Um número um desarmonioso é egoísta, teimoso e dominador. Pode tornar-se manipulador, impiedoso e competitivo em excesso.
+<p><strong>você</strong> possui grandes qualidades, mas controlar a rigidez e as opiniões enraizadas ajudará <strong>você</strong> a alcançar a felicidade com mais facilidade. O objetivo de <strong>você</strong> deve se basear em ser capaz de se definir como um indivíduo único e autêntico.</p>
 
-Trabalho  
-São diligentes, ambiciosos e líderes naturais. Frequentemente iniciam os seus próprios negócios.
+<p><strong>você</strong> deve agir de forma audaciosa, buscando novas perspectivas sem se deixar abater pelas derrotas. Aprender a conhecer os próprios limites e resolver os problemas sem esperar pelos outros trará a <strong>você</strong> a estabilidade emocional necessária para o sucesso.</p>`,
 
-Amor  
-Querem liderar no amor e precisam de liberdade e reconhecimento.
+2: `<p><strong>Propósito de Vida 2 — Confiar em seu potencial</strong></p>
 
-Saúde  
-Devem cuidar do coração, pressão arterial e evitar stress.
+<p>O propósito de <strong>você</strong> é ser um conciliador nato, mas sem se subestimar ou se deixar influenciar excessivamente pelas pessoas. <strong>você</strong> deve agir por princípios próprios, e não apenas para agradar quem está ao redor.</p>
 
-Realização  
-Devem permanecer fiéis a si mesmos e ouvir a sua voz interior.`,
+<p><strong>você</strong> deve usar sua sensibilidade e gentileza para unir pessoas e criar cooperação. É importante que <strong>você</strong> seja uma pessoa participativa e colaboradora, atuando com sabedoria nos bastidores enquanto permite que outros ocupem os holofotes.</p>
 
-2:`Ser cooperativo e discreto
-Caminho de Vida 2
+<p>Tenha como meta de vida ser alguém equilibrado, paciente e compreensivo. Quando <strong>você</strong> confia em seu potencial e aprende a esperar o momento certo para agir, <strong>você</strong> evita a ansiedade e a insegurança que podem travar o seu caminho.</p>
 
-Se tivéssemos de descrever o número dois numa palavra, seria cooperação. São diplomatas naturais, conciliadores e pacificadores. Pensam antes de agir e procuram harmonia em todas as situações.
+<p><strong>você</strong> deve utilizar a diplomacia para alcançar objetivos com serenidade. O autoconhecimento será a ferramenta fundamental para que <strong>você</strong> fortaleça sua jornada e evite frustrações desnecessárias.</p>`,
 
-Preferem trabalhar nos bastidores e evitam os holofotes. Sentem-se mais confortáveis apoiando do que liderando. São o mecanismo oculto que mantém a máquina a funcionar.
+3: `<p><strong>Propósito de Vida 3 — Ser modesto e criativo</strong></p>
 
-Possuem grande capacidade de adaptação. Conseguem compreender profundamente as pessoas e assumir diferentes papéis para criar harmonia. No entanto, devem ter cuidado para não perder a própria identidade.
+<p><strong>você</strong> deve usar a criatividade e as próprias experiências para tomar decisões importantes. O propósito de <strong>você</strong> é se destacar com autenticidade, explorando a capacidade de comunicação sem se deixar levar pela opinião alheia.</p>
 
-O número dois é altruísta e cheio de amor. A família é extremamente importante. Precisam de um parceiro e prosperam em relações de parceria.
+<p>Existe na natureza de <strong>você</strong> uma inquietação saudável e necessidade de movimento. <strong>você</strong> deve manter-se sempre confiante, evitando que as frustrações apaguem o brilho que <strong>você</strong> carrega naturalmente.</p>
 
-O lado negativo inclui indecisão, dependência emocional e necessidade de aprovação.
+<p>O objetivo de <strong>você</strong> deve ser levar alegria às pessoas por meio da autoexpressão. Ao desenvolver talentos artísticos ou comunicativos, <strong>você</strong> abrirá caminhos valiosos para a própria evolução.</p>
 
-Trabalho  
-Excelentes mediadores, negociadores e comunicadores. Funcionam melhor com orientação.
+<p><strong>você</strong> precisa aprender a se expressar com clareza, evitando dispersar energia com coisas superficiais. Concentrar-se no que é produtivo fará com que <strong>você</strong> alcance realizações significativas.</p>`,
 
-Amor  
-Românticos, sensíveis e dedicados. Procuram harmonia e estabilidade.
+4: `<p><strong>Propósito de Vida 4 — Ser estável e confiável</strong></p>
 
-Saúde  
-Devem cuidar do coração, estômago e sistema emocional.
+<p><strong>você</strong> deve focar em ser uma pessoa organizada, estável e confiável. O propósito de <strong>você</strong> envolve criar bases sólidas para enfrentar a vida com disciplina, precisão e total responsabilidade.</p>
 
-Realização  
-Devem desenvolver independência e confiar em si mesmos.`,
+<p><strong>você</strong> prospera por meio do planejamento e de objetivos muito claros. <strong>você</strong> deve evitar criar expectativas irreais e concentrar-se no desenvolvimento prático e consistente do seu dia a dia.</p>
 
-3:`Ser comprometido e compenetrado
-Caminho de Vida 3
+<p>Os resultados para <strong>você</strong> virão através de esforço e dedicação. <strong>você</strong> deve evitar riscos desnecessários e manter o foco em caminhos estruturados. Aprender a equilibrar essa responsabilidade com momentos de leveza permitirá que <strong>você</strong> aproveite melhor a vida.</p>`,
 
-O número três é o número da criatividade, da expressão e da alegria de viver. Pessoas com esta vibração possuem imaginação fértil, entusiasmo e uma energia naturalmente contagiante. São comunicativas, espontâneas e gostam de partilhar ideias, emoções e experiências.
+5: `<p><strong>Propósito de Vida 5 — Ser adaptável e disciplinado</strong></p>
 
-Têm grande capacidade de inspirar outras pessoas e normalmente são vistas como companhia agradável e motivadora. A sua leveza e humor ajudam a ultrapassar momentos difíceis.
+<p>Este objetivo de vida exige que <strong>você</strong> tenha abertura para novas experiências e aceite as mudanças com naturalidade. A curiosidade e a coragem de <strong>você</strong> serão fundamentais para explorar novos caminhos.</p>
 
-O número três é ativo, ambicioso e deseja deixar marca no mundo. Procura reconhecimento e gosta de estar rodeado de pessoas de sucesso. São guiados pelo sentimento e pela intuição, o que pode torná-los sensíveis e facilmente magoados.
+<p>O caminho de <strong>você</strong> envolve o exercício da liberdade com responsabilidade. Embora surjam muitas oportunidades, <strong>você</strong> precisará evitar a dispersão e o excesso de compromissos que não levam a lugar nenhum.</p>
 
-O lado negativo manifesta-se através da dispersão, falta de disciplina, promessas não cumpridas e dificuldade em concluir projetos.
+<p><strong>você</strong> deve aprender a controlar os impulsos e agir com maturidade. Desenvolver disciplina será o diferencial para que <strong>você</strong> transforme chances passageiras em conquistas reais e duradouras.</p>
 
-Trabalho  
-Podem destacar-se como comunicadores, artistas, professores, escritores ou empreendedores.
+<p>O segredo do sucesso para <strong>você</strong> está no equilíbrio: cultive sua independência, mas respeite as regras e as opiniões fundamentadas.</p>`,
 
-Amor  
-Românticos, intensos e emocionais. Precisam sentir-se amados e valorizados.
+6: `<p><strong>Propósito de Vida 6 — Ser zeloso e pacificador</strong></p>
 
-Saúde  
-Devem cuidar do sistema nervoso e emocional.
+<p>O objetivo de <strong>você</strong> é criar harmonia e equilíbrio nos relacionamentos. <strong>você</strong> deve ser uma pessoa confiável, serena e responsável, mas cuidando sempre para não sacrificar as próprias necessidades pessoais em excesso.</p>
 
-Realização  
-Devem aprender a concluir o que começam e confiar na própria criatividade.`,
+<p><strong>você</strong> deve desenvolver empatia e generosidade sem absorver os problemas alheios para si. Aprender a ajudar sem assumir fardos que não pertencem a <strong>você</strong> é essencial para a sua saúde mental.</p>
 
-4:`Ser prático e organizado
-Caminho de Vida 4
+<p>A honestidade e a disposição para ajudar serão os grandes diferenciais de <strong>você</strong> na sociedade. Ao buscar estabilidade emocional, <strong>você</strong> construirá relações saudáveis baseadas no respeito e no amor verdadeiro.</p>`,
 
-O número quatro representa estrutura, disciplina e construção. É o pilar da sociedade, ligado ao trabalho duro, responsabilidade e estabilidade. Pessoas com esta vibração são confiáveis, persistentes e metódicas.
+7: `<p><strong>Propósito de Vida 7 — Ser sociável e se integrar com as pessoas</strong></p>
 
-Planeiam, organizam e cumprem as suas obrigações até ao fim. Gostam de rotinas, regras e segurança. A autodisciplina é uma das suas maiores forças.
+<p>Existe no caminho de <strong>você</strong> uma forte necessidade de autoconhecimento e busca por sabedoria profunda. <strong>você</strong> deve compartilhar o que aprende e trabalhar para superar qualquer tipo de preconceito.</p>
 
-A vida do número quatro exige esforço e persistência. Raramente recebem resultados fáceis, mas quando perseveram são recompensados com segurança e estabilidade.
+<p><strong>você</strong> deve evitar o isolamento excessivo, permitindo que as pessoas se aproximem e conheçam quem <strong>você</strong> é de verdade. A comunicação emocional será a chave para que <strong>você</strong> evite a solidão.</p>
 
-Podem ser rígidos, teimosos e excessivamente conservadores quando em desequilíbrio.
+<p><strong>você</strong> precisa ser tolerante com as limitações alheias e aprender a expressar os sentimentos com clareza. A integração social é a parte essencial da evolução de <strong>você</strong> nesta existência.</p>`,
 
-Trabalho  
-Excelentes organizadores, gestores, engenheiros, arquitetos e profissionais técnicos.
+8: `<p><strong>Propósito de Vida 8 — Ser justo e estratégico</strong></p>
 
-Amor  
-Fiéis, leais e comprometidos com a família.
+<p><strong>você</strong> deve assumir responsabilidades com disciplina e total comprometimento. O propósito de <strong>você</strong> exige que use a própria autoridade com sabedoria, justiça e muito equilíbrio.</p>
 
-Saúde  
-Devem cuidar dos ossos, dentes e sistema digestivo.
+<p>O planejamento estratégico será o melhor amigo de <strong>você</strong> para alcançar conquistas materiais e profissionais. <strong>você</strong> deve evitar a rigidez ou a prepotência, desenvolvendo paciência com o ritmo dos outros.</p>
 
-Realização  
-Devem aprender a equilibrar trabalho e prazer e permitir-se viver com mais leveza.`,
+<p>O caminho de <strong>você</strong> envolve uma liderança equilibrada e integridade moral. Ao agir com tolerância, <strong>você</strong> alcançará o reconhecimento que tanto almeja.</p>`,
 
- 5:`Ser livre e experimentar a vida
-Caminho de Vida 5
+9: `<p><strong>Propósito de Vida 9 — Ser realista</strong></p>
 
-O número cinco simboliza liberdade, movimento, curiosidade e expansão através das experiências. Pessoas com esta vibração possuem uma energia inquieta e dinâmica, que as impulsiona a buscar constantemente novidades, mudanças e desafios. São naturalmente curiosas e desejam conhecer o mundo em todas as suas formas, culturas e possibilidades.
+<p><strong>você</strong> nasceu para compartilhar conhecimento, levar esperança e inspirar as pessoas ao seu redor. O propósito de <strong>você</strong> pede o desenvolvimento de uma visão humanitária e uma mente sempre aberta.</p>
 
-A rotina pode ser extremamente limitante para o número cinco, pois sua natureza precisa de estímulos constantes para se sentir viva e motivada. São comunicativas, carismáticas e possuem grande facilidade para se adaptar a ambientes e pessoas diferentes. Mudanças inesperadas raramente as assustam; pelo contrário, costumam vê-las como oportunidades.
+<p>No entanto, <strong>você</strong> deve evitar o idealismo excessivo e procurar manter sempre os pés no chão. <strong>você</strong> pode inspirar o mundo, mas deve fazer isso sem tentar impor suas ideias de forma agressiva.</p>
 
-Possuem grande versatilidade e aprendem rapidamente. São excelentes divulgadores de ideias, inovadores e inspiradores. Sua mente é aberta, flexível e criativa, o que lhes permite enxergar soluções onde outros veem obstáculos.
+<p>Aprender a ajudar sem esperar reconhecimento imediato será o grande desafio de <strong>você</strong>. Quando <strong>você</strong> equilibra o altruísmo com as suas necessidades pessoais, <strong>você</strong> cumpre sua missão com realismo e compaixão.</p>`
+},
 
-No lado negativo, podem apresentar impulsividade, inquietação e dificuldade em manter compromissos de longo prazo. Existe tendência a excessos, dispersão de energia e busca constante por prazer imediato. Podem iniciar muitos projetos e concluir poucos se não desenvolverem disciplina.
 
-Trabalho  
-Destacam-se em áreas que envolvem comunicação, viagens, marketing, vendas, tecnologia, mídia, eventos e inovação. Precisam de liberdade e autonomia para prosperar.
 
-Amor  
-São apaixonados, intensos e sedutores. Precisam de espaço e independência para manter relacionamentos saudáveis.
+harmonia: {
+1: `<p><strong>Harmonia Vibracional 1</strong></p>
 
-Saúde  
-Devem cuidar do sistema nervoso e evitar excessos e hábitos impulsivos.
+<p>A vibração de <strong>você</strong> está ligada a pessoas intensas, apaixonadas e imaginativas. Os sentimentos de <strong>você</strong> costumam nascer de sonhos e idealizações, sendo muito fortes no início, mas exigem base racional para durar.</p>
 
-Realização  
-O aprendizado principal é transformar liberdade em responsabilidade e experiência em sabedoria.`,
+<p>Mesmo possuindo grande magnetismo pessoal e capacidade de influenciar o parceiro, <strong>você</strong> pode demonstrar certa indecisão no campo afetivo. Existe em <strong>você</strong> uma facilidade para atrair pessoas fiéis, mas também o risco de atrair conflitos por ciúme.</p>
 
-6:`Ser proficiente e solidário
-Caminho de Vida 6
+<p>A busca constante por novidade desperta em <strong>você</strong> o desejo de variedade. Essa inquietação pode dificultar vínculos se não houver dedicação. <strong>você</strong> sente necessidade de liberdade e espaço dentro da relação.</p>
 
-O número seis representa amor, responsabilidade, cuidado e compromisso com os outros. Pessoas com esta vibração possuem um forte senso de dever, proteção e dedicação aos relacionamentos, especialmente familiares. A família, o lar e a harmonia emocional são pilares fundamentais da sua vida.
+<p><strong>você</strong> deve cultivar a lealdade e a responsabilidade afetiva. Casamentos e uniões para <strong>você</strong> costumam surgir de forma inesperada. A estabilidade amorosa de <strong>você</strong> depende do esforço em evitar impulsos passageiros.</p>
 
-São naturalmente generosas, empáticas e acolhedoras. Possuem grande capacidade de escuta e aconselhamento, tornando-se frequentemente o apoio emocional das pessoas ao seu redor. Buscam ambientes harmoniosos, belos e organizados, valorizando conforto e estabilidade.
+<p>O desafio de <strong>você</strong> é equilibrar liberdade com compromisso. Com equilíbrio, <strong>você</strong> pode viver relações cheias de paixão e crescimento mútuo.</p>`,
 
-Possuem senso de justiça e forte desejo de ajudar. Muitas vezes assumem responsabilidades que não são suas, movidas pelo desejo de proteger e cuidar. São confiáveis, leais e comprometidas com quem amam.
+2: `<p><strong>Harmonia Vibracional 2</strong></p>
 
-No lado negativo, podem tornar-se controladoras, excessivamente responsáveis ou sacrificarem as próprias necessidades em prol dos outros. A necessidade de aprovação pode gerar frustrações e sobrecarga emocional.
+<p>A vibração de <strong>você</strong> representa pessoas seletivas, sensíveis e criteriosas. <strong>você</strong> é uma pessoa romântica e afetuosa, que valoriza relações baseadas em harmonia e segurança emocional.</p>
 
-Trabalho  
-Destacam-se em áreas ligadas à educação, saúde, estética, psicologia, arte, decoração, cuidados e assistência social.
+<p><strong>você</strong> busca vínculos duradouros e costuma investir profundamente quando encontra alguém confiável. <strong>você</strong> possui uma forte necessidade de estabilidade para se sentir em paz.</p>
 
-Amor  
-Românticos, fiéis e dedicados, buscam relacionamentos estáveis e duradouros.
+<p><strong>você</strong> é uma pessoa encantadora, mas não gosta de ser controlada. <strong>você</strong> precisa evitar que interferências externas abalem seu relacionamento. A imaginação fértil de <strong>você</strong> pode levar a idealizações difíceis de concretizar.</p>
 
-Saúde  
-Devem cuidar do coração, sistema respiratório e equilíbrio emocional.
+<p><strong>você</strong> valoriza parceiros inteligentes e práticos. O desafio de <strong>você</strong> é equilibrar o romantismo com o realismo. Relacionamentos para <strong>você</strong> prosperam quando há diálogo e limites claros.</p>
 
-Realização  
-O aprendizado principal é equilibrar o cuidado com os outros e o cuidado consigo mesmo.`,
+<p>Quando <strong>você</strong> está em equilíbrio, o amor é vivido como uma parceria de cumplicidade e apoio constante.</p>`,
 
-7:`Ser tolerante e desenvolver sabedoria interior
-Caminho de Vida 7
+3: `<p><strong>Harmonia Vibracional 3</strong></p>
 
-O número sete simboliza conhecimento, introspecção, espiritualidade e busca pela verdade. Pessoas com esta vibração possuem uma mente investigativa, analítica e profundamente observadora. Sentem uma necessidade natural de compreender o sentido da vida, da existência e dos mistérios que cercam a realidade.
+<p>A vibração de <strong>você</strong> está associada ao charme, sociabilidade e uma vida social ativa. <strong>você</strong> costuma ser uma pessoa muito atraente e cercada por oportunidades amorosas.</p>
 
-São naturalmente introspectivas e reservadas, preferindo momentos de solitude para refletir, estudar e desenvolver seu mundo interior. A intuição é uma das maiores forças do número sete, mesmo quando inicialmente ignorada em favor da lógica e da razão.
+<p>Existe em <strong>você</strong> uma tendência a iniciar novos relacionamentos ao longo da vida. Por vezes, <strong>você</strong> pode perder tempo em envolvimentos inadequados antes de encontrar a pessoa ideal.</p>
 
-Possuem grande capacidade de análise, senso crítico e desejo constante de aprender. São atraídas por ciência, filosofia, espiritualidade e temas profundos. Muitas vezes sentem-se diferentes das outras pessoas, como se observassem o mundo de fora.
+<p><strong>você</strong> possui uma forte intuição para compreender as motivações humanas. Geralmente, <strong>você</strong> acaba se unindo a parceiros com interesses semelhantes. <strong>você</strong> precisa de alguém que compreenda sua sensibilidade.</p>
 
-No aspecto positivo, manifestam sabedoria, discernimento, percepção aguçada e capacidade de aconselhamento. No aspecto negativo, podem desenvolver isolamento, desconfiança, pessimismo e excesso de crítica.
+<p><strong>você</strong> costuma evitar expor problemas conjugais a terceiros, o que exige cuidado para não manter relações desequilibradas. <strong>você</strong> deve evitar parceiros possessivos.</p>
 
-Trabalho  
-Destacam-se em pesquisa, ciência, tecnologia, espiritualidade, psicologia, filosofia e áreas intelectuais.
+<p>A estabilidade para <strong>você</strong> surge quando <strong>você</strong> aprende a expressar sentimentos com clareza. O amor de <strong>você</strong> precisa caminhar junto com leveza e compreensão.</p>`,
 
-Amor  
-Precisam de profundidade emocional e conexão mental; relacionamentos superficiais não os satisfazem.
+4: `<p><strong>Harmonia Vibracional 4</strong></p>
 
-Saúde  
-Devem cuidar do sistema nervoso, mente e níveis de estresse.
+<p>A vibração de <strong>você</strong> revela uma forte necessidade emocional de estabilidade e segurança. <strong>você</strong> valoriza profundamente o casamento e as relações que são construídas para durar.</p>
 
-Realização  
-O aprendizado principal é equilibrar razão e espiritualidade, transformando conhecimento em sabedoria.`,
+<p><strong>você</strong> busca vínculos sólidos e estruturados. No entanto, <strong>você</strong> pode enfrentar interferências externas por falta de discrição. Há em <strong>você</strong> uma valorização da aparência, o que pode levar a escolhas iniciais equivocadas.</p>
 
-8:`Ser capaz de manter o equilíbrio pessoal
-Caminho de Vida 8
+<p><strong>você</strong> deseja parceiros ativos e fortes ao seu lado. <strong>você</strong> precisa tomar cuidado para que cobranças excessivas não gerem conflitos frequentes. O desenvolvimento da flexibilidade emocional é essencial para <strong>você</strong>.</p>
 
-O número oito representa poder, autoridade, realização material, justiça e liderança. Pessoas com esta vibração possuem grande capacidade de organização, ambição e visão estratégica. São naturalmente voltadas para conquistas, resultados e construção de estabilidade financeira e profissional.
+<p>Os relacionamentos de <strong>você</strong> prosperam com diálogo. A segurança emocional é a prioridade absoluta para <strong>você</strong>. Com maturidade, <strong>você</strong> constrói relações firmes, onde o amor é visto como um compromisso real.</p>`,
 
-Possuem forte senso de responsabilidade e capacidade de liderança. Sentem necessidade de construir algo duradouro e alcançar reconhecimento através do esforço e da disciplina. A energia do número oito busca equilíbrio entre o mundo material e o espiritual.
+5: `<p><strong>Harmonia Vibracional 5</strong></p>
 
-No aspecto positivo, manifestam determinação, capacidade de gestão, foco, perseverança e senso de justiça. Possuem habilidade para lidar com desafios e superar obstáculos com resiliência.
+<p>A vibração de <strong>você</strong> simboliza inquietação, liberdade e o desejo por novas experiências. Existe em <strong>você</strong> uma forte necessidade de novidades e mudanças constantes.</p>
 
-No aspecto negativo, podem desenvolver materialismo excessivo, rigidez, autoritarismo e dificuldade em expressar emoções. O excesso de ambição pode gerar estresse e sobrecarga.
+<p><strong>você</strong> possui um carisma natural e facilidade para conquistar as pessoas. No entanto, <strong>você</strong> pode se tornar uma pessoa controladora se não equilibrar bem as suas emoções.</p>
 
-Trabalho  
-Destacam-se em negócios, administração, empreendedorismo, finanças, política e liderança.
+<p><strong>você</strong> precisa de parceiros que sejam compreensivos e flexíveis. Na juventude, <strong>você</strong> tende a ter relacionamentos mais instáveis, mas a maturidade trará a <strong>você</strong> uma estabilidade afetiva maior.</p>
 
-Amor  
-Precisam aprender a equilibrar vida profissional e afetiva, valorizando emoções e relações.
+<p><strong>você</strong> precisa trabalhar a constância e o compromisso. Para <strong>você</strong>, a liberdade precisa coexistir com a responsabilidade. A felicidade de <strong>você</strong> surge quando <strong>você</strong> aprende a equilibrar a emoção com a disciplina pessoal.</p>`,
 
-Saúde  
-Devem cuidar do sistema digestivo, ossos e níveis de estresse.
+6: `<p><strong>Harmonia Vibracional 6</strong></p>
 
-Realização  
-O aprendizado principal é usar poder e recursos com sabedoria, ética e equilíbrio.`,
+<p>A vibração de <strong>você</strong> demonstra romantismo, sensibilidade e uma necessidade profunda de amar e ser amado. Mesmo apaixonada, <strong>você</strong> pode ser uma pessoa tímida na expressão emocional.</p>
 
-9:`Ser sensato, compassivo e humanitário
-Caminho de Vida 9
+<p><strong>você</strong> busca a pessoa ideal com persistência e dedicação. <strong>você</strong> é uma pessoa carinhosa e muito leal em seus vínculos. <strong>você</strong> precisa de companheirismo constante para se sentir em paz.</p>
 
-O número nove simboliza compaixão, altruísmo, sabedoria emocional e conclusão de ciclos. Pessoas com esta vibração possuem forte senso humanitário e desejo de contribuir para o bem coletivo. São naturalmente empáticas, generosas e sensíveis às necessidades dos outros.
+<p>Se <strong>você</strong> estiver insegura, pode acabar desenvolvendo uma certa possessividade. Os relacionamentos de <strong>você</strong> tendem a se estabilizar com o passar dos anos e o amadurecimento.</p>
 
-Possuem visão ampla da vida e facilidade para compreender diferentes realidades e perspectivas. Sentem necessidade de ajudar, orientar e inspirar as pessoas ao seu redor. A energia do número nove está ligada ao desapego e à transformação.
+<p><strong>você</strong> precisa aprender a confiar plenamente e a equilibrar suas emoções. Com maturidade, <strong>você</strong> vive relações profundas onde a família se torna a prioridade central da vida de <strong>você</strong>.</p>`,
 
-No aspecto positivo, manifestam generosidade, tolerância, empatia, criatividade e espiritualidade. Possuem grande capacidade de inspirar e influenciar positivamente.
+7: `<p><strong>Harmonia Vibracional 7</strong></p>
 
-No aspecto negativo, podem desenvolver melancolia, idealismo excessivo, frustração e tendência ao isolamento emocional. Precisam aprender a equilibrar emoção e realidade.
+<p>A vibração de <strong>você</strong> indica uma certa seletividade na hora de encontrar o parceiro ideal. <strong>você</strong> é uma pessoa companheira e dedicada, mas não aceita qualquer tipo de conexão.</p>
 
-Trabalho  
-Destacam-se em áreas humanitárias, arte, educação, saúde, espiritualidade e assistência social.
+<p><strong>você</strong> valoriza imensamente a sua liberdade e individualidade. <strong>você</strong> precisa conhecer profundamente o parceiro antes de assumir um compromisso sério. <strong>você</strong> não costuma lidar bem com separações bruscas.</p>
 
-Amor  
-Buscam relações profundas, sinceras e baseadas em valores e propósito.
+<p><strong>você</strong> pode ter dificuldade em se adaptar a novos relacionamentos após um término. Nem sempre <strong>você</strong> busca aventuras, mas acaba vivenciando experiências intensas devido à sua profundidade.</p>
 
-Saúde  
-Devem cuidar da saúde emocional e evitar sobrecarga mental.
+<p>A maturidade trará a <strong>você</strong> uma maior clareza emocional. <strong>você</strong> precisa equilibrar sua independência com a parceria. O autoconhecimento de <strong>você</strong> é a chave para escolhas conscientes e felizes no amor.</p>`,
 
-Realização  
-O aprendizado principal é praticar desapego, compaixão e servir ao coletivo com equilíbrio.`
+8: `<p><strong>Harmonia Vibracional 8</strong></p>
 
-  },
+<p>A vibração de <strong>você</strong> demonstra uma forte necessidade de segurança emocional e estabilidade. <strong>você</strong> valoriza o compromisso duradouro e uniões que sejam definitivas.</p>
 
- proposito: {
-1:`Conhecer seus limites
-Propósito de Vida 1
+<p><strong>você</strong> é uma pessoa sincera e leal nos relacionamentos. No entanto, <strong>você</strong> pode agir de forma dominadora quando se sente contrariada. <strong>você</strong> costuma demorar a superar decepções amorosas.</p>
 
-Você precisa viver sua vida com originalidade e coragem. Seja uma pessoa firme, decidida e independente para ter autonomia e liberdade de agir sozinho, sem ter que depender de outras pessoas. Para ter o controle de sua vida e dos caminhos que segue, deve agir com confiança e determinação. Precisará aprender a dominar o ego e a expor seus sentimentos com maturidade e clareza.
+<p><strong>você</strong> precisa de companheirismo e de uma parceria que ajude a construir algo sólido. Para <strong>você</strong>, a fidelidade é uma característica marcante e inegociável.</p>
 
-Você tem grandes qualidades; no entanto, controlar sua rigidez, opiniões e crenças enraizadas lhe ajudará a alcançar a felicidade com mais facilidade. Você é um indivíduo único e seu objetivo de vida deve se basear em ser capaz de se definir como tal. Deve agir de forma audaciosa, com autenticidade e personalidade, buscando novas perspectivas e tendo coragem para descobrir e seguir novos caminhos sem se deixar abater pelas derrotas.
+<p>Relacionamentos para <strong>você</strong> tendem a ser duradouros e conduzidos com muita seriedade. A estabilidade é a prioridade máxima de <strong>você</strong> para que o amor floresça com segurança.</p>`,
 
-Suas ações devem ser orientadas pela razão e pela consciência. Deve saber se impor pela competência, obtendo respeito e reconhecimento sem se tornar intolerante, autoritário ou controlador. O equilíbrio entre liderança e sensibilidade será essencial para sua evolução.
+9: `<p><strong>Harmonia Vibracional 9</strong></p>
 
-Aprenda a conhecer seus limites e a resolver seus próprios problemas sem esperar que alguém faça isso por você. A maturidade trará mais confiança, experiência e estabilidade emocional. Desenvolver autoconfiança, persistência e equilíbrio interior será essencial para alcançar suas realizações.`,
+<p>Para <strong>você</strong>, o amor e o casamento são grandes objetivos de vida. <strong>você</strong> é uma pessoa capaz de sacrificar sonhos pessoais em nome de um amor intenso e verdadeiro.</p>
 
-2:`Confiar em seu potencial
-Propósito de Vida 2
+<p><strong>você</strong> tende a idealizar muito o parceiro, o que pode levar a algumas desilusões. <strong>você</strong> precisa aprender a alinhar sua vida profissional com a afetiva para não gerar frustrações.</p>
 
-Seja um conciliador sem se subestimar ou se deixar influenciar pelas circunstâncias ou pelas pessoas. Seja realista e aja por seus princípios, não apenas para agradar os outros. Use sua sensibilidade e gentileza para unir pessoas e criar cooperação em torno de seus objetivos.
+<p><strong>você</strong> vive o amor com uma profundidade emocional muito grande. <strong>você</strong> busca relações que tenham um significado maior e um propósito humanitário ou espiritual.</p>
 
-Seja participativo e colaborador, mas não tente ser o centro das atenções ou se colocar em evidência. Você precisa de harmonia para evoluir, portanto permita que pessoas mais extrovertidas ocupem os holofotes enquanto você atua com sabedoria nos bastidores.
+<p><strong>você</strong> deve evitar idealizações excessivas e aprender a lidar com as imperfeições do outro. A felicidade de <strong>você</strong> surge quando <strong>você</strong> consegue alinhar o amor com a realidade prática do dia a dia.</p>`
+},
 
-Tenha como objetivo de vida ser equilibrado, cooperativo, paciente e compreensivo. Confie em seu potencial e aprenda a esperar o momento certo para agir, sem ansiedade ou insegurança. Evite permitir manipulações ou influências negativas que possam abalar sua autoestima.
 
-Utilize sua diplomacia para alcançar seus objetivos com serenidade. Ouça opiniões, mas absorva apenas o que for útil e verdadeiro para sua evolução. O autoconhecimento e a autoconfiança serão fundamentais para evitar frustrações e fortalecer sua jornada.`,
+anoPessoal: {
+1: `<p><strong>ANO PESSOAL 1 — INÍCIO DE CICLO, AÇÃO E RENOVAÇÃO</strong></p>
 
-3:`Ser modesto e criativo
-Propósito de Vida 3
+<p>Este é o ano que marca o início de um novo ciclo de nove anos para <strong>você</strong>. A energia da renovação se torna evidente e tudo começa a se reorganizar para um novo direcionamento. Este período estabelece as bases de tudo o que <strong>você</strong> construirá nos próximos anos.</p>
 
-Use sua criatividade e suas experiências para tomar decisões. Busque se destacar com autenticidade, sem exibicionismo. Explore sua capacidade de comunicação e sociabilidade sem se deixar levar por ilusões ou pela opinião alheia.
+<p>É o momento de <strong>você</strong> agir, iniciar projetos e assumir o protagonismo da própria história. A vida pede que <strong>você</strong> tenha coragem, independência e determinação. Surge uma necessidade natural de romper com padrões antigos e iniciar caminhos diferentes.</p>
 
-Existe em sua natureza uma inquietação e necessidade de movimento. Mantenha-se alegre e confiante, evitando que frustrações apaguem seu brilho. Você possui a habilidade de enxergar o lado positivo da vida e encontrar soluções criativas.
+<p>Este ano exige de <strong>você</strong> muita autoconfiança. Muitas situações testarão a sua capacidade de agir por conta própria. O aprendizado principal deste período para <strong>você</strong> é descobrir quem realmente é e qual caminho deseja seguir com autonomia.</p>
 
-Seu objetivo deve ser levar alegria às pessoas por meio da criatividade e da autoexpressão. Desenvolver talentos artísticos, comunicativos e criativos abrirá caminhos importantes para sua evolução.
+<p><strong>você</strong> deve evitar a procrastinação e o medo de errar. Tudo o que <strong>você</strong> iniciar agora tende a crescer e se desenvolver. Confie na sua intuição, fortaleça sua individualidade e estabeleça metas claras para esta nova fase.</p>`,
 
-Aprender a se expressar com clareza será essencial para alcançar suas realizações. Evite dispersar sua energia e concentre-se no que realmente é produtivo e significativo.`,
+2: `<p><strong>ANO PESSOAL 2 — PACIÊNCIA, RELAÇÕES E PREPARAÇÃO</strong></p>
 
-4:`Ser estável e confiável
-Propósito de Vida 4
+<p>Após o impulso inicial, o ano 2 traz para <strong>você</strong> um ritmo mais lento e sensível. Este período pede que <strong>você</strong> tenha paciência, cooperação e equilíbrio emocional. Em vez de agir impulsivamente, será necessário que <strong>você</strong> observe e espere.</p>
 
-Seja organizado, estável e confiável. Crie bases sólidas para enfrentar a vida com disciplina, precisão e responsabilidade. O trabalho constante e a persistência serão fundamentais para suas conquistas.
+<p>As oportunidades para <strong>você</strong> surgirão através de parcerias, amizades e relacionamentos. A diplomacia será essencial em seus dias. Muitas situações exigirão que <strong>você</strong> tenha sensibilidade e compreensão com o tempo das coisas.</p>
 
-Você prospera por meio da organização, planejamento e objetivos claros. Evite criar expectativas irreais e concentre-se no desenvolvimento prático e consistente.
+<p>A vida pede calma para <strong>você</strong>. Forçar acontecimentos agora pode gerar frustrações desnecessárias. Este é o momento de <strong>você</strong> fortalecer vínculos e cultivar alianças importantes que servirão de base para o futuro.</p>
 
-Seus resultados virão através de esforço, dedicação e disciplina. Evite riscos desnecessários e mantenha o foco em caminhos seguros e estruturados.
+<p><strong>você</strong> pode sentir uma maior sensibilidade emocional neste período. O aprendizado que <strong>você</strong> obtiver agora será essencial para os próximos anos do seu ciclo. A paciência de <strong>você</strong> será recompensada com segurança.</p>`,
 
-Expresse suas ideias, mas não fique preso a pequenos detalhes. Aprenda a equilibrar responsabilidade com leveza para aproveitar melhor a vida.`,
+3: `<p><strong>ANO PESSOAL 3 — EXPANSÃO, CRIATIVIDADE E SOCIALIZAÇÃO</strong></p>
 
-5:`Ser adaptável e disciplinado
-Propósito de Vida 5
+<p>Este é um ano de expansão, alegria e expressão pessoal para <strong>você</strong>. A energia favorece a comunicação e a vida social. Surge em <strong>você</strong> uma forte necessidade de viver experiências novas e desenvolver talentos adormecidos.</p>
 
-Este objetivo de vida exige abertura para experiências e aceitação das mudanças. A curiosidade e a coragem serão fundamentais para explorar novos caminhos e aproveitar oportunidades.
+<p>A vida de <strong>você</strong> se torna mais dinâmica e cheia de oportunidades interessantes. Este é um período favorável para <strong>você</strong> realizar viagens, estudos e projetos criativos. O carisma de <strong>você</strong> aumenta e a comunicação flui com muito mais facilidade.</p>
 
-Seu caminho envolve liberdade com responsabilidade. Haverá muitas oportunidades, mas será necessário evitar dispersão e excesso de compromissos.
+<p>No entanto, <strong>você</strong> deve usar essa criatividade de forma produtiva, evitando a dispersão. A energia deste ano pode gerar em <strong>você</strong> um excesso de entusiasmo que precisa de foco para não se perder em superficialidades.</p>
 
-Aprenda a controlar impulsos e agir com maturidade. Desenvolver disciplina será essencial para transformar oportunidades em conquistas reais.
+<p>A felicidade de <strong>você</strong> crescerá conforme <strong>você</strong> permitir que sua essência se manifeste. Este é um ano leve, positivo e cheio de portas abertas para que <strong>você</strong> brilhe socialmente.</p>`,
 
-Cultive independência, mas respeite regras e opiniões. O equilíbrio entre liberdade e responsabilidade será o segredo do sucesso.`,
+4: `<p><strong>ANO PESSOAL 4 — TRABALHO, ESTRUTURA E CONSTRUÇÃO</strong></p>
 
-6:`Ser zeloso e pacificador
-Propósito de Vida 6
+<p>Este é um ano de esforço, disciplina e muita organização para <strong>você</strong>. Após a expansão, surge a necessidade de <strong>você</strong> estruturar e consolidar suas conquistas. Este período exige que <strong>você</strong> tenha foco e muita responsabilidade.</p>
 
-Seu objetivo é criar harmonia e equilíbrio nos relacionamentos. Seja confiável, sereno e responsável, mas evite sacrificar suas necessidades pessoais.
+<p>O progresso de <strong>você</strong> ocorrerá através do trabalho constante. Este é o ano de construir as bases sólidas para o seu futuro. A vida pede que <strong>você</strong> tenha organização financeira, planejamento profissional e estabilidade.</p>
 
-Desenvolva empatia, generosidade e compreensão sem absorver os problemas alheios. Aprenda a ajudar sem assumir responsabilidades que não são suas.
+<p>É o momento de <strong>você</strong> estabelecer prioridades e eliminar distrações que atrasam seu crescimento. A disciplina de <strong>você</strong> será a chave do sucesso, pois não haverá espaço para atalhos ou soluções fáceis agora.</p>
 
-A honestidade e a disposição para ajudar serão grandes diferenciais. Busque equilíbrio emocional e estabilidade nos relacionamentos.
+<p>Este ano traz para <strong>você</strong> maturidade e seriedade. A construção do futuro de <strong>você</strong> acontece através da persistência e da dedicação aos detalhes práticos do dia a dia.</p>`,
 
-Construa relações saudáveis baseadas em respeito, amor e compreensão.`,
+5: `<p><strong>ANO PESSOAL 5 — MUDANÇAS, LIBERDADE E TRANSFORMAÇÃO</strong></p>
 
-7:`Ser sociável e se integrar com as pessoas
-Propósito de Vida 7
+<p>Este é o ano mais dinâmico do ciclo para <strong>você</strong>. Mudanças inesperadas podem acontecer em várias áreas da sua vida. A energia favorece o movimento e a busca de <strong>você</strong> por mais liberdade e transformação.</p>
 
-Existe uma forte necessidade de autoconhecimento e busca por sabedoria. Compartilhe conhecimento e supere preconceitos.
+<p>A rotina de <strong>você</strong> tende a ser quebrada e novas oportunidades surgirão rapidamente. Este é um período de adaptação onde <strong>você</strong> crescerá muito através da experiência direta e da exploração do novo.</p>
 
-Evite isolamento excessivo e permita que as pessoas se aproximem de você. A comunicação emocional será essencial para evitar solidão.
+<p>A liberdade de <strong>você</strong> aumenta, mas exige responsabilidade para não se tornar imprudência. <strong>você</strong> deve evitar decisões precipitadas, usando a flexibilidade e a coragem para ajustar o seu caminho conforme necessário.</p>
 
-Seja tolerante com limitações alheias e aprenda a expressar sentimentos com clareza.
+<p>Este é o momento de <strong>você</strong> rever suas metas. O crescimento de <strong>você</strong> ocorrerá fora da zona de conforto. Prepare-se para um ano de transformação profunda e muita expansão pessoal.</p>`,
 
-A integração social será parte essencial da sua evolução.`,
+6: `<p><strong>ANO PESSOAL 6 — RESPONSABILIDADES, AMOR E EQUILÍBRIO</strong></p>
 
-8:`Ser justo e estratégico
-Propósito de Vida 8
+<p>Este é um dos anos mais importantes emocionalmente para <strong>você</strong>. A vibração está profundamente ligada ao amor, à família e aos vínculos afetivos. Durante este período, os relacionamentos de <strong>você</strong> ganham um destaque central.</p>
 
-Assuma responsabilidades com disciplina e comprometimento. Use sua autoridade com sabedoria e equilíbrio.
+<p>Surge em <strong>você</strong> uma forte necessidade de equilíbrio e compromisso. Decisões importantes envolvendo a casa ou a vida amorosa tendem a acontecer. A vida pede que <strong>você</strong> tenha maturidade emocional e dedicação às pessoas próximas.</p>
 
-Planejamento, estratégia e justiça serão fundamentais para suas conquistas materiais e profissionais.
+<p><strong>você</strong> pode ser chamado a assumir responsabilidades que antes evitava. Este é um período de amadurecimento para <strong>você</strong> através do cuidado e do afeto. O aprendizado principal está no equilíbrio entre suas necessidades e as dos outros.</p>
 
-Evite rigidez, prepotência e excesso de ambição. Desenvolva paciência e tolerância.
+<p>A harmonia será fundamental para o sucesso de <strong>você</strong> neste período. O desafio será evitar cobranças excessivas. É o ano ideal para <strong>você</strong> construir segurança emocional e fortalecer seus laços mais queridos.</p>`,
 
-Seu caminho envolve liderança equilibrada e integridade.`,
+7: `<p><strong>ANO PESSOAL 7 — INTROSPECÇÃO, ESPIRITUALIDADE E AUTOCONHECIMENTO</strong></p>
 
-9:`Ser realista
-Propósito de Vida 9
+<p>Este é o ano mais introspectivo de todo o ciclo para <strong>você</strong>. Após anos de ação, chega o momento de <strong>você</strong> pausar para refletir. A vida desacelera para permitir que <strong>você</strong> foque no seu crescimento interior.</p>
 
-Compartilhe conhecimento, leve esperança e inspire pessoas. Desenvolva visão humanitária e mente aberta.
+<p>A vibração favorece seus estudos, a espiritualidade e a análise profunda. Surge em <strong>você</strong> uma forte necessidade de silêncio e reflexão. O foco de <strong>você</strong> deixa de ser o mundo exterior e passa a ser a sua própria essência.</p>
 
-Evite idealismo excessivo e mantenha os pés no chão. Inspire sem impor ideias.
+<p>A intuição de <strong>você</strong> se fortalecerá imensamente. Este é o momento de <strong>você</strong> compreender a própria trajetória e reavaliar seus objetivos de vida. Evite tomar decisões impulsivas ou mudanças radicais agora.</p>
 
-Ajude sem esperar reconhecimento. Aprenda a equilibrar altruísmo e necessidades pessoais.
+<p>O aprendizado principal para <strong>você</strong> é confiar na própria sabedoria interior. Este período de "retiro" prepara o terreno para as grandes conquistas que virão em seguida para <strong>você</strong>.</p>`,
 
-Seu desafio é agir com compaixão e realismo ao mesmo tempo.`
+8: `<p><strong>ANO PESSOAL 8 — REALIZAÇÃO, PODER E RESULTADOS</strong></p>
 
-  },
+<p>Este é o ano das conquistas materiais e da realização profissional para <strong>você</strong>. A vibração representa o poder, a prosperidade e as recompensas pelos esforços que <strong>você</strong> aplicou nos anos anteriores.</p>
 
+<p>Tudo o que <strong>você</strong> plantou começa finalmente a gerar resultados concretos. Este é um período de crescimento financeiro e reconhecimento para <strong>você</strong>. O foco deve estar na liderança e na execução de grandes planos.</p>
 
+<p>O sucesso de <strong>você</strong> dependerá de disciplina e organização impecáveis. Grandes oportunidades surgirão e <strong>você</strong> deve ter ambição equilibrada com ética para aproveitá-las da melhor forma.</p>
 
-  harmonia: {
-   1:`A vibração 1 está ligada a pessoas intensas, apaixonadas e imaginativas. Seus sentimentos costumam nascer de sonhos, fantasias e idealizações, podendo ser muito fortes no início, mas tendem a enfraquecer quando não encontram base racional e estabilidade emocional.
-Mesmo possuindo grande magnetismo pessoal e capacidade de convencer e influenciar o parceiro, quem possui essa vibração costuma demonstrar indecisão no campo afetivo. 
+<p>Este é o seu período de colheita. O aprendizado principal para <strong>você</strong> é lidar com o sucesso e o dinheiro de forma equilibrada, consolidando sua prosperidade com sabedoria.</p>`,
 
-Existe facilidade tanto para atrair pessoas fiéis e benéficas quanto relacionamentos marcados por ciúme e conflitos. 
+9: `<p><strong>ANO PESSOAL 9 — FINALIZAÇÕES, DESAPEGO E TRANSFORMAÇÃO</strong></p>
 
-A busca constante por novidade desperta o desejo de variedade e experiências diferentes, o que pode gerar tentações repentinas e paixões intensas.
+<p>Este é o último ano do ciclo de nove anos para <strong>você</strong>. Ele representa encerramentos e a preparação de <strong>você</strong> para um novo começo. Tudo o que não faz mais sentido na sua vida tende a ser finalizado agora.</p>
 
-Essa inquietação pode dificultar a construção de vínculos duradouros se não houver dedicação e compromisso.
-É comum sentir necessidade de liberdade e espaço dentro da relação.
-Por isso, é essencial cultivar lealdade, disciplina emocional e responsabilidade afetiva.
+<p>Projetos ou situações podem chegar ao fim para <strong>você</strong>. Este é um período de limpeza emocional e espiritual. O objetivo é que <strong>você</strong> libere espaço interno e externo para o ciclo que se iniciará em breve.</p>
 
-Casamentos e uniões costumam surgir de forma inesperada e em contextos variados.
+<p>A vida pede que <strong>você</strong> tenha desapego e compaixão. <strong>você</strong> deve evitar resistir às mudanças, entendendo que as finalizações são necessárias para que <strong>você</strong> evolua.</p>
 
-Relacionamentos podem começar em viagens, eventos, estudos ou encontros casuais.
+<p>Este é o ano de cura e conclusão para <strong>você</strong>. Ao fechar estas portas com gratidão, <strong>você</strong> se prepara para uma nova e brilhante fase de vida.</p>`
+},
 
-A estabilidade amorosa depende do esforço consciente em evitar impulsos passageiros.
-Quando há maturidade emocional, a vibração 1 pode construir relações intensas e inspiradoras.
+regente: {
+1: `<p><strong>Potência Regente 1 — Início e Liderança</strong></p>
+<p>A energia regente de <strong>você</strong> representa o princípio da individualidade e da iniciativa. Ela impulsiona <strong>você</strong> a agir, liderar e abrir seus próprios caminhos. É a força da autonomia que define a jornada de <strong>você</strong>.</p>
+<p>No aspecto positivo, <strong>você</strong> manifesta liderança natural e inteligência estratégica. No entanto, <strong>você</strong> deve cuidar para que o orgulho não gere isolamento. O aprendizado para <strong>você</strong> é que o verdadeiro líder domina a si mesmo primeiro.</p>`,
 
-O desafio é equilibrar liberdade com compromisso.
+2: `<p><strong>Potência Regente 2 — Sensibilidade e Intuição</strong></p>
+<p>A regência de <strong>você</strong> representa a percepção espiritual e a sensibilidade emocional. Ela guia a vida de <strong>você</strong> através da intuição e da busca por equilíbrio interior e harmonia com os outros.</p>
+<p><strong>você</strong> possui uma empatia aguçada, mas precisa evitar a dependência emocional. <strong>você</strong> aprenderá que a sua verdadeira força nasce da sensibilidade consciente e da diplomacia.</p>`,
 
-A fidelidade nasce da escolha consciente e não da ausência de oportunidades.
+3: `<p><strong>Potência Regente 3 — Expressão e Criação</strong></p>
+<p>A energia regente de <strong>você</strong> representa a criatividade e a expansão da consciência. <strong>você</strong> é impulsionado pela expressão intelectual e artística, trazendo alegria e sociabilidade por onde passa.</p>
+<p><strong>você</strong> manifesta muita inspiração, mas deve cuidar para não dispersar sua energia. <strong>você</strong> entenderá que a criatividade precisa de disciplina para se transformar em realização real.</p>`,
 
-Com equilíbrio, pode viver relações cheias de paixão e crescimento mútuo.`,
+4: `<p><strong>Potência Regente 4 — Ordem e Estrutura</strong></p>
+<p>A regência de <strong>você</strong> representa a estabilidade e a construção de bases sólidas. Ela guia <strong>você</strong> através do trabalho focado, da organização e da perseverança em todos os seus projetos.</p>
+<p><strong>você</strong> manifesta um alto senso de responsabilidade, mas deve evitar a rigidez excessiva. <strong>você</strong> aprenderá que a segurança verdadeira nasce da constância e da honestidade em suas ações.</p>`,
 
-    2:`A vibração 2 representa pessoas seletivas, sensíveis e criteriosas na escolha de parceiros. 
-    
-São românticas, afetuosas e valorizam relações baseadas em harmonia, segurança e estabilidade emocional.
+5: `<p><strong>Potência Regente 5 — Sabedoria e Orientação</strong></p>
+<p>A energia regente de <strong>você</strong> representa o conhecimento e a busca pela verdade. <strong>você</strong> é guiado pelo aprendizado contínuo e pela necessidade de expandir seus horizontes éticos e morais.</p>
+<p><strong>você</strong> possui inteligência e capacidade de ensinar, mas deve evitar a intolerância. <strong>você</strong> descobrirá ao longo da vida que o saber verdadeiro é aquele que liberta a alma de <strong>você</strong>.</p>`,
 
-Buscam vínculos duradouros e costumam investir profundamente quando encontram alguém confiável.
+6: `<p><strong>Potência Regente 6 — Escolha e Equilíbrio Emocional</strong></p>
+<p>A regência de <strong>você</strong> representa o equilíbrio entre razão e emoção. Ela foca a vida de <strong>você</strong> nas relações afetivas e na necessidade de fazer escolhas baseadas no amor consciente.</p>
+<p><strong>você</strong> manifesta harmonia e responsabilidade afetiva, mas deve cuidar com o ciúme ou a indecisão. <strong>você</strong> aprenderá que amar é, acima de tudo, escolher com consciência todos os dias.</p>`,
 
-Possuem forte necessidade de estabilidade financeira e emocional para se sentirem seguras.
+7: `<p><strong>Potência Regente 7 — Vitória e Autodomínio</strong></p>
+<p>A energia regente de <strong>você</strong> representa o triunfo do espírito e o domínio mental. Ela guia <strong>você</strong> na busca pelo equilíbrio perfeito entre a razão e o instinto natural.</p>
+<p><strong>você</strong> manifesta disciplina e superação, mas deve evitar a frieza emocional. <strong>você</strong> entenderá que a vitória mais importante para <strong>você</strong> é a conquista de si mesmo e de seus próprios limites.</p>`,
 
-São pessoas encantadoras e atraentes, mas não gostam de ser controladas.
-Apesar disso, podem ser influenciáveis e precisam evitar interferências externas no relacionamento.
-A imaginação fértil pode levar a idealizações ou paixões difíceis de concretizar.
-Quando não controladas, essas ilusões podem gerar conflitos e frustrações conjugais.
-Valorizam parceiros inteligentes, mas principalmente práticos e responsáveis.
+8: `<p><strong>Potência Regente 8 — Justiça e Equilíbrio Universal</strong></p>
+<p>A regência de <strong>você</strong> representa a lei da causa e efeito e a justiça universal. Ela organiza a vida de <strong>você</strong> através da harmonização de forças e da busca por integridade absoluta.</p>
+<p><strong>você</strong> manifesta liderança equilibrada e ética, mas deve cuidar para não se tornar uma pessoa rígida demais. <strong>você</strong> aprenderá que toda ação de <strong>você</strong> gera consequências que moldam seu destino.</p>`,
 
-Precisam aprender a fortalecer a autonomia emocional.
+9: `<p><strong>Potência Regente 9 — Sabedoria e Sacrifício</strong></p>
+<p>A energia regente de <strong>você</strong> representa a prudência e a busca por significado profundo. Ela guia <strong>você</strong> através do autoconhecimento e da maturidade espiritual adquirida com a experiência.</p>
+<p><strong>você</strong> manifesta altruísmo e sabedoria, mas deve evitar o pessimismo ou o apego ao passado. <strong>você</strong> descobrirá que a sua maior força vem da capacidade de servir e compreender o mundo.</p>`
+}
 
-O desafio é equilibrar romantismo com realismo.
+sequenciaNegativa: {
+  1: `<p><strong>➢ SEQUÊNCIA 111 — Desafios de Iniciativa e Motivação</strong></p>
 
-Relacionamentos prosperam quando há diálogo, confiança e limites claros.
-A maturidade traz maior estabilidade afetiva.
+<p>Nesta fase, <strong>você</strong> poderá sentir que sua chama interna de motivação está sendo abafada por obstáculos inesperados. A influência desta sequência tende a minar a capacidade de iniciativa de <strong>você</strong>, tornando o ato de começar algo novo um verdadeiro desafio.</p>
 
-Quando equilibrada, essa vibração favorece relações profundas e duradouras.
+<p>É comum surgir em <strong>você</strong> um sentimento de impotência, onde a coragem para arriscar parece dar lugar à inatividade. <strong>você</strong> pode enfrentar períodos de estagnação profissional ou desânimo profundo, sentindo-se uma pessoa limitada em suas realizações atuais.</p>
 
-O amor é vivido como parceria, cumplicidade e apoio constante.`,
+<p>No aspecto físico, o mapa acende um alerta para que <strong>você</strong> tenha cuidado redobrado com o centro do peito. Existe uma tendência que pode afetar o sistema cardíaco se o estresse não for gerenciado por <strong>você</strong>. A chave aqui é buscar reacender sua determinação interna.</p>`,
 
-    3:`A vibração 3 está associada ao charme, sociabilidade e forte vida social. 
-    
-Essas pessoas costumam ser muito atraentes e cercadas por amizades e oportunidades amorosas.
+  2: `<p><strong>➢ SEQUÊNCIA 222 — Desafios de Autoconfiança e Dependência</strong></p>
 
-Existe grande tendência a iniciar novos relacionamentos ao longo da vida.
+<p>Esta configuração atua diretamente sobre o senso de valor próprio e autoconfiança de <strong>você</strong>. <strong>você</strong> poderá se perceber mais vulnerável à opinião alheia, permitindo que amigos ou parceiros influencem demais as suas decisões pessoais.</p>
 
-Podem cometer erros nas escolhas afetivas e perder tempo em envolvimentos inadequados.
+<p>A indecisão e a timidez podem se tornar obstáculos frequentes para <strong>você</strong>, dificultando a imposição de suas vontades. Há um risco de <strong>você</strong> anular a própria identidade em prol do convívio, sentindo-se incapaz de caminhar com as próprias pernas.</p>
 
-Às vezes, quando encontram a pessoa ideal, as circunstâncias já são complexas.
+<p>É necessária vigilância para que <strong>você</strong> não se torne uma pessoa dependente emocionalmente. O desafio para <strong>você</strong> é fortalecer o seu "eu" interno para não se perder nas expectativas alheias. Recuperar o comando da própria vida é a grande lição para <strong>você</strong> aqui.</p>`,
 
-Possuem forte intuição para compreender motivações humanas.
+  3: `<p><strong>➢ SEQUÊNCIA 333 — Desafios de Comunicação e Expressão</strong></p>
 
-Geralmente acabam se unindo a parceiros com interesses semelhantes.
+<p>A comunicação, que deveria ser a ponte de <strong>você</strong> com o mundo, pode se transformar em uma barreira. <strong>você</strong> poderá sentir uma dificuldade crescente em expressar o que sente, resultando em frequentes mal-entendidos com as pessoas ao redor.</p>
 
-Precisam de alguém que compreenda sua sensibilidade e emotividade.
+<p>Os pensamentos de <strong>você</strong> parecem não ser compreendidos, o que gera frustração no trabalho e nos relacionamentos. A sensação de estar em isolamento pode levar <strong>você</strong> a um retraimento social indesejado neste período.</p>
 
-Costumam evitar expor problemas conjugais a terceiros.
+<p>Convencer os outros sobre suas opiniões exigirá de <strong>você</strong> um esforço muito maior. Fique atento a possíveis sensibilidades no sistema respiratório. Trabalhar a clareza e a paciência no diálogo será fundamental para que <strong>você</strong> atravesse essa fase sem conflitos.</p>`,
 
-Isso pode levá-las a relações desequilibradas se não houver cuidado.
+  4: `<p><strong>➢ SEQUÊNCIA 444 — Desafios de Estabilidade e Trabalho</strong></p>
 
-Devem evitar parceiros possessivos ou exploradores.
+<p>Esta sequência aponta para um período de provações severas no campo da carreira de <strong>você</strong>. <strong>você</strong> poderá encontrar obstáculos que parecem bloquear qualquer tentativa de ascensão ou reconhecimento profissional imediato.</p>
 
-A estabilidade surge quando aprendem a expressar sentimentos com clareza.
-A comunicação é essencial para a felicidade amorosa.
+<p>Pode haver uma tendência de <strong>você</strong> enfrentar dificuldades financeiras ou instabilidade no emprego. A falta de perspectivas claras pode gerar em <strong>você</strong> uma ansiedade constante sobre a segurança material e o sustento futuro.</p>
 
-Com maturidade, encontram vínculos duradouros e enriquecedores.
+<p>Na esfera física, essa pressão por estabilidade pode sobrecarregar o sistema circulatório de <strong>você</strong>. Manter a fé em suas próprias habilidades será o maior desafio de <strong>você</strong> enquanto busca suprir as suas necessidades básicas com resiliência.</p>`,
 
-O amor precisa caminhar junto com leveza e compreensão.`,
+  5: `<p><strong>➢ SEQUÊNCIA 555 — Desafios de Instabilidade e Mudança</strong></p>
 
-  4:`A vibração 4 revela forte necessidade emocional de estabilidade e segurança no amor. 
-  
-Existe grande valorização do casamento e de relações duradouras.
-Homens tendem a ser protetores e dedicados; mulheres mais acessíveis e práticas.
+<p>A marca desta influência é a instabilidade, forçando mudanças que <strong>você</strong> muitas vezes não deseja realizar. Pode haver alternância no status social ou na profissão de <strong>você</strong>, gerando um desgaste mental profundo.</p>
 
-Buscam vínculos sólidos e estruturados.
+<p>A sensação para <strong>você</strong> é de que nada é sólido, pois o que está firme hoje pode mudar amanhã. Essa insatisfação crônica pode levar <strong>você</strong> ao desejo de romper laços e buscar um isolamento radical, o que pode afastar pessoas importantes.</p>
 
-Podem enfrentar inveja ou interferências externas por falta de discrição.
+<p>O corpo de <strong>você</strong> pode reagir a essa montanha-russa emocional através de manifestações na pele. A lição para <strong>você</strong> é aprender a encontrar o equilíbrio interno mesmo quando o mundo externo parecer estar em colapso.</p>`,
 
-Há forte valorização da aparência física, o que pode levar a escolhas equivocadas.
+  6: `<p><strong>➢ SEQUÊNCIA 666 — Desafios Afetivos e Decepções</strong></p>
 
-Essas escolhas podem gerar decepções e aprendizados importantes.
-Desejam parceiros ativos e fortes.
+<p>O campo dos afetos é o mais atingido aqui, trazendo para <strong>você</strong> o peso da decepção. <strong>você</strong> poderá passar por situações onde pessoas íntimas ou sócios falham com a sua confiança, gerando mágoas profundas.</p>
 
-Cobranças excessivas podem gerar conflitos frequentes.
+<p>Existe um risco elevado de <strong>você</strong> sentir-se uma pessoa incompreendida pelo parceiro amado. Expectativas muito altas tendem a resultar em frustrações dolorosas para <strong>você</strong>. Muitas vezes, <strong>você</strong> se sentirá só, mesmo estando em companhia.</p>
 
-Precisam desenvolver flexibilidade emocional.
+<p>Fisicamente, essa carga emocional de tristeza costuma se concentrar na região cardíaca de <strong>você</strong>. É essencial que <strong>você</strong> aprenda a não colocar a sua felicidade exclusivamente nas mãos de terceiros para evitar o sofrimento.</p>`,
 
-Relacionamentos prosperam com diálogo e equilíbrio.
+  7: `<p><strong>➢ SEQUÊNCIA 777 — Desafios de Isolamento e Intolerância</strong></p>
 
-A segurança emocional é prioridade absoluta.
+<p>Sob esta vibração, o medo e a intolerância podem alterar o comportamento de <strong>você</strong>. <strong>você</strong> poderá se tornar uma pessoa mais arredia, teimosa e com uma tendência ao isolamento voluntário que gera um sentimento de vazio.</p>
 
-Com maturidade, constroem relações firmes e confiáveis.
+<p>Há um risco de <strong>você</strong> desenvolver comportamentos arrogantes para mascarar inseguranças internas. A intolerância de <strong>você</strong> com as falhas alheias pode afastar aliados valiosos. Essa busca por refúgio na própria mente pode tornar <strong>você</strong> refém de pensamentos negativos.</p>
 
-O amor é visto como compromisso e parceria.
+<p>No campo da saúde, esse padrão de solidão é desgastante para o organismo de <strong>você</strong>. Buscar ajuda e manter a mente aberta para o mundo é o caminho para que <strong>você</strong> não se perca em sua própria escuridão interior.</p>`,
 
-A estabilidade afetiva é o maior objetivo.`,
+  8: `<p><strong>➢ SEQUÊNCIA 888 — Desafios Financeiros e Emocionais</strong></p>
 
+<p>Esta é uma das sequências mais desafiadoras para <strong>você</strong>, pois afeta o equilíbrio emocional e financeiro. <strong>você</strong> poderá manifestar uma postura mais agressiva, perdendo o controle diante de pequenas adversidades diárias.</p>
 
-    5:`A vibração 5 simboliza inquietação, liberdade e desejo de experiências. 
-    
-Existe forte necessidade de novidades, viagens e mudanças.
+<p>O período pode ser marcado por perdas financeiras ou injustiças materiais para <strong>você</strong>. A capacidade de julgamento de <strong>você</strong> estará nublada, facilitando decisões precipitadas. A sensação de injustiça pode corroer a paz de <strong>você</strong> e gerar explosões de temperamento.</p>
 
-Podem viver mais de uma união ao longo da vida.
+<p>Este estresse crônico é um alerta para o sistema nervoso de <strong>você</strong>. O desafio é manter a ética e a calma mesmo quando <strong>você</strong> sentir que tudo está fugindo do seu controle direto.</p>`,
 
-Possuem carisma e facilidade para conquistar pessoas.
+  9: `<p><strong>➢ SEQUÊNCIA 999 — Desafios de Estagnação e Perdas</strong></p>
 
-Podem se tornar controladoras se não equilibrar emoções.
+<p>Aqui, a capacidade de discernimento de <strong>você</strong> fica seriamente comprometida. <strong>você</strong> poderá enfrentar um ciclo de estagnação onde nada parece avançar, independentemente do esforço que <strong>você</strong> aplique nas situações.</p>
 
-Precisam de parceiros compreensivos e flexíveis.
+<p>Riscos de dificuldades financeiras agudas ou perda de patrimônio são reais para <strong>você</strong> neste ciclo. A sensação de estar com a vida "travada" gera uma frustração que <strong>você</strong> precisa vigiar para não evoluir para quadros depressivos.</p>
 
-Na juventude, tendem a relacionamentos instáveis.
-
-A maturidade traz maior estabilidade afetiva.
-
-Geralmente casam após os 30 anos.
-
-A amizade costuma permanecer mesmo após separações.
-
-Podem desenvolver parcerias profissionais com ex-companheiros.
-
-Precisam trabalhar constância e compromisso.
-
-A liberdade precisa coexistir com responsabilidade.
-
-Relacionamentos amadurecem com o tempo.
-
-A felicidade surge quando aprendem a equilibrar emoção e disciplina.`,
-
-    6:`A vibração 6 demonstra romantismo, sensibilidade e necessidade de amor. 
-    
-Mesmo apaixonadas, podem ser tímidas na expressão emocional.
-
-Buscam a pessoa ideal com persistência.
-
-Podem enfrentar relacionamentos difíceis até amadurecerem.
-
-São dedicadas, carinhosas e leais.
-
-Precisam de companheirismo constante.
-
-Têm forte necessidade de sentir-se amadas.
-
-Podem desenvolver possessividade se inseguras.
-
-Relacionamentos se estabilizam após os 30 anos.
-
-Precisam aprender a confiar e equilibrar emoções.
-
-A intuição é guia importante no amor.
-
-Com maturidade, vivem relações profundas e duradouras.
-
-A família torna-se prioridade central.
-
-A estabilidade emocional cresce com o tempo.
-
-O amor é vivido com intensidade e dedicação.`,
-
-    7:`A vibração 7 indica dificuldade em encontrar o parceiro ideal. 
-São companheiras e dedicadas, mas seletivas.
-
-Costumam casar jovens e se separar depois.
-
-Podem ter mais de uma união ao longo da vida.
-
-Precisam conhecer profundamente o parceiro antes do compromisso.
-
-Valorizam liberdade e individualidade.
-
-Não lidam bem com separações.
-
-Têm dificuldade em se adaptar a novos relacionamentos.
-
-Podem viver muitos envolvimentos ao longo da vida.
-
-Nem sempre buscam aventuras, mas acabam vivenciando experiências intensas.
-
-A maturidade traz maior clareza emocional.
-
-Relacionamentos tornam-se mais estáveis após os 30 anos.
-
-Precisam equilibrar independência e parceria.
-
-O autoconhecimento é essencial no amor.
-
-A felicidade surge com escolhas conscientes.`,
-
-    8:`A vibração 8 demonstra forte necessidade de segurança emocional. 
-Valorizam estabilidade e compromisso duradouro.
-
-Podem ser dominadoras quando contrariadas.
-
-São sinceras e leais nos relacionamentos.
-
-Buscam uniões definitivas.
-
-Separações costumam ocorrer antes do casamento.
-
-Demoram a superar decepções amorosas.
-
-Dificilmente se casam novamente após separação.
-
-Possuem forte desejo sexual, mas são cautelosas.
-
-Precisam de companheirismo e parceria.
-
-Valorizam relações sólidas e estruturadas.
-
-A estabilidade é prioridade máxima.
-
-Relacionamentos tendem a ser duradouros.
-
-O amor é conduzido com seriedade.
-
-A fidelidade é uma característica marcante.`,
-
-    9:`A vibração 9 vê o casamento como grande objetivo de vida. 
-São capazes de sacrificar sonhos pelo amor.
-
-Buscam amor intenso e verdadeiro.
-
-Podem sofrer desilusões amorosas.
-
-Tendem a idealizar o parceiro.
-
-Na juventude, sentem atração por pessoas mais velhas.
-
-Na maturidade, preferem parceiros mais jovens.
-
-Precisam alinhar vida profissional e afetiva.
-
-Incompatibilidades geram frustrações.
-
-Precisam aprender a equilibrar expectativas.
-
-O amor é vivido com profundidade emocional.
-
-Buscam relações significativas e verdadeiras.
-
-Devem evitar idealizações excessivas.
-
-A maturidade traz maior equilíbrio afetivo.
-
-A felicidade surge quando alinham amor e realidade.`
-
-  },
-
-
-
- anoPessoal:{
-1:`ANO PESSOAL 1 — INÍCIO DE CICLO, AÇÃO E RENOVAÇÃO
-
-Este é o ano que marca o início de um novo ciclo de nove anos. A energia da renovação se torna evidente e tudo começa a se reorganizar para um novo direcionamento de vida. Este período estabelece as bases de tudo aquilo que será construído nos próximos anos, portanto cada decisão tomada agora terá impacto direto no futuro. É o momento de agir, iniciar projetos e assumir o protagonismo da própria história. A vida pede coragem, independência e determinação.
-
-Surge uma necessidade natural de mudança, de romper com padrões antigos e iniciar caminhos diferentes. Este é o momento ideal para começar projetos, mudar hábitos, assumir novas responsabilidades e tomar decisões importantes. A energia favorece atitudes ousadas e independentes. A iniciativa será recompensada. A passividade será penalizada.
-
-Este ano exige autoconfiança e força de vontade. Muitas situações testarão sua coragem e sua capacidade de agir sozinho. O universo impulsiona a autonomia, a liderança e a iniciativa pessoal. O aprendizado principal deste período é descobrir quem você é e qual caminho deseja seguir.
-
-Evite procrastinação, insegurança e medo de errar. A falta de iniciativa pode atrasar todo o ciclo de nove anos. Este é um período de plantio. Tudo o que for iniciado agora tende a crescer e se desenvolver com o tempo.
-
-Novas oportunidades surgirão inesperadamente. Mudanças profissionais, pessoais ou emocionais podem ocorrer. Confie na sua intuição. Desenvolva sua identidade, fortaleça sua individualidade e estabeleça metas claras.
-
-Este é o ano da ação, da coragem e da construção do futuro. Coloque-se em movimento e inicie a nova fase da sua vida.`,
-
-2:`ANO PESSOAL 2 — PACIÊNCIA, RELAÇÕES E PREPARAÇÃO
-
-Após o impulso do ano 1, o ano 2 traz um ritmo mais lento e sensível. Este período pede paciência, cooperação e equilíbrio emocional. Em vez de agir impulsivamente, será necessário observar, esperar e desenvolver relações. Este é um ano de preparação e amadurecimento emocional.
-
-As oportunidades surgem através de parcerias, amizades e relacionamentos. A diplomacia será essencial. O crescimento ocorre nos bastidores. Muitas situações exigirão sensibilidade e compreensão. Este é um período de aprendizado emocional profundo.
-
-A vida pede calma e paciência. Forçar acontecimentos pode gerar frustrações. O progresso ocorre de forma gradual e silenciosa. Este é o momento de fortalecer vínculos e cultivar alianças importantes.
-
-Pode haver maior sensibilidade emocional. A necessidade de afeto e compreensão aumenta. Evite conflitos desnecessários e aprenda a ouvir mais do que falar.
-
-Este é o ano em que passado, presente e futuro começam a se conectar. O aprendizado obtido agora será essencial para os próximos anos do ciclo.
-
-A cooperação trará oportunidades futuras. A paciência será recompensada. O crescimento acontece lentamente, mas com segurança.`,
-
-3:`ANO PESSOAL 3 — EXPANSÃO, CRIATIVIDADE E SOCIALIZAÇÃO
-
-Este é um ano de expansão, alegria e expressão pessoal. A energia favorece comunicação, criatividade e vida social. Surge uma forte necessidade de viver experiências novas, desenvolver talentos e ampliar horizontes.
-
-A vida se torna mais dinâmica e cheia de oportunidades. Este é um período favorável para estudos, viagens, projetos criativos e novas amizades. O carisma aumenta e a comunicação se torna mais fácil.
-
-A criatividade deve ser usada de forma produtiva. Evite dispersão e superficialidade. A energia deste ano pode gerar excesso de entusiasmo e impulsividade.
-
-Este é um período de crescimento pessoal e expansão social. O sucesso vem através da comunicação e da expressão.
-
-Relacionamentos podem ganhar destaque. Novas conexões surgem com facilidade. Aproveite a fase, mas mantenha equilíbrio.
-
-A felicidade cresce quando você permite que sua criatividade se manifeste. Este é um ano leve, positivo e cheio de oportunidades.`,
-
-4:`ANO PESSOAL 4 — TRABALHO, ESTRUTURA E CONSTRUÇÃO
-
-Este é um ano de esforço, disciplina e organização. Após a expansão do ano 3, surge a necessidade de estruturar e consolidar conquistas. Este período exige foco, planejamento e responsabilidade.
-
-O progresso ocorre através do trabalho constante e da dedicação. Este é um ano de construção de bases sólidas para o futuro. O crescimento pode parecer lento, mas será consistente.
-
-A vida pede organização financeira, planejamento profissional e estabilidade emocional. É o momento de estabelecer prioridades e eliminar distrações.
-
-A disciplina será essencial. Evite atalhos ou soluções fáceis. O sucesso virá através da persistência.
-
-Este ano traz maturidade, responsabilidade e estabilidade. A construção do futuro acontece agora.`,
-
-5:`ANO PESSOAL 5 — MUDANÇAS, LIBERDADE E TRANSFORMAÇÃO
-
-Este é o ano mais dinâmico do ciclo. Mudanças inesperadas podem acontecer em várias áreas da vida. A energia favorece movimento, liberdade e transformação.
-
-A rotina tende a ser quebrada. Novas oportunidades surgem rapidamente. Este é um período de adaptação e crescimento através da experiência.
-
-A liberdade aumenta, mas exige responsabilidade. Evite impulsividade e decisões precipitadas.
-
-Este é o momento de rever metas e ajustar o caminho. A vida pede flexibilidade e coragem para mudar.
-
-Mudanças podem abrir portas importantes. O crescimento ocorre fora da zona de conforto.
-
-Este é um ano de transformação profunda e expansão pessoal.`,
-
-6:`ANO PESSOAL 6 — RESPONSABILIDADES, AMOR E EQUILÍBRIO
-
-Este é um dos anos mais importantes emocionalmente dentro do ciclo de nove anos. A vibração 6 está profundamente ligada ao amor, à família, às responsabilidades e aos vínculos afetivos. Durante este período, os relacionamentos ganham destaque e passam a ocupar posição central em sua vida. Surge uma forte necessidade de equilíbrio emocional, estabilidade e compromisso.
-
-Muitas decisões importantes envolvendo família, casa, casamento ou relacionamentos tendem a acontecer. Este é um ano de compromisso e responsabilidade afetiva. A vida pede maturidade emocional, cuidado com os outros e dedicação às pessoas próximas. É comum sentir necessidade de cuidar, proteger ou apoiar alguém.
-
-Você pode ser chamado a assumir responsabilidades que antes evitava. Este é um período de amadurecimento emocional e crescimento através do amor e das relações. O aprendizado principal deste ano está ligado ao equilíbrio entre suas necessidades e as necessidades das pessoas ao seu redor.
-
-A harmonia será fundamental para o sucesso deste período. Conflitos familiares ou emocionais podem surgir para ensinar sobre empatia, compreensão e responsabilidade. Este é um ano de decisões importantes que podem impactar o futuro afetivo.
-
-Também é um período favorável para casamento, formação de família, mudança de residência ou fortalecimento de vínculos importantes. A vida pede estabilidade, compromisso e responsabilidade.
-
-O desafio será evitar cobranças excessivas, idealizações e expectativas irreais sobre os outros. Aprenda a amar com maturidade e equilíbrio. Este é o ano de construir segurança emocional e afetiva.`,
-
-7:`ANO PESSOAL 7 — INTROSPECÇÃO, ESPIRITUALIDADE E AUTOCONHECIMENTO
-
-Este é o ano mais introspectivo de todo o ciclo. Após anos de ação e responsabilidade, chega o momento de pausa, reflexão e autoconhecimento. A vida desacelera para permitir crescimento interior.
-
-A vibração 7 favorece estudos, espiritualidade, análise e busca por sentido. Surge uma forte necessidade de isolamento, silêncio e reflexão. Este é um período de crescimento interior profundo.
-
-O foco deixa de ser o mundo exterior e passa a ser o mundo interior. A intuição se fortalece. O autoconhecimento se torna essencial. Este é o momento de compreender a própria vida e reavaliar objetivos.
-
-Pode ser um ano de afastamento social, mudanças internas e questionamentos existenciais. Muitas respostas surgirão através da introspecção.
-
-Evite decisões impulsivas ou mudanças radicais. Este é um ano de preparação interna. O crescimento ocorre de dentro para fora.
-
-O aprendizado principal é confiar na intuição e desenvolver sabedoria interior. Este período prepara o terreno para grandes conquistas futuras.`,
-
-8:`ANO PESSOAL 8 — REALIZAÇÃO, PODER E RESULTADOS
-
-Este é o ano das conquistas materiais e da realização profissional. A vibração 8 representa poder, prosperidade, reconhecimento e recompensas pelos esforços dos anos anteriores.
-
-Tudo o que foi plantado nos anos anteriores começa a gerar resultados concretos. Este é um período de crescimento financeiro, profissional e material. O foco está em conquistas, liderança e realização.
-
-O sucesso dependerá de disciplina, organização e responsabilidade. Grandes oportunidades podem surgir. Este é um ano de expansão financeira e profissional.
-
-A vida pede ambição equilibrada com ética. O poder deve ser usado com sabedoria. Este é um período de colheita e realização.
-
-O aprendizado principal é lidar com poder, dinheiro e sucesso de forma equilibrada. Este é o ano da prosperidade e das recompensas.`,
-
-9:`ANO PESSOAL 9 — FINALIZAÇÕES, DESAPEGO E TRANSFORMAÇÃO
-
-Este é o último ano do ciclo de nove anos. Representa encerramentos, desapego e preparação para um novo começo. Tudo o que não faz mais sentido tende a ser finalizado.
-
-Relacionamentos, projetos e situações podem chegar ao fim. Este é um período de limpeza emocional e espiritual. O objetivo é liberar espaço para um novo ciclo.
-
-A vida pede desapego, compaixão e compreensão. Este é um ano de conclusões e aprendizado emocional profundo.
-
-Evite resistir às mudanças. Finalizações são necessárias para novos começos.
-
-Este é o ano de encerramento, cura e preparação para uma nova fase da vida.`  
-  },
-
-regente:{
-1:"Início e Liderança. A Potência Regente 1 representa o princípio da individualidade, da iniciativa e da força criadora. Ela rege toda a vida do indivíduo impulsionando-o a agir liderar e abrir caminhos próprios. É a energia do começo da autonomia e da afirmação do eu. No aspecto positivo manifesta liderança natural coragem criatividade inteligência estratégica capacidade de decisão e forte espírito de independência. Indica personalidade ativa inovadora e determinada com potencial para posições de destaque. No aspecto negativo pode gerar egoísmo autoritarismo impulsividade orgulho excessivo e dificuldade em aceitar limites. Quando desequilibrada pode levar ao isolamento e conflitos. A Potência Regente 1 ensina que o verdadeiro líder domina a si mesmo antes de dominar o mundo",
-
-2:"Sensibilidade e Intuição. A Potência Regente 2 representa percepção espiritual sensibilidade emocional e compreensão do invisível. Rege a vida através da intuição empatia e busca por equilíbrio interior. No aspecto positivo manifesta intuição aguçada espiritualidade diplomacia cooperação e profundidade emocional. No aspecto negativo pode gerar insegurança dependência indecisão passividade e fantasia excessiva levando à fuga da realidade. A Potência Regente 2 ensina que a verdadeira força nasce da sensibilidade consciente",
-
-3:"Expressão e Criação. A Potência Regente 3 representa criatividade comunicação e expansão da consciência. Rege a vida pela expressão intelectual artística e emocional. No aspecto positivo manifesta alegria sociabilidade criatividade e inspiração. No aspecto negativo pode gerar dispersão vaidade instabilidade emocional e dificuldade de concluir projetos. A Potência Regente 3 ensina que criatividade precisa de disciplina para virar realização",
-
-4:"Ordem e Estrutura. A Potência Regente 4 representa estabilidade disciplina e construção de bases sólidas. Rege a vida pelo trabalho organização e perseverança. No aspecto positivo manifesta responsabilidade pragmatismo senso de justiça e confiabilidade. No aspecto negativo pode gerar rigidez medo de mudanças e conservadorismo excessivo. A Potência Regente 4 ensina que segurança nasce da constância",
-
-5:"Sabedoria e Orientação. A Potência Regente 5 representa conhecimento ética e busca da verdade. Rege a vida pelo aprendizado experiência e orientação moral. No aspecto positivo manifesta inteligência espiritualidade e capacidade de ensinar. No aspecto negativo pode gerar dogmatismo intolerância e orgulho intelectual. A Potência Regente 5 ensina que o saber verdadeiro liberta",
-
-6:"Escolha e Equilíbrio Emocional. A Potência Regente 6 representa conflito entre razão e emoção necessidade de escolha e aprendizado do amor consciente. Rege a vida pelas relações afetivas. No aspecto positivo manifesta amor harmonia responsabilidade afetiva e conciliação. No aspecto negativo pode gerar indecisão ciúme dependência emocional e conflitos internos. A Potência Regente 6 ensina que amar é escolher com consciência",
-
-7:"Vitória e Autodomínio. A Potência Regente 7 representa triunfo do espírito sobre a matéria e domínio mental. Rege a vida pela busca de equilíbrio entre razão e instinto. No aspecto positivo manifesta disciplina autoconfiança e superação. No aspecto negativo pode gerar arrogância frieza emocional e obsessão por controle. A Potência Regente 7 ensina que a verdadeira vitória é conquistar a si mesmo",
-
-8:"Justiça e Equilíbrio Universal. A Potência Regente 8 representa lei do equilíbrio causa e efeito e justiça universal. Rege a vida pela harmonização de forças opostas. No aspecto positivo manifesta ética responsabilidade e liderança equilibrada. No aspecto negativo pode gerar fanatismo rigidez moral e autoritarismo. A Potência Regente 8 ensina que toda ação gera consequências",
-
-9:"Sabedoria e Sacrifício. A Potência Regente 9 representa prudência sabedoria e renúncia. Rege a vida pelo autoconhecimento e busca de significado. No aspecto positivo manifesta maturidade espiritualidade e altruísmo. No aspecto negativo pode gerar isolamento pessimismo e apego ao passado. A Potência Regente 9 ensina que a sabedoria nasce da experiência",
-  },
-
- sequenciaNegativa: {
-
-  1: `➢ SEQUENCIA 111 Nesta fase, você poderá sentir que sua chama interna de motivação está sendo abafada por obstáculos inesperados.
-A influência desta sequência tende a minar sua capacidade de iniciativa, tornando o ato de começar algo novo um verdadeiro desafio.
-É comum surgir um sentimento de impotência, onde a coragem para arriscar parece desaparecer, dando lugar à inatividade.
-
-Você pode enfrentar períodos de estagnação profissional ou desânimo profundo, sentindo-se limitado em suas realizações.
-Esse estado de baixa energia pode perdurar enquanto o Arcano regente estiver dominando o seu ciclo atual.
-Psicologicamente, isso gera uma sensação de paralisia diante das oportunidades da vida.
-
-No aspecto físico, o mapa acende um alerta para o cuidado redobrado com o centro do seu peito.
-Existe uma tendência vibracional que pode afetar o sistema cardíaco se o estresse não for gerenciado.
-É um momento que exige esforço consciente para não se deixar abater pelo desemprego ou pela falta de propósito.
-A chave aqui é buscar reacender sua determinação interna, mesmo quando o cenário externo parecer desfavorável.`,
-
-  2: `➢ SEQUENCIA 222 Esta configuração vibracional atua diretamente sobre o seu senso de valor próprio e autoconfiança.
-Você poderá se perceber mais vulnerável à opinião alheia, permitindo que amigos ou parceiros influencem demais suas decisões.
-A indecisão e a timidez podem se tornar obstáculos frequentes, dificultando a imposição de suas vontades e desejos.
-
-Há um risco real de desenvolver comportamentos submissos, onde você anula sua identidade em prol do convívio com os outros.
-Essa insegurança constante acaba limitando o desenvolvimento de projetos pessoais que exigem autonomia.
-Sentir-se incapaz de caminhar com as próprias pernas é uma marca comum desta influência negativa.
-
-É necessário vigilância para não se tornar dependente emocionalmente de quem está ao seu redor.
-No campo da saúde, essa fragilidade emocional pode abrir portas para inclinações que gerem dependências químicas ou psicológicas.
-O desafio é fortalecer o seu "eu" interno para que você não se perca nas expectativas da sociedade ou da família.
-Recuperar o comando da sua vida é a grande lição que esta sequência tenta lhe ensinar através desses testes.`,
-
-  3: `➢ SEQUENCIA 333 A comunicação, que deveria ser sua ponte com o mundo, pode se transformar em uma barreira sob esta influência.
-Você poderá sentir uma dificuldade crescente em expressar o que sente, resultando em frequentes mal-entendidos.
-
-Seus pensamentos e ideias, por mais brilhantes que sejam, parecem não ser compreendidos pelas pessoas próximas.
-Isso gera uma frustração constante no ambiente de trabalho e, principalmente, dentro dos seus relacionamentos afetivos.
-A sensação de estar isolado em sua própria mente pode levar a um retraimento social indesejado.
-
-Convencer os outros sobre suas opiniões exigirá um esforço muito maior do que o habitual durante este período.
-Essa limitação na expressão pessoal pode causar um sentimento de invisibilidade social.
-No aspecto biológico, o estresse de não ser ouvido tende a se manifestar em áreas de troca e movimento.
-Fique atento a possíveis sensibilidades no sistema respiratório ou desconfortos nas articulações do corpo.
-Trabalhar a clareza e a paciência no diálogo será fundamental para atravessar essa fase sem maiores conflitos.`,
-
-  4: `➢ SEQUENCIA 444 Esta sequência aponta para um período de provações severas no campo da carreira e da estabilidade profissional.
-Você poderá encontrar obstáculos que parecem bloquear qualquer tentativa de ascensão ou reconhecimento no trabalho.
-
-Existe uma tendência a enfrentar remunerações abaixo do esperado ou dificuldades em se manter estável em um emprego.
-Muitas vezes, a necessidade de sobrevivência pode obrigá-lo a aceitar funções que não condizem com seu talento.
-A falta de perspectivas claras de futuro pode gerar uma ansiedade constante sobre a sua segurança material.
-
-É um ciclo que exige resiliência, pois o sucesso parece sempre estar um passo à frente do seu alcance atual.
-A frustração profissional pode se transformar em um peso emocional difícil de carregar no dia a dia.
-Na esfera física, essa pressão por estabilidade pode sobrecarregar o sistema circulatório e as funções arteriais.
-Também há um alerta vibracional para o desenvolvimento de condições reumáticas causadas pela tensão acumulada.
-Manter a fé em suas habilidades será o seu maior desafio enquanto você busca suprir suas necessidades básicas.`,
-
-  5: `➢ SEQUENCIA 555 A marca desta influência é a instabilidade constante, forçando mudanças que você muitas vezes não deseja realizar.
-Pode haver uma alternância drástica em seus valores, status social e até mesmo em sua residência ou profissão.
-Viver em constantes altos e baixos gera um desgaste mental profundo, dificultando qualquer plano de longo prazo.
-A sensação é de que nada é sólido ou seguro, pois o que está firme hoje pode mudar completamente amanhã.
-
-Você poderá se sentir constantemente em busca de algo que o satisfaça, sem nunca encontrar um porto seguro.
-Essa insatisfação crônica pode levá-lo ao desejo de romper todos os laços e buscar um isolamento radical.
-O desapego excessivo pode acabar afastando pessoas importantes que poderiam ajudá-lo nesse processo.
-O corpo físico pode reagir a essa montanha-russa emocional através de manifestações na pele.
-
-Além disso, a falta de foco característica deste período aumenta a predisposição a sofrer pequenos acidentes domésticos.
-A lição aqui é aprender a encontrar o equilíbrio interno mesmo quando o mundo externo parece estar em colapso.`,
-
-  6: `➢ SEQUENCIA 666 O campo dos afetos e dos sentimentos é o mais atingido por esta sequência, trazendo o peso da decepção.
-Você poderá passar por situações onde amigos íntimos, sócios ou familiares falham com a sua confiança.
-Existe um risco elevado de sentir-se incompreendido pelo parceiro ou pela pessoa amada em seus planos de vida.
-
-A dor de não ver seus sentimentos correspondidos ou respeitados pode gerar um amargor difícil de digerir.
-Expectativas muito altas em relação aos outros tendem a resultar em frustrações dolorosas neste ciclo.
-Muitas vezes, você se sentirá sozinho mesmo estando cercado por pessoas que deveriam apoiá-lo.
-A desilusão amorosa pode afetar sua visão sobre a lealdade e a bondade das pessoas ao seu redor.
-
-Fisicamente, essa carga emocional de tristeza costuma se concentrar na região cardíaca e no sistema vascular.
-É essencial aprender a não colocar a sua felicidade exclusivamente nas mãos de terceiros para evitar o sofrimento.
-A cura virá através do amor-próprio e da compreensão de que nem todos possuem o mesmo nível de entrega que você.`,
-
-  7: `➢ SEQUENCIA 777 Sob esta vibração, o medo e a intolerância podem se tornar companheiros constantes, alterando seu comportamento.
-Você poderá se tornar uma pessoa mais arredia, teimosa e com uma tendência perigosa ao isolamento voluntário.
-O afastamento social pode parecer uma proteção, mas acaba gerando frustrações profundas e um sentimento de vazio.
-
-Há um risco de desenvolver comportamentos arrogantes ou vaidosos como forma de mascarar suas próprias inseguranças.
-A intolerância com as falhas alheias pode afastar aliados valiosos, tornando sua jornada muito mais solitária.
-Os excessos e exageros podem ser usados como válvula de escape para o medo que você sente do futuro.
-Essa busca por refúgio na própria mente pode levá-lo a se tornar refém de pensamentos negativos e obsessivos.
-
-No campo da saúde, esse padrão de solidão e estresse nervoso é extremamente desgastante para o organismo.
-Existe um alerta para o sistema nervoso e até para o surgimento de patologias mais graves se a mente não for cuidada.
-Buscar ajuda e manter a mente aberta para o mundo é o caminho para não se perder em sua própria escuridão.`,
-
-  8: `➢ SEQUENCIA 888 Esta é uma das sequências mais desafiadoras, pois afeta simultaneamente o equilíbrio emocional e o financeiro.
-Você poderá manifestar uma postura agressiva ou inacessível, perdendo o controle diante de pequenas adversidades.
-Isso acaba afastando o convívio social, pois as pessoas sentem dificuldade em lidar com sua instabilidade.
-
-O período pode ser marcado por perdas financeiras significativas, injustiças e privações materiais severas.
-Sua capacidade de julgamento estará nublada, tornando-o um alvo fácil para golpes ou decisões precipitadas.
-O dinheiro pode entrar e sair com a mesma rapidez, criando uma oscilação angustiante entre a fartura e a escassez.
-A sensação de injustiça pode corroer sua paz, levando a explosões de temperamento que prejudicam sua imagem.
-Esse estresse crônico é um veneno para o seu sistema nervoso, podendo gerar doenças psicossomáticas graves.
-
-É um momento que exige um controle férreo sobre as emoções para que elas não destruam o seu patrimônio.
-O desafio é manter a ética e a calma mesmo quando tudo parece estar sendo tirado de suas mãos.`,
-
-  9: `➢ SEQUENCIA 999 Aqui, a capacidade de discernimento e a compreensão das situações da vida ficam seriamente comprometidas.
-Você poderá enfrentar um ciclo de estagnação onde nada parece avançar, independentemente do seu esforço.
-Dificuldades financeiras agudas e até a perda de patrimônio construído ao longo de anos são riscos reais.
-Fracassos em negócios e relacionamentos podem surgir devido a uma visão distorcida da realidade.
-
-A sensação de estar "travado" no tempo gera uma frustração que pode evoluir para quadros de depressão.
-É difícil entender o porquê de tantas dificuldades estarem acontecendo ao mesmo tempo, gerando um peso mental.
-O estresse causado pela falta de resultados pode afetar drasticamente o seu ânimo para continuar lutando.
-
-No plano físico, essa carga de estresse constante é um fator de risco para o seu sistema nervoso e coração.
-Doenças somáticas e hipocondria podem aparecer como reflexo de uma mente que não encontra saída para os problemas.
-A lição fundamental deste período é o desapego e a busca por uma nova forma de enxergar o valor da vida.`
+<p>No plano físico, essa carga de estresse é um fator de risco para o coração de <strong>você</strong>. A lição fundamental deste período para <strong>você</strong> é o desapego e a busca por uma nova forma de enxergar o valor real da vida.</p>`
 },
 
 sinastria : {
