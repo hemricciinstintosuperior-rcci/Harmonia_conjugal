@@ -71,6 +71,12 @@ h2{
   font-weight:bold;
 }
 
+.texto-limpo p {
+    margin-bottom: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    text-indent: 25px;
+}
 body::before{
   content:"❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️";
   display:block;
@@ -408,7 +414,10 @@ console.log("BEBE:", dados.bebe);
 let textoSemTituloRepetido = dados.sinastria.texto.replace(/<h[23]>.*?<\/h[23]>/gi, '');
 
 // 2. Aplicamos a formatação para trocar números pelos nomes
-const textoSinastriaFormatado = aplicarNomes(textoSemTituloRepetido);
+const textoComParagrafos = aplicarNomes(textoSemTituloRepetido)
+  .split("\n")
+  .map(p => `<p>${p.trim()}</p>`)
+  .join("");
 
 const n1 = dados.pessoa1.nome;
 const n2 = dados.pessoa2.nome;
@@ -420,8 +429,7 @@ document.getElementById("conteudoSinastria").innerHTML = `
     </h3>
     
     <div class="numero">Índice de Harmonia: ${dados.sinastria.numero}</div>
-    <div class="texto-limpo">${textoSinastriaFormatado}</div>
-`;
+    <div class="texto-limpo">${textoComParagrafos}</div>
 
 /* BIOLOGICO */
 document.getElementById("conteudoBiologico").innerHTML =
