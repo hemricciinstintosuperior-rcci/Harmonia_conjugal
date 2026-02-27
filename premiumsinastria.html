@@ -274,12 +274,6 @@ function aplicarNomes(texto) {
 
     let novoTexto = texto;
 
-    // 1. LIMPEZA TOTAL: Remove a palavra "Energia" ou "número" e os espaços que vêm depois
-    // Isso evita que apareça "Energia Relacionamento de..."
-    novoTexto = novoTexto.replace(/Energia\s+/gi, ""); 
-    novoTexto = novoTexto.replace(/número\s+/gi, "");
-    novoTexto = novoTexto.replace(/Número\s+/gi, "");
-
     if (energia1 && energia2) {
         const menor = Math.min(energia1, energia2);
         const maior = Math.max(energia1, energia2);
@@ -287,18 +281,13 @@ function aplicarNomes(texto) {
         const nomeMenor = (energia1 === menor) ? nome1 : nome2;
         const nomeMaior = (energia1 === maior) ? nome1 : nome2;
 
-        // 2. TROCA PELO FORMATO DESEJADO
-        // O primeiro vira "Relacionamento de [Nome]"
-        novoTexto = novoTexto.split(`${menor}`).join(`Relacionamento de ${nomeMenor}`);
-        
-        // O segundo vira apenas o "[Nome]"
-        // Assim, o "com" que já está no texto original une os dois:
-        // "Relacionamento de Fulano com Ciclano"
-        novoTexto = novoTexto.split(`${maior}`).join(`${nomeMaior}`);
+        // Aqui ela apenas limpa a palavra "Energia" e coloca o Nome
+        // sem colocar "Relacionamento de" no meio do texto
+        novoTexto = novoTexto.replace(new RegExp(`Energia ${menor}`, 'gi'), nomeMenor);
+        novoTexto = novoTexto.replace(new RegExp(`Energia ${maior}`, 'gi'), nomeMaior);
+        novoTexto = novoTexto.replace(new RegExp(`número ${menor}`, 'gi'), nomeMenor);
+        novoTexto = novoTexto.replace(new RegExp(`número ${maior}`, 'gi'), nomeMaior);
     }
-
-    // Substituições de chaves extras
-    novoTexto = novoTexto.replaceAll("{nome1}", nome1).replaceAll("{nome2}", nome2);
 
     return novoTexto;
 }
@@ -395,11 +384,20 @@ console.log("BEBE:", dados.bebe);
 
 /* SINASTRIA */
 /* SINASTRIA - Atualizado para não repetir títulos */
+/* SINASTRIA */
 const textoSinastriaFormatado = aplicarNomes(dados.sinastria.texto);
 
+// Pegamos os nomes direto para o título
+const n1 = dados.pessoa1.nome;
+const n2 = dados.pessoa2.nome;
+
 document.getElementById("conteudoSinastria").innerHTML = `
-<div class="numero">Índice de Harmonia: ${dados.sinastria.numero}</div>
-<div class="texto-limpo">${textoSinastriaFormatado}</div>
+    <h3 style="text-align:center; margin-bottom:20px; font-size:22px;">
+        Harmonia Conjugal – Relacionamento de ${n1} com ${n2}
+    </h3>
+    
+    <div class="numero">Índice de Harmonia: ${dados.sinastria.numero}</div>
+    <div class="texto-limpo">${textoSinastriaFormatado}</div>
 `;
 
 /* BIOLOGICO */
