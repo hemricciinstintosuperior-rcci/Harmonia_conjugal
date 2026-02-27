@@ -281,18 +281,24 @@ function aplicarNomes(texto) {
         const nomeMenor = (energia1 === menor) ? nome1 : nome2;
         const nomeMaior = (energia1 === maior) ? nome1 : nome2;
 
-        // 1. Tratamos o primeiro número (Menor)
-        // Removemos "Energia" e colocamos "Relacionamento de [Nome]"
-        novoTexto = novoTexto.split(`Energia ${menor}`).join(`Relacionamento de ${nomeMenor}`);
-        novoTexto = novoTexto.split(`número ${menor}`).join(`Relacionamento de ${nomeMenor}`);
-        novoTexto = novoTexto.split(`Número ${menor}`).join(`Relacionamento de ${nomeMenor}`);
+        // --- A SOLUÇÃO DEFINITIVA ---
+        
+        // 1. Procuramos o padrão "Energia X com Energia Y" ou "Energia X e Energia Y"
+        // E substituímos pela sua frase exata: "Relacionamento de Fulano com Ciclano"
+        
+        // Removemos qualquer menção a "Energia X" ou "número X" e colocamos a estrutura que você pediu
+        novoTexto = novoTexto.replace(new RegExp(`Energia ${menor}`, 'gi'), `Relacionamento de ${nomeMenor}`);
+        novoTexto = novoTexto.replace(new RegExp(`Energia ${maior}`, 'gi'), `${nomeMaior}`);
+        
+        novoTexto = novoTexto.replace(new RegExp(`número ${menor}`, 'gi'), `Relacionamento de ${nomeMenor}`);
+        novoTexto = novoTexto.replace(new RegExp(`número ${maior}`, 'gi'), `${nomeMaior}`);
 
-        // 2. Tratamos o segundo número (Maior)
-        // Removemos "Energia" e deixamos APENAS o Nome
-        novoTexto = novoTexto.split(`Energia ${maior}`).join(`${nomeMaior}`);
-        novoTexto = novoTexto.split(`número ${maior}`).join(`${nomeMaior}`);
-        novoTexto = novoTexto.split(`Número ${maior}`).join(`${nomeMaior}`);
+        // Caso o seu texto original tenha um "com" ou "e" entre os números, 
+        // a frase ficará: "Relacionamento de Fulano com Ciclano"
     }
+
+    // Limpeza final de chaves extras
+    novoTexto = novoTexto.replaceAll("{nome1}", nome1).replaceAll("{nome2}", nome2);
 
     return novoTexto;
 }
