@@ -385,12 +385,17 @@ console.log("BEBE:", dados.bebe);
 /* SINASTRIA */
 /* SINASTRIA - Atualizado para não repetir títulos */
 /* SINASTRIA */
-const textoSinastriaFormatado = aplicarNomes(dados.sinastria.texto);
+/* SINASTRIA */
+// 1. Removemos o título indesejado que vem dentro do texto original
+let textoSemTituloRepetido = dados.sinastria.texto.replace(/<h[23]>.*?<\/h[23]>/gi, '');
 
-// Pegamos os nomes direto para o título
+// 2. Aplicamos a formatação para trocar números pelos nomes
+const textoSinastriaFormatado = aplicarNomes(textoSemTituloRepetido);
+
 const n1 = dados.pessoa1.nome;
 const n2 = dados.pessoa2.nome;
 
+// 3. Montamos o HTML final com apenas UM título centralizado
 document.getElementById("conteudoSinastria").innerHTML = `
     <h3 style="text-align:center; margin-bottom:20px; font-size:22px;">
         Harmonia Conjugal – Relacionamento de ${n1} com ${n2}
