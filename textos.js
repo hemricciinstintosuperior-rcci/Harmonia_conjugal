@@ -739,7 +739,7 @@ regente: {
 9: `<p><strong>Potência Regente 9 — Sabedoria e Sacrifício</strong></p>
 <p>A energia regente de <strong>você</strong> representa a prudência e a busca por significado profundo. Ela guia <strong>você</strong> através do autoconhecimento e da maturidade espiritual adquirida com a experiência.</p>
 <p><strong>você</strong> manifesta altruísmo e sabedoria, mas deve evitar o pessimismo ou o apego ao passado. <strong>você</strong> descobrirá que a sua maior força vem da capacidade de servir e compreender o mundo.</p>`
-}
+},
 
 sequenciaNegativa: {
   1: `<p><strong>➢ SEQUÊNCIA 111 — Desafios de Iniciativa e Motivação</strong></p>
