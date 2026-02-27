@@ -692,39 +692,51 @@ function abrirModalTexto(texto){
   document.getElementById("modalTexto").innerHTML = texto;
   document.getElementById("modal").style.display="block";
 }
+function formatarTextoPersonalizado(texto, nome) {
+  if (!texto) return "";
+  let t = texto;
+  // Troca "Você" e "você" pelo nome digitado
+  t = t.replace(/Você/g, nome);
+  t = t.replace(/você/g, nome);
+  return t;
+}
+function abrirModal(tipo) {
+  let textoBase = "";
+  let nomePessoa = "";
 
-function abrirModal(tipo){
+  // 1. Identifica a pessoa e pega o nome e o texto bruto
+  if (tipo.includes("1")) {
+    nomePessoa = document.getElementById("nome1").value || "Pessoa 1";
+    if(tipo==="m1") textoBase = textos.motivacao[dados1.motivacao];
+    if(tipo==="i1") textoBase = textos.influencia[dados1.influencia];
+    if(tipo==="p1") textoBase = textos.personalidade[dados1.personalidade];
+    if(tipo==="d1") textoBase = textos.CaminhodeVida[dados1.caminho];
+    if(tipo==="pr1") textoBase = textos.proposito[dados1.proposito];
+    if(tipo==="h1") textoBase = textos.harmonia[dados1.proposito];
+    if(tipo==="a1") textoBase = textos.anoPessoal[dados1.anoPessoal];
+  } 
+  else if (tipo.includes("2")) {
+    nomePessoa = document.getElementById("nome2").value || "Pessoa 2";
+    if(tipo==="m2") textoBase = textos.motivacao[dados2.motivacao];
+    if(tipo==="i2") textoBase = textos.influencia[dados2.influencia];
+    if(tipo==="p2") textoBase = textos.personalidade[dados2.personalidade];
+    if(tipo==="d2") textoBase = textos.CaminhodeVida[dados2.caminho];
+    if(tipo==="pr2") textoBase = textos.proposito[dados2.proposito];
+    if(tipo==="h2") textoBase = textos.harmonia[dados2.proposito];
+    if(tipo==="a2") textoBase = textos.anoPessoal[dados2.anoPessoal];
+  }
+  else if (tipo.includes("B")) {
+    nomePessoa = document.getElementById("nomeBebe").value || "O Bebê";
+    if(tipo==="mB") textoBase = textos.motivacao[dadosBebe.motivacao];
+    if(tipo==="iB") textoBase = textos.influencia[dadosBebe.influencia];
+    if(tipo==="pB") textoBase = textos.personalidade[dadosBebe.personalidade];
+  }
 
-
-  let texto="";
-
-  // ---------------- PESSOA 1 ----------------
-
-  if(tipo==="m1") texto = textos.motivacao[dados1.motivacao];
-  if(tipo==="i1") texto = textos.influencia[dados1.influencia];
-  if(tipo==="p1") texto = textos.personalidade[dados1.personalidade];
-  if(tipo==="d1") texto = textos.CaminhodeVida[dados1.caminho];
-  if(tipo==="pr1") texto = textos.proposito[dados1.proposito];
-  if(tipo==="h1") texto = textos.harmonia[dados1.proposito];
-  if(tipo==="a1") texto = textos.anoPessoal[dados1.anoPessoal];
-
-  // ---------------- PESSOA 2 ----------------
-
-  if(tipo==="m2") texto = textos.motivacao[dados2.motivacao];
-  if(tipo==="i2") texto = textos.influencia[dados2.influencia];
-  if(tipo==="p2") texto = textos.personalidade[dados2.personalidade];
-  if(tipo==="d2") texto = textos.CaminhodeVida[dados2.caminho];
-  if(tipo==="pr2") texto = textos.proposito[dados2.proposito];
-  if(tipo==="h2") texto = textos.harmonia[dados2.proposito];
-  if(tipo==="a2") texto = textos.anoPessoal[dados2.anoPessoal];
-
-  // ---------------- BEBÊ ----------------
-
-  if(tipo==="mB") texto = textos.motivacao[dadosBebe.motivacao];
-  if(tipo==="iB") texto = textos.influencia[dadosBebe.influencia];
-  if(tipo==="pB") texto = textos.personalidade[dadosBebe.personalidade];
-
-  abrirModalTexto(texto);
+  // 2. Chama a função que troca "você" pelo nome
+  const textoFinal = formatarTextoPersonalizado(textoBase, nomePessoa);
+  
+  // 3. Abre o modal com o texto já modificado
+  abrirModalTexto(textoFinal);
 }
 
 
