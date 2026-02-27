@@ -274,6 +274,12 @@ function aplicarNomes(texto) {
 
     let novoTexto = texto;
 
+    // 1. LIMPEZA TOTAL: Remove a palavra "Energia" ou "número" e os espaços que vêm depois
+    // Isso evita que apareça "Energia Relacionamento de..."
+    novoTexto = novoTexto.replace(/Energia\s+/gi, ""); 
+    novoTexto = novoTexto.replace(/número\s+/gi, "");
+    novoTexto = novoTexto.replace(/Número\s+/gi, "");
+
     if (energia1 && energia2) {
         const menor = Math.min(energia1, energia2);
         const maior = Math.max(energia1, energia2);
@@ -281,23 +287,17 @@ function aplicarNomes(texto) {
         const nomeMenor = (energia1 === menor) ? nome1 : nome2;
         const nomeMaior = (energia1 === maior) ? nome1 : nome2;
 
-        // --- A SOLUÇÃO DEFINITIVA ---
+        // 2. TROCA PELO FORMATO DESEJADO
+        // O primeiro vira "Relacionamento de [Nome]"
+        novoTexto = novoTexto.split(`${menor}`).join(`Relacionamento de ${nomeMenor}`);
         
-        // 1. Procuramos o padrão "Energia X com Energia Y" ou "Energia X e Energia Y"
-        // E substituímos pela sua frase exata: "Relacionamento de Fulano com Ciclano"
-        
-        // Removemos qualquer menção a "Energia X" ou "número X" e colocamos a estrutura que você pediu
-        novoTexto = novoTexto.replace(new RegExp(`Energia ${menor}`, 'gi'), `Relacionamento de ${nomeMenor}`);
-        novoTexto = novoTexto.replace(new RegExp(`Energia ${maior}`, 'gi'), `${nomeMaior}`);
-        
-        novoTexto = novoTexto.replace(new RegExp(`número ${menor}`, 'gi'), `Relacionamento de ${nomeMenor}`);
-        novoTexto = novoTexto.replace(new RegExp(`número ${maior}`, 'gi'), `${nomeMaior}`);
-
-        // Caso o seu texto original tenha um "com" ou "e" entre os números, 
-        // a frase ficará: "Relacionamento de Fulano com Ciclano"
+        // O segundo vira apenas o "[Nome]"
+        // Assim, o "com" que já está no texto original une os dois:
+        // "Relacionamento de Fulano com Ciclano"
+        novoTexto = novoTexto.split(`${maior}`).join(`${nomeMaior}`);
     }
 
-    // Limpeza final de chaves extras
+    // Substituições de chaves extras
     novoTexto = novoTexto.replaceAll("{nome1}", nome1).replaceAll("{nome2}", nome2);
 
     return novoTexto;
