@@ -2,12 +2,12 @@
 window.textos = {
 
 motivacao: {
-1: `Você possui uma necessidade profunda de independência e autonomia. 
+1: `<p>Você possui uma necessidade profunda de independência e autonomia. </p>
 
-Sua maior motivação é dirigir a própria vida e tomar decisões baseadas em suas convicções pessoais. 
-Existe dentro de você um forte impulso de liderança e a sensação de que precisa estar no controle do próprio destino. 
+<p>Sua maior motivação é dirigir a própria vida e tomar decisões baseadas em suas convicções pessoais. 
+Existe dentro de você um forte impulso de liderança e a sensação de que precisa estar no controle do próprio destino. </p>
 
-Essa força interior lhe concede coragem para assumir responsabilidades, tomar decisões ousadas e iniciar caminhos que outras pessoas evitariam. 
+</p>Essa força interior lhe concede coragem para assumir responsabilidades, tomar decisões ousadas e iniciar caminhos que outras pessoas evitariam. </p>
 
 Você não teme desafios e, muitas vezes, até se fortalece diante deles. 
 
