@@ -130,7 +130,50 @@ body{
     }
 
 
-        
+   /* Estilos para o Relatório Gigante */
+    #relatorioFinal { 
+        background: #fdfdfd !important; 
+        color: #1a1a1a !important; 
+        padding: 50px !important; 
+        font-family: 'Georgia', serif; 
+    }
+    .capa-relatorio { 
+        text-align: center; 
+        height: 1000px; /* Força uma página inteira para a capa */
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        border: 10px double var(--primary);
+        margin-bottom: 50px;
+    }
+    .titulo-secao { 
+        font-size: 2.5rem; 
+        color: var(--primary); 
+        border-bottom: 3px solid var(--primary); 
+        margin: 40px 0; 
+        padding-bottom: 10px;
+    }
+    .bloco-texto { margin-bottom: 35px; text-align: justify; line-height: 1.8; }
+    .bloco-texto h4 { font-size: 1.4rem; color: var(--secondary); margin-bottom: 10px; }
+    .texto-conteudo { font-size: 1.1rem; }
+    .piramide-grande { 
+        background: #000; 
+        color: #fff; 
+        padding: 30px; 
+        font-family: monospace; 
+        font-size: 18px; 
+        white-space: pre; 
+        text-align: center; 
+        margin: 20px auto;
+        width: fit-content;
+    }
+    .alerta-negativo { background: #fff0f0; border-left: 5px solid red; padding: 20px; margin: 20px 0; }
+    .page-break { page-break-before: always; height: 1px; }
+
+    @media print {
+        .btn-action { display: none; }
+        #relatorioFinal { margin: 0; border: none; }
+    }        
 
         
     </style>
@@ -750,56 +793,97 @@ function abrirPremiumSinastria() {
 
     const nome1 = document.getElementById("nome1").value;
     const nome2 = document.getElementById("nome2").value;
-    const chave = chaveSinastria(dados1.proposito, dados2.proposito);
+    const data1 = document.getElementById("data1").value;
+    const data2 = document.getElementById("data2").value;
+
+    // Função auxiliar para criar blocos de texto grandes
+    const criarBloco = (titulo, numero, texto) => `
+        <div class="bloco-texto">
+            <h4>${titulo} (Vibração ${numero})</h4>
+            <div class="texto-conteudo">${formatarTextoPersonalizado(texto, "")}</div>
+        </div>
+    `;
 
     let html = `
-        <h2>Relatório de Harmonia Conjugal</h2>
-        
-        <div class="rel-secao">
-            <h3 class="rel-titulo">❤️ Sinastria do Casal: ${nome1} & ${nome2}</h3>
-            <p>${textos.sinastria[chave] || "Análise de compatibilidade energética."}</p>
-            <p><strong>${compatibilidadeRH()}</strong></p>
+        <div class="capa-relatorio">
+            <h1>MAPA NUMEROLÓGICO CABALÍSTICO</h1>
+            <h2>Harmonia Conjugal & Destino</h2>
+            <p>Analistas: ${nome1} & ${nome2}</p>
+            <p>Data de Emissão: ${new Date().toLocaleDateString()}</p>
         </div>
 
-        <div class="rel-grid">
-            <!-- Coluna Pessoa 1 -->
-            <div class="rel-secao">
-                <h3 class="rel-titulo">${nome1}</h3>
-                <div class="piramide-rel">${document.getElementById("piramide1").innerHTML}</div>
-                <p><strong>Motivação:</strong> ${dados1.motivacao}</p>
-                <p><strong>Caminho de Vida:</strong> ${dados1.caminho}</p>
-                <p><strong>Regente:</strong> ${dados1.regente}</p>
-                <hr>
-                <small>${formatarTextoPersonalizado(textos.proposito[dados1.proposito], nome1)}...</small>
+        <div class="secao-master">
+            <h2 class="titulo-secao">1. ANÁLISE PROFUNDA: ${nome1}</h2>
+            <div class="piramide-grande">${document.getElementById("piramide1").innerHTML}</div>
+            
+            ${criarBloco("Regente de Destino", dados1.regente, textos.regente[dados1.regente])}
+            
+            <h3>Desdobramento Pessoal</h3>
+            ${criarBloco("Motivação (A Alma)", dados1.motivacao, textos.motivacao[dados1.motivacao])}
+            ${criarBloco("Influência (O Eu Interior)", dados1.influencia, textos.influencia[dados1.influencia])}
+            ${criarBloco("Personalidade (A Imagem)", dados1.personalidade, textos.personalidade[dados1.personalidade])}
+            ${criarBloco("Caminho de Vida (O Destino)", dados1.caminho, textos.CaminhodeVida[dados1.caminho])}
+            ${criarBloco("Propósito Divino", dados1.proposito, textos.proposito[dados1.proposito])}
+            ${criarBloco("Harmonia Vibracional", dados1.harmonia, textos.harmonia[dados1.harmonia])}
+            ${criarBloco("Ciclo Atual: Ano Pessoal", dados1.anoPessoal, textos.anoPessoal[dados1.anoPessoal])}
+            
+            <div class="alerta-negativo">
+                <h4>Arcanos e Sequências Negativas</h4>
+                ${dados1.sequenciaNegativa && dados1.sequenciaNegativa.length > 0 
+                    ? dados1.sequenciaNegativa.map(n => `<p>${textos.sequenciaNegativa[n]}</p>`).join("") 
+                    : "<p>Nenhuma sequência negativa detectada no nome atual.</p>"}
             </div>
+        </div>
 
-            <!-- Coluna Pessoa 2 -->
-            <div class="rel-secao">
-                <h3 class="rel-titulo">${nome2}</h3>
-                <div class="piramide-rel">${document.getElementById("piramide2").innerHTML}</div>
-                <p><strong>Motivação:</strong> ${dados2.motivacao}</p>
-                <p><strong>Caminho de Vida:</strong> ${dados2.caminho}</p>
-                <p><strong>Regente:</strong> ${dados2.regente}</p>
-                <hr>
-                <small>${formatarTextoPersonalizado(textos.proposito[dados2.proposito], nome2)}...</small>
+        <div class="page-break"></div>
+
+        <div class="secao-master">
+            <h2 class="titulo-secao">2. ANÁLISE PROFUNDA: ${nome2}</h2>
+            <div class="piramide-grande">${document.getElementById("piramide2").innerHTML}</div>
+            
+            ${criarBloco("Regente de Destino", dados2.regente, textos.regente[dados2.regente])}
+            
+            <h3>Desdobramento Pessoal</h3>
+            ${criarBloco("Motivação", dados2.motivacao, textos.motivacao[dados2.motivacao])}
+            ${criarBloco("Influência", dados2.influencia, textos.influencia[dados2.influencia])}
+            ${criarBloco("Personalidade", dados2.personalidade, textos.personalidade[dados2.personalidade])}
+            ${criarBloco("Caminho de Vida", dados2.caminho, textos.CaminhodeVida[dados2.caminho])}
+            ${criarBloco("Propósito", dados2.proposito, textos.proposito[dados2.proposito])}
+            ${criarBloco("Harmonia", dados2.harmonia, textos.harmonia[dados2.harmonia])}
+            ${criarBloco("Ciclo Atual: Ano Pessoal", dados2.anoPessoal, textos.anoPessoal[dados2.anoPessoal])}
+            
+            <div class="alerta-negativo">
+                <h4>Arcanos e Sequências Negativas</h4>
+                ${dados2.sequenciaNegativa && dados2.sequenciaNegativa.length > 0 
+                    ? dados2.sequenciaNegativa.map(n => `<p>${textos.sequenciaNegativa[n]}</p>`).join("") 
+                    : "<p>Nenhuma sequência negativa detectada no nome atual.</p>"}
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <div class="secao-master">
+            <h2 class="titulo-secao">3. SINASTRIA E COMPATIBILIDADE</h2>
+            <div class="bloco-sinastria">
+                <h3>Vibração do Relacionamento</h3>
+                ${textos.sinastria[chaveSinastria(dados1.proposito, dados2.proposito)]}
+            </div>
+            <div class="bloco-biologico">
+                <h3>Análise Biológica (Fator RH)</h3>
+                <p>${compatibilidadeRH()}</p>
             </div>
         </div>
     `;
 
-    // Se houver bebê analisado, adiciona ao relatório
     if (dadosBebe) {
-        const nomeB = document.getElementById("nomeBebe").value;
         html += `
-            <div class="rel-secao" style="background: #f0f8ff;">
-                <h3 class="rel-titulo">👶 Análise do Bebê: ${nomeB}</h3>
-                <div class="rel-grid">
-                    <div class="piramide-rel">${document.getElementById("piramideBebe").innerHTML}</div>
-                    <div>
-                        <p><strong>Personalidade:</strong> ${dadosBebe.personalidade}</p>
-                        <p><strong>Regente:</strong> ${dadosBebe.regente}</p>
-                        <p>${document.getElementById("resultadoBebe").innerText}</p>
-                    </div>
-                </div>
+            <div class="page-break"></div>
+            <div class="secao-master">
+                <h2 class="titulo-secao">4. MAPA DO BEBÊ: ${document.getElementById("nomeBebe").value}</h2>
+                <div class="piramide-grande">${document.getElementById("piramideBebe").innerHTML}</div>
+                ${criarBloco("Motivação do Bebê", dadosBebe.motivacao, textos.motivacao[dadosBebe.motivacao])}
+                ${criarBloco("Personalidade do Bebê", dadosBebe.personalidade, textos.personalidade[dadosBebe.personalidade])}
+                <p><strong>Status de Harmonia:</strong> ${document.getElementById("resultadoBebe").innerText}</p>
             </div>
         `;
     }
