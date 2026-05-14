@@ -6,133 +6,171 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
 <style>
-body{
-  font-family:"Times New Roman", serif;
-  background:#ffffff;
-  margin:0;
-  color:#111;
-  line-height:1.8;
-}
-.capa { text-align:center; padding: 100px 20px; page-break-after: always; background: #fff; }
-.logo { max-width:650px; margin-bottom:20px; }
-.container{
-  max-width:1000px;
-  margin:auto;
-  padding:40px;
-  background:white;
-  box-shadow:0 0 30px rgba(0,0,0,0.05);
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --dourado: #b8922e;
+    --dourado-claro: #f4e1a1;
+    --grafite: #2c3e50;
+    --bg-premium: #ffffff;
 }
 
-h1,h2{
-  text-align:center;
-}
-
-h2{
-  margin-top:60px;
-  border-bottom:1px solid #eee;
-  padding-bottom:10px;
-}
-
-.intro{
-  font-style:italic;
-  margin-bottom:30px;
-}
-
-.bloco{
-  margin-top:40px;
-}
-
-.numero{
-  font-weight:bold;
-  font-size:20px;
-  margin-top:15px;
-}
-
-/* ESPAÇO ENTRE PARÁGRAFOS */
-.secao div:not(.explicacao):not(.numero) br{
-  display:block;
-  margin-bottom:8px;
-}
-.assinatura{
-  text-align:right;
-  margin-top:80px;
-  font-size:14px;
-  color:#777;
-}
-
-.piramide{
-  text-align:center;
-  font-family:monospace;
-  margin-top:20px;
-}
-
-.vermelho{
-  color:red;
-  font-weight:bold;
-}
-
-.texto-limpo p {
-    margin-bottom: 18px;
+body {
+    font-family: 'Playfair Display', serif;
+    background: #f8f9fa;
+    margin: 0;
+    color: #333;
     line-height: 1.8;
-    text-align: justify;
-    text-indent: 25px;
-}
-body::before{
-  content:"❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️";
-  display:block;
-  text-align:center;
-  font-size:14px;
-  margin-bottom:20px;
-  opacity:0.4;
-}
-  
-.explicacao{
-  font-style: arial;
-  color:#000;
-  margin-bottom:18px;
-  line-height:1.75;
-  white-space: pre-line;
-}
-h2::after{
-  content:" 💖";
-  font-size:18px;
-  color:#c0392b;
-}
-.bloco {
-  font-size: 18px;
-  text-align: arial;
 }
 
-.bloco div {
-  line-height: 1.8;
-  margin-bottom: 8px;
+/* Marca d'água discreta no topo */
+body::before {
+    content: "INSTINTO SUPERIOR • RELATÓRIO EXCLUSIVO";
+    display: block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    letter-spacing: 4px;
+    padding: 20px 0;
+    color: var(--dourado);
+    opacity: 0.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 60px;
+    background: white;
+    box-shadow: 0 10px 50px rgba(0,0,0,0.08);
+    border-radius: 4px;
+    position: relative;
+}
+
+/* Capa Luxuosa */
+.capa {
+    text-align: center;
+    padding: 80px 20px;
+    page-break-after: always;
+    border: 1px solid var(--dourado-claro);
+    margin-bottom: 50px;
+}
+
+.logo {
+    max-width: 400px;
+    margin-bottom: 40px;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    color: var(--grafite);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 80px;
+    color: var(--dourado);
+    border-bottom: 1px solid var(--dourado-claro);
+    padding-bottom: 15px;
+    page-break-before: always; /* Cada seção principal começa em nova folha */
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--grafite);
+    font-size: 1.2rem;
+}
+
+.intro {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #666;
+    text-align: justify;
+    margin-bottom: 40px;
+    border-left: 3px solid var(--dourado-claro);
+    padding-left: 20px;
+}
+
+/* Blocos de Informação */
+.bloco {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fffdf7; /* Fundo levemente amarelado para destacar */
+    border-radius: 8px;
 }
 
 .numero {
-  font-weight: bold;
-  margin-top: 18px;
-  margin-bottom: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--dourado);
+    margin-top: 30px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
 }
-  
-#resultado p {
-    margin-bottom: 15px;
-    text-align: justify;
-    line-height: 1.7;
-    text-indent: 20px; /* recuo estilo livro */
-}
-.texto {
-  white-space: pre-line;
-}
-@media print {
-    body {
-        font-size: 20px;
-    }
 
-    .resultado {
-        font-size: 20px;
-        line-height: 1.8;
-    }
-}  
+.numero::before {
+    content: "◈";
+    margin-right: 10px;
+}
+
+.texto-limpo p, #resultado p, .bloco div {
+    margin-bottom: 20px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+/* Pirâmide Numerológica */
+.piramide {
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    background: #fdfdfd;
+    padding: 30px;
+    border: 1px dashed #ddd;
+    margin: 30px 0;
+    font-size: 1.2rem;
+    color: var(--grafite);
+    line-height: 1.2;
+}
+
+.assinatura {
+    text-align: center;
+    margin-top: 100px;
+    border-top: 1px solid #eee;
+    padding-top: 40px;
+}
+
+.assinatura h4 {
+    font-family: 'Cinzel', serif;
+    color: var(--dourado);
+    letter-spacing: 3px;
+}
+
+/* Ajustes Mobile */
+@media (max-width: 768px) {
+    .container { padding: 20px; margin: 10px; }
+    h1 { font-size: 1.8rem; }
+    .logo { max-width: 100%; }
+}
+
+/* Ajustes para Impressão (PDF) */
+@media print {
+    body { background: white; }
+    .container { box-shadow: none; width: 100%; max-width: 100%; margin: 0; padding: 0; }
+    .no-print { display: none; }
+    h2 { page-break-before: always; }
+    p { orphans: 3; widows: 3; } /* Evita parágrafos solitários no fim da página */
+    .piramide { page-break-inside: avoid; }
+}
 </style>
 </head>
 <body>
