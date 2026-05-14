@@ -117,6 +117,21 @@ body{
     margin: 0 auto;
 }
 
+    #relatorioFinal h2 { color: var(--primary); text-align: center; margin-bottom: 30px; text-transform: uppercase; }
+    .rel-secao { border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; border-radius: 10px; }
+    .rel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .rel-titulo { font-weight: 600; color: var(--secondary); margin-bottom: 10px; border-bottom: 1px solid #eee; }
+    .piramide-rel { font-family: 'Courier New'; background: #0a0f24; color: #fff; padding: 15px; border-radius: 8px; text-align: center; font-size: 12px; line-height: 1.1; margin-bottom: 10px; }
+    @media print {
+        body * { visibility: hidden; }
+        #relatorioFinal, #relatorioFinal * { visibility: visible; }
+        #relatorioFinal { position: absolute; left: 0; top: 0; width: 100%; }
+        button { display: none; }
+    }
+
+
+        
+
         
     </style>
 </head>
@@ -193,6 +208,13 @@ body{
     </div>
 
     <div id="compat" style="text-align:center; margin-bottom:40px; font-weight:bold;"></div>
+
+        <div id="relatorioFinal" style="display:none; margin-top: 50px; padding: 30px; background: #fff; color: #333; border-radius: 15px; border-top: 10px solid var(--primary);">
+        <div id="conteudoRelatorio"></div>
+        <div style="text-align: center; margin-top: 30px;">
+            <button class="btn-action" onclick="window.print()">🖨️ IMPRIMIR / SALVAR PDF</button>
+        </div>
+    </div>
 
     <!-- MAPA DO BEBÊ -->
     <div class="grid-pessoa" style="border-color: var(--accent);">
@@ -716,135 +738,73 @@ function gerarBebe(){
 
 
 
-function abrirPremiumSinastria(){
-
-  const nome1 = document.getElementById("nome1").value;
-  const nome2 = document.getElementById("nome2").value;
-  const data1 = document.getElementById("data1").value;
-  const data2 = document.getElementById("data2").value;
-
-  if(!dados1 || !dados2){
-    alert("Calcule a sinastria primeiro.");
-    return;
-  }
-const pacote = {
-
-  pessoa1:{
-    nome: nome1,
-    data: data1,
-
-    piramide: document.getElementById("piramide1").innerHTML,
-    regente: dados1.regente,
-   
-
-    motivacao: dados1.motivacao,
-    influencia: dados1.influencia,
-    personalidade: dados1.personalidade,
-    caminho: dados1.caminho,
-    proposito: dados1.proposito,
-    harmonia: dados1.harmonia,
-    ano: dados1.anoPessoal,
-
-    textos:{
-      motivacao: textos.motivacao[dados1.motivacao],
-      influencia: textos.influencia[dados1.influencia],
-      personalidade: textos.personalidade[dados1.personalidade],
-      caminho: textos.CaminhodeVida[dados1.caminho],
-      proposito: textos.proposito[dados1.proposito],
-      harmonia: textos.harmonia[dados1.harmonia],
-      ano: textos.anoPessoal[dados1.anoPessoal],
-      regente: textos.regente[dados1.regente],
- seqNegativa: dados1.sequenciaNegativa
-  ? dados1.sequenciaNegativa
-      .map(n => textos.sequenciaNegativa[n])
-      .join("<br><br>")
-  : "",
+function abrirPremiumSinastria() {
+    if (!dados1 || !dados2) {
+        alert("Por favor, clique em CALCULAR TUDO primeiro.");
+        return;
     }
-  },
 
-  pessoa2:{
-    nome: nome2,
-    data: data2,
+    const rel = document.getElementById("relatorioFinal");
+    const cont = document.getElementById("conteudoRelatorio");
+    rel.style.display = "block";
 
-    piramide: document.getElementById("piramide2").innerHTML,
-    regente: dados2.regente,
-    
+    const nome1 = document.getElementById("nome1").value;
+    const nome2 = document.getElementById("nome2").value;
+    const chave = chaveSinastria(dados1.proposito, dados2.proposito);
 
-    motivacao: dados2.motivacao,
-    influencia: dados2.influencia,
-    personalidade: dados2.personalidade,
-    caminho: dados2.caminho,
-    proposito: dados2.proposito,
-    harmonia: dados2.harmonia,
-    ano: dados2.anoPessoal,
+    let html = `
+        <h2>Relatório de Harmonia Conjugal</h2>
+        
+        <div class="rel-secao">
+            <h3 class="rel-titulo">❤️ Sinastria do Casal: ${nome1} & ${nome2}</h3>
+            <p>${textos.sinastria[chave] || "Análise de compatibilidade energética."}</p>
+            <p><strong>${compatibilidadeRH()}</strong></p>
+        </div>
 
-    textos:{
-      motivacao: textos.motivacao[dados2.motivacao],
-      influencia: textos.influencia[dados2.influencia],
-      personalidade: textos.personalidade[dados2.personalidade],
-      caminho: textos.CaminhodeVida[dados2.caminho],
-      proposito: textos.proposito[dados2.proposito],
-      harmonia: textos.harmonia[dados2.harmonia],
-      ano: textos.anoPessoal[dados2.anoPessoal],
-      regente: textos.regente[dados2.regente],
-      seqNegativa: dados2.sequenciaNegativa
-  ? dados2.sequenciaNegativa
-      .map(n => textos.sequenciaNegativa[n])
-      .join("<br><br>")
-  : "",
+        <div class="rel-grid">
+            <!-- Coluna Pessoa 1 -->
+            <div class="rel-secao">
+                <h3 class="rel-titulo">${nome1}</h3>
+                <div class="piramide-rel">${document.getElementById("piramide1").innerHTML}</div>
+                <p><strong>Motivação:</strong> ${dados1.motivacao}</p>
+                <p><strong>Caminho de Vida:</strong> ${dados1.caminho}</p>
+                <p><strong>Regente:</strong> ${dados1.regente}</p>
+                <hr>
+                <small>${formatarTextoPersonalizado(textos.proposito[dados1.proposito], nome1).substring(0,200)}...</small>
+            </div>
+
+            <!-- Coluna Pessoa 2 -->
+            <div class="rel-secao">
+                <h3 class="rel-titulo">${nome2}</h3>
+                <div class="piramide-rel">${document.getElementById("piramide2").innerHTML}</div>
+                <p><strong>Motivação:</strong> ${dados2.motivacao}</p>
+                <p><strong>Caminho de Vida:</strong> ${dados2.caminho}</p>
+                <p><strong>Regente:</strong> ${dados2.regente}</p>
+                <hr>
+                <small>${formatarTextoPersonalizado(textos.proposito[dados2.proposito], nome2).substring(0,200)}...</small>
+            </div>
+        </div>
+    `;
+
+    // Se houver bebê analisado, adiciona ao relatório
+    if (dadosBebe) {
+        const nomeB = document.getElementById("nomeBebe").value;
+        html += `
+            <div class="rel-secao" style="background: #f0f8ff;">
+                <h3 class="rel-titulo">👶 Análise do Bebê: ${nomeB}</h3>
+                <div class="rel-grid">
+                    <div class="piramide-rel">${document.getElementById("piramideBebe").innerHTML}</div>
+                    <div>
+                        <p><strong>Personalidade:</strong> ${dadosBebe.personalidade}</p>
+                        <p><strong>Regente:</strong> ${dadosBebe.regente}</p>
+                        <p>${document.getElementById("resultadoBebe").innerText}</p>
+                    </div>
+                </div>
+            </div>
+        `;
     }
-  },
 
-  sinastria:{
-    numero: chaveSinastria(dados1.proposito, dados2.proposito),
-    texto: textos.sinastria[
-      chaveSinastria(dados1.proposito, dados2.proposito)
-    ]
-  },
-
-  biologico: compatibilidadeRH(),
-
-bebe: dadosBebe ? {
-  nome: document.getElementById("nomeBebe").value,
-
-  motivacao: dadosBebe.motivacao,
-  influencia: dadosBebe.influencia,
-  personalidade: dadosBebe.personalidade,
-  regente: dadosBebe.regente,
-
-  piramide: document.getElementById("piramideBebe").innerHTML,
-
-  textos:{
-    motivacao: textos.motivacao[dadosBebe.motivacao],
-    influencia: textos.influencia[dadosBebe.influencia],
-    personalidade: textos.personalidade[dadosBebe.personalidade],
-    regente: textos.regente[dadosBebe.regente]
-  }
-
-} : null
-
-};
-
-localStorage.setItem(
-  "relatorioSinastria",
-  JSON.stringify(pacote)
-);
-
-
-
-  window.open(
-    "https://hemricciinstintosuperior-rcci.github.io/Harmonia_conjugal/premiumsinastria.html",
-    "_blank"
-  );
+    cont.innerHTML = html;
+    rel.scrollIntoView({ behavior: 'smooth' });
 }
-</script>
-  <script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js");
-}
- // 🔒 BLOQUEIO CÓPIA
-// =======================
-document.oncontextmenu=()=>false;
-document.onselectstart=()=>false; 
-
 </script>
