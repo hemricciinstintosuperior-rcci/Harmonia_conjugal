@@ -132,14 +132,25 @@ h3 {
 /* Pirâmide Numerológica */
 .piramide {
     text-align: center;
-    font-family: 'Courier New', monospace;
-    background: #fdfdfd;
-    padding: 30px;
-    border: 1px dashed #ddd;
-    margin: 30px 0;
-    font-size: 1.2rem;
-    color: var(--grafite);
+    font-family: 'Courier New', Courier, monospace; /* Fonte mono para alinhar caracteres */
+    background: #fcfcfc;
+    padding: 20px;
+    border-top: 1px solid #f4e1a1;
+    border-bottom: 1px solid #f4e1a1;
+    margin: 25px auto;
+    font-size: 14px; /* Tamanho reduzido para não quebrar em telas menores */
+    color: #444;
     line-height: 1.2;
+    white-space: pre; /* Mantém os espaços originais da pirâmide */
+    display: inline-block; /* Faz o bloco se ajustar ao tamanho do texto */
+    min-width: 200px;
+    letter-spacing: 2px; /* Dá um respiro entre os números */
+}
+
+/* Container para garantir a centralização do inline-block */
+.piramide-wrapper {
+    text-align: center;
+    width: 100%;
 }
 
 .assinatura {
@@ -412,7 +423,10 @@ function montarPessoa(p){
        <div class="numero">Sequência Positiva: Estrutura Vibracional Harmônica</div>
     `}
 
+    
+<div class="piramide-wrapper">
     <div class="piramide">${p.piramide}</div>
+</div>
     <div class="numero">Regente: ${p.regente}</div>
     <div>${aplicarNomes(p.textos.regente, nomeAtu)}</div>
   </div>
@@ -441,7 +455,10 @@ function montarBebe(b){
       ` : `
          <div class="numero">Sequência Positiva: Estrutura Vibracional Harmônica para o bebê</div>
       `}
-      <div class="piramide">${b.piramide}</div>
+    
+<div class="piramide-wrapper">
+    <div class="piramide">${p.piramide}</div>
+</div>
       <div class="numero">Regente: ${b.regente}</div>
       <div>${aplicarNomes(b.textos.regente, nB)}</div>
     </div>
