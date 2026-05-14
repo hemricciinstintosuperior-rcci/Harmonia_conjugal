@@ -129,28 +129,36 @@ h3 {
     text-indent: 30px;
 }
 
-/* Pirâmide Numerológica */
-.piramide {
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace; /* Fonte mono para alinhar caracteres */
-    background: #fcfcfc;
-    padding: 20px;
-    border-top: 1px solid #f4e1a1;
-    border-bottom: 1px solid #f4e1a1;
-    margin: 25px auto;
-    font-size: 14px; /* Tamanho reduzido para não quebrar em telas menores */
-    color: #444;
-    line-height: 1.2;
-    white-space: pre; /* Mantém os espaços originais da pirâmide */
-    display: inline-block; /* Faz o bloco se ajustar ao tamanho do texto */
-    min-width: 200px;
-    letter-spacing: 2px; /* Dá um respiro entre os números */
+/* Container que garante que nada ao redor "esmague" a pirâmide */
+.piramide-wrapper {
+    display: block; /* Garante que ocupa a linha toda */
+    width: 100%;
+    text-align: center; /* Centraliza o conteúdo interno */
+    margin: 30px 0;
+    clear: both; /* Evita interferência de elementos flutuantes */
 }
 
-/* Container para garantir a centralização do inline-block */
-.piramide-wrapper {
-    text-align: center;
+.piramide {
+    font-family: 'Courier New', Courier, monospace;
+    background: #fcfcfc;
+    padding: 25px;
+    border-top: 1px solid var(--dourado-claro);
+    border-bottom: 1px solid var(--dourado-claro);
+    font-size: 14px;
+    color: #444;
+    line-height: 1.3;
+    white-space: pre; 
+    display: inline-block; /* Mantém o fundo acompanhando o texto */
+    margin: 0 auto; /* Centralização mágica */
+    letter-spacing: 2px;
+    text-align: center; /* Garante que os números dentro dela fiquem alinhados */
+}
+
+/* Forçar os parágrafos a manterem o tamanho real sem "encurtar" */
+.bloco div {
     width: 100%;
+    display: block;
+    text-align: justify;
 }
 
 .assinatura {
@@ -425,7 +433,7 @@ function montarPessoa(p){
 
     
 <div class="piramide-wrapper">
-    <div class="piramide">${p.piramide}</div>
+    <pre class="piramide">${p.piramide}</pre>
 </div>
     <div class="numero">Regente: ${p.regente}</div>
     <div>${aplicarNomes(p.textos.regente, nomeAtu)}</div>
