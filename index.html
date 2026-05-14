@@ -192,7 +192,7 @@ const tabela = {
   F:8, P:8
 };
 
-const vogais = ["A","E","I","O","U"];
+const vogais = ["A","E","I","O", Y, "U"];
 
 // =====================
 // ACENTOS
@@ -209,7 +209,7 @@ function calcularValorComAcentos(letra){
     if(c === "\u0301") soma += 2;
     else if(c === "\u0302") soma += 7;
     else if(c === "\u0303") soma += 3;
-    else if(c === "\u0327") soma += 6;
+    else if(c === "\u0327") soma += 3;
     else if(c === "\u0300") mult *= 2;
     else if(c === "\u0308") mult *= 2;
   }
