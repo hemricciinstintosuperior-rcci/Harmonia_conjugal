@@ -267,6 +267,7 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
         padding: 0 !important;
         margin: 0 !important;
         overflow: visible !important;
+        counter-reset: numPagina 0;
     }
 
     #conteudo-pdf-rolavel {
@@ -388,6 +389,26 @@ audio::-webkit-media-controls-download-button { display: none !important; }
 audio::-webkit-media-controls-enclosure { overflow: hidden !important; }
 audio::-webkit-media-controls-panel { width: calc(100% + 30px) !important; }
 audio { pointer-events: auto; -webkit-touch-callout: none; }
+
+/* O rodapé agora se prende ao final de cada página individual */
+    .page-footer {
+        display: block !important;
+        position: absolute !important; 
+        bottom: 15mm !important;
+        right: 20mm !important;
+        font-family: 'Cinzel', serif !important;
+        font-size: 10pt !important;
+        color: #827108 !important;
+        font-weight: bold !important;
+        z-index: 9999 !important;
+    }
+
+    /* Soma mais 1 a cada página nova usando o contador do modal */
+    .page-number::after {
+        counter-increment: numPagina;
+        content: "Página " counter(numPagina);
+    }
+     
 </style>
 </head>
 <body>
