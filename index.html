@@ -346,10 +346,17 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
 
 /* =======================================================
    4. COMPORTAMENTO DE INTERFACE (TELA DO SISTEMA)
+/* =======================================================
+   4. COMPORTAMENTO DE INTERFACE (TELA DO SISTEMA)
    ======================================================= */
+/* Na tela (Relatório Web), mostramos o Player e ESCONDEMOS o Botão de Link */
+.botao-pdf-link { 
+    display: none !important; 
+}
+.player-relatorio { 
+    display: flex !important; 
+}    
 
-.botao-pdf-link { display: none; }
-.player-relatorio { display: flex; }    
 :focus { outline: none !important; }
 a, img, audio { border: none !important; outline: none !important; text-decoration: none !important; }
 
@@ -359,17 +366,45 @@ audio::-webkit-media-controls-enclosure { overflow: hidden !important; }
 audio::-webkit-media-controls-panel { width: calc(100% + 30px) !important; }
 audio { pointer-events: auto; -webkit-touch-callout: none; }
 
-/* Na tela (Relatório), mostramos o Player e escondemos o Botão de Link */
-.botao-pdf-link { display: none !important; }
-.player-relatorio { display: flex !important; }
-
-/* No PDF (Impressão), invertemos tudo */
+/* No PDF (Impressão), invertemos tudo de forma absoluta */
 @media print {
-    .botao-pdf-link { display: flex !important; }
-    .player-relatorio { display: none !important; }
-    
-    /* Garante que o fundo da capa não suma no PDF */
-    .capa-transicao { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .botao-pdf-link { 
+        display: flex !important; 
+    }
+    .player-relatorio { 
+        display: none !important; 
+    }
+    .capa-transicao, .capa-transicao-amor { 
+        -webkit-print-color-adjust: exact !important; 
+        print-color-adjust: exact !important; 
+    }
+}
+
+/* RESPONSIVIDADE PARA CELULAR (Ajuste de tamanho na tela) */
+@media (max-width: 768px) {
+    #conteudo-pdf-rolavel {
+        padding: 5px !important;
+    }
+    .pag-a4, .bloco-texto-pdf {
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        max-height: none !important;
+        margin: 0 0 20px 0 !important;
+        padding: 30px 15px !important;
+    }
+    .capa-sinastria-premium, .capa-transicao-amor {
+        height: 600px !important; /* Altura fixa confortável para visualização no celular */
+        justify-content: center !important;
+        gap: 20px !important;
+    }
+    .capa-sinastria-premium h1 {
+        font-size: 20px !important;
+    }
+    .capa-sinastria-premium img, .capa-transicao-amor img {
+        width: 140px !important;
+        height: auto !important;
+    }
 }
     
      
