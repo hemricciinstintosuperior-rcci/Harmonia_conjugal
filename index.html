@@ -100,6 +100,175 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
         #compat { font-family: 'Cinzel', serif; font-size: 1.1rem; color: var(--accent); letter-spacing: 1px; }
 
         @media (max-width: 850px) { .grid-pessoa { grid-template-columns: 1fr; } }
+
+
+@media print {
+    /* Esconde absolutamente tudo da página (inputs, botões, cabeçalho do site) */
+    body * { display: none; }
+    
+    /* Mostra única e exclusivamente a área do PDF */
+    #area-pdf-local, #area-pdf-local * { display: block !important; }
+    
+    /* Configura a página A4 física sem margens padrão do navegador */
+    @page {
+        size: A4 portrait;
+        margin: 0;
+    }
+    
+    body {
+        background: #110106 !important; /* Força o fundo escuro premium no PDF */
+        -webkit-print-color-adjust: exact; /* Garante que as cores de fundo apareçam na impressão */
+        print-color-adjust: exact;
+    }
+
+    /* Força cada div de página a se comportar como uma folha física isolada */
+    .pag-a4 {
+        width: 210mm !important;
+        height: 296.8mm !important;
+        page-break-after: always !important;
+        page-break-inside: avoid !important;
+        margin: 0 !important;
+        padding: 60px !important;
+        box-sizing: border-box !important;
+    }
+}
+
+.pag-a4 {
+    margin: 0 auto 40px auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+
+
+/* =======================================================
+   ESTILIZAÇÃO DA ÁREA DO PDF (VISUALIZAÇÃO NA TELA)
+   ======================================================= */
+#area-pdf-local {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+/* Regras gerais para as páginas na tela */
+.pag-a4 {
+    width: 210mm;
+    height: 296.8mm;
+    position: relative;
+    box-sizing: border-box;
+    padding: 60px;
+    text-align: center;
+    overflow: hidden;
+    background-size: cover;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+}
+
+/* Força os players de áudio a ficarem elegantes no layout */
+.pag-a4 audio {
+    width: 280px;
+    height: 40px;
+    margin: 10px auto;
+    display: block;
+}
+
+/* =======================================================
+   ENGENHARIA DE IMPRESSÃO (MÍDIA DE IMPRESSÃO / @media print)
+   ======================================================= */
+@media print {
+    /* 1. Oculta absolutamente tudo o que faz parte do sistema web */
+    body *, 
+    .header, 
+    .container, 
+    .grid-pessoa, 
+    .main-actions, 
+    #compat, 
+    .modal,
+    button {
+        display: none !important;
+    }
+
+    /* 2. Ativa e isola unicamente a área do relatório para o PDF */
+    #area-pdf-local, 
+    #area-pdf-local * {
+        display: block !important;
+    }
+    
+    /* Garante que flexbox e flex-direction internos continuem obedecidos */
+    #area-pdf-local .pag-a4,
+    #area-pdf-local .pag-a4 * {
+        display: flex !important;
+    }
+    #area-pdf-local .pag-a4 {
+        flex-direction: column !important;
+    }
+
+    /* 3. Configura a folha física do navegador (Zera margens e define o A4) */
+    @page {
+        size: A4 portrait;
+        margin: 0 !important;
+    }
+
+    /* 4. Reseta as configurações do corpo para receber o papel */
+    body {
+        background: #110106 !important; /* Cor de fundo base do relatório */
+        margin: 0 !important;
+        padding: 0 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
+
+    /* 5. Trava milimetricamente as proporções de cada folha A4 */
+    .pag-a4 {
+        width: 210mm !important;
+        height: 296.8mm !important;
+        min-height: 296.8mm !important;
+        max-height: 296.8mm !important;
+        
+        /* Quebra de página cirúrgica */
+        page-break-before: always !important;
+        page-break-after: always !important;
+        page-break-inside: avoid !important;
+        
+        /* Reseta margens e sombras externas indesejadas no papel */
+        margin: 0 !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        
+        /* Garante que os fundos gradientes e cores luxo apareçam */
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+        
+        box-sizing: border-box !important;
+        padding: 60px !important;
+    }
+
+    /* Força a primeira folha a não criar uma quebra em branco antes dela */
+    .pag-a4:first-child {
+        page-break-before: avoid !important;
+    }
+
+    /* Garante o comportamento visual correto de imagens e mídias dentro do PDF impresso */
+    .pag-a4 img {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        display: block !important;
+        margin: 0 auto !important;
+    }
+
+    /* Oculta controles de áudio nativos na folha impressa (já que papel não toca som) */
+    .pag-a4 audio {
+        display: none !important;
+    }
+}        
+        
+        
+
+        
     </style>
 </head>
 <body>
@@ -640,7 +809,6 @@ function gerarBebe(){
 }
 
 // =============================================================
-// MONTAGEM DO PACOTE PREMIUM COM CAPAS E DIRECIONAMENTO
 function abrirPremiumSinastria(){
   const nome1 = document.getElementById("nome1").value;
   const nome2 = document.getElementById("nome2").value;
@@ -652,15 +820,122 @@ function abrirPremiumSinastria(){
     return;
   }
 
-  // Atualiza os nomes e a data na tela
+  // 1. CAPTURA AS DUAS CAPAS QUE VOCÊ JÁ TEM PRONTAS NO HTML
+  // (Isso garante que o seu design original e os players de áudio continuem intactos)
+  const capaPrincipalHTML = document.querySelector('.capa-sinastria-premium').outerHTML;
+  const capaTransicaoHTML = document.querySelector('.capa-transicao-amor').outerHTML;
+
+  // 2. COMEÇA A CONSTRUÇÃO DO RELATÓRIO COMPLETO
+  let relatorioHTML = "";
+
+  // Joga a Capa Principal como a primeira página
+  relatorioHTML += capaPrincipalHTML;
+
+  // Joga a Capa de Transição (com os áudios) como a segunda página
+  relatorioHTML += capaTransicaoHTML;
+
+  // 3. ENGENHARIA DE TEXTOS DINÂMICOS (Puxando do textos.js para o casal)
+  
+  // --- PÁGINA 3: MOTIVAÇÃO (O Desejo da Alma de Ambos) ---
+  relatorioHTML += `
+    <div class="pag-a4" style="background: #ffffff; color: #111; text-align: justify; padding: 50px; font-size: 13px; line-height: 1.6; border: 1px solid rgba(107, 2, 2, 0.1);">
+        <h2 style="font-family: 'Cinzel', serif; color: var(--secondary); text-align: center; margin-bottom: 30px; border-bottom: 2px solid var(--primary); padding-bottom: 10px; font-size: 20px;">
+            PARTE 1: MOTIVAÇÃO DA ALMA
+        </h2>
+        <h3 style="color: #8a1c32; font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px;">O Desejo Íntimo de ${social1} (Número ${dados1.motivacao})</h3>
+        <div style="margin-bottom: 30px;">
+            ${formatarTextoPersonalizado(textos.motivacao[dados1.motivacao], social1)}
+        </div>
+        <div style="width: 100%; height: 1px; background: linear-gradient(to right, transparent, var(--primary), transparent); margin: 30px 0;"></div>
+        <h3 style="color: #8a1c32; font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px;">O Desejo Íntimo de ${social2} (Número ${dados2.motivacao})</h3>
+        <div>
+            ${formatarTextoPersonalizado(textos.motivacao[dados2.motivacao], social2)}
+        </div>
+    </div>
+  `;
+
+  // --- PÁGINA 4: PERSONALIDADE E EXPRESSÃO (Como agem no mundo) ---
+  relatorioHTML += `
+    <div class="pag-a4" style="background: #ffffff; color: #111; text-align: justify; padding: 50px; font-size: 13px; line-height: 1.6; border: 1px solid rgba(107, 2, 2, 0.1);">
+        <h2 style="font-family: 'Cinzel', serif; color: var(--secondary); text-align: center; margin-bottom: 30px; border-bottom: 2px solid var(--primary); padding-bottom: 10px; font-size: 20px;">
+            PARTE 2: EXPRESSÃO & PERSONALIDADE
+        </h2>
+        <h3 style="color: #8a1c32; font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px;">A Expressão de ${social1} (Número ${dados1.personalidade})</h3>
+        <div style="margin-bottom: 30px;">
+            ${formatarTextoPersonalizado(textos.personalidade[dados1.personalidade], social1)}
+        </div>
+        <div style="width: 100%; height: 1px; background: linear-gradient(to right, transparent, var(--primary), transparent); margin: 30px 0;"></div>
+        <h3 style="color: #8a1c32; font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px;">A Expressão de ${social2} (Número ${dados2.personalidade})</h3>
+        <div>
+            ${formatarTextoPersonalizado(textos.personalidade[dados2.personalidade], social2)}
+        </div>
+    </div>
+  `;
+
+  // --- PÁGINA 5: DESTINO E CAMINHO DE VIDA (A Estrada do Casal) ---
+  relatorioHTML += `
+    <div class="pag-a4" style="background: #ffffff; color: #111; text-align: justify; padding: 50px; font-size: 13px; line-height: 1.6; border: 1px solid rgba(107, 2, 2, 0.1);">
+        <h2 style="font-family: 'Cinzel', serif; color: var(--secondary); text-align: center; margin-bottom: 30px; border-bottom: 2px solid var(--primary); padding-bottom: 10px; font-size: 20px;">
+            PARTE 3: CAMINHO DE VIDA & JORNADA
+        </h2>
+        <h3 style="color: #8a1c32; font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px;">A Estrada de Destino de ${social1} (Número ${dados1.caminho})</h3>
+        <div style="margin-bottom: 30px;">
+            ${formatarTextoPersonalizado(textos.CaminhodeVida[dados1.caminho], social1)}
+        </div>
+        <div style="width: 100%; height: 1px; background: linear-gradient(to right, transparent, var(--primary), transparent); margin: 30px 0;"></div>
+        <h3 style="color: #8a1c32; font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px;">A Estrada de Destino de ${social2} (Número ${dados2.caminho})</h3>
+        <div>
+            ${formatarTextoPersonalizado(textos.CaminhodeVida[dados2.caminho], social2)}
+        </div>
+    </div>
+  `;
+
+  // --- PÁGINA 6: SINASTRIA AMOROSA (O Cruzamento dos Destinos) ---
+  const energia1 = dados1.proposito;
+  const energia2 = dados2.proposito;
+  const chave = chaveSinastria(energia1, energia2);
+  let textoCombinado = textos.sinastria[chave] || `A combinação entre o relacionamento de Energia ${energia1} e Energia ${energia2}.`;
+
+  const menor = Math.min(energia1, energia2);
+  const maior = Math.max(energia1, energia2);
+  const nomeMenor = (energia1 === menor) ? social1 : social2;
+  const nomeMaior = (energia1 === maior) ? social1 : social2;
+
+  textoCombinado = textoCombinado.replaceAll(`Energia ${menor}`, `<strong>${nomeMenor}</strong>`);
+  textoCombinado = textoCombinado.replaceAll(`Energia ${maior}`, `<strong>${nomeMaior}</strong>`);
+  textoCombinado = textoCombinado.replaceAll(`número ${menor}`, `<strong>${nomeMenor}</strong>`);
+  textoCombinado = textoCombinado.replaceAll(`número ${maior}`, `<strong>${nomeMaior}</strong>`);
+  textoCombinado = textoCombinado.replaceAll(`Número ${menor}`, `<strong>${nomeMenor}</strong>`);
+  textoCombinado = textoCombinado.replaceAll(`Número ${maior}`, `<strong>${nomeMaior}</strong>`);
+
+  relatorioHTML += `
+    <div class="pag-a4" style="background: #ffffff; color: #111; text-align: justify; padding: 50px; font-size: 13px; line-height: 1.6; border: 1px solid rgba(107, 2, 2, 0.1);">
+        <h2 style="font-family: 'Cinzel', serif; color: var(--secondary); text-align: center; margin-bottom: 30px; border-bottom: 2px solid var(--primary); padding-bottom: 10px; font-size: 20px;">
+            PARTE 4: HARMONIA CONJUGAL & CONEXÃO
+        </h2>
+        <h3 style="color: #8a1c32; font-family: 'Cinzel', serif; font-size: 15px; margin-bottom: 15px; text-align: center;">
+            A Alquimia entre ${social1} e ${social2}
+        </h3>
+        <div style="margin-top: 10px;">
+            ${textoCombinado}
+        </div>
+    </div>
+  `;
+
+  // 4. INJETA TODO ESSE CONTEÚDO MONTADO DE UMA VEZ NA ÁREA DO PDF
+  const areaPDF = document.getElementById("area-pdf-local");
+  areaPDF.innerHTML = relatorioHTML;
+
+  // 5. ATUALIZA OS DADOS ESTÁTICOS DA CAPA (Que agora foram reinjetados)
   document.getElementById("pdf-nome-p1").innerText = social1;
   document.getElementById("pdf-nome-p2").innerText = social2;
-  
   const hoje = new Date();
   document.getElementById("pdf-data-emissao").innerText = hoje.toLocaleDateString('pt-BR');
 
-  // ⬇️ ESSA LINHA AQUI É A QUE ABRE O GERADOR DE PDF DO NAVEGADOR ⬇️
-  window.print();
+  // 6. DISPARA O GERADOR DE PDF DO NAVEGADOR COM AS PAGINAS PRONTAS
+  setTimeout(() => {
+      window.print();
+  }, 300);
 }
 </script>
 
