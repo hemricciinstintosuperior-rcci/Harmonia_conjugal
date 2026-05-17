@@ -1213,6 +1213,55 @@ relatorioHTML += criarCapaTransicao(
   const areaPDF = document.getElementById("area-pdf-local");
   areaPDF.innerHTML = relatorioHTML;
 
+
+// INCLUSÃO DO MAPA DO BEBÊ NO RELATÓRIO PREMIUM
+  const nomeBebeInput = document.getElementById("nomeBebe").value;
+  const socialBebeInput = document.getElementById("socialBebe").value || nomeBebeInput.split(' ')[0];
+
+  if (nomeBebeInput && dadosBebe) {
+      // 1. Gera uma Capa de Transição Escura para a Seção do Bebê
+      relatorioHTML += criarCapaTransicao(
+          "MAPA NUMEROLÓGICO DO BEBÊ", 
+          `Análise de Potencial e Vibração do Nome: ${socialBebeInput}`, 
+          "Instinto Superior ✶ Legado Familiar ✶ Vibração Primal"
+      );
+
+      // 2. Extrai e limpa os textos específicos do bebê
+      let motivacaoBebe = extrairETratarTexto(textos.motivacao[dadosBebe.motivacao], socialBebeInput);
+      let influenciaBebe = extrairETratarTexto(textos.influencia[dadosBebe.influencia], socialBebeInput);
+      let personalidadeBebe = extrairETratarTexto(textos.personalidade[dadosBebe.personalidade], socialBebeInput);
+
+      // 3. Monta o veredito de harmonia vibracional com base na pirâmide gerada
+      let statusHarmonia = "";
+      if (!dadosBebe.sequenciaNegativa || dadosBebe.sequenciaNegativa.length === 0) {
+          statusHarmonia = `<span style="color: #28a745; font-weight: bold;">✅ ANÁLISE: Este nome é completamente harmônico e traz fluidez energética.</span>`;
+      } else {
+          statusHarmonia = `<span style="color: #6B0202; font-weight: bold;">❌ ALERTA: Este nome possui sequências numéricas negativas que geram bloqueios na Pirâmide Invertida.</span>`;
+      }
+
+      // 4. Injeta a página de Miolo do Bebê estruturada de forma idêntica ao resto do PDF
+      relatorioHTML += `
+        <div class="bloco-texto-pdf" style="width: 210mm !important; height: 297mm !important; max-height: 297mm !important; background: #ffffff !important; padding: 25mm 20mm !important; box-sizing: border-box !important; page-break-after: always !important; page-break-inside: avoid !important; display: block !important; clear: both !important; overflow: hidden !important;">
+            <h2 class="titulo-secao-pdf" style="font-family: 'Cinzel', serif !important; color: #6B0202 !important; text-align: center !important; margin-bottom: 20px !important; border-bottom: 2px solid #d49a9a !important; padding-bottom: 10px !important; font-size: 20px !important; text-transform: uppercase !important; letter-spacing: 1px !important; display: block !important; width: 100% !important;">ESTUDO VIBRACIONAL INFANTIL</h2>
+            
+            <div style="text-align: center; margin-bottom: 25px; padding: 10px; background: #fdf8f8; border: 1px solid rgba(212, 154, 154, 0.3); border-radius: 8px;">
+                <h3 style="color: #6B0202; font-family: 'Cinzel', serif; font-size: 16px; margin-bottom: 5px;">Análise do Nome Escolhido: ${socialBebeInput}</h3>
+                <div style="font-size: 13px; font-family: 'Poppins', sans-serif;">${statusHarmonia}</div>
+            </div>
+
+            <h3 class="subtitulo-pessoa-pdf" style="color: #8a1c32 !important; font-family: 'Poppins', sans-serif !important; font-size: 13px !important; margin-bottom: 6px !important; font-weight: 600 !important; text-transform: uppercase !important; display: block !important;">1. Motivação (A Alma da Criança)</h3>
+            <div style="display: block !important; width: 100% !important; margin-bottom: 15px;">${motivacaoBebe}</div>
+            
+            <h3 class="subtitulo-pessoa-pdf" style="color: #8a1c32 !important; font-family: 'Poppins', sans-serif !important; font-size: 13px !important; margin-bottom: 6px !important; font-weight: 600 !important; text-transform: uppercase !important; display: block !important;">2. Influência (A Impressão do Mundo)</h3>
+            <div style="display: block !important; width: 100% !important; margin-bottom: 15px;">${influenciaBebe}</div>
+            
+            <h3 class="subtitulo-pessoa-pdf" style="color: #8a1c32 !important; font-family: 'Poppins', sans-serif !important; font-size: 13px !important; margin-bottom: 6px !important; font-weight: 600 !important; text-transform: uppercase !important; display: block !important;">3. Expressão (A Personalidade em Formação)</h3>
+            <div style="display: block !important; width: 100% !important;">${personalidadeBebe}</div>
+        </div>
+      `;
+  }
+    
+
   // 5. DISPARADOR DE IMPRESSÃO
   setTimeout(() => {
       window.print();
