@@ -652,14 +652,15 @@ function abrirPremiumSinastria(){
     return;
   }
 
-  // Preenche os nomes e a data atual diretamente nas capas locais da tela
+  // Atualiza os nomes e a data na tela
   document.getElementById("pdf-nome-p1").innerText = social1;
   document.getElementById("pdf-nome-p2").innerText = social2;
   
   const hoje = new Date();
   document.getElementById("pdf-data-emissao").innerText = hoje.toLocaleDateString('pt-BR');
 
-  alert("Capas atualizadas localmente com sucesso! Agora você já pode gerar o seu PDF.");
+  // ⬇️ ESSA LINHA AQUI É A QUE ABRE O GERADOR DE PDF DO NAVEGADOR ⬇️
+  window.print();
 }
 </script>
 
