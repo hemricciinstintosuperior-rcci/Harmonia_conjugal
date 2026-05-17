@@ -199,6 +199,26 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
         display: block;
     }
 
+
+       @page {
+        margin: 1.5cm; /* Margem padrão para páginas de conteúdo */
+    }
+ @media print {
+
+    @page {
+        size: A4;
+        margin: 0 ; /* equilíbrio perfeito PDF + impressão */
+    }
+
+       /* Esta classe impede que qualquer bloco dentro dela seja cortado ao meio */
+    .evitar-corte {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        display: block;
+        width: 100%;
+    }
+
+
     /* =======================================================
        3. A VERDADEIRA ENGENHARIA DE IMPRESSÃO (ÚNICA E FIXA)
        ======================================================= */
@@ -370,7 +390,15 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
     }
 }  
 
-
+/* No PDF (Impressão), invertemos tudo */
+@media print {
+    .botao-pdf-link { display: flex !important; }
+    .player-relatorio { display: none !important; }
+    
+    /* Garante que o fundo da capa não suma no PDF */
+    .capa-transicao { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+    
 /* Mata qualquer borda azul de links ou elementos focados */
 :focus { outline: none !important; }
 a, img, audio { border: none !important; outline: none !important; text-decoration: none !important; }
@@ -482,7 +510,9 @@ audio {
     }
 }
 
-    
+/* Na tela (Relatório), mostramos o Player e escondemos o Botão de Link */
+.botao-pdf-link { display: none !important; }
+.player-relatorio { display: flex !important; }    
     
 </style>
 </head>
