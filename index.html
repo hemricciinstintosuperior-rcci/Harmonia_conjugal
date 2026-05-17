@@ -358,28 +358,11 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
     .botao-pdf-link { display: flex !important; }
 
 
-/* O rodapé agora se prende ao final de cada página individual */
-    .page-footer {
-        display: block !important;
-        position: absolute !important; 
-        bottom: 15mm !important;
-        right: 20mm !important;
-        font-family: 'Cinzel', serif !important;
-        font-size: 10pt !important;
-        color: #827108 !important;
-        font-weight: bold !important;
-        z-index: 9999 !important;
-    }
 
-    /* Soma mais 1 a cada página nova usando o contador do modal */
-    .page-number::after {
-        counter-increment: numPagina;
-        content: "Página " counter(numPagina);
-    }
 /* =======================================================
    4. COMPORTAMENTO DE INTERFACE (TELA DO SISTEMA)
    ======================================================= */
-.page-footer { display: none; }
+
 .botao-pdf-link { display: none; }
 .player-relatorio { display: flex; }    
 :focus { outline: none !important; }
