@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel de Sinastria e Harmonia Conjugal</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Biblioteca HTML2PDF para gerar downloads perfeitos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
     <style>
         :root {
             --ruby-wine: #3d0c1b;
@@ -48,19 +52,15 @@
             letter-spacing: 3px;
             margin-bottom: 30px;
             text-transform: uppercase;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
         }
 
-        .video-toggle-container {
-            margin-bottom: 30px;
-        }
+        .video-toggle-container { margin-bottom: 30px; }
 
         .btn-video-toggle {
             background: rgba(138, 28, 50, 0.2);
             border: 1px solid var(--crimson);
             color: var(--blush-pink);
             padding: 12px 24px;
-            font-family: 'Montserrat', sans-serif;
             font-size: 13px;
             letter-spacing: 1px;
             font-weight: 600;
@@ -74,7 +74,6 @@
 
         .btn-video-toggle:hover {
             background: var(--crimson);
-            color: #fff;
             box-shadow: 0 0 10px rgba(138,28,50,0.5);
         }
 
@@ -83,22 +82,21 @@
             border-radius: 10px;
             overflow: hidden;
             border: 1px solid rgba(195,155,155,0.3);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
         }
 
-        /* Grid de Parceiros */
+        /* Grid Otimizado */
         .grid-parceiros {
-            display: table;
-            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
             margin-bottom: 25px;
-            border-collapse: separate;
-            border-spacing: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-parceiros { grid-template-columns: 1fr; }
         }
 
         .col-parceiro {
-            display: table-cell;
-            width: 50%;
-            vertical-align: top;
             background: rgba(0,0,0,0.3);
             padding: 20px;
             border-radius: 10px;
@@ -117,9 +115,7 @@
             text-transform: uppercase;
         }
 
-        .input-group {
-            margin-bottom: 15px;
-        }
+        .input-group { margin-bottom: 15px; }
 
         .input-group label {
             display: block;
@@ -140,19 +136,10 @@
             color: #fff;
             font-family: 'Montserrat', sans-serif;
             font-size: 13px;
-            letter-spacing: 0.5px;
-            transition: all 0.3s ease;
         }
 
-        input[type="text"]:focus {
-            outline: none;
-            border-color: var(--rose-gold);
-            box-shadow: 0 0 8px rgba(195,155,155,0.3);
-        }
-
-        /* Seção do Bebê (Opcional) */
         .secao-bebe-opcional {
-            margin: 25px 20px;
+            margin: 25px 0;
             background: rgba(138, 28, 50, 0.1);
             padding: 20px;
             border-radius: 10px;
@@ -164,7 +151,6 @@
             font-family: 'Cinzel', serif;
             color: var(--rose-gold);
             font-size: 13px;
-            letter-spacing: 1px;
             margin-bottom: 12px;
             text-transform: uppercase;
         }
@@ -173,8 +159,7 @@
             background: linear-gradient(135deg, #a71d3a 0%, #6e0f22 100%);
             color: #fff;
             border: none;
-            width: calc(100% - 40px);
-            margin: 15px auto;
+            width: 100%;
             padding: 16px;
             font-family: 'Cinzel', serif;
             font-size: 16px;
@@ -182,16 +167,11 @@
             letter-spacing: 3px;
             border-radius: 50px;
             cursor: pointer;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
-            transition: all 0.3s ease;
             text-transform: uppercase;
+            transition: all 0.3s ease;
         }
 
-        .btn-gerar:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(167,29,58,0.5);
-            background: linear-gradient(135deg, #bd2445 0%, #80132a 100%);
-        }
+        .btn-gerar:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(167,29,58,0.5); }
 
         .btn-pdf {
             display: block;
@@ -206,360 +186,151 @@
             border-radius: 50px;
             cursor: pointer;
             margin: 0 auto 30px auto;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            transition: all 0.3s ease;
         }
 
-        .btn-pdf:hover {
-            box-shadow: 0 5px 20px rgba(212,175,55,0.4);
-            transform: translateY(-1px);
-        }
+        /* --- PREVIEW DO PDF A4 --- */
+        .preview-container { width: 210mm; margin: 0 auto; }
 
-        /* --- PREVIEW EXCLUSIVO DAS CAPAS (A4 PRINT SIMULATION) --- */
-        .preview-container {
-            display: block;
+        @media (max-width: 215mm) { .preview-container { width: 100%; overflow-x: auto; } }
+
+        .pag-a4 {
             width: 210mm;
-            margin: 0 auto;
-        }
-
-        .preview-title {
-            text-align: center;
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: var(--rose-gold);
-            margin: 40px 0 15px 0;
-            opacity: 0.7;
-        }
-
-        /* Estilo da Capa Principal (Amor/Sinastria) */
-        .capa-sinastria-premium {
-            width: 210mm;
-            height: 297mm;
-            background: radial-gradient(circle, #2d0713 0%, #110106 100%);
-            border: 4px solid #a6843c;
-            display: block;
+            height: 296.8mm;
             position: relative;
-            padding: 60px;
             box-sizing: border-box;
+            padding: 50px 60px;
             margin-bottom: 40px;
             box-shadow: 0 15px 40px rgba(0,0,0,0.8);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
-        /* Cantoneiras Luxo (Estilo Coração/Ramos Elegantes) */
+        .capa-sinastria-premium {
+            background: radial-gradient(circle, #2d0713 0%, #110106 100%);
+            border: 4px solid #a6843c;
+        }
+
+        .capa-transicao-amor {
+            background-color: #310612;
+            border: 1px solid #4a0d1d;
+        }
+
+        /* Molduras */
         .corner-tl { position: absolute; top: 15px; left: 15px; width: 60px; height: 60px; border-top: 3px solid #a6843c; border-left: 3px solid #a6843c; }
         .corner-tr { position: absolute; top: 15px; right: 15px; width: 60px; height: 60px; border-top: 3px solid #a6843c; border-right: 3px solid #a6843c; }
         .corner-bl { position: absolute; bottom: 15px; left: 15px; width: 60px; height: 60px; border-bottom: 3px solid #a6843c; border-left: 3px solid #a6843c; }
         .corner-br { position: absolute; bottom: 15px; right: 15px; width: 60px; height: 60px; border-bottom: 3px solid #a6843c; border-right: 3px solid #a6843c; }
 
-        .capa-header {
-            text-align: center;
-            margin-top: 20px;
-        }
+        .capa-header { text-align: center; }
+        .capa-header span { color: #a6843c; letter-spacing: 8px; font-size: 12px; text-transform: uppercase; }
+        .capa-header .divider { width: 40px; height: 1px; background: #a6843c; margin: 10px auto; }
 
-        .capa-header span {
-            color: #a6843c;
-            letter-spacing: 8px;
-            font-size: 12px;
-            text-transform: uppercase;
-            display: block;
-        }
-
-        .capa-header .divider {
-            width: 40px;
-            height: 1px;
-            background: #a6843c;
-            margin: 10px auto;
-        }
-
-        .capa-logo-container {
-            text-align: center;
-            margin: 60px 0;
-            position: relative;
-        }
-
-        /* Elemento Decorativo Central (Corações e Geometria Sagrada) */
         .sacred-love-emblem {
-            width: 280px;
-            height: 280px;
+            width: 200px;
+            height: 200px;
             margin: 0 auto;
             background: url('https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/estudo.png') no-repeat center;
             background-size: contain;
-            filter: drop-shadow(0px 0px 25px rgba(138,28,50,0.5)) sepia(30%) hue-rotate(320deg);
+            filter: drop-shadow(0px 0px 25px rgba(138,28,50,0.5));
         }
 
-        /* Overlay de Corações Sutis na Capa */
-        .hearts-watermark {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            pointer-events: none;
-            opacity: 0.04;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.5 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E");
-        }
-
-        .capa-cliente {
-            text-align: center;
-            margin-top: 40px;
-            width: 100%;
-        }
-
-        .capa-cliente .subtext {
-            color: #c39b9b;
-            font-family: 'Cinzel', serif;
-            letter-spacing: 3px;
-            font-size: 11px;
-            text-transform: uppercase;
-        }
-
-        .capa-cliente h1 {
-            font-family: 'Cinzel', serif;
-            font-size: 32px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: #fff;
-            margin: 15px 0;
-            line-height: 1.3;
-        }
-
+        .capa-cliente { text-align: center; }
+        .capa-cliente .subtext { color: #c39b9b; font-family: 'Cinzel', serif; letter-spacing: 3px; font-size: 12px; text-transform: uppercase; }
+        .capa-cliente h1 { font-family: 'Cinzel', serif; font-size: 34px; letter-spacing: 3px; color: #fff; margin: 15px 0; }
+        
         .capa-cliente .names-display {
             font-family: 'Cinzel', serif;
-            font-size: 20px;
+            font-size: 22px;
             color: #fff;
             letter-spacing: 1.5px;
-            margin: 10px 0;
+            margin: 20px 0;
             font-weight: 600;
         }
+        .capa-cliente .heart-separator { color: var(--crimson); margin: 0 10px; }
 
-        .capa-cliente .heart-separator {
-            color: var(--crimson);
-            font-size: 18px;
-            margin: 0 10px;
-            display: inline-block;
-            filter: drop-shadow(0 0 5px var(--crimson));
-        }
-
-        .capa-cliente .line-gradient {
-            width: 200px;
-            height: 1px;
-            background: linear-gradient(to right, transparent, #a6843c, transparent);
-            margin: 20px auto;
-        }
-
-        .capa-cliente .date-display {
-            font-family: 'Cinzel', serif;
-            font-size: 16px;
-            color: #a6843c;
-            letter-spacing: 4px;
-        }
-
-        .capa-footer-text {
-            position: absolute;
-            bottom: 40px;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            font-size: 9px;
-            color: #ffffff;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            opacity: 0.5;
-        }
-
-        /* --- CAPA DE TRANSIÇÃO (INTRODUÇÃO SINASTRIA) --- */
-        .capa-transicao-amor {
-            height: 297mm;
-            width: 210mm;
-            background-color: #310612; /* Vermelho Vinho Intenso de Alta Classe */
-            position: relative;
-            overflow: hidden;
-            box-sizing: border-box;
-            padding: 60px 40px;
-            margin-bottom: 40px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.8);
-            border: 1px solid #4a0d1d;
-        }
-
-        .transicao-header {
-            margin-top: 30px;
-            text-align: center;
-            width: 100%;
-        }
-
-        .transicao-header h2 {
-            font-family: 'Cinzel', serif;
-            font-size: 24px;
-            color: #fff;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            line-height: 1.5;
-        }
-
-        .transicao-header h2 span {
-            color: #c39b9b;
-            font-size: 14px;
-            display: block;
-            margin-top: 10px;
-            letter-spacing: 5px;
-        }
-
-        .transicao-art-container {
-            margin: 50px 0 20px 0;
-            text-align: center;
-            position: relative;
-        }
-
-        .transicao-art-container img {
-            width: 85%;
-            max-width: 340px;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            border-radius: 50%;
-            border: 3px solid rgba(195,155,155,0.2);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-            filter: saturate(110%) brightness(95%);
-        }
-
-        /* Ícone flutuante de coração refinado sobreposto */
-        .transicao-heart-badge {
-            position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #110106;
-            border: 2px solid #a6843c;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            display: block;
-            line-height: 41px;
-            font-size: 18px;
-            color: var(--crimson);
-            text-shadow: 0 0 5px rgba(138,28,50,0.6);
-        }
-
-        /* Player Customizado e Links de Áudio */
-        .player-relatorio-amor {
-            margin-top: 45px;
-            display: block;
-            text-align: center;
-            width: 100%;
-        }
-
-        .player-relatorio-amor span {
-            display: block;
-            font-size: 10px;
-            color: #c39b9b;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 8px;
-        }
-
-        .player-relatorio-amor audio {
-            height: 35px;
-            width: 260px;
-            /* Filtro elegante para harmonizar os players com o tom vinho do mapa */
-            filter: sepia(80%) saturate(180%) brightness(90%) hue-rotate(310deg);
-        }
-
-        .botao-pdf-link-amor {
-            text-decoration: none;
-            display: block;
+        /* Dados Extras Dinâmicos Formatados com Elegância */
+        .dados-adicionais-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 550px;
             margin: 20px auto 0 auto;
-            width: max-content;
+            border-top: 1px solid rgba(195,155,155,0.2);
+            padding-top: 15px;
         }
-
-        .botao-pdf-link-amor .inner-btn {
-            background: rgba(17, 1, 6, 0.85);
-            border: 1px solid var(--crimson);
-            padding: 12px 25px;
-            border-radius: 50px;
-            display: table;
-        }
-
-        .botao-pdf-link-amor .btn-cell-icon {
-            display: table-cell;
-            vertical-align: middle;
-            width: 32px;
-            height: 32px;
-            background: var(--crimson);
-            border-radius: 50%;
+        .bloco-meta {
             text-align: center;
-            color: #fff;
+        }
+        .bloco-meta .meta-titulo {
+            font-size: 9px;
+            text-transform: uppercase;
+            color: #a6843c;
+            letter-spacing: 1.5px;
+            margin-bottom: 4px;
+        }
+        .bloco-meta .meta-valor {
             font-size: 12px;
-            line-height: 32px;
+            color: #fff;
+            font-weight: 300;
         }
 
-        .botao-pdf-link-amor .btn-cell-text {
-            display: table-cell;
-            vertical-align: middle;
-            padding-left: 12px;
-            text-align: left;
+        /* Seção do Bebê na Capa */
+        .bloco-bebe-capa {
+            margin-top: 25px;
+            text-align: center;
+            display: none; /* Só aparece via JS se preenchido */
         }
-
-        .botao-pdf-link-amor .btn-cell-text .track-lbl {
-            display: block;
-            font-size: 8px;
-            color: #c39b9b;
+        .bloco-bebe-capa .bebe-badge {
+            background: rgba(166, 132, 60, 0.15);
+            border: 1px solid #a6843c;
+            padding: 6px 18px;
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 10px;
             text-transform: uppercase;
             letter-spacing: 2px;
-        }
-
-        .botao-pdf-link-amor .btn-cell-text .action-lbl {
-            display: block;
-            font-size: 11px;
             color: #fff;
-            font-family: 'Cinzel', serif;
-            letter-spacing: 1px;
-            font-weight: 600;
         }
 
-        .transicao-footer-scrolling {
-            position: absolute;
-            bottom: 40px;
-            left: 0;
-            width: 100%;
-            color: #fff;
-            font-size: 11px;
-            letter-spacing: 1.5px;
-            text-align: center;
-            opacity: 0.7;
-            padding: 0 30px;
-            line-height: 1.4;
-        }
+        .line-gradient { width: 200px; height: 1px; background: linear-gradient(to right, transparent, #a6843c, transparent); margin: 20px auto; }
+        .date-display { font-family: 'Cinzel', serif; font-size: 14px; color: #a6843c; letter-spacing: 4px; }
+        
+        .capa-footer-text { text-align: center; font-size: 9px; color: #ffffff; letter-spacing: 3px; text-transform: uppercase; opacity: 0.5; }
 
-        /* Ocultar elementos na impressão real */
-        @media print {
-            .no-print, .container-inputs, .preview-title {
-                display: none !important;
-            }
-            body {
-                background: #fff;
-                padding: 0;
-            }
-            .preview-container {
-                width: 100%;
-            }
-            .capa-sinastria-premium, .capa-transicao-amor {
-                margin: 0;
-                page-break-after: always;
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
-        }
+        /* Capa 2 */
+        .transicao-header { text-align: center; }
+        .transicao-header h2 { font-family: 'Cinzel', serif; font-size: 24px; letter-spacing: 3px; }
+        .transicao-header h2 span { color: #c39b9b; font-size: 14px; display: block; margin-top: 10px; letter-spacing: 5px; }
+
+        .transicao-art-container { text-align: center; position: relative; margin: 20px 0; }
+        .transicao-art-container img { width: 220px; height: 220px; border-radius: 50%; border: 3px solid rgba(195,155,155,0.2); }
+        .transicao-heart-badge { position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); background: #110106; border: 2px solid #a6843c; width: 40px; height: 40px; border-radius: 50%; line-height: 36px; color: var(--crimson); text-align: center;}
+
+        .player-relatorio-amor { text-align: center; margin: 15px 0; }
+        .player-relatorio-amor span { display: block; font-size: 10px; color: #c39b9b; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; }
+        .player-relatorio-amor audio { height: 30px; width: 240px; filter: sepia(80%) hue-rotate(310deg); }
+
+        .botao-pdf-link-amor { text-decoration: none; display: block; margin: 10px auto; width: max-content; }
+        .botao-pdf-link-amor .inner-btn { background: rgba(17, 1, 6, 0.85); border: 1px solid var(--crimson); padding: 10px 20px; border-radius: 50px; display: flex; align-items: center; }
+        .botao-pdf-link-amor .btn-cell-icon { width: 28px; height: 28px; background: var(--crimson); border-radius: 50%; text-align: center; color: #fff; line-height: 28px; font-size: 11px; }
+        .botao-pdf-link-amor .btn-cell-text { padding-left: 10px; text-align: left; }
+        .botao-pdf-link-amor .btn-cell-text .track-lbl { display: block; font-size: 8px; color: #c39b9b; text-transform: uppercase; }
+        .botao-pdf-link-amor .btn-cell-text .action-lbl { display: block; font-size: 11px; color: #fff; font-family: 'Cinzel', serif; }
+
+        .transicao-footer-scrolling { color: #fff; font-size: 11px; letter-spacing: 1.5px; text-align: center; opacity: 0.6; line-height: 1.4; }
     </style>
 </head>
 <body>
 
-    <!-- Botão de Impressão Premium -->
-    <button class="btn-pdf no-print" onclick="window.print()">📥 BAIXAR SEU PDF PREMIUM DE SINASTRIA</button>
+    <!-- Botão de Download Automatizado -->
+    <button class="btn-pdf" onclick="baixarPDFPremium()">📥 GERAR E BAIXAR PDF DE SINASTRIA</button>
 
-    <!-- FORMULÁRIO DE ENTRADA TOTALMENTE ADAPTADO PARA DOIS PARCEIROS + BEBÊ CONDICIONAL -->
+    <!-- FORMULÁRIO -->
     <div class="container-inputs">
         <h1>Portal de Sinastria & Harmonia Conjugal</h1>
 
-        <!-- Controle do Vídeo Introdutório -->
-        <div class="video-toggle-container no-print">
+        <div class="video-toggle-container">
             <button type="button" id="btnVideo" class="btn-video-toggle">
                 <span>🎥 Assistir Vídeo Introdutório de Sinastria</span>
                 <i class="seta">▼</i>
@@ -567,32 +338,29 @@
             <div id="wrapperVideo" class="video-wrapper" style="display: none; margin-top: 15px;">
                 <video id="videoExplicativo" width="100%" controls poster="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png">
                     <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/introducao.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeos.
                 </video>
             </div>
         </div>
 
-        <!-- Estrutura Lado a Lado usando Table para compatibilidade absoluta e design limpo -->
         <div class="grid-parceiros">
-            
             <!-- PARCEIRO 1 -->
             <div class="col-parceiro">
                 <h3>Primeiro Parceiro (A)</h3>
                 <div class="input-group">
-                    <label>Nome Completo (igual Certidão)</label>
-                    <input type="text" id="nome1" placeholder="Ex: Nome do Primeiro Analisado">
+                    <label>Nome Completo</label>
+                    <input type="text" id="nome1" placeholder="Ex: Gabriel Silva">
                 </div>
                 <div class="input-group">
                     <label>Data de Nascimento</label>
                     <input type="text" id="data1" placeholder="DD/MM/AAAA" maxlength="10" onInput="mascaraData(this)">
                 </div>
                 <div class="input-group">
-                    <label>Como prefere ser chamado? (Opcional)</label>
-                    <input type="text" id="nomeSocial1" placeholder="Ex: Nome Social / Apelido">
+                    <label>Nome Social / Apelido</label>
+                    <input type="text" id="nomeSocial1" placeholder="Opcional">
                 </div>
                 <div class="input-group">
-                    <label>Nome anterior ou de Casado(a) (se houver)</label>
-                    <input type="text" id="nomeCasado1" placeholder="Ex: Nome de Casado antigo">
+                    <label>Nome anterior / Casado(a)</label>
+                    <input type="text" id="nomeCasado1" placeholder="Se houver">
                 </div>
             </div>
 
@@ -600,48 +368,40 @@
             <div class="col-parceiro">
                 <h3>Segundo Parceiro (B)</h3>
                 <div class="input-group">
-                    <label>Nome Completo (igual Certidão)</label>
-                    <input type="text" id="nome2" placeholder="Ex: Nome do Segundo Analisado">
+                    <label>Nome Completo</label>
+                    <input type="text" id="nome2" placeholder="Ex: Letícia Oliveira">
                 </div>
                 <div class="input-group">
                     <label>Data de Nascimento</label>
                     <input type="text" id="data2" placeholder="DD/MM/AAAA" maxlength="10" onInput="mascaraData(this)">
                 </div>
                 <div class="input-group">
-                    <label>Como prefere ser chamado? (Opcional)</label>
-                    <input type="text" id="nomeSocial2" placeholder="Ex: Nome Social / Apelido">
+                    <label>Nome Social / Apelido</label>
+                    <input type="text" id="nomeSocial2" placeholder="Opcional">
                 </div>
                 <div class="input-group">
-                    <label>Nome anterior ou de Casado(a) (se houver)</label>
-                    <input type="text" id="nomeCasado2" placeholder="Ex: Nome de Casado antigo">
+                    <label>Nome anterior / Casado(a)</label>
+                    <input type="text" id="nomeCasado2" placeholder="Se houver">
                 </div>
             </div>
-
         </div>
 
-        <!-- MAPA DO BEBÊ CONDICIONAL -->
         <div class="secao-bebe-opcional">
             <h4>Análise Complementar: Conexão com o Bebê (Opcional)</h4>
             <div class="input-group" style="margin-bottom: 0;">
                 <label>Nome Completo do Bebê / Filho</label>
-                <input type="text" id="nomeBebe" placeholder="Insira se desejar incluir o Mapa do Bebê no relatório">
+                <input type="text" id="nomeBebe" placeholder="Insira para incluir o mapa do bebê no relatório">
             </div>
         </div>
 
-        <button class="btn-gerar" onclick="processarSinastriaDinamica()">GERAR MAPA DE HARMONIA</button>
+        <button class="btn-gerar" onclick="processarSinastriaDinamica()">Atualizar Dados no Relatório</button>
     </div>
 
-
-    <!-- CONTAINER DO RELATÓRIO PREPARADO PARA IMPRESSÃO / VISUALIZAÇÃO -->
-    <div class="preview-container">
+    <!-- AREA ALVO PARA CAPTURA DO PDF -->
+    <div class="preview-container" id="conteudo-pdf">
         
-        <div class="preview-title">Visualização do Modelo de Capa Principal (A4)</div>
-
-        <!-- 1. CAPA PRINCIPAL DE SINASTRIA ROMÂNTICA LUXO -->
-        <div class="capa-sinastria-premium" id="capa-numerologica">
-            <div class="hearts-watermark"></div>
-            
-            <!-- Cantoneiras Metálicas -->
+        <!-- 1. CAPA PRINCIPAL -->
+        <div class="pag-a4 capa-sinastria-premium">
             <div class="corner-tl"></div><div class="corner-tr"></div><div class="corner-bl"></div><div class="corner-br"></div>
 
             <div class="capa-header">
@@ -649,20 +409,41 @@
                 <div class="divider"></div>
             </div>
 
-            <div class="capa-logo-container">
-                <div class="sacred-love-emblem"></div>
-            </div>
+            <div class="sacred-love-emblem"></div>
 
             <div class="capa-cliente">
                 <div class="subtext">Estudo de Harmonia Conjugal & Destino</div>
                 <h1>MAPA NUMEROLÓGICO<br>DE SINASTRIA</h1>
                 <div class="line-gradient"></div>
                 
-                <!-- Exibição de nomes dinâmicos separados por coração apaixonado -->
+                <!-- Nomes Principais -->
                 <div class="names-display">
                     <span id="lblNomeParceiro1">Gabriel Silva</span>
                     <span class="heart-separator">❤</span>
                     <span id="lblNomeParceiro2">Letícia Oliveira</span>
+                </div>
+
+                <!-- Datas de Nascimento Cruzadas -->
+                <div style="font-size: 11px; color: #c39b9b; letter-spacing: 1px; margin-top: -5px;">
+                    <span id="lblData1">15/04/1995</span> • <span id="lblData2">22/11/1998</span>
+                </div>
+
+                <!-- Dados Extras do Parceiro 1 -->
+                <div class="dados-adicionais-container">
+                    <div class="bloco-meta" id="metaP1">
+                        <div class="meta-titulo">Registros Parceiro A</div>
+                        <div class="meta-valor" id="lblExtra1">Nenhum dado extra informado</div>
+                    </div>
+                    <!-- Dados Extras do Parceiro 2 -->
+                    <div class="bloco-meta" id="metaP2">
+                        <div class="meta-titulo">Registros Parceiro B</div>
+                        <div class="meta-valor" id="lblExtra2">Nenhum dado extra informado</div>
+                    </div>
+                </div>
+
+                <!-- Linha Dinâmica do Bebê (Opcional) -->
+                <div class="bloco-bebe-capa" id="blocoBebe">
+                    <div class="bebe-badge">👶 Vinculo com o Filho(a): <span id="lblNomeBebe">-</span></div>
                 </div>
                 
                 <div class="line-gradient" style="width: 120px; margin: 15px auto;"></div>
@@ -674,12 +455,8 @@
             </div>
         </div>
 
-
-        <div class="preview-title">Visualização do Modelo de Capa de Transição de Seção (A4)</div>
-
-        <!-- 2. CAPA DE TRANSIÇÃO DE SEÇÃO ADAPTADA PARA SINASTRIA AMOROSA (VINHO E ÁUDIO) -->
-        <div class="capa-transicao-amor">
-            
+        <!-- 2. CAPA DE TRANSIÇÃO -->
+        <div class="pag-a4 capa-transicao-amor">
             <div class="transicao-header">
                 <h2>INTRODUÇÃO E CONEXÃO<br><span>Resultado, Afinidade de Alma & Sincronia</span></h2>
             </div>
@@ -689,7 +466,6 @@
                 <div class="transicao-heart-badge">❤</div>
             </div>
 
-            <!-- Faixa de Áudio 1: Frequência do Nascimento e Atração -->
             <div class="player-relatorio-amor">
                 <span>O Som do Destino Compartilhado</span>
                 <audio controls>
@@ -707,8 +483,7 @@
                 </div>
             </a>
 
-            <!-- Faixa de Áudio 2: Frequência de Alinhamento do Casal -->
-            <div class="player-relatorio-amor" style="margin-top: 35px;">
+            <div class="player-relatorio-amor" style="margin-top: 25px;">
                 <span>Frequência do Instinto Superior Amoroso</span>
                 <audio controls>
                     <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3" type="audio/mpeg">
@@ -732,9 +507,8 @@
 
     </div>
 
-    <!-- Scripts de Interatividade e Máscaras -->
     <script>
-        // Função de controle do vídeo idêntica à solicitada
+        // Controle de exibição do vídeo explicativo
         document.getElementById('btnVideo').addEventListener('click', function() {
             const wrapper = document.getElementById('wrapperVideo');
             const video = document.getElementById('videoExplicativo');
@@ -742,17 +516,15 @@
 
             if (wrapper.style.display === 'none') {
                 wrapper.style.display = 'block';
-                btn.classList.add('ativo');
                 btn.querySelector('span').innerText = '❌ Fechar Vídeo';
             } else {
                 wrapper.style.display = 'none';
-                btn.classList.remove('ativo');
                 btn.querySelector('span').innerText = '🎥 Assistir Vídeo Introdutório de Sinastria';
                 video.pause();
             }
         });
 
-        // Máscara automática de data DD/MM/AAAA para os inputs
+        // Máscara automatizada para o campo data
         function mascaraData(input) {
             input.value = input.value
                 .replace(/\D/g, '')
@@ -760,15 +532,70 @@
                 .replace(/^(\d{2})\/(\d{2})(\d)/, '$1/$2/$3');
         }
 
-        // Função simulação para atualizar os nomes dinamicamente ao digitar nas capas de demonstração
+        // CAPTURA E INJEÇÃO DINÂMICA DOS TEXTOS DOS INPUTS PARA AS CAPAS
         function processarSinastriaDinamica() {
-            const n1 = document.getElementById('nome1').value.trim() || "Gabriel Silva";
-            const n2 = document.getElementById('nome2').value.trim() || "Letícia Oliveira";
+            // Resgate dos valores do formulário com fallbacks padrões elegantes
+            const nome1 = document.getElementById('nome1').value.trim() || "Gabriel Silva";
+            const data1 = document.getElementById('data1').value.trim() || "15/04/1995";
+            const apelido1 = document.getElementById('nomeSocial1').value.trim();
+            const casado1 = document.getElementById('nomeCasado1').value.trim();
+
+            const nome2 = document.getElementById('nome2').value.trim() || "Letícia Oliveira";
+            const data2 = document.getElementById('data2').value.trim() || "22/11/1998";
+            const apelido2 = document.getElementById('nomeSocial2').value.trim();
+            const casado2 = document.getElementById('nomeCasado2').value.trim();
+
+            const nomeBebe = document.getElementById('nomeBebe').value.trim();
+
+            // 1. Atualizando Elementos Principais
+            document.getElementById('lblNomeParceiro1').innerText = nome1;
+            document.getElementById('lblNomeParceiro2').innerText = nome2;
+            document.getElementById('lblData1').innerText = data1;
+            document.getElementById('lblData2').innerText = data2;
+
+            // 2. Construindo string de Metadados Extras - Parceiro 1
+            let extrasP1 = [];
+            if(apelido1) extrasP1.push(`"${apelido1}"`);
+            if(casado1) extrasP1.push(`Nee: ${casado1}`);
+            document.getElementById('lblExtra1').innerHTML = extrasP1.length > 0 ? extrasP1.join('<br>') : "Sem registros extras";
+
+            // 3. Construindo string de Metadados Extras - Parceiro 2
+            let extrasP2 = [];
+            if(apelido2) extrasP2.push(`"${apelido2}"`);
+            if(casado2) extrasP2.push(`Nee: ${casado2}`);
+            document.getElementById('lblExtra2').innerHTML = extrasP2.length > 0 ? extrasP2.join('<br>') : "Sem registros extras";
+
+            // 4. Lógica Condicional para o Bloco do Bebê
+            const containerBebe = document.getElementById('blocoBebe');
+            if(nomeBebe) {
+                containerBebe.style.display = "block";
+                document.getElementById('lblNomeBebe').innerText = nomeBebe;
+            } else {
+                containerBebe.style.display = "none";
+            }
             
-            document.getElementById('lblNomeParceiro1').innerText = n1;
-            document.getElementById('lblNomeParceiro2').innerText = n2;
-            
-            alert("Estrutura carregada com sucesso! Os nomes foram acoplados às capas e a engine está pronta para processar a sinastria completa.");
+            alert("Perfeito! Todos os textos, nomes e variações foram injetados no layout com sucesso.");
+        }
+
+        // Dispara o download com o nome customizado do casal
+        function baixarPDFPremium() {
+            // Executa a atualização primeiro para garantir que nenhum dado antigo seja impresso
+            processarSinastriaDinamica();
+
+            const elemento = document.getElementById('conteudo-pdf');
+            const n1 = document.getElementById('nome1').value.trim() || "Parceiro_A";
+            const n2 = document.getElementById('nome2').value.trim() || "Parceiro_B";
+            const nomeArquivo = `Mapa_Sinastria_${n1}_e_${n2}.pdf`;
+
+            const opcoes = {
+                margin:       0,
+                filename:     nomeArquivo,
+                image:        { type: 'jpeg', quality: 0.98 },
+                html2canvas:  { scale: 2, useCORS: true, letterRendering: true },
+                jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+
+            html2pdf().set(opcoes).from(elemento).save();
         }
     </script>
 </body>
