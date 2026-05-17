@@ -828,53 +828,53 @@ function abrirPremiumSinastria(){
     return;
   }
 
-  // DATA DE HOJE CORRIGIDA
+  // DATA DE HOJE
   const dataHoje = new Date().toLocaleDateString('pt-BR');
 
-  // 1. CAPAS BLINDADAS (Injeta os nomes direto nas posições exatas sem depender de IDs)
+  // 1. CAPAS ULTRA CALIBRADAS ANTI-VAZAMENTO (Padding reduzido e tamanhos controlados)
   let relatorioHTML = `
-    <div class="pag-a4 capa-sinastria-premium" style="width: 210mm; height: 295mm; max-height: 295mm; position: relative; background: radial-gradient(circle, #2d0713 0%, #110106 100%); border: 4px solid #a6843c; padding: 60px; box-sizing: border-box; text-align: center; overflow: hidden; page-break-after: always; page-break-inside: avoid; display: flex !important; flex-direction: column !important; justify-content: center !important; align-items: center !important;">
-        <div style="position: absolute; top: 15px; left: 15px; width: 60px; height: 60px; border-top: 3px solid #a6843c; border-left: 3px solid #a6843c;"></div>
-        <div style="position: absolute; top: 15px; right: 15px; width: 60px; height: 60px; border-top: 3px solid #a6843c; border-right: 3px solid #a6843c;"></div>
-        <div style="position: absolute; bottom: 15px; left: 15px; width: 60px; height: 60px; border-bottom: 3px solid #a6843c; border-left: 3px solid #a6843c;"></div>
-        <div style="position: absolute; bottom: 15px; right: 15px; width: 60px; height: 60px; border-bottom: 3px solid #a6843c; border-right: 3px solid #a6843c;"></div>
+    <div class="pag-a4 capa-sinastria-premium" style="width: 210mm; height: 295mm; max-height: 295mm; position: relative; background: radial-gradient(circle, #2d0713 0%, #110106 100%); border: 4px solid #a6843c; padding: 35px 40px; box-sizing: border-box !important; text-align: center; overflow: hidden; page-break-after: always; page-break-inside: avoid; display: flex !important; flex-direction: column !important; justify-content: space-between !important; align-items: center !important;">
+        <div style="position: absolute; top: 12px; left: 12px; width: 45px; height: 45px; border-top: 3px solid #a6843c; border-left: 3px solid #a6843c; pointer-events: none;"></div>
+        <div style="position: absolute; top: 12px; right: 12px; width: 45px; height: 45px; border-top: 3px solid #a6843c; border-right: 3px solid #a6843c; pointer-events: none;"></div>
+        <div style="position: absolute; bottom: 12px; left: 12px; width: 45px; height: 45px; border-bottom: 3px solid #a6843c; border-left: 3px solid #a6843c; pointer-events: none;"></div>
+        <div style="position: absolute; bottom: 12px; right: 12px; width: 45px; height: 45px; border-bottom: 3px solid #a6843c; border-right: 3px solid #a6843c; pointer-events: none;"></div>
 
-        <div>
-            <span style="color: #a6843c; letter-spacing: 8px; font-size: 12px; text-transform: uppercase; display: block;">Portal Numerológico Cabalístico</span>
-            <div style="width: 40px; height: 1px; background: #a6843c; margin: 10px auto;"></div>
+        <div style="margin-top: 10px;">
+            <span style="color: #a6843c; letter-spacing: 6px; font-size: 11px; text-transform: uppercase; display: block;">Portal Numerológico Cabalístico</span>
+            <div style="width: 35px; height: 1px; background: #a6843c; margin: 8px auto;"></div>
         </div>
 
-        <div style="margin: 40px 0;">
-            <div style="width: 220px; height: 220px; margin: 0 auto; background: url('https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/estudo.png') no-repeat center; background-size: contain;"></div>
+        <div style="margin: 20px auto; display: block;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/estudo.png" style="width: 170px; height: 170px; object-fit: contain; display: block; margin: 0 auto;">
         </div>
 
-        <div>
-            <div style="color: #c39b9b; font-family: 'Cinzel', serif; letter-spacing: 3px; font-size: 11px; text-transform: uppercase;">Estudo de Harmonia Conjugal & Destino</div>
-            <h1 style="font-family: 'Cinzel', serif; font-size: 30px; text-transform: uppercase; letter-spacing: 3px; color: #fff; margin: 15px 0; line-height: 1.3;">MAPA NUMEROLÓGICO<br>DE SINASTRIA</h1>
-            <div style="width: 200px; height: 1px; background: linear-gradient(to right, transparent, #a6843c, transparent); margin: 20px auto;"></div>
+        <div style="margin-bottom: 15px; width: 100%;">
+            <div style="color: #c39b9b; font-family: 'Cinzel', serif; letter-spacing: 2px; font-size: 10px; text-transform: uppercase;">Estudo de Harmonia Conjugal & Destino</div>
+            <h1 style="font-family: 'Cinzel', serif; font-size: 26px; text-transform: uppercase; letter-spacing: 2px; color: #fff; margin: 10px 0; line-height: 1.2;">MAPA NUMEROLÓGICO<br>DE SINASTRIA</h1>
+            <div style="width: 160px; height: 1px; background: linear-gradient(to right, transparent, #a6843c, transparent); margin: 15px auto;"></div>
             
-            <div style="font-family: 'Cinzel', serif; font-size: 22px; color: #fff; letter-spacing: 1.5px; margin: 15px 0; font-weight: 600;">
+            <div style="font-family: 'Cinzel', serif; font-size: 20px; color: #fff; letter-spacing: 1px; margin: 12px 0; font-weight: 600;">
                 <span>${social1}</span>
-                <span style="color: #8a1c32; margin: 0 10px;">❤</span>
+                <span style="color: #8a1c32; margin: 0 8px;">❤</span>
                 <span>${social2}</span>
             </div>
             
-            <div style="width: 120px; height: 1px; background: linear-gradient(to right, transparent, #a6843c, transparent); margin: 15px auto;"></div>
-            <div style="font-family: 'Cinzel', serif; font-size: 16px; color: #a6843c; letter-spacing: 4px;">${dataHoje}</div>
+            <div style="width: 100px; height: 1px; background: linear-gradient(to right, transparent, #a6843c, transparent); margin: 12px auto;"></div>
+            <div style="font-family: 'Cinzel', serif; font-size: 14px; color: #a6843c; letter-spacing: 3px;">${dataHoje}</div>
         </div>
     </div>
 
-    <div class="pag-a4 capa-transicao-amor" style="width: 210mm; height: 295mm; max-height: 295mm; position: relative; background-color: #310612; border: 1px solid #4a0d1d; padding: 60px; box-sizing: border-box; text-align: center; overflow: hidden; page-break-after: always; page-break-inside: avoid; display: flex !important; flex-direction: column !important; justify-content: center !important; align-items: center !important;">
-        <div>
-            <h2 style="font-family: 'Cinzel', serif; font-size: 24px; color: #fff; text-transform: uppercase; letter-spacing: 3px; line-height: 1.5;">INTRODUÇÃO E CONEXÃO<br><span style="color: #c39b9b; font-size: 14px; display: block; margin-top: 10px; letter-spacing: 5px;">Resultado, Afinidade de Alma & Sincronia</span></h2>
+    <div class="pag-a4 capa-transicao-amor" style="width: 210mm; height: 295mm; max-height: 295mm; position: relative; background-color: #310612; border: 1px solid #4a0d1d; padding: 40px; box-sizing: border-box !important; text-align: center; overflow: hidden; page-break-after: always; page-break-inside: avoid; display: flex !important; flex-direction: column !important; justify-content: center !important; align-items: center !important;">
+        <div style="margin-bottom: 25px;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 22px; color: #fff; text-transform: uppercase; letter-spacing: 3px; line-height: 1.4;">INTRODUÇÃO E CONEXÃO<br><span style="color: #c39b9b; font-size: 13px; display: block; margin-top: 8px; letter-spacing: 4px;">Resultado, Afinidade de Alma & Sincronia</span></h2>
         </div>
-        <div style="margin: 40px 0; position: relative;">
-            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" style="width: 240px; height: 240px; display: block; margin: 0 auto; border-radius: 50%; border: 3px solid rgba(195,155,155,0.2);">
+        <div style="margin: 20px auto; position: relative; display: block;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" style="width: 190px; height: 190px; display: block; margin: 0 auto; border-radius: 50%; border: 3px solid rgba(195,155,155,0.2);">
         </div>
     </div>
   `;
 
-  // 2. EXTRAÇÃO PURA DE TEXTO (Detona tabelas internas invisíveis do textos.js)
+  // 2. EXTRAÇÃO PURA DE TEXTO (Proteção total do layout)
   function extrairETratarTexto(textoBruto, nomeParceiro) {
     if (!textoBruto) return "";
     
@@ -883,14 +883,13 @@ function abrirPremiumSinastria(){
     
     let textoPuro = divTemporaria.textContent || divTemporaria.innerText || "";
     
-    // Substitui com segurança as variações de "você" limpando os espaços
     textoPuro = textoPuro.replace(/você/gi, ` <strong style="color: #6B0202 !important; font-weight: 600 !important; display: inline !important;">${nomeParceiro}</strong> `);
     textoPuro = textoPuro.replace(/voce/gi, ` <strong style="color: #6B0202 !important; font-weight: 600 !important; display: inline !important;">${nomeParceiro}</strong> `);
     
     return `<p style="color: #222222 !important; font-family: 'Poppins', sans-serif !important; font-size: 13px !important; line-height: 1.7 !important; text-align: justify !important; margin-bottom: 16px !important; display: block !important; width: 100% !important;">${textoPuro}</p>`;
   }
 
-  // GERADOR DO MIOLO (Gera folhas brancas limpas estruturadas em bloco)
+  // GERADOR DO MIOLO
   function gerarFolhaConteudo(titulo, sub1, txt1, sub2, txt2) {
     return `
       <div class="bloco-texto-pdf" style="width: 210mm !important; height: 295mm !important; max-height: 295mm !important; background: #ffffff !important; padding: 25mm 20mm !important; box-sizing: border-box !important; page-break-after: always !important; page-break-inside: avoid !important; display: block !important; clear: both !important; overflow: hidden !important;">
@@ -907,8 +906,8 @@ function abrirPremiumSinastria(){
     `;
   }
 
-  // 3. MONTAGEM DO CONTEÚDO DAS FOLHAS
-  relatorioHTML += gerarFolhaConteudo("PARTE 1: MOTIVAÇÃO DA ALMA", `O Desejo Íntimo de ${social1}`, textos.motivacao[dados1.motivacao], `O Desejo Íntimo de ${social2}`, textos.motivacao[dados2.motivacao]);
+  // 3. SEÇÕES DO MIOLO
+  relatorioHTML += gerarFolhaConteudo("PARTE 1: MOTIVAÇÃO DA ALMA", `O Desejo Íntimo de ${social1}`, textos.motivacao[dados1.motivacao], `O Desejo Íntimo de ${social2}`, textos.motivacao[dados1.motivacao]);
   relatorioHTML += gerarFolhaConteudo("PARTE 2: INFLUÊNCIA & IMPRESSÃO", `A Influência de ${social1}`, textos.influencia[dados1.influencia], `A Influência de ${social2}`, textos.influencia[dados2.influencia]);
   relatorioHTML += gerarFolhaConteudo("PARTE 3: EXPRESSÃO & PERSONALIDADE", `A Expressão de ${social1}`, textos.personalidade[dados1.personalidade], `A Expressão de ${social2}`, textos.personalidade[dados2.personalidade]);
   relatorioHTML += gerarFolhaConteudo("PARTE 4: CAMINHO DE VIDA", `A Estrada de ${social1}`, textos.CaminhodeVida[dados1.caminho], `A Estrada de ${social2}`, textos.CaminhodeVida[dados2.caminho]);
@@ -945,11 +944,11 @@ function abrirPremiumSinastria(){
     </div>
   `;
 
-  // 4. ATUALIZA A ÁREA DO PDF LOCAL DE FORMA LIMPA E DIRETA
+  // 4. INJEÇÃO LIMPA NA ÁREA DO PDF LOCAL
   const areaPDF = document.getElementById("area-pdf-local");
   areaPDF.innerHTML = relatorioHTML;
 
-  // 5. DISPARA A IMPRESSÃO SEM ERRO DE RENDERING
+  // 5. DISPARADOR DE IMPRESSÃO
   setTimeout(() => {
       window.print();
   }, 350);
