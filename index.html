@@ -632,7 +632,6 @@ function criarCapaTransicao(titulo, subtitulo, rodape, audio1Url, nomeAudio1, au
     let playerHTML = "";
     let linkHTML = "";
 
-    // Só monta bloco de áudio se eles forem passados por parâmetro
     if(audio1Url && audio2Url) {
         playerHTML = `
         <div class="player-relatorio" style="display:flex; flex-direction:column; gap:12px; width:100%; max-width:280px; align-items:center;">
@@ -697,65 +696,63 @@ function abrirPremiumSinastria(){
         <p style="font-size: 9px; color: #ffffff; letter-spacing: 2px; text-transform: uppercase; opacity: 0.5;">Instinto Superior • Engenharia do Amor</p>
     </div>`;
 
+  // --- PÁGINA 2: SUMÁRIO EXECUTIVO PREMIUM ---
+  relatorioHTML += `
+  <div class="pag-a4" style="
+      background: radial-gradient(circle, #2d0713 0%, #110106 100%) !important; 
+      border: 4px solid #a6843c; 
+      display: flex !important; 
+      flex-direction: column !important; 
+      align-items: center !important; 
+      justify-content: flex-start !important; 
+      padding: 60px 40px !important; 
+      box-sizing: border-box !important; 
+      page-break-after: always !important;
+      position: relative;
+      overflow: hidden !important;">
 
-// --- PÁGINA 2: SUMÁRIO EXECUTIVO PREMIUM ---
-relatorioHTML += `
-<div class="pag-a4" style="
-    background: radial-gradient(circle, #2d0713 0%, #110106 100%) !important; 
-    border: 4px solid #a6843c; 
-    display: flex !important; 
-    flex-direction: column !important; 
-    align-items: center !important; 
-    justify-content: flex-start !important; 
-    padding: 60px 40px !important; 
-    box-sizing: border-box !important; 
-    page-break-after: always !important;
-    position: relative;
-    overflow: hidden !important;">
+      <div style="position: absolute; top: 15px; left: 15px; width: 30px; height: 30px; border-top: 2px solid #a6843c; border-left: 2px solid #a6843c;"></div>
+      <div style="position: absolute; top: 15px; right: 15px; width: 30px; height: 30px; border-top: 2px solid #a6843c; border-right: 2px solid #a6843c;"></div>
 
-    <div style="position: absolute; top: 15px; left: 15px; width: 30px; height: 30px; border-top: 2px solid #a6843c; border-left: 2px solid #a6843c;"></div>
-    <div style="position: absolute; top: 15px; right: 15px; width: 30px; height: 30px; border-top: 2px solid #a6843c; border-right: 2px solid #a6843c;"></div>
+      <div style="text-align: center; margin-bottom: 30px;">
+          <h2 style="font-family: 'Cinzel', serif; color: #fff; font-size: 22px; letter-spacing: 5px; text-transform: uppercase; margin: 0; font-weight: 700;">
+              Sumário Executivo
+          </h2>
+          <div style="width: 60px; height: 1px; background: #a6843c; margin: 10px auto;"></div>
+          <p style="font-family: 'Poppins', sans-serif; color: #d49a9a; font-size: 10px; text-transform: uppercase; letter-spacing: 3px;">Roteiro da Jornada Vibracional</p>
+      </div>
 
-    <div style="text-align: center; margin-bottom: 30px;">
-        <h2 style="font-family: 'Cinzel', serif; color: #fff; font-size: 22px; letter-spacing: 5px; text-transform: uppercase; margin: 0; font-weight: 700;">
-            Sumário Executivo
-        </h2>
-        <div style="width: 60px; height: 1px; background: #a6843c; margin: 10px auto;"></div>
-        <p style="font-family: 'Poppins', sans-serif; color: #d49a9a; font-size: 10px; text-transform: uppercase; letter-spacing: 3px;">Roteiro da Jornada Vibracional</p>
-    </div>
-
-    <div style="width: 100%; max-width: 900px; display: flex; flex-direction: column; gap: 15px;">
-        ${[
-            { t: "Introdução", c: "Instinto Superior ✶ Engenharia da Vida ✶ Direcionamento de Jornada"},
-            { t: "Parte 1: Performance Natural", c: "Planos de Expressão ✶ Gráficos de Potenciais"},
-            { t: "Parte 2: Essência e Identidade", c: "Motivação ✶ Influência ✶ Personalidade ✶ Pilar de Equilíbrio"},
-            { t: "Parte 3: Alinhamento e Desafios",   c: "Mecanismo do Subconsciente ✶ Desafio Principal"},
-            { t: "Parte 4: Finalidade e Realização", c: " Caminho de Vida ✶ Propósito ✶ Direcionamento Profissional"},
-            { t: "Parte 5: Complementares", c: " Relacionamento ✶ Cores Favoráveis ✶ Números Harmônicos"}, 
-            { t: "Parte 6: Ciclos de Vida", c: "Ciclos de Vida ✶ Momentos de Decisão ✶ Desafios de Jornada"},
-            { t: "Parte 7: Tendências do Momento", c: "Ano Pessoal ✶ Mês Pessoal ✶ Potenciais Atuais"},
-            { t: "Parte 8: A Grande Matriz", c: "Pirâmide Invertida ✶ Sequências Numéricas ✶ Arcanos"},
-            { t: "Parte 9: Filosofia e Ciência", c: "Conclusão Evolutiva ✶ Agradecimento"}
-        ].map((item, index) => `
-            <div style="display: flex; flex-direction: column; align-items: center; border-bottom: 1px solid rgba(166, 132, 60, 0.15); padding-bottom: 8px;">
-                <h3 style="font-family: 'Cinzel', serif; color: #ffd700; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; margin: 0 0 3px 0; font-weight: 600;">
-                   <span style="color: #a6843c; margin-right: 5px;">${index + 1}.</span> ${item.t}
-                </h3>
-                <p style="font-family: 'Poppins', sans-serif; color: #fff; opacity: 0.8; font-size: 10px; margin: 0; line-height: 1.2; text-align: center; font-weight: 300;">
-                    ${item.c}
-                </p>
-            </div>
-        `).join('')}
-    </div>
-    
-    <div style="margin-top: auto; text-align: center; padding-bottom: 20px;">
-        <p style="font-family: 'Cinzel', serif; color: #a6843c; letter-spacing: 4px; font-size: 9px; text-transform: uppercase; margin: 0;">
-            Instinto Superior • Engenharia do Amor
-        </p>
-    </div>
-</div>
-`;
-
+      <div style="width: 100%; max-width: 900px; display: flex; flex-direction: column; gap: 15px;">
+          ${[
+              { t: "Introdução", c: "Instinto Superior ✶ Engenharia da Vida ✶ Direcionamento de Jornada"},
+              { t: "Parte 1: Motivação da Alma", c: "Análise Intrapessoal ✶ O Desejo Oculto e Íntimo de Cada Alma"},
+              { t: "Parte 2: Influência & Impressão", c: "A Imagem Projetada ✶ A Primeira Impressão no Mundo Exterior"},
+              { t: "Parte 3: Expressão & Personalidade", c: "Alinhamento de Temperamento ✶ Comportamento Prático do Casal"},
+              { t: "Parte 4: Caminho de Vida", c: "A Estrada do Destino ✶ Desafios e Facilidades na Linha do Tempo"},
+              { t: "Parte 5: Propósito Existencial", c: "A Grande Missão de Realização Conjunta ✶ Meta Final de Vida"},
+              { t: "Parte 6: Ciclo Anual", c: "Vibração do Ano Pessoal Atual ✶ Tendências e Oportunidades do Ciclo"},
+              { t: "Parte 7: Sinastria & União", c: "A Alquimia Amorosa ✶ Compatibilidade Direta e Pontos de Afinidade"},
+              { t: "Parte 8: A Grande Matriz", c: "Pirâmide Invertida de Registro Cabalístico ✶ Sequências Negativas"},
+              { t: "Parte 9: Filosofia e Ciência", c: "Conclusão Evolutiva do Casal ✶ Estudo Vibracional Infantil (Se Houver)"}
+          ].map((item, index) => `
+              <div style="display: flex; flex-direction: column; align-items: center; border-bottom: 1px solid rgba(166, 132, 60, 0.15); padding-bottom: 8px;">
+                  <h3 style="font-family: 'Cinzel', serif; color: #ffd700; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; margin: 0 0 3px 0; font-weight: 600;">
+                     <span style="color: #a6843c; margin-right: 5px;">${index + 1}.</span> ${item.t}
+                  </h3>
+                  <p style="font-family: 'Poppins', sans-serif; color: #fff; opacity: 0.8; font-size: 10px; margin: 0; line-height: 1.2; text-align: center; font-weight: 300;">
+                      ${item.c}
+                  </p>
+              </div>
+          `).join('')}
+      </div>
+      
+      <div style="margin-top: auto; text-align: center; padding-bottom: 20px;">
+          <p style="font-family: 'Cinzel', serif; color: #a6843c; letter-spacing: 4px; font-size: 9px; text-transform: uppercase; margin: 0;">
+              Instinto Superior • Engenharia do Amor
+          </p>
+      </div>
+  </div>
+  `;
 
   function extrairETratarTexto(textoBruto, nomeParceiro) {
     if (!textoBruto) return "";
@@ -776,6 +773,43 @@ relatorioHTML += `
       </div>`;
   }
 
+  // Função auxiliar interna para gerar o HTML textual da pirâmide e injetar no miolo do PDF
+  function obterHtmlTextoPiramide(valores) {
+    if(!valores || valores.length === 0) return "";
+    let lines = [valores.map(Number)];
+    while(lines[lines.length-1].length > 1){
+      let anterior = lines[lines.length-1];
+      let nova = [];
+      for(let i=0; i<anterior.length-1; i++){
+        nova.push(Number(reduzir(anterior[i] + anterior[i+1])));
+      }
+      lines.push(nova);
+    }
+    let marcacoes = [];
+    for(let l=0; l<lines.length; l++){
+      marcacoes[l] = new Set();
+      let linha = lines[l];
+      let i=0;
+      while(i < linha.length){
+        let atual = Number(linha[i]);
+        let count = 1; let j = i+1;
+        while(j < linha.length && Number(linha[j]) === atual) { count++; j++; }
+        if(count >= 3){
+          for(let k=i; k<i+count; k++) marcacoes[l].add(k);
+        }
+        i += count;
+      }
+    }
+    let txtPiramide = "";
+    for(let l=0; l<lines.length; l++){
+      txtPiramide += lines[l].map((n, idx) => {
+        if (marcacoes[l].has(idx)) return `<span class="negativo" style="color:#ff3b5c !important; font-weight:bold;">${n}</span>`;
+        return n;
+      }).join(" ") + "\n";
+    }
+    return txtPiramide;
+  }
+
   // Capa da Seção 1 com os Áudios acoplados corretamente
   relatorioHTML += criarCapaTransicao(
       "Expressão & Alma", 
@@ -788,69 +822,50 @@ relatorioHTML += `
   // Miolos estruturados
   relatorioHTML += gerarFolhaConteudo("PARTE 1: MOTIVAÇÃO DA ALMA", `O Desejo Íntimo de ${social1}`, textos.motivacao[dados1.motivacao], `O Desejo Íntimo de ${social2}`, textos.motivacao[dados2.motivacao]);
   
-  // Capa da Seção 1 com os Áudios acoplados corretamente
   relatorioHTML += criarCapaTransicao(
-      "Expressão & Alma", 
-      "O Direcionamento do seu Destino", 
+      "Impressão & Imagem", 
+      "A Projeção do Ser no Mundo Exterior", 
       "Instinto Superior ✶ Relatório Premium",
       "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
       "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
   );
-
-relatorioHTML += gerarFolhaConteudo("PARTE 2: INFLUÊNCIA & IMPRESSÃO", `A Influência de ${social1}`, textos.influencia[dados1.influencia], `A Influência de ${social2}`, textos.influencia[dados2.influencia]);
+  relatorioHTML += gerarFolhaConteudo("PARTE 2: INFLUÊNCIA & IMPRESSÃO", `A Influência de ${social1}`, textos.influencia[dados1.influencia], `A Influência de ${social2}`, textos.influencia[dados2.influencia]);
   
-
-  // Capa da Seção 1 com os Áudios acoplados corretamente
   relatorioHTML += criarCapaTransicao(
-      "Expressão & Alma", 
-      "O Direcionamento do seu Destino", 
+      "Expressão & Personalidade", 
+      "O Alinhamento Prático de Temperamentos", 
       "Instinto Superior ✶ Relatório Premium",
       "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
       "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
   );
-
-
-relatorioHTML += gerarFolhaConteudo("PARTE 3: EXPRESSÃO & PERSONALIDADE", `A Expressão de ${social1}`, textos.personalidade[dados1.personalidade], `A Expressão de ${social2}`, textos.personalidade[dados2.personalidade]);
+  relatorioHTML += gerarFolhaConteudo("PARTE 3: EXPRESSÃO & PERSONALIDADE", `A Expressão de ${social1}`, textos.personalidade[dados1.personalidade], `A Expressão de ${social2}`, textos.personalidade[dados2.personalidade]);
  
-
-
-
-  // Capa da Seção 1 com os Áudios acoplados corretamente
   relatorioHTML += criarCapaTransicao(
-      "Expressão & Alma", 
-      "O Direcionamento do seu Destino", 
+      "Caminho de Vida", 
+      "A Estrada do Destino e Linhas do Tempo", 
       "Instinto Superior ✶ Relatório Premium",
       "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
       "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
   );
-
- relatorioHTML += gerarFolhaConteudo("PARTE 4: CAMINHO DE VIDA", `A Estrada de ${social1}`, textos.CaminhodeVida[dados1.caminho], `A Estrada de ${social2}`, textos.CaminhodeVida[dados2.caminho]);
+  relatorioHTML += gerarFolhaConteudo("PARTE 4: CAMINHO DE VIDA", `A Estrada de ${social1}`, textos.CaminhodeVida[dados1.caminho], `A Estrada de ${social2}`, textos.CaminhodeVida[dados2.caminho]);
  
-
-  // Capa da Seção 1 com os Áudios acoplados corretamente
   relatorioHTML += criarCapaTransicao(
-      "Expressão & Alma", 
-      "O Direcionamento do seu Destino", 
+      "Propósito Existencial", 
+      "A Missão Final e Conexão de Almas", 
       "Instinto Superior ✶ Relatório Premium",
       "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
       "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
   );
-
-
- relatorioHTML += gerarFolhaConteudo("PARTE 5: PROPÓSITO EXISTENCIAL", `O Propósito de ${social1}`, textos.proposito[dados1.proposito], `O Propósito de ${social2}`, textos.proposito[dados2.proposito]);
+  relatorioHTML += gerarFolhaConteudo("PARTE 5: PROPÓSITO EXISTENCIAL", `O Propósito de ${social1}`, textos.proposito[dados1.proposito], `O Propósito de ${social2}`, textos.proposito[dados2.proposito]);
  
-
-  // Capa da Seção 1 com os Áudios acoplados corretamente
   relatorioHTML += criarCapaTransicao(
-      "Expressão & Alma", 
-      "O Direcionamento do seu Destino", 
+      "Ciclo Anual", 
+      "O Momento Atual e Prospecção do Ano", 
       "Instinto Superior ✶ Relatório Premium",
       "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
       "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
   );
-
-
- relatorioHTML += gerarFolhaConteudo("PARTE 6: CICLO ANUAL", `Ano Pessoal de ${social1}`, textos.anoPessoal[dados1.anoPessoal], `Ano Pessoal de ${social2}`, textos.anoPessoal[dados2.anoPessoal]);
+  relatorioHTML += gerarFolhaConteudo("PARTE 6: CICLO ANUAL", `Ano Pessoal de ${social1}`, textos.anoPessoal[dados1.anoPessoal], `Ano Pessoal de ${social2}`, textos.anoPessoal[dados2.anoPessoal]);
 
   // Sinastria
   const chave = chaveSinastria(dados1.proposito, dados2.proposito);
@@ -860,13 +875,10 @@ relatorioHTML += gerarFolhaConteudo("PARTE 3: EXPRESSÃO & PERSONALIDADE", `A Ex
   textoSinastriaPuro = textoSinastriaPuro.replaceAll(`Energia ${menor}`, (dados1.proposito===menor)?social1:social2)
                                          .replaceAll(`Energia ${maior}`, (dados1.proposito===maior)?social1:social2);
 
-  // Capa da Seção 1 com os Áudios acoplados corretamente
   relatorioHTML += criarCapaTransicao(
-      "Expressão & Alma", 
-      "O Direcionamento do seu Destino", 
-      "Instinto Superior ✶ Relatório Premium",
-      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
-      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
+      "Sinastria Conjugal", 
+      "A Alquimia Sagrada e Alinhamento de Almas", 
+      "Instinto Superior ✶ Conexão Amorosa ✶ Afinidade Vibracional"
   );
 
   relatorioHTML += `
@@ -876,31 +888,112 @@ relatorioHTML += gerarFolhaConteudo("PARTE 3: EXPRESSÃO & PERSONALIDADE", `A Ex
         <div>${textoSinastriaPuro}</div>
     </div>`;
 
-  // Processamento do bebê, se houver
+// --- PARTE 8: INJEÇÃO COMPACTA E EM ALTA RESOLUÇÃO DA PIRÂMIDE DO CASAL ---
+  let textoPiramideParceiro1 = obterHtmlTextoPiramide(dados1.valores);
+  let textoPiramideParceiro2 = obterHtmlTextoPiramide(dados2.valores);
+
+  // Busca os textos do Regente e das Sequências Negativas da Pessoa 1
+  let textoRegenteP1 = textos.regente[dados1.regente] || "";
+  let textoSequenciasP1 = "";
+  if (dados1.sequenciaNegativa && dados1.sequenciaNegativa.length > 0) {
+      textoSequenciasP1 = dados1.sequenciaNegativa.map(x => `
+          <div style="margin-top: 10px; padding: 10px; background: #fff5f5; border-left: 3px solid #ff3b5c; border-radius: 4px;">
+              <strong style="color: #6B0202;">Vibração Fixada ${x}:</strong> ${textos.sequenciaNegativa[x]}
+          </div>
+      `).join("");
+  } else {
+      textoSequenciasP1 = `<p style="color: #28a745 !important; font-size: 13px;">✅ Nenhuma sequência negativa identificada no nome.</p>`;
+  }
+
+  // Busca os textos do Regente e das Sequências Negativas da Pessoa 2
+  let textoRegenteP2 = textos.regente[dados2.regente] || "";
+  let textoSequenciasP2 = "";
+  if (dados2.sequenciaNegativa && dados2.sequenciaNegativa.length > 0) {
+      textoSequenciasP2 = dados2.sequenciaNegativa.map(x => `
+          <div style="margin-top: 10px; padding: 10px; background: #fff5f5; border-left: 3px solid #ff3b5c; border-radius: 4px;">
+              <strong style="color: #6B0202;">Vibração Fixada ${x}:</strong> ${textos.sequenciaNegativa[x]}
+          </div>
+      `).join("");
+  } else {
+      textoSequenciasP2 = `<p style="color: #28a745 !important; font-size: 13px;">✅ Nenhuma sequência negativa identificada no nome.</p>`;
+  }
+
+  relatorioHTML += criarCapaTransicao(
+      "A Grande Matriz", 
+      "Pirâmides Invertidas e Engenharia de Destino", 
+      "Instinto Superior ✶ Matriz Quântica ✶ Arcanos e Vibrações"
+  );
+
+  // Página da Matriz da Pessoa 1
+  relatorioHTML += `
+    <div class="bloco-texto-pdf">
+        <h2 class="titulo-secao-pdf">PARTE 8: MATRIZ CABALÍSTICA DE ${social1.toUpperCase()}</h2>
+        
+        <div style="text-align:center; margin-bottom:20px; background:#fdfdfd; padding:15px; border:1px dashed rgba(166,132,60,0.3); border-radius:6px;">
+            <pre style="font-family:'Courier New', monospace; font-size:12px; line-height:1.4; letter-spacing:4px; color:#111; display:block; text-align:center; margin:0 auto; white-space:pre;">${textoPiramideParceiro1}</pre>
+        </div>
+        
+        <h3 class="subtitulo-pessoa-pdf">🎯 Número Regente da Matriz: Encarte ${dados1.regente}</h3>
+        <div>${extrairETratarTexto(textoRegenteP1, social1)}</div>
+        
+        <div class="divisor-pdf" style="margin:15px 0;"></div>
+        
+        <h3 class="subtitulo-pessoa-pdf">⚠️ Desafios e Sequências Numéricas</h3>
+        <div>${textoSequenciasP1}</div>
+    </div>`;
+
+  // Página da Matriz da Pessoa 2
+  relatorioHTML += `
+    <div class="bloco-texto-pdf">
+        <h2 class="titulo-secao-pdf">PARTE 8: MATRIZ CABALÍSTICA DE ${social2.toUpperCase()}</h2>
+        
+        <div style="text-align:center; margin-bottom:20px; background:#fdfdfd; padding:15px; border:1px dashed rgba(166,132,60,0.3); border-radius:6px;">
+            <pre style="font-family:'Courier New', monospace; font-size:12px; line-height:1.4; letter-spacing:4px; color:#111; display:block; text-align:center; margin:0 auto; white-space:pre;">${textoPiramideParceiro2}</pre>
+        </div>
+        
+        <h3 class="subtitulo-pessoa-pdf">🎯 Número Regente da Matriz: Encarte ${dados2.regente}</h3>
+        <div>${extrairETratarTexto(textoRegenteP2, social2)}</div>
+        
+        <div class="divisor-pdf" style="margin:15px 0;"></div>
+        
+        <h3 class="subtitulo-pessoa-pdf">⚠️ Desafios e Sequências Numéricas</h3>
+        <div>${textoSequenciasP2}</div>
+    </div>`;
+
+// Processamento do bebê, se houver
   const nomeBebeInput = document.getElementById("nomeBebe").value;
   if (nomeBebeInput && dadosBebe) {
       const socialBebeInput = document.getElementById("socialBebe").value || nomeBebeInput.split(' ')[0];
-      
+      let textoPiramideBebe = obterHtmlTextoPiramide(dadosBebe.valores);
 
+      // Busca os textos do Regente e das Sequências Negativas do Bebê
+      let textoRegenteBebe = textos.regente[dadosBebe.regente] || "";
+      let textoSequenciasBebe = "";
+      if (dadosBebe.sequenciaNegativa && dadosBebe.sequenciaNegativa.length > 0) {
+          textoSequenciasBebe = dadosBebe.sequenciaNegativa.map(x => `
+              <div style="margin-top: 10px; padding: 10px; background: #fff5f5; border-left: 3px solid #ff3b5c; border-radius: 4px;">
+                  <strong style="color: #6B0202;">Vibração Fixada ${x}:</strong> ${textos.sequenciaNegativa[x]}
+              </div>
+          `).join("");
+      } else {
+          textoSequenciasBebe = `<p style="color: #28a745 !important; font-size: 13px;">✅ Nenhuma sequência negativa identificada no nome do bebê. Assinatura harmônica.</p>`;
+      }
 
-  // Capa da Seção 1 com os Áudios acoplados corretamente
-  relatorioHTML += criarCapaTransicao(
-      "Expressão & Alma", 
-      "O Direcionamento do seu Destino", 
-      "Instinto Superior ✶ Relatório Premium",
-      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
-      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
-  );
+      relatorioHTML += criarCapaTransicao(
+          "Mapa Numerológico do Bebê", 
+          `Análise de Potencial Vibracional Infantil`, 
+          "Instinto Superior ✶ Legado Familiar ✶ Vibração Primal"
+      );
 
       let statusHarmonia = (!dadosBebe.sequenciaNegativa || dadosBebe.sequenciaNegativa.length === 0) 
-          ? `<span style="color: #28a745; font-weight: bold;">✅ ANÁLISE: Este nome é completamente harmônico.</span>`
-          : `<span style="color: #6B0202; font-weight: bold;">❌ ALERTA: Este nome possui sequências numéricas negativas.</span>`;
+          ? `<span style="color: #28a745; font-weight: bold;">✅ ANÁLISE: Este nome de registro é completamente harmônico.</span>`
+          : `<span style="color: #6B0202; font-weight: bold;">❌ ALERTA: Este nome de registro possui sequências numéricas negativas.</span>`;
 
       relatorioHTML += `
         <div class="bloco-texto-pdf">
             <h2 class="titulo-secao-pdf">ESTUDO VIBRACIONAL INFANTIL</h2>
             <div style="text-align: center; margin-bottom: 20px; padding: 10px; background: #fdf8f8; border: 1px solid rgba(212, 154, 154, 0.3); border-radius: 8px;">
-                <h3 style="color: #6B0202; font-family: 'Cinzel', serif; font-size: 15px; margin-bottom: 5px;">Análise do Nome: ${nomeBebeInput}</h3>
+                <h3 style="color: #6B0202; font-family: 'Cinzel', serif; font-size: 15px; margin-bottom: 5px;">Análise Estrutural do Nome Completo: ${nomeBebeInput}</h3>
                 <div style="font-size: 12px;">${statusHarmonia}</div>
             </div>
             <h3 class="subtitulo-pessoa-pdf">1. Motivação (A Alma da Criança)</h3>
@@ -909,6 +1002,22 @@ relatorioHTML += gerarFolhaConteudo("PARTE 3: EXPRESSÃO & PERSONALIDADE", `A Ex
             <div>${extrairETratarTexto(textos.influencia[dadosBebe.influencia], socialBebeInput)}</div>
             <h3 class="subtitulo-pessoa-pdf">3. Expressão (A Personalidade em Formação)</h3>
             <div>${extrairETratarTexto(textos.personalidade[dadosBebe.personalidade], socialBebeInput)}</div>
+        </div>
+        
+        <div class="bloco-texto-pdf">
+            <h2 class="titulo-secao-pdf">A GRANDE MATRIZ DO BEBÊ</h2>
+            
+            <div style="text-align:center; margin-bottom:20px; background:#fdfdfd; padding:20px; border:1px dashed rgba(212,154,154,0.4); border-radius:8px;">
+                <pre style="font-family:'Courier New', monospace; font-size:13px; line-height:1.5; letter-spacing:5px; color:#111; display:block; text-align:center; margin:0 auto; white-space:pre;">${textoPiramideBebe}</pre>
+            </div>
+
+            <h3 class="subtitulo-pessoa-pdf">🎯 Número Regente do Bebê: Encarte ${dadosBebe.regente}</h3>
+            <div>${extrairETratarTexto(textoRegenteBebe, socialBebeInput)}</div>
+            
+            <div class="divisor-pdf" style="margin:15px 0;"></div>
+            
+            <h3 class="subtitulo-pessoa-pdf">⚠️ Desafios e Sequências do Nome</h3>
+            <div>${textoSequenciasBebe}</div>
         </div>`;
   }
 
