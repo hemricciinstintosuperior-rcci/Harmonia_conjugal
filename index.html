@@ -343,7 +343,7 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
     .botao-pdf-link { display: flex !important; }
 
 
-
+#conteudo-pdf-rolavel .botao-pdf-link { display: none !important; }
 /* =======================================================
    4. COMPORTAMENTO DE INTERFACE (TELA DO SISTEMA)
 /* =======================================================
@@ -382,9 +382,11 @@ audio { pointer-events: auto; -webkit-touch-callout: none; }
 
 /* RESPONSIVIDADE PARA CELULAR (Ajuste de tamanho na tela) */
 @media (max-width: 768px) {
-    #conteudo-pdf-rolavel {
-        padding: 5px !important;
-    }
+
+    #conteudo-pdf-rolavel .botao-pdf-link { display: flex !important; }
+    #conteudo-pdf-rolavel .player-relatorio { display: none !important; }
+
+    
     .pag-a4, .bloco-texto-pdf {
         width: 100% !important;
         height: auto !important;
@@ -406,7 +408,7 @@ audio { pointer-events: auto; -webkit-touch-callout: none; }
         height: auto !important;
     }
 }
-    
+ }   
      
 </style>
 </head>
