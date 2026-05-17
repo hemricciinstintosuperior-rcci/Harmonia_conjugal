@@ -1279,15 +1279,18 @@ relatorioHTML += criarCapaTransicao(
         </div>
       `;
   }
-  }  
+ 
   // 🔥 CORREÇÃO: A injeção na tela DEVE ser a última coisa, após adicionar o bebê
   const areaPDF = document.getElementById("area-pdf-local");
   areaPDF.innerHTML = relatorioHTML;
-
+ }  
   // 5. DISPARADOR DE IMPRESSÃO
   setTimeout(() => {
       window.print();
   }, 350);
+
+
+    
 </script>
 
 <script>
