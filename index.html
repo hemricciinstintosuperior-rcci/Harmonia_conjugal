@@ -9,7 +9,8 @@
     <!-- Biblioteca HTML2PDF para gerar downloads perfeitos -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
-        <script src="textos.js"></script>
+    <!-- Seu banco de dados de textos numerológicos -->
+    <script src="textos.js"></script>
 
     <style>
         :root {
@@ -86,7 +87,6 @@
             border: 1px solid rgba(195,155,155,0.3);
         }
 
-        /* Grid Otimizado */
         .grid-parceiros {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -197,7 +197,7 @@
 
         .pag-a4 {
             width: 210mm;
-            height: 296.8mm;
+            height: 296.6mm; /* Ajustado milimetricamente para não quebrar página à toa */
             position: relative;
             box-sizing: border-box;
             padding: 50px 60px;
@@ -207,6 +207,8 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            page-break-after: always;
+            background-color: #110106;
         }
 
         .capa-sinastria-premium {
@@ -217,6 +219,12 @@
         .capa-transicao-amor {
             background-color: #310612;
             border: 1px solid #4a0d1d;
+        }
+
+        .pag-conteudo-pdf {
+            background: #150207;
+            border: 1px solid #2d0713;
+            color: #fff;
         }
 
         /* Molduras */
@@ -230,8 +238,8 @@
         .capa-header .divider { width: 40px; height: 1px; background: #a6843c; margin: 10px auto; }
 
         .sacred-love-emblem {
-            width: 200px;
-            height: 200px;
+            width: 170px;
+            height: 170px;
             margin: 0 auto;
             background: url('https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/estudo.png') no-repeat center;
             background-size: contain;
@@ -252,7 +260,6 @@
         }
         .capa-cliente .heart-separator { color: var(--crimson); margin: 0 10px; }
 
-        /* Dados Extras Dinâmicos Formatados com Elegância */
         .dados-adicionais-container {
             display: flex;
             justify-content: space-around;
@@ -261,66 +268,121 @@
             border-top: 1px solid rgba(195,155,155,0.2);
             padding-top: 15px;
         }
-        .bloco-meta {
-            text-align: center;
-        }
-        .bloco-meta .meta-titulo {
-            font-size: 9px;
-            text-transform: uppercase;
-            color: #a6843c;
-            letter-spacing: 1.5px;
-            margin-bottom: 4px;
-        }
-        .bloco-meta .meta-valor {
-            font-size: 12px;
-            color: #fff;
-            font-weight: 300;
-        }
+        .bloco-meta { text-align: center; }
+        .bloco-meta .meta-titulo { font-size: 9px; text-transform: uppercase; color: #a6843c; letter-spacing: 1.5px; margin-bottom: 4px; }
+        .bloco-meta .meta-valor { font-size: 11px; color: #fff; font-weight: 300; line-height: 1.4; }
 
-        /* Seção do Bebê na Capa */
-        .bloco-bebe-capa {
-            margin-top: 25px;
-            text-align: center;
-            display: none; /* Só aparece via JS se preenchido */
-        }
-        .bloco-bebe-capa .bebe-badge {
-            background: rgba(166, 132, 60, 0.15);
-            border: 1px solid #a6843c;
-            padding: 6px 18px;
-            border-radius: 20px;
-            display: inline-block;
-            font-size: 10px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #fff;
-        }
+        .bloco-bebe-capa { margin-top: 25px; text-align: center; display: none; }
+        .bloco-bebe-capa .bebe-badge { background: rgba(166, 132, 60, 0.15); border: 1px solid #a6843c; padding: 6px 18px; border-radius: 20px; display: inline-block; font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #fff; }
 
         .line-gradient { width: 200px; height: 1px; background: linear-gradient(to right, transparent, #a6843c, transparent); margin: 20px auto; }
-        .date-display { font-family: 'Cinzel', serif; font-size: 14px; color: #a6843c; letter-spacing: 4px; }
-        
+        .date-display { font-family: 'Cinzel', serif; font-size: 14px; color: #a6843c; letter-spacing: 4px; text-align: center; }
         .capa-footer-text { text-align: center; font-size: 9px; color: #ffffff; letter-spacing: 3px; text-transform: uppercase; opacity: 0.5; }
 
         /* Capa 2 */
         .transicao-header { text-align: center; }
         .transicao-header h2 { font-family: 'Cinzel', serif; font-size: 24px; letter-spacing: 3px; }
         .transicao-header h2 span { color: #c39b9b; font-size: 14px; display: block; margin-top: 10px; letter-spacing: 5px; }
-
         .transicao-art-container { text-align: center; position: relative; margin: 20px 0; }
-        .transicao-art-container img { width: 220px; height: 220px; border-radius: 50%; border: 3px solid rgba(195,155,155,0.2); }
+        .transicao-art-container img { width: 180px; height: 180px; border-radius: 50%; border: 3px solid rgba(195,155,155,0.2); }
         .transicao-heart-badge { position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); background: #110106; border: 2px solid #a6843c; width: 40px; height: 40px; border-radius: 50%; line-height: 36px; color: var(--crimson); text-align: center;}
-
-        .player-relatorio-amor { text-align: center; margin: 15px 0; }
+        .player-relatorio-amor { text-align: center; margin: 10px 0; }
         .player-relatorio-amor span { display: block; font-size: 10px; color: #c39b9b; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; }
-        .player-relatorio-amor audio { height: 30px; width: 240px; filter: sepia(80%) hue-rotate(310deg); }
-
-        .botao-pdf-link-amor { text-decoration: none; display: block; margin: 10px auto; width: max-content; }
-        .botao-pdf-link-amor .inner-btn { background: rgba(17, 1, 6, 0.85); border: 1px solid var(--crimson); padding: 10px 20px; border-radius: 50px; display: flex; align-items: center; }
-        .botao-pdf-link-amor .btn-cell-icon { width: 28px; height: 28px; background: var(--crimson); border-radius: 50%; text-align: center; color: #fff; line-height: 28px; font-size: 11px; }
+        .player-relatorio-amor audio { height: 28px; width: 220px; filter: sepia(80%) hue-rotate(310deg); }
+        .botao-pdf-link-amor { text-decoration: none; display: block; margin: 5px auto; width: max-content; }
+        .botao-pdf-link-amor .inner-btn { background: rgba(17, 1, 6, 0.85); border: 1px solid var(--crimson); padding: 8px 16px; border-radius: 50px; display: flex; align-items: center; }
+        .botao-pdf-link-amor .btn-cell-icon { width: 24px; height: 24px; background: var(--crimson); border-radius: 50%; text-align: center; color: #fff; line-height: 24px; font-size: 10px; }
         .botao-pdf-link-amor .btn-cell-text { padding-left: 10px; text-align: left; }
-        .botao-pdf-link-amor .btn-cell-text .track-lbl { display: block; font-size: 8px; color: #c39b9b; text-transform: uppercase; }
-        .botao-pdf-link-amor .btn-cell-text .action-lbl { display: block; font-size: 11px; color: #fff; font-family: 'Cinzel', serif; }
+        .botao-pdf-link-amor .btn-cell-text .track-lbl { display: block; font-size: 7px; color: #c39b9b; text-transform: uppercase; }
+        .botao-pdf-link-amor .btn-cell-text .action-lbl { display: block; font-size: 10px; color: #fff; font-family: 'Cinzel', serif; }
+        .transicao-footer-scrolling { color: #fff; font-size: 10px; letter-spacing: 1.5px; text-align: center; opacity: 0.6; line-height: 1.4; }
 
-        .transicao-footer-scrolling { color: #fff; font-size: 11px; letter-spacing: 1.5px; text-align: center; opacity: 0.6; line-height: 1.4; }
+        /* --- ESTILOS DAS PÁGINAS DE CONTEÚDO (MUITO IMPORTANTES) --- */
+        .pdf-section-title {
+            font-family: 'Cinzel', serif;
+            color: #a6843c;
+            font-size: 18px;
+            letter-spacing: 2px;
+            border-bottom: 1px solid rgba(166,132,60,0.3);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .pdf-grid-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            flex-grow: 1;
+        }
+
+        .pdf-col-bloco {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(195,155,155,0.1);
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pdf-col-bloco h4 {
+            font-family: 'Cinzel', serif;
+            color: var(--rose-gold);
+            font-size: 14px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-left: 3px solid var(--crimson);
+            padding-left: 8px;
+        }
+
+        .pdf-texto-interpretação {
+            font-size: 12px;
+            line-height: 1.6;
+            color: #e0d0d3;
+            text-align: justify;
+        }
+
+        .pdf-texto-interpretação strong {
+            color: #fff;
+            background: rgba(138, 28, 50, 0.2);
+            padding: 0 4px;
+            border-radius: 3px;
+        }
+
+        .visual-piramide-container {
+            font-family: monospace;
+            font-size: 13px;
+            line-height: 1.5;
+            letter-spacing: 4px;
+            text-align: center;
+            background: #090103;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid rgba(138,28,50,0.2);
+            margin: 15px 0;
+            color: var(--rose-gold);
+        }
+
+        .visual-piramide-container .negativo {
+            color: #ff4d6d;
+            font-weight: bold;
+            background: rgba(255, 77, 109, 0.1);
+            border-radius: 50%;
+            padding: 2px;
+        }
+
+        .pdf-footer-layout {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(195,155,155,0.1);
+            padding-top: 10px;
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #a58087;
+        }
     </style>
 </head>
 <body>
@@ -391,62 +453,46 @@
         <button class="btn-gerar" onclick="processarSinastriaDinamica()">Atualizar Dados no Relatório</button>
     </div>
 
-    <!-- AREA ALVO PARA CAPTURA DO PDF -->
+    <!-- AREA ALVO PARA CAPTURA DO PDF (TODAS AS PÁGINAS A4 VÃO AQUI) -->
     <div class="preview-container" id="conteudo-pdf">
         
         <!-- 1. CAPA PRINCIPAL -->
         <div class="pag-a4 capa-sinastria-premium">
             <div class="corner-tl"></div><div class="corner-tr"></div><div class="corner-bl"></div><div class="corner-br"></div>
-
             <div class="capa-header">
                 <span>Portal Numerológico Cabalístico</span>
                 <div class="divider"></div>
             </div>
-
             <div class="sacred-love-emblem"></div>
-
             <div class="capa-cliente">
                 <div class="subtext">Estudo de Harmonia Conjugal & Destino</div>
                 <h1>MAPA NUMEROLÓGICO<br>DE SINASTRIA</h1>
                 <div class="line-gradient"></div>
-                
-                <!-- Nomes Principais -->
                 <div class="names-display">
                     <span id="lblNomeParceiro1">Gabriel Silva</span>
                     <span class="heart-separator">❤</span>
                     <span id="lblNomeParceiro2">Letícia Oliveira</span>
                 </div>
-
-                <!-- Datas de Nascimento Cruzadas -->
                 <div style="font-size: 11px; color: #c39b9b; letter-spacing: 1px; margin-top: -5px;">
                     <span id="lblData1">15/04/1995</span> • <span id="lblData2">22/11/1998</span>
                 </div>
-
-                <!-- Dados Extras do Parceiro 1 -->
                 <div class="dados-adicionais-container">
-                    <div class="bloco-meta" id="metaP1">
+                    <div class="bloco-meta">
                         <div class="meta-titulo">Registros Parceiro A</div>
-                        <div class="meta-valor" id="lblExtra1">Nenhum dado extra informado</div>
+                        <div class="meta-valor" id="lblExtra1">Aguardando atualização...</div>
                     </div>
-                    <!-- Dados Extras do Parceiro 2 -->
-                    <div class="bloco-meta" id="metaP2">
+                    <div class="bloco-meta">
                         <div class="meta-titulo">Registros Parceiro B</div>
-                        <div class="meta-valor" id="lblExtra2">Nenhum dado extra informado</div>
+                        <div class="meta-valor" id="lblExtra2">Aguardando atualização...</div>
                     </div>
                 </div>
-
-                <!-- Linha Dinâmica do Bebê (Opcional) -->
                 <div class="bloco-bebe-capa" id="blocoBebe">
                     <div class="bebe-badge">👶 Vinculo com o Filho(a): <span id="lblNomeBebe">-</span></div>
                 </div>
-                
                 <div class="line-gradient" style="width: 120px; margin: 15px auto;"></div>
                 <div class="date-display" id="lblDataEmissao">17/05/2026</div>
             </div>
-
-            <div class="capa-footer-text">
-                Instinto Superior • Engenharia do Amor & Conexão de Almas
-            </div>
+            <div class="capa-footer-text">Instinto Superior • Engenharia do Amor & Conexão de Almas</div>
         </div>
 
         <!-- 2. CAPA DE TRANSIÇÃO -->
@@ -455,19 +501,14 @@
             <div class="transicao-header">
                 <h2>INTRODUÇÃO E CONEXÃO<br><span>Resultado, Afinidade de Alma & Sincronia</span></h2>
             </div>
-
             <div class="transicao-art-container">
                 <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" alt="Instinto Superior Amor">
                 <div class="transicao-heart-badge">❤</div>
             </div>
-
             <div class="player-relatorio-amor">
                 <span>O Som do Destino Compartilhado</span>
-                <audio controls>
-                    <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3" type="audio/mpeg">
-                </audio>
+                <audio controls><source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3" type="audio/mpeg"></audio>
             </div>
-
             <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3" target="_blank" class="botao-pdf-link-amor">
                 <div class="inner-btn">
                     <div class="btn-cell-icon">▶</div>
@@ -477,14 +518,10 @@
                     </div>
                 </div>
             </a>
-
             <div class="player-relatorio-amor" style="margin-top: 25px;">
                 <span>Frequência do Instinto Superior Amoroso</span>
-                <audio controls>
-                    <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3" type="audio/mpeg">
-                </audio>
+                <audio controls><source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3" type="audio/mpeg"></audio>
             </div>
-
             <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3" target="_blank" class="botao-pdf-link-amor">
                 <div class="inner-btn">
                     <div class="btn-cell-icon">▶</div>
@@ -494,29 +531,74 @@
                     </div>
                 </div>
             </a>
+            <div class="transicao-footer-scrolling">Instinto Superior ✶ Conexão Amorosa ✶ Engenharia da Vida Conjugal ✶ Afinidade Vibracional ✶ Destinos Cruzados</div>
+        </div>
 
-            <div class="transicao-footer-scrolling">
-                Instinto Superior ✶ Conexão Amorosa ✶ Engenharia da Vida Conjugal ✶ Afinidade Vibracional ✶ Destinos Cruzados ✶ Direcionamento de Jornada a Dois
+        <!-- 3. PÁGINA DE CONTEÚDO: MOTIVAÇÃO E DESTINO -->
+        <div class="pag-a4 pag-conteudo-pdf">
+            <div class="corner-tl"></div><div class="corner-tr"></div><div class="corner-bl"></div><div class="corner-br"></div>
+            <div>
+                <h2 class="pdf-section-title">Análise de Vibração e Motivação de Alma</h2>
+                <div class="pdf-grid-layout">
+                    <!-- Bloco Parceiro A -->
+                    <div class="pdf-col-bloco">
+                        <h4 id="titMotivacaoA">Parceiro A: Motivação</h4>
+                        <div class="pdf-texto-interpretação" id="txtMotivacaoA">Aguardando o processamento dos dados numerológicos estruturados...</div>
+                    </div>
+                    <!-- Bloco Parceiro B -->
+                    <div class="pdf-col-bloco">
+                        <h4 id="titMotivacaoB">Parceiro B: Motivação</h4>
+                        <div class="pdf-texto-interpretação" id="txtMotivacaoB">Aguardando o processamento dos dados numerológicos estruturados...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pdf-footer-layout">
+                <span>Relatório de Sinastria Amorosa</span>
+                <span>Página 3</span>
+            </div>
+        </div>
+
+        <!-- 4. PÁGINA DE CONTEÚDO: AS PIRÂMIDES E SEQUÊNCIAS NEGATIVAS -->
+        <div class="pag-a4 pag-conteudo-pdf">
+            <div class="corner-tl"></div><div class="corner-tr"></div><div class="corner-bl"></div><div class="corner-br"></div>
+            <div>
+                <h2 class="pdf-section-title">Engenharia do Nome: Matrizes Invertidas</h2>
+                <div class="pdf-grid-layout">
+                    <!-- Pirâmide Parceiro A -->
+                    <div class="pdf-col-bloco">
+                        <h4 id="titPiramideA">Matriz de Destino: Parceiro A</h4>
+                        <div class="visual-piramide-container" id="pdfPiramide1">---</div>
+                        <div class="pdf-texto-interpretação" id="txtSeqNegativaA">Análise de vibrações ocultas do nome...</div>
+                    </div>
+                    <!-- Pirâmide Parceiro B -->
+                    <div class="pdf-col-bloco">
+                        <h4 id="titPiramideB">Matriz de Destino: Parceiro B</h4>
+                        <div class="visual-piramide-container" id="pdfPiramide2">---</div>
+                        <div class="pdf-texto-interpretação" id="txtSeqNegativaB">Análise de vibrações ocultas do nome...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pdf-footer-layout">
+                <span>Instinto Superior Premium</span>
+                <span>Página 4</span>
             </div>
         </div>
 
     </div>
 
     <script>
-        // Fallback estruturado para o objeto global de textos numerológicos
+        // Fallback robusto para garantir que o sistema não trave se o textos.js atrasar
         window.textos = window.textos || {
             motivacao: {}, influencia: {}, personalidade: {}, CaminhodeVida: {}, proposito: {}, harmonia: {}, anoPessoal: {}, regente: {}, sequenciaNegativa: {}, sinastria: {}
         };
 
-        // Globais de controle dos dados gerados
         let dados1 = null, dados2 = null, dadosBebe = null;
 
-        // Controle de exibição do vídeo explicativo
+        // Controle do vídeo explicativo
         document.getElementById('btnVideo').addEventListener('click', function() {
             const wrapper = document.getElementById('wrapperVideo');
             const video = document.getElementById('videoExplicativo');
             const btn = this;
-
             if (wrapper.style.display === 'none') {
                 wrapper.style.display = 'block';
                 btn.querySelector('span').innerText = '❌ Fechar Vídeo';
@@ -527,7 +609,6 @@
             }
         });
 
-        // Máscara inteligente para o input de data
         function mascaraData(input) {
             let v = input.value.replace(/\D/g, "");
             if (v.length > 2) v = v.substring(0,2) + "/" + v.substring(2);
@@ -535,14 +616,13 @@
             input.value = v;
         }
 
-        // Converte string "DD/MM/AAAA" para o formato padrão do motor "AAAA-MM-DD"
         function formatarParaCalculo(dataStr) {
             if(!dataStr || dataStr.length < 10) return null;
             const partes = dataStr.split("/");
             return `${partes[2]}-${partes[1]}-${partes[0]}`;
         }
 
-        // Tabela de conversão cabalística
+        // Tabela Cabalística Base
         const tabela = {
             A:1, J:1, I:1, Q:1, Y:1, B:2, K:2, R:2, C:3, G:3, L:3, S:3,
             D:4, M:4, T:4, E:5, H:5, N:5, U:6, V:6, W:6, X:6, Ç:6, O:7, Z:7, F:8, P:8
@@ -553,10 +633,7 @@
             const base = letra.normalize("NFD")[0];
             const valorBase = tabela[base];
             if(!valorBase) return 0;
-
-            let soma = 0;
-            let mult = 1;
-
+            let soma = 0; let mult = 1;
             for(let c of letra.normalize("NFD")){
                 if(c === "\u0301") soma += 2;
                 else if(c === "\u0302") soma += 7;
@@ -570,39 +647,29 @@
 
         function reduzir(n){
             n = Math.abs(n);
-            while(n > 9){
-                n = n.toString().split("").reduce((a,b)=>a+Number(b),0);
-            }
+            while(n > 9){ n = n.toString().split("").reduce((a,b)=>a+Number(b),0); }
             return n;
         }
 
         function calcularAnoPessoal(dataIso){
             if(!dataIso) return 0;
             const parts = dataIso.split("-");
-            const mes = Number(parts[1]);
-            const dia = Number(parts[2]);
-            const anoAtual = new Date().getFullYear();
-            return reduzir(reduzir(dia) + reduzir(mes) + reduzir(anoAtual));
+            return reduzir(reduzir(Number(parts[2])) + reduzir(Number(parts[1])) + reduzir(new Date().getFullYear()));
         }  
 
         function calcularPessoa(nome, dataIso){
             nome = nome.toUpperCase();
-            let somaV=0, somaC=0;
-            let valores=[];
-
+            let somaV=0, somaC=0; let valores=[];
             for(let l of nome){
                 const valor = calcularValorComAcentos(l);
                 if(!valor) continue;
                 valores.push(reduzir(valor));
                 const base = l.normalize("NFD")[0];
-                if(vogais.includes(base)) somaV += valor;
-                else somaC += valor;
+                if(vogais.includes(base)) somaV += valor; else somaC += valor;
             }
-
             const motivacao = reduzir(somaV);
             const influencia = reduzir(somaC);
             const personalidade = reduzir(somaV+somaC);
-
             let caminho=0, proposito=0;
             if(dataIso){
                 const [ano,mes,dia] = dataIso.split("-").map(Number);
@@ -612,7 +679,62 @@
             return { motivacao, influencia, personalidade, caminho, proposito, harmonia: proposito, valores };
         }
 
-        // Lógica de Processamento e Atualização em Tempo Real da Capa do PDF
+        // Função de processamento de texto que extrai o primeiro nome e limpa "você"
+        function formatarTextoPersonalizado(texto, nomeCompleto) {
+            if (!texto) return "Interpretação não encontrada no banco de dados J Textos.";
+            let primeiroNome = nomeCompleto.trim().split(' ')[0];
+            if (primeiroNome) {
+                primeiroNome = primeiroNome.charAt(0).toUpperCase() + primeiroNome.slice(1).toLowerCase();
+            } else {
+                primeiroNome = "Você";
+            }
+            return texto.replace(/você/gi, `<strong>${primeiroNome}</strong>`);
+        }
+
+        // Função inteligente para gerar e marcar as sequências negativas na pirâmide
+        function construirPiramideEspecial(valores) {
+            if(!valores || valores.length === 0) return { html: "", sequencias: [] };
+            let linhas = [valores.map(Number)];
+            while(linhas[linhas.length-1].length > 1){
+                let anterior = linhas[linhas.length-1];
+                let nova = [];
+                for(let i=0;i<anterior.length-1;i++){
+                    nova.push(Number(reduzir(anterior[i] + anterior[i+1])));
+                }
+                linhas.push(nova);
+            }
+
+            let marcacoes = [];
+            let numsSequencias = [];
+            for(let l=0; l<linhas.length; l++){
+                marcacoes[l] = new Set();
+                let linha = linhas[l];
+                let i=0;
+                while(i < linha.length){
+                    let atual = Number(linha[i]);
+                    let count = 1; let j = i+1;
+                    while(j < linha.length && Number(linha[j]) === atual){ count++; j++; }
+                    if(count >= 3){
+                        for(let k=i; k<i+count; k++){ marcacoes[l].add(k); }
+                    }
+                    i += count;
+                }
+            }
+
+            let html = "";
+            for(let l=0; l<linhas.length; l++){
+                html += linhas[l].map((n, idx) => {
+                    if (marcacoes[l].has(idx)){
+                        if (!numsSequencias.includes(n)) numsSequencias.push(n);
+                        return `<span class="negativo">${n}</span>`;
+                    }
+                    return n;
+                }).join(" ") + "<br>";
+            }
+            return { html, sequencias: numsSequencias };
+        }
+
+        // MÁGICA REALIZADA AQUI: CRUZA OS DADOS COM O textos.js E INJETA NAS PÁGINAS DO RELATÓRIO
         function processarSinastriaDinamica() {
             const n1 = document.getElementById("nome1").value.trim();
             const d1 = document.getElementById("data1").value.trim();
@@ -625,17 +747,19 @@
             const nBebe = document.getElementById("nomeBebe").value.trim();
 
             if(!n1 || !n2 || !d1 || !d2) {
-                alert("Por favor, preencha os nomes e datas de nascimento dos dois parceiros.");
+                alert("Por favor, preencha os nomes e datas dos dois parceiros.");
                 return;
             }
 
-            // Atualiza exibição dos nomes principais (Usa Nome Social se preenchido)
-            document.getElementById("lblNomeParceiro1").innerText = s1 ? s1 : n1;
-            document.getElementById("lblNomeParceiro2").innerText = s2 ? s2 : n2;
+            // Nomes de Exibição na Capa
+            const exibicaoNome1 = s1 ? s1 : n1;
+            const exibicaoNome2 = s2 ? s2 : n2;
+
+            document.getElementById("lblNomeParceiro1").innerText = exibicaoNome1;
+            document.getElementById("lblNomeParceiro2").innerText = exibicaoNome2;
             document.getElementById("lblData1").innerText = d1;
             document.getElementById("lblData2").innerText = d2;
 
-            // Roda motores de cálculo interno
             const iso1 = formatarParaCalculo(d1);
             const iso2 = formatarParaCalculo(d2);
 
@@ -644,11 +768,43 @@
             dados1.anoPessoal = calcularAnoPessoal(iso1);
             dados2.anoPessoal = calcularAnoPessoal(iso2);
 
-            // injeta dados extras calculados nas labels da capa
-            document.getElementById("lblExtra1").innerHTML = `Motivação: ${dados1.motivacao} <br> Propósito: ${dados1.proposito}`;
-            document.getElementById("lblExtra2").innerHTML = `Motivação: ${dados2.motivacao} <br> Propósito: ${dados2.proposito}`;
+            // Injeção de Meta-dados da Capa
+            document.getElementById("lblExtra1").innerHTML = `Motivação: ${dados1.motivacao} <br> Destino: ${dados1.caminho}`;
+            document.getElementById("lblExtra2").innerHTML = `Motivação: ${dados2.motivacao} <br> Destino: ${dados2.caminho}`;
 
-            // Processamento condicional do bebê
+            // --- ALIMENTANDO A PÁGINA 3 (MOTIVAÇÕES COM TEXTO DO textos.js) ---
+            document.getElementById("titMotivacaoA").innerText = `${exibicaoNome1}: Motivação da Alma (${dados1.motivacao})`;
+            document.getElementById("titMotivacaoB").innerText = `${exibicaoNome2}: Motivação da Alma (${dados2.motivacao})`;
+
+            document.getElementById("txtMotivacaoA").innerHTML = formatarTextoPersonalizado(window.textos.motivacao[dados1.motivacao], n1);
+            document.getElementById("txtMotivacaoB").innerHTML = formatarTextoPersonalizado(window.textos.motivacao[dados2.motivacao], n2);
+
+            // --- ALIMENTANDO A PÁGINA 4 (PIRÂMIDES E TEXTOS DAS SEQUÊNCIAS) ---
+            document.getElementById("titPiramideA").innerText = `Matriz de Destino: ${exibicaoNome1}`;
+            document.getElementById("titPiramideB").innerText = `Matriz de Destino: ${exibicaoNome2}`;
+
+            const p1Result = construirPiramideEspecial(dados1.valores);
+            const p2Result = construirPiramideEspecial(dados2.valores);
+
+            document.getElementById("pdfPiramide1").innerHTML = p1Result.html;
+            document.getElementById("pdfPiramide2").innerHTML = p2Result.html;
+
+            // Injeta o texto explicativo da Sequência Negativa correspondente obtido do seu textos.js
+            if(p1Result.sequencias.length > 0) {
+                let txtSeqA = p1Result.sequencias.map(n => window.textos.sequenciaNegativa[n] || `Alerta Vibe ${n}`).join("<br><br>");
+                document.getElementById("txtSeqNegativaA").innerHTML = formatarTextoPersonalizado(txtSeqA, n1);
+            } else {
+                document.getElementById("txtSeqNegativaA").innerHTML = "✅ Nenhuma sequência vibracional negativa oculta detectada no nome.";
+            }
+
+            if(p2Result.sequencias.length > 0) {
+                let txtSeqB = p2Result.sequencias.map(n => window.textos.sequenciaNegativa[n] || `Alerta Vibe ${n}`).join("<br><br>");
+                document.getElementById("txtSeqNegativaB").innerHTML = formatarTextoPersonalizado(txtSeqB, n2);
+            } else {
+                document.getElementById("txtSeqNegativaB").innerHTML = "✅ Nenhuma sequência vibracional negativa oculta detectada no nome.";
+            }
+
+            // Bloco opcional do Bebê na Capa
             const blocoB = document.getElementById("blocoBebe");
             if(nBebe) {
                 dadosBebe = calcularPessoa(nBebe, null);
@@ -659,14 +815,17 @@
                 blocoB.style.display = "none";
             }
 
-            alert("Dados integrados à visualização do relatório com sucesso!");
+            alert("Sucesso! O relatório completo foi construído e integrado com o textos.js. Pronto para download.");
         }
 
-        // Execução do HTML2PDF
         function baixarPDFPremium() {
+            if(!dados1 || !dados2) {
+                alert("Por favor, clique primeiro em 'Atualizar Dados no Relatório' antes de baixar o PDF.");
+                return;
+            }
             const elemento = document.getElementById("conteudo-pdf");
-            const n1 = document.getElementById("nome1").value || "Parceiro A";
-            const n2 = document.getElementById("nome2").value || "Parceiro B";
+            const n1 = document.getElementById("nome1").value || "Parceiro_A";
+            const n2 = document.getElementById("nome2").value || "Parceiro_B";
             
             const opt = {
                 margin:       0,
