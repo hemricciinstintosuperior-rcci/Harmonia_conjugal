@@ -826,74 +826,43 @@ function formatarTextoPersonalizado(texto, nome) {
 
 
 function criarCapaTransicao(titulo, subtitulo, rodape, audio1Url, nomeAudio1, audio2Url, nomeAudio2) {
+    let playerHTML = "";
+    let linkHTML = "";
+
+    // Só monta bloco de áudio se eles forem passados por parâmetro
+    if(audio1Url && audio2Url) {
+        playerHTML = `
+        <div class="player-relatorio" style="display:flex; flex-direction:column; gap:12px; width:100%; max-width:280px; align-items:center;">
+            <div style="width:100%; background:rgba(0,0,0,0.4); padding:10px; border-radius:8px; border:1px solid rgba(212,154,154,0.2);">
+                <span style="font-size:9px; color:#d49a9a; display:block; margin-bottom:5px; text-transform:uppercase;">${nomeAudio1}</span>
+                <audio controls style="width:100%; height:30px;"><source src="${audio1Url}" type="audio/mpeg"></audio>
+            </div>
+            <div style="width:100%; background:rgba(0,0,0,0.4); padding:10px; border-radius:8px; border:1px solid rgba(212,154,154,0.2);">
+                <span style="font-size:9px; color:#d49a9a; display:block; margin-bottom:5px; text-transform:uppercase;">${nomeAudio2}</span>
+                <audio controls style="width:100%; height:30px;"><source src="${audio2Url}" type="audio/mpeg"></audio>
+            </div>
+        </div>`;
+
+        linkHTML = `
+        <div class="botao-pdf-link" style="display:none; flex-direction:column; gap:10px; width:100%; align-items:center;">
+            <a href="${audio1Url}" target="_blank" style="color:#ffd700; font-size:11px; font-family:'Cinzel', serif; text-decoration:underline;">📥 BAIXAR ÁUDIO: ${nomeAudio1}</a>
+            <a href="${audio2Url}" target="_blank" style="color:#ffd700; font-size:11px; font-family:'Cinzel', serif; text-decoration:underline;">📥 BAIXAR ÁUDIO: ${nomeAudio2}</a>
+        </div>`;
+    }
+
     return `
-    <div class="pag-a4 capa-transicao-amor" style="
-            width: 210mm; 
-            height: 297mm; 
-            max-height: 297mm; 
-            background-color: #310612 !important; 
-            border: 4px solid #4a0d1d; 
-            display: flex !important; 
-            flex-direction: column !important; 
-            justify-content: space-between !important; 
-            align-items: center !important;
-            page-break-after: always !important;
-            box-sizing: border-box !important;
-            position: relative;
-            padding: 50px;
-            overflow: hidden !important;
-            -webkit-print-color-adjust: exact !important;
-        ">
+    <div class="pag-a4" style="background: radial-gradient(circle, #2d0713 0%, #110106 100%) !important; border: 4px solid #a6843c; display: flex !important; flex-direction: column !important; justify-content: space-between !important; align-items: center !important; padding: 40px 20px !important;">
+        <div style="text-align: center;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 22px; color: #fff; text-transform: uppercase; letter-spacing: 2px;">${titulo}</h2>
+            <span style="color: #c39b9b; font-size: 12px; display: block; margin-top: 5px; letter-spacing: 3px;">${subtitulo}</span>
+        </div>
+        <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" style="width: 150px; height: 150px; border-radius: 50%; border: 2px solid #a6843c; object-fit:cover;">
         
-        <div style="text-align: center; margin-top: 20px;">
-            <h2 style="font-family: 'Cinzel', serif; font-size: 24px; color: #fff; text-transform: uppercase; letter-spacing: 3px; line-height: 1.5;">
-                ${titulo}<br>
-                <span style="color: #c39b9b; font-size: 14px; display: block; margin-top: 10px; letter-spacing: 5px;">${subtitulo}</span>
-            </h2>
-        </div>
+        ${playerHTML}
+        ${linkHTML}
 
-        <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
-             style="width: 220px; height: 220px; max-height: 220px; object-fit: cover; display: block; margin: 0 auto; border-radius: 50%; border: 3px solid rgba(195,155,155,0.2); filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.5));">
-
-        <div class="player-relatorio" style="margin-top: 20px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 5px; width: 100%;">
-            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">${nomeAudio1}</span>
-            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
-                <source src="${audio1Url}" type="audio/mpeg">
-            </audio>
-        </div>
-
-        <a href="${audio1Url}" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 10px;">
-            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 10px 20px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
-                <div style="width: 25px; height: 25px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 12px;">▶</div>
-                <div style="text-align: left;">
-                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">${nomeAudio1}</span>
-                    <span style="display: block; font-size: 11px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR E BAIXAR NO CELULAR</span>
-                </div>
-            </div>
-        </a>
-
-        <div class="player-relatorio" style="margin-top: 20px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 5px; width: 100%;">
-            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">${nomeAudio2}</span>
-            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
-                <source src="${audio2Url}" type="audio/mpeg">
-            </audio>
-        </div>
-
-        <a href="${audio2Url}" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 10px;">
-            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 10px 20px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
-                <div style="width: 25px; height: 25px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 12px;">▶</div>
-                <div style="text-align: left;">
-                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">${nomeAudio2}</span>
-                    <span style="display: block; font-size: 11px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR E BAIXAR NO CELULAR</span>
-                </div>
-            </div>
-        </a>
-
-        <p style="font-size: 9px; color: #ffffff; letter-spacing: 2px; text-transform: uppercase; opacity: 0.6; margin-bottom: 20px; text-align: center; line-height: 1.4;">
-            ${rodape}
-        </p>
-    </div>
-    `;
+        <p style="font-size: 9px; color: #ffffff; opacity: 0.5; text-align: center; letter-spacing: 1px;">${rodape}</p>
+    </div>`;
 }
 
     
