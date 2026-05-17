@@ -222,17 +222,28 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
     /* =======================================================
        3. A VERDADEIRA ENGENHARIA DE IMPRESSÃO (ÚNICA E FIXA)
        ======================================================= */
-@media print {
-        /* Esconde elementos do portal web */
-        body *, .header, .container, .grid-pessoa, .main-actions, #compat, .modal, button, #modal-pdf-flutuante button {
+/* =======================================================
+       3. A VERDADEIRA ENGENHARIA DE IMPRESSÃO (ÚNICA E FIXA)
+       ======================================================= */
+    @media print {
+        /* Esconde os elementos do portal web e os botões de controle do modal */
+        .header, .container, .grid-pessoa, .main-actions, #compat, .modal, button, #modal-pdf-flutuante div[style*="z-index:10001"] {
             display: none !important;
         }
 
-        /* Exibe estritamente a área do PDF */
-        #area-pdf-local, #area-pdf-local * {
+        /* Garante que o modal flutuante e TODO o conteúdo dele fiquem visíveis no print */
+        #modal-pdf-flutuante, #modal-pdf-flutuante * {
             display: block !important;
+            background: transparent !important;
+            padding: 0 !important;
+            margin: 0 !important;
         }
 
+        /* Mantém a barra de rolagem oculta na impressão para não bugar o layout */
+        #conteudo-pdf-rolavel {
+            overflow: visible !important;
+            height: auto !important;
+        }
         /* Mantém o comportamento de centralização perfeito apenas para as capas */
         #area-pdf-local .capa-sinastria-premium,
         #area-pdf-local .capa-transicao-amor {
