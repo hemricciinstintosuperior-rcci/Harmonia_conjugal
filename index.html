@@ -357,38 +357,6 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
     /* 8. Links Visíveis e Sistema Automático de Numeração */
     .botao-pdf-link { display: flex !important; }
 
-    .page-footer {
-        display: block !important;
-        position: fixed !important;
-        bottom: 10mm !important;
-        right: 15mm !important;
-        font-family: 'Cinzel', serif !important;
-        font-size: 10pt !important;
-        color: #827108 !important;
-        font-weight: bold !important;
-        z-index: 9999 !important;
-    }
-
-    .page-number::after {
-        counter-increment: page;
-        content: "Página " counter(page);
-    }
-}
-
-/* =======================================================
-   4. COMPORTAMENTO DE INTERFACE (TELA DO SISTEMA)
-   ======================================================= */
-.page-footer { display: none; }
-.botao-pdf-link { display: none; }
-.player-relatorio { display: flex; }    
-:focus { outline: none !important; }
-a, img, audio { border: none !important; outline: none !important; text-decoration: none !important; }
-
-/* Customizações de Áudio para o Chrome/Edge */
-audio::-webkit-media-controls-download-button { display: none !important; }
-audio::-webkit-media-controls-enclosure { overflow: hidden !important; }
-audio::-webkit-media-controls-panel { width: calc(100% + 30px) !important; }
-audio { pointer-events: auto; -webkit-touch-callout: none; }
 
 /* O rodapé agora se prende ao final de cada página individual */
     .page-footer {
@@ -408,6 +376,22 @@ audio { pointer-events: auto; -webkit-touch-callout: none; }
         counter-increment: numPagina;
         content: "Página " counter(numPagina);
     }
+/* =======================================================
+   4. COMPORTAMENTO DE INTERFACE (TELA DO SISTEMA)
+   ======================================================= */
+.page-footer { display: none; }
+.botao-pdf-link { display: none; }
+.player-relatorio { display: flex; }    
+:focus { outline: none !important; }
+a, img, audio { border: none !important; outline: none !important; text-decoration: none !important; }
+
+/* Customizações de Áudio para o Chrome/Edge */
+audio::-webkit-media-controls-download-button { display: none !important; }
+audio::-webkit-media-controls-enclosure { overflow: hidden !important; }
+audio::-webkit-media-controls-panel { width: calc(100% + 30px) !important; }
+audio { pointer-events: auto; -webkit-touch-callout: none; }
+
+
      
 </style>
 </head>
