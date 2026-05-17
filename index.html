@@ -792,7 +792,7 @@ function formatarTextoPersonalizado(texto, nome) {
 }
 
 
-function criarCapaTransicao(titulo, subtitulo, rodape) {
+function criarCapaTransicao(titulo, subtitulo, rodape, audio1Url, nomeAudio1, audio2Url, nomeAudio2) {
     return `
     <div class="pag-a4 capa-transicao-amor" style="
             width: 210mm; 
@@ -822,12 +822,46 @@ function criarCapaTransicao(titulo, subtitulo, rodape) {
         <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
              style="width: 220px; height: 220px; max-height: 220px; object-fit: cover; display: block; margin: 0 auto; border-radius: 50%; border: 3px solid rgba(195,155,155,0.2); filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.5));">
 
+        <div class="player-relatorio" style="margin-top: 20px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 5px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">${nomeAudio1}</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="${audio1Url}" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <a href="${audio1Url}" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 10px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 10px 20px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 25px; height: 25px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 12px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">${nomeAudio1}</span>
+                    <span style="display: block; font-size: 11px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR E BAIXAR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+        <div class="player-relatorio" style="margin-top: 20px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 5px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">${nomeAudio2}</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="${audio2Url}" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <a href="${audio2Url}" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 10px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 10px 20px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 25px; height: 25px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 12px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">${nomeAudio2}</span>
+                    <span style="display: block; font-size: 11px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR E BAIXAR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
         <p style="font-size: 9px; color: #ffffff; letter-spacing: 2px; text-transform: uppercase; opacity: 0.6; margin-bottom: 20px; text-align: center; line-height: 1.4;">
             ${rodape}
         </p>
     </div>
     `;
-}    
+} 
 
     
 
@@ -1049,11 +1083,12 @@ relatorioHTML += `
     `;
   }
 
-// 2. QUER COLOCAR A CAPA DA SINASTRIA? Só chamar assim:
 relatorioHTML += criarCapaTransicao(
-    "SINASTRIA AMOROSA", 
-    "Análise de Afinidade, Alinhamento de Almas e Destino", 
-    "Instinto Superior ✶ Conexão Amorosa ✶ Afinidade Vibracional"
+    "Expressão & Alma", 
+    "O Direcionamento do seu Destino", 
+    "Instinto Superior ✶ Relatório Premium",
+    "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
+    "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
 );
 
   // 3. SEÇÕES DO MIOLO
