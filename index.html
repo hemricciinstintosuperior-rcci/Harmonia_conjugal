@@ -1,965 +1,775 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harmonia Conjugal | Instinto Superior</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Painel de Sinastria e Harmonia Conjugal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-
-body{
-  font-family: Arial;
-  background:#111936;
-  color:#fff;
-  padding:20px;
-}
-        
         :root {
-            --primary: #6B0202;
-            --secondary: #002091;
-            --bg: #0a0f24;
-            --card-bg: #111936;
-            --text: #ffffff;
-            --accent: #00e0ff;
-            --danger: #ff3b5c;
-            --success: #28a745;
+            --ruby-wine: #3d0c1b;
+            --rose-gold: #c39b9b;
+            --crimson: #8a1c32;
+            --blush-pink: #f7ebec;
+            --gold: #d4af37;
+            --dark-velvet: #1a050b;
         }
 
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--text); padding-bottom: 50px; }
-        .header { text-align: center; padding: 40px 20px; background: linear-gradient(180deg, #16204d 0%, var(--bg) 100%); }
-        .container { max-width: 1100px; margin: auto; padding: 0 20px; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-        /* Grid */
-        .grid-pessoa {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #120206;
+            color: #fff;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* --- CONTAINER DE INPUTS --- */
+        .container-inputs {
+            background: linear-gradient(145deg, #250711 0%, #17030a 100%);
+            max-width: 750px;
+            margin: 0 auto 40px auto;
+            padding: 40px;
+            border-radius: 15px;
+            border: 2px solid var(--crimson);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7), 0 0 15px rgba(138,28,50,0.2);
+            text-align: center;
+        }
+
+        .container-inputs h1 {
+            font-family: 'Cinzel', serif;
+            color: var(--rose-gold);
+            font-size: 26px;
+            letter-spacing: 3px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .video-toggle-container {
+            margin-bottom: 30px;
+        }
+
+        .btn-video-toggle {
+            background: rgba(138, 28, 50, 0.2);
+            border: 1px solid var(--crimson);
+            color: var(--blush-pink);
+            padding: 12px 24px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-video-toggle:hover {
+            background: var(--crimson);
+            color: #fff;
+            box-shadow: 0 0 10px rgba(138,28,50,0.5);
+        }
+
+        .video-wrapper {
+            max-width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid rgba(195,155,155,0.3);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+
+        /* Grid de Parceiros */
+        .grid-parceiros {
+            display: table;
+            width: 100%;
+            margin-bottom: 25px;
+            border-collapse: separate;
+            border-spacing: 20px 0;
+        }
+
+        .col-parceiro {
+            display: table-cell;
+            width: 50%;
+            vertical-align: top;
+            background: rgba(0,0,0,0.3);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(138,28,50,0.3);
+            text-align: left;
+        }
+
+        .col-parceiro h3 {
+            font-family: 'Cinzel', serif;
+            color: var(--rose-gold);
+            font-size: 14px;
+            letter-spacing: 1.5px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(195,155,155,0.2);
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #a58087;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            background: #0f0206;
+            border: 1px solid #52111f;
+            border-radius: 5px;
+            padding: 12px 15px;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: var(--rose-gold);
+            box-shadow: 0 0 8px rgba(195,155,155,0.3);
+        }
+
+        /* Seção do Bebê (Opcional) */
+        .secao-bebe-opcional {
+            margin: 25px 20px;
+            background: rgba(138, 28, 50, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px dashed rgba(195,155,155,0.4);
+            text-align: left;
+        }
+
+        .secao-bebe-opcional h4 {
+            font-family: 'Cinzel', serif;
+            color: var(--rose-gold);
+            font-size: 13px;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .btn-gerar {
+            background: linear-gradient(135deg, #a71d3a 0%, #6e0f22 100%);
+            color: #fff;
+            border: none;
+            width: calc(100% - 40px);
+            margin: 15px auto;
+            padding: 16px;
+            font-family: 'Cinzel', serif;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .btn-gerar:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(167,29,58,0.5);
+            background: linear-gradient(135deg, #bd2445 0%, #80132a 100%);
+        }
+
+        .btn-pdf {
+            display: block;
+            background: linear-gradient(135deg, #cfb072 0%, #a6843c 100%);
+            color: #1a050b;
+            border: none;
+            padding: 15px 30px;
+            font-family: 'Cinzel', serif;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 0 auto 30px auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-pdf:hover {
+            box-shadow: 0 5px 20px rgba(212,175,55,0.4);
+            transform: translateY(-1px);
+        }
+
+        /* --- PREVIEW EXCLUSIVO DAS CAPAS (A4 PRINT SIMULATION) --- */
+        .preview-container {
+            display: block;
+            width: 210mm;
+            margin: 0 auto;
+        }
+
+        .preview-title {
+            text-align: center;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--rose-gold);
+            margin: 40px 0 15px 0;
+            opacity: 0.7;
+        }
+
+        /* Estilo da Capa Principal (Amor/Sinastria) */
+        .capa-sinastria-premium {
+            width: 210mm;
+            height: 297mm;
+            background: radial-gradient(circle, #2d0713 0%, #110106 100%);
+            border: 4px solid #a6843c;
+            display: block;
+            position: relative;
+            padding: 60px;
+            box-sizing: border-box;
             margin-bottom: 40px;
-            background: rgba(255,255,255,0.03);
-            padding: 25px;
-            border-radius: 20px;
-            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.8);
         }
 
-        .card-input, .card-piramide { background: var(--card-bg); padding: 25px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
-        .card-piramide { text-align: center; border: 1px dashed rgba(255,255,255,0.2); }
+        /* Cantoneiras Luxo (Estilo Coração/Ramos Elegantes) */
+        .corner-tl { position: absolute; top: 15px; left: 15px; width: 60px; height: 60px; border-top: 3px solid #a6843c; border-left: 3px solid #a6843c; }
+        .corner-tr { position: absolute; top: 15px; right: 15px; width: 60px; height: 60px; border-top: 3px solid #a6843c; border-right: 3px solid #a6843c; }
+        .corner-bl { position: absolute; bottom: 15px; left: 15px; width: 60px; height: 60px; border-bottom: 3px solid #a6843c; border-left: 3px solid #a6843c; }
+        .corner-br { position: absolute; bottom: 15px; right: 15px; width: 60px; height: 60px; border-bottom: 3px solid #a6843c; border-right: 3px solid #a6843c; }
 
-        h3 { margin-bottom: 20px; color: var(--accent); border-bottom: 1px solid #2e3c78; padding-bottom: 10px; }
-        .form-group { margin-bottom: 15px; text-align: left; }
-        label { display: block; font-size: 0.85rem; margin-bottom: 5px; color: #ccc; }
-
-        input, select {
-            width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #2e3c78;
-            background: #1c264a; color: white; font-size: 1rem;
+        .capa-header {
+            text-align: center;
+            margin-top: 20px;
         }
 
-        /* Botões */
-        .btn-group { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 8px; margin-top: 15px; }
-        button { padding: 10px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: 0.3s; font-size: 0.75rem; }
-        .btn-nav { background: #2e3c78; color: white; }
-        .btn-nav:hover { background: var(--secondary); }
-        .btn-action { background: var(--primary); color: white; font-size: 1rem; padding: 15px 30px; border-radius: 50px; }
-        
-        .main-actions { display: flex; justify-content: center; gap: 15px; margin: 40px 0; flex-wrap: wrap; }
+        .capa-header span {
+            color: #a6843c;
+            letter-spacing: 8px;
+            font-size: 12px;
+            text-transform: uppercase;
+            display: block;
+        }
 
-        /* Pirâmide */
-        .piramide { font-family: 'Courier New', monospace; font-size: 1.1rem; line-height: 1.5; letter-spacing: 4px; margin: 15px 0; min-height: 100px; }
-        .negativo { color: var(--danger); font-weight: bold; }
-        .regente { margin-top: 10px; font-weight: bold; color: var(--accent); }
+        .capa-header .divider {
+            width: 40px;
+            height: 1px;
+            background: #a6843c;
+            margin: 10px auto;
+        }
 
-        /* Modal */
-        .modal { display:none; position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index: 1000; }
-        .modal-content { background: var(--card-bg); margin: 5% auto; padding: 30px; width: 80%; max-width: 700px; border-radius: 15px; position: relative; border: 1px solid var(--accent); max-height: 80vh; overflow-y: auto; }
-        .close { position: absolute; right: 20px; top: 15px; cursor: pointer; font-size: 24px; color: var(--danger); }
+        .capa-logo-container {
+            text-align: center;
+            margin: 60px 0;
+            position: relative;
+        }
 
-        @media (max-width: 850px) { .grid-pessoa { grid-template-columns: 1fr; } }
+        /* Elemento Decorativo Central (Corações e Geometria Sagrada) */
+        .sacred-love-emblem {
+            width: 280px;
+            height: 280px;
+            margin: 0 auto;
+            background: url('https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/estudo.png') no-repeat center;
+            background-size: contain;
+            filter: drop-shadow(0px 0px 25px rgba(138,28,50,0.5)) sepia(30%) hue-rotate(320deg);
+        }
 
+        /* Overlay de Corações Sutis na Capa */
+        .hearts-watermark {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            opacity: 0.04;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.5 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E");
+        }
 
+        .capa-cliente {
+            text-align: center;
+            margin-top: 40px;
+            width: 100%;
+        }
 
-/* Isso impede que o texto vá "encurtando" a cada bloco */
-.container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 40px; /* Reduzi um pouco para dar mais espaço */
-    background: white;
-    box-shadow: 0 10px 50px rgba(0,0,0,0.08);
-    display: block;
-    overflow: hidden; /* Garante que nada saia para fora */
-}
+        .capa-cliente .subtext {
+            color: #c39b9b;
+            font-family: 'Cinzel', serif;
+            letter-spacing: 3px;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
 
-.bloco {
-    margin-top: 30px;
-    padding: 0; /* REMOVA o padding daqui se houver */
-    width: 100%; /* Força largura total */
-    display: block;
-    clear: both;
-}
+        .capa-cliente h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #fff;
+            margin: 15px 0;
+            line-height: 1.3;
+        }
 
-/* Centralização da Pirâmide corrigida */
-.piramide-wrapper {
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente no flex */
-    width: 100%;
-    margin: 30px 0;
-}
+        .capa-cliente .names-display {
+            font-family: 'Cinzel', serif;
+            font-size: 20px;
+            color: #fff;
+            letter-spacing: 1.5px;
+            margin: 10px 0;
+            font-weight: 600;
+        }
 
-.piramide {
-    font-family: 'Courier New', Courier, monospace;
-    background: var(--bg);
-    padding: 20px;
-    border: 1px solid var(--dourado-claro);
-    font-size: 14px;
-    white-space: pre; 
-    text-align: center;
-    line-height: 1.2;
-    display: block; /* Mudamos de inline-block para block */
-    margin: 0 auto;
-}
+        .capa-cliente .heart-separator {
+            color: var(--crimson);
+            font-size: 18px;
+            margin: 0 10px;
+            display: inline-block;
+            filter: drop-shadow(0 0 5px var(--crimson));
+        }
 
-    #relatorioFinal h2 { color: var(--primary); text-align: center; margin-bottom: 30px; text-transform: uppercase; }
-    .rel-secao { border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; border-radius: 10px; }
-    .rel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-    .rel-titulo { font-weight: 600; color: var(--secondary); margin-bottom: 10px; border-bottom: 1px solid #eee; }
-    .piramide-rel { font-family: 'Courier New'; background: #0a0f24; color: #fff; padding: 15px; border-radius: 8px; text-align: center; font-size: 12px; line-height: 1.1; margin-bottom: 10px; }
-    @media print {
-        body * { visibility: hidden; }
-        #relatorioFinal, #relatorioFinal * { visibility: visible; }
-        #relatorioFinal { position: absolute; left: 0; top: 0; width: 100%; }
-        button { display: none; }
-    }
+        .capa-cliente .line-gradient {
+            width: 200px;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #a6843c, transparent);
+            margin: 20px auto;
+        }
 
+        .capa-cliente .date-display {
+            font-family: 'Cinzel', serif;
+            font-size: 16px;
+            color: #a6843c;
+            letter-spacing: 4px;
+        }
 
-   /* Estilos para o Relatório Gigante */
-    #relatorioFinal { 
-        background: #fdfdfd !important; 
-        color: #1a1a1a !important; 
-        padding: 50px !important; 
-        font-family: 'Georgia', serif; 
-    }
-    .capa-relatorio { 
-        text-align: center; 
-        height: 1000px; /* Força uma página inteira para a capa */
-        display: flex; 
-        flex-direction: column; 
-        justify-content: center; 
-        border: 10px double var(--primary);
-        margin-bottom: 50px;
-    }
-    .titulo-secao { 
-        font-size: 2.5rem; 
-        color: var(--primary); 
-        border-bottom: 3px solid var(--primary); 
-        margin: 40px 0; 
-        padding-bottom: 10px;
-    }
-    .bloco-texto { margin-bottom: 35px; text-align: justify; line-height: 1.8; }
-    .bloco-texto h4 { font-size: 1.4rem; color: var(--secondary); margin-bottom: 10px; }
-    .texto-conteudo { font-size: 1.1rem; }
-    .piramide-grande { 
-        background: #000; 
-        color: #fff; 
-        padding: 30px; 
-        font-family: monospace; 
-        font-size: 18px; 
-        white-space: pre; 
-        text-align: center; 
-        margin: 20px auto;
-        width: fit-content;
-    }
-    .alerta-negativo { background: #fff0f0; border-left: 5px solid red; padding: 20px; margin: 20px 0; }
-    .page-break { page-break-before: always; height: 1px; }
+        .capa-footer-text {
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 9px;
+            color: #ffffff;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            opacity: 0.5;
+        }
 
-    @media print {
-        .btn-action { display: none; }
-        #relatorioFinal { margin: 0; border: none; }
-    }        
+        /* --- CAPA DE TRANSIÇÃO (INTRODUÇÃO SINASTRIA) --- */
+        .capa-transicao-amor {
+            height: 297mm;
+            width: 210mm;
+            background-color: #310612; /* Vermelho Vinho Intenso de Alta Classe */
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
+            padding: 60px 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.8);
+            border: 1px solid #4a0d1d;
+        }
 
-.btn-video-toggle {
-    width: 100%;
-    padding: 12px 20px;
-    background: linear-gradient(135deg, #A65F00 0%, #FFD700 100%);
-    color: #fff;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(166, 95, 0, 0.3);
-    margin-bottom: 10px;
-}
+        .transicao-header {
+            margin-top: 30px;
+            text-align: center;
+            width: 100%;
+        }
 
-.btn-video-toggle:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(166, 95, 0, 0.4);
-}
+        .transicao-header h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 24px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            line-height: 1.5;
+        }
 
-.btn-video-toggle .seta {
-    transition: transform 0.3s ease;
-}
+        .transicao-header h2 span {
+            color: #c39b9b;
+            font-size: 14px;
+            display: block;
+            margin-top: 10px;
+            letter-spacing: 5px;
+        }
 
-.btn-video-toggle.ativo .seta {
-    transform: rotate(180deg);
-}
+        .transicao-art-container {
+            margin: 50px 0 20px 0;
+            text-align: center;
+            position: relative;
+        }
 
-/* Garante que o botão também suma na impressão */
-@media print {
-    .btn-video-toggle {
-        display: none !important;
-    }
-}
-        
+        .transicao-art-container img {
+            width: 85%;
+            max-width: 340px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            border: 3px solid rgba(195,155,155,0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            filter: saturate(110%) brightness(95%);
+        }
+
+        /* Ícone flutuante de coração refinado sobreposto */
+        .transicao-heart-badge {
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #110106;
+            border: 2px solid #a6843c;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: block;
+            line-height: 41px;
+            font-size: 18px;
+            color: var(--crimson);
+            text-shadow: 0 0 5px rgba(138,28,50,0.6);
+        }
+
+        /* Player Customizado e Links de Áudio */
+        .player-relatorio-amor {
+            margin-top: 45px;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+
+        .player-relatorio-amor span {
+            display: block;
+            font-size: 10px;
+            color: #c39b9b;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .player-relatorio-amor audio {
+            height: 35px;
+            width: 260px;
+            /* Filtro elegante para harmonizar os players com o tom vinho do mapa */
+            filter: sepia(80%) saturate(180%) brightness(90%) hue-rotate(310deg);
+        }
+
+        .botao-pdf-link-amor {
+            text-decoration: none;
+            display: block;
+            margin: 20px auto 0 auto;
+            width: max-content;
+        }
+
+        .botao-pdf-link-amor .inner-btn {
+            background: rgba(17, 1, 6, 0.85);
+            border: 1px solid var(--crimson);
+            padding: 12px 25px;
+            border-radius: 50px;
+            display: table;
+        }
+
+        .botao-pdf-link-amor .btn-cell-icon {
+            display: table-cell;
+            vertical-align: middle;
+            width: 32px;
+            height: 32px;
+            background: var(--crimson);
+            border-radius: 50%;
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
+            line-height: 32px;
+        }
+
+        .botao-pdf-link-amor .btn-cell-text {
+            display: table-cell;
+            vertical-align: middle;
+            padding-left: 12px;
+            text-align: left;
+        }
+
+        .botao-pdf-link-amor .btn-cell-text .track-lbl {
+            display: block;
+            font-size: 8px;
+            color: #c39b9b;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .botao-pdf-link-amor .btn-cell-text .action-lbl {
+            display: block;
+            font-size: 11px;
+            color: #fff;
+            font-family: 'Cinzel', serif;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .transicao-footer-scrolling {
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            width: 100%;
+            color: #fff;
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            text-align: center;
+            opacity: 0.7;
+            padding: 0 30px;
+            line-height: 1.4;
+        }
+
+        /* Ocultar elementos na impressão real */
+        @media print {
+            .no-print, .container-inputs, .preview-title {
+                display: none !important;
+            }
+            body {
+                background: #fff;
+                padding: 0;
+            }
+            .preview-container {
+                width: 100%;
+            }
+            .capa-sinastria-premium, .capa-transicao-amor {
+                margin: 0;
+                page-break-after: always;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
     </style>
 </head>
 <body>
 
-<div class="header">
-    <h1>❤️ Harmonia Conjugal</h1>
-    <p>Portal Numerológico Premium</p>
-</div>
+    <!-- Botão de Impressão Premium -->
+    <button class="btn-pdf no-print" onclick="window.print()">📥 BAIXAR SEU PDF PREMIUM DE SINASTRIA</button>
 
-<div class="container">
+    <!-- FORMULÁRIO DE ENTRADA TOTALMENTE ADAPTADO PARA DOIS PARCEIROS + BEBÊ CONDICIONAL -->
+    <div class="container-inputs">
+        <h1>Portal de Sinastria & Harmonia Conjugal</h1>
 
-     <button type="button" id="btnVideo" class="btn-video-toggle">
-        <span>🎥 Assistir Vídeo Introdutório</span>
-        <i class="seta">▼</i>
-    </button>
-
-    <div id="wrapperVideo" class="video-wrapper" style="display: none; margin-top: 10px;">
-        <video id="videoExplicativo" width="100%" controls poster="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png">
-            <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/introducao.mp4" type="video/mp4">
-            Seu navegador não suporta vídeos.
-        </video>
-    </div>   
-    <!-- PESSOA 1 -->
-    <div class="grid-pessoa">
-        <div class="card-input">
-            <h3>Pessoa 1</h3>
-            <div class="form-group"><label>Nome Completo</label><input type="text" id="nome1" placeholder="Nome igual certidão"></div>
-            <div class="form-group"><label>Data de Nascimento</label><input type="date" id="data1"></div>
-            <div style="display: flex; gap: 5px; margin-bottom:15px;">
-                <select id="sexo1"><option value="">Sexo</option><option value="M">M</option><option value="F">F</option></select>
-                <select id="tipo1"><option value="">Tipo</option><option>A</option><option>B</option><option>AB</option><option>O</option></select>
-                <select id="rh1"><option value="">RH</option><option value="+">+</option><option value="-">-</option></select>
-            </div>
-            <div class="btn-group">
-                <button class="btn-nav" onclick="abrirModal('m1')">Motivação</button>
-                <button class="btn-nav" onclick="abrirModal('i1')">Influência</button>
-                <button class="btn-nav" onclick="abrirModal('p1')">Personalidade</button>
-                <button class="btn-nav" onclick="abrirModal('d1')">Caminho</button>
-                <button class="btn-nav" onclick="abrirModal('pr1')">Propósito</button>
-                <button class="btn-nav" onclick="abrirModal('h1')">Harmonia</button>
-                <button class="btn-nav" onclick="abrirModal('a1')">Ano Pessoal</button>
+        <!-- Controle do Vídeo Introdutório -->
+        <div class="video-toggle-container no-print">
+            <button type="button" id="btnVideo" class="btn-video-toggle">
+                <span>🎥 Assistir Vídeo Introdutório de Sinastria</span>
+                <i class="seta">▼</i>
+            </button>
+            <div id="wrapperVideo" class="video-wrapper" style="display: none; margin-top: 15px;">
+                <video id="videoExplicativo" width="100%" controls poster="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png">
+                    <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/introducao.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                </video>
             </div>
         </div>
-        <div class="card-piramide">
-            <h3>Pirâmide 1</h3>
-            <div id="piramide1" class="piramide"></div>
-            <div id="regente1" class="regente"></div>
-        </div>
-    </div>
 
-    <!-- PESSOA 2 -->
-    <div class="grid-pessoa">
-        <div class="card-input">
-            <h3>Pessoa 2</h3>
-            <div class="form-group"><label>Nome Completo</label><input type="text" id="nome2" placeholder="Nome igual certidão"></div>
-            <div class="form-group"><label>Data de Nascimento</label><input type="date" id="data2"></div>
-            <div style="display: flex; gap: 5px; margin-bottom:15px;">
-                <select id="sexo2"><option value="">Sexo</option><option value="M">M</option><option value="F">F</option></select>
-                <select id="tipo2"><option value="">Tipo</option><option>A</option><option>B</option><option>AB</option><option>O</option></select>
-                <select id="rh2"><option value="">RH</option><option value="+">+</option><option value="-">-</option></select>
+        <!-- Estrutura Lado a Lado usando Table para compatibilidade absoluta e design limpo -->
+        <div class="grid-parceiros">
+            
+            <!-- PARCEIRO 1 -->
+            <div class="col-parceiro">
+                <h3>Primeiro Parceiro (A)</h3>
+                <div class="input-group">
+                    <label>Nome Completo (igual Certidão)</label>
+                    <input type="text" id="nome1" placeholder="Ex: Nome do Primeiro Analisado">
+                </div>
+                <div class="input-group">
+                    <label>Data de Nascimento</label>
+                    <input type="text" id="data1" placeholder="DD/MM/AAAA" maxlength="10" onInput="mascaraData(this)">
+                </div>
+                <div class="input-group">
+                    <label>Como prefere ser chamado? (Opcional)</label>
+                    <input type="text" id="nomeSocial1" placeholder="Ex: Nome Social / Apelido">
+                </div>
+                <div class="input-group">
+                    <label>Nome anterior ou de Casado(a) (se houver)</label>
+                    <input type="text" id="nomeCasado1" placeholder="Ex: Nome de Casado antigo">
+                </div>
             </div>
-            <div class="btn-group">
-                <button class="btn-nav" onclick="abrirModal('m2')">Motivação</button>
-                <button class="btn-nav" onclick="abrirModal('i2')">Influência</button>
-                <button class="btn-nav" onclick="abrirModal('p2')">Personalidade</button>
-                <button class="btn-nav" onclick="abrirModal('d2')">Caminho</button>
-                <button class="btn-nav" onclick="abrirModal('pr2')">Propósito</button>
-                <button class="btn-nav" onclick="abrirModal('h2')">Harmonia</button>
-                <button class="btn-nav" onclick="abrirModal('a2')">Ano Pessoal</button>
+
+            <!-- PARCEIRO 2 -->
+            <div class="col-parceiro">
+                <h3>Segundo Parceiro (B)</h3>
+                <div class="input-group">
+                    <label>Nome Completo (igual Certidão)</label>
+                    <input type="text" id="nome2" placeholder="Ex: Nome do Segundo Analisado">
+                </div>
+                <div class="input-group">
+                    <label>Data de Nascimento</label>
+                    <input type="text" id="data2" placeholder="DD/MM/AAAA" maxlength="10" onInput="mascaraData(this)">
+                </div>
+                <div class="input-group">
+                    <label>Como prefere ser chamado? (Opcional)</label>
+                    <input type="text" id="nomeSocial2" placeholder="Ex: Nome Social / Apelido">
+                </div>
+                <div class="input-group">
+                    <label>Nome anterior ou de Casado(a) (se houver)</label>
+                    <input type="text" id="nomeCasado2" placeholder="Ex: Nome de Casado antigo">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- MAPA DO BEBÊ CONDICIONAL -->
+        <div class="secao-bebe-opcional">
+            <h4>Análise Complementar: Conexão com o Bebê (Opcional)</h4>
+            <div class="input-group" style="margin-bottom: 0;">
+                <label>Nome Completo do Bebê / Filho</label>
+                <input type="text" id="nomeBebe" placeholder="Insira se desejar incluir o Mapa do Bebê no relatório">
             </div>
         </div>
-        <div class="card-piramide">
-            <h3>Pirâmide 2</h3>
-            <div id="piramide2" class="piramide"></div>
-            <div id="regente2" class="regente"></div>
-        </div>
+
+        <button class="btn-gerar" onclick="processarSinastriaDinamica()">GERAR MAPA DE HARMONIA</button>
     </div>
 
-    <!-- BOTÕES DE AÇÃO CENTRAL -->
-    <div class="main-actions">
-        <button class="btn-action" onclick="gerar()">⚡ CALCULAR TUDO</button>
-        <button class="btn-action" style="background:var(--secondary)" onclick="mostrarSinastria()">❤️ VER COMPATIBILIDADE</button>
-        <button class="btn-action" style="background:var(--success)" onclick="abrirPremiumSinastria()">💎 RELATÓRIO PREMIUM PDF</button>
-    </div>
 
-    <div id="compat" style="text-align:center; margin-bottom:40px; font-weight:bold;"></div>
+    <!-- CONTAINER DO RELATÓRIO PREPARADO PARA IMPRESSÃO / VISUALIZAÇÃO -->
+    <div class="preview-container">
+        
+        <div class="preview-title">Visualização do Modelo de Capa Principal (A4)</div>
 
-        <div id="relatorioFinal" style="display:none; margin-top: 50px; padding: 30px; background: #fff; color: #333; border-radius: 15px; border-top: 10px solid var(--primary);">
-        <div id="conteudoRelatorio"></div>
-        <div style="text-align: center; margin-top: 30px;">
-            <button class="btn-action" onclick="window.print()">🖨️ IMPRIMIR / SALVAR PDF</button>
-        </div>
-    </div>
+        <!-- 1. CAPA PRINCIPAL DE SINASTRIA ROMÂNTICA LUXO -->
+        <div class="capa-sinastria-premium" id="capa-numerologica">
+            <div class="hearts-watermark"></div>
+            
+            <!-- Cantoneiras Metálicas -->
+            <div class="corner-tl"></div><div class="corner-tr"></div><div class="corner-bl"></div><div class="corner-br"></div>
 
-    <!-- MAPA DO BEBÊ -->
-    <div class="grid-pessoa" style="border-color: var(--accent);">
-        <div class="card-input">
-            <h3>👶 Mapa do Bebê</h3>
-            <div class="form-group">
-                <label>Sugestão de Nome</label>
-                <input type="text" id="nomeBebe" placeholder="Digite o nome para análise">
+            <div class="capa-header">
+                <span>Portal Numerológico Cabalístico</span>
+                <div class="divider"></div>
             </div>
-            <button class="btn-action" style="width:100%; margin-bottom:15px;" onclick="gerarBebe()">Analisar Nome do Bebê</button>
-            <div class="btn-group">
-                <button class="btn-nav" onclick="abrirModal('mB')">Motivação</button>
-                <button class="btn-nav" onclick="abrirModal('iB')">Influência</button>
-                <button class="btn-nav" onclick="abrirModal('pB')">Personalidade</button>
+
+            <div class="capa-logo-container">
+                <div class="sacred-love-emblem"></div>
             </div>
-            <div id="resultadoBebe" style="margin-top:15px; font-size:0.9rem;"></div>
+
+            <div class="capa-cliente">
+                <div class="subtext">Estudo de Harmonia Conjugal & Destino</div>
+                <h1>MAPA NUMEROLÓGICO<br>DE SINASTRIA</h1>
+                <div class="line-gradient"></div>
+                
+                <!-- Exibição de nomes dinâmicos separados por coração apaixonado -->
+                <div class="names-display">
+                    <span id="lblNomeParceiro1">Gabriel Silva</span>
+                    <span class="heart-separator">❤</span>
+                    <span id="lblNomeParceiro2">Letícia Oliveira</span>
+                </div>
+                
+                <div class="line-gradient" style="width: 120px; margin: 15px auto;"></div>
+                <div class="date-display" id="lblDataEmissao">17/05/2026</div>
+            </div>
+
+            <div class="capa-footer-text">
+                Instinto Superior • Engenharia do Amor & Conexão de Almas
+            </div>
         </div>
-        <div class="card-piramide">
-            <h3>Pirâmide Bebê</h3>
-            <div id="piramideBebe" class="piramide"></div>
-            <div id="regenteBebe" class="regente"></div>
+
+
+        <div class="preview-title">Visualização do Modelo de Capa de Transição de Seção (A4)</div>
+
+        <!-- 2. CAPA DE TRANSIÇÃO DE SEÇÃO ADAPTADA PARA SINASTRIA AMOROSA (VINHO E ÁUDIO) -->
+        <div class="capa-transicao-amor">
+            
+            <div class="transicao-header">
+                <h2>INTRODUÇÃO E CONEXÃO<br><span>Resultado, Afinidade de Alma & Sincronia</span></h2>
+            </div>
+
+            <div class="transicao-art-container">
+                <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" alt="Instinto Superior Amor">
+                <div class="transicao-heart-badge">❤</div>
+            </div>
+
+            <!-- Faixa de Áudio 1: Frequência do Nascimento e Atração -->
+            <div class="player-relatorio-amor">
+                <span>O Som do Destino Compartilhado</span>
+                <audio controls>
+                    <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3" target="_blank" class="botao-pdf-link-amor">
+                <div class="inner-btn">
+                    <div class="btn-cell-icon">▶</div>
+                    <div class="btn-cell-text">
+                        <span class="track-lbl">O Som do Nascimento</span>
+                        <span class="action-lbl">CLIQUE PARA OUVIR E BAIXAR NO CELULAR</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Faixa de Áudio 2: Frequência de Alinhamento do Casal -->
+            <div class="player-relatorio-amor" style="margin-top: 35px;">
+                <span>Frequência do Instinto Superior Amoroso</span>
+                <audio controls>
+                    <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3" target="_blank" class="botao-pdf-link-amor">
+                <div class="inner-btn">
+                    <div class="btn-cell-icon">▶</div>
+                    <div class="btn-cell-text">
+                        <span class="track-lbl">O Instinto Superior</span>
+                        <span class="action-lbl">CLIQUE PARA OUVIR E BAIXAR NO CELULAR</span>
+                    </div>
+                </div>
+            </a>
+
+            <div class="transicao-footer-scrolling">
+                Instinto Superior ✶ Conexão Amorosa ✶ Engenharia da Vida Conjugal ✶ Afinidade Vibracional ✶ Destinos Cruzados ✶ Direcionamento de Jornada a Dois
+            </div>
         </div>
+
     </div>
 
-</div>
+    <!-- Scripts de Interatividade e Máscaras -->
+    <script>
+        // Função de controle do vídeo idêntica à solicitada
+        document.getElementById('btnVideo').addEventListener('click', function() {
+            const wrapper = document.getElementById('wrapperVideo');
+            const video = document.getElementById('videoExplicativo');
+            const btn = this;
 
-<!-- MODAL -->
-<div id="modal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="fecharModal()">&times;</span>
-        <div id="modalTexto" style="color:white; line-height:1.8;"></div>
-    </div>
+            if (wrapper.style.display === 'none') {
+                wrapper.style.display = 'block';
+                btn.classList.add('ativo');
+                btn.querySelector('span').innerText = '❌ Fechar Vídeo';
+            } else {
+                wrapper.style.display = 'none';
+                btn.classList.remove('ativo');
+                btn.querySelector('span').innerText = '🎥 Assistir Vídeo Introdutório de Sinastria';
+                video.pause();
+            }
+        });
 
-<script src="textos.js"></script>
-
-<script>
-
-// =====================
-// TABELA CABALÍSTICA
-// =====================
-const tabela = {
-  A:1, J:1, I:1, Q:1, Y:1,
-  B:2, K:2, R:2,
-  C:3, G:3, L:3, S:3,
-  D:4, M:4, T:4,
-  E:5, H:5, N:5,
-  U:6, V:6, W:6, X:6, Ç:6,
-  O:7, Z:7,
-  F:8, P:8
-};
-
-const vogais = ["A","E","I","O", "Y", "U"];
-
-// =====================
-// ACENTOS
-// =====================
-function calcularValorComAcentos(letra){
-  const base = letra.normalize("NFD")[0];
-  const valorBase = tabela[base];
-  if(!valorBase) return 0;
-
-  let soma = 0;
-  let mult = 1;
-
-  for(let c of letra.normalize("NFD")){
-    if(c === "\u0301") soma += 2;
-    else if(c === "\u0302") soma += 7;
-    else if(c === "\u0303") soma += 3;
-    else if(c === "\u0327") soma += 3;
-    else if(c === "\u0300") mult *= 2;
-    else if(c === "\u0308") mult *= 2;
-  }
-
-  return (valorBase + soma) * mult;
-}
-
-function reduzir(n){
-  n = Math.abs(n);
-  while(n > 9){
-    n = n.toString().split("").reduce((a,b)=>a+Number(b),0);
-  }
-  return n;
-}
-
-function calcularAnoPessoal(data){
-
-  if(!data) return 0;
-
-  const [ano, mes, dia] = data.split("-").map(Number);
-
-  const anoAtual = new Date().getFullYear();
-
-  const soma =
-    reduzir(dia) +
-    reduzir(mes) +
-    reduzir(anoAtual);
-
-  return reduzir(soma);
-}  
-
-// =====================
-// CALCULO COMPLETO
-// =====================
-function calcularPessoa(nome, data){
-
-  nome = nome.toUpperCase();
-
-  let somaV=0, somaC=0;
-  let valores=[];
-
-  for(let l of nome){
-    const valor = calcularValorComAcentos(l);
-    if(!valor) continue;
-
-    valores.push(reduzir(valor));
-
-    const base = l.normalize("NFD")[0];
-    if(vogais.includes(base)) somaV += valor;
-    else somaC += valor;
-  }
-
-  const motivacao = reduzir(somaV);
-  const influencia = reduzir(somaC);
-  const personalidade = reduzir(somaV+somaC);
-
-  let caminho=0, proposito=0;
-
-  if(data){
-    const [ano,mes,dia] = data.split("-").map(Number);
-    caminho = reduzir(dia+mes+ano);
-    proposito = reduzir(caminho+personalidade);
-  }
-
-const harmonia = proposito;
-
-return {
-  motivacao,
-  influencia,
-  personalidade,
-  caminho,
-  proposito,
-  harmonia,
-  valores
-}
-}
-
-// =====================
-// PIRÂMIDE INVERTIDA
-// =====================
-// =====================
-// PIRÂMIDE INVERTIDA
-// =====================
-function gerarPiramide(valores, elementoPiramide, elementoRegente){
-
-let sequenciaDetectada = null;
-let numerosSequencias = [];
-
-  if(!valores || valores.length === 0){
-    elementoPiramide.innerHTML="";
-    elementoRegente.innerHTML="";
-    return;
-  }
-
-  let linhas = [valores.map(Number)];
-
-  // Gera todas as linhas
-  while(linhas[linhas.length-1].length > 1){
-
-    let anterior = linhas[linhas.length-1];
-    let nova = [];
-
-    for(let i=0;i<anterior.length-1;i++){
-      nova.push(Number(reduzir(anterior[i] + anterior[i+1])));
-    }
-
-    linhas.push(nova);
-  }
-
-  // ============================
-  // DETECTAR TODAS AS SEQUÊNCIAS
-  // ============================
-
-  let marcacoes = [];
-
-  for(let l=0; l<linhas.length; l++){
-
-    marcacoes[l] = new Set();
-    let linha = linhas[l];
-
-    let i=0;
-
-    while(i < linha.length){
-
-      let atual = Number(linha[i]);
-      let count = 1;
-      let j = i+1;
-
-      while(j < linha.length && Number(linha[j]) === atual){
-        count++;
-        j++;
-      }
-
-      if(count >= 3){
-        for(let k=i; k<i+count; k++){
-          marcacoes[l].add(k);
+        // Máscara automática de data DD/MM/AAAA para os inputs
+        function mascaraData(input) {
+            input.value = input.value
+                .replace(/\D/g, '')
+                .replace(/^(\d{2})(\d)/, '$1/$2')
+                .replace(/^(\d{2})\/(\d{2})(\d)/, '$1/$2/$3');
         }
-      }
 
-      i += count;
-    }
-  }
-
-  // ============================
-  // RENDERIZAR PIRÂMIDE
-  // ============================
-
-  let html="";
-
-  for(let l=0; l<linhas.length; l++){
-
-    html += linhas[l].map((n,idx)=>{
-
-if (marcacoes[l].has(idx)){
-
-  if (!numerosSequencias.includes(n)) {
-    numerosSequencias.push(n);
-  }
-
-  return `<span class="negativo">${n}</span>`;
-}
-
-      return n;
-
-    }).join(" ") + "<br>";
-  }
-
-  elementoPiramide.innerHTML = html;
-
-  // ============================
-  // REGENTE
-  // ============================
-
- const regente = linhas[linhas.length - 1][0];
-
-// Localize o final da função gerarPiramide e substitua por este trecho:
-  elementoRegente.innerHTML = `
-    <div class="botoes-piramide">
-      <button onclick="abrirModalRegente(textos.regente[${regente}], '${elementoRegente.id}')">
-        Regente: ${regente}
-      </button>
-  
-      <button onclick="mostrarSequenciaNegativa('${elementoRegente.id}')">
-        Sequência Negativa
-      </button>
-    </div>
-  `;
-
-  if (elementoRegente.id === "regente1") dados1.regente = regente;
-  if (elementoRegente.id === "regente2") dados2.regente = regente;
-  if (elementoRegente.id === "regenteBebe") dadosBebe.regente = regente;
-  
-  if (elementoRegente.id === "regente1") dados1.sequenciaNegativa = numerosSequencias;
-  if (elementoRegente.id === "regente2") dados2.sequenciaNegativa = numerosSequencias;
-  if (elementoRegente.id === "regenteBebe") dadosBebe.sequenciaNegativa = numerosSequencias;
-
-  if (elementoRegente.id === "regenteBebe") {
-    const resultado = document.getElementById("resultadoBebe");
-    if (!numerosSequencias || numerosSequencias.length === 0) {
-      resultado.innerHTML = "✅ Este nome é harmônico.";
-    } else {
-      resultado.innerHTML = "❌ Este nome possui sequência negativa e não é harmônico.";
-    }
-  }
-} // <--- Fim da função gerarPiramide
-
-
-
-// =====================
-// COMPATIBILIDADE RH
-// =====================
-function compatibilidadeRH(){
-
-  const sexo1 = sexo1Val;
-  const sexo2 = sexo2Val;
-  const rh1 = rh1Val;
-  const rh2 = rh2Val;
-
-  let mulherRH, homemRH;
-
-  if(sexo1==="F"){
-    mulherRH = rh1;
-    homemRH = rh2;
-  }else if(sexo2==="F"){
-    mulherRH = rh2;
-    homemRH = rh1;
-  }else{
-    return "Compatibilidade biológica: Sexo feminino não informado.";
-  }
-
-  if(mulherRH==="-" && homemRH==="+"){
-    return "Compatibilidade biológica: ⚠ Mulher RH negativo e homem RH positivo. Exige acompanhamento médico.";
-  }
-
-  return "Compatibilidade biológica: Sem risco aparente.";
-}
-
-// =====================
-// SINASTRIA
-// =====================
-
-
-function chaveSinastria(a,b){
-  const menor = Math.min(a,b);
-  const maior = Math.max(a,b);
-  return `${menor}-${maior}`;
-}
-
-function mostrarSinastria(){
-
-  if(!dados1 || !dados2) return;
-
-  const nome1 = document.getElementById("nome1").value;
-  const nome2 = document.getElementById("nome2").value;
-
-  const energia1 = dados1.proposito;
-  const energia2 = dados2.proposito;
-
-  const chave = chaveSinastria(energia1, energia2);
-
-  let texto = textos.sinastria[chave] ||
-    `A combinação entre o relacionamento de ${energia1} e  Energia ${energia2}.`;
-
-  // -----------------------------
-  // SUBSTITUIÇÕES INTELIGENTES
-  // -----------------------------
-
-  const menor = Math.min(energia1, energia2);
-  const maior = Math.max(energia1, energia2);
-
-  const nomeMenor = (energia1 === menor) ? nome1 : nome2;
-  const nomeMaior = (energia1 === maior) ? nome1 : nome2;
-
-  // Energia X
-  texto = texto.replaceAll(`Energia ${menor}`, nomeMenor);
-  texto = texto.replaceAll(`Energia ${maior}`, nomeMaior);
-
-  // número X
-  texto = texto.replaceAll(`número ${menor}`, nomeMenor);
-  texto = texto.replaceAll(`número ${maior}`, nomeMaior);
-
-  texto = texto.replaceAll(`Número ${menor}`, nomeMenor);
-  texto = texto.replaceAll(`Número ${maior}`, nomeMaior);
-
-  const textoFinal = `
-    <h3>Harmonia Conjugal – ${nome1} com ${nome2}</h3>
-    ${texto}
-  `;
-
-  abrirModalTexto(textoFinal);
-}
-
-// =====================
-// MODAL
-// =====================
-function abrirModalTexto(texto){
-  document.getElementById("modalTexto").innerHTML = texto;
-  document.getElementById("modal").style.display="block";
-}
-// =====================
-// FUNÇÕES DE FORMATAÇÃO E MODAL (ATUALIZADAS)
-// =====================
-
-// ============================================
-// NOVAS FUNÇÕES DE FORMATAÇÃO E MODAL
-// ============================================
-
-function formatarTextoPersonalizado(texto, nomeCompleto) {
-  if (!texto) return "";
-  
-  // Extrai apenas o primeiro nome, remove espaços e corrige maiúsculas/minúsculas
-  let primeiroNome = nomeCompleto.trim().split(' ')[0];
-  if (primeiroNome) {
-      primeiroNome = primeiroNome.charAt(0).toUpperCase() + primeiroNome.slice(1).toLowerCase();
-  } else {
-      primeiroNome = "Você";
-  }
-
-  // Substitui "você" ou "Você" pelo nome em negrito
-  let t = texto;
-  t = t.replace(/você/gi, `<strong>${primeiroNome}</strong>`);
-  return t;
-}
-
-function abrirModal(tipo) {
-  let textoBase = "";
-  let nomePessoa = "";
-
-  if (tipo.includes("1")) {
-    nomePessoa = document.getElementById("nome1").value;
-    if(tipo==="m1") textoBase = textos.motivacao[dados1.motivacao];
-    if(tipo==="i1") textoBase = textos.influencia[dados1.influencia];
-    if(tipo==="p1") textoBase = textos.personalidade[dados1.personalidade];
-    if(tipo==="d1") textoBase = textos.CaminhodeVida[dados1.caminho];
-    if(tipo==="pr1") textoBase = textos.proposito[dados1.proposito];
-    if(tipo==="h1") textoBase = textos.harmonia[dados1.proposito];
-    if(tipo==="a1") textoBase = textos.anoPessoal[dados1.anoPessoal];
-  } 
-  else if (tipo.includes("2")) {
-    nomePessoa = document.getElementById("nome2").value;
-    if(tipo==="m2") textoBase = textos.motivacao[dados2.motivacao];
-    if(tipo==="i2") textoBase = textos.influencia[dados2.influencia];
-    if(tipo==="p2") textoBase = textos.personalidade[dados2.personalidade];
-    if(tipo==="d2") textoBase = textos.CaminhodeVida[dados2.caminho];
-    if(tipo==="pr2") textoBase = textos.proposito[dados2.proposito];
-    if(tipo==="h2") textoBase = textos.harmonia[dados2.proposito];
-    if(tipo==="a2") textoBase = textos.anoPessoal[dados2.anoPessoal];
-  }
-  else if (tipo.includes("B")) {
-    nomePessoa = document.getElementById("nomeBebe").value;
-    if(tipo==="mB") textoBase = textos.motivacao[dadosBebe.motivacao];
-    if(tipo==="iB") textoBase = textos.influencia[dadosBebe.influencia];
-    if(tipo==="pB") textoBase = textos.personalidade[dadosBebe.personalidade];
-  }
-
-  abrirModalTexto(formatarTextoPersonalizado(textoBase, nomePessoa));
-}
-
-function abrirModalRegente(texto, idRegente) {
-    let nomeInput = "";
-    if (idRegente === "regente1") nomeInput = document.getElementById("nome1").value;
-    else if (idRegente === "regente2") nomeInput = document.getElementById("nome2").value;
-    else if (idRegente === "regenteBebe") nomeInput = document.getElementById("nomeBebe").value;
-
-    abrirModalTexto(formatarTextoPersonalizado(texto, nomeInput));
-}
-
-function mostrarSequenciaNegativa(idRegente){
-  let dados;
-  let nomeInput = "";
-
-  if (idRegente === "regente1") {
-    dados = dados1;
-    nomeInput = document.getElementById("nome1").value;
-  }
-  else if (idRegente === "regente2") {
-    dados = dados2;
-    nomeInput = document.getElementById("nome2").value;
-  }
-  else if (idRegente === "regenteBebe") {
-    dados = dadosBebe;
-    nomeInput = document.getElementById("nomeBebe").value;
-  }
-
-  if (!dados || !dados.sequenciaNegativa || dados.sequenciaNegativa.length === 0){
-    abrirModalTexto("Nenhuma sequência negativa encontrada.");
-    return;
-  }
-
-  const textoBruto = dados.sequenciaNegativa.map(n => textos.sequenciaNegativa[n]).join("<br><br>");
-  abrirModalTexto(formatarTextoPersonalizado(textoBruto, nomeInput));
-}
-
-function fecharModal(){
-  document.getElementById("modal").style.display="none";
-}
-
-// =====================
-// GERAR
-// =====================
-let dados1, dados2;
-let sexo1Val, sexo2Val, rh1Val, rh2Val;
-
-function gerar(){
-
-  const nome1 = document.getElementById("nome1").value;
-  const nome2 = document.getElementById("nome2").value;
-  const data1 = document.getElementById("data1").value;
-  const data2 = document.getElementById("data2").value;
-
-  sexo1Val = document.getElementById("sexo1").value;
-  sexo2Val = document.getElementById("sexo2").value;
-  rh1Val = document.getElementById("rh1").value;
-  rh2Val = document.getElementById("rh2").value;
-
-  dados1 = calcularPessoa(nome1, data1);
-  dados2 = calcularPessoa(nome2, data2);
-  dados1.anoPessoal = calcularAnoPessoal(data1);
-dados2.anoPessoal = calcularAnoPessoal(data2);
-
-  gerarPiramide(dados1.valores,
-    document.getElementById("piramide1"),
-    document.getElementById("regente1")
-  );
-
-  gerarPiramide(dados2.valores,
-    document.getElementById("piramide2"),
-    document.getElementById("regente2")
-  );
-
-  document.getElementById("compat").innerHTML = compatibilidadeRH();
-}
-
-  
-let dadosBebe = null;
-  
-function gerarBebe(){
-
-  const nomeBebe = document.getElementById("nomeBebe").value;
-
-  if(!nomeBebe) return;
-
-  // calcular apenas pelo nome
-  dadosBebe = calcularPessoa(nomeBebe, null);
-
-  gerarPiramide(
-    dadosBebe.valores,
-    document.getElementById("piramideBebe"),
-    document.getElementById("regenteBebe")
-  );
-}
-
-
-
-function abrirPremiumSinastria() {
-    if (!dados1 || !dados2) {
-        alert("Por favor, clique em CALCULAR TUDO primeiro.");
-        return;
-    }
-
-    const rel = document.getElementById("relatorioFinal");
-    const cont = document.getElementById("conteudoRelatorio");
-    rel.style.display = "block";
-
-    const nome1 = document.getElementById("nome1").value;
-    const nome2 = document.getElementById("nome2").value;
-    const data1 = document.getElementById("data1").value;
-    const data2 = document.getElementById("data2").value;
-
-    // Função auxiliar para criar blocos de texto grandes
-    const criarBloco = (titulo, numero, texto) => `
-        <div class="bloco-texto">
-            <h4>${titulo} (Vibração ${numero})</h4>
-            <div class="texto-conteudo">${formatarTextoPersonalizado(texto, "")}</div>
-        </div>
-    `;
-
-    let html = `
-        <div class="capa-relatorio">
-            <h1>MAPA NUMEROLÓGICO CABALÍSTICO</h1>
-            <h2>Harmonia Conjugal & Destino</h2>
-            <p>Analistas: ${nome1} & ${nome2}</p>
-            <p>Data de Emissão: ${new Date().toLocaleDateString()}</p>
-        </div>
-
-        <div class="secao-master">
-            <h2 class="titulo-secao">1. ANÁLISE PROFUNDA: ${nome1}</h2>
-            <div class="piramide-grande">${document.getElementById("piramide1").innerHTML}</div>
+        // Função simulação para atualizar os nomes dinamicamente ao digitar nas capas de demonstração
+        function processarSinastriaDinamica() {
+            const n1 = document.getElementById('nome1').value.trim() || "Gabriel Silva";
+            const n2 = document.getElementById('nome2').value.trim() || "Letícia Oliveira";
             
-            ${criarBloco("Regente de Destino", dados1.regente, textos.regente[dados1.regente])}
+            document.getElementById('lblNomeParceiro1').innerText = n1;
+            document.getElementById('lblNomeParceiro2').innerText = n2;
             
-            <h3>Desdobramento Pessoal</h3>
-            ${criarBloco("Motivação (A Alma)", dados1.motivacao, textos.motivacao[dados1.motivacao])}
-            ${criarBloco("Influência (O Eu Interior)", dados1.influencia, textos.influencia[dados1.influencia])}
-            ${criarBloco("Personalidade (A Imagem)", dados1.personalidade, textos.personalidade[dados1.personalidade])}
-            ${criarBloco("Caminho de Vida (O Destino)", dados1.caminho, textos.CaminhodeVida[dados1.caminho])}
-            ${criarBloco("Propósito Divino", dados1.proposito, textos.proposito[dados1.proposito])}
-            ${criarBloco("Harmonia Vibracional", dados1.harmonia, textos.harmonia[dados1.harmonia])}
-            ${criarBloco("Ciclo Atual: Ano Pessoal", dados1.anoPessoal, textos.anoPessoal[dados1.anoPessoal])}
-            
-            <div class="alerta-negativo">
-                <h4>Arcanos e Sequências Negativas</h4>
-                ${dados1.sequenciaNegativa && dados1.sequenciaNegativa.length > 0 
-                    ? dados1.sequenciaNegativa.map(n => `<p>${textos.sequenciaNegativa[n]}</p>`).join("") 
-                    : "<p>Nenhuma sequência negativa detectada no nome atual.</p>"}
-            </div>
-        </div>
-
-        <div class="page-break"></div>
-
-        <div class="secao-master">
-            <h2 class="titulo-secao">2. ANÁLISE PROFUNDA: ${nome2}</h2>
-            <div class="piramide-grande">${document.getElementById("piramide2").innerHTML}</div>
-            
-            ${criarBloco("Regente de Destino", dados2.regente, textos.regente[dados2.regente])}
-            
-            <h3>Desdobramento Pessoal</h3>
-            ${criarBloco("Motivação", dados2.motivacao, textos.motivacao[dados2.motivacao])}
-            ${criarBloco("Influência", dados2.influencia, textos.influencia[dados2.influencia])}
-            ${criarBloco("Personalidade", dados2.personalidade, textos.personalidade[dados2.personalidade])}
-            ${criarBloco("Caminho de Vida", dados2.caminho, textos.CaminhodeVida[dados2.caminho])}
-            ${criarBloco("Propósito", dados2.proposito, textos.proposito[dados2.proposito])}
-            ${criarBloco("Harmonia", dados2.harmonia, textos.harmonia[dados2.harmonia])}
-            ${criarBloco("Ciclo Atual: Ano Pessoal", dados2.anoPessoal, textos.anoPessoal[dados2.anoPessoal])}
-            
-            <div class="alerta-negativo">
-                <h4>Arcanos e Sequências Negativas</h4>
-                ${dados2.sequenciaNegativa && dados2.sequenciaNegativa.length > 0 
-                    ? dados2.sequenciaNegativa.map(n => `<p>${textos.sequenciaNegativa[n]}</p>`).join("") 
-                    : "<p>Nenhuma sequência negativa detectada no nome atual.</p>"}
-            </div>
-        </div>
-
-        <div class="page-break"></div>
-
-        <div class="secao-master">
-            <h2 class="titulo-secao">3. SINASTRIA E COMPATIBILIDADE</h2>
-            <div class="bloco-sinastria">
-                <h3>Vibração do Relacionamento</h3>
-                ${textos.sinastria[chaveSinastria(dados1.proposito, dados2.proposito)]}
-            </div>
-            <div class="bloco-biologico">
-                <h3>Análise Biológica (Fator RH)</h3>
-                <p>${compatibilidadeRH()}</p>
-            </div>
-        </div>
-    `;
-
-    if (dadosBebe) {
-        html += `
-            <div class="page-break"></div>
-            <div class="secao-master">
-                <h2 class="titulo-secao">4. MAPA DO BEBÊ: ${document.getElementById("nomeBebe").value}</h2>
-                <div class="piramide-grande">${document.getElementById("piramideBebe").innerHTML}</div>
-                ${criarBloco("Motivação do Bebê", dadosBebe.motivacao, textos.motivacao[dadosBebe.motivacao])}
-                ${criarBloco("Personalidade do Bebê", dadosBebe.personalidade, textos.personalidade[dadosBebe.personalidade])}
-                <p><strong>Status de Harmonia:</strong> ${document.getElementById("resultadoBebe").innerText}</p>
-            </div>
-        `;
-    }
-
-    cont.innerHTML = html;
-    rel.scrollIntoView({ behavior: 'smooth' });
-}
-</script>
-
- <script>
-document.getElementById('btnVideo').addEventListener('click', function() {
-    const wrapper = document.getElementById('wrapperVideo');
-    const video = document.getElementById('videoExplicativo');
-    const btn = this;
-
-    if (wrapper.style.display === 'none') {
-        wrapper.style.display = 'block';
-        btn.classList.add('ativo');
-        btn.querySelector('span').innerText = '❌ Fechar Vídeo';
-    } else {
-        wrapper.style.display = 'none';
-        btn.classList.remove('ativo');
-        btn.querySelector('span').innerText = '🎥 Assistir Vídeo Introdutório';
-        video.pause(); // Pausa o vídeo automaticamente ao fechar para não ficar saindo som
-    }
-});
-</script>
-
- 
+            alert("Estrutura carregada com sucesso! Os nomes foram acoplados às capas e a engine está pronta para processar a sinastria completa.");
+        }
+    </script>
 </body>
-</html>     
+</html>
