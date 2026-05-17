@@ -347,15 +347,32 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
 /* =======================================================
    4. COMPORTAMENTO DE INTERFACE (TELA DO SISTEMA)
 /* =======================================================
-   4. COMPORTAMENTO DE INTERFACE (TELA DO SISTEMA)
+   REGRAS DE INTERFACE (TELA DO SISTEMA VS IMPRESSÃO)
    ======================================================= */
-/* Na tela (Relatório Web), mostramos o Player e ESCONDEMOS o Botão de Link */
+
+/* NA TELA (Celular ou PC): Esconde o botão dourado e mostra o player normal */
 .botao-pdf-link { 
     display: none !important; 
 }
 .player-relatorio { 
     display: flex !important; 
 }    
+
+/* NO PDF (Quando clica em Imprimir/Salvar): Inverte tudo */
+@media print {
+    /* Esconde as coisas do site para não saírem no PDF */
+    .header, .container, .grid-pessoa, .main-actions, #compat, .modal, #botoes-pdf-direto, button {
+        display: none !important;
+    }
+    
+    /* No papel, some com o player de áudio e força o botão de download a APARECER */
+    .player-relatorio { 
+        display: none !important; 
+    }
+    .botao-pdf-link { 
+        display: flex !important; 
+    }
+}
 
 :focus { outline: none !important; }
 a, img, audio { border: none !important; outline: none !important; text-decoration: none !important; }
@@ -817,10 +834,6 @@ function criarCapaTransicao(titulo, subtitulo, rodape, audio1Url, nomeAudio1, au
             max-height: 297mm; 
             background-color: #310612 !important; 
             border: 4px solid #4a0d1d; 
-            display: flex !important; 
-            flex-direction: column !important; 
-            justify-content: space-between !important; 
-            align-items: center !important;
             page-break-after: always !important;
             box-sizing: border-box !important;
             position: relative;
@@ -878,7 +891,7 @@ function criarCapaTransicao(titulo, subtitulo, rodape, audio1Url, nomeAudio1, au
         </p>
     </div>
     `;
-} 
+}
 
     
 
@@ -1207,27 +1220,28 @@ relatorioHTML += criarCapaTransicao(
       `;
   }
  
-// 4. INJEÇÃO NO MODAL FLUTUANTE (Evita quebras de layout na página principal)
-  let modalJanela = document.getElementById("modal-pdf-flutuante");
-  if (!modalJanela) {
-      modalJanela = document.createElement("div");
-      modalJanela.id = "modal-pdf-flutuante";
-      modalJanela.style.cssText = "position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:10000; display:flex; flex-direction:column; align-items:center; padding:20px; box-sizing:border-box;";
-      
-modalJanela.innerHTML = `
-          <div id="botoes-modal-pdf" style="display:flex; gap:15px; margin-bottom:15px; z-index:10001;">
-              <button onclick="window.print()" style="background:linear-gradient(135deg, #002091 0%, #00104a 100%); color:white; padding:12px 25px; font-weight:bold; border-radius:30px; font-size:14px; cursor:pointer; box-shadow:0 4px 15px rgba(0,32,145,0.4);">📥 BAIXAR MAPA PREMIUM (PDF)</button>
-              <button onclick="document.getElementById('modal-pdf-flutuante').style.display='none'" style="background:#ff3b5c; color:white; padding:12px 20px; font-weight:bold; border-radius:30px; font-size:14px; cursor:pointer;">❌ FECHAR</button>
-          </div>
-          <div id="conteudo-pdf-rolavel" style="width:100%; flex-grow:1; overflow-y:auto; display:flex; flex-direction:column; align-items:center; padding-bottom:40px;"></div>
-      `;
-      document.body.appendChild(modalJanela);
-  }
+// =============================================================
+  // INJEÇÃO DIRETA NA PÁGINA (SEM MODAL FLUTUANTE PARA NÃO QUEBRAR O CELULAR)
+  // =============================================================
+  
+  // 1. Pega a área que já existe estruturada na sua página para receber o PDF
+  const areaPDF = document.getElementById("area-pdf-local");
+  
+  // 2. Joga os botões e o conteúdo do relatório direto nela de forma fluida
+  areaPDF.innerHTML = `
+      <div id="botoes-pdf-direto" style="display: flex; justify-content: center; gap: 15px; margin: 30px 0; width: 100%;">
+          <button onclick="window.print()" style="background: linear-gradient(135deg, #002091 0%, #00104a 100%); color: white; padding: 14px 30px; font-weight: bold; border-radius: 30px; font-size: 15px; cursor: pointer; box-shadow: 0 4px 15px rgba(0,32,145,0.4); text-transform: uppercase;">📥 IMPRIMIR / BAIXAR MAPA PREMIUM (PDF)</button>
+          <button onclick="document.getElementById('area-pdf-local').innerHTML = ''" style="background: #ff3b5c; color: white; padding: 14px 25px; font-weight: bold; border-radius: 30px; font-size: 15px; cursor: pointer; text-transform: uppercase;">❌ LIMPAR TELA</button>
+      </div>
+      <div id="conteudo-pdf-rolavel" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+          ${relatorioHTML}
+      </div>
+  `;
 
-  // Alimenta o miolo do visualizador e abre o popup
-  document.getElementById("conteudo-pdf-rolavel").innerHTML = relatorioHTML;
-  modalJanela.style.display = "flex";
-}
+  // 3. Joga a tela do usuário suavemente até o início do relatório gerado
+  areaPDF.scrollIntoView({ behavior: 'smooth' });
+} // Fim da função abrirPremiumSinastria
+
 
           document.oncontextmenu=()=>false;
 document.onselectstart=()=>false; 
