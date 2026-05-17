@@ -779,7 +779,10 @@ function abrirPremiumSinastria(){
   const dataHoje = new Date().toLocaleDateString('pt-BR');
 
   // 1. MONTAGEM COMPLETA DAS DUAS CAPAS DIRETAMENTE NO JAVASCRIPT
-let capaPrincipalHTML = `
+
+   let relatorioHTML = "";
+    
+ relatorioHTML = `
     <div class="pag-a4 capa-sinastria-premium" style="
             width: 210mm; 
             height: 297mm; 
