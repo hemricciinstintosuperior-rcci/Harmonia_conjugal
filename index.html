@@ -783,21 +783,20 @@ function abrirModalTexto(texto){
   document.getElementById("modal").style.display="block";
 }
 
-function formatarTextoPersonalizado(texto, nomeCompleto) {
-  if (!texto) return "";
-  
-  // Extrai apenas o primeiro nome, remove espaços e corrige maiúsculas/minúsculas
-  let primeiroNome = nomeCompleto.trim().split(' ')[0];
-  if (primeiroNome) {
-      primeiroNome = primeiroNome.charAt(0).toUpperCase() + primeiroNome.slice(1).toLowerCase();
-  } else {
-      primeiroNome = "Você";
-  }
-
-  // Substitui "você" ou "Você" pelo nome em negrito
-  let t = texto;
-  t = t.replace(/você/gi, `<strong>${primeiroNome}</strong>`);
-  return t;
+function formatarTextoPersonalizado(texto, nome) {
+    if (!texto) return "";
+    
+    // Garante que o texto seja tratado como string limpa
+    let textoLimpo = String(texto);
+    
+    // 1. Substitui "você" com espaços ou variações isoladas por uma tag inline blindada
+    textoLimpo = textoLimpo.replace(/você/gi, ` <strong style="display: inline !important; color: #6B0202; font-weight: 600;">${nome}</strong> `);
+    textoLimpo = textoLimpo.replace(/voce/gi, ` <strong style="display: inline !important; color: #6B0202; font-weight: 600;">${nome}</strong> `);
+    
+    // 2. Remove possíveis espaços duplos criados na substituição
+    textoLimpo = textoLimpo.replace(/\s+/g, " ");
+    
+    return textoLimpo;
 }
 
 function abrirModal(tipo) {
