@@ -391,7 +391,19 @@ audio::-webkit-media-controls-enclosure { overflow: hidden !important; }
 audio::-webkit-media-controls-panel { width: calc(100% + 30px) !important; }
 audio { pointer-events: auto; -webkit-touch-callout: none; }
 
+/* Na tela (Relatório), mostramos o Player e escondemos o Botão de Link */
+.botao-pdf-link { display: none !important; }
+.player-relatorio { display: flex !important; }
 
+/* No PDF (Impressão), invertemos tudo */
+@media print {
+    .botao-pdf-link { display: flex !important; }
+    .player-relatorio { display: none !important; }
+    
+    /* Garante que o fundo da capa não suma no PDF */
+    .capa-transicao { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+    
      
 </style>
 </head>
