@@ -109,6 +109,7 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
         margin-top: 50px;
     }
 
+    /* CAPAS: Mantêm o tamanho fixo padrão A4 na tela */
     .pag-a4 {
         width: 100%;
         max-width: 210mm;
@@ -120,10 +121,12 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
     }
 
+    /* MIOLOS DE TEXTO: Livres para crescer caso o texto seja gigante */
     .bloco-texto-pdf {
         width: 100%;
         max-width: 210mm;
-        height: 297mm;
+        height: auto !important; /* MUDANÇA CIRÚRGICA: Libera o crescimento do container pai */
+        min-height: 297mm;       /* Mantém pelo menos o tamanho de uma folha A4 */
         background: #ffffff !important;
         color: #111111 !important;
         box-sizing: border-box;
@@ -131,7 +134,7 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
         margin: 0 auto 40px auto;
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
         position: relative;
-        overflow: hidden;
+        overflow: visible !important; /* MUDANÇA CIRÚRGICA: Permite ver o texto que passa */
         display: block;
     }
 
@@ -209,8 +212,8 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
         #area-pdf-local { margin-top: 0 !important; }
         #conteudo-pdf-rolavel { display: block !important; width: 210mm !important; }
 
-        /* Trava o tamanho A4 real sem nenhuma interferência */
-        .pag-a4, .bloco-texto-pdf {
+        /* CAPAS IMPRESSAS: Mantêm rigidez absoluta em 297mm (Não quebram) */
+        .pag-a4 {
             width: 210mm !important;
             height: 297mm !important; 
             min-height: 297mm !important;
@@ -221,26 +224,42 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
             box-shadow: none !important;
             page-break-before: always !important;
             page-break-after: always !important;
-            page-break-inside: avoid !important;
+            page-break-inside: avoid !important; /* Protege a capa */
             box-sizing: border-box !important;
+        }
+
+        /* MIOLOS IMPRESSOS: Totalmente dinâmicos. Se o texto passar, gera nova folha! */
+        .bloco-texto-pdf {
+            width: 210mm !important;
+            height: auto !important;       /* MUDANÇA CIRÚRGICA: Libera o motor do PDF */
+            min-height: 297mm !important;   /* Ocupa no mínimo uma folha inteira */
+            max-height: none !important;    /* Libera limite máximo */
+            margin: 0 !important;
+            border: none !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            page-break-before: always !important;
+            page-break-after: always !important;
+            page-break-inside: auto !important; /* MUDANÇA CIRÚRGICA: Permite quebra natural */
+            box-sizing: border-box !important;
+            padding: 25mm 20mm !important; 
+            display: block !important;       /* Garante fluxo contínuo de cima para baixo */
+            overflow: visible !important;
+        }
+
+        /* Evita que uma caixinha vermelha de sequência se rompa feio ao meio na virada de página */
+        .bloco-texto-pdf div, .bloco-texto-pdf h2, .bloco-texto-pdf h3 {
+            page-break-inside: avoid !important;
         }
 
         .pag-a4:first-child {
             page-break-before: avoid !important;
         }
 
-        /* Garante que o fundo escuro ocupe os 297mm inteiros no PDF */
         .pag-a4 {
             background: radial-gradient(circle, #2d0713 0%, #110106 100%) !important;
             -webkit-print-color-adjust: exact !important; 
             print-color-adjust: exact !important; 
-        }
-
-        .bloco-texto-pdf {
-            background: #ffffff !important;
-            padding: 25mm 20mm !important; 
-            display: flex !important;
-            flex-direction: column !important;
         }
 
         .bloco-texto-pdf *, .texto-cabalistico-pdf {
@@ -258,7 +277,6 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
     /* =======================================================
        4. COMPORTAMENTO RESPONSIVO EXCLUSIVO PARA O CELULAR (TELA)
        ======================================================= */
-    /* MUDANÇA CHAVE: Adicionado 'screen' para o celular não quebrar o PDF */
     @media screen and (max-width: 768px) {
         .pag-a4, .bloco-texto-pdf {
             width: 100% !important;
