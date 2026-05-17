@@ -106,7 +106,6 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
         margin-top: 50px;
     }
 
-    /* Páginas escuras (Capas) */
     .pag-a4 {
         width: 210mm;
         height: 297mm;
@@ -119,7 +118,6 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
     }
 
-    /* Páginas brancas (Miolo de Texto) */
     .bloco-texto-pdf {
         width: 210mm;
         height: 297mm;
@@ -136,7 +134,6 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
         display: block;
     }
 
-    /* Estilização interna do texto do relatório */
     .titulo-secao-pdf {
         font-family: 'Cinzel', serif; 
         color: #6B0202; 
@@ -184,7 +181,7 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
     }
 
     /* =======================================================
-       3. A VERDADEIRA ENGENHARIA DE IMPRESSÃO (ÚNICA E FIXA)
+       3. A VERDADEIRA ENGENHARIA DE IMPRESSÃO (CORRIGIDA)
        ======================================================= */
     @media print {
         /* Esconde elementos do portal web */
@@ -193,17 +190,23 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
         }
 
         /* Exibe estritamente a área do PDF */
-        #area-pdf-local, #area-pdf-local * {
+        #area-pdf-local {
             display: block !important;
         }
 
-        /* Mantém o comportamento de centralização perfeito apenas para as capas */
+        /* Correção do bug do asterisco: Força as capas a manterem o Flexbox Real */
         #area-pdf-local .capa-sinastria-premium,
         #area-pdf-local .capa-transicao-amor {
             display: flex !important;
             flex-direction: column !important;
             justify-content: space-between !important;
             align-items: center !important;
+            padding: 40px 50px 30px 50px !important; /* Respiro de segurança na base */
+        }
+
+        /* Zera margens das tags internas para evitar pulos fantasmas */
+        .capa-sinastria-premium *, .capa-transicao-amor * {
+            margin: 0;
         }
 
         /* Configura a folha física A4 do navegador */
@@ -220,7 +223,7 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
             print-color-adjust: exact !important;
         }
 
-        /* Força todas as folhas do PDF a respeitarem o tamanho físico exato */
+        /* Fixação milimétrica das folhas físicas */
         .pag-a4, .bloco-texto-pdf {
             width: 210mm !important;
             height: 297mm !important; 
@@ -241,10 +244,11 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
             page-break-before: avoid !important;
         }
 
-        /* Garante fundo branco e fontes legíveis no miolo impresso */
+        /* Miolo impresso limpo */
         .bloco-texto-pdf {
             background: #ffffff !important;
             padding: 25mm 20mm !important;
+            display: block !important;
         }
 
         .bloco-texto-pdf *, .texto-cabalistico-pdf {
