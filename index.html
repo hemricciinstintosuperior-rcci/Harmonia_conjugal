@@ -1062,7 +1062,22 @@ function abrirPremiumSinastria(){
     return;
   }
 
+  // 🔥 ADIÇÃO DO CÁLCULO AUTOMÁTICO DO BEBÊ SE O CAMPO ESTIVER PREENCHIDO
+  const nomeBebeInput = document.getElementById("nomeBebe").value;
+  if (nomeBebeInput && !dadosBebe) {
+      // Se digitou o nome do bebê mas não clicou no botão da tela, calcula aqui direto
+      dadosBebe = calcularPessoa(nomeBebeInput, null);
+      
+      // Monta uma estrutura de pirâmide fantasma só para puxar as sequências negativas e o regente
+      let divFakeP = document.createElement("div");
+      let divFakeR = document.createElement("div");
+      divFakeR.id = "regenteBebe";
+      gerarPiramide(dadosBebe.valores, divFakeP, divFakeR);
+  }
+
   const dataHoje = new Date().toLocaleDateString('pt-BR');
+  
+  // ... o resto do seu código (let relatorioHTML = ...) continua idêntico aqui para baixo
 
   // 1. MONTAGEM COMPLETA DAS DUAS CAPAS DIRETAMENTE NO JAVASCRIPT
 
