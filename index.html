@@ -330,29 +330,33 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
 
 
 
-/* Estilo para o número da página no PDF */
+/* =======================================================
+   SISTEMA DE NUMERAÇÃO DE PÁGINAS ATUALIZADO
+   ======================================================= */
 .page-footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    font-size: 10pt;
-    color: #827108;
     display: none; /* Esconde na tela do sistema */
 }
 
 @media print {
-    .page-footer {
-        display: block; /* Mostra apenas no PDF/Impressão */
-        position: fixed;
-        bottom: 10mm;
-        right: 10mm;
-    }
-
-    /* Truque para o contador de páginas funcionar no corpo */
+    /* Reinicia o contador no início do documento */
     body {
         counter-reset: page;
     }
-    
+
+    /* Cria um rodapé fixo que o navegador vai repetir em TODAS as páginas */
+    .page-footer {
+        display: block !important;
+        position: fixed !important;
+        bottom: 10mm !important;
+        right: 15mm !important;
+        font-family: 'Cinzel', serif !important;
+        font-size: 10pt !important;
+        color: #827108 !important;
+        font-weight: bold !important;
+        z-index: 9999 !important;
+    }
+
+    /* Faz a mágica de contar as páginas automaticamente */
     .page-number::after {
         counter-increment: page;
         content: "Página " counter(page);
@@ -1062,7 +1066,11 @@ function abrirPremiumSinastria(){
 
   // 1. MONTAGEM COMPLETA DAS DUAS CAPAS DIRETAMENTE NO JAVASCRIPT
 
-   let relatorioHTML = "";
+ // 1. MONTAGEM COMPLETA DAS DUAS CAPAS DIRETAMENTE NO JAVASCRIPT
+  // Injeta o elemento fixo que vai gerar o contador de páginas em todas as folhas
+  let relatorioHTML = `<div class="page-footer"><span class="page-number"></span></div>`;
+    
+
     
 relatorioHTML = `
     <div class="pag-a4 capa-sinastria-premium" style="
