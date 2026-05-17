@@ -857,117 +857,96 @@ function abrirPremiumSinastria(){
     return;
   }
 
-  // 1. CAPTURA AS DUAS CAPAS DO SEU HTML
+  // 1. Pega as suas duas capas originais do HTML
   const capaPrincipalHTML = document.querySelector('.capa-sinastria-premium').outerHTML;
   const capaTransicaoHTML = document.querySelector('.capa-transicao-amor').outerHTML;
 
   let relatorioHTML = "";
-
-  // Joga as capas para o topo do documento
   relatorioHTML += capaPrincipalHTML;
   relatorioHTML += capaTransicaoHTML;
 
-  // 2. FUNÇÃO INTERNA PARA GERAR CADA BLOCO DE TEXTO LIMPO E SEM QUEBRA
-  function criarPaginaConteudo(tituloParte, subtitulo1, texto1, subtitulo2, texto2) {
+  // 2. FUNÇÃO ISOLADA QUE LIMPA AS TABELAS DO TEXTOS.JS E CORRIGE O BUG DO NOME
+  function extrairETratarTexto(textoBruto, nomeParceiro) {
+    if (!textoBruto) return "";
+    
+    // Cria um elemento temporário para sugar apenas o texto limpo, eliminando tabelas fantasmas
+    const divTemporaria = document.createElement("div");
+    divTemporaria.innerHTML = textoBruto;
+    
+    // Pega só as palavras, ignorando tr, td e estruturas que esmagavam o PDF
+    let textoPuro = divTemporaria.textContent || divTemporaria.innerText || "";
+    
+    // Substitui a palavra "você" pelo nome com segurança usando Regex
+    textoPuro = textoPuro.replace(/você/gi, ` <strong>${nomeParceiro}</strong> `);
+    textoPuro = textoPuro.replace(/voce/gi, ` <strong>${nomeParceiro}</strong> `);
+    
+    return `<p style="color: #222222 !important; font-size: 14px !important; line-height: 1.6 !important; text-align: justify !important; margin-bottom: 15px !important; display: block !important; width: 100% !important;">${textoPuro}</p>`;
+  }
+
+  // INTERCALADOR DE CONTEÚDO (Gera páginas brancas com texto corrido padrão livro)
+  function gerarFolhaConteudo(titulo, sub1, txt1, sub2, txt2) {
     return `
-      <div class="pag-a4 bloco-texto-pdf">
-          <h2 class="titulo-secao-pdf">${tituloParte}</h2>
+      <div class="bloco-conteudo-pdf-limpo" style="width: 210mm; height: 296mm; background: #ffffff !important; padding: 30mm 20mm; box-sizing: border-box; page-break-after: always; page-break-inside: avoid; display: block; clear: both;">
+          <h2 style="font-family: 'Cinzel', serif; color: #6B0202; text-align: center; margin-bottom: 30px; border-bottom: 2px solid #d49a9a; padding-bottom: 10px; font-size: 20px; text-transform: uppercase;">${titulo}</h2>
           
-          <h3 class="subtitulo-pessoa-pdf">${subtitulo1}</h3>
-          <div class="texto-cabalistico-pdf">${formatarTextoPersonalizado(texto1, social1)}</div>
+          <h3 style="color: #8a1c32; font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px; font-weight: 600; text-transform: uppercase;">${sub1}</h3>
+          <div style="display: block; width: 100%; text-align: justify;">${extrairETratarTexto(txt1, social1)}</div>
           
-          <div class="divisor-pdf"></div>
+          <div style="width: 100%; height: 1px; background: linear-gradient(to right, transparent, #d49a9a, transparent); margin: 25px 0;"></div>
           
-          <h3 class="subtitulo-pessoa-pdf">${subtitulo2}</h3>
-          <div class="texto-cabalistico-pdf">${formatarTextoPersonalizado(texto2, social2)}</div>
+          <h3 style="color: #8a1c32; font-family: 'Poppins', sans-serif; font-size: 14px; margin-bottom: 10px; font-weight: 600; text-transform: uppercase;">${sub2}</h3>
+          <div style="display: block; width: 100%; text-align: justify;">${extrairETratarTexto(txt2, social2)}</div>
       </div>
     `;
   }
 
-  // 3. SEÇÃO DE INJEÇÃO EM SÉRIE (TODOS OS PILARES SOLICITADOS)
-  
-  // PARTE 1: MOTIVAÇÃO DA ALMA
-  relatorioHTML += criarPaginaConteudo(
-    "PARTE 1: MOTIVAÇÃO DA ALMA",
-    `O Desejo Íntimo de ${social1} (Número ${dados1.motivacao})`, textos.motivacao[dados1.motivacao],
-    `O Desejo Íntimo de ${social2} (Número ${dados2.motivacao})`, textos.motivacao[dados2.motivacao]
-  );
+  // 3. MONTAGEM DAS PÁGINAS SEM CONFLITO DE CLASSE
+  relatorioHTML += gerarFolhaConteudo("PARTE 1: MOTIVAÇÃO DA ALMA", `O Desejo Íntimo de ${social1}`, textos.motivacao[dados1.motivacao], `O Desejo Íntimo de ${social2}`, textos.motivacao[dados2.motivacao]);
+  relatorioHTML += gerarFolhaConteudo("PARTE 2: INFLUÊNCIA & IMPRESSÃO", `A Influência de ${social1}`, textos.influencia[dados1.influencia], `A Influência de ${social2}`, textos.influencia[dados2.influencia]);
+  relatorioHTML += gerarFolhaConteudo("PARTE 3: EXPRESSÃO & PERSONALIDADE", `A Expressão de ${social1}`, textos.personalidade[dados1.personalidade], `A Expressão de ${social2}`, textos.personalidade[dados2.personalidade]);
+  relatorioHTML += gerarFolhaConteudo("PARTE 4: CAMINHO DE VIDA", `A Estrada de ${social1}`, textos.CaminhodeVida[dados1.caminho], `A Estrada de ${social2}`, textos.CaminhodeVida[dados2.caminho]);
+  relatorioHTML += gerarFolhaConteudo("PARTE 5: PROPÓSITO EXISTENCIAL", `O Propósito de ${social1}`, textos.proposito[dados1.proposito], `O Propósito de ${social2}`, textos.proposito[dados2.proposito]);
+  relatorioHTML += gerarFolhaConteudo("PARTE 6: CICLO ANUAL", `Ano Pessoal de ${social1}`, textos.anoPessoal[dados1.anoPessoal], `Ano Pessoal de ${social2}`, textos.anoPessoal[dados2.anoPessoal]);
 
-  // PARTE 2: INFLUÊNCIA / IMPRESSÃO
-  relatorioHTML += criarPaginaConteudo(
-    "PARTE 2: INFLUÊNCIA & IMPRESSÃO",
-    `A Vibração de Influência de ${social1} (Número ${dados1.influencia})`, textos.influencia[dados1.influencia],
-    `A Vibração de Influência de ${social2} (Número ${dados2.influencia})`, textos.influencia[dados2.influencia]
-  );
-
-  // PARTE 3: EXPRESSÃO & PERSONALIDADE
-  relatorioHTML += criarPaginaConteudo(
-    "PARTE 3: EXPRESSÃO & PERSONALIDADE",
-    `A Expressão de ${social1} (Número ${dados1.personalidade})`, textos.personalidade[dados1.personalidade],
-    `A Expressão de ${social2} (Número ${dados2.personalidade})`, textos.personalidade[dados2.personalidade]
-  );
-
-  // PARTE 4: CAMINHO DE VIDA & JORNADA
-  relatorioHTML += criarPaginaConteudo(
-    "PARTE 4: CAMINHO DE VIDA & JORNADA",
-    `A Estrada de Destino de ${social1} (Número ${dados1.caminho})`, textos.CaminhodeVida[dados1.caminho],
-    `A Estrada de Destino de ${social2} (Número ${dados2.caminho})`, textos.CaminhodeVida[dados2.caminho]
-  );
-
-  // PARTE 5: PROPÓSITO EXECUTIVO
-  relatorioHTML += criarPaginaConteudo(
-    "PARTE 5: PROPÓSITO EXISTENCIAL",
-    `O Grande Propósito de ${social1} (Número ${dados1.proposito})`, textos.proposito[dados1.proposito],
-    `O Grande Propósito de ${social2} (Número ${dados2.proposito})`, textos.proposito[dados2.proposito]
-  );
-
-  // PARTE 6: ANO PESSOAL ATUAL
-  relatorioHTML += criarPaginaConteudo(
-    "PARTE 6: CICLO ANUAL (ANO PESSOAL)",
-    `O Ano Pessoal de ${social1} (Vibrando no Número ${dados1.anoPessoal})`, textos.anoPessoal[dados1.anoPessoal],
-    `O Ano Pessoal de ${social2} (Vibrando no Número ${dados2.anoPessoal})`, textos.anoPessoal[dados2.anoPessoal]
-  );
-
-  // PARTE 7: SINASTRIA CONJUGAL REAL (O Cruzamento dos Destinos)
+  // SINASTRIA CONJUGAL FINAL
   const energia1 = dados1.proposito;
   const energia2 = dados2.proposito;
   const chave = chaveSinastria(energia1, energia2);
-  let textoCombinado = textos.sinastria[chave] || `A combinação entre o relacionamento de Energia ${energia1} e Energia ${energia2}.`;
+  let textoCombinado = textos.sinastria[chave] || "";
+
+  // Limpa tabela da sinastria também antes de trocar nomes
+  const divTempSin = document.createElement("div");
+  divTempSin.innerHTML = textoCombinado;
+  let textoSinastriaPuro = divTempSin.textContent || divTempSin.innerText || "";
 
   const menor = Math.min(energia1, energia2);
   const maior = Math.max(energia1, energia2);
   const nomeMenor = (energia1 === menor) ? social1 : social2;
   const nomeMaior = (energia1 === maior) ? social1 : social2;
 
-  textoCombinado = textoCombinado.replaceAll(`Energia ${menor}`, `<strong>${nomeMenor}</strong>`)
-                                 .replaceAll(`Energia ${maior}`, `<strong>${nomeMaior}</strong>`)
-                                 .replaceAll(`número ${menor}`, `<strong>${nomeMenor}</strong>`)
-                                 .replaceAll(`número ${maior}`, `<strong>${nomeMaior}</strong>`)
-                                 .replaceAll(`Número ${menor}`, `<strong>${nomeMenor}</strong>`)
-                                 .replaceAll(`Número ${maior}`, `<strong>${nomeMaior}</strong>`);
+  textoSinastriaPuro = textoSinastriaPuro.replaceAll(`Energia ${menor}`, nomeMenor)
+                                         .replaceAll(`Energia ${maior}`, nomeMaior)
+                                         .replaceAll(`Número ${menor}`, nomeMenor)
+                                         .replaceAll(`Número ${maior}`, nomeMaior);
 
   relatorioHTML += `
-    <div class="pag-a4 bloco-texto-pdf">
-        <h2 class="titulo-secao-pdf">PARTE 7: HARMONIA CONJUGAL & SINASTRIA</h2>
-        <h3 style="color: #8a1c32; font-family: 'Cinzel', serif; font-size: 16px; margin-bottom: 20px; text-align: center; width:100%;">
-            A Alquimia Sagrada entre ${social1} e ${social2}
-        </h3>
-        <div class="texto-cabalistico-pdf" style="margin-top: 10px;">
-            ${textoCombinado}
-        </div>
+    <div style="width: 210mm; height: 296mm; background: #ffffff !important; padding: 30mm 20mm; box-sizing: border-box; page-break-after: always; page-break-inside: avoid; display: block; clear: both;">
+        <h2 style="font-family: 'Cinzel', serif; color: #6B0202; text-align: center; margin-bottom: 30px; border-bottom: 2px solid #d49a9a; padding-bottom: 10px; font-size: 20px; text-transform: uppercase;">PARTE 7: SINASTRIA & UNIÃO</h2>
+        <h3 style="color: #8a1c32; font-family: 'Cinzel', serif; font-size: 16px; margin-bottom: 20px; text-align: center; width:100%;">A Alquimia entre ${social1} e ${social2}</h3>
+        <p style="color: #222222 !important; font-size: 14px !important; line-height: 1.6 !important; text-align: justify !important; display: block; width: 100%;">${textoSinastriaPuro}</p>
     </div>
   `;
 
-  // 4. EMBUTE TUDO NA ÁREA LOCAL E TRATA OS IDS DA CAPA REINJETADA
+  // 4. Injeta tudo na área do PDF
   const areaPDF = document.getElementById("area-pdf-local");
   areaPDF.innerHTML = relatorioHTML;
 
+  // Re-alimenta as variáveis da capa que foi reinjetada
   document.getElementById("pdf-nome-p1").innerText = social1;
   document.getElementById("pdf-nome-p2").innerText = social2;
-  const hoje = new Date();
-  document.getElementById("pdf-data-emissao").innerText = hoje.toLocaleDateString('pt-BR');
+  document.getElementById("pdf-data-emissao").innerText = new Date().toLocaleDateString('pt-BR');
 
-  // 5. AGUARDA A RENDERIZAÇÃO E ATIVA O COMANDO DE IMPRESSÃO DO NAVEGADOR
+  // 5. Dispara o Print
   setTimeout(() => {
       window.print();
   }, 400);
