@@ -697,6 +697,65 @@ function abrirPremiumSinastria(){
         <p style="font-size: 9px; color: #ffffff; letter-spacing: 2px; text-transform: uppercase; opacity: 0.5;">Instinto Superior • Engenharia do Amor</p>
     </div>`;
 
+
+    // --- PÁGINA 2: SUMÁRIO EXECUTIVO PREMIUM ---
+relatorioHTML += `
+<div class="pag-a4" style="
+    background: radial-gradient(circle, #2d0713 0%, #110106 100%) !important; 
+    border: 4px solid #a6843c; 
+    display: flex !important; 
+    flex-direction: column !important; 
+    align-items: center !important; 
+    justify-content: flex-start !important; 
+    padding: 60px 40px !important; 
+    box-sizing: border-box !important; 
+    page-break-after: always !important;
+    position: relative;
+    overflow: hidden !important;">
+
+    <div style="position: absolute; top: 15px; left: 15px; width: 30px; height: 30px; border-top: 2px solid #a6843c; border-left: 2px solid #a6843c;"></div>
+    <div style="position: absolute; top: 15px; right: 15px; width: 30px; height: 30px; border-top: 2px solid #a6843c; border-right: 2px solid #a6843c;"></div>
+
+    <div style="text-align: center; margin-bottom: 30px;">
+        <h2 style="font-family: 'Cinzel', serif; color: #fff; font-size: 22px; letter-spacing: 5px; text-transform: uppercase; margin: 0; font-weight: 700;">
+            Sumário Executivo
+        </h2>
+        <div style="width: 60px; height: 1px; background: #a6843c; margin: 10px auto;"></div>
+        <p style="font-family: 'Poppins', sans-serif; color: #d49a9a; font-size: 10px; text-transform: uppercase; letter-spacing: 3px;">Roteiro da Jornada Vibracional</p>
+    </div>
+
+    <div style="width: 100%; max-width: 900px; display: flex; flex-direction: column; gap: 15px;">
+        ${[
+            { t: "Introdução", c: "Instinto Superior ✶ Engenharia da Vida ✶ Direcionamento de Jornada"},
+            { t: "Parte 1: Performance Natural", c: "Planos de Expressão ✶ Gráficos de Potenciais"},
+            { t: "Parte 2: Essência e Identidade", c: "Motivação ✶ Influência ✶ Personalidade ✶ Pilar de Equilíbrio"},
+            { t: "Parte 3: Alinhamento e Desafios",   c: "Mecanismo do Subconsciente ✶ Desafio Principal"},
+            { t: "Parte 4: Finalidade e Realização", c: " Caminho de Vida ✶ Propósito ✶ Direcionamento Profissional"},
+            { t: "Parte 5: Complementares", c: " Relacionamento ✶ Cores Favoráveis ✶ Números Harmônicos"}, 
+            { t: "Parte 6: Ciclos de Vida", c: "Ciclos de Vida ✶ Momentos de Decisão ✶ Desafios de Jornada"},
+            { t: "Parte 7: Tendências do Momento", c: "Ano Pessoal ✶ Mês Pessoal ✶ Potenciais Atuais"},
+            { t: "Parte 8: A Grande Matriz", c: "Pirâmide Invertida ✶ Sequências Numéricas ✶ Arcanos"},
+            { t: "Parte 9: Filosofia e Ciência", c: "Conclusão Evolutiva ✶ Agradecimento"}
+        ].map((item, index) => `
+            <div style="display: flex; flex-direction: column; align-items: center; border-bottom: 1px solid rgba(166, 132, 60, 0.15); padding-bottom: 8px;">
+                <h3 style="font-family: 'Cinzel', serif; color: #ffd700; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; margin: 0 0 3px 0; font-weight: 600;">
+                   <span style="color: #a6843c; margin-right: 5px;">${index + 1}.</span> ${item.t}
+                </h3>
+                <p style="font-family: 'Poppins', sans-serif; color: #fff; opacity: 0.8; font-size: 10px; margin: 0; line-height: 1.2; text-align: center; font-weight: 300;">
+                    ${item.c}
+                </p>
+            </div>
+        `).join('')}
+    </div>
+    
+    <div style="margin-top: auto; text-align: center; padding-bottom: 20px;">
+        <p style="font-family: 'Cinzel', serif; color: #a6843c; letter-spacing: 4px; font-size: 9px; text-transform: uppercase; margin: 0;">
+            Instinto Superior • Engenharia do Amor
+        </p>
+    </div>
+</div>
+`;
+
   function extrairETratarTexto(textoBruto, nomeParceiro) {
     if (!textoBruto) return "";
     const div = document.createElement("div"); div.innerHTML = textoBruto;
