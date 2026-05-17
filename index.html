@@ -630,6 +630,46 @@ function formatarTextoPersonalizado(texto, nome) {
     return textoLimpo;
 }
 
+
+function criarCapaTransicao(titulo, subtitulo, rodape) {
+    return `
+    <div class="pag-a4 capa-transicao-amor" style="
+            width: 210mm; 
+            height: 297mm; 
+            max-height: 297mm; 
+            background-color: #310612 !important; 
+            border: 4px solid #4a0d1d; 
+            display: flex !important; 
+            flex-direction: column !important; 
+            justify-content: space-between !important; 
+            align-items: center !important;
+            page-break-after: always !important;
+            box-sizing: border-box !important;
+            position: relative;
+            padding: 50px;
+            overflow: hidden !important;
+            -webkit-print-color-adjust: exact !important;
+        ">
+        
+        <div style="text-align: center; margin-top: 20px;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 24px; color: #fff; text-transform: uppercase; letter-spacing: 3px; line-height: 1.5;">
+                ${titulo}<br>
+                <span style="color: #c39b9b; font-size: 14px; display: block; margin-top: 10px; letter-spacing: 5px;">${subtitulo}</span>
+            </h2>
+        </div>
+
+        <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+             style="width: 220px; height: 220px; max-height: 220px; object-fit: cover; display: block; margin: 0 auto; border-radius: 50%; border: 3px solid rgba(195,155,155,0.2); filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.5));">
+
+        <p style="font-size: 9px; color: #ffffff; letter-spacing: 2px; text-transform: uppercase; opacity: 0.6; margin-bottom: 20px; text-align: center; line-height: 1.4;">
+            ${rodape}
+        </p>
+    </div>
+    `;
+}    
+
+    
+
 function abrirModal(tipo) {
   let textoBase = "";
   let nomePessoa = "";
@@ -739,7 +779,7 @@ function abrirPremiumSinastria(){
   const dataHoje = new Date().toLocaleDateString('pt-BR');
 
   // 1. MONTAGEM COMPLETA DAS DUAS CAPAS DIRETAMENTE NO JAVASCRIPT
-  let relatorioHTML = `
+let capaPrincipalHTML = `
     <div class="pag-a4 capa-sinastria-premium" style="
             width: 210mm; 
             height: 297mm; 
@@ -753,79 +793,48 @@ function abrirPremiumSinastria(){
             page-break-after: always !important;
             box-sizing: border-box !important;
             position: relative;
-            padding: 50px 60px;
+            padding: 40px 50px;
+            overflow: hidden !important;
             -webkit-print-color-adjust: exact !important;
         ">
         
-        <div style="position: absolute; top: 15px; left: 15px; width: 60px; height: 60px; border-top: 3px solid #a6843c; border-left: 3px solid #a6843c;"></div>
-        <div style="position: absolute; top: 15px; right: 15px; width: 60px; height: 60px; border-top: 3px solid #a6843c; border-right: 3px solid #a6843c;"></div>
-        <div style="position: absolute; bottom: 15px; left: 15px; width: 60px; height: 60px; border-bottom: 3px solid #a6843c; border-left: 3px solid #a6843c;"></div>
-        <div style="position: absolute; bottom: 15px; right: 15px; width: 60px; height: 60px; border-bottom: 3px solid #a6843c; border-right: 3px solid #a6843c;"></div>
+        <div style="position: absolute; top: 15px; left: 15px; width: 40px; height: 40px; border-top: 3px solid #a6843c; border-left: 3px solid #a6843c;"></div>
+        <div style="position: absolute; top: 15px; right: 15px; width: 40px; height: 40px; border-top: 3px solid #a6843c; border-right: 3px solid #a6843c;"></div>
+        <div style="position: absolute; bottom: 15px; left: 15px; width: 40px; height: 40px; border-bottom: 3px solid #a6843c; border-left: 3px solid #a6843c;"></div>
+        <div style="position: absolute; bottom: 15px; right: 15px; width: 40px; height: 40px; border-bottom: 3px solid #a6843c; border-right: 3px solid #a6843c;"></div>
 
-        <div style="text-align: center; margin-top: 10px;">
-            <span style="color: #a6843c; letter-spacing: 8px; font-size: 12px; text-transform: uppercase;">Portal Numerológico Cabalístico</span>
-            <div style="width: 40px; height: 1px; background: #a6843c; margin: 10px auto;"></div>
+        <div style="text-align: center; margin-top: 5px;">
+            <span style="color: #a6843c; letter-spacing: 8px; font-size: 11px; text-transform: uppercase;">Portal Numerológico Cabalístico</span>
+            <div style="width: 40px; height: 1px; background: #a6843c; margin: 8px auto;"></div>
         </div>
 
         <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/estudo.png" 
-             style="width: 250px; height: auto; max-height: 250px; object-fit: contain; filter: drop-shadow(0px 0px 15px rgba(166,132,60,0.3)); display: block; margin: 0 auto;">
+             style="width: 220px; height: auto; max-height: 220px; object-fit: contain; filter: drop-shadow(0px 0px 15px rgba(166,132,60,0.3)); display: block; margin: 0 auto;">
 
-        <div class="capa-cliente" style="text-align: center; margin-bottom: 20px; width: 100%;">
+        <div class="capa-cliente" style="text-align: center; margin-bottom: 10px; width: 100%;">
             <div style="color: #c39b9b; font-family: 'Cinzel', serif; letter-spacing: 2px; font-size: 11px; text-transform: uppercase;">Estudo de Harmonia Conjugal & Destino</div>
             
-            <h1 style="font-family: 'Cinzel', serif; font-size: clamp(22px, 7vw, 32px); text-transform: uppercase; letter-spacing: 3px; color: #fff; margin: 10px 0; line-height: 1.2;">
+            <h1 style="font-family: 'Cinzel', serif; font-size: 26px; text-transform: uppercase; letter-spacing: 3px; color: #fff; margin: 10px 0; line-height: 1.2;">
                 MAPA NUMEROLÓGICO<br>DE SINASTRIA
             </h1>
             
             <div style="width: 150px; height: 1px; background: linear-gradient(to right, transparent, #a6843c, transparent); margin: 15px auto;"></div>
             
             <div style="font-family: 'Cinzel', serif; font-size: 20px; color: #fff; letter-spacing: 1px; font-weight: 600;">
-                <span>${social1}</span>
+                <span>\${social1}</span>
                 <span style="color: #8a1c32; margin: 0 8px;">❤️</span>
-                <span>${social2}</span>
+                <span>\${social2}</span>
             </div>
             
             <div style="width: 100px; height: 1px; background: linear-gradient(to right, transparent, #a6843c, transparent); margin: 12px auto;"></div>
-            <div style="font-family: 'Cinzel', serif; font-size: 15px; color: #a6843c; letter-spacing: 4px;">${dataHoje}</div>
+            <div style="font-family: 'Cinzel', serif; font-size: 15px; color: #a6843c; letter-spacing: 4px;">\${dataHoje}</div>
         </div>
 
-        <p style="font-size: 9px; color: #ffffff; letter-spacing: 3px; text-transform: uppercase; opacity: 0.5; margin-bottom: 10px;">
+        <p style="font-size: 9px; color: #ffffff; letter-spacing: 3px; text-transform: uppercase; opacity: 0.5; margin-bottom: 5px;">
             Instinto Superior • Engenharia do Amor & Conexão de Almas
         </p>
     </div>
-
-    <div class="pag-a4 capa-transicao-amor" style="
-            width: 210mm; 
-            height: 297mm; 
-            max-height: 297mm; 
-            background-color: #310612 !important; 
-            border: 4px solid #4a0d1d; 
-            display: flex !important; 
-            flex-direction: column !important; 
-            justify-content: space-between !important; 
-            align-items: center !important;
-            page-break-after: always !important;
-            box-sizing: border-box !important;
-            position: relative;
-            padding: 60px;
-            -webkit-print-color-adjust: exact !important;
-        ">
-        
-        <div style="text-align: center; margin-top: 20px;">
-            <h2 style="font-family: 'Cinzel', serif; font-size: 24px; color: #fff; text-transform: uppercase; letter-spacing: 3px; line-height: 1.5;">
-                INTRODUÇÃO E CONEXÃO<br>
-                <span style="color: #c39b9b; font-size: 14px; display: block; margin-top: 10px; letter-spacing: 5px;">Resultado, Afinidade de Alma & Sincronia</span>
-            </h2>
-        </div>
-
-        <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
-             style="width: 220px; height: 220px; max-height: 220px; object-fit: cover; display: block; margin: 0 auto; border-radius: 50%; border: 3px solid rgba(195,155,155,0.2); filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.5));">
-
-        <p style="font-size: 9px; color: #ffffff; letter-spacing: 2px; text-transform: uppercase; opacity: 0.6; margin-bottom: 20px; text-align: center; line-height: 1.4;">
-            Instinto Superior ✶ Conexão Amorosa ✶ Afinidade Vibracional ✶ Destinos Cruzados
-        </p>
-    </div>
-  `;
+`;
 
   // 2. EXTRAÇÃO PURA DE TEXTO (Proteção total do layout)
   function extrairETratarTexto(textoBruto, nomeParceiro) {
@@ -859,6 +868,13 @@ function abrirPremiumSinastria(){
     `;
   }
 
+// 2. QUER COLOCAR A CAPA DA SINASTRIA? Só chamar assim:
+relatorioHTML += criarCapaTransicao(
+    "SINASTRIA AMOROSA", 
+    "Análise de Afinidade, Alinhamento de Almas e Destino", 
+    "Instinto Superior ✶ Conexão Amorosa ✶ Afinidade Vibracional"
+);
+
   // 3. SEÇÕES DO MIOLO
   relatorioHTML += gerarFolhaConteudo("PARTE 1: MOTIVAÇÃO DA ALMA", `O Desejo Íntimo de ${social1}`, textos.motivacao[dados1.motivacao], `O Desejo Íntimo de ${social2}`, textos.motivacao[dados2.motivacao]);
   relatorioHTML += gerarFolhaConteudo("PARTE 2: INFLUÊNCIA & IMPRESSÃO", `A Influência de ${social1}`, textos.influencia[dados1.influencia], `A Influência de ${social2}`, textos.influencia[dados2.influencia]);
@@ -889,7 +905,17 @@ function abrirPremiumSinastria(){
                                          .replaceAll(`número ${menor}`, nomeMenor)
                                          .replaceAll(`número ${maior}`, nomeMaior);
 
-  relatorioHTML += `
+ 
+    
+    
+// 2. QUER COLOCAR A CAPA DA SINASTRIA? Só chamar assim:
+relatorioHTML += criarCapaTransicao(
+    "SINASTRIA AMOROSA", 
+    "Análise de Afinidade, Alinhamento de Almas e Destino", 
+    "Instinto Superior ✶ Conexão Amorosa ✶ Afinidade Vibracional"
+);
+
+    relatorioHTML += `
     <div class="bloco-texto-pdf" style="width: 210mm !important; height: 297mm !important; max-height: 297mm !important; background: #ffffff !important; padding: 25mm 20mm !important; box-sizing: border-box !important; page-break-after: always !important; page-break-inside: avoid !important; display: block !important; clear: both !important; overflow: hidden !important;">
         <h2 class="titulo-secao-pdf" style="font-family: 'Cinzel', serif !important; color: #6B0202 !important; text-align: center !important; margin-bottom: 25px !important; border-bottom: 2px solid #d49a9a !important; padding-bottom: 10px !important; font-size: 20px !important; text-transform: uppercase !important; letter-spacing: 1px !important; display: block !important; width: 100% !important;">PARTE 7: SINASTRIA & UNIÃO</h2>
         <h3 class="subtitulo-pessoa-pdf" style="color: #8a1c32 !important; font-family: 'Cinzel', serif !important; font-size: 16px !important; margin-bottom: 20px !important; text-align: center !important; display: block !important; width: 100% !important;">A Alquimia entre ${social1} e ${social2}</h3>
