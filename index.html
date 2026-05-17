@@ -783,16 +783,20 @@ function abrirModalTexto(texto){
   document.getElementById("modal").style.display="block";
 }
 
-function formatarTextoPersonalizado(texto, nomeEscolhido) {
+function formatarTextoPersonalizado(texto, nomeCompleto) {
   if (!texto) return "";
-  let nomeF = nomeEscolhido.trim();
-  if (nomeF) {
-      nomeF = nomeF.charAt(0).toUpperCase() + nomeF.slice(1).toLowerCase();
+  
+  // Extrai apenas o primeiro nome, remove espaços e corrige maiúsculas/minúsculas
+  let primeiroNome = nomeCompleto.trim().split(' ')[0];
+  if (primeiroNome) {
+      primeiroNome = primeiroNome.charAt(0).toUpperCase() + primeiroNome.slice(1).toLowerCase();
   } else {
-      nomeF = "Você";
+      primeiroNome = "Você";
   }
+
+  // Substitui "você" ou "Você" pelo nome em negrito
   let t = texto;
-  t = t.replace(/você/gi, `<strong>${nomeF}</strong>`);
+  t = t.replace(/você/gi, `<strong>${primeiroNome}</strong>`);
   return t;
 }
 
