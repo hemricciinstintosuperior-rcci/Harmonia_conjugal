@@ -6,22 +6,6 @@
     <title>Harmonia Conjugal | Instinto Superior</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
 
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1211246993846056');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
-/></noscript>
-
 <style>
     /* =======================================================
        1. VARIÁVEIS E CONFIGURAÇÃO GLOBAL DO SITE (TELA)
@@ -300,6 +284,236 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
         .capa-sinastria-premium img, .capa-transicao-amor img { width: 140px !important; height: auto !important; }
         .piramide { font-size: 0.9rem; letter-spacing: 4px; }
     }
+
+.video-introducao {
+    width: 100%;
+    max-width: 800px; /* Mesma largura do seu container para alinhar */
+    margin: 0 auto 20px auto; /* Centraliza e dá espaço para o formulário */
+    border-radius: 20px;
+    overflow: hidden; /* Garante que o vídeo siga o arredondamento */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.video-introducao video {
+    display: block;
+    border: 2px solid #A65F00; /* Um detalhe em dourado/bronze como no seu botão */
+}
+    
+.video-wrapper {
+    width: 100%;
+    margin-bottom: 20px; /* Espaço entre o vídeo e o título/campos */
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--gold); /* Borda fina acompanhando sua cor principal */
+    background-color: #000;
+}
+
+.video-wrapper video {
+    display: block;
+    outline: none;
+}
+
+
+@media print {
+    /* Esconde o vídeo e o container de entrada para não atrapalhar o PDF */
+    .video-wrapper, 
+    .container, 
+    #videoExplicativo {
+        display: none !important;
+    }
+
+    /* Garante que o relatório possa fluir por várias páginas */
+    .relatorio-premium {
+        display: block !important;
+        position: static !important;
+        overflow: visible !important;
+    }
+}
+
+
+.btn-video-toggle {
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #A65F00 0%, #FFD700 100%);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(166, 95, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+.btn-video-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(166, 95, 0, 0.4);
+}
+
+.btn-video-toggle .seta {
+    transition: transform 0.3s ease;
+}
+
+.btn-video-toggle.ativo .seta {
+    transform: rotate(180deg);
+}
+
+/* Garante que o botão também suma na impressão */
+@media print {
+    .btn-video-toggle {
+        display: none !important;
+    }
+}
+
+
+@media print {
+  /* Força tudo que tem a classe .no-print a sumir completamente */
+
+  .no-print, 
+  div.no-print, 
+  [class*="no-print"] {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    opacity: 0 !important;
+    position: absolute !important; /* Garante que não ocupe espaço físico na página */
+  }
+}
+
+  @media print {
+    /* Esconde o container do cronômetro e mensagens de trava pelo ID */
+    #status-acesso, 
+    #label-tempo, 
+    #timer, 
+    #msg-trava {
+        display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}      
+
+
+.conteudo-texto h2 {
+  font-size: 24px;
+  color: #1a2530; /* Um tom escuro elegante */
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.linha-decorativa {
+  width: 60px;
+  height: 3px;
+  background-color: #d4af37; /* Dourado Premium */
+  margin-bottom: 25px;
+}
+
+.conteudo-texto p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4a5568;
+  margin-bottom: 15px;
+  text-align: justify; /* Deixa as laterais alinhadas feito livro */
+}
+
+.box-destaque {
+  border-left: 4px solid #d4af37;
+  background-color: #f9f6f0;
+  padding: 15px;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+
+
+    
+    /* 🔥 CORREÇÃO PRINCIPAL */
+    .page {
+    width: calc(100% - 2mm);
+    margin: 0 auto;
+    /* TOPO (40px) | LATERAIS (2mm) | BASE (40px) */
+    padding: 40px 2mm 20px 2mm; 
+          }
+
+
+         /* Esta classe impede que qualquer bloco dentro dela seja cortado ao meio */
+    .evitar-corte {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        display: block;
+        width: 100%;
+    }
+
+
+.conteudo-dinamico-pdf p {
+    margin-bottom: 15px !important;
+}
+.conteudo-dinamico-pdf h3 {
+    margin-top: 22px !important;
+    margin-bottom: 8px !important;
+}
+
+
+/* =======================================================
+   CORREÇÃO DE ESPAÇAMENTO E PONTE DO TEXTOS.JS NO PDF
+   ======================================================= */
+
+/* Alvos diretos para qualquer h3 ou h2 que venha de dentro do miolo do PDF */
+.bloco-texto-pdf h3, 
+.bloco-texto-pdf h2,
+.bloco-texto-pdf div h3 {
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: 18px !important;
+    color: #6B0202 !important;
+    margin-top: 25px !important;    /* Dá o espaço necessário antes de começar o título */
+    margin-bottom: 10px !important; /* Aproxima levemente do texto descritivo dele */
+    line-height: 1.3 !important;
+    display: block !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+}
+
+/* Espaçamento para os blocos de Vibração Fixada (Caixas de Sequência Negativa) */
+.bloco-texto-pdf div[style*="background: #fff5f5"] {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    padding: 15px !important;
+    border-left: 4px solid #ff3b5c !important;
+    display: block !important;
+}
+
+/* Força os parágrafos gerados e textos internos a manterem distância saudável */
+.bloco-texto-pdf p, 
+.texto-cabalistico-pdf {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 13px !important;
+    line-height: 1.8 !important;   /* Texto respira melhor */
+    color: #222222 !important;
+    margin-bottom: 16px !important; /* Espaçamento padrão de parágrafo */
+    text-align: justify !important;
+}
+
+/* Ajuste fino para os strongs (como o título "Vibração Fixada X:") */
+.bloco-texto-pdf strong {
+    color: #6B0202 !important;
+    font-weight: 600 !important;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+    
+    
+  
+    
 </style>
 </head>
 <body>
@@ -310,12 +524,23 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
 </div>
 
 <div class="container">
+        <button type="button" id="btnVideo" class="btn-video-toggle">
+        <span>🎥 Assistir Vídeo Introdutório</span>
+        <i class="seta">▼</i>
+    </button>
+
+    <div id="wrapperVideo" class="video-wrapper" style="display: none; margin-top: 5px;">
+        <video id="videoExplicativo" width="100%" controls poster="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/estudo.png">
+            <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/introestudo.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+    </div>
 
     <div class="grid-pessoa">
         <div class="card-input">
             <h3>Pessoa 1</h3>
             <div class="form-group"><label>Nome Completo</label><input type="text" id="nome1" placeholder="Nome completo igual certidão"></div>
-            <div class="form-group"><label>Nome Social / Escolhido</label><input type="text" id="social1" placeholder="Nome para personalização do texto"></div>
+            <div class="form-group"><label>Nome Social / Escolhido</label><input type="text" id="social1" placeholder="Nome para aparecer no relatório"></div>
             <div class="form-group"><label>Data de Nascimento</label><input type="text" id="data1" placeholder="DD/MM/AAAA" maxlength="10" oninput="mascaraData(this)"></div>
             
             <div class="btn-group">
@@ -339,7 +564,7 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
         <div class="card-input">
             <h3>Pessoa 2</h3>
             <div class="form-group"><label>Nome Completo</label><input type="text" id="nome2" placeholder="Nome completo igual certidão"></div>
-            <div class="form-group"><label>Nome Social / Escolhido</label><input type="text" id="social2" placeholder="Nome para personalização do texto"></div>
+            <div class="form-group"><label>Nome Social / Escolhido</label><input type="text" id="social2" placeholder="Nome para aparecer no relatório"></div>
             <div class="form-group"><label>Data de Nascimento</label><input type="text" id="data2" placeholder="DD/MM/AAAA" maxlength="10" oninput="mascaraData(this)"></div>
             
             <div class="btn-group">
@@ -404,7 +629,7 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
 
 <div id="area-pdf-local"></div>    
 
-<script src="textos.js"></script>
+<script src="textosharmoniaconjugal.js"></script>
 
 <script>
 function mascaraData(input) {
@@ -581,7 +806,7 @@ function fecharModal(){ document.getElementById("modal").style.display="none"; }
 
 function formatarTextoPersonalizado(texto, nome) {
     if (!texto) return "";
-    return String(texto).replace(/você/gi, ` <strong>${nome}</strong> `).replace(/voce/gi, ` <strong>${nome}</strong> `);
+    return String(texto).replace(/MASCULINO-FEMININO-NEUTRO/gi, ` <strong>${nome}</strong> `).replace(/MASCULINO-FEMININO-NEUTRO/gi, ` <strong>${nome}</strong> `);
 }
 
 function abrirModal(tipo) {
@@ -665,8 +890,8 @@ function criarCapaTransicao(titulo, subtitulo, rodape, audio1Url, nomeAudio1, au
 
         linkHTML = `
         <div class="botao-pdf-link" style="display:none; flex-direction:column; gap:10px; width:100%; align-items:center;">
-            <a href="${audio1Url}" target="_blank" style="color:#ffd700; font-size:11px; font-family:'Cinzel', serif; text-decoration:underline;">📥 BAIXAR ÁUDIO: ${nomeAudio1}</a>
-            <a href="${audio2Url}" target="_blank" style="color:#ffd700; font-size:11px; font-family:'Cinzel', serif; text-decoration:underline;">📥 BAIXAR ÁUDIO: ${nomeAudio2}</a>
+            <a href="${audio1Url}" target="_blank" style="color:#ffd700; font-size:11px; font-family:'Cinzel', serif; text-decoration:underline;">📥 BAIXAR MUSICA: ${nomeAudio1}</a>
+            <a href="${audio2Url}" target="_blank" style="color:#ffd700; font-size:11px; font-family:'Cinzel', serif; text-decoration:underline;">📥 BAIXAR MUSICA: ${nomeAudio2}</a>
         </div>`;
     }
 
@@ -676,7 +901,7 @@ function criarCapaTransicao(titulo, subtitulo, rodape, audio1Url, nomeAudio1, au
             <h2 style="font-family: 'Cinzel', serif; font-size: 22px; color: #fff; text-transform: uppercase; letter-spacing: 2px;">${titulo}</h2>
             <span style="color: #c39b9b; font-size: 12px; display: block; margin-top: 5px; letter-spacing: 3px;">${subtitulo}</span>
         </div>
-        <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" style="width: 150px; height: 150px; border-radius: 50%; border: 2px solid #a6843c; object-fit:cover;">
+        <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/harmonia.png" style="width: 150px; height: 150px; border-radius: 50%; border: 2px solid #a6843c; object-fit:cover;">
         
         ${playerHTML}
         ${linkHTML}
@@ -701,7 +926,7 @@ function abrirPremiumSinastria(){
             <span style="color: #a6843c; letter-spacing: 5px; font-size: 10px; text-transform: uppercase;">Portal Numerológico Cabalístico</span>
             <div style="width: 40px; height: 1px; background: #a6843c; margin: 8px auto;"></div>
         </div>
-        <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/estudo.png" style="width: 160px; height: auto; filter: drop-shadow(0 0 10px rgba(166,132,60,0.2));">
+        <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/harmonia.png" style="width: 300px; height: auto; filter: drop-shadow(0 0 10px rgba(166,132,60,0.2));">
         <div style="text-align: center; width: 100%;">
             <div style="color: #c39b9b; font-family: 'Cinzel', serif; letter-spacing: 2px; font-size: 11px; text-transform: uppercase;">Estudo de Harmonia Conjugal & Destino</div>
             <h1 style="font-family: 'Cinzel', serif; font-size: 24px; text-transform: uppercase; letter-spacing: 2px; color: #fff; margin: 10px 0;">MAPA NUMEROLÓGICO<br>DE SINASTRIA</h1>
@@ -772,12 +997,64 @@ function abrirPremiumSinastria(){
   </div>
   `;
 
-  function extrairETratarTexto(textoBruto, nomeParceiro) {
+relatorioHTML += `
+<div class="page evitar-corte" style="padding: 40px; background: #fff; min-height: 296mm; box-sizing: border-box; color: #2d0713; font-family: 'Segoe UI', sans-serif;">
+    
+    <div style="text-align: center; border-bottom: 2px solid #2d0713; padding-bottom: 20px; margin-bottom: 40px;">
+        <h1 style="font-family: 'Cinzel', serif; color: #2d0713; font-size: 26px; letter-spacing: 3px; margin: 0; text-transform: uppercase;">
+            A Engenharia de Acoplamento Vibracional
+        </h1>
+        <p style="font-style: italic; color: #2d0713; margin-top: 10px; font-size: 14px;">
+            Tratado de Sinastria Moderna • Instinto Superior
+        </p>
+    </div>
+
+    <div style="line-height: 1.8; text-align: justify; color: #111; font-size: 16px; max-width: 850px; margin: 0 auto;">
+        
+        <p style="margin-bottom: 20px;">
+            No universo do <b>Instinto Superior</b>, um relacionamento afetivo não é visto como uma mera obra do acaso ou uma união puramente sentimental. Sob a ótica da física vibracional e da numerologia de alta performance, a união de duas pessoas representa o <b>acoplamento de duas matrizes matemáticas complexas</b>. Quando dois mapas se cruzam, suas frequências individuais interagem, gerando uma terceira energia: a identidade vibracional do casal.
+        </p>
+
+        <p style="margin-bottom: 20px;">
+            A numerologia aplicada à sinastria baseia-se na <b>análise espectrográfica combinada</b>. Assim como na engenharia mecânica onde engrenagens precisam de calibração precisa para funcionar sem atrito, na engenharia humana as frequências do Nome e da Data de Nascimento de ambos os parceiros interagem constantemente, determinando os pontos de fluidez natural e os nós de tensão geométrica da convivência.
+        </p>
+
+        <div style="background: radial-gradient(circle, #2d0713 0%, #110106 100%) !important;  padding: 25px; border-radius: 12px; border-left: 5px solid #d4af37; margin-bottom: 25px;">
+            <p style="margin: 0; font-style: italic; color: #fff; font-size: 16.5px; text-align: center;">
+                "Duas frequências isoladas que se unem não criam apenas uma soma, mas uma nova assinatura de comando no Universo."
+            </p>
+        </div>
+
+        <p style="margin-bottom: 20px;">
+            Diferente de abordagens tradicionais que buscam definir "compatibilidade" de forma superficial, este estudo analisa a <b>ressonância de fase</b>. Investigamos factualmente como o software operacional de um indivíduo afeta a estrutura do outro. Não existem mapas incompatíveis; existem parceiros que operam às cegas, sem compreender a arquitetura matemática que rege a dinâmica do seu relacionamento.
+        </p>
+
+        <p style="margin-bottom: 0;">
+            Compreender a sinastria através do <b>Instinto Superior</b> é transitar do amor instintivo e reativo para o amor soberano e consciente. Ao decodificar os códigos ocultos da sua união, o casal deixa de ser refém de discussões cíclicas e incompatibilidades invisíveis para assumir a maestria e a direção de sua jornada em conjunto.
+        </p>
+
+    </div>
+
+    <div style="margin-top: 60px; text-align: center; border-top: 1px dashed 2d0713; padding-top: 20px;">
+        <p style="font-family: 'Cinzel', serif; font-size: 12px; color: #2d0713; letter-spacing: 4px; font-weight: bold; margin: 0;">
+            HARMONIA CONJUGAL • PROTOCOLO TÉCNICO
+        </p>
+    </div>
+</div>
+`;
+
+    
+
+function extrairETratarTexto(textoBruto, nomeParceiro) {
     if (!textoBruto) return "";
-    const div = document.createElement("div"); div.innerHTML = textoBruto;
-    let t = div.textContent || div.innerText || "";
-    return `<p style="color:#222222 !important; font-size:13px; line-height:1.7; text-align:justify; margin-bottom:12px;">${t.replace(/você/gi, `<strong>${nomeParceiro}</strong>`).replace(/voce/gi, `<strong>${nomeParceiro}</strong>`)}</p>`;
-  }
+    
+    // Em vez de extrair apenas o texto puro (destruindo h3 e quebras), 
+    // nós tratamos diretamente a string HTML para manter os títulos e tags vivos.
+    let textoTratado = String(textoBruto)
+        .replace(/MASCULINO-FEMININO-NEUTRO/gi, `<strong>${nomeParceiro}</strong>`);
+        
+    return `<div class="conteudo-dinamico-pdf">${textoTratado}</div>`;
+}
 
   function gerarFolhaConteudo(titulo, sub1, txt1, sub2, txt2) {
     return `
@@ -837,6 +1114,51 @@ function abrirPremiumSinastria(){
       "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
   );
 
+
+relatorioHTML += `
+<div class="page evitar-corte" style="padding: 40px; background: #fdfdfd; min-height: 296mm; box-sizing: border-box; color: #333; font-family: 'Segoe UI', sans-serif;">
+    
+    <div style="text-align: center; border-bottom: 2px solid #101015; padding-bottom: 20px; margin-bottom: 40px;">
+        <h1 style="font-family: 'Cinzel', serif; color: #2d0713; font-size: 24px; letter-spacing: 2px; margin: 0; text-transform: uppercase;">
+            MÓDULO I: O Núcleo dos Desejos do Casal
+        </h1>
+        <p style="font-style: italic; color: #2d0713; margin-top: 10px; font-size: 14px;">
+            A Fusão das Almas: Motivação Combinada
+        </p>
+    </div>
+
+    <div style="line-height: 1.8; text-align: justify; font-size: 16px; max-width: 850px; margin: 0 auto;">
+        
+        <p style="margin-bottom: 20px;">
+            O primeiro e mais íntimo pilar de uma sinastria é o cruzamento das <b>Motivações</b>. Como a Motivação individual dita o que move o ser na sua mais profunda essência, quando analisamos o casal, o cálculo da Motivação Combinada revela o <b>motor interno da relação</b> — aquilo que sustenta a conexão quando o mundo exterior silencia.
+        </p>
+        
+        <p style="margin-bottom: 20px;">
+            Este indicador expõe a verdadeira raiz dos valores compartilhados e das ambições secretas do casal. Se as Motivações individuais estiverem em harmonia de fase, há uma sensação imediata de cumplicidade, nutrição mútua e paz doméstica. 
+        </p>
+
+        <p style="margin-bottom: 25px;">
+            Porém, se houver uma sobrecarga ou choque de frequências nesta área, o relacionamento pode sofrer com o que a física chama de <b>interferência destrutiva</b>: um parceiro sufocando ou anulando, mesmo sem querer, as necessidades essenciais da alma do outro. Compreender este encaixe é a chave para calibrar a intimidade e zerar as expectativas irreais.
+        </p>
+        
+        <div style="background: radial-gradient(circle, #2d0713 0%, #110106 100%) !important;  color: #fff; padding: 30px; border-radius: 15px; border-left: 8px solid #fff; box-shadow: 0 10px 20px rgba(0,0,0,0.1); margin-top: 30px;">
+            <h3 style="color: #fff; font-family: 'Cinzel', serif; font-size: 16px; margin-top: 0; margin-bottom: 15px; letter-spacing: 2px; text-transform: uppercase; text-align: center;">
+                Diagnóstico da Engenharia Afetiva
+            </h3>
+            
+            <div id="resultado-sinastria-motivacao" style="color: #eee; font-size: 15px; line-height: 1.7;">
+                </div>
+        </div>
+
+    </div>
+
+    <div style="margin-top: 60px; text-align: center; color: #2d0713; font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 2px;">
+        [ ANÁLISE DE MOTIVAÇÃO COMBINADA Cruzada ]
+    </div>
+</div>
+`;   
+    
+
   // Miolos estruturados
   relatorioHTML += gerarFolhaConteudo("PARTE 1: MOTIVAÇÃO DA ALMA", `O Desejo Íntimo de ${social1}`, textos.motivacao[dados1.motivacao], `O Desejo Íntimo de ${social2}`, textos.motivacao[dados2.motivacao]);
   
@@ -885,26 +1207,6 @@ function abrirPremiumSinastria(){
   );
   relatorioHTML += gerarFolhaConteudo("PARTE 6: CICLO ANUAL", `Ano Pessoal de ${social1}`, textos.anoPessoal[dados1.anoPessoal], `Ano Pessoal de ${social2}`, textos.anoPessoal[dados2.anoPessoal]);
 
-  // Sinastria
-  const chave = chaveSinastria(dados1.proposito, dados2.proposito);
-  let textoSinastriaPuro = extrairETratarTexto(textos.sinastria[chave], social1);
-  const menor = Math.min(dados1.proposito, dados2.proposito);
-  const maior = Math.max(dados1.proposito, dados2.proposito);
-  textoSinastriaPuro = textoSinastriaPuro.replaceAll(`Energia ${menor}`, (dados1.proposito===menor)?social1:social2)
-                                         .replaceAll(`Energia ${maior}`, (dados1.proposito===maior)?social1:social2);
-
-  relatorioHTML += criarCapaTransicao(
-      "Sinastria Conjugal", 
-      "A Alquimia Sagrada e Alinhamento de Almas", 
-      "Instinto Superior ✶ Conexão Amorosa ✶ Afinidade Vibracional"
-  );
-
-  relatorioHTML += `
-    <div class="bloco-texto-pdf">
-        <h2 class="titulo-secao-pdf">PARTE 7: SINASTRIA & UNIÃO</h2>
-        <h3 class="subtitulo-pessoa-pdf" style="text-align:center; margin-bottom:20px;">A Alquimia entre ${social1} e ${social2}</h3>
-        <div>${textoSinastriaPuro}</div>
-    </div>`;
 
 // --- PARTE 8: INJEÇÃO COMPACTA E EM ALTA RESOLUÇÃO DA PIRÂMIDE DO CASAL ---
   let textoPiramideParceiro1 = obterHtmlTextoPiramide(dados1.valores);
@@ -939,7 +1241,9 @@ function abrirPremiumSinastria(){
   relatorioHTML += criarCapaTransicao(
       "A Grande Matriz", 
       "Pirâmides Invertidas e Engenharia de Destino", 
-      "Instinto Superior ✶ Matriz Quântica ✶ Arcanos e Vibrações"
+      "Instinto Superior ✶ Matriz Quântica ✶ Arcanos e Vibrações",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
   );
 
   // Página da Matriz da Pessoa 1
@@ -951,13 +1255,13 @@ function abrirPremiumSinastria(){
             <pre style="font-family:'Courier New', monospace; font-size:12px; line-height:1.4; letter-spacing:4px; color:#111; display:block; text-align:center; margin:0 auto; white-space:pre;">${textoPiramideParceiro1}</pre>
         </div>
         
-        <h3 class="subtitulo-pessoa-pdf">🎯 Número Regente da Matriz: Encarte ${dados1.regente}</h3>
+        <h3 class="subtitulo-pessoa-pdf evitar-corte">🎯 Número Regente da Matriz: Encarte ${dados1.regente}</h3>
         <div>${extrairETratarTexto(textoRegenteP1, social1)}</div>
         
         <div class="divisor-pdf" style="margin:15px 0;"></div>
         
         <h3 class="subtitulo-pessoa-pdf">⚠️ Desafios e Sequências Numéricas</h3>
-        <div>${textoSequenciasP1}</div>
+        <div>${extrairETratarTexto(textoSequenciasP1, social1)}</div>
     </div>`;
 
   // Página da Matriz da Pessoa 2
@@ -975,8 +1279,34 @@ function abrirPremiumSinastria(){
         <div class="divisor-pdf" style="margin:15px 0;"></div>
         
         <h3 class="subtitulo-pessoa-pdf">⚠️ Desafios e Sequências Numéricas</h3>
-        <div>${textoSequenciasP2}</div>
+        <div>${extrairETratarTexto(textoSequenciasP2, social2)}</div>
     </div>`;
+
+
+    
+  // Sinastria
+  const chave = chaveSinastria(dados1.proposito, dados2.proposito);
+  let textoSinastriaPuro = extrairETratarTexto(textos.sinastria[chave], social1);
+  const menor = Math.min(dados1.proposito, dados2.proposito);
+  const maior = Math.max(dados1.proposito, dados2.proposito);
+  textoSinastriaPuro = textoSinastriaPuro.replaceAll(`Energia ${menor}`, (dados1.proposito===menor)?social1:social2)
+                                         .replaceAll(`Energia ${maior}`, (dados1.proposito===maior)?social1:social2);
+
+  relatorioHTML += criarCapaTransicao(
+      "Sinastria Conjugal", 
+      "A Alquimia Sagrada e Alinhamento de Almas", 
+      "Instinto Superior ✶ Conexão Amorosa ✶ Afinidade Vibracional",
+        "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
+  );
+
+  relatorioHTML += `
+    <div class="bloco-texto-pdf">
+        <h2 class="titulo-secao-pdf">PARTE 7: SINASTRIA & UNIÃO</h2>
+        <h3 class="subtitulo-pessoa-pdf" style="text-align:center; margin-bottom:20px;">A Alquimia entre ${social1} e ${social2}</h3>
+        <div>${textoSinastriaPuro}</div>
+    </div>`;
+
 
 // Processamento do bebê, se houver
   const nomeBebeInput = document.getElementById("nomeBebe").value;
@@ -1000,8 +1330,10 @@ function abrirPremiumSinastria(){
       relatorioHTML += criarCapaTransicao(
           "Mapa Numerológico do Bebê", 
           `Análise de Potencial Vibracional Infantil`, 
-          "Instinto Superior ✶ Legado Familiar ✶ Vibração Primal"
-      );
+          "Instinto Superior ✶ Legado Familiar ✶ Vibração Primal",
+       "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
+  );
 
       let statusHarmonia = (!dadosBebe.sequenciaNegativa || dadosBebe.sequenciaNegativa.length === 0) 
           ? `<span style="color: #28a745; font-weight: bold;">✅ ANÁLISE: Este nome de registro é completamente harmônico.</span>`
@@ -1035,9 +1367,10 @@ function abrirPremiumSinastria(){
             <div class="divisor-pdf" style="margin:15px 0;"></div>
             
             <h3 class="subtitulo-pessoa-pdf">⚠️ Desafios e Sequências do Nome</h3>
-            <div>${textoSequenciasBebe}</div>
+            <div>${extrairETratarTexto(textoSequenciasBebe)}</div>
         </div>`;
   }
+
 
   const areaPDF = document.getElementById("area-pdf-local");
   areaPDF.innerHTML = `
