@@ -485,7 +485,7 @@
 
 /* Espaçamento para os blocos de Vibração Fixada (Caixas de Sequência Negativa) */
 .bloco-texto-pdf div[style*="background: #fff5f5"] {
-    margin-top: 15px !important;
+    margin-top: 40px !important;
     margin-bottom: 15px !important;
     padding: 15px !important;
     border-left: 4px solid #ff3b5c !important;
@@ -510,7 +510,22 @@
     display: inline-block;
     margin-bottom: 4px;
 }
-    
+
+/* Se o problema for o texto colando no topo de uma NOVA página do PDF */
+.bloco-texto-pdf {
+    padding-top: 35mm !important; /* Aumenta a margem interna do topo da folha */
+}
+
+/* Se o problema for um título colado no parágrafo de cima */
+.bloco-texto-pdf h3, 
+.conteudo-dinamico-pdf h3 {
+    margin-top: 30px !important; /* Cria um recuo limpo antes do título começar */
+}
+
+/* Se for nas caixinhas vermelhas de Sequência Negativa que o texto colou no topo interno */
+.bloco-texto-pdf div[style*="background: #fff5f5"] {
+    padding-top: 15px !important; /* Garante que o texto respire dentro da caixinha */
+}
     
   
     
