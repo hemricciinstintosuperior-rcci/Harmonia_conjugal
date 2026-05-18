@@ -512,7 +512,28 @@
 }
     
     
-  
+/* Força qualquer H3 ou título que venha de dentro do JS a se comportar */
+.bloco-texto-pdf h3, 
+.conteudo-dinamico-pdf h3 {
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: 20px !important;
+    color: #6B0202 !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    
+    /* CORREÇÃO DO ESPAÇAMENTO: */
+    margin-top: 15px !important;   /* Diminuído para não criar um buraco antes do título */
+    margin-bottom: 8px !important;  /* Mantém o título colado e conectado ao parágrafo dele */
+    display: block !important;
+    line-height: 1.2 !important;
+}
+
+/* Ajuste específico para os parágrafos subsequentes não se afastarem */
+.conteudo-dinamico-pdf p {
+    margin-top: 0 !important;
+    margin-bottom: 14px !important; /* Espaçamento ideal entre um parágrafo e outro */
+}  
     
 </style>
 </head>
@@ -1058,12 +1079,12 @@ function extrairETratarTexto(textoBruto, nomeParceiro) {
 
   function gerarFolhaConteudo(titulo, sub1, txt1, sub2, txt2) {
     return `
-      <div class="bloco-texto-pdf">
-          <h2 class="titulo-secao-pdf evitar-corte">${titulo}</h2>
+      <div class="bloco-texto-pdf evitar-corte">
+          <h2 class="titulo-secao-pdf">${titulo}</h2>
           <h3 class="subtitulo-pessoa-pdf">${sub1}</h3>
           <div>${extrairETratarTexto(txt1, social1)}</div>
-          <div class="divisor-pdf"></div>
-          <h3 class="subtitulo-pessoa-pdf evitar-corte">${sub2}</h3>
+          <div class="divisor-pdf evitar-corte"></div>
+          <h3 class="subtitulo-pessoa-pdf">${sub2}</h3>
           <div>${extrairETratarTexto(txt2, social2)}</div>
       </div>`;
   }
