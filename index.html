@@ -634,6 +634,11 @@
     }
 }
 
+
+
+
+    
+
 /* 3. Proteção da Capa (Para ela ignorar a margem e não quebrar) */
 @media print {
     .capa, .capa-transicao, .capa-sinastria {
@@ -659,7 +664,47 @@
     width: 100%;
     margin: 0 auto !important;
     padding-top: 10px !important; /* Deixa o @page comandar o recuo maior */
-}   
+}  
+
+/* ==========================================================
+   SISTEMA DE PAGINAÇÃO NO TOPO (CABEÇALHO DIREITO)
+   ========================================================== */
+
+@media print {
+    /* 1. Configura a folha física no PDF com margem e numeração no topo */
+    @page {
+        size: A4;
+        /* Mantém o respiro de 1.5cm nas laterais e base, e dá 2cm no topo para o número e o texto respirarem */
+        margin: 20mm 15mm 15mm 15mm !important; 
+        
+        /* Injeta o contador de páginas diretamente no TOPO DIREITO da folha */
+        @top-right {
+            content: "Página " counter(page);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+            font-size: 10pt !important;
+            color: #827108 !important; /* Dourado padrão do seu sistema */
+            font-weight: bold !important;
+        }
+    }
+
+    /* 2. Força o navegador a resetar a contagem no início do documento */
+    body {
+        counter-reset: page;
+    }
+
+    /* 3. Esconde qualquer resquício da div de rodapé antiga, caso tenha colocado */
+    .page-footer {
+        display: none !important;
+    }
+
+    /* 4. Regra para sumir com o número especificamente na PRIMEIRA página (Capa) */
+    @page :first {
+        @top-right {
+            content: "" !important; /* Deixa o topo da capa totalmente limpo */
+        }
+    }
+}
+    
     
 </style>
 </head>
