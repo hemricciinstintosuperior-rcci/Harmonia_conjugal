@@ -534,6 +534,39 @@
     margin-top: 0 !important;
     margin-bottom: 14px !important; /* Espaçamento ideal entre um parágrafo e outro */
 }  
+
+
+
+/* ==========================================
+   CORREÇÃO DE QUEBRA DE PÁGINA E ESPAÇAMENTO
+   ========================================== */
+
+/* 1. Impede que o título fique isolado em uma folha e o conteúdo vá para a outra */
+.bloco-texto-pdf h2, 
+.bloco-texto-pdf h3,
+.conteudo-dinamico-pdf h3 {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+}
+
+/* 2. Ajuste específico para os blocos de Sequências Negativas e Desafios */
+.sequencia-negativa-box,
+.bloco-desafios-pdf,
+.bloco-bebe-pdf,
+.bloco-texto-pdf div[style*="background"] {
+    page-break-inside: auto !important; /* Permite que o texto quebre de folha se for muito longo */
+    break-inside: auto !important;
+    margin-top: 10px !important;
+    margin-bottom: 15px !important;
+}
+
+/* 3. Evita que um parágrafo longo crie uma linha órfã (uma única linha isolada na folha) */
+.conteudo-dinamico-pdf p {
+    page-break-inside: avoid !important; /* Mantém parágrafos pequenos juntos */
+    break-inside: avoid !important;
+    orphans: 3;
+    widows: 3;
+}    
     
 </style>
 </head>
