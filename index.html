@@ -589,6 +589,77 @@
     orphans: 3;
     widows: 3;
 }    
+
+
+
+ /* ==========================================================
+   SISTEMA DE PAGINAÇÃO E RESPIRO DO TOPO (MODELO IMPORTADO)
+   ========================================================== */
+
+/* 1. Configuração da folha física no PDF */
+@media print {
+    @page {
+        size: A4;
+        margin: 1.5cm !important; /* Cria o espaço de 1,5cm no topo e nas laterais para o texto descer */
+    }
+
+    /* Força o contador a iniciar do zero no documento */
+    body {
+        counter-reset: page;
+    }
+}
+
+/* 2. Estilo do número da página (Esconde na tela, mostra no PDF) */
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 10pt;
+    color: #827108; /* Dourado nobre do seu padrão */
+    display: none; 
+}
+
+@media print {
+    .page-footer {
+        display: block !important; /* Ativa apenas na impressão/PDF */
+        position: fixed;
+        bottom: 10mm;
+        right: 10mm;
+        z-index: 9999;
+    }
+    
+    .page-number::after {
+        counter-increment: page;
+        content: "Página " counter(page);
+    }
+}
+
+/* 3. Proteção da Capa (Para ela ignorar a margem e não quebrar) */
+@media print {
+    .capa, .capa-transicao, .capa-sinastria {
+        page-break-before: always !important;
+        page-break-after: always !important;
+        margin: 0 !important; /* Zera a margem de 1.5cm só aqui */
+        padding: 0 !important;
+        height: 297mm !important; /* Trava no tamanho exato do A4 */
+        position: relative;
+        z-index: 10000;
+        background-color: #ffffff !important;
+    }
+
+    /* Esconde a numeração especificamente na primeira página (Capa) */
+    @page :first {
+        @top-right { content: ""; }
+        @bottom-right { content: ""; }
+    }
+}
+
+/* 4. Ajuste da classe .page da Sinastria para aceitar o respiro */
+.page {
+    width: 100%;
+    margin: 0 auto !important;
+    padding-top: 10px !important; /* Deixa o @page comandar o recuo maior */
+}   
     
 </style>
 </head>
