@@ -7,6 +7,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
 
 <style>
+
+
+/* ===================================================
+   ESPAÇAMENTO GERAL DE RESPIRO (TOPO E BASE DA PÁGINA)
+   =================================================== */
+
+.bloco-texto-pdf {
+    /* Força o navegador a incluir o espaçamento dentro do tamanho total da folha */
+    box-sizing: border-box !important; 
+
+    /* Ajuste Geral de Margem Interna (Respiro):
+       Top: 40mm (o espaço no topo que você pediu)
+       Right: 20mm (lateral direita)
+       Bottom: 30mm (espaço na parte de baixo para não sumir texto)
+       Left: 20mm (lateral esquerda) */
+    padding: 40mm 20mm 30mm 20mm !important; 
+
+    /* Garante que o fundo branco cubra toda a área */
+    background: #ffffff !important; 
+}
+
+    
     /* =======================================================
        1. VARIÁVEIS E CONFIGURAÇÃO GLOBAL DO SITE (TELA)
        ======================================================= */
