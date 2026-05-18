@@ -193,7 +193,63 @@
             print-color-adjust: exact !important;
         }
 
+        #area-pdf-local { margin-top: 0 !important; }
+        #conteudo-pdf-rolavel { display: block !important; width: 210mm !important; }
 
+        /* CAPAS IMPRESSAS: Mantêm rigidez absoluta em 297mm (Não quebram) */
+        .pag-a4 {
+            width: 210mm !important;
+            height: 297mm !important; 
+            min-height: 297mm !important;
+            max-height: 297mm !important;
+            margin: 0 !important;
+            border: none !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            page-break-before: always !important;
+            page-break-after: always !important;
+            page-break-inside: avoid !important; /* Protege a capa */
+            box-sizing: border-box !important;
+        }
+
+        /* MIOLOS IMPRESSOS: Totalmente dinâmicos. Se o texto passar, gera nova folha! */
+        .bloco-texto-pdf {
+            width: 210mm !important;
+            height: auto !important;       /* MUDANÇA CIRÚRGICA: Libera o motor do PDF */
+            min-height: 297mm !important;   /* Ocupa no mínimo uma folha inteira */
+            max-height: none !important;    /* Libera limite máximo */
+            margin: 0 !important;
+            border: none !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            page-break-before: always !important;
+            page-break-after: always !important;
+            page-break-inside: auto !important; /* MUDANÇA CIRÚRGICA: Permite quebra natural */
+            box-sizing: border-box !important;
+            padding: 25mm 20mm !important; 
+            display: block !important;       /* Garante fluxo contínuo de cima para baixo */
+            overflow: visible !important;
+        }
+
+        /* Evita que uma caixinha vermelha de sequência se rompa feio ao meio na virada de página */
+        .bloco-texto-pdf div, .bloco-texto-pdf h2, .bloco-texto-pdf h3 {
+            page-break-inside: avoid !important;
+        }
+
+        .pag-a4:first-child {
+            page-break-before: avoid !important;
+        }
+
+        .pag-a4 {
+            background: radial-gradient(circle, #2d0713 0%, #110106 100%) !important;
+            -webkit-print-color-adjust: exact !important; 
+            print-color-adjust: exact !important; 
+        }
+
+        .bloco-texto-pdf *, .texto-cabalistico-pdf {
+            color: #222222 !important;
+            background: transparent !important;
+        }
 
         .titulo-secao-pdf { color: #6B0202 !important; }
         .subtitulo-pessoa-pdf { color: #8a1c32 !important; }
@@ -405,63 +461,7 @@
     margin-bottom: 8px !important;
 }
 
-        #area-pdf-local { margin-top: 0 !important; }
-        #conteudo-pdf-rolavel { display: block !important; width: 210mm !important; }
 
-        /* CAPAS IMPRESSAS: Mantêm rigidez absoluta em 297mm (Não quebram) */
-        .pag-a4 {
-            width: 210mm !important;
-            height: 297mm !important; 
-            min-height: 297mm !important;
-            max-height: 297mm !important;
-            margin: 0 !important;
-            border: none !important;
-            border-radius: 0 !important;
-            box-shadow: none !important;
-            page-break-before: always !important;
-            page-break-after: always !important;
-            page-break-inside: avoid !important; /* Protege a capa */
-            box-sizing: border-box !important;
-        }
-
-        /* MIOLOS IMPRESSOS: Totalmente dinâmicos. Se o texto passar, gera nova folha! */
-        .bloco-texto-pdf {
-            width: 210mm !important;
-            height: auto !important;       /* MUDANÇA CIRÚRGICA: Libera o motor do PDF */
-            min-height: 297mm !important;   /* Ocupa no mínimo uma folha inteira */
-            max-height: none !important;    /* Libera limite máximo */
-            margin: 0 !important;
-            border: none !important;
-            border-radius: 0 !important;
-            box-shadow: none !important;
-            page-break-before: always !important;
-            page-break-after: always !important;
-            page-break-inside: auto !important; /* MUDANÇA CIRÚRGICA: Permite quebra natural */
-            box-sizing: border-box !important;
-            padding: 25mm 20mm !important; 
-            display: block !important;       /* Garante fluxo contínuo de cima para baixo */
-            overflow: visible !important;
-        }
-
-        /* Evita que uma caixinha vermelha de sequência se rompa feio ao meio na virada de página */
-        .bloco-texto-pdf div, .bloco-texto-pdf h2, .bloco-texto-pdf h3 {
-            page-break-inside: avoid !important;
-        }
-
-        .pag-a4:first-child {
-            page-break-before: avoid !important;
-        }
-
-        .pag-a4 {
-            background: radial-gradient(circle, #2d0713 0%, #110106 100%) !important;
-            -webkit-print-color-adjust: exact !important; 
-            print-color-adjust: exact !important; 
-        }
-
-        .bloco-texto-pdf *, .texto-cabalistico-pdf {
-            color: #222222 !important;
-            background: transparent !important;
-        }
 /* =======================================================
    CORREÇÃO DE ESPAÇAMENTO E PONTE DO TEXTOS.JS NO PDF
    ======================================================= */
@@ -485,7 +485,7 @@
 
 /* Espaçamento para os blocos de Vibração Fixada (Caixas de Sequência Negativa) */
 .bloco-texto-pdf div[style*="background: #fff5f5"] {
-    margin-top: 40px !important;
+    margin-top: 15px !important;
     margin-bottom: 15px !important;
     padding: 15px !important;
     border-left: 4px solid #ff3b5c !important;
@@ -503,15 +503,15 @@
     text-align: justify !important;
 }
 
-
-/* Se o problema for o texto colando no topo de uma NOVA página do PDF */
-.bloco-texto-pdf {
-    padding-top: 35mm !important; /* Aumenta a margem interna do topo da folha */
+/* Ajuste fino para os strongs (como o título "Vibração Fixada X:") */
+.bloco-texto-pdf strong {
+    color: #6B0202 !important;
+    font-weight: 600 !important;
+    display: inline-block;
+    margin-bottom: 4px;
 }
-
-
-
-
+    
+    
   
     
 </style>
