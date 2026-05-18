@@ -1077,17 +1077,24 @@ function extrairETratarTexto(textoBruto, nomeParceiro) {
     return `<div class="conteudo-dinamico-pdf">${textoTratado}</div>`;
 }
 
-  function gerarFolhaConteudo(titulo, sub1, txt1, sub2, txt2) {
+function gerarFolhaConteudo(titulo, sub1, txt1, sub2, txt2) {
     return `
-      <div class="bloco-texto-pdf evitar-corte">
+      <div class="bloco-texto-pdf">
           <h2 class="titulo-secao-pdf">${titulo}</h2>
-          <h3 class="subtitulo-pessoa-pdf">${sub1}</h3>
-          <div>${extrairETratarTexto(txt1, social1)}</div>
-          <div class="divisor-pdf evitar-corte"></div>
-          <h3 class="subtitulo-pessoa-pdf">${sub2}</h3>
-          <div>${extrairETratarTexto(txt2, social2)}</div>
+          
+          <div class="bloco-parceiro-pdf" style="margin-bottom: 20px;">
+              <h3 class="subtitulo-pessoa-pdf">${sub1}</h3>
+              ${extrairETratarTexto(txt1, social1)}
+          </div>
+          
+          <div class="divisor-pdf" style="margin: 20px 0;"></div>
+          
+          <div class="bloco-parceiro-pdf">
+              <h3 class="subtitulo-pessoa-pdf">${sub2}</h3>
+              ${extrairETratarTexto(txt2, social2)}
+          </div>
       </div>`;
-  }
+}
 
   // Função auxiliar interna para gerar o HTML textual da pirâmide e injetar no miolo do PDF
   function obterHtmlTextoPiramide(valores) {
