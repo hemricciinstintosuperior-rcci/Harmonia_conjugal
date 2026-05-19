@@ -1890,32 +1890,31 @@ relatorioHTML += `
 
 
 
+// ==========================================
+// PROCESSAMENTO TRANSMUTAÇÃO CASADO - PESSOA 1
+// ==========================================
 let casado1 = document.getElementById("nomeCasado1").value.trim();
+let blocoTransmutacaoP1 = ""; // Inicializa vazio
 
 if (casado1 !== "") {
-    // 1. Roda a nova função para pegar as sequências e a pirâmide real calculada
     let analiseSolteiro1 = processarMatrizCasado(nome1);
     let analiseCasado1 = processarMatrizCasado(casado1);
     
     let seqSolteiro1 = analiseSolteiro1.quantidadeBloqueios;
     let seqCasado1 = analiseCasado1.quantidadeBloqueios;
-    let piramideCasadoHtml1 = analiseCasado1.htmlVisual; // <--- Pega a pirâmide com os spans vermelhos
+    let piramideCasadoHtml1 = analiseCasado1.htmlVisual; 
 
-    // 2. Cálculos de Expressão normais do seu portal
-// Substitua o 'calcularExpressao' antigo por isso aqui:
-let expressaoSolteiro1 = calcularPessoa(nome1, "").personalidade; 
-let expressaoCasado1 = calcularPessoa(casado1, "").personalidade; 
+    let expressaoSolteiro1 = calcularPessoa(nome1, "").personalidade; 
+    let expressaoCasado1 = calcularPessoa(casado1, "").personalidade; 
 
-// O resto continua exatamente igual...
-let chaveTransicao1 = `de_${expressaoSolteiro1}_para_${expressaoCasado1}`;
-    
+    let chaveTransicao1 = `de_${expressaoSolteiro1}_para_${expressaoCasado1}`;
     let textoBruto1 = window.textos.TransicoesCasamento[chaveTransicao1] || "";
     let textoFinal1 = textoBruto1.replace("MASCULINO-FEMININO-NEUTRO,", `<strong>${social1}</strong>`);
 
-    // 3. Monta o HTML final usando as variáveis reais que vieram da função
-    let htmlResultado1 = `
+    // Guardamos o HTML nesta variável em vez de dar innerHTML na tela
+    blocoTransmutacaoP1 = `
         <div class="bloco-texto-pdf">
-            <h4 class="titulo-secao-pdf">A TRANSMUTAÇÃO DA SUA EXPRESSÃO</h4>
+            <h4 class="titulo-secao-pdf">A TRANSMUTAÇÃO DA EXPRESSÃO DE ${social1.toUpperCase()}</h4>
             <p class="texto-cabalistico-pdf">${textoFinal1}</p>
             
             <p class="texto-cabalistico-pdf">
@@ -1930,37 +1929,33 @@ let chaveTransicao1 = `de_${expressaoSolteiro1}_para_${expressaoCasado1}`;
             </div>
         </div>
     `;
-
-    document.getElementById("resultado-transmutacao-1").innerHTML = htmlResultado1;
 }
 
-
-
-let nomeCasado2 = document.getElementById("nomeCasado2").value.trim(); // <--- Captura a ID corrigida da Pessoa 2
+// ==========================================
+// PROCESSAMENTO TRANSMUTAÇÃO CASADO - PESSOA 2
+// ==========================================
+let nomeCasado2 = document.getElementById("nomeCasado2").value.trim(); 
+let blocoTransmutacaoP2 = ""; // Inicializa vazio
 
 if (nomeCasado2 !== "") {
-    // 1. Roda a nova função passando as variáveis da Pessoa 2
     let analiseSolteiro2 = processarMatrizCasado(nome2);
     let analiseCasado2 = processarMatrizCasado(nomeCasado2);
     
     let seqSolteiro2 = analiseSolteiro2.quantidadeBloqueios;
     let seqCasado2 = analiseCasado2.quantidadeBloqueios;
-    let piramideCasadoHtml2 = analiseCasado2.htmlVisual; // <--- Pega a pirâmide com os spans vermelhos
+    let piramideCasadoHtml2 = analiseCasado2.htmlVisual; 
 
-// Substitua o 'calcularExpressao' antigo por isso aqui:
-let expressaoSolteiro2 = calcularPessoa(nome2, "").personalidade; 
-let expressaoCasado2 = calcularPessoa(nomeCasado2, "").personalidade; 
+    let expressaoSolteiro2 = calcularPessoa(nome2, "").personalidade; 
+    let expressaoCasado2 = calcularPessoa(nomeCasado2, "").personalidade; 
 
-// O resto continua exatamente igual...
-let chave2 = `de_${expressaoSolteiro2}_para_${expressaoCasado2}`;
-    
+    let chave2 = `de_${expressaoSolteiro2}_para_${expressaoCasado2}`;
     let textoBruto2 = window.textos.TransicoesCasamento[chave2] || "";
     let textoFinal2 = textoBruto2.replace("MASCULINO-FEMININO-NEUTRO,", `<strong>${social2}</strong>`);
 
-    // 3. Monta o HTML final do PDF usando as variáveis reais da Pessoa 2
-    let htmlResultado2 = `
+    // Guardamos o HTML nesta variável em vez de dar innerHTML na tela
+    blocoTransmutacaoP2 = `
         <div class="bloco-texto-pdf">
-            <h4 class="titulo-secao-pdf">A TRANSMUTAÇÃO DA SUA EXPRESSÃO</h4>
+            <h4 class="titulo-secao-pdf">A TRANSMUTAÇÃO DA EXPRESSÃO DE ${social2.toUpperCase()}</h4>
             <span class="subtitulo-pessoa-pdf">${social2}</span>
             <p class="texto-cabalistico-pdf">${textoFinal2}</p>
             
@@ -1976,9 +1971,14 @@ let chave2 = `de_${expressaoSolteiro2}_para_${expressaoCasado2}`;
             </div>
         </div>
     `;
+}
 
-    document.getElementById("resultado-transmutacao-2").innerHTML = htmlResultado2;
-}    
+// ==========================================
+// INJEÇÃO DOS BLOCOS DE CASADO LOGO APÓS A SINASTRIA
+// ==========================================
+// Se houver texto gerado para qualquer um dos dois, ele entra no relatório agora!
+relatorioHTML += blocoTransmutacaoP1;
+relatorioHTML += blocoTransmutacaoP2;
     
 
 
