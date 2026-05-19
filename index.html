@@ -2204,7 +2204,7 @@ if (nomeCasado2 !== "") {
     let expressaoCasado2 = calcularPessoa(nomeCasado2, "").personalidade; 
 
     let chave2 = `de_${expressaoSolteiro2}_para_${expressaoCasado2}`;
-    let textoBruto2 = window.textos.TransicoesCasamento[chave2] || "";
+    let textoBruto2 = window.textosFeminino.TransicoesCasamento[chave2] || "";
     let textoFinal2 = textoBruto2.replace("MASCULINO-FEMININO-NEUTRO,", `<strong>${social2}</strong>`);
 
     let textoDiagnostico2 = "";
@@ -2222,13 +2222,13 @@ if (nomeCasado2 !== "") {
             const seqCompleta = neg.numero;
             const digitoUnico = String(seqCompleta).charAt(0);
             
-            let textoBruto = (window.textos && window.textos.sequenciaNegativa && window.textos.sequenciaNegativa[digitoUnico])
+            let textoBruto = (window.textos && window.textosFeminino.sequenciaNegativa && window.textosFeminino.sequenciaNegativa[digitoUnico])
                 ? window.textos.sequenciaNegativa[digitoUnico]
                 : `Análise detalhada do bloqueio ${seqCompleta} em processamento.`;
                 
             let textoTratadoHtml = extrairETratarTexto(textoBruto, social2);
                 
-            htmlTextosFemininoNegativas2 += `
+            htmlTextosNegativas2 += `
                 <div style="margin-top: 15px; padding: 10px; background: #fff5f5; border-left: 3px solid #ff3b5c; border-radius: 4px;">
                     <strong style="color: #6B0202;">Vibração Fixada ${seqCompleta}:</strong> 
                     <div style="font-size: 13px; color: #222; margin-top: 5px; line-height: 1.5; text-align: justify; display: inline;">
@@ -2253,7 +2253,7 @@ if (nomeCasado2 !== "") {
                 <pre style="font-family: 'Courier New', monospace; font-size: 12px; line-height: 1.4; letter-spacing: 4px; color: #111; display: block; text-align: center; margin: 0 auto; white-space: pre;">${piramideCasadoHtml2}</pre>
             </div>
 
-            ${htmlTextosFemininoNegativas2}
+            ${htmlTextosNegativas2}
         </div>
     `;
 }
