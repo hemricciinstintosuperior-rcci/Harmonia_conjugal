@@ -1287,11 +1287,32 @@ function extrairETratarTexto(textoBruto, nomeParceiro) {
     return `<div class="conteudo-dinamico-pdf">${textoTratado}</div>`;
 }
 
-// 2. Formatador da pirâmide (Serve para Sinastria e Casamento) - CORRIGIDO
+// 2. Formatador da pirâmide (Serve perfeitamente para Sinastria e Casamento)
 function obterHtmlTextoPiramide(valores) {
-    let matriz = valores.linhas ? valores.linhas : (Array.isArray(valores) ? valores : null);
-    
-    if (!matriz && valores && Array.isArray(valores)) {
+    if (!valores) return "";
+
+    // CASO 1: Veio do formato do "Nome de Casado" (Objeto com .linhas)
+    if (valores.linhas && Array.isArray(valores.linhas)) {
+        let texto = "";
+        valores.linhas.forEach(linha => {
+            if (Array.isArray(linha)) {
+                texto += linha.join("   ") + "\n";
+            }
+        });
+        return texto;
+    }
+
+    // CASO 2: Veio uma matriz direta (Array de Arrays)
+    if (Array.isArray(valores) && Array.isArray(valores[0])) {
+        let texto = "";
+        valores.forEach(linha => {
+            texto += linha.join("   ") + "\n";
+        });
+        return texto;
+    }
+
+    // CASO 3: Veio da Sinastria antiga (Apenas a linha base de números)
+    if (Array.isArray(valores)) {
         let lines = [valores.map(Number)];
         while(lines[lines.length-1].length > 1){
             let anterior = lines[lines.length-1];
@@ -1301,17 +1322,15 @@ function obterHtmlTextoPiramide(valores) {
             }
             lines.push(nova);
         }
-        matriz = lines;
+        
+        let texto = "";
+        lines.forEach(linha => {
+            texto += linha.join("   ") + "\n";
+        });
+        return texto;
     }
 
-    if (!matriz) return "";
-
-    let texto = "";
-    matriz.forEach(linha => {
-        let linhaTexto = linha.join("   "); // CORRIGIDO AQUI (era onde estava 'java')
-        texto += linhaTexto + "\n";
-    });
-    return texto;
+    return "";
 }
 
 // 3. Gerador de estrutura de páginas de conteúdo do PDF
