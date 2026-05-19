@@ -759,6 +759,15 @@
         letter-spacing: 2px !important;
     }
 }
+
+
+@media print {
+    * {
+        overflow: visible !important;
+        scrollbar-width: none !important;
+    }
+    *::-webkit-scrollbar { display: none !important; }
+}
     
     
 </style>
