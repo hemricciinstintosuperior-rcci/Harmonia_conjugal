@@ -797,17 +797,11 @@
     <div class="grid-pessoa">
         <div class="card-input">
             <h3>Pessoa 1</h3>
-            <div class="form-group"><label>Nome Completo</label><input type="text" id="nome1" placeholder="Nome completo igual certidão"></div>
+            <div class="form-group"><label>Nome Completo Masculino e Neutro</label><input type="text" id="nome1" placeholder="Nome completo igual certidão"></div>
             <div class="form-group"><label>Nome Social / Escolhido</label><input type="text" id="social1" placeholder="Nome para aparecer no relatório"></div>
             <div class="form-group"><label>Data de Nascimento</label><input type="text" id="data1" placeholder="DD/MM/AAAA" maxlength="10" oninput="mascaraData(this)"></div>
             <div class="form-group"><label>Nome de Casado(a):</label><input type="text" id="nomeCasado1" placeholder="Nome de casado se houver"></div>
-            <div class="form-group" style="margin-top: 15px;">
-    <label for="genero1" style="font-family: 'Cinzel', serif; color: #fff; font-size: 14px;">Gênero para o Relatório (Pessoa 1):</label>
-    <select id="genero1" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
-        <option value="masculino">Masculino / Padrão</option>
-        <option value="feminino">Feminino</option>
-    </select>
-</div>
+
             
             <div class="btn-group">
                 <button class="btn-nav" onclick="abrirModal('m1')">Motivação</button>
@@ -829,17 +823,11 @@
     <div class="grid-pessoa">
         <div class="card-input">
             <h3>Pessoa 2</h3>
-            <div class="form-group"><label>Nome Completo</label><input type="text" id="nome2" placeholder="Nome completo igual certidão"></div>
+            <div class="form-group"><label>Nome Completo Feminino</label><input type="text" id="nome2" placeholder="Nome completo igual certidão"></div>
             <div class="form-group"><label>Nome Social / Escolhido</label><input type="text" id="social2" placeholder="Nome para aparecer no relatório"></div>
             <div class="form-group"><label>Data de Nascimento</label><input type="text" id="data2" placeholder="DD/MM/AAAA" maxlength="10" oninput="mascaraData(this)"></div>
             <div class="form-group"><label>Nome de Casado(a):</label><input type="text" id="nomeCasado2" placeholder="Nome de casado se houver"></div>
-            <div class="form-group" style="margin-top: 15px;">
-    <label for="genero2" style="font-family: 'Cinzel', serif; color: #fff; font-size: 14px;">Gênero para o Relatório (Pessoa 2):</label>
-    <select id="genero2" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
-        <option value="masculino">Masculino / Padrão</option>
-        <option value="feminino">Feminino</option>
-    </select>
-</div>
+
 
             
             <div class="btn-group">
@@ -1115,18 +1103,18 @@ function abrirModal(tipo) {
     if(tipo==="a1") textoBase = textos.anoPessoal[dados1.anoPessoal];
   } else if (tipo.includes("2")) {
     nomePessoa = document.getElementById("social2").value || document.getElementById("nome2").value;
-    if(tipo==="m2") textoBase = textos.motivacao[dados2.motivacao];
-    if(tipo==="i2") textoBase = textos.influencia[dados2.influencia];
-    if(tipo==="p2") textoBase = textos.personalidade[dados2.personalidade];
-    if(tipo==="d2") textoBase = textos.CaminhodeVida[dados2.caminho];
-    if(tipo==="pr2") textoBase = textos.proposito[dados2.proposito];
-    if(tipo==="h2") textoBase = textos.harmonia[dados2.proposito];
-    if(tipo==="a2") textoBase = textos.anoPessoal[dados2.anoPessoal];
+    if(tipo==="m2") textoBase = textosFeminino.motivacao[dados2.motivacao];
+    if(tipo==="i2") textoBase = textosFeminino.influencia[dados2.influencia];
+    if(tipo==="p2") textoBase = textosFeminino.personalidade[dados2.personalidade];
+    if(tipo==="d2") textoBase = textosFeminino.CaminhodeVida[dados2.caminho];
+    if(tipo==="pr2") textoBase = textosFeminino.proposito[dados2.proposito];
+    if(tipo==="h2") textoBase = textosFeminino.harmonia[dados2.proposito];
+    if(tipo==="a2") textoBase = textosFeminino.anoPessoal[dados2.anoPessoal];
   } else if (tipo.includes("B")) {
     nomePessoa = document.getElementById("socialBebe").value || document.getElementById("nomeBebe").value;
-    if(tipo==="mB") textoBase = textos.motivacao[dadosBebe.motivacao];
-    if(tipo==="iB") textoBase = textos.influencia[dadosBebe.influencia];
-    if(tipo==="pB") textoBase = textos.personalidade[dadosBebe.personalidade];
+    if(tipo==="mB") textoBase = textos.motivacaobb[dadosBebe.motivacao];
+    if(tipo==="iB") textoBase = textos.influenciabb[dadosBebe.influencia];
+    if(tipo==="pB") textoBase = textos.personalidadebb[dadosBebe.personalidade];
   }
   abrirModalTexto(formatarTextoPersonalizado(textoBase, nomePessoa));
 }
