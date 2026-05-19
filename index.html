@@ -1287,7 +1287,7 @@ function extrairETratarTexto(textoBruto, nomeParceiro) {
     return `<div class="conteudo-dinamico-pdf">${textoTratado}</div>`;
 }
 
-// 2. Formatador da pirâmide (Serve para Sinastria e Casamento)
+// 2. Formatador da pirâmide (Serve para Sinastria e Casamento) - CORRIGIDO
 function obterHtmlTextoPiramide(valores) {
     let matriz = valores.linhas ? valores.linhas : (Array.isArray(valores) ? valores : null);
     
@@ -1308,7 +1308,7 @@ function obterHtmlTextoPiramide(valores) {
 
     let texto = "";
     matriz.forEach(linha => {
-        let linhaTexto = java.join("   ");
+        let linhaTexto = linha.join("   "); // CORRIGIDO AQUI (era onde estava 'java')
         texto += linhaTexto + "\n";
     });
     return texto;
