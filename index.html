@@ -1103,11 +1103,11 @@ function gerarCasado(){
 }
 
 function gerarMóduloNomeCasado(nomeCasado, dadosOriginal) {
-    if (!nomeCasado || !dadosOriginal) return "";
+    if (!nomeCasado || !dadosOriginal || !dadosCasado) return "";
 
     const socialCasadoInput = document.getElementById("socialCasado").value || nomeCasado.split(' ')[0];
     
-    // Tratamento para garantir a leitura da matriz de números, independente de como o seu objeto a chame
+    // Pega a matriz de linhas da pirâmide atualizada
     let matrizValores = dadosCasado.valores || dadosCasado;
     let textoPiramideCasado = obterHtmlTextoPiramide(matrizValores);
 
@@ -1134,9 +1134,9 @@ function gerarMóduloNomeCasado(nomeCasado, dadosOriginal) {
             <strong>Estabilidade Vibracional:</strong> O novo nome manteve o mesmo nível de complexidade (total de ${qtdCasado} sequências).`;
     }
 
-    // Puxa a transmutação de expressão
+    // Puxa a transmutação de expressão (Tratando erro de variável)
     const chave = `de_${dadosOriginal.personalidade}_para_${dadosCasado.personalidade}`;
-    let textoTransicao = textos.TransicoesCasamento ? (textos.TransicoesCasamento[chave] || "") : "";
+    let textoTransicao = (textos.TransicoesCasamento && textos.TransicoesCasamento[chave]) ? textos.TransicoesCasamento[chave] : "";
     
     if(!textoTransicao) {
         textoTransicao = `A transição da sua Expressão Original para esta nova frequência traz uma nova dinâmica de posicionamento prático no mundo.`;
@@ -1165,12 +1165,11 @@ function gerarMóduloNomeCasado(nomeCasado, dadosOriginal) {
     <div style="line-height: 1.8; text-align: justify; font-size: 16px; max-width: 850px; margin: 0 auto;">
         <p style="margin-bottom: 20px;">A inclusão de um sobrenome após o casamento é muito mais do que uma mudança civil; é uma profunda alteração na dinâmica vibracional que rege sua vida. Ao adotar um novo nome, você permite a entrada de novas frequências que podem preencher lacunas importantes em seu mapa natal.</p>
         <p style="margin-bottom: 20px;">Entretanto, essa expansão energética carrega consigo uma responsabilidade proporcional. O acréscimo de novas letras aumenta a carga numérica total, o que exige maior maturidade para lidar com as novas obrigações que surgem. É fundamental estar atento às sequências de bloqueios que podem ser formadas nessa nova configuração.</p>
-        <p style="margin-bottom: 20px;">Sob a ótica da Pirâmide Numerológica, a análise cautelosa é um aviso necessário: nem sempre o acréscimo de nomes resulta em facilidades. Quando bem ajustado, o nome de casado torna-se um aliado poderoso, trazendo o combustível que faltava para sua evolução pessoal e harmonia conjugal.</p>
     </div>
 </div>
 `;
 
-    // 3. Páginas de Conteúdo
+    // 3. Páginas de Conteúdo Técnico
     html += `
 <div class="page evitar-corte" style="padding: 40px; background: #fdfdfd; min-height: 296mm; box-sizing: border-box; color: #333; font-family: 'Segoe UI', sans-serif;">
     <div class="bloco-texto-pdf">
@@ -1189,11 +1188,11 @@ function gerarMóduloNomeCasado(nomeCasado, dadosOriginal) {
             ${diagnosticoHarmonia}
         </div>
 
-        <h3 class="subtitulo-persona-pdf" style="color: #6B0202; font-family: 'Cinzel', serif; font-size: 16px; margin-top: 20px;"> Nova Motivação (O que passa a impulsionar a Alma)</h3>
+        <h3 class="subtitulo-persona-pdf" style="color: #6B0202; font-family: 'Cinzel', serif; font-size: 16px; margin-top: 20px;"> Nova Motivação</h3>
         <div>${extrairETratarTexto(textos.motivacao[dadosCasado.motivacao], socialCasadoInput)}</div>
-        <h3 class="subtitulo-persona-pdf" style="color: #6B0202; font-family: 'Cinzel', serif; font-size: 16px; margin-top: 20px;"> Nova Influência (A Nova Imagem Frente à Sociedade)</h3>
+        <h3 class="subtitulo-persona-pdf" style="color: #6B0202; font-family: 'Cinzel', serif; font-size: 16px; margin-top: 20px;"> Nova Influência</h3>
         <div>${extrairETratarTexto(textos.influencia[dadosCasado.influencia], socialCasadoInput)}</div>
-        <h3 class="subtitulo-persona-pdf" style="color: #6B0202; font-family: 'Cinzel', serif; font-size: 16px; margin-top: 20px;"> Nova Expressão (O Novo Jeito de Ser na Prática)</h3>
+        <h3 class="subtitulo-persona-pdf" style="color: #6B0202; font-family: 'Cinzel', serif; font-size: 16px; margin-top: 20px;"> Nova Expressão</h3>
         <div>${extrairETratarTexto(textos.personalidade[dadosCasado.personalidade], socialCasadoInput)}</div>
     </div>
 </div>
@@ -1228,7 +1227,6 @@ function gerarMóduloNomeCasado(nomeCasado, dadosOriginal) {
 
     return html;
 }
-    
 
 /* =============================================================
    ENGENHARIA REVISADA DO EMISSOR DE RELATÓRIO
