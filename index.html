@@ -2038,19 +2038,20 @@ analiseCasado1.detalhesNegativas.forEach(neg => {
             const seqCompleta = neg.numero; 
             const digitoUnico = String(seqCompleta).charAt(0); 
             
-            // 1. Puxa o texto bruto do banco
+            // 1. Puxa o texto bruto direto do banco
             let textoBruto = (window.textos && window.textos.sequenciaNegativa && window.textos.sequenciaNegativa[digitoUnico])
                 ? window.textos.sequenciaNegativa[digitoUnico]
                 : `Análise detalhada do bloqueio ${seqCompleta} em processamento.`;
                 
-            // 2. CORREÇÃO MATADORA: Passa primeiro pelo replace padrão e depois pela sua função de filtro nativa
-            let textoTratado = textoBruto.replace("MASCULINO-FEMININO-NEUTRO,", `<strong>${social1}</strong>`);
-            textoTratado = aplicarFiltroTexto(textoTratado); // ou extrairETratarTexto(textoTratado, social1) se sua função pedir o nome por parâmetro
+            // 2. CORREÇÃO: Usa a sua função real 'extrairETratarTexto' passando o texto e o nome correto
+            let textoTratadoHtml = extrairETratarTexto(textoBruto, social1);
                 
             htmlTextosNegativas1 += `
                 <div style="margin-top: 15px; border-left: 4px solid red; padding-left: 12px; background: #fff; padding: 10px; border-radius: 0 4px 4px 0;">
                     <strong style="color: #b30000; font-size: 14px;">Bloqueio da Sequência ${seqCompleta}</strong>
-                    <p style="font-size: 13px; color: #222; margin-top: 5px; line-height: 1.5; text-align: justify;">${textoTratado}</p>
+                    <div style="font-size: 13px; color: #222; margin-top: 5px; line-height: 1.5; text-align: justify;">
+                        ${textoTratadoHtml}
+                    </div>
                 </div>`;
         });
         htmlTextosNegativas1 += `</div>`;
@@ -2117,19 +2118,20 @@ analiseCasado2.detalhesNegativas.forEach(neg => {
             const seqCompleta = neg.numero;
             const digitoUnico = String(seqCompleta).charAt(0);
             
-            // 1. Puxa o texto bruto do banco
+            // 1. Puxa o texto bruto direto do banco
             let textoBruto = (window.textos && window.textos.sequenciaNegativa && window.textos.sequenciaNegativa[digitoUnico])
                 ? window.textos.sequenciaNegativa[digitoUnico]
                 : `Análise detalhada do bloqueio ${seqCompleta} em processamento.`;
                 
-            // 2. CORREÇÃO MATADORA: Repete o mesmo tratamento com o social2
-            let textoTratado = textoBruto.replace("MASCULINO-FEMININO-NEUTRO,", `<strong>${social2}</strong>`);
-            textoTratado = aplicarFiltroTexto(textoTratado);
+            // 2. CORREÇÃO: Usa a sua função real 'extrairETratarTexto' com o social2
+            let textoTratadoHtml = extrairETratarTexto(textoBruto, social2);
                 
             htmlTextosNegativas2 += `
                 <div style="margin-top: 15px; border-left: 4px solid red; padding-left: 12px; background: #fff; padding: 10px; border-radius: 0 4px 4px 0;">
                     <strong style="color: #b30000; font-size: 14px;">Bloqueio da Sequência ${seqCompleta}</strong>
-                    <p style="font-size: 13px; color: #222; margin-top: 5px; line-height: 1.5; text-align: justify;">${textoTratado}</p>
+                    <div style="font-size: 13px; color: #222; margin-top: 5px; line-height: 1.5; text-align: justify;">
+                        ${textoTratadoHtml}
+                    </div>
                 </div>`;
         });
         htmlTextosNegativas2 += `</div>`;
