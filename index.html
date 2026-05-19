@@ -2010,17 +2010,31 @@ relatorioHTML += `
 
 
 
-// Processamento Dinâmico do Nome de Casado(a) (Baseado no Nome Original de Pessoa 1)
+// Processamento Inteligente do Nome de Casado(a)
 const nomeCasadoInput = document.getElementById("nomeCasado").value.trim();
 
 if (nomeCasadoInput !== "" && dadosCasado) {
-    // Pegamos a primeira pessoa logada (Pessoa 1) como base para fazer o antes e depois matemático
-    // assumindo que os dados dela estão na variável global (ex: dados1 ou o objeto retornado por calcularPessoa do nome1)
-    const dadosPessoa1 = calcularPessoa(document.getElementById("nome1").value, null);
+    const nome1Atual = document.getElementById("nome1").value.trim();
+    const nome2Atual = document.getElementById("nome2").value.trim();
     
-    relatorioHTML += gerarMóduloNomeCasado(nomeCasadoInput, dadosPessoa1);
-}
+    let dadosOriginaisDaPessoa = null;
 
+    // Se o nome de casado começar ou contiver o nome da Pessoa 1, a base é a Pessoa 1
+    if (nome1Atual && nomeCasadoInput.toUpperCase().includes(nome1Atual.split(' ')[0].toUpperCase())) {
+        dadosOriginaisDaPessoa = calcularPessoa(nome1Atual, null);
+    } 
+    // Se não, assume os dados da Pessoa 2 como base de comparação
+    else if (nome2Atual) {
+        dadosOriginaisDaPessoa = calcularPessoa(nome2Atual, null);
+    }
+
+    // Só chama a função se conseguir calcular a base original para comparação
+    if (dadosOriginaisDaPessoa) {
+        relatorioHTML += gerarMóduloNomeCasado(nomeCasadoInput, dadosOriginaisDaPessoa);
+    } else {
+        console.log("Não foi possível determinar a pessoa de origem para o Nome de Casado.");
+    }
+}
     
 // Processamento do bebê, se houver
   const nomeBebeInput = document.getElementById("nomeBebe").value;
