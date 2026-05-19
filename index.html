@@ -1105,11 +1105,13 @@ function gerarCasado(){
 function gerarMóduloNomeCasado(nomeCasado, dadosOriginal) {
     if (!nomeCasado || !dadosOriginal) return "";
 
-    // Pega o nome social ou o primeiro nome para personalização do texto
     const socialCasadoInput = document.getElementById("socialCasado").value || nomeCasado.split(' ')[0];
-    let textoPiramideCasado = obterHtmlTextoPiramide(dadosCasado.valores);
+    
+    // Tratamento para garantir a leitura da matriz de números, independente de como o seu objeto a chame
+    let matrizValores = dadosCasado.valores || dadosCasado;
+    let textoPiramideCasado = obterHtmlTextoPiramide(matrizValores);
 
-    // --- LÓGICA DE COMPARAÇÃO DE HARMONIA (Sua Regra de Negócio) ---
+    // --- LÓGICA DE COMPARAÇÃO DE HARMONIA ---
     const qtdOriginal = dadosOriginal.sequenciaNegativa ? dadosOriginal.sequenciaNegativa.length : 0;
     const qtdCasado = dadosCasado.sequenciaNegativa ? dadosCasado.sequenciaNegativa.length : 0;
     
@@ -1132,7 +1134,7 @@ function gerarMóduloNomeCasado(nomeCasado, dadosOriginal) {
             <strong>Estabilidade Vibracional:</strong> O novo nome manteve o mesmo nível de complexidade (total de ${qtdCasado} sequências).`;
     }
 
-    // Puxa a transmutação de expressão (Ex: de_5_para_9)
+    // Puxa a transmutação de expressão
     const chave = `de_${dadosOriginal.personalidade}_para_${dadosCasado.personalidade}`;
     let textoTransicao = textos.TransicoesCasamento ? (textos.TransicoesCasamento[chave] || "") : "";
     
@@ -1140,7 +1142,7 @@ function gerarMóduloNomeCasado(nomeCasado, dadosOriginal) {
         textoTransicao = `A transição da sua Expressão Original para esta nova frequência traz uma nova dinâmica de posicionamento prático no mundo.`;
     }
 
-    // 1. Capa de Transição do Módulo
+    // 1. Capa de Transição
     let html = criarCapaTransicao(
         "A Nova Assinatura Vibracional", 
         `Estudo de Impacto do Nome de Casado(a)`, 
@@ -1149,10 +1151,9 @@ function gerarMóduloNomeCasado(nomeCasado, dadosOriginal) {
         "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Evolução Compartilhada"
     );
 
-    // 2. Página de Introdução e Conceito
+    // 2. Página de Introdução
     html += `
 <div class="page evitar-corte" style="padding: 40px; background: #fdfdfd; min-height: 296mm; box-sizing: border-box; color: #333; font-family: 'Segoe UI', sans-serif;">
-    
     <div style="text-align: center; border-bottom: 2px solid #101015; padding-bottom: 20px; margin-bottom: 40px;">
         <h1 style="font-family: 'Cinzel', serif; color: #2d0713; font-size: 24px; letter-spacing: 2px; margin: 0; text-transform: uppercase;">
             Módulo Adicional: O Impacto do Nome de Casado(a)
@@ -1161,20 +1162,15 @@ function gerarMóduloNomeCasado(nomeCasado, dadosOriginal) {
             A Nova Identidade: Como a Fusão de Sobrenomes Altera a sua Frequência de Vida
         </p>
     </div>
-
     <div style="line-height: 1.8; text-align: justify; font-size: 16px; max-width: 850px; margin: 0 auto;">
-        <p style="margin-bottom: 20px;">A inclusão de um sobrenome após o casamento é muito mais do que uma mudança civil; é uma profunda alteração na dinâmica vibracional que rege sua vida. Ao adotar um novo nome, você permite a entrada de novas frequências que podem preencher lacunas importantes em seu mapa natal. Por exemplo, a ausência de um número 7, que vibra a busca pelo conhecimento e a análise profunda, pode ser suprida pelo sobrenome do parceiro, conferindo-lhe uma nova percepção intelectual e maior capacidade de aprendizado que antes não eram naturais à sua personalidade original.</p>
-        <p style="margin-bottom: 20px;">Entretanto, essa expansão energética carrega consigo uma responsabilidade proporcional. O acréscimo de novas letras aumenta a carga numérica total, o que exige maior maturidade para lidar com as novas obrigações que surgem. É fundamental estar atento às sequências de bloqueios que podem ser formadas nessa nova configuração. Muitas vezes, um nome que antes era fluido pode passar a apresentar dificuldades de realização ou obstáculos repetitivos devido a conflitos entre as vibrações antigas e as novas, gerando desafios que antes não faziam parte da sua jornada.</p>
-        <p style="margin-bottom: 20px;">Sob la ótica da Pirâmide Numerológica, nomes compostos ou mais curtos tendem a apresentar uma estrutura mais equilibrada e menos propensa a sequências negativas persistentes. Por isso, a análise cautelosa é um aviso necessário: nem sempre o acréscimo de nomes resulta em facilidades. Embora exista a possibilidade jurídica de reversão desse nome em caso de separação, o ideal é que a escolha seja consciente desde o início. Quando bem ajustado, o nome de casado torna-se um aliado poderoso, trazendo o combustível que faltava para sua evolução pessoal e harmonia conjugal.</p>
-    </div>
-
-    <div style="margin-top: 40px; text-align: center; color: #2d0713; font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 2px;">
-        [ ANÁLISE DE TRANSMUTAÇÃO DA ASSINATURA ]
+        <p style="margin-bottom: 20px;">A inclusão de um sobrenome após o casamento é muito mais do que uma mudança civil; é uma profunda alteração na dinâmica vibracional que rege sua vida. Ao adotar um novo nome, você permite a entrada de novas frequências que podem preencher lacunas importantes em seu mapa natal.</p>
+        <p style="margin-bottom: 20px;">Entretanto, essa expansão energética carrega consigo uma responsabilidade proporcional. O acréscimo de novas letras aumenta a carga numérica total, o que exige maior maturidade para lidar com as novas obrigações que surgem. É fundamental estar atento às sequências de bloqueios que podem ser formadas nessa nova configuração.</p>
+        <p style="margin-bottom: 20px;">Sob a ótica da Pirâmide Numerológica, a análise cautelosa é um aviso necessário: nem sempre o acréscimo de nomes resulta em facilidades. Quando bem ajustado, o nome de casado torna-se um aliado poderoso, trazendo o combustível que faltava para sua evolução pessoal e harmonia conjugal.</p>
     </div>
 </div>
 `;
 
-    // 3. Página de Resultados Práticos e Comparativos
+    // 3. Páginas de Conteúdo
     html += `
 <div class="page evitar-corte" style="padding: 40px; background: #fdfdfd; min-height: 296mm; box-sizing: border-box; color: #333; font-family: 'Segoe UI', sans-serif;">
     <div class="bloco-texto-pdf">
@@ -1186,18 +1182,18 @@ function gerarMóduloNomeCasado(nomeCasado, dadosOriginal) {
 
         <div style="background: #fdfaf0; border-left: 5px solid #b8860b; padding: 20px; margin: 20px 0; border-radius: 4px;">
             <h3 style="color: #827108; margin-top: 0; font-family: 'Cinzel', serif; font-size: 16px;">A Transmutação da sua Expressão</h3>
-            <p style="line-height: 1.6; color: #333; font-size: 15px;">${extrairETratarTexto(textoTransition, socialCasadoInput)}</p>
+            <p style="line-height: 1.6; color: #333; font-size: 15px;">${extrairETratarTexto(textoTransicao, socialCasadoInput)}</p>
         </div>
 
         <div style="padding: 15px; margin-bottom: 25px; border-radius: 4px; font-size: 15px; ${estiloDiagnostico}">
             ${diagnosticoHarmonia}
         </div>
 
-        <h3 class="subtitulo-pessoa-pdf"> Nova Motivação (O que passa a impulsionar a Alma)</h3>
+        <h3 class="subtitulo-persona-pdf" style="color: #6B0202; font-family: 'Cinzel', serif; font-size: 16px; margin-top: 20px;"> Nova Motivação (O que passa a impulsionar a Alma)</h3>
         <div>${extrairETratarTexto(textos.motivacao[dadosCasado.motivacao], socialCasadoInput)}</div>
-        <h3 class="subtitulo-pessoa-pdf"> Nova Influência (A Nova Imagem Frente à Sociedade)</h3>
+        <h3 class="subtitulo-persona-pdf" style="color: #6B0202; font-family: 'Cinzel', serif; font-size: 16px; margin-top: 20px;"> Nova Influência (A Nova Imagem Frente à Sociedade)</h3>
         <div>${extrairETratarTexto(textos.influencia[dadosCasado.influencia], socialCasadoInput)}</div>
-        <h3 class="subtitulo-pessoa-pdf"> Nova Expressão (O Novo Jeito de Ser na Prática)</h3>
+        <h3 class="subtitulo-persona-pdf" style="color: #6B0202; font-family: 'Cinzel', serif; font-size: 16px; margin-top: 20px;"> Nova Expressão (O Novo Jeito de Ser na Prática)</h3>
         <div>${extrairETratarTexto(textos.personalidade[dadosCasado.personalidade], socialCasadoInput)}</div>
     </div>
 </div>
@@ -1210,8 +1206,8 @@ function gerarMóduloNomeCasado(nomeCasado, dadosOriginal) {
             <pre style="font-family:'Courier New', monospace; font-size:13px; line-height:1.5; letter-spacing:5px; color:#111; display:block; text-align:center; margin:0 auto; white-space:pre;">${textoPiramideCasado}</pre>
         </div>
 
-        <h3 class="subtitulo-pessoa-pdf">⚠️ Desafios e Sequências da Nova Estrutura</h3>
-        <div>
+        <h3 class="subtitulo-persona-pdf" style="color: #6B0202; font-family: 'Cinzel', serif; font-size: 16px;">⚠️ Desafios e Sequências da Nova Estrutura</h3>
+        <div style="margin-top: 10px;">
     `;
 
     if (dadosCasado.sequenciaNegativa && dadosCasado.sequenciaNegativa.length > 0) {
@@ -1275,6 +1271,22 @@ function criarCapaTransicao(titulo, subtitulo, rodape, audio1Url, nomeAudio1, au
         <p style="font-size: 9px; color: #ffffff; opacity: 0.5; text-align: center; letter-spacing: 1px;">${rodape}</p>
     </div>`;
 }
+
+
+function obterHtmlTextoPiramide(valores) {
+    if (!valores || !valores.linhas) return "";
+    
+    let texto = "";
+    // Percorre cada linha da matriz gerada pelo seu sistema
+    valores.linhas.forEach(linha => {
+        // Junta os números aplicando um espaçamento idêntico ao padrão que você usa
+        let linhaTexto = linha.join("   ");
+        texto += linhaTexto + "\n";
+    });
+    
+    return texto;
+}
+    
 
 function abrirPremiumSinastria(){
   if(!dados1 || !dados2) return alert("Calcule os dados primeiro.");
