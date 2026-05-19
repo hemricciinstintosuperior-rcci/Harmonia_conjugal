@@ -1572,12 +1572,7 @@ relatorioHTML += `
 </div>
 `;
 
-    console.log("Diagnóstico de Dados:", {
-    dadosParceiro1: dados1,
-    generoCapturado: gen1,
-    estruturaTextoMotivacao: textos.motivacao,
-    testeAcesso: textos.motivacao ? textos.motivacao[dados1?.motivacao] : "Objeto textos não encontrado"
-});
+
     
   relatorioHTML += gerarFolhaConteudo("PARTE 2: INFLUÊNCIA & IMPRESSÃO", `A Influência de ${social1}`, textos.influencia[dados1.influencia], `A Influência de ${social2}`, textosFeminino.influencia[dados2.influencia]);
   
