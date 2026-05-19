@@ -2271,12 +2271,12 @@ relatorioHTML += blocoTransmutacaoP2;
       let textoPiramideBebe = obterHtmlTextoPiramide(dadosBebe.valores);
 
       // Busca os textos do Regente e das Sequências Negativas do Bebê
-      let textoRegenteBebe = textos.regente[dadosBebe.regente] || "";
+      let textoRegenteBebe = textos.regentebb[dadosBebe.regente] || "";
       let textoSequenciasBebe = "";
       if (dadosBebe.sequenciaNegativa && dadosBebe.sequenciaNegativa.length > 0) {
           textoSequenciasBebe = dadosBebe.sequenciaNegativa.map(x => `
               <div style="margin-top: 10px; padding: 10px; background: #fff5f5; border-left: 3px solid #ff3b5c; border-radius: 4px;">
-                  <strong style="color: #6B0202;">Vibração Fixada ${x}:</strong> ${textos.sequenciaNegativa[x]}
+                  <strong style="color: #6B0202;">Vibração Fixada ${x}:</strong> ${textos.sequenciaNegativabb[x]}
               </div>
           `).join("");
       } else {
@@ -2348,11 +2348,11 @@ relatorioHTML += `
                 <div style="font-size: 12px;">${statusHarmonia}</div>
             </div>
             <h3 class="subtitulo-pessoa-pdf"> Motivação (A Alma da Criança)</h3>
-            <div>${extrairETratarTexto(textos.motivacao[dadosBebe.motivacao], socialBebeInput)}</div>
+            <div>${extrairETratarTexto(textos.motivacaobb[dadosBebe.motivacao], socialBebeInput)}</div>
             <h3 class="subtitulo-pessoa-pdf"> Influência (A Impressão do Mundo)</h3>
-            <div>${extrairETratarTexto(textos.influencia[dadosBebe.influencia], socialBebeInput)}</div>
+            <div>${extrairETratarTexto(textos.influenciabb[dadosBebe.influencia], socialBebeInput)}</div>
             <h3 class="subtitulo-pessoa-pdf"> Expressão (A Personalidade em Formação)</h3>
-            <div>${extrairETratarTexto(textos.personalidade[dadosBebe.personalidade], socialBebeInput)}</div>
+            <div>${extrairETratarTexto(textos.personalidadebb[dadosBebe.personalidade], socialBebeInput)}</div>
         </div>
         
         <div class="bloco-texto-pdf">
