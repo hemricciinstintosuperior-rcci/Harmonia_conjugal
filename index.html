@@ -1208,11 +1208,12 @@ function abrirPremiumSinastria(){
 
   const nome1 = document.getElementById("nome1").value;
   const nome2 = document.getElementById("nome2").value;
-    // Captura o gênero selecionado para cada pessoa no HTML (index.html)
-let gen1 = document.getElementById("genero1").value; // vai ser 'masculino' ou 'feminino'
-let gen2 = document.getElementById("genero2").value; // vai ser 'masculino' ou 'feminino'
+
   const social1 = document.getElementById("social1").value || nome1.split(' ')[0];
   const social2 = document.getElementById("social2").value || nome2.split(' ')[0];
+        // Captura o gênero selecionado para cada pessoa no HTML (index.html)
+let gen1 = document.getElementById("genero1").value; // vai ser 'masculino' ou 'feminino'
+let gen2 = document.getElementById("genero2").value; // vai ser 'masculino' ou 'feminino'
   const dataHoje = new Date().toLocaleDateString('pt-BR');
   
 const processarMatrizCasado = (nomeCompleto) => {
