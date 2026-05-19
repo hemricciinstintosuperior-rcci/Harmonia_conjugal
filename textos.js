@@ -2082,7 +2082,7 @@ motivacao: {
     <p>O seu desejo íntimo é ser a figura pioneira, a referência máxima em tudo o que se propõe a fazer. O sucesso para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, só tem um significado real se tiver a sua assinatura e for fruto da sua coragem de desafiar o comum para abrir novos caminhos.</p>`,
 
     2: `<h3>Estar em paz e em harmonia - Motivação 2</h3>
-    <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a sua motivação interna é a busca constante pela paz e pela conexão profunda com as pessoas ao seu redor. O que o seu coração mais deseja é viver em uma realidade onde o afeto, a gentileza e a compreensão valham muito mais do que qualquer disputa de ego ou conflito bobo.</p>
+    <p><strong>MASCULINO-FEMININO-NEUTRO</strong>,você é uma mulher de motivação interna sempre em  busca constante pela paz e pela conexão profunda com as pessoas ao seu redor. O que o seu coração mais deseja é viver em uma realidade onde o afeto, a gentileza e a compreensão valham muito mais do que qualquer disputa de ego ou conflito bobo.</p>
     <p>Você sente uma satisfação imensa ao colaborar e ao ser a peça fundamental que une as pessoas em prol de um objetivo comum, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu desejo secreto é ser valorizado(a) pela sua capacidade de ouvir e nutrir relacionamentos. Você não busca o palco por vaidade, mas sim pela segurança de ter vínculos sólidos.</p>
     <p>A realização da sua alma acontece quando existe união. Ao sentir que o seu jeito cuidadoso trouxe conforto para alguém, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge uma plenitude interior que justifica todo o seu esforço na busca pelo entendimento entre os seres.</p>`,
 
