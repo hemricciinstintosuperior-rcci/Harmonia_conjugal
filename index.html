@@ -802,7 +802,7 @@
             <div class="form-group"><label>Data de Nascimento</label><input type="text" id="data1" placeholder="DD/MM/AAAA" maxlength="10" oninput="mascaraData(this)"></div>
             <div class="form-group"><label>Nome de Casado(a):</label><input type="text" id="nomeCasado1" placeholder="Nome de casado se houver"></div>
             <div class="form-group" style="margin-top: 15px;">
-    <label for="genero1" style="font-family: 'Cinzel', serif; color: #2d0713; font-size: 14px;">Gênero para o Relatório (Pessoa 1):</label>
+    <label for="genero1" style="font-family: 'Cinzel', serif; color: #fff; font-size: 14px;">Gênero para o Relatório (Pessoa 1):</label>
     <select id="genero1" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
         <option value="masculino">Masculino / Padrão</option>
         <option value="feminino">Feminino</option>
@@ -834,7 +834,7 @@
             <div class="form-group"><label>Data de Nascimento</label><input type="text" id="data2" placeholder="DD/MM/AAAA" maxlength="10" oninput="mascaraData(this)"></div>
             <div class="form-group"><label>Nome de Casado(a):</label><input type="text" id="nomeCasado2" placeholder="Nome de casado se houver"></div>
             <div class="form-group" style="margin-top: 15px;">
-    <label for="genero2" style="font-family: 'Cinzel', serif; color: #2d0713; font-size: 14px;">Gênero para o Relatório (Pessoa 2):</label>
+    <label for="genero2" style="font-family: 'Cinzel', serif; color: #fff; font-size: 14px;">Gênero para o Relatório (Pessoa 2):</label>
     <select id="genero2" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
         <option value="masculino">Masculino / Padrão</option>
         <option value="feminino">Feminino</option>
@@ -1585,6 +1585,13 @@ relatorioHTML += `
     </div>
 </div>
 `;
+
+    console.log("Diagnóstico de Dados:", {
+    dadosParceiro1: dados1,
+    generoCapturado: gen1,
+    estruturaTextoMotivacao: textos.motivacao,
+    testeAcesso: textos.motivacao ? textos.motivacao[dados1?.motivacao] : "Objeto textos não encontrado"
+});
     
   relatorioHTML += gerarFolhaConteudo("PARTE 2: INFLUÊNCIA & IMPRESSÃO", `A Influência de ${social1}`, textos.influencia[dados1.influencia] [gen1], `A Influência de ${social2}`, textos.influencia[dados2.influencia] [gen2]);
   
