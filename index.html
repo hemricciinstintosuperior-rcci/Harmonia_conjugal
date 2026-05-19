@@ -1593,7 +1593,7 @@ relatorioHTML += `
     testeAcesso: textos.motivacao ? textos.motivacao[dados1?.motivacao] : "Objeto textos não encontrado"
 });
     
-  relatorioHTML += gerarFolhaConteudo("PARTE 2: INFLUÊNCIA & IMPRESSÃO", `A Influência de ${social1}`, textos.influencia[dados1.influencia], `A Influência de ${social2}`, textos.influencia[dados2.influencia]);
+  relatorioHTML += gerarFolhaConteudo("PARTE 2: INFLUÊNCIA & IMPRESSÃO", `A Influência de ${social1}`, textos.influencia[dados1.influencia], `A Influência de ${social2}`, textosFeminino.influencia[dados2.influencia]);
   
   relatorioHTML += criarCapaTransicao(
       "Expressão & Personalidade", 
@@ -1649,7 +1649,7 @@ relatorioHTML += `
 
 
     
-  relatorioHTML += gerarFolhaConteudo("PARTE 3: EXPRESSÃO & PERSONALIDADE", `A Expressão de ${social1}`, textos.personalidade[dados1.personalidade], `A Expressão de ${social2}`, textos.personalidade[dados2.personalidade]);
+  relatorioHTML += gerarFolhaConteudo("PARTE 3: EXPRESSÃO & PERSONALIDADE", `A Expressão de ${social1}`, textos.personalidade[dados1.personalidade], `A Expressão de ${social2}`, textosFeminino.personalidade[dados2.personalidade]);
  
   relatorioHTML += criarCapaTransicao(
       "Caminho de Vida", 
@@ -1704,7 +1704,7 @@ relatorioHTML += `
 `;
 
     
-  relatorioHTML += gerarFolhaConteudo("PARTE 4: CAMINHO DE VIDA", `A Estrada de ${social1}`, textos.CaminhodeVida[dados1.caminho], `A Estrada de ${social2}`, textos.CaminhodeVida[dados2.caminho]);
+  relatorioHTML += gerarFolhaConteudo("PARTE 4: CAMINHO DE VIDA", `A Estrada de ${social1}`, textos.CaminhodeVida[dados1.caminho], `A Estrada de ${social2}`, textosFeminino.CaminhodeVida[dados2.caminho]);
  
   relatorioHTML += criarCapaTransicao(
       "Propósito Existencial", 
@@ -1758,7 +1758,7 @@ relatorioHTML += `
 </div>
 `;
     
-  relatorioHTML += gerarFolhaConteudo("PARTE 5: PROPÓSITO EXISTENCIAL", `O Propósito de ${social1}`, textos.proposito[dados1.proposito], `O Propósito de ${social2}`, textos.proposito[dados2.proposito]);
+  relatorioHTML += gerarFolhaConteudo("PARTE 5: PROPÓSITO EXISTENCIAL", `O Propósito de ${social1}`, textos.proposito[dados1.proposito], `O Propósito de ${social2}`, textosFeminino.proposito[dados2.proposito]);
  
   relatorioHTML += criarCapaTransicao(
       "Ciclo Anual", 
@@ -1813,7 +1813,7 @@ relatorioHTML += `
 `;
 
     
-  relatorioHTML += gerarFolhaConteudo("PARTE 6: CICLO ANUAL", `Ano Pessoal de ${social1}`, textos.anoPessoal[dados1.anoPessoal], `Ano Pessoal de ${social2}`, textos.anoPessoal[dados2.anoPessoal]);
+  relatorioHTML += gerarFolhaConteudo("PARTE 6: CICLO ANUAL", `Ano Pessoal de ${social1}`, textos.anoPessoal[dados1.anoPessoal], `Ano Pessoal de ${social2}`, textosFeminino.anoPessoal[dados2.anoPessoal]);
 
 
 // --- PARTE 8: INJEÇÃO COMPACTA E EM ALTA RESOLUÇÃO DA PIRÂMIDE DO CASAL ---
@@ -1834,16 +1834,16 @@ relatorioHTML += `
   }
 
   // Busca os textos do Regente e das Sequências Negativas da Pessoa 2
-  let textoRegenteP2 = textos.regente[dados2.regente] || "";
+  let textoRegenteP2 = textosFeminino.regente[dados2.regente] || "";
   let textoSequenciasP2 = "";
   if (dados2.sequenciaNegativa && dados2.sequenciaNegativa.length > 0) {
-      textoSequenciasP2 = dados2.sequenciaNegativa.map(x => `
+      textoFemininoSequenciasP2 = dados2.sequenciaNegativa.map(x => `
           <div style="margin-top: 10px; padding: 10px; background: #fff5f5; border-left: 3px solid #ff3b5c; border-radius: 4px;">
-              <strong style="color: #6B0202;">Vibração Fixada ${x}:</strong> ${textos.sequenciaNegativa[x]}
+              <strong style="color: #6B0202;">Vibração Fixada ${x}:</strong> ${textosFeminino.sequenciaNegativa[x]}
           </div>
       `).join("");
   } else {
-      textoSequenciasP2 = `<p style="color: #28a745 !important; font-size: 13px;">✅ Nenhuma sequência negativa identificada no nome.</p>`;
+      textoFemininoSequenciasP2 = `<p style="color: #28a745 !important; font-size: 13px;">✅ Nenhuma sequência negativa identificada no nome.</p>`;
   }
 
   relatorioHTML += criarCapaTransicao(
@@ -1925,16 +1925,16 @@ relatorioHTML += `
         <h2 class="titulo-secao-pdf">PARTE 8: MATRIZ CABALÍSTICA DE ${social2.toUpperCase()}</h2>
         
         <div style="text-align:center; margin-bottom:20px; background:#fdfdfd; padding:15px; border:1px dashed rgba(166,132,60,0.3); border-radius:6px;">
-            <pre style="font-family:'Courier New', monospace; font-size:12px; line-height:1.4; letter-spacing:4px; color:#111; display:block; text-align:center; margin:0 auto; white-space:pre;">${textoPiramideParceiro2}</pre>
+            <pre style="font-family:'Courier New', monospace; font-size:12px; line-height:1.4; letter-spacing:4px; color:#111; display:block; text-align:center; margin:0 auto; white-space:pre;">${textoFemininoPiramideParceiro2}</pre>
         </div>
         
         <h3 class="subtitulo-pessoa-pdf">🎯 Número Regente da Matriz: Encarte ${dados2.regente, gen2}</h3>
-        <div>${extrairETratarTexto(textoRegenteP2, social2)}</div>
+        <div>${extrairETratarTexto(textoFemininoRegenteP2, social2)}</div>
         
         <div class="divisor-pdf" style="margin:15px 0;"></div>
         
         <h3 class="subtitulo-pessoa-pdf">⚠️ Desafios e Sequências Numéricas</h3>
-        <div>${extrairETratarTexto(textoSequenciasP2, social2)}</div>
+        <div>${extrairETratarTexto(textoFemininoSequenciasP2, social2)}</div>
     </div>`;
 
 
@@ -2103,6 +2103,17 @@ function gerarAbaNomeCasado(nomeCasado, expOriginal, analiseSolteiro, analiseCas
 }
 
 
+
+
+  relatorioHTML += criarCapaTransicao(
+      "O nome de Casado(a)", 
+      "Influência do nome de acrécimo", 
+      "Bloqueios e Expressão de influencia",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
+  );
+
+    
 // ==========================================
 // PROCESSAMENTO TRANSMUTAÇÃO CASADO - PESSOA 1
 // ==========================================
@@ -2217,7 +2228,7 @@ if (nomeCasado2 !== "") {
                 
             let textoTratadoHtml = extrairETratarTexto(textoBruto, social2);
                 
-            htmlTextosNegativas2 += `
+            htmlTextosFemininoNegativas2 += `
                 <div style="margin-top: 15px; padding: 10px; background: #fff5f5; border-left: 3px solid #ff3b5c; border-radius: 4px;">
                     <strong style="color: #6B0202;">Vibração Fixada ${seqCompleta}:</strong> 
                     <div style="font-size: 13px; color: #222; margin-top: 5px; line-height: 1.5; text-align: justify; display: inline;">
@@ -2242,7 +2253,7 @@ if (nomeCasado2 !== "") {
                 <pre style="font-family: 'Courier New', monospace; font-size: 12px; line-height: 1.4; letter-spacing: 4px; color: #111; display: block; text-align: center; margin: 0 auto; white-space: pre;">${piramideCasadoHtml2}</pre>
             </div>
 
-            ${htmlTextosNegativas2}
+            ${htmlTextosFemininoNegativas2}
         </div>
     `;
 }
