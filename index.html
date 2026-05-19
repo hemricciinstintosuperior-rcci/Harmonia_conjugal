@@ -1894,7 +1894,7 @@ let casado1 = document.getElementById("nomeCasado1").value.trim();
 
 if (casado1 !== "") {
     // 1. Roda a nova função para pegar as sequências e a pirâmide real calculada
-    let analiseSolteiro1 = processarMatrizCasado(n1);
+    let analiseSolteiro1 = processarMatrizCasado(nome1);
     let analiseCasado1 = processarMatrizCasado(casado1);
     
     let seqSolteiro1 = analiseSolteiro1.quantidadeBloqueios;
@@ -1902,7 +1902,7 @@ if (casado1 !== "") {
     let piramideCasadoHtml1 = analiseCasado1.htmlVisual; // <--- Pega a pirâmide com os spans vermelhos
 
     // 2. Cálculos de Expressão normais do seu portal
-    let expressaoSolteiro1 = calcularExpressao(n1); 
+    let expressaoSolteiro1 = calcularExpressao(nome1); 
     let expressaoCasado1 = calcularExpressao(casado1); 
     let chaveTransicao1 = `de_${expressaoSolteiro1}_para_${expressaoCasado1}`;
     
@@ -1937,7 +1937,7 @@ let nomeCasado2 = document.getElementById("nomeCasado2").value.trim(); // <--- C
 
 if (nomeCasado2 !== "") {
     // 1. Roda a nova função passando as variáveis da Pessoa 2
-    let analiseSolteiro2 = processarMatrizCasado(n2);
+    let analiseSolteiro2 = processarMatrizCasado(nome2);
     let analiseCasado2 = processarMatrizCasado(nomeCasado2);
     
     let seqSolteiro2 = analiseSolteiro2.quantidadeBloqueios;
@@ -1945,7 +1945,7 @@ if (nomeCasado2 !== "") {
     let piramideCasadoHtml2 = analiseCasado2.htmlVisual; // <--- Pega a pirâmide com os spans vermelhos
 
     // 2. Cálculos de Expressão da Pessoa 2
-    let expressaoSolteiro2 = calcularExpressao(n2); 
+    let expressaoSolteiro2 = calcularExpressao(nome2); 
     let expressaoCasado2 = calcularExpressao(nomeCasado2); 
     let chave2 = `de_${expressaoSolteiro2}_para_${expressaoCasado2}`;
     
