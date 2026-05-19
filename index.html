@@ -1890,6 +1890,97 @@ relatorioHTML += `
 
 
 
+function gerarAbaNomeCasado(nomeCasado, expOriginal, analiseSolteiro, analiseCasado, nomeSocial) {
+    if (!nomeCasado) return "";
+
+    const expCasado = calcularPessoa(nomeCasado, "").personalidade;
+    
+    // Puxa as quantidades reais de bloqueios vindas do seu processarMatrizCasado
+    const qtdOriginal = analiseSolteiro ? analiseSolteiro.quantidadeBloqueios : 0;
+    const qtdCasado = analiseCasado ? analiseCasado.quantidadeBloqueios : 0;
+    
+    let diagnosticoHarmonia = "";
+    let estiloDiagnostico = "";
+
+    // Lógica matemática real de comparação
+    if (qtdCasado < qtdOriginal) {
+        estiloDiagnostico = "border-color: #27ae60; background: #ebf9f1; color: #1e8449;";
+        diagnosticoHarmonia = `
+            <strong>Melhora na Fluidez Energética:</strong> Este novo nome é mais harmônico que o original. 
+            A união eliminou bloqueios que existiam anteriormente, reduzindo de <strong>${qtdOriginal}</strong> para <strong>${qtdCasado}</strong> as sequências negativas.`;
+    } else if (qtdCasado > qtdOriginal) {
+        estiloDiagnostico = "border-color: #e74c3c; background: #fdf2f2; color: #c0392b;";
+        diagnosticoHarmonia = `
+            <strong>Atenção ao Desequilíbrio:</strong> O acréscimo deste sobrenome trouxe novos desafios. 
+            Houve um aumento de <strong>${qtdOriginal}</strong> para <strong>${qtdCasado}</strong> sequências de bloqueio.`;
+    } else {
+        estiloDiagnostico = "border-color: #f1c40f; background: #fef9e7; color: #9a7d0a;";
+        diagnosticoHarmonia = `
+            <strong>Estabilidade Vibracional:</strong> O novo nome manteve o mesmo nível de complexidade (total de <strong>${qtdCasado}</strong> sequências).`;
+    }
+
+    const chave = `de_${expOriginal}_para_${expCasado}`;
+    let textoTransicao = window.textos.TransicoesCasamento[chave] || "";
+    
+    // Substitui o marcador pelo nome social da pessoa
+    textoTransicao = textoTransicao.replace("MASCULINO-FEMININO-NEUTRO,", `<strong>${nomeSocial}</strong>`);
+    
+    // Monta a página com o seu padrão visual de impressão do PDF (bloco-texto-pdf)
+    let html = `
+    <div class="bloco-texto-pdf">
+        <h4 class="titulo-secao-pdf">A TRANSMUTAÇÃO DA EXPRESSÃO DE ${nomeSocial.toUpperCase()}</h4>
+        
+        <div class="texto-cabalistico-pdf" style="text-align: justify; line-height: 1.6; margin-bottom: 20px;">
+            <p style="margin-bottom: 15px;">A inclusão de um sobrenome após o casamento é muito mais do que uma mudança civil; é uma profunda alteração na dinâmica vibracional que rege sua vida. Ao adotar um novo nome, você permite a entrada de novas frequências que podem preencher lacunas importantes em seu mapa natal ou trazer novos desafios à sua jornada.</p>
+        </div>
+
+        <div style="background: #fdfaf0; border-left: 5px solid #b8860b; padding: 15px; margin: 20px 0; border-radius: 4px;">
+            <h5 style="color: #827108; margin-top: 0; font-size: 15px;">A Transmutação da sua Expressão</h5>
+            <p style="line-height: 1.6; color: #333; font-size: 14px; text-align: justify;">${textoTransicao}</p>
+        </div>
+
+        <div style="padding: 12px; border-left: 6px solid; margin-bottom: 25px; border-radius: 4px; font-size: 14px; ${estiloDiagnostico}">
+            ${diagnosticoHarmonia}
+        </div>
+
+        <div class="divisor-pdf"></div>
+        
+        <div style="text-align: center; background: #fff; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+            <div class="piramide" style="color: #111; display: inline-block;">${analiseCasado.htmlVisual}</div>
+        </div>
+    `;
+
+    // --- SEÇÃO DINÂMICA: BUSCA E EXIBE OS TEXTOS DAS NEGATIVAS DO MAPA ATUAL ---
+    if (qtdCasado > 0 && analiseCasado.detalhesNegativas) {
+        html += `
+        <div style="margin-top: 20px; padding: 12px; border: 1px solid #ffcccc; background: #fff5f5; border-radius: 8px; page-break-inside: avoid;">
+            <h5 style="color: red; margin-bottom: 10px; margin-top: 0; font-size: 14px;">⚠️ Detalhamento dos Bloqueios no Nome de Casado(a)</h5>
+        `;
+        
+        analiseCasado.detalhesNegativas.forEach(neg => {
+            const seqCompleta = neg.numero; // Ex: 111, 222
+            const digitoUnico = String(seqCompleta).charAt(0); // Pega "1", "2" para o seu textos.js
+            
+            const textoBloqueio = (window.textos && window.textos.sequenciaNegativa && window.textos.sequenciaNegativa[digitoUnico]) 
+                ? window.textos.sequenciaNegativa[digitoUnico] 
+                : `Sequência Negativa ${seqCompleta}: Análise detalhada deste bloqueio em processamento.`;
+
+            html += `
+                <div style="margin-top: 10px; border-left: 3px solid red; padding-left: 10px; background: #fff; padding: 8px; margin-bottom: 5px;">
+                    <strong style="color: #b30000; font-size: 13px;">Bloqueio da Sequência ${seqCompleta}</strong>
+                    <p style="color: #333; font-size: 13px; text-align: justify; margin-top: 5px; line-height: 1.4;">${textoBloqueio}</p>
+                </div>
+            `;
+        });
+
+        html += `</div>`;
+    }
+
+    html += `</div>`; // Fecha .bloco-texto-pdf
+    return html;
+}
+
+
 // ==========================================
 // PROCESSAMENTO TRANSMUTAÇÃO CASADO - PESSOA 1
 // ==========================================
@@ -1897,38 +1988,17 @@ let casado1 = document.getElementById("nomeCasado1").value.trim();
 let blocoTransmutacaoP1 = ""; // Inicializa vazio
 
 if (casado1 !== "") {
+    // Pegamos os dados reais das matrizes para a comparação matemática
     let analiseSolteiro1 = processarMatrizCasado(nome1);
     let analiseCasado1 = processarMatrizCasado(casado1);
     
-    let seqSolteiro1 = analiseSolteiro1.quantidadeBloqueios;
-    let seqCasado1 = analiseCasado1.quantidadeBloqueios;
-    let piramideCasadoHtml1 = analiseCasado1.htmlVisual; 
-
+    // Pegamos as expressões (personalidade) para montar a chave de transição
     let expressaoSolteiro1 = calcularPessoa(nome1, "").personalidade; 
     let expressaoCasado1 = calcularPessoa(casado1, "").personalidade; 
 
-    let chaveTransicao1 = `de_${expressaoSolteiro1}_para_${expressaoCasado1}`;
-    let textoBruto1 = window.textos.TransicoesCasamento[chaveTransicao1] || "";
-    let textoFinal1 = textoBruto1.replace("MASCULINO-FEMININO-NEUTRO,", `<strong>${social1}</strong>`);
-
-    // Guardamos o HTML nesta variável em vez de dar innerHTML na tela
-    blocoTransmutacaoP1 = `
-        <div class="bloco-texto-pdf">
-            <h4 class="titulo-secao-pdf">A TRANSMUTAÇÃO DA EXPRESSÃO DE ${social1.toUpperCase()}</h4>
-            <p class="texto-cabalistico-pdf">${textoFinal1}</p>
-            
-            <p class="texto-cabalistico-pdf">
-                <strong style="color: #6B0202;">Atenção ao Desequilíbrio:</strong> 
-                O acréscimo deste sobrenome trouxe novos desafios. Houve um aumento de ${seqSolteiro1} para ${seqCasado1} sequências de bloqueio.
-            </p>
-            
-            <div class="divisor-pdf"></div>
-            
-            <div style="text-align: center; background: #fff; padding: 20px; border-radius: 8px;">
-                <div class="piramide" style="color: #111;">${piramideCasadoHtml1}</div>
-            </div>
-        </div>
-    `;
+    // Chamamos a nossa função inteligente passando os dados da Pessoa 1
+    // Ela vai calcular se aumentou/diminuiu, gerar a pirâmide e listar os textos das negativas!
+    blocoTransmutacaoP1 = gerarAbaNomeCasado(casado1, expressaoSolteiro1, analiseSolteiro1, analiseCasado1, social1);
 }
 
 // ==========================================
@@ -1938,50 +2008,26 @@ let nomeCasado2 = document.getElementById("nomeCasado2").value.trim();
 let blocoTransmutacaoP2 = ""; // Inicializa vazio
 
 if (nomeCasado2 !== "") {
+    // Pegamos os dados reais das matrizes para a configuração da Pessoa 2
     let analiseSolteiro2 = processarMatrizCasado(nome2);
     let analiseCasado2 = processarMatrizCasado(nomeCasado2);
     
-    let seqSolteiro2 = analiseSolteiro2.quantidadeBloqueios;
-    let seqCasado2 = analiseCasado2.quantidadeBloqueios;
-    let piramideCasadoHtml2 = analiseCasado2.htmlVisual; 
-
+    // Pegamos as expressões (personalidade) da Pessoa 2
     let expressaoSolteiro2 = calcularPessoa(nome2, "").personalidade; 
     let expressaoCasado2 = calcularPessoa(nomeCasado2, "").personalidade; 
 
-    let chave2 = `de_${expressaoSolteiro2}_para_${expressaoCasado2}`;
-    let textoBruto2 = window.textos.TransicoesCasamento[chave2] || "";
-    let textoFinal2 = textoBruto2.replace("MASCULINO-FEMININO-NEUTRO,", `<strong>${social2}</strong>`);
-
-    // Guardamos o HTML nesta variável em vez de dar innerHTML na tela
-    blocoTransmutacaoP2 = `
-        <div class="bloco-texto-pdf">
-            <h4 class="titulo-secao-pdf">A TRANSMUTAÇÃO DA EXPRESSÃO DE ${social2.toUpperCase()}</h4>
-            <span class="subtitulo-pessoa-pdf">${social2}</span>
-            <p class="texto-cabalistico-pdf">${textoFinal2}</p>
-            
-            <p class="texto-cabalistico-pdf">
-                <strong>Atenção ao Desequilíbrio:</strong> 
-                O acréscimo deste sobrenome trouxe novos desafios. Houve uma mudança de ${seqSolteiro2} para ${seqCasado2} sequências de bloqueio.
-            </p>
-            
-            <div class="divisor-pdf"></div>
-            
-            <div style="text-align: center; background: #fff; padding: 20px;">
-                <div class="piramide" style="color: #111;">${piramideCasadoHtml2}</div>
-            </div>
-        </div>
-    `;
+    // Chamamos a mesma função inteligente, mas agora com os dados da Pessoa 2
+    blocoTransmutacaoP2 = gerarAbaNomeCasado(nomeCasado2, expressaoSolteiro2, analiseSolteiro2, analiseCasado2, social2);
 }
 
 // ==========================================
 // INJEÇÃO DOS BLOCOS DE CASADO LOGO APÓS A SINASTRIA
 // ==========================================
-// Se houver texto gerado para qualquer um dos dois, ele entra no relatório agora!
 relatorioHTML += blocoTransmutacaoP1;
 relatorioHTML += blocoTransmutacaoP2;
+
+
     
-
-
 // Processamento do bebê, se houver
   const nomeBebeInput = document.getElementById("nomeBebe").value;
   if (nomeBebeInput && dadosBebe) {
