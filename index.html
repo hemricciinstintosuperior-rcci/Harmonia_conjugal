@@ -1271,19 +1271,56 @@ function criarCapaTransicao(titulo, subtitulo, rodape, audio1Url, nomeAudio1, au
 }
 
 
-function obterHtmlTextoPiramide(valores) {
-    if (!valores || !valores.linhas) return "";
+/* =============================================================
+   FUNÇÕES UTILITÁRIAS GLOBAIS (ESCOPO LIVRE)
+   ============================================================= */
+
+// 1. Tratamento de textos e placeholders (Acessível por qualquer módulo)
+function extrairETratarTexto(textoBruto, nomeParceiro) {
+    if (!textoBruto) return "";
     
+    // Mantém as tags HTML (h3, div, etc.) e substitui a tag pelo nome social personalizado
+    let textoTratado = String(textoBruto)
+        .replace(/MASCULINO-FEMININO-NEUTRO/gi, `<strong>${nomeParceiro}</strong>`);
+        
+    return `<div class="conteudo-dinamico-pdf">${textoTratado}</div>`;
+}
+
+// 2. Formatador textual da pirâmide para o bloco de impressão <pre>
+function obterHtmlTextoPiramide(valores) {
+    // Se receber a estrutura completa do sistema (.valores) ou a matriz direta
+    let matriz = valores.linhas ? valores.linhas : (Array.isArray(valores) ? valores : null);
+    
+    // Se a matriz não foi encontrada mas temos a estrutura de linhas nativa calculada na hora
+    if (!matriz && valores && Array.isArray(valores)) {
+        let lines = [valores.map(Number)];
+        while(lines[lines.length-1].length > 1){
+            let anterior = lines[lines.length-1];
+            let nova = [];
+            for(let i=0; i<anterior.length-1; i++){
+                nova.push(Number(reduzir(anterior[i] + anterior[i+1]))); // Certifique-se que reduzir() existe globalmente
+            }
+            lines.push(nova);
+        }
+        matriz = lines;
+    }
+
+    if (!matriz) return "";
+
     let texto = "";
-    // Percorre cada linha da matriz gerada pelo seu sistema
-    valores.linhas.forEach(linha => {
-        // Junta os números aplicando um espaçamento idêntico ao padrão que você usa
-        let linhaTexto = linha.join("   ");
+    matriz.forEach(linha => {
+        // Formata mantendo o padrão exato de 3 espaços para alinhamento geométrico perfeito no PDF
+        let linhaTexto = linha.map(n => {
+            // Se for o array nativo com marcação de span negativo, mantém a tag. Se não, passa o número puro.
+            return n;
+        }).join("   ");
         texto += linhaTexto + "\n";
     });
     
     return texto;
 }
+
+
     
 
 function abrirPremiumSinastria(){
@@ -1421,65 +1458,7 @@ relatorioHTML += `
 
     
 
-function extrairETratarTexto(textoBruto, nomeParceiro) {
-    if (!textoBruto) return "";
-    
-    // Em vez de extrair apenas o texto puro (destruindo h3 e quebras), 
-    // nós tratamos diretamente a string HTML para manter os títulos e tags vivos.
-    let textoTratado = String(textoBruto)
-        .replace(/MASCULINO-FEMININO-NEUTRO/gi, `<strong>${nomeParceiro}</strong>`);
-        
-    return `<div class="conteudo-dinamico-pdf">${textoTratado}</div>`;
-}
 
-  function gerarFolhaConteudo(titulo, sub1, txt1, sub2, txt2) {
-    return `
-      <div class="bloco-texto-pdf">
-          <h2 class="titulo-secao-pdf">${titulo}</h2>
-          <h3 class="subtitulo-pessoa-pdf">${sub1}</h3>
-          <div>${extrairETratarTexto(txt1, social1)}</div>
-          <div class="divisor-pdf"></div>
-          <h3 class="subtitulo-pessoa-pdf">${sub2}</h3>
-          <div>${extrairETratarTexto(txt2, social2)}</div>
-      </div>`;
-  }
-
-  // Função auxiliar interna para gerar o HTML textual da pirâmide e injetar no miolo do PDF
-  function obterHtmlTextoPiramide(valores) {
-    if(!valores || valores.length === 0) return "";
-    let lines = [valores.map(Number)];
-    while(lines[lines.length-1].length > 1){
-      let anterior = lines[lines.length-1];
-      let nova = [];
-      for(let i=0; i<anterior.length-1; i++){
-        nova.push(Number(reduzir(anterior[i] + anterior[i+1])));
-      }
-      lines.push(nova);
-    }
-    let marcacoes = [];
-    for(let l=0; l<lines.length; l++){
-      marcacoes[l] = new Set();
-      let linha = lines[l];
-      let i=0;
-      while(i < linha.length){
-        let atual = Number(linha[i]);
-        let count = 1; let j = i+1;
-        while(j < linha.length && Number(linha[j]) === atual) { count++; j++; }
-        if(count >= 3){
-          for(let k=i; k<i+count; k++) marcacoes[l].add(k);
-        }
-        i += count;
-      }
-    }
-    let txtPiramide = "";
-    for(let l=0; l<lines.length; l++){
-      txtPiramide += lines[l].map((n, idx) => {
-        if (marcacoes[l].has(idx)) return `<span class="negativo" style="color:#ff3b5c !important; font-weight:bold;">${n}</span>`;
-        return n;
-      }).join(" ") + "\n";
-    }
-    return txtPiramide;
-  }
 
   // Capa da Seção 1 com os Áudios acoplados corretamente
   relatorioHTML += criarCapaTransicao(
