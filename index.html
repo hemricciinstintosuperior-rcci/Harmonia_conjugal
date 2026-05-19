@@ -1902,9 +1902,12 @@ if (casado1 !== "") {
     let piramideCasadoHtml1 = analiseCasado1.htmlVisual; // <--- Pega a pirâmide com os spans vermelhos
 
     // 2. Cálculos de Expressão normais do seu portal
-    let expressaoSolteiro1 = calcularExpressao(n1); 
-    let expressaoCasado1 = calcularExpressao(casado1); 
-    let chaveTransicao1 = `de_${expressaoSolteiro1}_para_${expressaoCasado1}`;
+// Substitua o 'calcularExpressao' antigo por isso aqui:
+let expressaoSolteiro1 = calcularPessoa(nome1, "").personalidade; 
+let expressaoCasado1 = calcularPessoa(casado1, "").personalidade; 
+
+// O resto continua exatamente igual...
+let chaveTransicao1 = `de_${expressaoSolteiro1}_para_${expressaoCasado1}`;
     
     let textoBruto1 = TransicoesCasamento[chaveTransicao1] || "";
     let textoFinal1 = textoBruto1.replace("MASCULINO-FEMININO-NEUTRO,", `<strong>${social1}</strong>`);
@@ -1944,10 +1947,12 @@ if (nomeCasado2 !== "") {
     let seqCasado2 = analiseCasado2.quantidadeBloqueios;
     let piramideCasadoHtml2 = analiseCasado2.htmlVisual; // <--- Pega a pirâmide com os spans vermelhos
 
-    // 2. Cálculos de Expressão da Pessoa 2
-    let expressaoSolteiro2 = calcularExpressao(n2); 
-    let expressaoCasado2 = calcularExpressao(nomeCasado2); 
-    let chave2 = `de_${expressaoSolteiro2}_para_${expressaoCasado2}`;
+// Substitua o 'calcularExpressao' antigo por isso aqui:
+let expressaoSolteiro2 = calcularPessoa(nome2, "").personalidade; 
+let expressaoCasado2 = calcularPessoa(nomeCasado2, "").personalidade; 
+
+// O resto continua exatamente igual...
+let chave2 = `de_${expressaoSolteiro2}_para_${expressaoCasado2}`;
     
     let textoBruto2 = TransicoesCasamento[chave2] || "";
     let textoFinal2 = textoBruto2.replace("MASCULINO-FEMININO-NEUTRO,", `<strong>${social2}</strong>`);
