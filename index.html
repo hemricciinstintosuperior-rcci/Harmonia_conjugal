@@ -1837,13 +1837,13 @@ relatorioHTML += `
   let textoRegenteP2 = textosFeminino.regente[dados2.regente] || "";
   let textoSequenciasP2 = "";
   if (dados2.sequenciaNegativa && dados2.sequenciaNegativa.length > 0) {
-      textoFemininoSequenciasP2 = dados2.sequenciaNegativa.map(x => `
+      textoSequenciasP2 = dados2.sequenciaNegativa.map(x => `
           <div style="margin-top: 10px; padding: 10px; background: #fff5f5; border-left: 3px solid #ff3b5c; border-radius: 4px;">
               <strong style="color: #6B0202;">Vibração Fixada ${x}:</strong> ${textosFeminino.sequenciaNegativa[x]}
           </div>
       `).join("");
   } else {
-      textoFemininoSequenciasP2 = `<p style="color: #28a745 !important; font-size: 13px;">✅ Nenhuma sequência negativa identificada no nome.</p>`;
+      textoSequenciasP2 = `<p style="color: #28a745 !important; font-size: 13px;">✅ Nenhuma sequência negativa identificada no nome.</p>`;
   }
 
   relatorioHTML += criarCapaTransicao(
@@ -1925,16 +1925,16 @@ relatorioHTML += `
         <h2 class="titulo-secao-pdf">PARTE 8: MATRIZ CABALÍSTICA DE ${social2.toUpperCase()}</h2>
         
         <div style="text-align:center; margin-bottom:20px; background:#fdfdfd; padding:15px; border:1px dashed rgba(166,132,60,0.3); border-radius:6px;">
-            <pre style="font-family:'Courier New', monospace; font-size:12px; line-height:1.4; letter-spacing:4px; color:#111; display:block; text-align:center; margin:0 auto; white-space:pre;">${textoFemininoPiramideParceiro2}</pre>
+            <pre style="font-family:'Courier New', monospace; font-size:12px; line-height:1.4; letter-spacing:4px; color:#111; display:block; text-align:center; margin:0 auto; white-space:pre;">${textoPiramideParceiro2}</pre>
         </div>
         
         <h3 class="subtitulo-pessoa-pdf">🎯 Número Regente da Matriz: Encarte ${dados2.regente, gen2}</h3>
-        <div>${extrairETratarTexto(textoFemininoRegenteP2, social2)}</div>
+        <div>${extrairETratarTexto(textoRegenteP2, social2)}</div>
         
         <div class="divisor-pdf" style="margin:15px 0;"></div>
         
         <h3 class="subtitulo-pessoa-pdf">⚠️ Desafios e Sequências Numéricas</h3>
-        <div>${extrairETratarTexto(textoFemininoSequenciasP2, social2)}</div>
+        <div>${extrairETratarTexto(textoSequenciasP2, social2)}</div>
     </div>`;
 
 
