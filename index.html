@@ -2064,6 +2064,9 @@ function gerarAbaNomeCasado(nomeCasado, expOriginal, analiseSolteiro, analiseCas
 // ==========================================
 // PROCESSAMENTO TRANSMUTAÇÃO CASADO - PESSOA 1
 // ==========================================
+// ==========================================
+// PROCESSAMENTO TRANSMUTAÇÃO CASADO - PESSOA 1
+// ==========================================
 let casado1 = document.getElementById("nomeCasado1").value.trim();
 let blocoTransmutacaoP1 = ""; 
 
@@ -2094,8 +2097,8 @@ if (casado1 !== "") {
     // LISTA DE NEGATIVAS OTIMIZADA PARA CABER NO PDF
     let htmlTextosNegativas1 = "";
     if (seqCasado1 > 0 && analiseCasado1.detalhesNegativas) {
-        htmlTextosNegativas1 += `<div style="margin-top: 10px; padding: 10px; border: 1px solid #ffcccc; background: #fff5f5; border-radius: 6px;">`;
-        htmlTextosNegativas1 += `<h5 style="color: red; margin-bottom: 5px; font-size: 13px; margin-top: 0;">⚠️ Alerta de Bloqueios no Nome de Casado(a)</h5>`;
+        htmlTextosNegativas1 += `<div style="margin-top: 15px; padding: 12px; border: 1px solid #ffcccc; background: #fff5f5; border-radius: 6px;">`;
+        htmlTextosNegativas1 += `<h5 style="color: red; margin-bottom: 5px; font-size: 14px; margin-top: 0; font-family: 'Poppins', sans-serif;">⚠️ Alerta de Bloqueios no Nome de Casado(a)</h5>`;
         
         analiseCasado1.detalhesNegativas.forEach(neg => {
             const seqCompleta = neg.numero; 
@@ -2108,9 +2111,9 @@ if (casado1 !== "") {
             let textoTratadoHtml = extrairETratarTexto(textoBruto, social1);
                 
             htmlTextosNegativas1 += `
-                <div style="margin-top: 8px; border-left: 3px solid red; padding-left: 10px; background: #fff; padding: 6px; border-radius: 0 4px 4px 0;">
-                    <strong style="color: #b30000; font-size: 12px;">Bloqueio da Sequência ${seqCompleta}</strong>
-                    <div style="font-size: 11.5px; color: #222; margin-top: 2px; line-height: 1.4; text-align: justify;">
+                <div style="margin-top: 8px; border-left: 3px solid red; padding-left: 10px; background: #fff; padding: 8px; border-radius: 0 4px 4px 0;">
+                    <strong style="color: #b30000; font-size: 13px;">Bloqueio da Sequência ${seqCompleta}</strong>
+                    <div style="font-size: 13px; color: #222; margin-top: 4px; line-height: 1.5; text-align: justify;">
                         ${textoTratadoHtml}
                     </div>
                 </div>`;
@@ -2118,20 +2121,20 @@ if (casado1 !== "") {
         htmlTextosNegativas1 += `</div>`;
     }
 
-    // ESTRUTURA COM PIRÂMIDE REDUZIDA (FONT-SIZE E LETTER-SPACING ADAPTADOS)
+    // AJUSTADO: Estrutura idêntica à do relatório padrão (Usando o pre com os mesmos estilos do solteiro)
     blocoTransmutacaoP1 = `
         <div class="bloco-texto-pdf">
-            <h4 class="titulo-secao-pdf">A TRANSMUTAÇÃO DA EXPRESSÃO DE ${social1.toUpperCase()}</h4>
-            <p class="texto-cabalistico-pdf" style="margin-bottom: 10px;">${textoFinal1}</p>
+            <h2 class="titulo-secao-pdf">A TRANSMUTAÇÃO DA EXPRESSÃO DE ${social1.toUpperCase()}</h2>
+            <p class="texto-cabalistico-pdf">${textoFinal1}</p>
             
-            <p class="texto-cabalistico-pdf" style="margin-bottom: 12px;">
-                <strong style="color: #6B0202;">Análise de Fluidez:</strong> ${textoDiagnostico1}
+            <p class="texto-cabalistico-pdf">
+                <strong>Análise de Fluidez:</strong> ${textoDiagnostico1}
             </p>
             
-            <div class="divisor-pdf" style="margin: 10px 0;"></div>
+            <div class="divisor-pdf" style="margin: 15px 0;"></div>
             
-            <div style="text-align: center; background: #fff; padding: 10px; border-radius: 6px; margin-bottom: 10px;">
-                <pre class="piramide" style="color: #111; font-family: 'Courier New', monospace; font-size: 0.95rem; line-height: 1.2; letter-spacing: 3px; white-space: pre-wrap; display: inline-block; margin: 0 auto; text-align: center;">${piramideCasadoHtml1}</pre>
+            <div style="text-align: center; background: #fdfdfd; padding: 15px; border: 1px dashed rgba(166,132,60,0.3); border-radius: 6px; margin-bottom: 20px;">
+                <pre style="font-family: 'Courier New', monospace; font-size: 12px; line-height: 1.4; letter-spacing: 4px; color: #111; display: block; text-align: center; margin: 0 auto; white-space: pre;">${piramideCasadoHtml1}</pre>
             </div>
 
             ${htmlTextosNegativas1}
@@ -2139,9 +2142,8 @@ if (casado1 !== "") {
     `;
 }
 
-// ==========================================
-// PROCESSAMENTO TRANSMUTAÇÃO CASADO - PESSOA 2
-// ==========================================
+
+
 // ==========================================
 // PROCESSAMENTO TRANSMUTAÇÃO CASADO - PESSOA 2
 // ==========================================
@@ -2176,7 +2178,7 @@ if (nomeCasado2 !== "") {
     let htmlTextosNegativas2 = "";
     if (seqCasado2 > 0 && analiseCasado2.detalhesNegativas) {
         htmlTextosNegativas2 += `<div style="margin-top: 10px; padding: 10px; border: 1px solid #ffcccc; background: #fff5f5; border-radius: 6px;">`;
-        htmlTextosNegativas2 += `<h5 style="color: red; margin-bottom: 5px; font-size: 13px; margin-top: 0;">⚠️ Alerta de Bloqueios no Nome de Casado(a)</h5>`;
+        htmlTextosNegativas2 += `<h5 style="color: red; margin-bottom: 5px; font-size: 13px; margin-top: 0; font-family: 'Poppins', sans-serif;">⚠️ Alerta de Bloqueios no Nome de Casado(a)</h5>`;
         
         analiseCasado2.detalhesNegativas.forEach(neg => {
             const seqCompleta = neg.numero;
@@ -2199,27 +2201,28 @@ if (nomeCasado2 !== "") {
         htmlTextosNegativas2 += `</div>`;
     }
 
-    // ESTRUTURA COM PIRÂMIDE REDUZIDA (FONT-SIZE E LETTER-SPACING ADAPTADOS)
+    // AJUSTADO: Estrutura idêntica à do relatório padrão (Usando o pre com os mesmos estilos do solteiro)
     blocoTransmutacaoP2 = `
         <div class="bloco-texto-pdf">
-            <h4 class="titulo-secao-pdf">A TRANSMUTAÇÃO DA EXPRESSÃO DE ${social2.toUpperCase()}</h4>
-            <span class="subtitulo-pessoa-pdf">${social2}</span>
-            <p class="texto-cabalistico-pdf" style="margin-bottom: 10px;">${textoFinal2}</p>
+            <h2 class="titulo-secao-pdf">A TRANSMUTAÇÃO DA EXPRESSÃO DE ${social2.toUpperCase()}</h2>
+            <p class="texto-cabalistico-pdf">${textoFinal2}</p>
             
-            <p class="texto-cabalistico-pdf" style="margin-bottom: 12px;">
+            <p class="texto-cabalistico-pdf">
                 <strong>Análise de Fluidez:</strong> ${textoDiagnostico2}
             </p>
             
-            <div class="divisor-pdf" style="margin: 10px 0;"></div>
+            <div class="divisor-pdf" style="margin: 15px 0;"></div>
             
-            <div style="text-align: center; background: #fff; padding: 20px; margin-bottom: 10px;">
-                <pre class="piramide" style="color: #111; font-family: 'Courier New', monospace; font-size: 0.95rem; line-height: 1.2; letter-spacing: 3px; white-space: pre-wrap; display: inline-block; margin: 0 auto; text-align: center;">${piramideCasadoHtml2}</pre>
+            <div style="text-align: center; background: #fdfdfd; padding: 15px; border: 1px dashed rgba(166,132,60,0.3); border-radius: 6px; margin-bottom: 20px;">
+                <pre style="font-family: 'Courier New', monospace; font-size: 12px; line-height: 1.4; letter-spacing: 4px; color: #111; display: block; text-align: center; margin: 0 auto; white-space: pre;">${piramideCasadoHtml2}</pre>
             </div>
 
             ${htmlTextosNegativas2}
         </div>
     `;
 }
+
+    
 
 // ==========================================
 // INJEÇÃO DOS BLOCOS DE CASADO LOGO APÓS A SINASTRIA
