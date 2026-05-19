@@ -706,55 +706,55 @@
 
 
 /* =======================================================
-   REMEDIO GLOBAL INDESTRUTÍVEL PARA TODAS AS PIRÂMIDES
+   SISTEMA DE SEGURANÇA ANTIESTOURO EXCLUSIVO DA PIRÂMIDE
    ======================================================= */
 
-/* 1. Regra para a tela (Web e Mobile) */
+/* 1. Comportamento Geral na Tela */
 .piramide {
     font-family: 'Courier New', monospace !important;
     text-align: center !important;
-    white-space: pre !important; /* Obriga os números a ficarem na mesma linha sem quebrar o triângulo */
-    display: inline-block !important;
-    margin: 0 auto !important;
+    white-space: pre !important; /* Mantém o triângulo montado sem quebrar linhas */
+    display: block !important;   /* Muda para block para controlar margens */
+    margin: 0 auto !important;   /* Centraliza APENAS a pirâmide dentro da div dela */
     
-    /* CONTROLADOR ELÁSTICO: Se o nome for normal, a fonte fica grande. 
-       Se o nome for gigante, ela encolhe dinamicamente para caber na div */
-    font-size: clamp(0.5rem, 2.2vw, 1.2rem) !important; 
-    line-height: 1.3 !important;
-    letter-spacing: clamp(2px, 0.6vw, 6px) !important;
+    /* Escala dinâmica para nomes grandes na tela */
+    font-size: clamp(0.55rem, 2vw, 1.2rem) !important; 
+    line-height: 1.25 !important;
+    letter-spacing: clamp(1.5px, 0.5vw, 5px) !important;
     
     max-width: 100% !important;
     overflow: visible !important;
 }
 
-/* 2. Regra ultra rígida para a geração do PDF (Impressão) */
+/* 2. Engenharia de Impressão Rígida (PDF) */
 @media print {
-    /* Força o container pai a centralizar e segurar o tamanho */
-    .card-piramide, 
-    .bloco-texto-pdf div, 
+    /* Alvo ultra específico: Força apenas a div que envelopa a pirâmide a centralizar */
+    .bloco-texto-pdf div style*="text-align: center",
     div[style*="text-align: center"] {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
+        display: block !important; /* Desfaz o flex anterior que quebrou o layout */
+        text-align: center !important;
         width: 100% !important;
     }
 
+    /* Configuração padrão de tamanho para nomes normais no PDF */
     .piramide {
-        /* No PDF não usamos 'vw' porque buga em alguns navegadores. 
-           Usamos pontos (pt) que é a unidade real de impressão segura */
-        font-size: 9pt !important; 
-        line-height: 1.15 !important;
+        font-size: 9.5pt !important; 
+        line-height: 1.2 !important;
         letter-spacing: 2px !important;
+        display: block !important;
+        margin: 0 auto !important;
     }
 
-    /* DETECTOR DE NOME MONSTRO: Se a pirâmide for gerada dentro do bloco do PDF,
-       nós aplicamos uma redução extra de segurança para garantir o layout perfeito */
-    .bloco-texto-pdf .piramide,
-    .bloco-texto-pdf pre.piramide {
-        font-size: 8pt !important;
-        line-height: 1.1 !important;
-        letter-spacing: 1.5px !important;
+    /* SUPER DETECTOR DE NOMES GIGANTES:
+       Se o nome for enorme (como esse do teste "dfhfde..."), nós forçamos 
+       as fontes abaixo para esmagar a pirâmide e fazê-la caber nos 210mm do A4 
+       SEM empurrar ou deformar nenhum texto ao redor! */
+    .bloco-texto-pdf pre.piramide,
+    .piramide:has(span), /* Se houver marcações negativas */
+    pre.piramide {
+        font-size: 8pt !important;       /* Reduz o tamanho do número */
+        line-height: 1.1 !important;     /* Cola mais as linhas verticalmente */
+        letter-spacing: 1px !important;  /* Junta as colunas horizontalmente */
     }
 }
     
