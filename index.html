@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harmonia Conjugal | Instinto Superior</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
-
 <style>
 
 
@@ -708,7 +707,7 @@
     
 </style>
     
-
+</style>
 </head>
 <body>
 
@@ -718,7 +717,7 @@
 </div>
 
 <div class="container">
-    <button type="button" id="btnVideo" class="btn-video-toggle">
+        <button type="button" id="btnVideo" class="btn-video-toggle">
         <span>🎥 Assistir Vídeo Introdutório</span>
         <i class="seta">▼</i>
     </button>
@@ -732,21 +731,13 @@
 
     <div class="grid-pessoa">
         <div class="card-input">
-            <h3>Primeira Pessoa</h3>
-            <div class="form-group">
-                <label>Nome Completo (Solteiro/Original):</label>
-                <input type="text" id="nome1" placeholder="Digite o nome original">
-            </div>
-            <div class="form-group">
-                <label>Data de Nascimento:</label>
-                <input type="date" id="data1">
-            </div>
-            <div class="form-group" style="margin-top: 15px; border-top: 1px dashed rgba(212,154,154,0.2); padding-top: 15px;">
-                <label style="color: var(--accent);">Nova Assinatura / Nome de Casado (Opcional):</label>
-                <input type="text" id="casado1" placeholder="Se houver, digite aqui">
-            </div>
+            <h3>Pessoa 1</h3>
+            <div class="form-group"><label>Nome Completo</label><input type="text" id="nome1" placeholder="Nome completo igual certidão"></div>
+            <div class="form-group"><label>Nome Social / Escolhido</label><input type="text" id="social1" placeholder="Nome para aparecer no relatório"></div>
+            <div class="form-group"><label>Data de Nascimento</label><input type="text" id="data1" placeholder="DD/MM/AAAA" maxlength="10" oninput="mascaraData(this)"></div>
+            <div class="form-group"><label>Nome de Casado(a):</label><input type="text" id="nomeCasado1" placeholder="Nome de casado se houver"></div>
             
-            <div class="btn-group" style="margin-top: 15px;">
+            <div class="btn-group">
                 <button class="btn-nav" onclick="abrirModal('m1')">Motivação</button>
                 <button class="btn-nav" onclick="abrirModal('i1')">Influência</button>
                 <button class="btn-nav" onclick="abrirModal('p1')">Personalidade</button>
@@ -765,21 +756,14 @@
 
     <div class="grid-pessoa">
         <div class="card-input">
-            <h3>Segunda Pessoa</h3>
-            <div class="form-group">
-                <label>Nome Completo (Solteiro/Original):</label>
-                <input type="text" id="nome2" placeholder="Digite o nome original">
-            </div>
-            <div class="form-group">
-                <label>Data de Nascimento:</label>
-                <input type="date" id="data2">
-            </div>
-            <div class="form-group" style="margin-top: 15px; border-top: 1px dashed rgba(212,154,154,0.2); padding-top: 15px;">
-                <label style="color: var(--accent);">Nova Assinatura / Nome de Casado (Opcional):</label>
-                <input type="text" id="casado2" placeholder="Se houver, digite aqui">
-            </div>
+            <h3>Pessoa 2</h3>
+            <div class="form-group"><label>Nome Completo</label><input type="text" id="nome2" placeholder="Nome completo igual certidão"></div>
+            <div class="form-group"><label>Nome Social / Escolhido</label><input type="text" id="social2" placeholder="Nome para aparecer no relatório"></div>
+            <div class="form-group"><label>Data de Nascimento</label><input type="text" id="data2" placeholder="DD/MM/AAAA" maxlength="10" oninput="mascaraData(this)"></div>
+            <div class="form-group"><label>Nome de Casado(a):</label><input type="text" id="nomeCasado2" placeholder="Nome de casado se houver"></div>
+
             
-            <div class="btn-group" style="margin-top: 15px;">
+            <div class="btn-group">
                 <button class="btn-nav" onclick="abrirModal('m2')">Motivação</button>
                 <button class="btn-nav" onclick="abrirModal('i2')">Influência</button>
                 <button class="btn-nav" onclick="abrirModal('p2')">Personalidade</button>
@@ -829,6 +813,7 @@
             <div id="regenteBebe" class="regente"></div>
         </div>
     </div>
+
 </div>
 
 <div id="modal" class="modal">
@@ -840,7 +825,7 @@
 
 <div id="area-pdf-local"></div>    
 
-<script src="textos.js"></script>
+<script src="textosharmoniaconjugal.js"></script>
 
 <script>
 function mascaraData(input) {
@@ -1079,142 +1064,6 @@ function gerarBebe(){
   gerarPiramide(dadosBebe.valores, document.getElementById("piramideBebe"), document.getElementById("regenteBebe"));
 }
 
-let dadosCasado = null;
-
-function gerarCasado(){
-  if(!document.getElementById("nomeCasado").value) return;
-  // Calcula o novo mapa completo com o nome de casado(a)
-  dadosCasado = calcularPessoa(document.getElementById("nomeCasado").value, null);
-  // Renderiza a pirâmide na tela do painel
-  gerarPiramide(dadosCasado.valores, document.getElementById("piramideCasado"), document.getElementById("regenteCasado"));
-}
-
-function gerarMóduloNomeCasado(nomeCasado, dadosOriginal) {
-    if (!nomeCasado || !dadosOriginal || !dadosCasado) return "";
-
-    const socialCasadoInput = document.getElementById("socialCasado").value || nomeCasado.split(' ')[0];
-    
-    // Pega a matriz de linhas da pirâmide atualizada
-    let matrizValores = dadosCasado.valores || dadosCasado;
-    let textoPiramideCasado = obterHtmlTextoPiramide(matrizValores);
-
-    // --- LÓGICA DE COMPARAÇÃO DE HARMONIA ---
-    const qtdOriginal = dadosOriginal.sequenciaNegativa ? dadosOriginal.sequenciaNegativa.length : 0;
-    const qtdCasado = dadosCasado.sequenciaNegativa ? dadosCasado.sequenciaNegativa.length : 0;
-    
-    let diagnosticoHarmonia = "";
-    let estiloDiagnostico = "";
-
-    if (qtdCasado < qtdOriginal) {
-        estiloDiagnostico = "border-color: #27ae60; background: #ebf9f1; color: #1e8449; border-left: 6px solid #27ae60;";
-        diagnosticoHarmonia = `
-            <strong>Melhora na Fluidez Energética:</strong> Este novo nome é mais harmônico que o seu original. 
-            A união eliminou bloqueios que existiam anteriormente, reduzindo de ${qtdOriginal} para ${qtdCasado} as sequências negativas.`;
-    } else if (qtdCasado > qtdOriginal) {
-        estiloDiagnostico = "border-color: #e74c3c; background: #fdf2f2; color: #c0392b; border-left: 6px solid #e74c3c;";
-        diagnosticoHarmonia = `
-            <strong>Atenção ao Desequilíbrio:</strong> O acréscimo deste sobrenome trouxe novos desafios. 
-            Houve um aumento de ${qtdOriginal} para ${qtdCasado} sequências de bloqueio.`;
-    } else {
-        estiloDiagnostico = "border-color: #f1c40f; background: #fef9e7; color: #9a7d0a; border-left: 6px solid #f1c40f;";
-        diagnosticoHarmonia = `
-            <strong>Estabilidade Vibracional:</strong> O novo nome manteve o mesmo nível de complexidade (total de ${qtdCasado} sequências).`;
-    }
-
-    // Puxa a transmutação de expressão (Tratando erro de variável)
-    const chave = `de_${dadosOriginal.personalidade}_para_${dadosCasado.personalidade}`;
-    let textoTransicao = (textos.TransicoesCasamento && textos.TransicoesCasamento[chave]) ? textos.TransicoesCasamento[chave] : "";
-    
-    if(!textoTransicao) {
-        textoTransicao = `A transição da sua Expressão Original para esta nova frequência traz uma nova dinâmica de posicionamento prático no mundo.`;
-    }
-
-    // 1. Capa de Transição
-    let html = criarCapaTransicao(
-        "A Nova Assinatura Vibracional", 
-        `Estudo de Impacto do Nome de Casado(a)`, 
-        "Alinhamento de Destino ✶ Identidade Renovada ✶ Ajuste de Frequência",
-        "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência Social",
-        "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Evolução Compartilhada"
-    );
-
-    // 2. Página de Introdução
-    html += `
-<div class="page evitar-corte" style="padding: 40px; background: #fdfdfd; min-height: 296mm; box-sizing: border-box; color: #333; font-family: 'Segoe UI', sans-serif;">
-    <div style="text-align: center; border-bottom: 2px solid #101015; padding-bottom: 20px; margin-bottom: 40px;">
-        <h1 style="font-family: 'Cinzel', serif; color: #2d0713; font-size: 24px; letter-spacing: 2px; margin: 0; text-transform: uppercase;">
-            Módulo Adicional: O Impacto do Nome de Casado(a)
-        </h1>
-        <p style="font-style: italic; color: #2d0713; margin-top: 10px; font-size: 14px;">
-            A Nova Identidade: Como a Fusão de Sobrenomes Altera a sua Frequência de Vida
-        </p>
-    </div>
-    <div style="line-height: 1.8; text-align: justify; font-size: 16px; max-width: 850px; margin: 0 auto;">
-        <p style="margin-bottom: 20px;">A inclusão de um sobrenome após o casamento é muito mais do que uma mudança civil; é uma profunda alteração na dinâmica vibracional que rege sua vida. Ao adotar um novo nome, você permite a entrada de novas frequências que podem preencher lacunas importantes em seu mapa natal.</p>
-        <p style="margin-bottom: 20px;">Entretanto, essa expansão energética carrega consigo uma responsabilidade proporcional. O acréscimo de novas letras aumenta a carga numérica total, o que exige maior maturidade para lidar com as novas obrigações que surgem. É fundamental estar atento às sequências de bloqueios que podem ser formadas nessa nova configuração.</p>
-    </div>
-</div>
-`;
-
-    // 3. Páginas de Conteúdo Técnico
-    html += `
-<div class="page evitar-corte" style="padding: 40px; background: #fdfdfd; min-height: 296mm; box-sizing: border-box; color: #333; font-family: 'Segoe UI', sans-serif;">
-    <div class="bloco-texto-pdf">
-        <h2 class="titulo-secao-pdf" style="font-family: 'Cinzel', serif; color: #2d0713; text-align: center;">ANÁLISE VIBRACIONAL DA NOVA ASSINATURA</h2>
-        
-        <div style="text-align: center; margin-bottom: 20px; padding: 15px; background: #fdf8f8; border: 1px solid rgba(212, 154, 154, 0.3); border-radius: 8px;">
-            <h3 style="color: #6B0202; font-family: 'Cinzel', serif; font-size: 15px; margin-bottom: 5px;">Nome Analisado: ${nomeCasado.toUpperCase()}</h3>
-        </div>
-
-        <div style="background: #fdfaf0; border-left: 5px solid #b8860b; padding: 20px; margin: 20px 0; border-radius: 4px;">
-            <h3 style="color: #827108; margin-top: 0; font-family: 'Cinzel', serif; font-size: 16px;">A Transmutação da sua Expressão</h3>
-            <p style="line-height: 1.6; color: #333; font-size: 15px;">${extrairETratarTexto(textoTransicao, socialCasadoInput)}</p>
-        </div>
-
-        <div style="padding: 15px; margin-bottom: 25px; border-radius: 4px; font-size: 15px; ${estiloDiagnostico}">
-            ${diagnosticoHarmonia}
-        </div>
-
-        <h3 class="subtitulo-persona-pdf" style="color: #6B0202; font-family: 'Cinzel', serif; font-size: 16px; margin-top: 20px;"> Nova Motivação</h3>
-        <div>${extrairETratarTexto(textos.motivacao[dadosCasado.motivacao], socialCasadoInput)}</div>
-        <h3 class="subtitulo-persona-pdf" style="color: #6B0202; font-family: 'Cinzel', serif; font-size: 16px; margin-top: 20px;"> Nova Influência</h3>
-        <div>${extrairETratarTexto(textos.influencia[dadosCasado.influencia], socialCasadoInput)}</div>
-        <h3 class="subtitulo-persona-pdf" style="color: #6B0202; font-family: 'Cinzel', serif; font-size: 16px; margin-top: 20px;"> Nova Expressão</h3>
-        <div>${extrairETratarTexto(textos.personalidade[dadosCasado.personalidade], socialCasadoInput)}</div>
-    </div>
-</div>
-
-<div class="page evitar-corte" style="padding: 40px; background: #fdfdfd; min-height: 296mm; box-sizing: border-box; color: #333; font-family: 'Segoe UI', sans-serif;">
-    <div class="bloco-texto-pdf">
-        <h2 class="titulo-secao-pdf" style="font-family: 'Cinzel', serif; color: #2d0713; text-align: center;">A NOVA MATRIZ DE ASSINATURA</h2>
-        
-        <div style="text-align:center; margin-bottom:20px; background:#fdfdfd; padding:20px; border:1px dashed rgba(212,154,154,0.4); border-radius:8px;">
-            <pre style="font-family:'Courier New', monospace; font-size:13px; line-height:1.5; letter-spacing:5px; color:#111; display:block; text-align:center; margin:0 auto; white-space:pre;">${textoPiramideCasado}</pre>
-        </div>
-
-        <h3 class="subtitulo-persona-pdf" style="color: #6B0202; font-family: 'Cinzel', serif; font-size: 16px;">⚠️ Desafios e Sequências da Nova Estrutura</h3>
-        <div style="margin-top: 10px;">
-    `;
-
-    if (dadosCasado.sequenciaNegativa && dadosCasado.sequenciaNegativa.length > 0) {
-        html += dadosCasado.sequenciaNegativa.map(x => `
-            <div style="margin-top: 10px; padding: 10px; background: #fff5f5; border-left: 3px solid #ff3b5c; border-radius: 4px;">
-                <strong style="color: #6B0202;">Vibração Fixada ${x}:</strong> ${extrairETratarTexto(textos.sequenciaNegativa[x], socialCasadoInput)}
-            </div>
-        `).join("");
-    } else {
-        html += `<p style="color: #28a745 !important; font-size: 14px; font-weight:bold;">✅ Nenhuma sequência negativa identificada nesta nova assinatura. Caminhos totalmente livres.</p>`;
-    }
-
-    html += `
-        </div>
-    </div>
-</div>
-    `;
-
-    return html;
-}
-
 /* =============================================================
    ENGENHARIA REVISADA DO EMISSOR DE RELATÓRIO
    ============================================================= */
@@ -1257,97 +1106,75 @@ function criarCapaTransicao(titulo, subtitulo, rodape, audio1Url, nomeAudio1, au
     </div>`;
 }
 
+function abrirPremiumSinastria(){
+  if(!dados1 || !dados2) return alert("Calcule os dados primeiro.");
 
-/* =============================================================
-   FUNÇÕES UTILITÁRIAS GLOBAIS (ESCOPO LIVRE)
-   ============================================================= */
+  const nome1 = document.getElementById("nome1").value;
+  const nome2 = document.getElementById("nome2").value;
+  const social1 = document.getElementById("social1").value || nome1.split(' ')[0];
+  const social2 = document.getElementById("social2").value || nome2.split(' ')[0];
+  const dataHoje = new Date().toLocaleDateString('pt-BR');
+  
+    // >>> COLE ESSA FUNÇÃO DE APOIO EXATAMENTE AQUI NO COMEÇO:
+ const processarMatrizCasado = (nomeCompleto) => {
+    // 1. Apenas limpa espaços extras e joga para maiúsculo (MANTÉM os acentos para o seu cálculo)
+    let nomeTratado = nomeCompleto.toUpperCase().trim();
+    
+    // Divide o nome em palavras para ignorar os espaços na hora de montar a pirâmide
+    let palavras = nomeTratado.split(/\s+/);
+    let letrasDoNome = palavras.join("").split(""); // Array com cada letra mantendo seu acento original
 
-/* =============================================================
-   FUNÇÕES UTILITÁRIAS GLOBAIS (ATUALIZADO)
-   ============================================================= */
-
-// 1. Tratamento de textos e placeholders
-function extrairETratarTexto(textoBruto, nomeParceiro) {
-    if (!textoBruto) return "";
-    let textoTratado = String(textoBruto)
-        .replace(/MASCULINO-FEMININO-NEUTRO/gi, `<strong>${nomeParceiro}</strong>`);
-    return `<div class="conteudo-dinamico-pdf">${textoTratado}</div>`;
-}
-
-// 2. Formatador da pirâmide (Serve perfeitamente para Sinastria e Casamento)
-function obterHtmlTextoPiramide(valores) {
-    if (!valores) return "";
-
-    // CASO 1: Veio do formato do "Nome de Casado" (Objeto com .linhas)
-    if (valores.linhas && Array.isArray(valores.linhas)) {
-        let texto = "";
-        valores.linhas.forEach(linha => {
-            if (Array.isArray(linha)) {
-                texto += linha.join("   ") + "\n";
-            }
-        });
-        return texto;
-    }
-
-    // CASO 2: Veio uma matriz direta (Array de Arrays)
-    if (Array.isArray(valores) && Array.isArray(valores[0])) {
-        let texto = "";
-        valores.forEach(linha => {
-            texto += linha.join("   ") + "\n";
-        });
-        return texto;
-    }
-
-    // CASO 3: Veio da Sinastria antiga (Apenas a linha base de números)
-    if (Array.isArray(valores)) {
-        let lines = [valores.map(Number)];
-        while(lines[lines.length-1].length > 1){
-            let anterior = lines[lines.length-1];
-            let nova = [];
-            for(let i=0; i<anterior.length-1; i++){
-                nova.push(Number(reduzir(anterior[i] + anterior[i+1])));
-            }
-            lines.push(nova);
+    // 2. Converte as letras usando a SUA função 'calcularValorComAcentos'
+    let primeiraLinha = [];
+    letrasDoNome.forEach(letra => {
+        // Chama a sua função existente aí do portal!
+        let valorCabalistico = calcularValorComAcentos(letra); 
+        
+        // Reduz se o valor da letra com acento passar de 9 (padrão da pirâmide)
+        if (valorCabalistico > 9) {
+            valorCabalistico = Math.floor(valorCabalistico / 10) + (valorCabalistico % 10);
+            if (valorCabalistico > 9) valorCabalistico = Math.floor(valorCabalistico / 10) + (valorCabalistico % 10);
         }
         
-        let texto = "";
-        lines.forEach(linha => {
-            texto += linha.join("   ") + "\n";
-        });
-        return texto;
+        primeiraLinha.push(valorCabalistico);
+    });
+
+    // 3. Daqui para frente, a montagem da pirâmide e a contagem de bloqueios continua igual...
+    let todasAsLinhas = [primeiraLinha];
+    let linhaAtual = primeiraLinha;
+
+    while (linhaAtual.length > 1) {
+        let proximaLinha = [];
+        for (let i = 0; i < linhaAtual.length - 1; i++) {
+            let soma = linhaAtual[i] + linhaAtual[i+1];
+            if (soma > 9) soma = Math.floor(soma / 10) + (soma % 10);
+            proximaLinha.push(soma);
+        }
+        todasAsLinhas.push(proximaLinha);
+        linhaAtual = proximaLinha;
     }
 
-    return "";
-}
+    let totalSequencias = 0;
+    const bloqueiosAlvo = ["111", "222", "333", "444", "555", "666", "777", "888", "999"];
+    todasAsLinhas.forEach(linha => {
+        let linhaTexto = linha.join("");
+        bloqueiosAlvo.forEach(bloqueio => { if (linhaTexto.includes(bloqueio)) { totalSequencias++; } });
+    });
 
-// 3. Gerador de estrutura de páginas de conteúdo do PDF
-function gerarFolhaConteudo(titulo, sub1, txt1, sub2, txt2, social1, social2) {
-    return `
-      <div class="bloco-texto-pdf">
-          <h2 class="titulo-secao-pdf">${titulo}</h2>
-          <h3 class="subtitulo-pessoa-pdf">${sub1}</h3>
-          <div>${extrairETratarTexto(txt1, social1)}</div>
-          <div class="divisor-pdf"></div>
-          <h3 class="subtitulo-pessoa-pdf">${sub2}</h3>
-          <div>${extrairETratarTexto(txt2, social2)}</div>
-      </div>`;
-}
+    let piramideHtml = "";
+    todasAsLinhas.forEach(linha => {
+        let linhaTexto = linha.join(" ");
+        bloqueiosAlvo.forEach(bloqueio => {
+            let bloqueioComEspaco = bloqueio.split("").join(" "); 
+            let regex = new RegExp(bloqueioComEspaco, "g");
+            linhaTexto = linhaTexto.replace(regex, `<span class="negativo">${bloqueioComEspaco}</span>`);
+        });
+        piramideHtml += linhaTexto + "\n";
+    });
 
-    
-
-function abrirPremiumSinastria() {
-    // 1. Captura os dados da tela
-let n1 = document.getElementById("nome1").value.trim();
-let d1 = document.getElementById("data1").value;
-let c1 = document.getElementById("casado1").value.trim(); // Novo: Nome de Casado 1
-
-let n2 = document.getElementById("nome2").value.trim();
-let d2 = document.getElementById("data2").value;
-let c2 = document.getElementById("casado2").value.trim(); // Novo: Nome de Casado 2
-
-// Deixe a sua variável de dataHoje (data de hoje) intocada logo abaixo disso!
-
-  const dataHoje = new Date().toLocaleDateString('pt-BR');
+    return { quantidadeBloqueios: totalSequencias, htmlVisual: piramideHtml };
+};
+    // ... 
 
   // Capa Principal
   let relatorioHTML = `
@@ -1475,7 +1302,65 @@ relatorioHTML += `
 
     
 
+function extrairETratarTexto(textoBruto, nomeParceiro) {
+    if (!textoBruto) return "";
+    
+    // Em vez de extrair apenas o texto puro (destruindo h3 e quebras), 
+    // nós tratamos diretamente a string HTML para manter os títulos e tags vivos.
+    let textoTratado = String(textoBruto)
+        .replace(/MASCULINO-FEMININO-NEUTRO/gi, `<strong>${nomeParceiro}</strong>`);
+        
+    return `<div class="conteudo-dinamico-pdf">${textoTratado}</div>`;
+}
 
+  function gerarFolhaConteudo(titulo, sub1, txt1, sub2, txt2) {
+    return `
+      <div class="bloco-texto-pdf">
+          <h2 class="titulo-secao-pdf">${titulo}</h2>
+          <h3 class="subtitulo-pessoa-pdf">${sub1}</h3>
+          <div>${extrairETratarTexto(txt1, social1)}</div>
+          <div class="divisor-pdf"></div>
+          <h3 class="subtitulo-pessoa-pdf">${sub2}</h3>
+          <div>${extrairETratarTexto(txt2, social2)}</div>
+      </div>`;
+  }
+
+  // Função auxiliar interna para gerar o HTML textual da pirâmide e injetar no miolo do PDF
+  function obterHtmlTextoPiramide(valores) {
+    if(!valores || valores.length === 0) return "";
+    let lines = [valores.map(Number)];
+    while(lines[lines.length-1].length > 1){
+      let anterior = lines[lines.length-1];
+      let nova = [];
+      for(let i=0; i<anterior.length-1; i++){
+        nova.push(Number(reduzir(anterior[i] + anterior[i+1])));
+      }
+      lines.push(nova);
+    }
+    let marcacoes = [];
+    for(let l=0; l<lines.length; l++){
+      marcacoes[l] = new Set();
+      let linha = lines[l];
+      let i=0;
+      while(i < linha.length){
+        let atual = Number(linha[i]);
+        let count = 1; let j = i+1;
+        while(j < linha.length && Number(linha[j]) === atual) { count++; j++; }
+        if(count >= 3){
+          for(let k=i; k<i+count; k++) marcacoes[l].add(k);
+        }
+        i += count;
+      }
+    }
+    let txtPiramide = "";
+    for(let l=0; l<lines.length; l++){
+      txtPiramide += lines[l].map((n, idx) => {
+        if (marcacoes[l].has(idx)) return `<span class="negativo" style="color:#ff3b5c !important; font-weight:bold;">${n}</span>`;
+        return n;
+      }).join(" ") + "\n";
+    }
+    return txtPiramide;
+  }
 
   // Capa da Seção 1 com os Áudios acoplados corretamente
   relatorioHTML += criarCapaTransicao(
@@ -2004,112 +1889,94 @@ relatorioHTML += `
 
 
 
-// =============================================================
-// VERIFICAÇÃO EXCLUSIVA DE NOME DE CASADO / NOVA ASSINATURA
-// =============================================================
 
-// =============================================================
-// SEÇÃO DE TRANSMUTAÇÃO DA EXPRESSÃO (NOME DE CASADO)
-// =============================================================
+let casado1 = document.getElementById("nomeCasado1").value.trim();
 
-// --- CONTEXTO DA PESSOA 1 ---
-if (c1 !== "") {
-    // 1. Calcula a numerologia do nome NOVO
-    let dadosCasado1 = calcularNumerologiaMestre(c1, d1); 
+if (casado1 !== "") {
+    // 1. Roda a nova função para pegar as sequências e a pirâmide real calculada
+    let analiseSolteiro1 = processarMatrizCasado(n1);
+    let analiseCasado1 = processarMatrizCasado(casado1);
     
-    // 2. Puxa a Expressão de Solteiro e a Nova Expressão de Casado
-    let exprSolteiro1 = dados1.expressao; 
-    let exprCasado1 = dadosCasado1.expressao; 
-    
-    // Monta a chave exata (Ex: "de_8_para_9") para buscar nas Transições
-    let chaveTransicao1 = `de_${exprSolteiro1}_para_${exprCasado1}`;
-    let textoTransmutacao1 = TransicoesCasamento[chaveTransicao1] || "Sua transição mantém as vibrações alinhadas aos seus propósitos.";
-    
-    // Aplica o Social Name tratado da pessoa 1 no placeholder do banco
-    textoTransmutacao1 = textoTransmutacao1.replace(/MASCULINO-FEMININO-NEUTRO/gi, `<strong>${social1}</strong>`);
+    let seqSolteiro1 = analiseSolteiro1.quantidadeBloqueios;
+    let seqCasado1 = analiseCasado1.quantidadeBloqueios;
+    let piramideCasadoHtml1 = analiseCasado1.htmlVisual; // <--- Pega a pirâmide com os spans vermelhos
 
-    // 3. CÁLCULO DO DESEQUILÍBRIO (Comparando a quantidade de sequências negativas)
-    let qtdSequenciasSolteiro1 = dados1.sequenciasNegativas ? dados1.sequenciasNegativas.length : 0;
-    let qtdSequenciasCasado1 = dadosCasado1.sequenciasNegativas ? dadosCasado1.sequenciasNegativas.length : 0;
+    // 2. Cálculos de Expressão normais do seu portal
+    let expressaoSolteiro1 = calcularExpressao(n1); 
+    let expressaoCasado1 = calcularExpressao(casado1); 
+    let chaveTransicao1 = `de_${expressaoSolteiro1}_para_${expressaoCasado1}`;
     
-    let textoDesequilibrio1 = "";
-    if (qtdSequenciasCasado1 > qtdSequenciasSolteiro1) {
-        textoDesequilibrio1 = `O acréscimo deste sobrenome trouxe novos desafios. Houve um aumento de ${qtdSequenciasSolteiro1} para ${qtdSequenciasCasado1} sequências de bloqueio.`;
-    } else if (qtdSequenciasCasado1 < qtdSequenciasSolteiro1) {
-        textoDesequilibrio1 = `O acréscimo deste sobrenome trouxe maior proteção. Houve uma redução de ${qtdSequenciasSolteiro1} para ${qtdSequenciasCasado1} sequências de bloqueio.`;
-    } else {
-        textoDesequilibrio1 = `A estabilidade vibracional se manteve estável. Permaneceram as mesmas ${qtdSequenciasCasado1} sequências de bloqueio originais.`;
-    }
+    let textoBruto1 = TransicoesCasamento[chaveTransicao1] || "";
+    let textoFinal1 = textoBruto1.replace("MASCULINO-FEMININO-NEUTRO,", `<strong>${social1}</strong>`);
 
-    // 4. Injeta a folha de conteúdo exatamente no formato da foto 2
-    let txtPiramideCasado1 = obterHtmlTextoPiramide(dadosCasado1);
-    
-    relatorioHTML += `
-    <div class="bloco-texto-pdf pag-a4">
-        <h2 class="titulo-secao-pdf">A TRANSMUTAÇÃO DA SUA EXPRESSÃO</h2>
-        <p class="texto-cabalistico-pdf">${textoTransmutacao1}</p>
-        
-        <div class="divisor-pdf"></div>
-        
-        <h3 class="subtitulo-pessoa-pdf" style="color: #ff3b5c !important;">Atenção ao Desequilíbrio:</h3>
-        <p class="texto-cabalistico-pdf" style="background: rgba(255,59,92,0.05); padding: 10px; border-radius: 5px;">${textoDesequilibrio1}</p>
-        
-        <div class="divisor-pdf"></div>
-        
-        <div class="piramide" style="white-space: pre-line; text-align: center; margin-top:20px;">
-            ${txtPiramideCasado1}
+    // 3. Monta o HTML final usando as variáveis reais que vieram da função
+    let htmlResultado1 = `
+        <div class="bloco-texto-pdf">
+            <h4 class="titulo-secao-pdf">A TRANSMUTAÇÃO DA SUA EXPRESSÃO</h4>
+            <p class="texto-cabalistico-pdf">${textoFinal1}</p>
+            
+            <p class="texto-cabalistico-pdf">
+                <strong style="color: #6B0202;">Atenção ao Desequilíbrio:</strong> 
+                O acréscimo deste sobrenome trouxe novos desafios. Houve um aumento de ${seqSolteiro1} para ${seqCasado1} sequências de bloqueio.
+            </p>
+            
+            <div class="divisor-pdf"></div>
+            
+            <div style="text-align: center; background: #fff; padding: 20px; border-radius: 8px;">
+                <div class="piramide" style="color: #111;">${piramideCasadoHtml1}</div>
+            </div>
         </div>
-    </div>`;
+    `;
+
+    document.getElementById("resultado-transmutacao-1").innerHTML = htmlResultado1;
 }
 
-// --- CONTEXTO DA PESSOA 2 ---
-if (c2 !== "") {
-    // 1. Calcula a numerologia do nome NOVO 2
-    let dadosCasado2 = calcularNumerologiaMestre(c2, d2); 
-    
-    // 2. Puxa a Expressão de Solteiro e a Nova Expressão de Casado para a Pessoa 2
-    let exprSolteiro2 = dados2.expressao; 
-    let exprCasado2 = dadosCasado2.expressao; 
-    
-    let chaveTransicao2 = `de_${exprSolteiro2}_para_${exprCasado2}`;
-    let textoTransmutacao2 = TransicoesCasamento[chaveTransicao2] || "Sua transição mantém as vibrações alinhadas aos seus propósitos.";
-    
-    textoTransmutacao2 = textoTransmutacao2.replace(/MASCULINO-FEMININO-NEUTRO/gi, `<strong>${social2}</strong>`);
 
-    // 3. CÁLCULO DO DESEQUILÍBRIO DA PESSOA 2
-    let qtdSequenciasSolteiro2 = dados2.sequenciasNegativas ? dados2.sequenciasNegativas.length : 0;
-    let qtdSequenciasCasado2 = dadosCasado2.sequenciasNegativas ? dadosCasado2.sequenciasNegativas.length : 0;
-    
-    let textoDesequilibrio2 = "";
-    if (qtdSequenciasCasado2 > qtdSequenciasSolteiro2) {
-        textoDesequilibrio2 = `O acréscimo deste sobrenome trouxe novos desafios. Houve um aumento de ${qtdSequenciasSolteiro2} para ${qtdSequenciasCasado2} sequências de bloqueio.`;
-    } else if (qtdSequenciasCasado2 < qtdSequenciasSolteiro2) {
-        textoDesequilibrio2 = `O acréscimo deste sobrenome trouxe maior proteção. Houve uma redução de ${qtdSequenciasSolteiro2} para ${qtdSequenciasCasado2} sequências de bloqueio.`;
-    } else {
-        textoDesequilibrio2 = `A estabilidade vibracional se manteve estável. Permaneceram as mesmas ${qtdSequenciasCasado2} sequências de bloqueio originais.`;
-    }
 
-    // 4. Injeta a folha de conteúdo para a Pessoa 2
-    let txtPiramideCasado2 = obterHtmlTextoPiramide(dadosCasado2);
+let nomeCasado2 = document.getElementById("nomeCasado2").value.trim(); // <--- Captura a ID corrigida da Pessoa 2
+
+if (nomeCasado2 !== "") {
+    // 1. Roda a nova função passando as variáveis da Pessoa 2
+    let analiseSolteiro2 = processarMatrizCasado(n2);
+    let analiseCasado2 = processarMatrizCasado(nomeCasado2);
     
-    relatorioHTML += `
-    <div class="bloco-texto-pdf pag-a4">
-        <h2 class="titulo-secao-pdf">A TRANSMUTAÇÃO DA SUA EXPRESSÃO</h2>
-        <p class="texto-cabalistico-pdf">${textoTransmutacao2}</p>
-        
-        <div class="divisor-pdf"></div>
-        
-        <h3 class="subtitulo-pessoa-pdf" style="color: #ff3b5c !important;">Atenção ao Desequilíbrio:</h3>
-        <p class="texto-cabalistico-pdf" style="background: rgba(255,59,92,0.05); padding: 10px; border-radius: 5px;">${textoDesequilibrio2}</p>
-        
-        <div class="divisor-pdf"></div>
-        
-        <div class="piramide" style="white-space: pre-line; text-align: center; margin-top:20px;">
-            ${txtPiramideCasado2}
+    let seqSolteiro2 = analiseSolteiro2.quantidadeBloqueios;
+    let seqCasado2 = analiseCasado2.quantidadeBloqueios;
+    let piramideCasadoHtml2 = analiseCasado2.htmlVisual; // <--- Pega a pirâmide com os spans vermelhos
+
+    // 2. Cálculos de Expressão da Pessoa 2
+    let expressaoSolteiro2 = calcularExpressao(n2); 
+    let expressaoCasado2 = calcularExpressao(nomeCasado2); 
+    let chave2 = `de_${expressaoSolteiro2}_para_${expressaoCasado2}`;
+    
+    let textoBruto2 = TransicoesCasamento[chave2] || "";
+    let textoFinal2 = textoBruto2.replace("MASCULINO-FEMININO-NEUTRO,", `<strong>${social2}</strong>`);
+
+    // 3. Monta o HTML final do PDF usando as variáveis reais da Pessoa 2
+    let htmlResultado2 = `
+        <div class="bloco-texto-pdf">
+            <h4 class="titulo-secao-pdf">A TRANSMUTAÇÃO DA SUA EXPRESSÃO</h4>
+            <span class="subtitulo-pessoa-pdf">${social2}</span>
+            <p class="texto-cabalistico-pdf">${textoFinal2}</p>
+            
+            <p class="texto-cabalistico-pdf">
+                <strong>Atenção ao Desequilíbrio:</strong> 
+                O acréscimo deste sobrenome trouxe novos desafios. Houve uma mudança de ${seqSolteiro2} para ${seqCasado2} sequências de bloqueio.
+            </p>
+            
+            <div class="divisor-pdf"></div>
+            
+            <div style="text-align: center; background: #fff; padding: 20px;">
+                <div class="piramide" style="color: #111;">${piramideCasadoHtml2}</div>
+            </div>
         </div>
-    </div>`;
-}
+    `;
+
+    document.getElementById("resultado-transmutacao-2").innerHTML = htmlResultado2;
+}    
     
+
+
 // Processamento do bebê, se houver
   const nomeBebeInput = document.getElementById("nomeBebe").value;
   if (nomeBebeInput && dadosBebe) {
