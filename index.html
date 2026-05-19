@@ -2061,10 +2061,6 @@ function gerarAbaNomeCasado(nomeCasado, expOriginal, analiseSolteiro, analiseCas
 
 
 // ==========================================
-// ==========================================
-// PROCESSAMENTO TRANSMUTAÇÃO CASADO - PESSOA 1
-// ==========================================
-// ==========================================
 // PROCESSAMENTO TRANSMUTAÇÃO CASADO - PESSOA 1
 // ==========================================
 let casado1 = document.getElementById("nomeCasado1").value.trim();
@@ -2082,7 +2078,7 @@ if (casado1 !== "") {
     let expressaoCasado1 = calcularPessoa(casado1, "").personalidade; 
 
     let chaveTransicao1 = `de_${expressaoSolteiro1}_para_${expressaoCasado1}`;
-    let textoBruto1 = window.textos.TransicoesCasamento[chaveTransicao1] || "";
+    let textoBruto1 = window.textos.TransTransitionsMarriage ? (window.textos.TransicoesCasamento[chaveTransicao1] || "") : (window.textos.TransicoesCasamento[chaveTransicao1] || "");
     let textoFinal1 = textoBruto1.replace("MASCULINO-FEMININO-NEUTRO,", `<strong>${social1}</strong>`);
 
     let textoDiagnostico1 = "";
@@ -2094,11 +2090,8 @@ if (casado1 !== "") {
         textoDiagnostico1 = `O novo nome manteve a mesma estabilidade vibracional (total de ${seqCasado1} sequências de bloqueio).`;
     }
 
-    // LISTA DE NEGATIVAS OTIMIZADA PARA CABER NO PDF
-// LISTA DE NEGATIVAS OTIMIZADA PARA CABER NO PDF (CORRIGIDA: Estilo idêntico ao Solteiro)
     let htmlTextosNegativas1 = "";
     if (seqCasado1 > 0 && analiseCasado1.detalhesNegativas) {
-        // Removido o container pesado de fundo vermelho e borda total
         analiseCasado1.detalhesNegativas.forEach(neg => {
             const seqCompleta = neg.numero; 
             const digitoUnico = String(seqCompleta).charAt(0); 
@@ -2109,7 +2102,6 @@ if (casado1 !== "") {
                 
             let textoTratadoHtml = extrairETratarTexto(textoBruto, social1);
                 
-            // Injeção da borda lateral fina idêntica à da Matriz Solteiro
             htmlTextosNegativas1 += `
                 <div style="margin-top: 15px; padding: 10px; background: #fff5f5; border-left: 3px solid #ff3b5c; border-radius: 4px;">
                     <strong style="color: #6B0202;">Vibração Fixada ${seqCompleta}:</strong> 
@@ -2119,10 +2111,7 @@ if (casado1 !== "") {
                 </div>`;
         });
     }
-        htmlTextosNegativas1 += `</div>`;
-    }
 
-    // AJUSTADO: Estrutura idêntica à do relatório padrão (Usando o pre com os mesmos estilos do solteiro)
     blocoTransmutacaoP1 = `
         <div class="bloco-texto-pdf">
             <h2 class="titulo-secao-pdf">A TRANSMUTAÇÃO DA EXPRESSÃO DE ${social1.toUpperCase()}</h2>
@@ -2142,8 +2131,6 @@ if (casado1 !== "") {
         </div>
     `;
 }
-
-
 
 // ==========================================
 // PROCESSAMENTO TRANSMUTAÇÃO CASADO - PESSOA 2
@@ -2175,11 +2162,8 @@ if (nomeCasado2 !== "") {
         textoDiagnostico2 = `O novo nome manteve a mesma estabilidade vibracional (total de ${seqCasado2} sequências de bloqueio).`;
     }
 
-    // LISTA DE NEGATIVAS OTIMIZADA PARA CABER NO PDF
-// LISTA DE NEGATIVAS OTIMIZADA PARA CABER NO PDF (CORRIGIDA: Estilo idêntico ao Solteiro)
     let htmlTextosNegativas2 = "";
     if (seqCasado2 > 0 && analiseCasado2.detalhesNegativas) {
-        // Removido o container pesado de fundo vermelho e borda total
         analiseCasado2.detalhesNegativas.forEach(neg => {
             const seqCompleta = neg.numero;
             const digitoUnico = String(seqCompleta).charAt(0);
@@ -2190,7 +2174,6 @@ if (nomeCasado2 !== "") {
                 
             let textoTratadoHtml = extrairETratarTexto(textoBruto, social2);
                 
-            // Injeção da borda lateral fina idêntica à da Matriz Solteiro
             htmlTextosNegativas2 += `
                 <div style="margin-top: 15px; padding: 10px; background: #fff5f5; border-left: 3px solid #ff3b5c; border-radius: 4px;">
                     <strong style="color: #6B0202;">Vibração Fixada ${seqCompleta}:</strong> 
@@ -2200,10 +2183,7 @@ if (nomeCasado2 !== "") {
                 </div>`;
         });
     }
-        htmlTextosNegativas2 += `</div>`;
-    }
 
-    // AJUSTADO: Estrutura idêntica à do relatório padrão (Usando o pre com os mesmos estilos do solteiro)
     blocoTransmutacaoP2 = `
         <div class="bloco-texto-pdf">
             <h2 class="titulo-secao-pdf">A TRANSMUTAÇÃO DA EXPRESSÃO DE ${social2.toUpperCase()}</h2>
@@ -2224,11 +2204,7 @@ if (nomeCasado2 !== "") {
     `;
 }
 
-    
-
-// ==========================================
 // INJEÇÃO DOS BLOCOS DE CASADO LOGO APÓS A SINASTRIA
-// ==========================================
 relatorioHTML += blocoTransmutacaoP1;
 relatorioHTML += blocoTransmutacaoP2;
 
