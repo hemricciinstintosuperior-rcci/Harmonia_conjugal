@@ -708,7 +708,7 @@
     
 </style>
     
-</style>
+
 </head>
 <body>
 
@@ -718,7 +718,7 @@
 </div>
 
 <div class="container">
-        <button type="button" id="btnVideo" class="btn-video-toggle">
+    <button type="button" id="btnVideo" class="btn-video-toggle">
         <span>🎥 Assistir Vídeo Introdutório</span>
         <i class="seta">▼</i>
     </button>
@@ -732,12 +732,21 @@
 
     <div class="grid-pessoa">
         <div class="card-input">
-            <h3>Pessoa 1</h3>
-            <div class="form-group"><label>Nome Completo</label><input type="text" id="nome1" placeholder="Nome completo igual certidão"></div>
-            <div class="form-group"><label>Nome Social / Escolhido</label><input type="text" id="social1" placeholder="Nome para aparecer no relatório"></div>
-            <div class="form-group"><label>Data de Nascimento</label><input type="text" id="data1" placeholder="DD/MM/AAAA" maxlength="10" oninput="mascaraData(this)"></div>
+            <h3>Primeira Pessoa</h3>
+            <div class="form-group">
+                <label>Nome Completo (Solteiro/Original):</label>
+                <input type="text" id="nome1" placeholder="Digite o nome original">
+            </div>
+            <div class="form-group">
+                <label>Data de Nascimento:</label>
+                <input type="date" id="data1">
+            </div>
+            <div class="form-group" style="margin-top: 15px; border-top: 1px dashed rgba(212,154,154,0.2); padding-top: 15px;">
+                <label style="color: var(--accent);">Nova Assinatura / Nome de Casado (Opcional):</label>
+                <input type="text" id="casado1" placeholder="Se houver, digite aqui">
+            </div>
             
-            <div class="btn-group">
+            <div class="btn-group" style="margin-top: 15px;">
                 <button class="btn-nav" onclick="abrirModal('m1')">Motivação</button>
                 <button class="btn-nav" onclick="abrirModal('i1')">Influência</button>
                 <button class="btn-nav" onclick="abrirModal('p1')">Personalidade</button>
@@ -756,12 +765,21 @@
 
     <div class="grid-pessoa">
         <div class="card-input">
-            <h3>Pessoa 2</h3>
-            <div class="form-group"><label>Nome Completo</label><input type="text" id="nome2" placeholder="Nome completo igual certidão"></div>
-            <div class="form-group"><label>Nome Social / Escolhido</label><input type="text" id="social2" placeholder="Nome para aparecer no relatório"></div>
-            <div class="form-group"><label>Data de Nascimento</label><input type="text" id="data2" placeholder="DD/MM/AAAA" maxlength="10" oninput="mascaraData(this)"></div>
+            <h3>Segunda Pessoa</h3>
+            <div class="form-group">
+                <label>Nome Completo (Solteiro/Original):</label>
+                <input type="text" id="nome2" placeholder="Digite o nome original">
+            </div>
+            <div class="form-group">
+                <label>Data de Nascimento:</label>
+                <input type="date" id="data2">
+            </div>
+            <div class="form-group" style="margin-top: 15px; border-top: 1px dashed rgba(212,154,154,0.2); padding-top: 15px;">
+                <label style="color: var(--accent);">Nova Assinatura / Nome de Casado (Opcional):</label>
+                <input type="text" id="casado2" placeholder="Se houver, digite aqui">
+            </div>
             
-            <div class="btn-group">
+            <div class="btn-group" style="margin-top: 15px;">
                 <button class="btn-nav" onclick="abrirModal('m2')">Motivação</button>
                 <button class="btn-nav" onclick="abrirModal('i2')">Influência</button>
                 <button class="btn-nav" onclick="abrirModal('p2')">Personalidade</button>
@@ -783,36 +801,6 @@
         <button class="btn-action" style="background:var(--primary); color:#000; box-shadow: 0 5px 20px rgba(212,154,154,0.3);" onclick="mostrarSinastria()">❤️ VER COMPATIBILIDADE</button>
         <button class="btn-action" style="background:linear-gradient(135deg, #002091 0%, #00104a 100%); box-shadow: 0 5px 20px rgba(0,32,145,0.4);" onclick="abrirPremiumSinastria()">💎 RELATÓRIO PREMIUM PDF</button>
     </div>
-
-
-<div class="grid-pessoa" style="border-color: #2d0713; margin-top: 20px; margin-bottom: 20px;">
-        <div class="card-input">
-            <h3>💍 Nova Assinatura (Nome de Casado)</h3>
-            <div class="form-group">
-                <label>Sugestão de Nome Completo com Sobrenome do Cônjuge</label>
-                <input type="text" id="nomeCasado" placeholder="Ex: Nome com o sobrenome do parceiro(a)">
-            </div>
-
-                        <div class="form-group">
-                <label>Nome Social / Como deseja ser chamado(a)</label>
-                <input type="text" id="socialCasado" placeholder="Nome de tratamento">
-            </div>
-
-            <button class="btn-action" style="width:100%; margin-bottom:15px; background: #2d0713;" onclick="gerarCasado()">Analisar Nome de Casado(a)</button>
-            <div class="btn-group">
-                <button class="btn-nav" onclick="abrirModal('mC')">Motivação</button>
-                <button class="btn-nav" onclick="abrirModal('iC')">Influência</button>
-                <button class="btn-nav" onclick="abrirModal('pC')">Personalidade</button>
-            </div>
-            <div id="resultadoCasado" style="margin-top:15px; font-size:0.9rem; text-align:center; font-weight:bold;"></div>
-        </div>
-        <div class="card-piramide">
-            <h3>Pirâmide Nova Assinatura</h3>
-            <div id="piramideCasado" class="piramide"></div>
-            <div id="regenteCasado" style="display:none;"></div>
-        </div>
-    </div>
-    
 
     <div id="compat" style="text-align:center; margin-bottom:40px; font-weight:bold;"></div>
 
@@ -841,7 +829,6 @@
             <div id="regenteBebe" class="regente"></div>
         </div>
     </div>
-
 </div>
 
 <div id="modal" class="modal">
@@ -1348,15 +1335,42 @@ function gerarFolhaConteudo(titulo, sub1, txt1, sub2, txt2, social1, social2) {
 
     
 
-function abrirPremiumSinastria(){
-  if(!dados1 || !dados2) return alert("Calcule os dados primeiro.");
+function abrirPremiumSinastria() {
+    // 1. Captura os dados da tela
+    let n1 = document.getElementById("nome1").value.trim();
+    let d1 = document.getElementById("data1").value;
+    let c1 = document.getElementById("casado1").value.trim(); // Novo campo 1
 
-  const nome1 = document.getElementById("nome1").value;
-  const nome2 = document.getElementById("nome2").value;
-  const social1 = document.getElementById("social1").value || nome1.split(' ')[0];
-  const social2 = document.getElementById("social2").value || nome2.split(' ')[0];
+    let n2 = document.getElementById("nome2").value.trim();
+    let d2 = document.getElementById("data2").value;
+    let c2 = document.getElementById("casado2").value.trim(); // Novo campo 2
+
+    if(!n1 || !d1 || !n2 || !d2) {
+        alert("Por favor, preencha os nomes e datas principais!");
+        return;
+    }
+
+    // 2. Processa a numerologia base das duas pessoas
+    let dados1 = calcularNumerologiaMestre(n1, d1);
+    let dados2 = calcularNumerologiaMestre(n2, d2);
+
+    // 3. SE a pessoa digitou o nome de casado 1, calcula a nova assinatura dela
+    if (c1 !== "") {
+        let dadosCasado1 = calcularNumerologiaMestre(c1, d1);
+        // Aqui o sistema extrai as sequências negativas do nome NOVO da pessoa 1
+    }
+
+    // 4. SE a pessoa digitou o nome de casado 2, calcula a nova assinatura dela
+    if (c2 !== "") {
+        let dadosCasado2 = calcularNumerologiaMestre(c2, d2);
+        // Aqui o sistema extrai as sequências negativas do nome NOVO da pessoa 2
+    }
+
+    // 5. Montagem do PDF combinando tudo...
+    // (Onde cada texto vai cair exatamente no seu respectivo dono)
+
   const dataHoje = new Date().toLocaleDateString('pt-BR');
-
+}
   // Capa Principal
   let relatorioHTML = `
     <div class="pag-a4" style="background: radial-gradient(circle, #2d0713 0%, #110106 100%) !important; border: 4px solid #a6843c; display: flex !important; flex-direction: column !important; justify-content: space-between !important; align-items: center !important; padding: 40px 20px !important;">
