@@ -2034,13 +2034,16 @@ if (casado1 !== "") {
         htmlTextosNegativas1 += `<div style="margin-top: 20px; padding: 15px; border: 1px solid #ffcccc; background: #fff5f5; border-radius: 8px; text-align: left;">`;
         htmlTextosNegativas1 += `<h5 style="color: red; margin-bottom: 10px; font-size: 15px;">⚠️ Alerta de Bloqueios no Nome de Casado(a)</h5>`;
         
-        analiseCasado1.detalhesNegativas.forEach(neg => {
+analiseCasado1.detalhesNegativas.forEach(neg => {
             const seqCompleta = neg.numero; // Ex: "111"
-            const digitoUnico = String(seqCompleta).charAt(0); // Transforma em "1" para o seu textos.js
+            const digitoUnico = String(seqCompleta).charAt(0); // Transforma em "1"
             
-            const textoBloqueio = (window.textos && window.textos.sequenciaNegativa && window.textos.sequenciaNegativa[digitoUnico])
+            let textoBloqueio = (window.textos && window.textos.sequenciaNegativa && window.textos.sequenciaNegativa[digitoUnico])
                 ? window.textos.sequenciaNegativa[digitoUnico]
                 : `Análise detalhada do bloqueio ${seqCompleta} em processamento.`;
+                
+            // TRATAMENTO AQUI: Troca a marcação genérica pelo nome da Pessoa 1
+            textoBloqueio = textoBloqueio.replace("MASCULINO-FEMININO-NEUTRO,", `<strong>${social1}</strong>`);
                 
             htmlTextosNegativas1 += `
                 <div style="margin-top: 15px; border-left: 4px solid red; padding-left: 12px; background: #fff; padding: 10px; border-radius: 0 4px 4px 0;">
@@ -2108,13 +2111,16 @@ if (nomeCasado2 !== "") {
         htmlTextosNegativas2 += `<div style="margin-top: 20px; padding: 15px; border: 1px solid #ffcccc; background: #fff5f5; border-radius: 8px; text-align: left;">`;
         htmlTextosNegativas2 += `<h5 style="color: red; margin-bottom: 10px; font-size: 15px;">⚠️ Alerta de Bloqueios no Nome de Casado(a)</h5>`;
         
-        analiseCasado2.detalhesNegativas.forEach(neg => {
+analiseCasado2.detalhesNegativas.forEach(neg => {
             const seqCompleta = neg.numero;
             const digitoUnico = String(seqCompleta).charAt(0);
             
-            const textoBloqueio = (window.textos && window.textos.sequenciaNegativa && window.textos.sequenciaNegativa[digitoUnico])
+            let textoBloqueio = (window.textos && window.textos.sequenciaNegativa && window.textos.sequenciaNegativa[digitoUnico])
                 ? window.textos.sequenciaNegativa[digitoUnico]
                 : `Análise detalhada do bloqueio ${seqCompleta} em processamento.`;
+                
+            // TRATAMENTO AQUI: Troca a marcação genérica pelo nome da Pessoa 2
+            textoBloqueio = textoBloqueio.replace("MASCULINO-FEMININO-NEUTRO,", `<strong>${social2}</strong>`);
                 
             htmlTextosNegativas2 += `
                 <div style="margin-top: 15px; border-left: 4px solid red; padding-left: 12px; background: #fff; padding: 10px; border-radius: 0 4px 4px 0;">
