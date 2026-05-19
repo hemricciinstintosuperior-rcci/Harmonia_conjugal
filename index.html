@@ -1902,7 +1902,7 @@ if (casado1 !== "") {
     let piramideCasadoHtml1 = analiseCasado1.htmlVisual; // <--- Pega a pirâmide com os spans vermelhos
 
     // 2. Cálculos de Expressão normais do seu portal
-    let expressaoSolteiro1 = calcularExpressao(nome1); 
+    let expressaoSolteiro1 = calcularExpressao(n1); 
     let expressaoCasado1 = calcularExpressao(casado1); 
     let chaveTransicao1 = `de_${expressaoSolteiro1}_para_${expressaoCasado1}`;
     
@@ -1945,7 +1945,7 @@ if (nomeCasado2 !== "") {
     let piramideCasadoHtml2 = analiseCasado2.htmlVisual; // <--- Pega a pirâmide com os spans vermelhos
 
     // 2. Cálculos de Expressão da Pessoa 2
-    let expressaoSolteiro2 = calcularExpressao(nome2); 
+    let expressaoSolteiro2 = calcularExpressao(n2); 
     let expressaoCasado2 = calcularExpressao(nomeCasado2); 
     let chave2 = `de_${expressaoSolteiro2}_para_${expressaoCasado2}`;
     
