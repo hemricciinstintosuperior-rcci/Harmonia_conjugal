@@ -2008,71 +2008,103 @@ relatorioHTML += `
 // VERIFICAÇÃO EXCLUSIVA DE NOME DE CASADO / NOVA ASSINATURA
 // =============================================================
 
-// SE a Pessoa 1 preencheu o campo de casado
+// =============================================================
+// SEÇÃO DE TRANSMUTAÇÃO DA EXPRESSÃO (NOME DE CASADO)
+// =============================================================
+
+// --- CONTEXTO DA PESSOA 1 ---
 if (c1 !== "") {
-    // 1. O sistema calcula a numerologia base apenas com o nome novo e a data antiga
+    // 1. Calcula a numerologia do nome NOVO
     let dadosCasado1 = calcularNumerologiaMestre(c1, d1); 
     
-    // 2. Extrai a nova matriz e as sequências negativas do nome de casado 1
-    let txtPiramideCasado1 = obterHtmlTextoPiramide(dadosCasado1);
+    // 2. Puxa a Expressão de Solteiro e a Nova Expressão de Casado
+    let exprSolteiro1 = dados1.expressao; 
+    let exprCasado1 = dadosCasado1.expressao; 
+    
+    // Monta a chave exata (Ex: "de_8_para_9") para buscar nas Transições
+    let chaveTransicao1 = `de_${exprSolteiro1}_para_${exprCasado1}`;
+    let textoTransmutacao1 = TransicoesCasamento[chaveTransicao1] || "Sua transição mantém as vibrações alinhadas aos seus propósitos.";
+    
+    // Aplica o Social Name tratado da pessoa 1 no placeholder do banco
+    textoTransmutacao1 = textoTransmutacao1.replace(/MASCULINO-FEMININO-NEUTRO/gi, `<strong>${social1}</strong>`);
 
-    // 3. Injeta a folha de transformação da Pessoa 1 no relatório
+    // 3. CÁLCULO DO DESEQUILÍBRIO (Comparando a quantidade de sequências negativas)
+    let qtdSequenciasSolteiro1 = dados1.sequenciasNegativas ? dados1.sequenciasNegativas.length : 0;
+    let qtdSequenciasCasado1 = dadosCasado1.sequenciasNegativas ? dadosCasado1.sequenciasNegativas.length : 0;
+    
+    let textoDesequilibrio1 = "";
+    if (qtdSequenciasCasado1 > qtdSequenciasSolteiro1) {
+        textoDesequilibrio1 = `O acréscimo deste sobrenome trouxe novos desafios. Houve um aumento de ${qtdSequenciasSolteiro1} para ${qtdSequenciasCasado1} sequências de bloqueio.`;
+    } else if (qtdSequenciasCasado1 < qtdSequenciasSolteiro1) {
+        textoDesequilibrio1 = `O acréscimo deste sobrenome trouxe maior proteção. Houve uma redução de ${qtdSequenciasSolteiro1} para ${qtdSequenciasCasado1} sequências de bloqueio.`;
+    } else {
+        textoDesequilibrio1 = `A estabilidade vibracional se manteve estável. Permaneceram as mesmas ${qtdSequenciasCasado1} sequências de bloqueio originais.`;
+    }
+
+    // 4. Injeta a folha de conteúdo exatamente no formato da foto 2
+    let txtPiramideCasado1 = obterHtmlTextoPiramide(dadosCasado1);
+    
     relatorioHTML += `
     <div class="bloco-texto-pdf pag-a4">
-        <h2 class="titulo-secao-pdf">Transformação Vibracional: ${social1}</h2>
-        
-        <h3 class="subtitulo-pessoa-pdf">Nova Motivação (Desejo Íntimo)</h3>
-        <p>${textosCasado.motivacao[dadosCasado1.motivacao] || "Texto não encontrado."}</p>
+        <h2 class="titulo-secao-pdf">A TRANSMUTAÇÃO DA SUA EXPRESSÃO</h2>
+        <p class="texto-cabalistico-pdf">${textoTransmutacao1}</p>
         
         <div class="divisor-pdf"></div>
         
-        <h3 class="subtitulo-pessoa-pdf">Nova Expressão (Sua Influência)</h3>
-        <p>${textosCasado.expressao[dadosCasado1.expressao] || "Texto não encontrado."}</p>
+        <h3 class="subtitulo-pessoa-pdf" style="color: #ff3b5c !important;">Atenção ao Desequilíbrio:</h3>
+        <p class="texto-cabalistico-pdf" style="background: rgba(255,59,92,0.05); padding: 10px; border-radius: 5px;">${textoDesequilibrio1}</p>
         
         <div class="divisor-pdf"></div>
         
-        <h3 class="subtitulo-pessoa-pdf">Nova Personalidade (Imagem Pública)</h3>
-        <p>${textosCasado.personalidade[dadosCasado1.personalidade] || "Texto não encontrado."}</p>
-        
-        <div class="divisor-pdf"></div>
-        
-        <h3 class="subtitulo-pessoa-pdf">Sequências Negativas da Nova Assinatura</h3>
-        <div class="piramide" style="white-space: pre-line; text-align: center; font-family: monospace;">
+        <div class="piramide" style="white-space: pre-line; text-align: center; margin-top:20px;">
             ${txtPiramideCasado1}
         </div>
     </div>`;
 }
 
-// SE a Pessoa 2 preencheu o campo de casado
+// --- CONTEXTO DA PESSOA 2 ---
 if (c2 !== "") {
-    // 1. O sistema calcula a numerologia base com o nome novo 2 e data 2
+    // 1. Calcula a numerologia do nome NOVO 2
     let dadosCasado2 = calcularNumerologiaMestre(c2, d2); 
     
-    // 2. Extrai a nova matriz e as sequências negativas do nome de casado 2
-    let txtPiramideCasado2 = obterHtmlTextoPiramide(dadosCasado2);
+    // 2. Puxa a Expressão de Solteiro e a Nova Expressão de Casado para a Pessoa 2
+    let exprSolteiro2 = dados2.expressao; 
+    let exprCasado2 = dadosCasado2.expressao; 
+    
+    let chaveTransicao2 = `de_${exprSolteiro2}_para_${exprCasado2}`;
+    let textoTransmutacao2 = TransicoesCasamento[chaveTransicao2] || "Sua transição mantém as vibrações alinhadas aos seus propósitos.";
+    
+    textoTransmutacao2 = textoTransmutacao2.replace(/MASCULINO-FEMININO-NEUTRO/gi, `<strong>${social2}</strong>`);
 
-    // 3. Injeta a folha de transformação da Pessoa 2 no relatório
+    // 3. CÁLCULO DO DESEQUILÍBRIO DA PESSOA 2
+    let qtdSequenciasSolteiro2 = dados2.sequenciasNegativas ? dados2.sequenciasNegativas.length : 0;
+    let qtdSequenciasCasado2 = dadosCasado2.sequenciasNegativas ? dadosCasado2.sequenciasNegativas.length : 0;
+    
+    let textoDesequilibrio2 = "";
+    if (qtdSequenciasCasado2 > qtdSequenciasSolteiro2) {
+        textoDesequilibrio2 = `O acréscimo deste sobrenome trouxe novos desafios. Houve um aumento de ${qtdSequenciasSolteiro2} para ${qtdSequenciasCasado2} sequências de bloqueio.`;
+    } else if (qtdSequenciasCasado2 < qtdSequenciasSolteiro2) {
+        textoDesequilibrio2 = `O acréscimo deste sobrenome trouxe maior proteção. Houve uma redução de ${qtdSequenciasSolteiro2} para ${qtdSequenciasCasado2} sequências de bloqueio.`;
+    } else {
+        textoDesequilibrio2 = `A estabilidade vibracional se manteve estável. Permaneceram as mesmas ${qtdSequenciasCasado2} sequências de bloqueio originais.`;
+    }
+
+    // 4. Injeta a folha de conteúdo para a Pessoa 2
+    let txtPiramideCasado2 = obterHtmlTextoPiramide(dadosCasado2);
+    
     relatorioHTML += `
     <div class="bloco-texto-pdf pag-a4">
-        <h2 class="titulo-secao-pdf">Transformação Vibracional: ${social2}</h2>
-        
-        <h3 class="subtitulo-pessoa-pdf">Nova Motivação (Desejo Íntimo)</h3>
-        <p>${textosCasado.motivacao[dadosCasado2.motivacao] || "Texto não encontrado."}</p>
+        <h2 class="titulo-secao-pdf">A TRANSMUTAÇÃO DA SUA EXPRESSÃO</h2>
+        <p class="texto-cabalistico-pdf">${textoTransmutacao2}</p>
         
         <div class="divisor-pdf"></div>
         
-        <h3 class="subtitulo-pessoa-pdf">Nova Expressão (Sua Influência)</h3>
-        <p>${textosCasado.expressao[dadosCasado2.expressao] || "Texto não encontrado."}</p>
+        <h3 class="subtitulo-pessoa-pdf" style="color: #ff3b5c !important;">Atenção ao Desequilíbrio:</h3>
+        <p class="texto-cabalistico-pdf" style="background: rgba(255,59,92,0.05); padding: 10px; border-radius: 5px;">${textoDesequilibrio2}</p>
         
         <div class="divisor-pdf"></div>
         
-        <h3 class="subtitulo-pessoa-pdf">Nova Personalidade (Imagem Pública)</h3>
-        <p>${textosCasado.personalidade[dadosCasado2.personalidade] || "Texto não encontrado."}</p>
-        
-        <div class="divisor-pdf"></div>
-        
-        <h3 class="subtitulo-pessoa-pdf">Sequências Negativas da Nova Assinatura</h3>
-        <div class="piramide" style="white-space: pre-line; text-align: center; font-family: monospace;">
+        <div class="piramide" style="white-space: pre-line; text-align: center; margin-top:20px;">
             ${txtPiramideCasado2}
         </div>
     </div>`;
