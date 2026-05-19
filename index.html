@@ -1337,40 +1337,18 @@ function gerarFolhaConteudo(titulo, sub1, txt1, sub2, txt2, social1, social2) {
 
 function abrirPremiumSinastria() {
     // 1. Captura os dados da tela
-    let n1 = document.getElementById("nome1").value.trim();
-    let d1 = document.getElementById("data1").value;
-    let c1 = document.getElementById("casado1").value.trim(); // Novo campo 1
+let n1 = document.getElementById("nome1").value.trim();
+let d1 = document.getElementById("data1").value;
+let c1 = document.getElementById("casado1").value.trim(); // Novo: Nome de Casado 1
 
-    let n2 = document.getElementById("nome2").value.trim();
-    let d2 = document.getElementById("data2").value;
-    let c2 = document.getElementById("casado2").value.trim(); // Novo campo 2
+let n2 = document.getElementById("nome2").value.trim();
+let d2 = document.getElementById("data2").value;
+let c2 = document.getElementById("casado2").value.trim(); // Novo: Nome de Casado 2
 
-    if(!n1 || !d1 || !n2 || !d2) {
-        alert("Por favor, preencha os nomes e datas principais!");
-        return;
-    }
-
-    // 2. Processa a numerologia base das duas pessoas
-    let dados1 = calcularNumerologiaMestre(n1, d1);
-    let dados2 = calcularNumerologiaMestre(n2, d2);
-
-    // 3. SE a pessoa digitou o nome de casado 1, calcula a nova assinatura dela
-    if (c1 !== "") {
-        let dadosCasado1 = calcularNumerologiaMestre(c1, d1);
-        // Aqui o sistema extrai as sequências negativas do nome NOVO da pessoa 1
-    }
-
-    // 4. SE a pessoa digitou o nome de casado 2, calcula a nova assinatura dela
-    if (c2 !== "") {
-        let dadosCasado2 = calcularNumerologiaMestre(c2, d2);
-        // Aqui o sistema extrai as sequências negativas do nome NOVO da pessoa 2
-    }
-
-    // 5. Montagem do PDF combinando tudo...
-    // (Onde cada texto vai cair exatamente no seu respectivo dono)
+// Deixe a sua variável de dataHoje (data de hoje) intocada logo abaixo disso!
 
   const dataHoje = new Date().toLocaleDateString('pt-BR');
-}
+
   // Capa Principal
   let relatorioHTML = `
     <div class="pag-a4" style="background: radial-gradient(circle, #2d0713 0%, #110106 100%) !important; border: 4px solid #a6843c; display: flex !important; flex-direction: column !important; justify-content: space-between !important; align-items: center !important; padding: 40px 20px !important;">
@@ -2026,30 +2004,78 @@ relatorioHTML += `
 
 
 
-// Processamento Inteligente do Nome de Casado(a)
-const nomeCasadoInput = document.getElementById("nomeCasado").value.trim();
+// =============================================================
+// VERIFICAÇÃO EXCLUSIVA DE NOME DE CASADO / NOVA ASSINATURA
+// =============================================================
 
-if (nomeCasadoInput !== "" && dadosCasado) {
-    const nome1Atual = document.getElementById("nome1").value.trim();
-    const nome2Atual = document.getElementById("nome2").value.trim();
+// SE a Pessoa 1 preencheu o campo de casado
+if (c1 !== "") {
+    // 1. O sistema calcula a numerologia base apenas com o nome novo e a data antiga
+    let dadosCasado1 = calcularNumerologiaMestre(c1, d1); 
     
-    let dadosOriginaisDaPessoa = null;
+    // 2. Extrai a nova matriz e as sequências negativas do nome de casado 1
+    let txtPiramideCasado1 = obterHtmlTextoPiramide(dadosCasado1);
 
-    // Se o nome de casado começar ou contiver o nome da Pessoa 1, a base é a Pessoa 1
-    if (nome1Atual && nomeCasadoInput.toUpperCase().includes(nome1Atual.split(' ')[0].toUpperCase())) {
-        dadosOriginaisDaPessoa = calcularPessoa(nome1Atual, null);
-    } 
-    // Se não, assume os dados da Pessoa 2 como base de comparação
-    else if (nome2Atual) {
-        dadosOriginaisDaPessoa = calcularPessoa(nome2Atual, null);
-    }
+    // 3. Injeta a folha de transformação da Pessoa 1 no relatório
+    relatorioHTML += `
+    <div class="bloco-texto-pdf pag-a4">
+        <h2 class="titulo-secao-pdf">Transformação Vibracional: ${social1}</h2>
+        
+        <h3 class="subtitulo-pessoa-pdf">Nova Motivação (Desejo Íntimo)</h3>
+        <p>${textosCasado.motivacao[dadosCasado1.motivacao] || "Texto não encontrado."}</p>
+        
+        <div class="divisor-pdf"></div>
+        
+        <h3 class="subtitulo-pessoa-pdf">Nova Expressão (Sua Influência)</h3>
+        <p>${textosCasado.expressao[dadosCasado1.expressao] || "Texto não encontrado."}</p>
+        
+        <div class="divisor-pdf"></div>
+        
+        <h3 class="subtitulo-pessoa-pdf">Nova Personalidade (Imagem Pública)</h3>
+        <p>${textosCasado.personalidade[dadosCasado1.personalidade] || "Texto não encontrado."}</p>
+        
+        <div class="divisor-pdf"></div>
+        
+        <h3 class="subtitulo-pessoa-pdf">Sequências Negativas da Nova Assinatura</h3>
+        <div class="piramide" style="white-space: pre-line; text-align: center; font-family: monospace;">
+            ${txtPiramideCasado1}
+        </div>
+    </div>`;
+}
 
-    // Só chama a função se conseguir calcular a base original para comparação
-    if (dadosOriginaisDaPessoa) {
-        relatorioHTML += gerarMóduloNomeCasado(nomeCasadoInput, dadosOriginaisDaPessoa);
-    } else {
-        console.log("Não foi possível determinar a pessoa de origem para o Nome de Casado.");
-    }
+// SE a Pessoa 2 preencheu o campo de casado
+if (c2 !== "") {
+    // 1. O sistema calcula a numerologia base com o nome novo 2 e data 2
+    let dadosCasado2 = calcularNumerologiaMestre(c2, d2); 
+    
+    // 2. Extrai a nova matriz e as sequências negativas do nome de casado 2
+    let txtPiramideCasado2 = obterHtmlTextoPiramide(dadosCasado2);
+
+    // 3. Injeta a folha de transformação da Pessoa 2 no relatório
+    relatorioHTML += `
+    <div class="bloco-texto-pdf pag-a4">
+        <h2 class="titulo-secao-pdf">Transformação Vibracional: ${social2}</h2>
+        
+        <h3 class="subtitulo-pessoa-pdf">Nova Motivação (Desejo Íntimo)</h3>
+        <p>${textosCasado.motivacao[dadosCasado2.motivacao] || "Texto não encontrado."}</p>
+        
+        <div class="divisor-pdf"></div>
+        
+        <h3 class="subtitulo-pessoa-pdf">Nova Expressão (Sua Influência)</h3>
+        <p>${textosCasado.expressao[dadosCasado2.expressao] || "Texto não encontrado."}</p>
+        
+        <div class="divisor-pdf"></div>
+        
+        <h3 class="subtitulo-pessoa-pdf">Nova Personalidade (Imagem Pública)</h3>
+        <p>${textosCasado.personalidade[dadosCasado2.personalidade] || "Texto não encontrado."}</p>
+        
+        <div class="divisor-pdf"></div>
+        
+        <h3 class="subtitulo-pessoa-pdf">Sequências Negativas da Nova Assinatura</h3>
+        <div class="piramide" style="white-space: pre-line; text-align: center; font-family: monospace;">
+            ${txtPiramideCasado2}
+        </div>
+    </div>`;
 }
     
 // Processamento do bebê, se houver
