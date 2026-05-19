@@ -1275,30 +1275,29 @@ function criarCapaTransicao(titulo, subtitulo, rodape, audio1Url, nomeAudio1, au
    FUNÇÕES UTILITÁRIAS GLOBAIS (ESCOPO LIVRE)
    ============================================================= */
 
-// 1. Tratamento de textos e placeholders (Acessível por qualquer módulo)
+/* =============================================================
+   FUNÇÕES UTILITÁRIAS GLOBAIS (ATUALIZADO)
+   ============================================================= */
+
+// 1. Tratamento de textos e placeholders
 function extrairETratarTexto(textoBruto, nomeParceiro) {
     if (!textoBruto) return "";
-    
-    // Mantém as tags HTML (h3, div, etc.) e substitui a tag pelo nome social personalizado
     let textoTratado = String(textoBruto)
         .replace(/MASCULINO-FEMININO-NEUTRO/gi, `<strong>${nomeParceiro}</strong>`);
-        
     return `<div class="conteudo-dinamico-pdf">${textoTratado}</div>`;
 }
 
-// 2. Formatador textual da pirâmide para o bloco de impressão <pre>
+// 2. Formatador da pirâmide (Serve para Sinastria e Casamento)
 function obterHtmlTextoPiramide(valores) {
-    // Se receber a estrutura completa do sistema (.valores) ou a matriz direta
     let matriz = valores.linhas ? valores.linhas : (Array.isArray(valores) ? valores : null);
     
-    // Se a matriz não foi encontrada mas temos a estrutura de linhas nativa calculada na hora
     if (!matriz && valores && Array.isArray(valores)) {
         let lines = [valores.map(Number)];
         while(lines[lines.length-1].length > 1){
             let anterior = lines[lines.length-1];
             let nova = [];
             for(let i=0; i<anterior.length-1; i++){
-                nova.push(Number(reduzir(anterior[i] + anterior[i+1]))); // Certifique-se que reduzir() existe globalmente
+                nova.push(Number(reduzir(anterior[i] + anterior[i+1])));
             }
             lines.push(nova);
         }
@@ -1309,17 +1308,24 @@ function obterHtmlTextoPiramide(valores) {
 
     let texto = "";
     matriz.forEach(linha => {
-        // Formata mantendo o padrão exato de 3 espaços para alinhamento geométrico perfeito no PDF
-        let linhaTexto = linha.map(n => {
-            // Se for o array nativo com marcação de span negativo, mantém a tag. Se não, passa o número puro.
-            return n;
-        }).join("   ");
+        let linhaTexto = java.join("   ");
         texto += linhaTexto + "\n";
     });
-    
     return texto;
 }
 
+// 3. Gerador de estrutura de páginas de conteúdo do PDF
+function gerarFolhaConteudo(titulo, sub1, txt1, sub2, txt2, social1, social2) {
+    return `
+      <div class="bloco-texto-pdf">
+          <h2 class="titulo-secao-pdf">${titulo}</h2>
+          <h3 class="subtitulo-pessoa-pdf">${sub1}</h3>
+          <div>${extrairETratarTexto(txt1, social1)}</div>
+          <div class="divisor-pdf"></div>
+          <h3 class="subtitulo-pessoa-pdf">${sub2}</h3>
+          <div>${extrairETratarTexto(txt2, social2)}</div>
+      </div>`;
+}
 
     
 
