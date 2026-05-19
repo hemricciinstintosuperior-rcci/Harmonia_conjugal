@@ -1115,8 +1115,7 @@ function abrirPremiumSinastria(){
   const social2 = document.getElementById("social2").value || nome2.split(' ')[0];
   const dataHoje = new Date().toLocaleDateString('pt-BR');
   
-    // >>> COLE ESSA FUNÇÃO DE APOIO EXATAMENTE AQUI NO COMEÇO:
- const processarMatrizCasado = (nomeCompleto) => {
+const processarMatrizCasado = (nomeCompleto) => {
     // 1. Apenas limpa espaços extras e joga para maiúsculo (MANTÉM os acentos para o seu cálculo)
     let nomeTratado = nomeCompleto.toUpperCase().trim();
     
@@ -1154,11 +1153,22 @@ function abrirPremiumSinastria(){
         linhaAtual = proximaLinha;
     }
 
+    // --- CORREÇÃO AQUI: Criamos o array para guardar quais sequências foram encontradas ---
     let totalSequencias = 0;
+    let sequenciasEncontradas = []; 
     const bloqueiosAlvo = ["111", "222", "333", "444", "555", "666", "777", "888", "999"];
+
     todasAsLinhas.forEach(linha => {
         let linhaTexto = linha.join("");
-        bloqueiosAlvo.forEach(bloqueio => { if (linhaTexto.includes(bloqueio)) { totalSequencias++; } });
+        bloqueiosAlvo.forEach(bloqueio => { 
+            if (linhaTexto.includes(bloqueio)) { 
+                totalSequencias++; 
+                // Se a sequência ainda não foi adicionada na lista, adiciona agora
+                if (!sequenciasEncontradas.some(s => s.numero === bloqueio)) {
+                    sequenciasEncontradas.push({ numero: bloqueio });
+                }
+            } 
+        });
     });
 
     let piramideHtml = "";
@@ -1172,9 +1182,13 @@ function abrirPremiumSinastria(){
         piramideHtml += linhaTexto + "\n";
     });
 
-    return { quantidadeBloqueios: totalSequencias, htmlVisual: piramideHtml };
-};
-    // ... 
+    // RETORNO ATUALIZADO: Agora enviamos o array com os detalhes para os textos funcionarem!
+    return { 
+        quantidadeBloqueios: totalSequencias, 
+        htmlVisual: piramideHtml,
+        detalhesNegativas: sequenciasEncontradas 
+    };
+}; 
 
   // Capa Principal
   let relatorioHTML = `
@@ -1984,40 +1998,152 @@ function gerarAbaNomeCasado(nomeCasado, expOriginal, analiseSolteiro, analiseCas
 // ==========================================
 // PROCESSAMENTO TRANSMUTAÇÃO CASADO - PESSOA 1
 // ==========================================
+// PROCESSAMENTO TRANSMUTAÇÃO CASADO - PESSOA 1
+// ==========================================
 let casado1 = document.getElementById("nomeCasado1").value.trim();
-let blocoTransmutacaoP1 = ""; // Inicializa vazio
+let blocoTransmutacaoP1 = ""; 
 
 if (casado1 !== "") {
-    // Pegamos os dados reais das matrizes para a comparação matemática
     let analiseSolteiro1 = processarMatrizCasado(nome1);
     let analiseCasado1 = processarMatrizCasado(casado1);
     
-    // Pegamos as expressões (personalidade) para montar a chave de transição
+    let seqSolteiro1 = analiseSolteiro1.quantidadeBloqueios;
+    let seqCasado1 = analiseCasado1.quantidadeBloqueios;
+    let piramideCasadoHtml1 = analiseCasado1.htmlVisual; 
+
     let expressaoSolteiro1 = calcularPessoa(nome1, "").personalidade; 
     let expressaoCasado1 = calcularPessoa(casado1, "").personalidade; 
 
-    // Chamamos a nossa função inteligente passando os dados da Pessoa 1
-    // Ela vai calcular se aumentou/diminuiu, gerar a pirâmide e listar os textos das negativas!
-    blocoTransmutacaoP1 = gerarAbaNomeCasado(casado1, expressaoSolteiro1, analiseSolteiro1, analiseCasado1, social1);
+    let chaveTransicao1 = `de_${expressaoSolteiro1}_para_${expressaoCasado1}`;
+    let textoBruto1 = window.textos.TransicoesCasamento[chaveTransicao1] || "";
+    let textoFinal1 = textoBruto1.replace("MASCULINO-FEMININO-NEUTRO,", `<strong>${social1}</strong>`);
+
+    // --- NOVA LOGICA DE DIAGNÓSTICO MATEMÁTICO REAL ---
+    let textoDiagnostico1 = "";
+    if (seqCasado1 > seqSolteiro1) {
+        textoDiagnostico1 = `O acréscimo deste sobrenome trouxe novos desafios. Houve um aumento de ${seqSolteiro1} para ${seqCasado1} sequências de bloqueio.`;
+    } else if (seqCasado1 < seqSolteiro1) {
+        textoDiagnostico1 = `Este novo nome é mais harmônico. A união eliminou bloqueios anteriores, reduzindo de ${seqSolteiro1} para ${seqCasado1} as sequências negativas.`;
+    } else {
+        textoDiagnostico1 = `O novo nome manteve a mesma estabilidade vibracional (total de ${seqCasado1} sequências de bloqueio).`;
+    }
+
+    // --- GERANDO OS TEXTOS EXPLICATIVOS DO TEXTOS.JS ---
+    let htmlTextosNegativas1 = "";
+    if (seqCasado1 > 0 && analiseCasado1.detalhesNegativas) {
+        htmlTextosNegativas1 += `<div style="margin-top: 20px; padding: 15px; border: 1px solid #ffcccc; background: #fff5f5; border-radius: 8px; text-align: left;">`;
+        htmlTextosNegativas1 += `<h5 style="color: red; margin-bottom: 10px; font-size: 15px;">⚠️ Alerta de Bloqueios no Nome de Casado(a)</h5>`;
+        
+        analiseCasado1.detalhesNegativas.forEach(neg => {
+            const seqCompleta = neg.numero; // Ex: "111"
+            const digitoUnico = String(seqCompleta).charAt(0); // Transforma em "1" para o seu textos.js
+            
+            const textoBloqueio = (window.textos && window.textos.sequenciaNegativa && window.textos.sequenciaNegativa[digitoUnico])
+                ? window.textos.sequenciaNegativa[digitoUnico]
+                : `Análise detalhada do bloqueio ${seqCompleta} em processamento.`;
+                
+            htmlTextosNegativas1 += `
+                <div style="margin-top: 15px; border-left: 4px solid red; padding-left: 12px; background: #fff; padding: 10px; border-radius: 0 4px 4px 0;">
+                    <strong style="color: #b30000; font-size: 14px;">Bloqueio da Sequência ${seqCompleta}</strong>
+                    <p style="font-size: 13px; color: #222; margin-top: 5px; line-height: 1.5; text-align: justify;">${textoBloqueio}</p>
+                </div>`;
+        });
+        htmlTextosNegativas1 += `</div>`;
+    }
+
+    blocoTransmutacaoP1 = `
+        <div class="bloco-texto-pdf">
+            <h4 class="titulo-secao-pdf">A TRANSMUTAÇÃO DA EXPRESSÃO DE ${social1.toUpperCase()}</h4>
+            <p class="texto-cabalistico-pdf">${textoFinal1}</p>
+            
+            <p class="texto-cabalistico-pdf">
+                <strong style="color: #6B0202;">Análise de Fluidez:</strong> ${textoDiagnostico1}
+            </p>
+            
+            <div class="divisor-pdf"></div>
+            
+            <div style="text-align: center; background: #fff; padding: 20px; border-radius: 8px;">
+                <pre class="piramide" style="color: #111; font-family: monospace; white-space: pre-wrap; display: inline-block; text-align: center;">${piramideCasadoHtml1}</pre>
+            </div>
+
+            ${htmlTextosNegativas1}
+        </div>
+    `;
 }
 
 // ==========================================
 // PROCESSAMENTO TRANSMUTAÇÃO CASADO - PESSOA 2
 // ==========================================
 let nomeCasado2 = document.getElementById("nomeCasado2").value.trim(); 
-let blocoTransmutacaoP2 = ""; // Inicializa vazio
+let blocoTransmutacaoP2 = ""; 
 
 if (nomeCasado2 !== "") {
-    // Pegamos os dados reais das matrizes para a configuração da Pessoa 2
     let analiseSolteiro2 = processarMatrizCasado(nome2);
     let analiseCasado2 = processarMatrizCasado(nomeCasado2);
     
-    // Pegamos as expressões (personalidade) da Pessoa 2
+    let seqSolteiro2 = analiseSolteiro2.quantidadeBloqueios;
+    let seqCasado2 = analiseCasado2.quantidadeBloqueios;
+    let piramideCasadoHtml2 = analiseCasado2.htmlVisual; 
+
     let expressaoSolteiro2 = calcularPessoa(nome2, "").personalidade; 
     let expressaoCasado2 = calcularPessoa(nomeCasado2, "").personalidade; 
 
-    // Chamamos a mesma função inteligente, mas agora com os dados da Pessoa 2
-    blocoTransmutacaoP2 = gerarAbaNomeCasado(nomeCasado2, expressaoSolteiro2, analiseSolteiro2, analiseCasado2, social2);
+    let chave2 = `de_${expressaoSolteiro2}_para_${expressaoCasado2}`;
+    let textoBruto2 = window.textos.TransicoesCasamento[chave2] || "";
+    let textoFinal2 = textoBruto2.replace("MASCULINO-FEMININO-NEUTRO,", `<strong>${social2}</strong>`);
+
+    // --- NOVA LOGICA DE DIAGNÓSTICO MATEMÁTICO REAL ---
+    let textoDiagnostico2 = "";
+    if (seqCasado2 > seqSolteiro2) {
+        textoDiagnostico2 = `O acréscimo deste sobrenome trouxe novos desafios. Houve um aumento de ${seqSolteiro2} para ${seqCasado2} sequências de bloqueio.`;
+    } else if (seqCasado2 < seqSolteiro2) {
+        textoDiagnostico2 = `Este novo nome é mais harmônico. A união eliminou bloqueios anteriores, reduzindo de ${seqSolteiro2} para ${seqCasado2} as sequências negativas.`;
+    } else {
+        textoDiagnostico2 = `O novo nome manteve a mesma estabilidade vibracional (total de ${seqCasado2} sequências de bloqueio).`;
+    }
+
+    // --- GERANDO OS TEXTOS EXPLICATIVOS DO TEXTOS.JS ---
+    let htmlTextosNegativas2 = "";
+    if (seqCasado2 > 0 && analiseCasado2.detalhesNegativas) {
+        htmlTextosNegativas2 += `<div style="margin-top: 20px; padding: 15px; border: 1px solid #ffcccc; background: #fff5f5; border-radius: 8px; text-align: left;">`;
+        htmlTextosNegativas2 += `<h5 style="color: red; margin-bottom: 10px; font-size: 15px;">⚠️ Alerta de Bloqueios no Nome de Casado(a)</h5>`;
+        
+        analiseCasado2.detalhesNegativas.forEach(neg => {
+            const seqCompleta = neg.numero;
+            const digitoUnico = String(seqCompleta).charAt(0);
+            
+            const textoBloqueio = (window.textos && window.textos.sequenciaNegativa && window.textos.sequenciaNegativa[digitoUnico])
+                ? window.textos.sequenciaNegativa[digitoUnico]
+                : `Análise detalhada do bloqueio ${seqCompleta} em processamento.`;
+                
+            htmlTextosNegativas2 += `
+                <div style="margin-top: 15px; border-left: 4px solid red; padding-left: 12px; background: #fff; padding: 10px; border-radius: 0 4px 4px 0;">
+                    <strong style="color: #b30000; font-size: 14px;">Bloqueio da Sequência ${seqCompleta}</strong>
+                    <p style="font-size: 13px; color: #222; margin-top: 5px; line-height: 1.5; text-align: justify;">${textoBloqueio}</p>
+                </div>`;
+        });
+        htmlTextosNegativas2 += `</div>`;
+    }
+
+    blocoTransmutacaoP2 = `
+        <div class="bloco-texto-pdf">
+            <h4 class="titulo-secao-pdf">A TRANSMUTAÇÃO DA EXPRESSÃO DE ${social2.toUpperCase()}</h4>
+            <span class="subtitulo-pessoa-pdf">${social2}</span>
+            <p class="texto-cabalistico-pdf">${textoFinal2}</p>
+            
+            <p class="texto-cabalistico-pdf">
+                <strong>Análise de Fluidez:</strong> ${textoDiagnostico2}
+            </p>
+            
+            <div class="divisor-pdf"></div>
+            
+            <div style="text-align: center; background: #fff; padding: 20px;">
+                <pre class="piramide" style="color: #111; font-family: monospace; white-space: pre-wrap; display: inline-block; text-align: center;">${piramideCasadoHtml2}</pre>
+            </div>
+
+            ${htmlTextosNegativas2}
+        </div>
+    `;
 }
 
 // ==========================================
