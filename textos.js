@@ -443,6 +443,337 @@ window.textos = {
     "de_99_para_99": "MASCULINO-FEMININO-NEUTRO, a manutenção da vibração 99 confirma que sua alma é um farol de luz absoluta. Seu novo nome sela sua missão de mestre da conclusão e da sabedoria, garantindo que seu casamento seja a jornada final de retorno à unidade, marcada por um amor que transcende o tempo e o espaço."
  
  },
+
+
+motivacaobb: {
+    1: `<h3>Ter o controle sobre seu destino - Motivação 1</h3>
+    <p>A motivação mais profunda da alma do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a busca pela autonomia e pela expressão de sua forte individualidade. Desde muito cedo, o que fará o coraçãozinho dele(a) vibrar é a sensação de conseguir fazer as coisas por si mesmo, mostrando um desejo natural de ser mestre das suas próprias escolhas.</p>
+    <p>Existe um impulso inato para o destaque e para a liderança em <strong>MASCULINO-FEMININO-NEUTRO</strong>. Vocês notarão que ele(a) pode demonstrar um forte incômodo diante de restrições exageradas ou rotinas que limitem sua liberdade de explorar; essa inquietação natural é o combustível que o(a) move a conquistar o próprio espaço no mundo.</p>
+    <p>O desejo íntimo dessa criança é desbravar e ser pioneira. Para que <strong>MASCULINO-FEMININO-NEUTRO</strong> se sinta verdadeiramente realizado(a) no futuro, ele(a) precisará saber que suas conquistas são fruto de sua própria coragem e determinação para abrir novos caminhos.</p>`,
+
+    2: `<h3>Estar em paz e em harmonia - Motivação 2</h3>
+    <p>Pais, a motivação interna do pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> é a busca constante pela paz, pelo afeto e por uma conexão profunda com o ambiente e com as pessoas ao redor. O que o coraçãozinho dele(a) mais deseja é viver em um lar acolhedor, onde a gentileza e a harmonia estejam sempre presentes.</p>
+    <p>Desde cedo, vocês notarão que <strong>MASCULINO-FEMININO-NEUTRO</strong> sente uma satisfação imensa em colaborar e em ver todos unidos. O desejo secreto dessa criança é se sentir segura através de vínculos afetivos sólidos, valorizando muito o colinho, a escuta e a estabilidade emocional da família.</p>
+    <p>A alma desse bebê se realiza na união. Ao perceber que seu jeitinho doce e cuidadoso traz alegria e conforto para os pais e irmãos, <strong>MASCULINO-FEMININO-NEUTRO</strong> atinge uma plenitude interior que guiará sua personalidade na busca pelo entendimento entre as pessoas.</p>`,
+
+    3: `<h3>Se divertir e expressar a criatividade - Motivação 3</h3>
+    <p>A motivação mais profunda da alma de <strong>MASCULINO-FEMININO-NEUTRO</strong> é a necessidade vital de se expressar, comunicar e espalhar alegria. O que realmente impulsionará o coração do seu bebê é a oportunidade de colocar sua imaginação para funcionar e contagiar o ambiente com o seu carisma natural.</p>
+    <p>Esta criança deseja intensamente ser notada e valorizada por sua inteligência e pelo seu bom humor, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Limitar ou repreender rigidamente sua expressão criativa pode sufocar o entusiasmo desse bebê, que precisa de estímulos, brincadeiras e trocas que alimentem seu talento nato para a comunicação.</p>
+    <p>Quando estimulado(a) a canalizar esse potencial criativo em brincadeiras, artes ou histórias, <strong>MASCULINO-FEMININO-NEUTRO</strong> atingirá o ápice da satisfação. A missão interna dele(a) é transformar o cotidiano da família em algo extraordinário através do riso e da luz que emana de sua presença.</p>`,
+
+    4: `<h3>Ter uma vida estável e organizada - Motivação 4</h3>
+    <p>A motivação íntima do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a busca por segurança, ordem e pela construção de bases sólidas. Desde pequeno, o que trará verdadeira paz à alma dessa criança é saber exatamente o que esperar da rotina, sentindo que o ambiente familiar é seguro e inabalável.</p>
+    <p>Vocês perceberão que <strong>MASCULINO-FEMININO-NEUTRO</strong> sente uma satisfação profunda quando cumpre suas pequenas tarefas e percebe que as coisas estão no lugar certo. O desejo secreto dele(a) é ser um porto seguro de eficiência e honra, demonstrando desde cedo um instinto natural de proteger e estruturar o que está ao seu redor.</p>
+    <p>A alma desse bebê encontra o equilíbrio quando percebe que os pilares da sua vida estão firmes, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Crescer em um ambiente organizado e com limites claros e honestos é o que dará o sentido de proteção indispensável para o desenvolvimento dele(a).</p>`,
+
+    5: `<h3>Ter novas e intensas experiências - Motivação 5</h3>
+    <p>A motivação mais profunda que guiará o pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> é a liberdade em sua forma mais pura. O que realmente fará a alma do seu bebê vibrar é a possibilidade constante de descobrir o novo, mudar de cenário, explorar os sentidos e interagir com experiências dinâmicas.</p>
+    <p>Ele(a) veio para viver intensamente e desafiar as próprias fronteiras, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O desejo íntimo desse bebê é manter um espírito livre, adaptável e desimpedido. A monotonia e o tédio são os seus maiores desafios; ele(a) estará sempre em movimento, buscando a próxima grande descoberta física ou intelectual.</p>
+    <p>Ao ajudarem <strong>MASCULINO-FEMININO-NEUTRO</strong> a conciliar essa sede de aventura com um foco saudável, vocês o(a) verão atingir um potencial brilhante. O sucesso desse espírito jovem será medido pela riqueza de suas vivências e por sua incrível capacidade de se renovar.</p>`,
+
+    6: `<h3>Ajudar e cuidar daqueles que estima - Motivação 6</h3>
+    <p>A motivação mais íntima do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o desejo genuíno de amar, acolher e ser uma presença protetora dentro do lar. O que realmente move o coração dessa criança é o bem-estar da família e a criação de um espacinho onde reinem o conforto emocional e o afeto.</p>
+    <p>Vocês notarão uma plenitude enorme nesse bebê quando ele(a) assume pequenos papéis de cuidado com os pais, bichinhos ou brinquedos, agindo como um consolador natural. O desejo secreto de <strong>MASCULINO-FEMININO-NEUTRO</strong> é ser um pilar de amor, alguém em quem o círculo familiar possa confiar plenamente.</p>
+    <p>Quando ele(a) sente que o seu carinho trouxe equilíbrio e acalmou um ambiente tenso, <strong>MASCULINO-FEMININO-NEUTRO</strong> atinge um estado de satisfação plena. Ser a presença que pacifica, une e embeleza a vida familiar é a grande e linda missão desse pequeno coração.</p>`,
+
+    7: `<h3>Se destacar pelo conhecimento e verdade - Motivação 7</h3>
+    <p>A motivação mais profunda da alma do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a busca pela compreensão das coisas e pela perfeição em tudo o que faz. O que realmente o(a) impulsiona é o desejo de entender o "porquê" de tudo o que acontece, demonstrando uma mente observadora e uma intuição muito aguçada desde o berço.</p>
+    <p>Vocês notarão que em vários momentos <strong>MASCULINO-FEMININO-NEUTRO</strong> precisará de seus momentos de silêncio, privacidade e quietude para processar o mundo. O desejo íntimo dessa criança é ser uma autoridade respeitada pelo seu saber e profundidade, possuindo um radar natural para identificar o que é autêntico.</p>
+    <p>A satisfação total desse bebê ocorre quando suas dúvidas mentais encontram respostas claras e lógicas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao incentivar essa busca saudável pela verdade, vocês estarão consolidando uma jornada de integridade intelectual e profunda paz interior para ele(a).</p>`,
+
+    8: `<h3>Ser reconhecido por realizações e poder - Motivação 8</h3>
+    <p>A motivação íntima do pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> é a conquista do sucesso prático, da eficiência e do senso de autoridade. O que realmente impulsiona o coração desse bebê é o desejo de organizar seus recursos, liderar suas brincadeiras com justiça e ser percebido como alguém forte e realizador.</p>
+    <p>Vocês observarão uma satisfação firme quando o esforço dele(a) resulta em algo concreto e vitorioso, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O desejo secreto dessa alma é ter controle sobre a sua própria realidade e receber o reconhecimento de sua força. Ele(a) não recuará diante de desafios difíceis, pois nasceu para vencer.</p>
+    <p>A plenitude de <strong>MASCULINO-FEMININO-NEUTRO</strong> acontecerá quando ele(a) aprender a usar essa tremenda força executiva com responsabilidade. Ao ser direcionado(a) para liderar com justiça, ele(a) se tornará um exemplo de eficiência e comando respeitado por todos desde a infância.</p>`,
+
+    9: `<h3>Ser útil e servir à humanidade - Motivação 9</h3>
+    <p>A motivação mais profunda que move o seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é um desejo sincero de generosidade, desapego e amor universal. O que realmente impulsiona a alma dessa criança é a busca pela compaixão, demonstrando uma sensibilidade tocante para entender o sentimento alheio sem julgamentos.</p>
+    <p>Esta criança nasceu para trilhar uma jornada com um forte propósito humanitário, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O desejo íntimo dela é ser uma fonte de inspiração e auxílio, sentindo-se realizada ao perceber que seu abraço ou sua presença conseguiu aliviar a tristeza de alguém ou melhorar o ambiente.</p>
+    <p>Ao ver o impacto positivo e transformador de suas atitudes puras na vida das pessoas, a alma de <strong>MASCULINO-FEMININO-NEUTRO</strong> se expandirá em luz. A certeza de espalhar o bem e o amor incondicional é o que trará a esse bebê a verdadeira e mais sublime paz interior.</p>`,
+
+    11: `<h3>Compreender os mistérios da Vida - Motivação 11</h3>
+    <p>A motivação espiritual do pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> indica uma alma que busca a transcendência e a conexão com o sagrado. O desejo mais íntimo do coração do seu bebê é compreender o mundo além do óbvio, funcionando desde cedo como um pequeno canal de sensibilidade e intuição para a família.</p>
+    <p>Vocês perceberão que ele(a) anseia por trazer harmonia e por elevar o bem-estar de quem está por perto, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A realização dessa alma tão sensível vem de crescer alinhada a princípios elevados, agindo como uma ponte sutil que desperta o amor e a espiritualidade no lar.</p>`,
+
+    22: `<h3>Materialização de desejos internos - Motivação 22</h3>
+    <p>Ter o 22 na Motivação significa que a alma do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, anseia por construir coisas grandiosas, práticas e que deixem uma marca duradoura. Ele(a) se sentirá impulsionado(a) a transformar grandes ideias em realidade palpável, unindo uma imaginação poderosa a uma facilidade incrível de execução.</p>
+    <p>A alma dessa criança se sentirá plena ao ver seus projetos, construções e ideias saindo do papel com sucesso, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O triunfo íntimo desse bebê será a maestria sobre o mundo físico, unindo a genialidade interna à determinação de quem veio para erguer realizações inabaláveis.</p>`,
+
+    33: `<h3>Amor incondicional e Guia Espiritual - Motivação 33</h3>
+    <p>A motivação do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, representa o ápice da compaixão e do acolhimento mestre. A alma dessa criança deseja proteger, confortar e ensinar em um nível universal. Existe um chamado profundo e magnético dentro dele(a) para o amor incondicional, agindo como um bálsamo para o lar.</p>
+    <p>O desejo íntimo do pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> é elevar a paz ao seu redor através de uma doação pura e afetuosa. Vocês notarão que ele(a) encontra verdadeira realização ao cuidar dos outros e ao agir como um porto seguro emocional, transformando qualquer desequilíbrio em pura harmonia.</p>`,
+
+   44: `<h3>Arquitetar o Progresso da Humanidade - Motivação 44</h3>
+    <p>A motivação mais profunda de <strong>MASCULINO-FEMININO-NEUTRO</strong> é a de um realizador de grandes estruturas organizadas. O que realmente impulsiona a alma do seu bebê é o desejo de criar ordem, disciplina e eficiência monumental, estabelecendo bases sólidas para o progresso do ambiente onde vive.</p>
+    <p>Vocês notarão uma urgência interna por regras claras, retidão e ética nessa criança, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O desejo secreto dela não é o capricho, mas sim ver grandes processos funcionando perfeitamente sob sua supervisão. Ambientes desorganizados ou instáveis serão seus maiores desafios internos.</p>
+    <p>A plenitude dele(a) acontece ao perceber que sua dedicação obstinada gerou um resultado concreto e impecável, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Saber que sua tremenda visão prática organizou o mundo ao redor é o que trará a paz definitiva a essa alma construtora.</p>`,
+
+    55: `<h3>Ser o Catalisador de Grandes Mudanças - Motivação 55</h3>
+    <p>A motivação íntima que guiará <strong>MASCULINO-FEMININO-NEUTRO</strong> é a liberdade em sua potência máxima, renovadora e transformadora. A alma do seu bebê anseia por romper com a estagnação e liderar mudanças vibrantes que tragam um novo fôlego de modernidade e evolução para o seu grupo.</p>
+    <p>Existe um impulso elétrico nessa criança por vivências inovadoras que desafiem as limitações comuns, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O desejo secreto dele(a) é ser a voz precursora do futuro, vivendo com uma intensidade magnética. Para esse bebê, ficar preso a velhas regras repetitivas pode ser um grande freio espiritual.</p>
+    <p>Ao ajudarem o pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> a direcionar essa energia eletrizante para motivar e renovar o ambiente, ele(a) atingirá o ápice de sua potência, orgulhando-se de ter a coragem de guiar todos rumo ao novo.</p>
+    <p><em>Nota para os pais: Por ser uma vibração de altíssima intensidade, o grande papel de vocês será ajudá-lo(a) a cultivar o foco e a constância em meio a tantas ideias de mudança.</em></p>`,
+
+    66: `<h3>O Sacrifício e o Amor em Escala Universal - Motivação 66</h3>
+    <p>A motivação de <strong>MASCULINO-FEMININO-NEUTRO</strong> representa o belo desejo de ser o coração do seu mundo. A alma do seu bebê anseia por expandir a harmonia a níveis tão profundos que seja capaz de pacificar, curar e acolher a todos, expandindo esse amor puro muito além dos limites de casa.</p>
+    <p>Esta criança demonstrará uma responsabilidade afetiva enorme pelo bem-estar das pessoas, <strong>MASCULINO-FEMININO-NEUTRO</strong>, desejando intimamente se tornar o porto seguro absoluto de quem ama. Há um chamado místico para a dedicação desinteressada, onde o prazer dele(a) reside em nutrir a vida.</p>
+    <p>A realização real desse bebê acontece quando o amor que ele(a) emana consegue dissipar as tensões e restaurar a beleza onde havia desentendimento, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ser o alicerce de afeto do mundo é a linda e generosa missão desse pequeno ser.</p>`,
+
+    77: `<h3>A Revelação da Verdade Suprema - Motivação 77</h3>
+    <p>A motivação mais profunda da alma do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o mergulho na compreensão dos segredos e mistérios mais sutis da vida. O que o(a) move é a busca pela verdade real, combinando uma mente analítica extraordinária a uma intuição espiritual de altíssima fidelidade.</p>
+    <p>Vocês perceberão que ele(a) valorizará instantes de isolamento e introspecção para processar as leis que regem as coisas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O desejo íntimo dessa criança é se consolidar como uma mente brilhante, cuja sabedoria brota da conexão pura com a essência e a lógica da natureza.</p>
+    <p>A satisfação total desse bebê ocorrerá quando ele(a) alcançar a clareza máxima sobre os fatos, afastando qualquer ilusão superficial, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sendo um(a) mestre da observação silenciosa, ele(a) construirá uma infância de integridade e sabedoria admiráveis.</p>`,
+
+    88: `<h3>O Poder Executivo Alinhado à Justiça Divina - Motivação 88</h3>
+    <p>A motivação íntima do pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> é o comando e a conquista do sucesso prático, regido pela mais estrita justiça e ética espiritual. O que move o coração do seu bebê é a vontade latente de organizar, gerir e fazer a abundância e os recursos fluírem de forma equilibrada para todos.</p>
+    <p>Ele(a) trará um impulso natural por realizações que deixem um legado de ordem e prosperidade inquestionável, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O desejo secreto dessa alma é ver sua força firme reconhecida, transformando a realidade material por meio de uma postura altamente estratégica e justa.</p>
+    <p>A plenitude desse ser acontece ao perceber que sua liderança inata está sendo usada para estruturar a evolução do grupo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Equilibrando o ganhar e o prover com sabedoria, ele(a) se tornará uma figura de autoridade admirável e justa desde muito cedo.</p>`,
+
+    99: `<h3>O Encerramento Crístico e a Entrega Total - Motivação 99</h3>
+    <p>A motivação mais profunda que move o seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sinaliza o ápice do amadurecimento de uma alma. O que realmente impulsiona esse pequeno ser é o desejo de viver em estado de entrega total, generosidade extrema e serviço amoroso ao bem comum, amando a todos de forma pura.</p>
+    <p>Esta criança manifestará traços de um desapego e de uma compaixão tocantes, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O desejo mais íntimo dela é funcionar como uma fonte de inspiração e amor incondicional, mostrando que seu espírito está pronto para transcender pequenas vaidades infantis em favor do bem coletivo.</p>
+    <p>Ao sentir que sua doce presença trouxe paz, luz e auxiliou no despertar de sentimentos elevados ao seu redor, <strong>MASCULINO-FEMININO-NEUTRO</strong> alcançará o êxtase interno. A certeza de cumprir uma linda missão de luz é o que trará a esse bebê uma paz indescritível e duradoura.</p>`
+
+},
+
+// --- INFLUÊNCIA DO BEBÊ (IMPRESSÃO / AURA / COMO O MUNDO O VÊ) ---
+influenciabb: {
+    1: `<h3>Influência 1 - Liderança, Autonomia e Vigor</h3>
+    <p>Pais, a primeira impressão que o seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, transmitirá ao mundo é a de uma independência cativante e uma força de vontade surpreendente para alguém tão pequeno. Ao chegar em qualquer lugar, as pessoas notarão nele(a) uma aura de pioneirismo, vendo um bebê que não fica apenas esperando as coisas acontecerem.</p>
+    <p>Essa autoconfiança natural, que se manifestará desde cedo, atrairá olhares de admiração, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois ele(a) será visto como uma criança decidida e cheia de iniciativa. O mundo enxergará no seu filho(a) a figura de um pequeno protagonista, alguém que possui uma fibra natural para explorar e interagir com firmeza.</p>
+    <p>Ele(a) influenciará o ambiente ao redor através dessa postura decidida, mostrando que a autonomia nasce com ele(a). Essa imagem de "arranque" e vigor, <strong>MASCULINO-FEMININO-NEUTRO</strong>, motivará todos os familiares e amigos a acompanharem seu ritmo inspirador.</p>`,
+
+    2: `<h3>Influência 2 - Diplomacia, Tato e Cooperação</h3>
+    <p>A imagem que o seu bebê projeta para o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de uma suavidade e um equilíbrio admiráveis. As pessoas o(a) verão como uma presença pacífica, doce e muito acolhedora, alguém que transmite tranquilidade e parece saber ouvir e observar com muita atenção.</p>
+    <p>Essa aparência diplomática atrairá carinho e proteção natural de todos, <strong>MASCULINO-FEMININO-NEUTRO</strong>, porque ele(a) transmite a segurança de uma criança que sabe interagir com harmonia. Ele(a) influenciará os ambientes através de uma presença gentil, sendo o elemento que une as pessoas ao seu redor.</p>
+    <p>Todos confiarão na capacidade sutil do seu bebê de acalmar os ânimos. Essa aura de paciência e discrição, <strong>MASCULINO-FEMININO-NEUTRO</strong>, fará com que ele(a) seja aquela figura querida e indispensável para manter a harmonia em qualquer reunião familiar.</p>`,
+
+    3: `<h3>Influência 3 - Criatividade, Brilho e Entusiasmo</h3>
+    <p>A aparência do pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> para o mundo é vibrante, solar e profundamente comunicativa. As pessoas verão no seu bebê um verdadeiro farol de alegria, alguém que traz leveza e uma inspiração imediata para qualquer ambiente onde ele(a) esteja presente.</p>
+    <p>Esse magnetismo natural atrairá atenção e oportunidades de socialização, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois ele(a) é visto como uma figura central que sabe encantar e motivar com total naturalidade. Ele(a) influenciará através de um entusiasmo contagiante.</p>
+    <p>O mundo enxergará no seu filho(a) a centelha criativa que transforma o tédio em dinamismo. Essa aura de otimismo e brilho, <strong>MASCULINO-FEMININO-NEUTRO</strong>, fará com que as pessoas busquem a companhia dele(a) para se sentirem revigoradas, reconhecendo seu talento natural para alegrar a vida.</p>`,
+
+    4: `<h3>Influência 4 - Estabilidade, Ordem e Confiança</h3>
+    <p>A imagem que o seu bebê transmite, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de uma seriedade, disciplina e integridade precoces. O mundo o(a) verá como uma criança firme e confiável, alguém pautado por uma ética natural, pela persistência e pelo respeito às rotinas e combinados.</p>
+    <p>Essa aparência de solidez atrairá a confiança dos adultos, <strong>MASCULINO-FEMININO-NEUTRO</strong>, porque ele(a) passa a impressão de ser um bebê previsível e seguro. Ele(a) influenciará pelo exemplo de constância; as pessoas buscarão na presença dele(a) um porto seguro emocional.</p>
+    <p>A presença dele(a) trará a sensação de que tudo está sob controle, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Esse jeito sério e compenetrado fará com que ele(a) seja respeitado como uma força construtora essencial para manter a ordem e garantir a estabilidade no lar.</p>`,
+
+    5: `<h3>Influência 5 - Liberdade, Versatilidade e Modernidade</h3>
+    <p>A primeira impressão que o pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> causará é a de alguém magnético, rápido e totalmente aberto às novidades. As pessoas verão no seu bebê um espírito livre e curioso, capaz de se adaptar a qualquer situação com charme e inteligência aparente.</p>
+    <p>Essa imagem versátil atrairá interação e estímulos, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois ele(a) é visto como um pequeno agente de mudança que desafia a rotina. Ele(a) influenciará através da quebra de padrões antigos, agindo como um radar de novidades que detecta o ambiente com agilidade.</p>
+    <p>Sua rapidez mental e curiosidade farão com que ele(a) seja procurado para trazer dinamismo a ambientes estagnados. Ele(a) é a figura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, que impulsionará a evolução e manterá a família sempre em movimento.</p>`,
+
+    6: `<h3>Influência 6 - Equilíbrio, Justiça e Acolhimento</h3>
+    <p>A imagem que o seu bebê projeta, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de harmonia, responsabilidade e um cuidado profundo com o próximo, mesmo sendo tão pequeno. O mundo vê nele(a) uma doçura benevolente, alguém que valoriza a união familiar, a beleza e o bem-estar de todos.</p>
+    <p>Essa aparência de integridade e afeto atrairá confiança imediata dos adultos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) influenciará através do carinho e de um senso de proteção muito claro; as pessoas sentirão que ele(a) é um pequeno porto seguro emocional.</p>
+    <p>Ele(a) será o ponto de equilíbrio que pacifica tensões na família, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Essa aura de bondade fará com que ele(a) construa uma reputação sólida de lealdade e tenha uma capacidade única de harmonizar o ambiente doméstico.</p>`,
+
+    7: `<h3>Influência 7 - Sabedoria, Mistério e Distinção</h3>
+    <p>A aparência do pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> para o mundo é de alguém profundo, observador e mais reservado. As pessoas perceberão nele(a) uma aura de mistério e uma classe silenciosa, vendo um bebê compenetrado que parece estar analisando tudo ao redor.</p>
+    <p>Essa imagem de seriedade atrairá respeito e curiosidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois ele(a) transmite a competência de quem parece deter conhecimentos além da idade. Ele(a) influenciará pelo discernimento e pela calma lógica que demonstra em suas reações.</p>
+    <p>O mundo respeitará o silêncio observador do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Essa aura de dignidade e busca pela compreensão das coisas fará dele(a) um pequeno farol de lucidez e profundidade para toda a família.</p>`,
+
+    8: `<h3>Influência 8 - Poder, Sucesso e Autoridade Executiva</h3>
+    <p>A primeira impressão que o seu bebê causa, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de força, comando e grande capacidade de realização prática. O mundo verá nele(a) uma liderança nata, alguém que exala autoconfiança e uma determinação impressionante para alcançar seus pequenos objetivos.</p>
+    <p>Essa imagem imponente atrairá atenção e reconhecimento, <strong>MASCULINO-FEMININO-NEUTRO</strong>, porque ele(a) transmite a segurança de quem nasceu para vencer e organizar sua própria realidade. Ele(a) influenciará pelo pragmatismo; as pessoas notarão sua firmeza e persistência.</p>
+    <p>Sua postura ativa será o motor que gera movimento no lar. Essa aura de autoridade legítima e vitoriosa, <strong>MASCULINO-FEMININO-NEUTRO</strong>, fará com que ele(a) seja respeitado como uma força realizadora, capaz de transformar sua vontade em resultados concretos.</p>`,
+
+    9: `<h3>Influência 9 - Humanitarismo, Sabedoria e Desapego</h3>
+    <p>A imagem que o pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> projeta para o mundo é universal, generosa e inspiradora. As pessoas verão no seu bebê alguém cativante e de coração aberto, com uma doçura que parece abraçar a todos, indo além dos laços puramente familiares.</p>
+    <p>Essa aparência de sabedoria precoce e compaixão atrairá carinho e admiração sincera de estranhos e conhecidos, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois ele(a) é visto como um exemplo de amor incondicional. Ele(a) influenciará através de um carisma altruísta e inspirador.</p>
+    <p>O mundo enxergará nele(a) um pequeno guia que aponta caminhos de esperança e bondade. Essa tolerância e compreensão profunda, <strong>MASCULINO-FEMININO-NEUTRO</strong>, atrairão o respeito de todos, consolidando sua imagem como alguém que vive para espalhar amor.</p>`,
+
+    11: `<h3>Influência 11 - Inspiração Visionária e Magnetismo Sutil</h3>
+    <p>A imagem do pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> transmite uma aura de magnetismo intuitivo e um certo misticismo sutil. O mundo o(a) verá como um bebê "diferenciado", uma figura inspiradora que parece captar e reagir a coisas que os outros ignoram completamente.</p>
+    <p>Essa aparência visionária atrairá quem busca algo mais profundo e espiritual, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois ele(a) passa a impressão de ser um pequeno canal de sensibilidade e idealismo superior. Ele(a) influenciará através do despertar de sentimentos elevados ao seu redor.</p>
+    <p>As pessoas sentirão nele(a) uma sabedoria que vai além do intelecto comum. Essa aura de percepção aguçada e integridade ética natural, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tornará o seu bebê uma referência de progresso espiritual para toda a família.</p>`,
+
+    22: `<h3>Influência 22 - Maestria Realizadora e Poder Construtor</h3>
+    <p>A primeira impressão que o seu bebê causa, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de uma competência extrema e uma potência de realização monumental para a idade. O mundo verá nele(a) um pequeno "mestre construtor", alguém que une grandes vontades à capacidade prática de executá-las com perfeição.</p>
+    <p>Essa imagem de poder realizador atrairá oportunidades de aprendizado e grandes desafios, <strong>MASCULINO-FEMININO-NEUTRO</strong>, porque ele(a) transmite a segurança absoluta de que é capaz de materializar suas ideias. Ele(a) influenciará organizando e concretizando projetos em benefício da família.</p>
+    <p>As pessoas verão nele(a) a autoridade para edificar coisas sólidas e úteis. Essa aura de eficiência extraordinária e visão construtiva, <strong>MASCULINO-FEMININO-NEUTRO</strong>, fará do seu filho(a) uma figura respeitada que materializa resultados impressionantes.</p>`,
+
+    33: `<h3>Influência 33 - Autoridade Moral e Amor Universal</h3>
+    <p>A imagem do pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> irradia uma energia de paz, acolhimento e proteção absoluta. O mundo verá no seu bebê um guia amoroso, alguém que exala uma sabedoria compassiva e uma bondade que parece não ter limites, mesmo em tenra idade.</p>
+    <p>Essa aparência de doçura e autoridade moral atrairá todos os que buscam amparo e carinho, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois ele(a) transmite a segurança de um porto seguro emocional. Ele(a) influenciará através da sua dedicação integral ao bem-estar das pessoas ao redor.</p>
+    <p>Todos se sentirão protegidos e calmos na presença dele(a), vendo em seu bebê uma âncora que estabiliza qualquer ambiente. Essa aura de amor altruísta e acolhedor, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o(a) tornará uma personalidade profundamente amada e respeitada pela sua entrega generosa.</p>`,
+
+   44: `<h3>Influência 44 - Autoridade Monumental e Estrutura Inabalável</h3>
+    <p>A primeira impressão que o seu bebê transmite ao mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de uma solidez absoluta e precoce, como se ele(a) fosse uma pequena rocha que traz estrutura e ordem para todo o ambiente doméstico.</p>
+    <p>Essa imagem de "Mestre das Estruturas" atrairá confiança e responsabilidades precoces, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois ele(a) exala a competência de quem sabe gerir e organizar a realidade com firmeza e ética. O mundo enxergará nele(a) o arquiteto do progresso material da família.</p>
+    <p>Ele(a) influenciará através de uma seriedade precocemente respeitável. Essa aura de estabilidade total, <strong>MASCULINO-FEMININO-NEUTRO</strong>, fará com que as pessoas confiem nele(a) para organizar e controlar situações, reconhecendo sua capacidade de materializar resultados duradouros.</p>`,
+
+    55: `<h3>Influência 55 - Magnetismo Revolucionário e Energia de Vanguarda</h3>
+    <p>A imagem que o pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> projeta para o mundo é de uma eletricidade constante e uma inteligência rápida que parece estar sempre à frente do tempo. As pessoas verão nele(a) um pequeno agente da mudança, uma figura magnética que desafia as tradições com curiosidade.</p>
+    <p>Essa aparência versátil e futurista atrairá interação com o novo e o tecnológico, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois ele(a) transmite a vibração de quem não teme o desconhecido. Ele(a) influenciará através de um carisma que "quebra" padrões antigos, agindo como um catalisador de evolução no lar.</p>
+    <p>O mundo enxergará nele(a) a liberdade em sua forma mais pura e intensa. Essa aura de modernidade absoluta, <strong>MASCULINO-FEMININO-NEUTRO</strong>, fará dele(a) a referência para quem deseja romper barreiras e explorar novos horizontes de descoberta.</p>`,
+
+    66: `<h3>Influência 66 - Proteção Universal e Harmonização Magnética</h3>
+    <p>A aparência do seu bebê para o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de uma benevolência tão profunda e doce que encanta a todos imediatamente. As pessoas verão nele(a) a personificação do cuidado e da justiça, como se sua presença fosse capaz de pacificar qualquer ambiente familiar.</p>
+    <p>Esse magnetismo acolhedor atrairá carinho e proteção sincera, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois ele(a) projeta a imagem de um pequeno pilar moral acolhedor. Ele(a) influenciará através de uma elegância afetiva que desarma conflitos; o mundo sentirá que está diante de um pequeno protetor das relações humanas.</p>
+    <p>As pessoas buscarão nele(a) a harmonia e o conforto. Essa aura de responsabilidade afetiva e amor universal, <strong>MASCULINO-FEMININO-NEUTRO</strong>, fará com que ele(a) seja respeitado como uma doce autoridade que une beleza, ética e dedicação ao próximo.</p>`,
+
+    77: `<h3>Influência 77 - Distinção Intelectual e Mistério Sagrado</h3>
+    <p>A primeira impressão que o pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> causa é de uma profundidade observadora e intelectual que surpreende a todos. O mundo o(a) verá como um "pequeno sábio silencioso", uma figura de classe e postura compenetrada que parece estar decifrando segredos ocultos.</p>
+    <p>Essa imagem de seriedade absoluta e análise compenetrada atrairá respeito precocemente, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois ele(a) transmite a segurança de quem raramente falha em sua observação. Ele(a) influenciará pelo discernimento e pelo mistério fascinante que envolve seu jeito reservado.</p>
+    <p>Sua postura é a de quem busca a perfeição e o entendimento real. Essa aura de integridade intelectual e busca pela verdade suprema das coisas, <strong>MASCULINO-FEMININO-NEUTRO</strong>, fará dele(a) uma figura admirada pela sua autonomia mental e profundidade observadora.</p>`,
+
+    88: `<h3>Influência 88 - Comando Supremo e Prosperidade Ética</h3>
+    <p>A imagem que o seu bebê transmite, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de um poder de realização e comando monumental para a idade. Ele(a) projeta a figura de um pequeno executivo da vida, alguém que lida com suas pequenas conquistas materiais e autoridade com uma naturalidade impressionante e justa.</p>
+    <p>Essa aparência imponente atrairá atenção e reconhecimento dos adultos ao redor, <strong>MASCULINO-FEMININO-NEUTRO</strong>, porque ele(a) exala a vibração de quem sabe organizar sua própria realidade e liderar suas brincadeiras com estratégia. Ele(a) influenciará pela eficácia prática.</p>
+    <p>Ele(a) será visto como o motor do sucesso tangível no lar. Essa aura de liderança vitoriosa e equilibrada, <strong>MASCULINO-FEMININO-NEUTRO</strong>, fará com que ele(a) seja respeitado como uma pequena autoridade capaz de transformar sua vontade em resultados concretos e estruturas sólidas.</p>`,
+
+    99: `<h3>Influência 99 - Aura Crística e Inspiração Universal</h3>
+    <p>A imagem do pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> para o mundo é de um desapego doce e uma compaixão que encantam imediatamente. As pessoas verão nele(a) um exemplo de amor puro e desinteressado, como se sua alma pertencesse a uma esfera de consciência muito elevada e serena.</p>
+    <p>Essa aparência de sabedoria final e doação total atrairá carinho e proteção de todos, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois ele(a) transmite a paz de quem vive em harmonia com o Todo. Ele(a) influenciará através de um carisma que é puro serviço amoroso e inspiração universal.</p>
+    <p>Todos sentirão uma elevação e tranquilidade espiritual apenas por estarem perto dele(a). Essa aura de tolerância infinita e desprendimento sereno, <strong>MASCULINO-FEMININO-NEUTRO</strong>, consolidará sua imagem como um pequeno guia amoroso e uma luz para a família.</p>`
+},
+
+
+// --- PERSONALIDADE DO BEBÊ (A EXPRESSÃO REAL / O CONJUNTO DA OBRA) ---
+personalidadebb: {
+    1: `<h3>Personalidade 1 - O Realizador Independente e Resolutivo</h3>
+    <p>A personalidade do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é marcada por uma atitude pioneira e uma capacidade de ação imediata desde o berço. Ele(a) funciona através da autonomia, sendo uma criança que não fica esperando o comando dos pais para explorar; ele(a) cria seu próprio movimento e demonstra muita firmeza em suas escolhas.</p>
+    <p>Na prática do dia a dia, <strong>MASCULINO-FEMININO-NEUTRO</strong> se comporta de maneira direta e assertiva. Sua conduta é a de quem encara os pequenos desafios e novidades como oportunidades de testar sua própria força e competência. Ele(a) possui uma natureza resolutiva, focando em resolver o que quer de forma rápida, mantendo uma postura de comando nas suas brincadeiras.</p>
+    <p>Sua expressão real é sinônimo de progresso e vigor, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Desde a infância, ele(a) operará com uma resiliência que surpreende, agindo com a convicção de quem nasceu para abrir caminhos, desbravar o espaço e liderar com muita energia.</p>`,
+
+    2: `<h3>Personalidade 2 - O Mediador Equilibrado e Cooperativo</h3>
+    <p>A personalidade do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, expressa-se através de um comportamento diplomático, gentil e extremamente cuidadoso com o ambiente. Ele(a) funciona e se desenvolve melhor quando está em parceria ou na companhia dos pais, sendo uma criança que utiliza a sensibilidade natural para navegar pela rotina com muita doçura.</p>
+    <p>Sua atitude prática é a de quem busca a harmonia acima de tudo no lar, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) age com paciência e possui uma habilidade incrível para perceber detalhes emocionais na família que os outros ignoram. Sua conduta funciona como o "cimento" que une as pessoas ao redor, preferindo o carinho e o entendimento a qualquer disputa.</p>
+    <p>No cotidiano, ele(a) se posiciona de forma receptiva, amorosa e muito acolhedora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua expressão real é baseada na confiança e na lealdade, provando desde cedo que a verdadeira força dele(a) reside na capacidade de trazer paz e nutrir os laços familiares.</p>`,
+
+    3: `<h3>Personalidade 3 - O Comunicador Criativo e Expressivo</h3>
+    <p>A personalidade do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é uma verdadeira explosão de criatividade, sorrisos e dinamismo social. Ele(a) funciona através da expressão e da comunicação, sendo uma criança que possui um talento nato para transformar qualquer brincadeira em algo vibrante e cheio de vida.</p>
+    <p>Na prática, a conduta desse bebê é entusiasmada, curiosa e muito otimista, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) age com uma inteligência rápida, adaptando-se a novos ambientes com muito charme e bom humor. Sua atitude funciona como um imã de boas energias, espalhando risadas e motivando a família de forma totalmente espontânea.</p>
+    <p>Sua expressão real é marcada pela sociabilidade e pelo brilho pessoal, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) encara o aprendizado e o mundo com leveza, agindo como uma fonte de inspiração constante que prova que a alegria e o diálogo são as chaves para o seu desenvolvimento saudável.</p>`,
+
+    4: `<h3>Personalidade 4 - O Construtor Ético e Disciplinado</h3>
+    <p>A personalidade do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, manifesta-se através de uma conduta sólida, compenetrada e muito pautada pela ordem. Ele(a) funciona e se sente seguro com base no planejamento e na rotina, sendo uma criança que valoriza os combinados e a construção de hábitos firmes.</p>
+    <p>Na prática, a atitude dele(a) é de total foco e persistência, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) age com os pés no chão, prestando muita atenção em como os objetos funcionam e como as regras da casa são aplicadas. Sua conduta é marcada por uma seriedade e um capricho que garantem que ele(a) termine o que começou com muita dedicação.</p>
+    <p>Sua expressão real é a de uma rocha firme no lar, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) atinge seus pequenos objetivos através da persistência honesta e da organização, agindo desde cedo como uma força estabilizadora que traz estrutura e orgulho para os pais.</p>`,
+
+    5: `<h3>Personalidade 5 - O Agente de Mudança e Versatilidade</h3>
+    <p>A personalidade do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é caracterizada por um comportamento livre, ativo e em constante evolução. Ele(a) funciona através do movimento e da descoberta, sendo uma criança que possui uma sede inesgotável por novos estímulos e uma agilidade incrível para se adaptar a mudanças.</p>
+    <p>Na prática, a atitude dele(a) é progressista, destemida e desimpedida, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) age com coragem para mexer no que é novo, utilizando sua inteligência versátil para explorar cada canto da casa. Sua conduta desafia o óbvio e traz um fôlego de novidade e dinamismo para a rotina familiar.</p>
+    <p>Sua expressão real é o elo com o aprendizado veloz, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) vive cada fase da infância intensamente e ensina os pais, através do seu exemplo, que a curiosidade saudável e a flexibilidade de mudar são ferramentas fantásticas de crescimento.</p>`,
+
+    6: `<h3>Personalidade 6 - O Protetor Justo e Harmonizador</h3>
+    <p>A personalidade do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, expressa-se através de uma conduta muito responsável, calorosa e inteiramente voltada para o bem-estar familiar. Ele(a) funciona como um pequeno centro de harmonia, sendo uma criança que valoriza o aconchego do lar, o afeto e o equilíbrio coletivo acima de tudo.</p>
+    <p>Na prática, sua atitude é de cuidado, doação e carinho constante, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) age com uma sensibilidade e um senso de justiça admiráveis para a idade, servindo quase como um consolador para os pais ou irmãos quando percebe alguém triste. Sua conduta busca pacificar e espalhar amor através dos gestos.</p>
+    <p>Sua expressão real é o exemplo da bondade pura em ação, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) se posiciona como o pequeno guardião dos afetos da casa, provando que sua felicidade está diretamente ligada ao serviço generoso e à proteção daqueles que ele(a) tanto estima.</p>`,
+
+    7: `<h3>Personalidade 7 - O Analista Intelectual e Profundo</h3>
+    <p>A personalidade do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é marcada por uma conduta reflexiva, silenciosa e de grande profundidade mental. Ele(a) funciona através da observação atenta e do foco concentrado, sendo uma criança que muitas vezes prefere o brinquedo educativo e o isolamento produtivo a ambientes barulhentos ou interações superficiais.</p>
+    <p>Na prática, sua atitude é reservada, compenetrada e muito digna, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) age com um discernimento aguçado, analisando como as coisas funcionam ao seu redor antes de tocá-las. Sua conduta busca a perfeição e a precisão em seus pequenos experimentos existenciais.</p>
+    <p>Sua expressão real é a de um pequeno observador da vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) atrai o respeito e o encantamento dos pais pela sua inteligência precoce e pelo mistério de sua sabedoria silenciosa, provando que a quietude e a busca pelo entendimento são a base do seu ser.</p>`,
+
+    8: `<h3>Personalidade 8 - O Gestor Poderoso e Pragmático</h3>
+    <p>A personalidade do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, manifesta-se através de uma conduta firme, eficiente e focada em alcançar resultados práticos. Ele(a) funciona através de um forte instinto de liderança e realização, sendo uma criança que possui uma habilidade natural para organizar seus brinquedos, seu espaço e direcionar as brincadeiras.</p>
+    <p>Na prática, a atitude dele(a) é de total autoconfiança e comando, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) age com um pragmatismo muito claro, tomando suas decisões com firmeza e demonstrando um forte senso de posse e justiça com suas coisas. Sua conduta é o motor que gera movimento, metas e conquistas no dia a dia.</p>
+    <p>Sua expressão real é a do realizador determinado, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) opera com uma força e persistência que garantem o sucesso em seus pequenos desafios, provando desde cedo que a disciplina, a liderança justa e o foco prático são as suas maiores ferramentas de vitória.</p>`,
+
+    9: `<h3>Personalidade 9 - O Humanitário Generoso e Universal</h3>
+    <p>A personalidade do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é caracterizada por uma conduta altamente altruísta, compreensiva e desapegada. Ele(a) funciona através de uma sensibilidade universal, sendo uma criança que possui uma empatia gigantesca que vai além do óbvio, demonstrando compaixão por pessoas, animais e pela natureza.</p>
+    <p>Na prática, a atitude dele(a) é inspiradora, carismática e muito acolhedora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) age com uma tolerância e generosidade comoventes, dividindo seus brinquedos com facilidade e tratando a todos com o mesmo afeto puro. Sua conduta é voltada para espalhar amor e trazer conforto ao meio onde vive.</p>
+    <p>Sua expressão real é o exemplo do amor incondicional na infância, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) vive para iluminar o ambiente familiar, provando aos pais que a verdadeira grandeza do seu espírito reside na generosidade absoluta e no desejo sincero de ver todos felizes ao seu redor.</p>`,
+
+    11: `<h3>Personalidade 11 - O Visionário Intuitivo e Inspirador</h3>
+    <p>A personalidade do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, funciona como uma antena de altíssima sensibilidade espiritual e emocional. Ele(a) expressa uma conduta magnética, intuitiva e muito sutil, sendo uma criança que age guiada por percepções profundas, captando as energias do lar com muita rapidez.</p>
+    <p>Na prática, sua atitude é cativante e idealista, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) se comporta de maneira diferenciada, trazendo ideias originais para suas brincadeiras e agindo com uma doçura que busca harmonizar o ambiente familiar. Sua conduta desperta sentimentos elevados em todos os parentes e amigos.</p>
+    <p>Sua expressão real é uma luz que pacifica a casa, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) opera com um magnetismo encantador que atrai proteção e carinho natural, provando que sua forte intuição aliada à sensibilidade é a força que guiará sua bela caminhada.</p>`,
+
+    22: `<h3>Personalidade 22 - O Mestre Construtor e Estrategista</h3>
+    <p>A personalidade do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, manifesta-se através de uma capacidade de realização extraordinária e de uma visão prática gigante para a idade. Ele(a) funciona unindo a grande imaginação à facilidade de execução, sendo capaz de criar cenários, montar estruturas complexas e organizar suas dinâmicas com maestria.</p>
+    <p>Na prática, a atitude dele(a) é de total eficiência realizadora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) age com uma persistência admirável, executando suas pequenas tarefas e jogos com uma precisão impressionante. Sua conduta é voltada para o progresso do seu meio, construindo resultados que deixam os pais maravilhados.</p>
+    <p>Sua expressão real é o ápice do potencial realizador na infância, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) constrói um comportamento firme e focado em edificar coisas úteis e duradouras, provando que sua missão é materializar suas grandes ideias através de um trabalho inteligente e determinado.</p>`,
+
+    33: `<h3>Personalidade 33 - O Guia Compassivo e Mestre do Amor</h3>
+    <p>A personalidade do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, expressa-se através de uma conduta de amor incondicional e proteção absoluta com todos da casa. Ele(a) funciona como um pequeno pilar de aconchego emocional, sendo uma criança que age movida por um desejo puro de cuidar, dar carinho e trazer alegria a quem ama.</p>
+    <p>Na prática, sua atitude é de entrega generosa, abraços apertados e acolhimento constante, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) se comporta com uma doçura mestre, confortando os pais com seu olhar sereno e sua presença pacificadora. Sua conduta é marcada por um afeto protetor e uma dedicação total ao bem-estar do lar.</p>
+    <p>Sua expressão real é a prova viva de uma alma evoluída e pacífica, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) traz equilíbrio e suavidade para a rotina familiar apenas com o seu jeito de ser, provando que o amor puro e a doação generosa são as forças que conduzem seu pequeno coração.</p>`,
+
+   44: `<h3>Personalidade 44 - O Arquiteto do Sistema e Poder Executivo Superior</h3>
+    <p>A personalidade do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, manifesta-se com uma intensidade e firmeza de altíssimo nível. Ele(a) funciona através de uma autoridade natural, compenetração e uma disciplina incrível, sendo uma criança que possui a capacidade de manter seus brinquedos e sua rotina sob um controle impecável.</p>
+    <p>Na prática, a atitude dele(a) é de uma eficiência absoluta e focada, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) age como um pequeno organizador de processos, exigindo ordem, regras claras e bases muito firmes no seu dia a dia. Sua conduta impõe um respeito imediato pela seriedade e foco com que conduz suas atividades.</p>
+    <p>Sua expressão real é a força que traz estabilidade e segurança prática para o lar, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) opera em um nível de determinação invejável, provando aos pais que sua capacidade de lidar com a realidade material exige limites claros, ordem e uma condução firme e inteligente.</p>`,
+
+    55: `<h3>Personalidade 55 - O Revolucionário Magnético e Liderança de Vanguarda</h3>
+    <p>A personalidade do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, expressa uma conduta eletrizante, inovadora e cheia de vivacidade. Ele(a) funciona como um transformador da rotina doméstica, sendo uma criança que possui uma inteligência rapidíssima e uma coragem contagiante para quebrar a monotonia e inventar o amanhã.</p>
+    <p>Na prática, sua atitude é de total liberdade, movimento e curiosidade sem limites, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) age com um magnetismo fascinante que desafia o tédio, pulando de uma descoberta para outra com imensa agilidade. Sua conduta impulsiona a evolução da família, enchendo a casa de energia e modernidade.</p>
+    <p>Sua expressão real é a de um pequeno pioneiro do futuro, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) ensina os pais, através do seu ritmo acelerado e de sua mente brilhante, que a infância é uma aventura constante de descobertas e que seu crescimento flui melhor quando ele(a) pode experimentar o novo.</p>`,
+
+    66: `<h3>Personalidade 66 - O Harmonizador Planetário e Amor em Ação</h3>
+    <p>A personalidade do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, manifesta-se através de um comportamento de proteção, afeto e cuidado em escala grandiosa. Ele(a) funciona como o verdadeiro coração vibrante do lar, sendo uma criança que assume a missão espontânea de equilibrar, ninar e confortar as relações familiares.</p>
+    <p>Na prática, a atitude dele(a) é de uma benevolência doce e inquestionável, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) age como um elo moral e afetivo que desarma conflitos na casa e restaura o sorriso onde havia seriedade. Sua conduta é pautada por um carinho protetor constante, nutrindo a todos com uma dedicação tocante.</p>
+    <p>Sua expressão real é a força da harmonia e do amor ativo no cotidiano, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) opera através de abraços que organizam o ambiente e de uma doçura que protege, provando que o afeto elevado à sua máxima potência é capaz de regenerar e unir toda a família.</p>`,
+
+    77: `<h3>Personalidade 77 - O Sábio Iluminado e Mestre da Introspecção</h3>
+    <p>A personalidade do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, expressa uma conduta de distinção profunda, concentração e mistério sutil. Ele(a) funciona através de uma inteligência observadora e intuitiva de altíssima frequência, sendo uma criança que prefere entender a lógica das coisas ao invés de se perder em agitações superficiais.</p>
+    <p>Na prática, sua atitude é de uma integridade, foco e classe impecáveis desde cedo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) age com um discernimento impressionante, buscando o capricho em cada encaixe de brinquedo ou detalhe observado. Sua conduta é a de um pequeno investigador, que processa a verdade através da quietude produtiva.</p>
+    <p>Sua expressão real é a lucidez e a sobriedade intelectual na infância, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) se posiciona como uma pequena autoridade mental cujas reações e olhares carregam o peso de uma sabedoria inata, provando que o recolhimento e a observação atenta geram um crescimento brilhante.</p>`,
+
+    88: `<h3>Personalidade 88 - O Comandante da Abundância e Justiça Superior</h3>
+    <p>A personalidade do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, manifesta-se através de uma conduta de força material, comando e justiça muito evidentes. Ele(a) funciona através do domínio e da organização prática dos seus recursos e brinquedos, sendo uma criança que lidera com uma visão estratégica voltada para a eficiência e retidão.</p>
+    <p>Na prática, a atitude dele(a) é de uma autoridade executiva firme e inabalável, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) age com um pragmatismo impressionante, tomando decisões firmes e multiplicando a dinâmica de suas conquistas sem perder o senso de justiça e limites. Sua conduta garante a ordem e a realização dos seus pequenos planos.</p>
+    <p>Sua expressão real é o equilíbrio perfeito entre a determinação e a retidão, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) opera como a força que materializa conquistas e traz progresso prático para as suas dinâmicas, provando aos pais que nasceu para vencer desafios através de uma trajetória impecável.</p>`,
+
+    99: `<h3>Personalidade 99 - O Guia Crístico e Amor Universal Final</h3>
+    <p>A personalidade do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, expressa a conduta mais elevada, generosa e desprendida da jornada humana. Ele(a) funciona através da compaixão absoluta e do desapego sincero, sendo uma criança que age como um canal de doação, carinho e amor incondicional para todos, sem restrições.</p>
+    <p>Na prática, sua atitude é de doação, encantamento e inspiração constante para a família, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) se comporta com uma maturidade espiritual tocante para a idade, agindo com um carinho que acalma as tensões da casa e aponta o caminho da paz. Sua conduta é puro afeto, transformando cada gesto em um ato de luz.</p>
+    <p>Sua expressão real é a doçura e a conclusão triunfante da sensibilidade na infância, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) vive em um estado de tolerância e amor infinito, provando aos pais que o desprendimento e o afeto puro são as forças finais que trazem a real e mais sublime felicidade ao seu lar.</p>`
+},
+
+
+ // --- SEQUÊNCIAS NEGATIVAS DO BEBÊ (DESAFIOS COMPORTAMENTAIS E APRENDIZADOS PRECOCES) ---
+sequenciaNegativabb: {
+  1: `<p><strong>SEQUÊNCIA 111 – O DESAFIO DA INICIATIVA E FRUSTRAÇÃO</strong></p>
+<p style="margin-bottom: 20px;">Esta sequência não é um evento passageiro, mas uma tendência vibracional que acompanha o seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, desde cedo. Ela representa um pequeno obstáculo interno que exige paciência e atenção dos pais: a tendência a ter sua chama de motivação facilmente abafada diante de um "não" ou de uma dificuldade. Esse desafio de superar a teimosia paralisante ou o desânimo quando algo não sai como ele(a) quer é algo que precisará ser trabalhado com amor.</p>
+<p style="margin-bottom: 20px;">A sensação de que a coragem dele(a) dá lugar a uma birra ou a um choro por impotência pode surgir repetidamente. O grande aprendizado na criação de <strong>MASCULINO-FEMININO-NEUTRO</strong> é entender que esses bloqueios em brincadeiras ou momentos de desânimo profundo são reflexos de uma energia que os pais devem ajudá-lo(a) a canalizar, ensinando-o(a) a tentar de novo.</p>
+<p style="margin-bottom: 20px;">Fisicamente, essa pressão interna de guardar a frustração exige cuidado com o acúmulo de tensões no corpinho. A chave para a evolução do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, está em aprender, através do estímulo dos pais, a vencer a inércia e o amuo, transformando a impaciência em persistência para novas descobertas.</p>`,
+
+  2: `<p><strong>SEQUÊNCIA 222 – O DESAFIO DA AUTONOMIA E DEPENDÊNCIA</strong></p>
+<p style="margin-bottom: 20px;">A vibração 222 atua como uma marca persistente na estrutura emocional do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, afetando a segurança dele(a). Por ser uma influência ativa, ela indica que a extrema vulnerabilidade à separação dos pais, o medo do ambiente e a indecisão crônica são lições que ele(a) enfrentará na infância, intensificando-se em fases de mudança (como ir para a escola).</p>
+<p style="margin-bottom: 20px;">O risco de o seu bebê anular as próprias vontades por timidez excessiva ou se tornar excessivamente dependente do colinho e da aprovação dos adultos é um padrão que os pais devem observar. Não se trata de uma fase que sumirá sem estímulo; cabe aos pais incentivar o pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> a fortalecer sua autoconfiança para que não se sinta inseguro longe de sua zona de conforto.</p>
+<p style="margin-bottom: 20px;">Essa fragilidade emocional pode impactar o apetite ou o soninho do bebê através de somatizações. O desafio mestre dele(a) nesta largada da vida é recuperar a autonomia. Ao trabalhar ativamente a segurança dele(a) com elogios e pequenos incentivos, os pais ajudam <strong>MASCULINO-FEMININO-NEUTRO</strong> a construir uma trajetória de independência real.</p>`,
+
+  3: `<p><strong>SEQUÊNCIA 333 – O DESAFIO DA EXPRESSÃO E TIMIDEZ</strong></p>
+<p style="margin-bottom: 20px;">Para o seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a comunicação e a fala serão o seu grande campo de aprendizado. Esta sequência indica uma tendência a bloqueios na expressão, dificuldades de se fazer entender ou momentos de timidez travada. Estimular a fala, o canto e a expressão criativa será um trabalho contínuo e preventivo na rotina dele(a).</p>
+<p style="margin-bottom: 20px;">A frustração de não conseguir expressar o que deseja (especialmente antes de falar fluentemente) pode gerar um retraimento ou choro recorrente, fazendo o bebê se isolar em seu próprio cantinho. É fundamental entender que essa barreira é interna; cabe aos pais dar suporte para que <strong>MASCULINO-FEMININO-NEUTRO</strong> desenvolva a clareza e perca o medo de se comunicar.</p>
+<p style="margin-bottom: 20px;">No corpo, o estresse de se sentir "travado" para se expressar ou falar costuma se manifestar na garganta ou no sistema respiratório (como tosses e resfriados frequentes). A lição permanente é incentivá-lo(a) a colocar para fora o que sente. Ao melhorar essa ponte com o mundo, você ajuda seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a transformar o silêncio em uma linda capacidade de articulação.</p>`,
+
+  4: `<p><strong>SEQUÊNCIA 444 – O DESAFIO DA ADAPTAÇÃO E RIGIDEZ</strong></p>
+<p style="margin-bottom: 20px;">Esta configuração aponta para uma prova de resistência que acompanha o dia a dia e a rotina do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Obstáculos ou dificuldades severas para aceitar mudanças em horários, novos alimentos ou novas regras não são meras pirraças, mas sim a manifestação de uma sequência que exige dele(a) o aprendizado da flexibilidade.</p>
+<p style="margin-bottom: 20px;">Vocês, pais, poderão sentir que acalmar o bebê exige um esforço dobrado e que qualquer quebra na rotina o(a) deixa muito tenso(a). Essa pressão indica que o pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> tende a ser muito rígido e apegado ao controle. A ansiedade gerada por essa vibração deve ser combatida com muita paciência, carinho e transições suaves na rotina.</p>
+<p style="margin-bottom: 20px;">Fisicamente, a tensão acumulada pela rigidez pode deixar o corpinho do bebê travado ou causar cólicas por estresse. O segredo para vencer essa influência é manter um ambiente seguro, mas ensiná-lo(a) a brincar com o improviso, mostrando a <strong>MASCULINO-FEMININO-NEUTRO</strong> que mudar também pode ser divertido.</p>`,
+
+  5: `<p><strong>SEQUÊNCIA 555 – O DESAFIO DA AGITAÇÃO E INQUIETUDE</strong></p>
+<p style="margin-bottom: 20px;">A marca desta sequência na infância do seu bebê é a volatilidade e a hiperatividade mental, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Por estar gravada em sua estrutura, a tendência a oscilações bruscas de humor, impaciência com brinquedos e dificuldade para relaxar é algo que vocês enfrentarão repetidamente. O desafio não é prender o bebê, mas ajudá-lo(a) a não se desgastar com tanta agitação.</p>
+<p style="margin-bottom: 20px;">Viver nesses altos e baixos de energia gera uma exaustão mental que pode levar a crises de choro antes de dormir. Vocês precisam compreender, pais, que a calma que o pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> precisa deve vir de estímulos firmes e ambientes tranquilos. Essa inquietude é uma força motora que deve ser direcionada para atividades saudáveis.</p>
+<p style="margin-bottom: 20px;">O corpo pode refletir essa instabilidade através de alergias na pele ou falta de foco que gera pequenos esbarrões e quedas nas brincadeiras. A lição para o bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é aprender o autocontrole. Ao trabalhar técnicas de relaxamento e uma rotina firme, a agitação dá lugar a uma linda energia de descoberta.</p>`,
+
+  6: `<p><strong>SEQUÊNCIA 666 – O DESAFIO DO CIÚME E EXPECTATIVA AFETIVA</strong></p>
+<p style="margin-bottom: 20px;">O peso do ciúme e das cobranças por atenção exclusiva dos pais são temas centrais na infância do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Esta sequência negativa indica que, desde cedo, ele(a) será muito testado(a) em sua capacidade de dividir o afeto com irmãos, parentes ou até com a rotina dos pais. A dor do sentimento de rejeição (mesmo que imaginário) ganha muita força nele(a).</p>
+<p style="margin-bottom: 20px;">O sentimento de estar desamparado(a) ou de fazer birras extremas para chamar a atenção é um sinal dessa influência tentando minar a segurança emocional dele(a). É preciso entender que essas crises servem para que o pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> aprenda que o amor dos pais é seguro e infinito. O amargor infantil só será vencido com muito acolhimento e limites amorosos.</p>
+<p style="margin-bottom: 20px;">Fisicamente, essa carga emocional e a carência afetam diretamente o bem-estar gástrico e respiratório do bebê. A cura para essa influência reside em nutrir a segurança interna da criança. Ao fortalecer o coração do bebê com amor constante, ele(a) aprende a dividir o espaço e a confiar plenamente no afeto da família.</p>`,
+
+  7: `<p><strong>SEQUÊNCIA 777 – O DESAFIO DO MEDO E ISOLAMENTO</strong></p>
+<p style="margin-bottom: 20px;">Sob esta vibração, seu bebê carrega uma tendência intrínseca a medos irracionais, pesadelos e desconfiança de pessoas novas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O isolamento ou a recusa em brincar com outras crianças pode surgir como uma casca de proteção. Se não for acolhido, esse medo do desconhecido pode deixá-lo(a) muito fechado(a) em seu próprio mundo.</p>
+<p style="margin-bottom: 20px;">A dificuldade em lidar com o que é novo ou em aceitar errar em uma brincadeira é o seu grande campo de batalha infantil. Em períodos de maior sensibilidade, esse medo pode deixá-lo(a) muito paralisado(a) ou reativo(a), <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ele(a) corre o risco de se esconder atrás de um comportamento defensivo ou amuado.</p>
+<p style="margin-bottom: 20px;">O sistema nervoso e o soninho são os que mais sofrem com esse padrão de estresse e medos noturnos. O caminho de superação do bebê exige paciência, conversas mansas e a validação dos sentimentos dele(a). Ao transformar o medo infantil em curiosidade segura, vocês neutralizam essa influência em <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>`,
+
+  8: `<p><strong>SEQUÊNCIA 888 – O DESAFIO DA IMPULSIVIDADE E DISPUTA DE PODER</strong></p>
+<p style="margin-bottom: 20px;">Esta sequência impõe ao seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, um teste constante sobre sua capacidade de lidar com limites e regras. As crises de raiva, o ato de quebrar brinquedos por impulso ou morder na primeira infância não são maldade, mas manifestações de uma vibração que exige dos pais um controle firme, calmo e muito justo.</p>
+<p style="margin-bottom: 20px;">A agressividade física ou verbal nas brincadeiras e o sentimento de posse com as coisas são as armadilhas que essa influência coloca para testar a autoridade dos pais. O sentimento de que está sendo contrariado(a) pode ser uma faísca constante, <strong>MASCULINO-FEMININO-NEUTRO</strong>, mas é dever dos pais ensinar que a força não resolve nada.</p>
+<p style="margin-bottom: 20px;">Esse estresse e reatividade contínuos são desgastantes para o sistema emocional do bebê. A superação desta sequência depende de aplicar limites claros e sem violência. Ao ensinar o pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> a dominar seus impulsos, vocês garantem que ele(a) cresça como uma criança forte, porém dócil e justa.</p>`,
+
+  9: `<p><strong>SEQUÊNCIA 999 – O DESAFIO DO DESÂNIMO E HIPERSENSIBILIDADE</strong></p>
+<p style="margin-bottom: 20px;">Aqui, no mapa de <strong>MASCULINO-FEMININO-NEUTRO</strong>, a lição é sobre vitalidade e desapego emocional. Esta sequência indica uma tendência a ciclos onde o bebê parece perder a energia de repente, demonstrando um desânimo profundo ou uma hipersensibilidade dramática que o(a) faz absorver as preocupações ou tristezas dos adultos ao redor.</p>
+<p style="margin-bottom: 20px;">A perda de interesse rápido por atividades ou uma aparente "preguiça" emocional podem ocorrer como reflexo dessa vibração. O peso mental de se sentir sobrecarregado pelas energias da casa é o grande teste para o ânimo do bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>. É necessário um esforço dos pais para manter a casa leve e alegre.</p>
+<p style="margin-bottom: 20px;">A imunidade e a energia física são os pontos de alerta para esse estresse de absorção emocional. A evolução do seu bebê depende de os pais ensinarem-no(a) a brincar com leveza, soltar as chateações rapidamente e focar na alegria pura do momento presente, blindando o pequeno <strong>MASCULINO-FEMININO-NEUTRO</strong> de fardos que não são dele(a).</p>`
+},   
+
+
+    
 // --- MOTIVAÇÃO (O DESEJO ÍNTIMO DA ALMA) ---
 motivacao: {
     1: `<h3>Ter o controle sobre seu destino - Motivação 1</h3>
@@ -1068,22 +1399,8 @@ harmonia: {
 <p>Sua generosidade <strong>atrai</strong> os números <strong>2, 3, 5 e 6</strong>, que buscam em você inspiração e suporte emocional.</p>
 <p>Seu <strong>oposto</strong> é o número <strong>7</strong>, pois sua entrega total e expansiva pode assustar a natureza reservada e analítica deste número.</p>
 <p>Você mantém uma relação <strong>passiva</strong> com os números <strong>4 e 8</strong>, baseada no respeito ao tempo de cada um e na cooperação silenciosa.</p>
-    `,
+    `
 
-    11: `<h3>Relacionamento 11 - Conexão Intuitiva e Inspiração Mútua</h3>
-    <p>A vibração 11 no amor traz uma intensidade espiritual raríssima, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você busca uma parceria que seja fonte de inspiração, alguém que compartilhe ideais elevados. A união para você deve ter um propósito maior do que apenas a rotina e a conveniência cotidiana.</p>
-    <p>O desafio é lidar com sua sensibilidade aguçada, que capta vibrações sutis e pode gerar tensões por expectativas elevadas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A lição é manter os pés no chão, cultivando a paciência. Você brilha quando usa sua intuição para harmonizar o vínculo e elevar a consciência do par.</p>
-    <p>Ao encontrar o equilíbrio, você vive um relacionamento marcado pela telepatia emocional, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu legado afetivo é mostrar que o amor é um portal para o despertar, transformando a vida a dois em um farol de luz e compreensão que inspira todos ao redor.</p>`,
-
-    22: `<h3>Relacionamento 22 - Construção de um Legado a Dois</h3>
-    <p>Com a energia 22, o amor assume uma proporção de grande realização e pragmatismo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você busca parcerias capazes de construir estruturas sólidas que beneficiem o coletivo. Para você, amar é edificar, organizar e manifestar sonhos em escala monumental ao lado de quem confia.</p>
-    <p>Cuidado para que o foco em metas materiais não apague a chama da ternura, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O aprendizado é integrar sua força construtora com o romance necessário para manter o vínculo vivo. Você realiza seu potencial quando encontra alguém que compartilha de sua ética e visão de futuro.</p>
-    <p>O relacionamento sob esta influência torna-se uma potência de progresso, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao unir forças, você e seu par deixam uma marca inabalável no mundo, provando que uma união baseada em propósitos elevados e execução prática é o segredo para uma felicidade estável e digna.</p>`,
-
-    33: `<h3>Relacionamento 33 - A Maestria do Amor e Serviço Universal</h3>
-    <p>A energia 33 representa o amor em sua oitava mais alta: a compaixão pura, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você se comporta como uma figura de amparo absoluto, protegendo e nutrindo a parceria com uma dedicação altruísta que transcende os interesses comuns e as pequenas brigas de ego.</p>
-    <p>O risco é o auto-sacrifício excessivo, esquecendo suas próprias necessidades, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A lição fundamental é que, para cuidar do outro, você também precisa estar em equilíbrio. Sua presença na relação é sinônimo de cura, ética e harmonia incondicional para quem tem a sorte de caminhar ao seu lado.</p>
-    <p>Viver um amor com a vibração 33 é tornar-se um exemplo vivo de bondade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao equilibrar a doação com o auto-respeito, você atinge uma plenitude emocional que serve de guia, consolidando uma união baseada na verdade espiritual, na proteção mútua e na paz absoluta.</p>`
 },
 
 
