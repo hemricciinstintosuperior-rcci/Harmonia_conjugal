@@ -1120,15 +1120,55 @@ function abrirModal(tipo) {
 }
 
 function abrirModalRegente(texto, idRegente) {
-    let n = (idRegente==="regente1") ? (document.getElementById("social1").value || document.getElementById("nome1").value) : (document.getElementById("social2").value || document.getElementById("nome2").value);
-    abrirModalTexto(formatarTextoPersonalizado(texto, n));
+    let n = "";
+    let textoFinal = texto; // Mantém o texto original como padrão (para Pessoa 1 e 2)
+    
+    if (idRegente === "regente1") {
+        n = document.getElementById("social1").value || document.getElementById("nome1").value;
+    } else if (idRegente === "regente2") {
+        n = document.getElementById("social2").value || document.getElementById("nome2").value;
+    } else if (idRegente === "regenteBebe") {
+        n = document.getElementById("socialBebe").value || document.getElementById("nomeBebe").value;
+        
+        // CORREÇÃO AQUI: 
+        // Se a sua função 'gerarPiramide' passa o número do regente (ex: 1, 2, 3...) no parâmetro 'texto',
+        // nós usamos esse número para buscar direto no seu objeto 'textos.regentebb' do textos.js
+        if (dadosBebe && dadosBebe.regente) { 
+            textoFinal = textos.regentebb[dadosBebe.regente];
+        } else {
+            // Caso o 'texto' que vem da pirâmide já seja o número/ID do regente:
+            textoFinal = textos.regentebb[texto] || texto;
+        }
+    }
+    
+    abrirModalTexto(formatarTextoPersonalizado(textoFinal, n));
 }
 
 function mostrarSequenciaNegativa(idRegente){
-  let d = (idRegente==="regente1") ? dados1 : dados2;
-  let n = (idRegente==="regente1") ? (document.getElementById("social1").value || document.getElementById("nome1").value) : (document.getElementById("social2").value || document.getElementById("nome2").value);
-  if (!d || !d.sequenciaNegativa || d.sequenciaNegativa.length === 0) return abrirModalTexto("Nenhuma sequência.");
-  abrirModalTexto(formatarTextoPersonalizado(d.sequenciaNegativa.map(x => textos.sequenciaNegativa[x]).join("<br><br>"), n));
+  let d = null;
+  let n = "";
+  let bancoDeTextos = textos.sequenciaNegativa; // Padrão
+
+  if (idRegente === "regente1") {
+      d = dados1;
+      n = document.getElementById("social1").value || document.getElementById("nome1").value;
+  } else if (idRegente === "regente2") {
+      d = dados2;
+      n = document.getElementById("social2").value || document.getElementById("nome2").value;
+  } else if (idRegente === "regenteBebe") {
+      d = dadosBebe;
+      n = document.getElementById("socialBebe").value || document.getElementById("nomeBebe").value;
+      
+      // Aqui busca do banco de dados de sequências do bebê se você tiver um separado (ex: sequenciaNegativabb)
+      // Se as sequências do bebê usarem o mesmo texto geral, pode deixar apenas 'textos.sequenciaNegativa'
+      bancoDeTextos = textos.sequenciaNegativabb || textos.sequenciaNegativa; 
+  }
+
+  if (!d || !d.sequenciaNegativa || d.sequenciaNegativa.length === 0) {
+      return abrirModalTexto("Nenhuma sequência.");
+  }
+  
+  abrirModalTexto(formatarTextoPersonalizado(d.sequenciaNegativa.map(x => bancoDeTextos[x]).join("<br><br>"), n));
 }
 
 function gerar(){
@@ -1146,7 +1186,7 @@ let dadosBebe = null;
 function gerarBebe(){
   if(!document.getElementById("nomeBebe").value) return;
   dadosBebe = calcularPessoa(document.getElementById("nomeBebe").value, null);
-  gerarPiramide(dadosBebe.valores, document.getElementById("piramideBebe"), document.getElementById("regentebbBebe"));
+  gerarPiramide(dadosBebe.valores, document.getElementById("piramideBebe"), document.getElementById("regenteBebe"));
 }
 
 /* =============================================================
