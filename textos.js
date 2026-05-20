@@ -446,7 +446,7 @@ window.textos = {
 
 
  // --- MOTIVAÇÃO DO BEBÊ (O QUE MOVE A ALMA DA INFÂNCIA À ADOLESCÊNCIA) ---
-Motivacaobb: {
+motivacaobb: {
     1: `<h3>Motivação 1 - O Impulso de Autonomia, Independência e Pioneirismo</h3>
     <p>A essência interior de <strong>MASCULINO-FEMININO-NEUTRO</strong> é movida por um profundo desejo de afirmação, originalidade e liderança que se manifestará desde o berço e se estenderá até a juventude. Os pais perceberão que a força motriz dessa alma é o pioneirismo, demonstrando uma necessidade intrínseca de desbravar caminhos por conta própria e testar a própria capacidade sem depender da aprovação ou do comando constante dos outros.</p>
     <p>Nos primeiros meses de vida, esse anseio por independência surgirá em pequenas ações, como o esforço precoce para segurar a mamadeira ou explorar espaços de forma destemida. À medida que a infância avança, essa motivação se transformará na busca por comandar as próprias brincadeiras e criar regras novas. Os pais notarão que o que realmente traz satisfação ao íntimo de <strong>MASCULINO-FEMININO-NEUTRO</strong> é sentir que sua individualidade é respeitada, florescendo quando recebe estímulos para resolver seus pequenos problemas sozinho(a).</p>
@@ -544,7 +544,7 @@ Motivacaobb: {
 
 
 // --- INFLUÊNCIA DO BEBÊ (A IMPRESSÃO, APARÊNCIA E IMAGEM PROJETADA DA INFÂNCIA À ADOLESCÊNCIA) ---
-Influenciabb: {
+influenciabb: {
     1: `<h3>Influência 1 - A Impressão de Força, Autoconfiança e Atitude</h3>
     <p>A energia da influência determina a primeira impressão e a imagem que <strong>MASCULINO-FEMININO-NEUTRO</strong> projetará para o mundo exterior ao longo da vida. Os pais notarão que, desde muito cedo, essa criança passará uma imagem de forte presença, independência e coragem, chamando a atenção pela postura firme e decidida, mesmo que no fundo guarde suas vulnerabilidades.</p>
     <p>Na fase de bebê, essa influência fará com que o pequeno cause o impacto de ser muito ativo, expressivo e cheio de atitude, aquele tipo de bebê que "comanda" o ambiente com o olhar e não aceita ser ignorado. Conforme entra na infância e inicia a vida escolar, a aparência que projetará para professores e coleguinhas será a de uma criança corajosa, líder e muito autossuficiente. Os pais notarão que os outros tendem a enxergar <strong>MASCULINO-FEMININO-NEUTRO</strong> como alguém forte e pronto para tomar a iniciativa em qualquer brincadeira ou atividade.</p>
@@ -639,7 +639,7 @@ Influenciabb: {
 
 
 // --- PERSONALIDADE DO BEBÊ (COMO AGE E REAGE DA INFÂNCIA À ADOLESCÊNCIA - SOMA DA MOTIVAÇÃO + INFLUÊNCIA) ---
-Personalidadebb: {
+personalidadebb: {
     1: `<h3>Personalidade 1 - A Ação Firme, Independente e Resolutiva</h3>
     <p>A personalidade representa a síntese real de como <strong>MASCULINO-FEMININO-NEUTRO</strong> vai agir e se comportar na prática ao longo da vida. Os pais notarão que o padrão de comportamento dessa criança é pautado pela ação direta, pelo forte magnetismo individual e por uma postura resolutiva. Trata-se de uma personalidade que prefere fazer a esperar, agindo com muita firmeza em suas decisões.</p>
     <p>Na fase de bebê, essa personalidade se revelará em reações muito claras e decididas: se estiver incomodado(a) ou quiser alcançar um brinquedo, agirá com total persistência até conseguir o que quer, mostrando um temperamento forte e pioneiro no berço. Conforme cresce e entra na infância, a criança agirá de forma competitiva e entusiasmada, adorando inventar jogos e assumir o comando entre os amiguinhos. Os pais observarão que ela não se intimida facilmente diante de obstáculos e reage com coragem quando desafiada.</p>
@@ -733,7 +733,7 @@ Personalidadebb: {
 
 
  // --- REGENTE DO BEBÊ (A FORÇA PRIMORDIAL E O PROPÓSITO DO DESENVOLVIMENTO DA INFÂNCIA À ADOLESCÊNCIA) ---
-Regentebb: {
+regentebb: {
  1:`<h3>👶 Regente N° 1</h3> 
 <h3>Iniciativa, Autonomia e Caminho Individual</h3> 
 <p>Para o desenvolvimento do seu bebê, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o Regente 1 representa a vibração primordial que impulsionará a construção da sua identidade do nascimento até a juventude. Trata-se de uma energia de dentro para fora, funcionando como o motor central que exigirá a afirmação do seu "Eu" diante do mundo. Os pais perceberão que essa alma nunca se sentirá plenamente realizada apenas seguindo caminhos já trilhados por outros, pois sua essência clama pela originalidade e pelo pioneirismo.</p> 
@@ -791,7 +791,7 @@ Regentebb: {
 
 
 // --- SEQUÊNCIAS NEGATIVAS DO BEBÊ (DESAFIOS E BLOQUEIOS DA INFÂNCIA À ADOLESCÊNCIA) ---
-SequenciasNegativasbb: {
+sequenciasNegativasbb: {
     1: `<h3>⚠️ Sequência Negativa 1 - O Desafio do Rigor, Isolamento e Orgulho</h3>
     <p>A presença da Sequência Negativa 1 alerta os pais para uma tendência ao acúmulo de tensões internas voltadas para o perfeccionismo, a rigidez e a dificuldade em lidar com frustrações. Ao longo do crescimento de <strong>MASCULINO-FEMININO-NEUTRO</strong>, essa vibração em desequilíbrio pode fazer com que a criança tente criar uma casca de extrema autossuficiência para esconder suas inseguranças.</p>
     <p>Na fase de bebê, isso pode se manifestar através de crises de choro ou irritabilidade extrema quando o pequeno não consegue realizar um movimento ou alcançar um objetivo sozinho, demonstrando uma impaciência precoce. Durante a infância, os pais notarão que a criança pode agir com teimosia excessiva ou se isolar em seu canto quando contrariada, preferindo se fechar a admitir que precisa de ajuda ou que errou em alguma brincadeira.</p>
