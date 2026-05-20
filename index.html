@@ -796,11 +796,11 @@
 
     <div class="grid-pessoa">
         <div class="card-input">
-            <h3>Pessoa 1</h3>
+            <h3>Homem</h3>
             <div class="form-group"><label>Nome Completo Masculino e Neutro</label><input type="text" id="nome1" placeholder="Nome completo igual certidão"></div>
             <div class="form-group"><label>Nome Social / Escolhido</label><input type="text" id="social1" placeholder="Nome para aparecer no relatório"></div>
             <div class="form-group"><label>Data de Nascimento</label><input type="text" id="data1" placeholder="DD/MM/AAAA" maxlength="10" oninput="mascaraData(this)"></div>
-            <div class="form-group"><label>Nome de Casado(a):</label><input type="text" id="nomeCasado1" placeholder="Nome de casado se houver"></div>
+            <div class="form-group"><label>Nome de Casado:</label><input type="text" id="nomeCasado1" placeholder="Nome de casado se houver"></div>
 
             
             <div class="btn-group">
@@ -822,11 +822,11 @@
 
     <div class="grid-pessoa">
         <div class="card-input">
-            <h3>Pessoa 2</h3>
+            <h3>Mulher</h3>
             <div class="form-group"><label>Nome Completo Feminino</label><input type="text" id="nome2" placeholder="Nome completo igual certidão"></div>
             <div class="form-group"><label>Nome Social / Escolhido</label><input type="text" id="social2" placeholder="Nome para aparecer no relatório"></div>
             <div class="form-group"><label>Data de Nascimento</label><input type="text" id="data2" placeholder="DD/MM/AAAA" maxlength="10" oninput="mascaraData(this)"></div>
-            <div class="form-group"><label>Nome de Casado(a):</label><input type="text" id="nomeCasado2" placeholder="Nome de casado se houver"></div>
+            <div class="form-group"><label>Nome de Casada:</label><input type="text" id="nomeCasado2" placeholder="Nome de casado se houver"></div>
 
 
             
@@ -863,7 +863,7 @@
                 <input type="text" id="nomeBebe" placeholder="Digite o nome completo para análise">
             </div>
             <div class="form-group">
-                <label>Nome Escolhido / Chamado</label>
+                <label>Como ele é Chamado</label>
                 <input type="text" id="socialBebe" placeholder="Nome de tratamento do bebê">
             </div>
             <button class="btn-action" style="width:100%; margin-bottom:15px;" onclick="gerarBebe()">Analisar Nome do Bebê</button>
@@ -1050,7 +1050,7 @@ function gerarPiramide(valores, elementoPiramide, elementoRegente){
 
   if (elementoRegente.id === "regente1") { dados1.regente = regente; dados1.sequenciaNegativa = numerosSequencias; }
   if (elementoRegente.id === "regente2") { dados2.regente = regente; dados2.sequenciaNegativa = numerosSequencias; }
-  if (elementoRegente.id === "regenteBebe") { dadosBebe.regente = regente; dadosBebe.sequenciaNegativa = numerosSequencias; }
+  if (elementoRegente.id === "regenteBebe") { dadosBebe.regentebb = regente; dadosBebe.sequenciaNegativabb = numerosSequencias; }
 
   if (elementoRegente.id === "regenteBebe") {
     const resultado = document.getElementById("resultadoBebe");
