@@ -794,31 +794,6 @@
         </video>
     </div>
 
-    <div class="grid-pessoa">
-        <div class="card-input">
-            <h3>Homem</h3>
-            <div class="form-group"><label>Nome Completo Masculino e Neutro</label><input type="text" id="nome1" placeholder="Nome completo igual certidão"></div>
-            <div class="form-group"><label>Nome Social / Escolhido</label><input type="text" id="social1" placeholder="Nome para aparecer no relatório"></div>
-            <div class="form-group"><label>Data de Nascimento</label><input type="text" id="data1" placeholder="DD/MM/AAAA" maxlength="10" oninput="mascaraData(this)"></div>
-            <div class="form-group"><label>Nome de Casado:</label><input type="text" id="nomeCasado1" placeholder="Nome de casado se houver"></div>
-
-            
-            <div class="btn-group">
-                <button class="btn-nav" onclick="abrirModal('m1')">Motivação</button>
-                <button class="btn-nav" onclick="abrirModal('i1')">Influência</button>
-                <button class="btn-nav" onclick="abrirModal('p1')">Personalidade</button>
-                <button class="btn-nav" onclick="abrirModal('d1')">Caminho</button>
-                <button class="btn-nav" onclick="abrirModal('pr1')">Propósito</button>
-                <button class="btn-nav" onclick="abrirModal('h1')">Harmonia</button>
-                <button class="btn-nav" onclick="abrirModal('a1')">Ano Pessoal</button>
-            </div>
-        </div>
-        <div class="card-piramide">
-            <h3>Pirâmide 1</h3>
-            <div id="piramide1" class="piramide"></div>
-            <div id="regente1" class="regente"></div>
-        </div>
-    </div>
 
     <div class="grid-pessoa">
         <div class="card-input">
@@ -841,11 +816,40 @@
             </div>
         </div>
         <div class="card-piramide">
-            <h3>Pirâmide 2</h3>
+            <h3>Pirâmide Feminina</h3>
             <div id="piramide2" class="piramide"></div>
             <div id="regente2" class="regente"></div>
         </div>
     </div>
+    
+
+    <div class="grid-pessoa">
+        <div class="card-input">
+            <h3>Homem</h3>
+            <div class="form-group"><label>Nome Completo Masculino e Neutro</label><input type="text" id="nome1" placeholder="Nome completo igual certidão"></div>
+            <div class="form-group"><label>Nome Social / Escolhido</label><input type="text" id="social1" placeholder="Nome para aparecer no relatório"></div>
+            <div class="form-group"><label>Data de Nascimento</label><input type="text" id="data1" placeholder="DD/MM/AAAA" maxlength="10" oninput="mascaraData(this)"></div>
+            <div class="form-group"><label>Nome de Casado:</label><input type="text" id="nomeCasado1" placeholder="Nome de casado se houver"></div>
+
+            
+            <div class="btn-group">
+                <button class="btn-nav" onclick="abrirModal('m1')">Motivação</button>
+                <button class="btn-nav" onclick="abrirModal('i1')">Influência</button>
+                <button class="btn-nav" onclick="abrirModal('p1')">Personalidade</button>
+                <button class="btn-nav" onclick="abrirModal('d1')">Caminho</button>
+                <button class="btn-nav" onclick="abrirModal('pr1')">Propósito</button>
+                <button class="btn-nav" onclick="abrirModal('h1')">Harmonia</button>
+                <button class="btn-nav" onclick="abrirModal('a1')">Ano Pessoal</button>
+            </div>
+        </div>
+        <div class="card-piramide">
+            <h3>Pirâmide Masculina</h3>
+            <div id="piramide1" class="piramide"></div>
+            <div id="regente1" class="regente"></div>
+        </div>
+    </div>
+
+
 
     <div class="main-actions">
         <button class="btn-action" onclick="gerar()">⚡ CALCULAR TUDO</button>
