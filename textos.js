@@ -1763,7 +1763,7 @@ sinastria : {
 `,
 
 "3-8": `
-<h3>Harmonia Conjugal – nome1 3 com nome2 8</h3>
+<h3>Harmonia Conjugal – Energia 3 com Energia 8</h3>
 <p>A combinação entre número 3 e  número 8 une criatividade e ambição. número 3 representa expressão e entusiasmo, enquanto número 8 simboliza poder, estratégia e realização material.</p>
 <p>Nos aspectos positivos, número 3 traz leveza e inovação para projetos de número 8, enquanto número 8 oferece foco e direção para ideias de número 3. Juntos, podem formar parceria produtiva.</p>
 <p>Os desafios surgem quando número 8 demonstra excesso de controle ou quando número 3 apresenta falta de disciplina. Conflitos podem ocorrer por diferenças de prioridade.</p>
