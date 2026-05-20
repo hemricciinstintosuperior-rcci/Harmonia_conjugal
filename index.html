@@ -677,7 +677,7 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    font-size: 10pt;
+    font-size: 11pt;
     color: #827108; /* Dourado nobre do seu padrão */
     display: none; 
 }
@@ -1448,7 +1448,7 @@ const processarMatrizCasado = (nomeCompleto) => {
 
       <div style="width: 100%; max-width: 900px; display: flex; flex-direction: column; gap: 15px;">
           ${[
-              { t: "Introdução", c: "Instinto Superior ✶ Engenharia da Vida ✶ Direcionamento de Jornada"},
+              { t: "Introdução", c: "Instinto Superior ✶ Engenharia Vibracional ✶ Direcionamento de Jornada"},
               { t: "Parte 1: Motivação da Alma", c: "Análise Intrapessoal ✶ O Desejo Oculto e Íntimo de Cada Alma"},
               { t: "Parte 2: Influência & Impressão", c: "A Imagem Projetada ✶ A Primeira Impressão no Mundo Exterior"},
               { t: "Parte 3: Expressão & Personalidade", c: "Expressão Natural ✶ Comportamento Prático individual"},
@@ -1479,6 +1479,17 @@ const processarMatrizCasado = (nomeCompleto) => {
       </div>
   </div>
   `;
+
+
+
+     // Capa da Seção 1 com os Áudios acoplados corretamente
+  relatorioHTML += criarCapaTransicao(
+      "Introdução", 
+      "O Direcionamento do seu Destino", 
+      "Instinto Superior ✶ Relatório Premium",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
+  ); 
 
 relatorioHTML += `
 <div class="page evitar-corte" style="padding: 40px; background: #fff; min-height: 296mm; box-sizing: border-box; color: #2d0713; font-family: 'Segoe UI', sans-serif;">
@@ -1514,7 +1525,7 @@ relatorioHTML += `
 
         <p style="margin-bottom: 0;">
             Compreender a sinastria através do <b>Instinto Superior</b> é transitar do amor instintivo e reativo para o amor soberano e consciente. Ao decodificar os códigos ocultos da sua união, o casal deixa de ser refém de discussões cíclicas e incompatibilidades invisíveis para assumir a maestria e a direção de sua jornada em conjunto.
-        </p>
+        </p><p>"https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",</p>
 
     </div>
 
@@ -1590,8 +1601,8 @@ function extrairETratarTexto(textoBruto, nomeParceiro) {
 
   // Capa da Seção 1 com os Áudios acoplados corretamente
   relatorioHTML += criarCapaTransicao(
-      "Expressão & Alma", 
-      "O Direcionamento do seu Destino", 
+      "A Motivação da Alma", 
+      "O Direcionamento do seu Intelecto", 
       "Instinto Superior ✶ Relatório Premium",
       "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
       "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
