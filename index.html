@@ -103,6 +103,70 @@
 
     #compat { font-family: 'Cinzel', serif; font-size: 1.1rem; color: var(--accent); letter-spacing: 1px; }
 
+
+
+/* =======================================================
+   BLINDAGEM E COMPACTAÇÃO DA PIRÂMIDE NA TELA (MODAL/CARD)
+   ======================================================= */
+.piramide {
+    font-family: 'Courier New', monospace;
+    
+    /* Dynamic Font: Muda entre 0.85rem (nomes gigantes) até 1.2rem (nomes normais) automaticamente */
+    font-size: clamp(0.85rem, 2vw, 1.2rem) !important;
+    
+    /* Junta as linhas verticalmente para a pirâmide não ficar espalhada */
+    line-height: 1.2 !important;
+    
+    /* Compacta o espaço horizontal entre os números */
+    letter-spacing: clamp(2px, 0.5vw, 5px) !important;
+    
+    margin: 15px 0;
+    width: 100%;
+    
+    /* Mantém a estrutura exata de espaçamentos gerados pelo JS */
+    white-space: pre !important;
+    text-align: center;
+    
+    /* TRAVA DE ALTURA: Limita o tamanho na tela para nunca empurrar o resto da página */
+    max-height: 320px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    /* Adiciona uma rolagem elegante e discreta caso o nome abuse do tamanho */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(212, 154, 154, 0.3) transparent;
+}
+
+/* Customização da barra de rolagem interna da pirâmide para navegadores Webkit (Chrome/Edge/Safari) */
+.piramide::-webkit-scrollbar {
+    width: 6px;
+}
+.piramide::-webkit-scrollbar-thumb {
+    background: rgba(212, 154, 154, 0.3);
+    border-radius: 4px;
+}
+
+/* Força os cards que guardam as pirâmides a ficarem travados e elegantes */
+.card-piramide {
+    background: var(--card-bg);
+    padding: 25px 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.05);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Mantém o título no topo, pirâmide no meio e botões na base */
+    align-items: center;
+    max-height: 480px; /* Garante que o bloco todo nunca estoure a tela */
+    overflow: hidden;
+}
+
+
+
+
+
+    
+
     @media (max-width: 850px) { .grid-pessoa { grid-template-columns: 1fr; } }
 
     /* =======================================================
