@@ -1041,16 +1041,29 @@ function gerarPiramide(valores, elementoPiramide, elementoRegente){
   elementoPiramide.innerHTML = html;
   const regente = lines[lines.length - 1][0];
 
+  // CORREÇÃO DOS TEXTOS DO MODAL AQUI:
+  // Descobre qual objeto de texto usar baseado no id do elemento
+  let textoParaPassar = "";
+  if (elementoRegente.id === "regente1") {
+    textoParaPassar = `textos.regente[${regente}]`;
+  } else if (elementoRegente.id === "regente2") {
+    textoParaPassar = `textosFeminino.regente[${regente}]`;
+  } else if (elementoRegente.id === "regenteBebe") {
+    // Aqui fazemos ele pegar do seu 'regentebb' lá do textos.js!
+    textoParaPassar = `textos.regentebb[${regente}]`; 
+  }
+
   elementoRegente.innerHTML = `
     <div class="botoes-piramide">
-      <button onclick="abrirModalRegente(textos.regente[${regente}], '${elementoRegente.id}')">Regente: ${regente}</button>
+      <button onclick="abrirModalRegente(${textoParaPassar}, '${elementoRegente.id}')">Regente: ${regente}</button>
       <button onclick="mostrarSequenciaNegativa('${elementoRegente.id}')">Sequência Negativa</button>
     </div>
   `;
 
+  // Mantendo a estrutura padrão de propriedades (.regente e .sequenciaNegativa) para o seu objeto dadosBebe funcionar redondo
   if (elementoRegente.id === "regente1") { dados1.regente = regente; dados1.sequenciaNegativa = numerosSequencias; }
   if (elementoRegente.id === "regente2") { dados2.regente = regente; dados2.sequenciaNegativa = numerosSequencias; }
-  if (elementoRegente.id === "regenteBebe") { dadosBebe.regentebb = regente; dadosBebe.sequenciaNegativabb = numerosSequencias; }
+  if (elementoRegente.id === "regenteBebe") { dadosBebe.regente = regente; dadosBebe.sequenciaNegativa = numerosSequencias; }
 
   if (elementoRegente.id === "regenteBebe") {
     const resultado = document.getElementById("resultadoBebe");
@@ -1058,6 +1071,7 @@ function gerarPiramide(valores, elementoPiramide, elementoRegente){
   }
 }
 
+    
 function chaveSinastria(a,b){
   return `${Math.min(a,b)}-${Math.max(a,b)}`;
 }
@@ -1147,7 +1161,7 @@ function abrirModalRegente(texto, idRegente) {
 function mostrarSequenciaNegativa(idRegente){
   let d = null;
   let n = "";
-  let bancoDeTextos = textos.sequenciaNegativa; // Padrão
+  let bancoDeTextos = textos.sequenciaNegativa; // Padrão Pessoa 1
 
   if (idRegente === "regente1") {
       d = dados1;
@@ -1155,12 +1169,13 @@ function mostrarSequenciaNegativa(idRegente){
   } else if (idRegente === "regente2") {
       d = dados2;
       n = document.getElementById("social2").value || document.getElementById("nome2").value;
+      // Se tiver uma sequência feminina específica futuramente, descomente a linha abaixo:
+      // bancoDeTextos = textosFeminino.sequenciaNegativa || textos.sequenciaNegativa;
   } else if (idRegente === "regenteBebe") {
       d = dadosBebe;
       n = document.getElementById("socialBebe").value || document.getElementById("nomeBebe").value;
-      
-      // Aqui busca do banco de dados de sequências do bebê se você tiver um separado (ex: sequenciaNegativabb)
-      // Se as sequências do bebê usarem o mesmo texto geral, pode deixar apenas 'textos.sequenciaNegativa'
+      // Se você tiver um objeto 'textos.sequenciaNegativabb' no textos.js, ele usa. 
+      // Se não tiver, ele usa o padrão 'textos.sequenciaNegativa'
       bancoDeTextos = textos.sequenciaNegativabb || textos.sequenciaNegativa; 
   }
 
