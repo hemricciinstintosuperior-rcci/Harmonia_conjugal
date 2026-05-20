@@ -1145,20 +1145,50 @@ function chaveSinastria(a,b){
 }
 
 function mostrarSinastria(){
+
   if(!dados1 || !dados2) return;
-  const nome1 = document.getElementById("social1").value || document.getElementById("nome1").value;
-  const nome2 = document.getElementById("social2").value || document.getElementById("nome2").value;
-  const chave = chaveSinastria(dados1.proposito, dados2.proposito);
 
-  let texto = textos.sinastria[chave] || `A combinação entre Energia ${dados1.proposito} e Energia ${dados2.proposito}.`;
-  const menor = Math.min(dados1.proposito, dados2.proposito);
-  const maior = Math.max(dados1.proposito, dados2.proposito);
+  const nome1 =
+    document.getElementById("social1").value ||
+    document.getElementById("nome1").value;
 
-  texto = texto.replaceAll(`Energia ${menor}`, (dados1.proposito === menor)?nome1:nome2)
-               .replaceAll(`Energia ${maior}`, (dados1.proposito === maior)?nome1:nome2);
+  const nome2 =
+    document.getElementById("social2").value ||
+    document.getElementById("nome2").value;
 
-  abrirModalTexto(`<h3>Harmonia Conjugal – ${nome1} com ${nome2}</h3>${texto}`);
+  const chave =
+    chaveSinastria(dados1.proposito, dados2.proposito);
+
+  let texto =
+    textos.sinastria[chave] ||
+    `<p>A combinação entre [P1] e [P2].</p>`;
+
+  texto = texto
+    .replaceAll("[P1]", nome1)
+    .replaceAll("[P2]", nome2);
+
+  texto = aplicarGenero(texto);
+
+  abrirModalTexto(
+    `<h3>Harmonia Conjugal – ${nome1} com ${nome2}</h3>${texto}`
+  );
 }
+
+
+function aplicarGenero(texto){
+
+  texto = texto.replace(
+    /\{P1:(.*?)\|(.*?)\}/g,
+    (_, masc, fem) => masc
+  );
+
+  texto = texto.replace(
+    /\{P2:(.*?)\|(.*?)\}/g,
+    (_, masc, fem) => fem
+  );
+
+  return texto;
+}    
 
 function abrirModalTexto(texto){
   document.getElementById("modalTexto").innerHTML = texto;
@@ -1310,6 +1340,22 @@ function criarCapaTransicao(titulo, subtitulo, rodape, audio1Url, nomeAudio1, au
         <p style="font-size: 9px; color: #ffffff; opacity: 0.5; text-align: center; letter-spacing: 1px;">${rodape}</p>
     </div>`;
 }
+
+
+
+function processarTextoSinastria(texto, nome1, nome2) {
+
+  return texto
+    .replaceAll("[P1]", nome1)
+    .replaceAll("[P2]", nome2)
+
+    // FLEXÕES FEMININAS P1
+    .replace(/\{P1:([^|]+)\|([^}]+)\}/g, "$2")
+
+    // FLEXÕES FEMININAS P2
+    .replace(/\{P2:([^|]+)\|([^}]+)\}/g, "$1");
+}
+    
 
 function abrirPremiumSinastria(){
   if(!dados1 || !dados2) return alert("Calcule os dados primeiro.");
@@ -2058,13 +2104,19 @@ relatorioHTML += `
 
 
     
-  // Sinastria
-  const chave = chaveSinastria(dados1.proposito, dados2.proposito);
-  let textoSinastriaPuro = extrairETratarTexto(textos.sinastria[chave], social1);
-  const menor = Math.min(dados1.proposito, dados2.proposito);
-  const maior = Math.max(dados1.proposito, dados2.proposito);
-  textoSinastriaPuro = textoSinastriaPuro.replaceAll(`energia ${menor}`, (dados1.proposito===menor)?social1:social2)
-                                         .replaceAll(`energia ${maior}`, (dados1.proposito===maior)?social1:social2);
+// Sinastria
+const chave = chaveSinastria(dados1.proposito, dados2.proposito);
+
+let textoSinastriaPuro = extrairETratarTexto(
+  textos.sinastria[chave],
+  social1
+);
+
+textoSinastriaPuro = processarTextoSinastria(
+  textoSinastriaPuro,
+  social1,
+  social2
+);
 
   relatorioHTML += criarCapaTransicao(
       "Sinastria Conjugal", 
