@@ -1345,15 +1345,21 @@ function criarCapaTransicao(titulo, subtitulo, rodape, audio1Url, nomeAudio1, au
 
 function processarTextoSinastria(texto, nome1, nome2) {
 
-  return texto
-    .replaceAll("[P1]", nome1)
-    .replaceAll("[P2]", nome2)
+  if (!texto) return "";
 
-    // FLEXÕES FEMININAS P1
+  texto = String(texto)
+
+    // NOMES
+    .replaceAll("[P1]", `<strong>${nome1}</strong>`)
+    .replaceAll("[P2]", `<strong>${nome2}</strong>`)
+
+    // FLEXÕES P1 = masculino
     .replace(/\{P1:([^|]+)\|([^}]+)\}/g, "$2")
 
-    // FLEXÕES FEMININAS P2
+    // FLEXÕES P2 = feminino
     .replace(/\{P2:([^|]+)\|([^}]+)\}/g, "$1");
+
+  return texto;
 }
     
 
