@@ -1000,15 +1000,52 @@ function calcularValorComAcentos(letra){
   return (valorBase + soma) * mult;
 }
 
-function reduzir(n){
-  n = Math.abs(n);
-  while(n > 9){
-    n = n.toString().split("").reduce((a,b)=>a+Number(b),0);
-  }
-  return n;
+function reduzir(n, aceitaMestre = true) {
+
+    if (n === null || n === undefined) return 0;
+
+    let num = parseInt(String(n).replace(/\D/g, ""));
+
+    if (isNaN(num)) return 0;
+
+    // Mestres soberanos
+    const mestres = [11,22,33,44,55,66,77,88,99];
+
+    while (num > 9) {
+
+        // PRESERVA MESTRES
+        if (aceitaMestre && mestres.includes(num)) {
+            break;
+        }
+
+        num = String(num)
+            .split("")
+            .reduce((a,b)=> a + Number(b), 0);
+    }
+
+    return num;
 }
 
+function calcularCVLinear(dia, mes, ano) {
 
+    let dataCompleta =
+        dia.toString() +
+        mes.toString() +
+        ano.toString();
+
+    let somaTotal = 0;
+
+    for (let i = 0; i < dataCompleta.length; i++) {
+
+        let digito = parseInt(dataCompleta[i]);
+
+        if (!isNaN(digito)) {
+            somaTotal += digito;
+        }
+    }
+
+    return reduzir(somaTotal);
+}
 
 // FUNÇÃO INTELIGENTE DE BUSCA DE TEXTOS POR GÊNERO
 function obterTexto(modulo, numeroChave, genero) {
@@ -1057,7 +1094,7 @@ function calcularPessoa(nome, data){
 
   if(data && data.length === 10){
     const [dia, mes, ano] = data.split("/").map(Number);
-    caminho = reduzir(dia+mes+ano);
+    caminho = calcularCVLinear(dia, mes, ano);
     proposito = reduzir(caminho+personality);
   }
   return { motivacao, influencia, personalidade: personality, caminho, proposito, harmonia: proposito, valores };
