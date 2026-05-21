@@ -1282,37 +1282,88 @@ function mostrarSequenciaNegativa(idRegente){
   let n = "";
   let bancoDeTextos = textos.sequenciaNegativa;
 
+  // =========================
+  // PESSOA 1
+  // =========================
   if (idRegente === "regente1") {
 
       d = dados1;
-      n = document.getElementById("social1").value || document.getElementById("nome1").value;
+      n = document.getElementById("social1").value || 
+          document.getElementById("nome1").value;
 
-  } else if (idRegente === "regente2") {
+      bancoDeTextos = textos.sequenciaNegativa;
+
+      if (!d || !d.sequenciaNegativa || d.sequenciaNegativa.length === 0) {
+          return abrirModalTexto("Nenhuma sequência.");
+      }
+
+      return abrirModalTexto(
+          formatarTextoPersonalizado(
+              d.sequenciaNegativa.map(x => bancoDeTextos[x]).join("<br><br>"),
+              n.split(" ")[0]
+          )
+      );
+  }
+
+  // =========================
+  // PESSOA 2 (FEMININO)
+  // =========================
+  else if (idRegente === "regente2") {
 
       d = dados2;
-      n = document.getElementById("social2").value || document.getElementById("nome2").value;
+      n = document.getElementById("social2").value || 
+          document.getElementById("nome2").value;
 
-  } else if (idRegente === "regenteBebe") {
+      bancoDeTextos = textosFeminino.sequenciaNegativa || textos.sequenciaNegativa;
+
+      if (!d || !d.sequenciaNegativa || d.sequenciaNegativa.length === 0) {
+          return abrirModalTexto("Nenhuma sequência.");
+      }
+
+      return abrirModalTexto(
+          formatarTextoPersonalizado(
+              d.sequenciaNegativa.map(x => bancoDeTextos[x]).join("<br><br>"),
+              n.split(" ")[0]
+          )
+      );
+  }
+
+  // =========================
+  // BEBÊ
+  // =========================
+  else if (idRegente === "regenteBebe") {
 
       d = dadosBebe;
-      n = document.getElementById("socialBebe").value || document.getElementById("nomeBebe").value;
 
-      bancoDeTextos = textos.sequenciasNegativabb || textos.sequenciasNegativa; 
+      n = document.getElementById("socialBebe").value || 
+          document.getElementById("nomeBebe").value;
+
+      bancoDeTextos = textos.sequenciaNegativabb || textos.sequenciaNegativa;
+
+      // AQUI O BEBÊ USA detalhesNegativas
+      if (!d || !d.detalhesNegativas || d.detalhesNegativas.length === 0) {
+          return abrirModalTexto("Nenhuma sequência.");
+      }
+
+      return abrirModalTexto(
+          formatarTextoPersonalizado(
+
+              d.detalhesNegativas.map(x => {
+
+                  // "111" -> 1
+                  // "222" -> 2
+                  // "666" -> 6
+                  const chave = Number(String(x.numero).charAt(0));
+
+                  return bancoDeTextos[chave];
+
+              }).join("<br><br>"),
+
+              n.split(" ")[0]
+
+          )
+      );
   }
-
-  if (!d || !d.sequenciaNegativa || d.sequenciaNegativa.length === 0) {
-      return abrirModalTexto("Nenhuma sequência.");
-  }
-
-  // PRIMEIRO NOME
-  n = n.trim().split(" ")[0];
-
-  abrirModalTexto(
-      formatarTextoPersonalizado(
-          d.sequenciaNegativa.map(x => bancoDeTextos[x]).join("<br><br>"),
-          n
-      )
-  );
 }
 
 function gerar(){
