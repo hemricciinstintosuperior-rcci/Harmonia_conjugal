@@ -3146,9 +3146,306 @@ sinastria : {
 <p>Os desafios surgem quando aparecem excesso de introspecção, cobranças emocionais ou dificuldade em demonstrar sentimentos de maneira prática. Em determinados momentos, [P1] pode agir de forma {P1:reservada|reservado}, enquanto [P2] tende a assumir responsabilidades emocionais excessivas dentro da relação.</p>
 
 <p>Para que essa união prospere, torna-se importante fortalecer demonstrações afetivas, leveza emocional e equilíbrio entre introspecção e convivência prática. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação acolhedora, inteligente e extremamente profunda.</p>
-`   
+`,   
     
+"77-7": `
 
+<p>A união entre [P1] e [P2] promove um profundo encontro intelectual, percepção intuitiva e uma forte busca conjunta por respostas existenciais e evolução espiritual. Por ser uma combinação onde a energia do autoconhecimento se duplica, tende a desenvolver vínculos altamente reflexivos, reservados e marcados por uma rara sintonia mental.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece a capacidade de análise, sabedoria interior e compreensão dos mistérios da vida, enquanto [P2] amplia a busca pela verdade, refinamento intelectual e respeito ao espaço individual. Quando existe equilíbrio, ambos conseguem construir uma união silenciosamente poderosa, inteligente e baseada em uma cumplicidade profunda.</p>
+
+<p>Os desafios surgem quando a relação cai no excesso de isolamento, distanciamento emocional ou no silêncio que afasta. Em determinados momentos, [P1] pode agir de forma {P1:fechada|fechado}, enquanto [P2] tende a se fechar em seus próprios pensamentos, criando barreiras invisíveis na comunicação do casal.</p>
+
+<p>Para que essa união prospere, torna-se fundamental cultivar a partilha das descobertas internas, a demonstração ativa do afeto e a quebra do isolamento. Quando maduros emocionalmente, [P1] e [P2] conseguem construir uma relação de profunda elevação, respeito mútuo e conexão de alma.</p>
+`,
+
+"77-8": `
+
+<p>A combinação entre [P1] e [P2] une a profundidade analítica e espiritual com a força material, ambição e capacidade de realização prática. Essa relação tende a desenvolver vínculos de grande poder de construção, onde a sabedoria estratégica se alia à autoridade e à busca por segurança estrutural.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece a intuição, o discernimento mental e a visão de longo prazo, enquanto [P2] amplia o pragmatismo, a determinação e a capacidade de transformar ideias em resultados concretos. Quando existe equilíbrio, ambos conseguem construir uma união próspera, respeitável e estrategicamente brilhante.</p>
+
+<p>Os desafios surgem quando aparecem o controle excessivo, a frieza no trato ou a dificuldade de conciliar o mundo interno com as exigências materiais. Em determinados momentos, [P1] pode agir de forma {P1:distante|distante}, enquanto [P2] tende a demonstrar exigência extrema ou foco excessivo nas realizações externas.</p>
+
+<p>Para que essa união prospere, torna-se importante equilibrar a busca pelo sucesso material com momentos de intimidade e leveza afetiva. Quando existe maturidade, [P1] e [P2] conseguem construir uma parceria sólida, onde a inteligência e a prosperidade caminham de mãos dadas.</p>
+`,
+
+"77-9": `
+
+<p>A união entre [P1] e [P2] combina profundidade analítica, sabedoria interna e uma forte inclinação para o humanitarismo, idealismo e desapego. Essa combinação tende a desenvolver vínculos intensamente transformadores, marcados por uma visão ampla da vida e um profundo senso de propósito compartilhado.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece a busca pela verdade, o refinamento mental e a compreensão metafísica, enquanto [P2] amplia a generosidade, a visão universal e a capacidade de finalização de ciclos necessários para a evolução. Quando em sintonia, ambos conseguem construir uma relação inspiradora, madura e cheia de significado espiritual.</p>
+
+<p>Os desafios surgem quando o casal se perde em idealismos abstratos, negligenciando a realidade prática da convivência, ou quando surge a melancolia. Em determinados momentos, [P1] pode agir de forma {P1:introspectiva|introspectivo}, enquanto [P2] tende a carregar as dores do mundo ou demonstrar uma postura de sacrifício excessivo.</p>
+
+<p>Para que essa união prospere, torna-se necessário trazer os ideais para o plano concreto, mantendo a comunicação aberta e o foco no presente. Quando maduros emocionalmente, [P1] e [P2] conseguem construir uma união de profunda sabedoria, cura mútua e evolução espiritual transcendente.</p>
+`,
+
+"77-77": `
+
+<p>A combinação master entre [P1] e [P2] eleva a potência da intuição, do refinamento intelectual e da busca pela verdade ao seu grau mais elevado. Esta é uma união de almas essencialmente analíticas, místicas e buscadoras, que tendem a desenvolver um vínculo de altíssima voltagem espiritual e mental, quase telepático.</p>
+
+<p>Nos aspectos positivos, [P1] e [P2] espelham um no outro a capacidade máxima de introspecção qualificada, sabedoria ancestral e decodificação dos mistérios ocultos da vida. Quando ambos estão alinhados e em equilíbrio com suas missões de vida, conseguem construir um canal de sabedoria mútua inabalável, baseado no respeito absoluto à santidade do espaço do outro.</p>
+
+<p>Os desafios desta configuração master são intensos e residem na tendência ao isolamento absoluto a dois, na desconexão com o mundo material ou em cobranças mentais severas. Em determinados momentos, [P1] pode agir de forma {P1:inacessível|inacessível}, enquanto [P2] pode se recolher tanto em seu próprio universo que a ponte de comunicação afetiva corre o risco de se quebrar temporariamente.</p>
+
+<p>Para que essa união master se sustente na Terra, torna-se vital praticar o aterramento, trazer a espiritualidade para os atos cotidianos e forçar a saída do casulo mental. Quando ancorados na maturidade, [P1] e [P2] manifestam uma parceria sagrada, intelectualmente brilhante e dotada de uma profunda autoridade espiritual.</p>
+`,
+
+"77-88": `
+
+<p>A união entre [P1] e [P2] representa o encontro do ápice do conhecimento oculto com o ápice do poder material manifestado. Esta combinação master desenha um cenário de imenso potencial realizador, onde a mente estratégica e investigativa se funde com a mestria da justiça, do equilíbrio e do direcionamento de grandes energias.</p>
+
+<p>Nos aspectos positivos, [P1] traz a luz da verdade, o filtro analítico e a precisão intuitiva, enquanto [P2] ancora a estrutura, o magnetismo financeiro e o senso implacável de justiça e organização material. Quando operando em alta frequência, o casal se torna uma potência imparável, capaz de materializar grandes impérios com ética e sabedoria.</p>
+
+<p>Os desafios surgem na fricção entre a necessidade de silêncio de um e o ritmo de comando e controle do outro, gerando silêncios gelados ou disputas de poder veladas. Em determinados momentos, [P1] pode agir de forma {P1:obstinada|obstinado} em suas verdades internas, enquanto [P2] tende a exercer uma postura executiva ou inflexível que sufoca a sensibilidade da relação.</p>
+
+<p>Para que essa união master prospere, é fundamental que haja vulnerabilidade emocional recíproca e que as decisões sejam tomadas com base na justiça e no respeito mútuo. Quando integrados, [P1] e [P2] constroem um legado duradouro, unindo o reino da mente ao reino da matéria com absoluta maestria.</p>
+`,
+
+"77-99": `
+
+<p>A combinação master entre [P1] e [P2] coroa a relação com o fechamento dos grandes ciclos evolucionários, unindo a sabedoria mental profunda ao amor universal e à doação desinteressada em larga escala. É um vínculo de forte apelo cármico e espiritual, voltado para grandes transformações e para o despertar da consciência coletiva.</p>
+
+<p>Nos aspectos positivos, [P1] oferece o discernimento, o filtro da verdade e a maestria da mente meditativa, enquanto [P2] expande as fronteiras da relação com compaixão absoluta, desapego e uma capacidade incomparável de regeneração emocional. Quando sintonizados, convertem a convivência em um farol de cura, inspiração e sabedoria para todos ao seu redor.</p>
+
+<p>Os desafios desta frequência master moram no perigo da fuga da realidade, na dificuldade de lidar com as pequenas imperfeições do dia a dia ou no surgimento de crises existenciais profundas. Em determinados momentos, [P1] pode agir de forma {P1:retraída|retraído} em suas análises, enquanto [P2] pode flutuar em idealismos utópicos ou sofrer excessivamente pelas dores e injustiças do mundo exterior.</p>
+
+<p>Para que essa união master se estabilize, o casal precisa aprender a valorizar o plano físico, a rotina simples e o afeto prático e humano. Quando atingem essa maturidade, [P1] e [P2] realizam uma das uniões mais belas da numerologia, caracterizada por um amor transcendental, sábio e verdadeiramente libertador.</p>
+`,
+
+
+"88-1": `
+
+<p>A combinação entre [P1] e [P2] une a força realizadora e a autoridade com o pioneirismo, a coragem e o forte impulso de liderança. Esta é uma relação de imensa potência dinâmica, onde a capacidade de estruturar grandes objetivos se alia à iniciativa de abrir novos caminhos na vida.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece o foco estratégico, o senso de justiça e a capacidade de organização material, enquanto [P2] amplia a ousadia, a originalidade e a movimentação prática da convivência. Quando existe equilíbrio, ambos conseguem construir uma união altamente realizadora, independente e financeiramente próspera.</p>
+
+<p>Os desafios surgem quando a convivência é marcada por disputas de poder, autoritarismo ou teimosia mútua. Em determinados momentos, [P1] pode agir de forma {P1:exigente|exigente}, enquanto [P2] tende a demonstrar impulsividade ou intolerância diante de direcionamentos e regras.</p>
+
+<p>Para que essa união prospere, torna-se fundamental cultivar a flexibilidade, o respeito à liderança mútua e o diálogo sem imposições. Quando existe maturidade, [P1] e [P2] conseguem canalizar essa poderosa energia para construir um império conjunto, baseado no respeito e no sucesso mútuo.</p>
+`,
+
+"88-2": `
+
+<p>A união entre [P1] e [P2] promove o equilíbrio entre a força de realização material e a sensibilidade, diplomacia e cooperação afetiva. Essa combinação tende a desenvolver vínculos firmes e, ao mesmo tempo, acolhedores, onde o poder de construção ganha o suporte do afeto e da parceria sincera.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece a estabilidade financeira, a justiça e a segurança estrutural da relação, enquanto [P2] amplia o acolhimento, a paciência e a capacidade de harmonizar os conflitos do dia a dia. Quando existe sintonia, ambos conseguem construir uma vida confortável, próspera e emocionalmente equilibrada.</p>
+
+<p>Os desafios surgem quando aparecem posturas controladoras contrapostas à passividade ou mágoas guardadas em silêncio. Em determinados momentos, [P1] pode agir de forma {P1:autoritária|autoritário}, enquanto [P2] tende a se anular ou absorver as pressões externas além do necessário para evitar confrontos.</p>
+
+<p>Para que essa união prospere, torna-se importante estabelecer uma comunicação transparente e garantir que a força de um não sufoque a sensibilidade do outro. Quando maduros emocionalmente, [P1] e [P2] constroem uma relação de profunda cumplicidade, onde a segurança material apoia o bem-estar emocional.</p>
+`,
+
+"88-3": `
+
+<p>A combinação entre [P1] e [P2] une a seriedade da construção material com a expansão criativa, a comunicação e o entusiasmo pela vida. É uma relação dinâmica e estimulante, onde o foco e a determinação ganham o brilho da espontaneidade e da expressão social.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece a organização, o senso de justiça e o direcionamento estratégico, enquanto [P2] amplia a alegria de viver, a criatividade e a capacidade de trazer leveza e otimismo para a rotina. Quando existe equilíbrio, o casal consegue prosperar financeiramente enquanto desfruta dos prazeres da vida social e cultural.</p>
+
+<p>Os desafios surgem quando a cobrança por resultados bate de frente com a dispersão ou com o excesso de gastos. Em determinados momentos, [P1] pode agir de forma {P1:crítica|crítico} e focada demais no trabalho, enquanto [P2] tende a evitar as responsabilidades sérias em busca de divertimento ou descompromisso.</p>
+
+<p>Para que essa união prospere, torna-se importante alinhar a disciplina material com momentos livres para o lazer e a descontração em casal. Quando existe consciência, [P1] e [P2] constroem uma parceria de grande sucesso, que sabe trabalhar duro, mas também celebrar cada conquista com alegria.</p>
+`,
+
+"88-4": `
+
+<p>A união entre [P1] e [P2] intensifica ao máximo os conceitos de estabilidade, segurança, trabalho focado e construção de bases sólidas. Esta combinação é sinônimo de um porto seguro, ideal para o desenvolvimento de projetos de longo prazo e para a consolidação de um patrimônio familiar firme.</p>
+
+<p>Nos aspectos positivos, [P1] fornece a visão macro de crescimento, a justiça e o magnetismo realizador, enquanto [P2] ancora os detalhes práticos, a rotina organizada, a disciplina e a sustentação diária do lar. Quando operam em harmonia, tornam-se uma dupla imbatível em termos de eficiência, lealdade e confiabilidade.</p>
+
+<p>Os desafios moram na tendência ao excesso de rigidez, apego à rotina ou no risco de transformar a relação em uma empresa, esquecendo o romantismo. Em determinados momentos, [P1] pode agir de forma {P1:exigente|exigente} nas cobranças, enquanto [P2] tende a se fechar em posturas inflexíveis ou teimosas.</p>
+
+<p>Para que essa união prospere, torna-se vital trazer momentos de leveza, quebrar a rotina com espontaneidade e cultivar demonstrações explícitas de afeto. Quando maduros, [P1] e [P2] edificam uma vida duradoura, próspera e marcada por um respeito mútuo inabalável.</p>
+`,
+
+"88-5": `
+
+<p>A combinação entre [P1] e [P2] une a busca por estabilidade e poder material com o dinamismo, o desejo de liberdade e o espírito de aventura. Essa relação vive sob uma constante dinâmica de expansão, onde a capacidade realizadora se alimenta da flexibilidade e da abertura para o novo.</p>
+
+<p>Nos aspectos positivos, [P1] confere estrutura, foco de longo prazo e segurança financeira para que o casal possa ousar, enquanto [P2] traz versatilidade, magnetismo pessoal e a coragem necessária para aceitar mudanças e quebrar preconceitos. Em equilíbrio, constroem uma vida movimentada, próspera e cheia de viagens ou negócios inovadores.</p>
+
+<p>Os desafios aparecem quando a necessidade de controle de um colide frontalmente com a pressa e a busca por total independência do outro. Em determinados momentos, [P1] pode agir de forma {P1:controladora|controlador}, enquanto [P2] tende a demonstrar instabilidade ou resistência em assumir compromissos estruturados na relação.</p>
+
+<p>Para que essa união prospere, é preciso negociar os limites da liberdade de forma que ambos se sintam seguros e respeitados. Quando há maturidade emocional, [P1] e [P2] conseguem unir o foco da matéria à velocidade da mudança, gerando uma convivência fascinante e altamente evolutiva.</p>
+`,
+
+"88-6": `
+
+<p>A união entre [P1] e [P2] harmoniza perfeitamente a busca pelo sucesso material e pela justiça com o ideal de família, lar acolhedor e responsabilidade afetiva. É uma das combinações mais voltadas para a proteção mútua e para o bem-estar do núcleo familiar e comunitário.</p>
+
+<p>Nos aspectos positivos, [P1] garante o suporte financeiro, a estabilidade e o direcionamento estratégico da vida a dois, enquanto [P2] amplia o cuidado caloroso, a beleza do ambiente, o romantismo e o suporte emocional. Quando em equilíbrio, criam um ambiente doméstico próspero, harmonioso e extremamente confortável.</p>
+
+<p>Os desafios surgem através de cobranças excessivas de ambas as partes ou quando o excesso de idealismo gera frustrações na convivência prática. Em determinados momentos, [P1] pode agir de forma {P1:fria|frio} devido ao foco nas obrigações externas, enquanto [P2] tende a cobrar atenção de maneira possessiva ou centralizar os problemas da família.</p>
+
+<p>Para que essa união prospere, torna-se necessário separar o tempo das obrigações do tempo do afeto puro, cultivando o romantismo sem cobranças. Quando maduros emocionalmente, [P1] e [P2] constroem uma das uniões mais sólidas, afetuosas e prósperas da numerologia, sendo uma verdadeira referência de estabilidade.</p>
+`,
+
+"88-7": `
+
+<p>A combinação entre [P1] e [P2] promove um encontro fascinante entre o poder realizador no mundo visível e a busca pela verdade profunda no mundo invisível. Esta relação une a inteligência estratégica e material com o refinamento mental, a intuição e a necessidade de profundidade intelectual.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece a estrutura prática, a justiça e a capacidade de dar solidez financeira à vida do casal, enquanto [P2] amplia a sabedoria interior, o filtro crítico e o respeito pelo espaço individual de reflexão. Quando existe equilíbrio, ambos conseguem construir uma união silenciosamente poderosa, respeitável e dotada de grande lucidez mental.</p>
+
+<p>Os desafios surgem quando a convivência se torna excessivamente fria, racionalizada ou distante no campo dos afetos. Em determinados momentos, [P1] pode agir de forma {P1:exigente|exigente} ou materialista, enquanto [P2] tende a se isolar em seus próprios pensamentos, criando barreiras de silêncio na relação.</p>
+
+<p>Para que essa união prospere, torna-se importante equilibrar o foco nos resultados externos com momentos dedicados à troca emocional e ao companheirismo espontâneo. Quando maduros, [P1] e [P2] constroem uma parceria brilhante, onde a riqueza material serve de suporte para o crescimento intelectual e espiritual.</p>
+`,
+
+"88-8": `
+
+<p>A união entre [P1] e [P2] intensifica intensamente a busca pela justiça, pela ordem e pela conquista de uma sólida estrutura material. Esta é uma combinação de alta performance, onde o foco na eficiência, no planejamento estratégico e na liderança prática dita o ritmo da convivência.</p>
+
+<p>Nos aspectos positivos, [P1] e [P2] trazem para a relação uma enorme capacidade de trabalho, ambição construtiva e discernimento para lidar com grandes responsabilidades. Quando existe equilíbrio e os objetivos estão alinhados, ambos conseguem erguer um patrimônio sólido e conquistar uma posição de grande respeito e estabilidade.</p>
+
+<p>Os desafios moram no perigo de a relação se transformar em um ambiente de competição corporativa, gerando disputas veladas de poder ou cobranças excessivas. Em determinados momentos, [P1] pode agir de forma {P1:rigorosa|rigoroso} e inflexível, enquanto [P2] tende a focar excessivamente nas obrigações externas, deixando o afeto e a sensibilidade em segundo plano.</p>
+
+<p>Para que essa união prospere, torna-se vital desarmar as posturas de comando dentro de casa, cultivando o romantismo, a vulnerabilidade e o descanso em casal. Quando maduros emocionalmente, [P1] e [P2] formam uma das duplas mais realizadoras da numerologia, unindo forças para vencer qualquer obstáculo com maestria.</p>
+`,
+
+"88-9": `
+
+<p>A combinação entre [P1] e [P2] une o topo da realização material e financeira com o ápice do desapego, do idealismo e da visão humanitária. É um encontro profundamente transformador, onde os recursos e a força prática se colocam a serviço de grandes propósitos e do bem-estar coletivo.</p>
+
+<p>Nos aspectos positivos, [P1] confere a estabilidade, a justiça e a capacidade de organização necessárias para estruturar a vida, enquanto [P2] amplia os horizontes com generosidade, sabedoria universal e a capacidade de encerrar velhos ciclos emocionais. Em sintonia, constroem uma união inspiradora, madura e socialmente respeitada.</p>
+
+<p>Os desafios aparecem quando a frieza material de um colide com a hipersensibilidade ou o idealismo utópico do outro, gerando crises de valores. Em determinados momentos, [P1] pode agir de forma {P1:fria|frio} ou controladora, enquanto [P2] tende a se doar excessivamente para o mundo exterior, esquecendo-se de cuidar da harmonia prática da própria casa.</p>
+
+<p>Para que essa união prospere, é fundamental alinhar os pés no chão com os ideais do coração, garantindo que haja cuidado tanto com a estabilidade financeira quanto com a doação afetiva. Quando existe maturidade, [P1] e [P2] realizam uma parceria cheia de significado, onde o sucesso material caminha lado a lado com a evolução espiritual.</p>
+`,
+
+"88-88": `
+
+<p>A combinação master entre [P1] e [P2] eleva a energia da justiça implacável, da autoridade material e da colheita cármica ao seu grau mais alto. Esta é uma união de gigantes em termos de energia realizadora, projetada para gerenciar grandes estruturas, manifestar abundância e exercer liderança com absoluta maestria.</p>
+
+<p>Nos aspectos positivos, [P1] e [P2] espelham um no outro um magnetismo realizador incomum, uma determinação inabalável e um compromisso profundo com a verdade e a retidão. Quando ambos estão vibrando em alta frequência e trabalhando em prol de um propósito justo, convertem a convivência em uma potência indestrutível, capaz de materializar qualquer objetivo de longo prazo.</p>
+
+<p>Os desafios desta configuração master são severos e giram em torno do orgulho, do excesso de controle e da dificuldade extrema de ceder. Em determinados momentos, [P1] pode agir de forma {P1:irredutível|irredutível} em suas posições, enquanto [P2] pode assumir uma postura executiva tão densa que o calor emocional e a ternura da relação correm o risco de congelar.</p>
+
+<p>Para que essa união master se sustente de forma saudável, o casal precisa lembrar que o lar não é um tribunal nem uma empresa, abrindo espaço para a fragilidade, o carinho e o perdão recíproco. Quando ancorados na maturidade do espírito, [P1] e [P2] manifestam um império de prosperidade legítima, respeito eterno e sabedoria administrativa.</p>
+`,
+
+"88-99": `
+
+<p>A união master entre [P1] e [P2] representa o encontro definitivo entre o poder máximo de manifestação na Terra e a sabedoria absoluta do desapego e do amor universal. Esta combinação desenha um cenário de profunda transmutação cármica, onde o casal é impulsionado a liderar grandes transformações e a deixar um legado humanitário real no mundo.</p>
+
+<p>Nos aspectos positivos, [P1] ancora a ordem, a justiça, a estrutura e a abundância material necessária para dar suporte aos planos, enquanto [P2] coroa a relação com compaixão infinita, desapego aos pequenos dramas e uma visão espiritual de largo alcance. Juntos, operam milagres cotidianos, unindo a força da matéria à iluminação da alma.</p>
+
+<p>Os desafios surgem na gigantesca voltagem emocional e existencial que essa frequência exige, podendo gerar crises de identidade, flutuações financeiras ou cansaço psicológico devido às cobranças do destino. Em determinados momentos, [P1] pode agir de forma {P1:exigente|exigente} quanto aos resultados e à estabilidade, enquanto [P2] pode se perder em idealismos ou sofrer excessivamente pelo coletivo, negligenciando a intimidade do casal.</p>
+
+<p>Para que essa união master prospere, é vital que o casal aprenda a blindar a relação dos ruídos externos, valorizando as alegrias simples do cotidiano e o afeto humano básico. Quando plenamente integrados, [P1] e [P2] constroem uma das jornadas mais belas e elevadas da numerologia, sendo um verdadeiro farol de cura, prosperidade e generosidade para a humanidade.</p>
+`,
+
+"99-1": `
+
+<p>A combinação entre [P1] e [P2] une o topo da sabedoria espiritual e do desapego com a força do recomeço, da individualidade e do pioneirismo. Esta relação cria uma dinâmica única de transição, onde o encerramento de velhos padrões abre espaço para o nascimento de uma nova e corajosa jornada a dois.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece a visão humanitária, a generosidade e a maturidade emocional, enquanto [P2] amplia a coragem, a iniciativa e o entusiasmo para movimentar a vida prática. Quando existe equilíbrio, ambos conseguem construir uma união inspiradora, onde o desapego sábio serve de base para conquistas totalmente originais.</p>
+
+<p>Os desafios surgem quando o desejo de isolamento ou o idealismo de um colide com o egocentrismo ou a impaciência do outro. Em determinados momentos, [P1] pode agir de forma {P1:desconectada|desconectado} da realidade, enquanto [P2] tende a demonstrar autoritarismo ou pressãõ excessiva para que as coisas aconteçam do seu jeito.</p>
+
+<p>Para que essa união prospere, torna-se importante canalizar a sabedoria acumulada para apoiar as iniciativas individuais de forma justa, sem anular a identidade de ninguém. Quando existe maturidade, [P1] e [P2] constroem uma relação altamente evolutiva, capaz de liderar transformações profundas dentro e fora do lar.</p>
+`,
+
+"99-2": `
+
+<p>A união entre [P1] e [P2] promove o encontro entre o amor universal e a sensibilidade afetiva, a diplomacia e o desejo de cooperação mútua. Esta é uma combinação de altíssima vibração emocional, voltada para o acolhimento, a empatia profunda e a busca por uma harmonia de alma.</p>
+
+<p>Nos aspectos positivos, [P1] confere uma visão ampla da vida, sabedoria espiritual e desapego aos pequenos conflitos, enquanto [P2] traz a doçura, o cuidado com os detalhes do dia a dia e a capacidade de nutrir a parceria. Quando em sintonia, o casal constrói um ambiente de paz, compreensão mútua e sincero companheirismo.</p>
+
+<p>Os desafios moram no excesso de suscetibilidade emocional, no risco de carregar mágoas em silêncio ou na tendência a se sacrificarem demais pelo outro, esquecendo de si mesmos. Em determinados momentos, [P1] pode agir de forma {P1:melancólica|melancólico} devido às dores do mundo, enquanto [P2] tende a se tornar excessivamente dependente ou inseguro na relação.</p>
+
+<p>Para que essa união prospere, torna-se vital estabelecer limites saudáveis para que a doação mútua não vire anulação, cultivando a clareza e a leveza na comunicação. Na maturidade, [P1] e [P2] edificam uma relação profundamente curadora, acolhedora e baseada em uma sintonia afetiva genuína.</p>
+`,
+
+"99-3": `
+
+<p>A combinação entre [P1] e [P2] sintoniza a profundidade do amor universal com a expansão criativa, a alegria de viver e a livre expressão das emoções. É uma união vibrante e artística, marcada por uma intensa troca de ideais, comunicação aberta e forte magnetismo social.</p>
+
+<p>Nos aspectos positivos, [P1] traz o senso de propósito, a generosidade e a sabedoria que ancora a relação, enquanto [P2] amplia o otimismo, a imaginação e a capacidade de colorir a rotina com descontração e entusiasmo. Quando equilibrados, inspiram todos ao redor e transformam a convivência em uma jornada fluida e estimulante.</p>
+
+<p>Os desafios aparecem quando a seriedade das crises existenciais bate de frente com a superficialidade ou com a dispersão de energia. Em determinados momentos, [P1] pode agir de forma {P1:distante|distante} e imerso em seus pensamentos, enquanto [P2] tende a dramatizar situações ou gastar energia com futilidades para fugir das questões profundas.</p>
+
+<p>Para que essa união prospere, é necessário encontrar o ponto de equilíbrio entre a responsabilidade com o todo e o direito de simplesmente desfrutar o presente com leveza. Quando há consciência, [P1] e [P2] dão vida a uma parceria incrivelmente criativa, expressiva e cheia de significado espiritual e cultural.</p>
+`,
+
+"99-4": `
+
+<p>A união entre [P1] e [P2] promove o equilíbrio entre as grandes aspirações humanitárias e a necessidade de estabilidade, ordem e bases concretas na Terra. É o encontro do idealismo transformador com a estrutura prática, ideal para manifestar sonhos elevados de forma organizada.</p>
+
+<p>Nos aspectos positivos, [P1] fornece a visão ampla, o desapego e a sabedoria de longo alcance, enquanto [P2] ancora a disciplina, o trabalho dedicado, a organização financeira e a segurança do lar. Quando operam em harmonia, conseguem canalizar o amor universal em projetos sólidos, duradouros e altamente eficientes.</p>
+
+<p>Os desafios surgem na fricção entre a necessidade de liberdade e fluidez de um e o apego excessivo a regras, rotinas ou à estabilidade material do outro. Em determinados momentos, [P1] pode agir de forma {P1:imprevisível|imprevisível} em suas buscas por mudanças, enquanto [P2] tende a demonstrar rigidez, teimosia ou inflexibilidade diante do novo.</p>
+
+<p>Para que essa união prospere, torna-se fundamental que haja flexibilidade de ambas as partes, entendendo que a estrutura serve para apoiar a evolução, e não para aprisioná-la. Quando maduros, [P1] e [P2] constroem uma vida extremamente leal, estável e respeitável, unindo o céu da sabedoria com o chão da realidade.</p>
+`,
+
+"99-5": `
+
+<p>A combinação entre [P1] e [P2] une o ápice da transmutação espiritual com a velocidade das mudanças, a versatilidade e a busca incessante por liberdade e novas experiências. Esta é uma relação intensamente dinâmica, livre de preconceitos e voltada para a expansão constante dos horizontes existenciais.</p>
+
+<p>Nos aspectos positivos, [P1] confere a maturidade, a compaixão e o desapego necessários para permitir que o outro cresça, enquanto [P2] amplia o magnetismo, o espírito de aventura e o movimento prático da convivência através de viagens e transformações. Em equilíbrio, vivem uma rotina estimulante, livre de amarras e cheia de descobertas.</p>
+
+<p>Os desafios se manifestam na falta de aterramento, na instabilidade emocional recorrente ou na dificuldade de fixar raízes e construir segurança a longo prazo. Em determinados momentos, [P1] pode agir de forma {P1:desapegada|desapegado} excessivamente, parecendo indiferente, enquanto [P2] tende a demonstrar ansiedade, rebeldia ou recusa em assumir compromissos práticos na relação.</p>
+
+<p>Para que essa união prospere, torna-se indispensável cultivar um porto seguro mínimo na realidade prática e manter o diálogo transparente sobre o rumo do casal. Quando maduros emocionalmente, [P1] e [P2] conseguem viver uma das uniões mais livres, transformadoras e filosoficamente ricas da numerologia.</p>
+`,
+
+"99-6": `
+
+<p>A união entre [P1] e [P2] sintoniza em perfeita harmonia o amor universal com o amor familiar, o romantismo e o profundo senso de responsabilidade afetiva. É uma combinação de extrema beleza e calor humano, inteiramente voltada para o bem-estar do parceiro, do lar e da comunidade.</p>
+
+<p>Nos aspectos positivos, [P1] traz a sabedoria da alma, a generosidade e a visão compassiva perante as falhas humanas, enquanto [P2] amplia o cuidado caloroso, o aconchego, o ideal de família ideal e a harmonia estética do ambiente do casal. Quando sintonizados, constroem um refúgio doméstico de profunda paz, amor e acolhimento.</p>
+
+<p>Os desafios aparecem quando as expectativas idealizadas sobre o parceiro geram cobranças veladas ou quando o casal absorve os problemas do mundo e dos parentes a ponto de sufocar a intimidade. Em determinados momentos, [P1] pode agir de forma {P1:resignada|resignado} ou melancólica, enquanto [P2] tende a demonstrar ciúme, superproteção ou possessividade excessiva.</p>
+
+<p>Para que essa união prospere, o casal precisa aprender a blindar a sua privacidade e a aceitar a realidade do cotidiano com todas as suas imperfeições humanas. Quando maduros emocionalmente, [P1] e [P2] realizam uma união exemplar, marcada por um amor incondicional, generoso, próspero e verdadeiramente curador.</p>
+`,
+
+
+"99-7": `
+
+<p>A combinação entre [P1] e [P2] promove um profundo encontro voltado para o amadurecimento espiritual, a busca pela verdade e o refinamento mental. Esta relação une a compaixão e o amor universal com a análise criteriosa, a intuição e a necessidade de silêncio e introspecção qualificada.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece a generosidade, a visão ampla da vida e a capacidade de compreender os ciclos humanos, enquanto [P2] amplia a sabedoria interior, o discernimento intelectual e o respeito ao espaço individual. Quando existe equilíbrio, ambos conseguem construir uma união silenciosa, extremamente inteligente e baseada em uma conexão mental e intuitiva muito acima da média.</p>
+
+<p>Os desafios surgem quando o casal se isola excessivamente do convívio social, caindo na frieza, no silêncio distante ou em análises excessivamente críticas um do outro. Em determinados momentos, [P1] pode agir de forma {P1:melancólica|melancólico}, enquanto [P2] tende a se fechar em seus próprios pensamentos, criando barreiras invisíveis na comunicação do casal.</p>
+
+<p>Para que essa união prospere, torna-se fundamental cultivar a partilha das descobertas internas e forçar demonstrações ativas de afeto e calor humano na rotina. Quando maduros, [P1] e [P2] constroem uma relação de profunda elevação, cumplicidade intelectual e respeito sagrado de alma.</p>
+`,
+
+"99-8": `
+
+<p>A união entre [P1] e [P2] harmoniza o ápice do desapego e do idealismo humanitário com a força do poder material, da justiça e da capacidade de realização prática. É uma relação de grande impacto, onde os recursos tangíveis se alinham a uma visão de largo alcance para construir algo que faça a diferença no mundo.</p>
+
+<p>Nos aspectos positivos, [P1] traz a sabedoria da alma, a compaixão e a visão universal, enquanto [P2] confere o pragmatismo, a determinação e a competência estratégica para estruturar a vida material e financeira do casal. Quando em sintonia, ambos conseguem construir uma vida próspera, respeitável e amplamente generosa.</p>
+
+<p>Os desafios aparecem na fricção entre o desapego de um e o foco nos resultados materiais do outro, gerando incompreensões sobre o valor das coisas. Em determinados momentos, [P1] pode agir de forma {P1:desprendida|desprendido} a ponto de parecer negligente com o plano físico, enquanto [P2] tende a demonstrar exigência extrema ou postura controladora.</p>
+
+<p>Para que essa união prospere, é preciso alinhar os pés no chão da realidade prática com os ideais elevados do coração, dividindo as tarefas com sabedoria. Quando existe maturidade, [P1] e [P2] realizam uma parceria fantástica, onde o sucesso financeiro serve de canal para a manifestação de um bem maior.</p>
+`,
+
+"99-9": `
+
+<p>A combinação entre [P1] e [P2] intensifica ao máximo a energia do desapego, da transmutação espiritual e do amor universal. Esta relação vive sob a frequência da sabedoria acumulada, ideal para o encerramento de velhos padrões cármicos e para a vivência de um companheirismo profundamente generoso e transformador.</p>
+
+<p>Nos aspectos positivos, [P1] e [P2] espelham um no outro uma capacidade incomparável de compreensão, compaixão e empatia pelas falhas humanas. Quando sintonizados em seus propósitos, atuam como um farol de cura e inspiração, vivendo uma relação livre de pequenos egoísmos e cheia de significado espiritual.</p>
+
+<p>Os desafios residem na alta voltagem emocional dessa vibração, que pode atrair crises existenciais, melancolia ou uma forte tendência a negligenciar as necessidades básicas da vida cotidiana. Em determinados momentos, [P1] pode agir de forma {P1:resignada|resignado} diante dos problemas, enquanto [P2] pode se perder em idealismos utópicos, esquecendo de blindar a intimidade do casal.</p>
+
+<p>Para que essa união prospere, torna-se indispensável trazer o foco para o presente, valorizando a rotina simples, o afeto prático e o cuidado mútuo com a realidade física. Na maturidade, [P1] e [P2] constroem uma das jornadas mais belas da numerologia, marcada por um amor transcendental, sábio e inteiramente libertador.</p>
+`,
+
+"99-99": `
+
+<p>A combinação master definitiva entre [P1] e [P2] eleva a frequência da compaixão absoluta, da sabedoria espiritual e da transmutação cármica ao seu ápice absoluto na numerologia. Esta é uma união de almas essencialmente velhas e sábias, cujo vínculo transcende as amarras comuns e se volta para a conclusão dos grandes ciclos evolutivos da vida.</p>
+
+<p>Nos aspectos positivos, [P1] e [P2] compartilham uma conexão psíquica e espiritual avassaladora, onde o amor incondicional, o desapego e a generosidade guiam cada passo da convivência. Quando ambos estão operando em alta frequência, convertem a relação em um verdadeiro santuário de cura e em um farol humanitário capaz de transformar o ambiente ao redor.</p>
+
+<p>Os desafios desta configuração master são profundos e envolvem o risco de desconexão total com a realidade material, gerando instabilidade prática ou uma sensação crônica de inadequação ao mundo. Em determinados momentos, [P1] pode agir de forma {P1:distante|distante} e imerso em crises existenciais, enquanto [P2] pode absorver o sofrimento coletivo a ponto de esgotar a própria energia vital e afetiva do lar.</p>
+
+<p>Para que essa união master se sustente de forma saudável na Terra, o casal precisa ancorar as energias praticando o aterramento, cuidando da saúde financeira e protegendo fervorosamente a sua privacidade. Quando plenamente integrados na maturidade do espírito, [P1] e [P2] manifestam a expressão mais pura do amor transcendental: sábio, curador e eternamente livre.</p>
+`
     
   
  }
