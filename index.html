@@ -1148,30 +1148,31 @@ function mostrarSinastria(){
 
   if(!dados1 || !dados2) return;
 
-  const nome1 =
-    document.getElementById("social1").value ||
-    document.getElementById("nome1").value;
+  const nome1 = document.getElementById("nome1").value;
+  const nome2 = document.getElementById("nome2").value;
 
-  const nome2 =
-    document.getElementById("social2").value ||
-    document.getElementById("nome2").value;
+  // PRIMEIRO NOME
+  const social1 = document.getElementById("social1").value || nome1.split(' ')[0];
+  const social2 = document.getElementById("social2").value || nome2.split(' ')[0];
 
-  const chave =
-    chaveSinastria(dados1.proposito, dados2.proposito);
-
-  let texto =
-    textos.sinastria[chave] ||
-    `<p>A combinação entre [P1] e [P2].</p>`;
-
-  texto = texto
-    .replaceAll("[P1]", nome1)
-    .replaceAll("[P2]", nome2);
-
-  texto = aplicarGenero(texto);
-
-  abrirModalTexto(
-    `<h3>Harmonia Conjugal – ${nome1} com ${nome2}</h3>${texto}`
+  const chave = chaveSinastria(
+    dados1.proposito,
+    dados2.proposito
   );
+
+  let texto = textos.sinastria[chave] ||
+  `A combinação entre [P1] e [P2].`;
+
+  texto = processarTextoSinastria(
+    texto,
+    social1,
+    social2
+  );
+
+  abrirModalTexto(`
+    <h3>Harmonia Conjugal – ${social1} com ${social2}</h3>
+    ${texto}
+  `);
 }
 
 
