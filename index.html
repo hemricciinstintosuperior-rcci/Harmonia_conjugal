@@ -1331,14 +1331,32 @@ function mostrarSequenciaNegativa(idRegente){
   // =========================
   // BEBÊ
   // =========================
-  else if (idRegente === "regenteBebe") {
+else if (idRegente === "regenteBebe") {
 
-      d = dadosBebe;
+    d = dadosBebe;
 
-      n = document.getElementById("socialBebe").value || 
-          document.getElementById("nomeBebe").value;
+    n = (
+        document.getElementById("socialBebe").value ||
+        document.getElementById("nomeBebe").value
+    ).split(' ')[0];
 
-      bancoDeTextos = textos.sequenciaNegativabb || textos.sequenciaNegativa;
+    bancoDeTextos = textos.sequenciaNegativabb;
+
+    // Compatibilidade com a nova estrutura da pirâmide
+    d.sequenciaNegativa = (
+        d.detalhesNegativas || []
+    ).map(x => {
+
+        let chave = x.numero || x;
+
+        // transforma "111" em 1
+        if (typeof chave === "string") {
+            chave = Number(chave[0]);
+        }
+
+        return chave;
+    });
+}
 
       // AQUI O BEBÊ USA detalhesNegativas
       if (!d || !d.detalhesNegativas || d.detalhesNegativas.length === 0) {
