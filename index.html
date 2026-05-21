@@ -1281,107 +1281,55 @@ function mostrarSequenciaNegativa(idRegente){
   let d = null;
   let n = "";
   let bancoDeTextos = textos.sequenciaNegativa;
+  let listaSequencias = [];
 
-  // =========================
-  // PESSOA 1
-  // =========================
   if (idRegente === "regente1") {
 
       d = dados1;
-      n = document.getElementById("social1").value || 
-          document.getElementById("nome1").value;
+      n = (document.getElementById("social1").value || document.getElementById("nome1").value).split(' ')[0];
 
       bancoDeTextos = textos.sequenciaNegativa;
+      listaSequencias = d.sequenciaNegativa || [];
 
-      if (!d || !d.sequenciaNegativa || d.sequenciaNegativa.length === 0) {
-          return abrirModalTexto("Nenhuma sequência.");
-      }
-
-      return abrirModalTexto(
-          formatarTextoPersonalizado(
-              d.sequenciaNegativa.map(x => bancoDeTextos[x]).join("<br><br>"),
-              n.split(" ")[0]
-          )
-      );
-  }
-
-  // =========================
-  // PESSOA 2 (FEMININO)
-  // =========================
-  else if (idRegente === "regente2") {
+  } else if (idRegente === "regente2") {
 
       d = dados2;
-      n = document.getElementById("social2").value || 
-          document.getElementById("nome2").value;
+      n = (document.getElementById("social2").value || document.getElementById("nome2").value).split(' ')[0];
 
       bancoDeTextos = textosFeminino.sequenciaNegativa || textos.sequenciaNegativa;
+      listaSequencias = d.sequenciaNegativa || [];
 
-      if (!d || !d.sequenciaNegativa || d.sequenciaNegativa.length === 0) {
-          return abrirModalTexto("Nenhuma sequência.");
-      }
+  } else if (idRegente === "regenteBebe") {
 
-      return abrirModalTexto(
-          formatarTextoPersonalizado(
-              d.sequenciaNegativa.map(x => bancoDeTextos[x]).join("<br><br>"),
-              n.split(" ")[0]
-          )
-      );
+      d = dadosBebe;
+      n = (document.getElementById("socialBebe").value || document.getElementById("nomeBebe").value).split(' ')[0];
+
+      bancoDeTextos = textos.sequenciaNegativabb;
+
+      // AQUI ESTÁ A CORREÇÃO REAL
+      listaSequencias = d.detalhesNegativas || d.sequenciaNegativa || [];
   }
 
-  // =========================
-  // BEBÊ
-  // =========================
-else if (idRegente === "regenteBebe") {
+  if (!listaSequencias || listaSequencias.length === 0) {
+      return abrirModalTexto("Nenhuma sequência.");
+  }
 
-    d = dadosBebe;
+  let htmlFinal = listaSequencias.map(x => {
 
-    n = (
-        document.getElementById("socialBebe").value ||
-        document.getElementById("nomeBebe").value
-    ).split(' ')[0];
+      let chave = x.numero || x;
 
-    bancoDeTextos = textos.sequenciaNegativabb;
-
-    // Compatibilidade com a nova estrutura da pirâmide
-    d.sequenciaNegativa = (
-        d.detalhesNegativas || []
-    ).map(x => {
-
-        let chave = x.numero || x;
-
-        // transforma "111" em 1
-        if (typeof chave === "string") {
-            chave = Number(chave[0]);
-        }
-
-        return chave;
-    });
-}
-
-      // AQUI O BEBÊ USA detalhesNegativas
-      if (!d || !d.detalhesNegativas || d.detalhesNegativas.length === 0) {
-          return abrirModalTexto("Nenhuma sequência.");
+      // transforma 111 -> 1
+      if (typeof chave === "string" && chave.length >= 3) {
+          chave = Number(chave[0]);
       }
 
-      return abrirModalTexto(
-          formatarTextoPersonalizado(
+      return bancoDeTextos[chave];
 
-              d.detalhesNegativas.map(x => {
+  }).join("<br><br>");
 
-                  // "111" -> 1
-                  // "222" -> 2
-                  // "666" -> 6
-                  const chave = Number(String(x.numero).charAt(0));
-
-                  return bancoDeTextos[chave];
-
-              }).join("<br><br>"),
-
-              n.split(" ")[0]
-
-          )
-      );
-  }
+  abrirModalTexto(
+      formatarTextoPersonalizado(htmlFinal, n)
+  );
 }
 
 function gerar(){
