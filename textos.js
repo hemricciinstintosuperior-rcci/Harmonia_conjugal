@@ -2042,7 +2042,901 @@ sinastria : {
 <p>Os desafios surgem quando aparecem excesso de idealização, desgaste emocional ou tendência a absorver problemas externos além do necessário. Em determinados momentos, [P1] pode agir de forma {P1:sensível|sensível}, enquanto [P2] tende a colocar necessidades externas acima das prioridades emocionais da relação.</p>
 
 <p>Para que essa união prospere, torna-se importante desenvolver limites saudáveis, equilíbrio emocional e atenção à vida afetiva cotidiana. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação inspiradora, acolhedora e voltada para crescimento humano e espiritual.</p>
-`
+`,
+
+"11-1": `
+
+<p>A união entre [P1] e [P2] combina percepção intuitiva elevada, sensibilidade emocional e forte necessidade de independência. Essa relação tende a unir profundidade emocional e visão abstrata com iniciativa, liderança e capacidade de ação.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece percepção emocional, criatividade e consciência metafísica dentro da relação, enquanto [P2] amplia coragem, objetividade e dinamismo nas decisões do casal. Quando existe equilíbrio, [P1] e [P2] conseguem construir vínculo motivador, intenso e cheio de crescimento pessoal.</p>
+
+<p>Os desafios surgem quando aparecem impulsividade, excesso de sensibilidade ou dificuldade em equilibrar emoção e racionalidade prática. Em determinados momentos, [P1] pode agir de forma {P1:emocionalmente instável|emocionalmente instável}, enquanto [P2] tende a demonstrar comportamento {P2:autoritária|autoritário} ou excessivamente individualista.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer diálogo emocional, compreensão das diferenças internas e equilíbrio entre sensibilidade e independência. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação intensa, inspiradora e extremamente transformadora.</p>
+`,
+
+"11-2": `
+
+<p>A união entre [P1] e [P2] é marcada por forte sensibilidade emocional, percepção intuitiva e necessidade de harmonia afetiva. Essa combinação favorece conexão emocional profunda, empatia e grande capacidade de compreensão dentro da relação.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece intuição, criatividade e percepção emocional ampliada, enquanto [P2] amplia diplomacia, acolhimento e equilíbrio afetivo no vínculo. Quando existe sintonia, [P1] e [P2] conseguem construir união delicada, harmoniosa e emocionalmente enriquecedora.</p>
+
+<p>Os desafios surgem quando aparecem insegurança emocional, excesso de dependência afetiva ou dificuldade em lidar com oscilações internas da relação. Em determinados momentos, [P1] pode agir de forma {P1:ansiosa|ansioso}, enquanto [P2] tende a evitar conflitos ou absorver emoções além do necessário.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer segurança emocional, diálogo transparente e estabilidade afetiva. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação acolhedora, intuitiva e profundamente significativa.</p>
+`,
+
+"11-3": `
+
+<p>A união entre [P1] e [P2] combina sensibilidade elevada, percepção intuitiva e forte necessidade de expressão emocional. Essa relação tende a unir profundidade emocional, criatividade e comunicação afetiva intensa.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece consciência metafísica, percepção emocional e profundidade nas conexões, enquanto [P2] amplia espontaneidade, carisma e capacidade de trazer leveza para a relação. Quando existe equilíbrio, [P1] e [P2] conseguem construir união criativa, estimulante e emocionalmente rica.</p>
+
+<p>Os desafios surgem quando aparecem instabilidade emocional, excesso de expectativas ou dificuldade em manter constância emocional dentro da relação. Em determinados momentos, [P1] pode agir de forma {P1:sensível|sensível}, enquanto [P2] tende a dispersar emoções ou evitar aprofundamento emocional excessivo.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer maturidade emocional, clareza afetiva e equilíbrio entre profundidade e leveza emocional. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação inspiradora, comunicativa e cheia de crescimento interno.</p>
+`,
+
+"11-4": `
+
+<p>A união entre [P1] e [P2] combina percepção intuitiva elevada com estabilidade, disciplina e necessidade de segurança emocional. Essa relação tende a unir sensibilidade profunda e visão abstrata com organização prática e construção sólida.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece criatividade, percepção emocional e consciência intuitiva dentro da relação, enquanto [P2] amplia estabilidade, responsabilidade e capacidade de estruturar a vida em conjunto. Quando existe equilíbrio, [P1] e [P2] conseguem construir vínculo seguro, consistente e emocionalmente profundo.</p>
+
+<p>Os desafios surgem quando aparecem rigidez emocional, excesso de cobrança ou dificuldade em compreender diferentes formas de lidar com sentimentos. Em determinados momentos, [P1] pode agir de forma {P1:emocionalmente intensa|emocionalmente intenso}, enquanto [P2] tende a demonstrar comportamento excessivamente racional ou inflexível.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver flexibilidade emocional, diálogo sincero e equilíbrio entre sensibilidade e estabilidade prática. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação sólida, intuitiva e altamente confiável.</p>
+`,
+
+"11-5": `
+
+<p>A união entre [P1] e [P2] é marcada por intensidade emocional, percepção intuitiva e forte necessidade de liberdade e movimento. Essa combinação favorece experiências transformadoras, expansão pessoal e relações emocionalmente estimulantes.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece profundidade emocional, percepção metafísica e capacidade de compreender aspectos internos da relação, enquanto [P2] amplia dinamismo, espontaneidade e desejo de novas experiências. Quando existe equilíbrio, [P1] e [P2] conseguem construir união intensa, criativa e cheia de evolução pessoal.</p>
+
+<p>Os desafios surgem quando aparecem instabilidade emocional, impulsividade ou dificuldade em equilibrar profundidade afetiva e necessidade de independência. Em determinados momentos, [P1] pode agir de forma {P1:carente|carente}, enquanto [P2] tende a demonstrar comportamento inquieto ou excessivamente imprevisível.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer confiança, estabilidade emocional e respeito à individualidade de cada um. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação dinâmica, intuitiva e extremamente transformadora.</p>
+`,
+
+"11-6": `
+
+<p>A união entre [P1] e [P2] combina sensibilidade elevada, percepção intuitiva e forte necessidade de afeto, cuidado e estabilidade emocional. Essa relação favorece vínculos profundos, acolhimento afetivo e grande dedicação à vida emocional do casal.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece consciência emocional, percepção metafísica e profundidade nas conexões afetivas, enquanto [P2] amplia proteção, responsabilidade emocional e capacidade de criar ambiente harmonioso dentro da relação. Quando existe sintonia, [P1] e [P2] conseguem construir união acolhedora, equilibrada e emocionalmente enriquecedora.</p>
+
+<p>Os desafios surgem quando aparecem excesso de sensibilidade, cobranças afetivas ou tendência ao apego emocional exagerado. Em determinados momentos, [P1] pode agir de forma {P1:emocionalmente dependente|emocionalmente dependente}, enquanto [P2] tende a assumir responsabilidades emocionais excessivas dentro da relação.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer equilíbrio emocional, autonomia afetiva e diálogo transparente sobre necessidades emocionais. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação harmoniosa, intuitiva e profundamente significativa.</p>
+`,
+
+"11-7": `
+
+<p>A união entre [P1] e [P2] é marcada por profundidade emocional, percepção intuitiva elevada e forte necessidade de compreensão mental e metafísica da vida. Essa combinação favorece introspecção, análise emocional e conexões baseadas em percepção interna e afinidade intelectual.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece sensibilidade emocional, consciência intuitiva e percepção abstrata dentro da relação, enquanto [P2] amplia racionalidade, capacidade analítica e busca por conhecimento e entendimento profundo das experiências vividas. Quando existe equilíbrio, [P1] e [P2] conseguem construir vínculo inteligente, reflexivo e emocionalmente enriquecedor.</p>
+
+<p>Os desafios surgem quando aparecem distanciamento emocional, excesso de introspecção ou dificuldade em expressar sentimentos de maneira clara. Em determinados momentos, [P1] pode agir de forma {P1:emocionalmente intensa|emocionalmente intenso}, enquanto [P2] tende a demonstrar comportamento reservado ou excessivamente racional.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer comunicação emocional, abertura afetiva e equilíbrio entre razão e sensibilidade. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação profunda, intuitiva e intelectualmente transformadora.</p>
+`,
+
+"11-8": `
+
+<p>A união entre [P1] e [P2] combina percepção intuitiva elevada, profundidade emocional e forte capacidade de realização material e liderança. Essa relação tende a unir sensibilidade interna e visão abstrata com ambição, estratégia e busca por crescimento concreto.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece percepção metafísica, criatividade e consciência emocional dentro da relação, enquanto [P2] amplia organização, disciplina e capacidade de transformar objetivos em resultados sólidos. Quando existe sintonia, [P1] e [P2] conseguem construir união poderosa, produtiva e emocionalmente intensa.</p>
+
+<p>Os desafios surgem quando aparecem excesso de cobrança, rigidez emocional ou dificuldade em equilibrar sensibilidade e pragmatismo. Em determinados momentos, [P1] pode agir de forma {P1:sensível|sensível}, enquanto [P2] tende a demonstrar comportamento controlador ou excessivamente focado em resultados materiais.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer empatia, diálogo emocional e equilíbrio entre objetivos externos e necessidades afetivas. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação forte, estratégica e profundamente transformadora.</p>
+`,
+
+"11-9": `
+
+<p>A união entre [P1] e [P2] é marcada por elevada sensibilidade emocional, percepção intuitiva e forte conexão baseada em idealismo e compreensão humana. Essa combinação favorece empatia, profundidade emocional e grande capacidade de compreender aspectos subjetivos da vida e das relações.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece consciência metafísica, percepção intuitiva e profundidade emocional dentro da relação, enquanto [P2] amplia compaixão, generosidade e capacidade de acolher emoções de maneira ampla e sensível. Quando existe equilíbrio, [P1] e [P2] conseguem construir vínculo inspirador, acolhedor e emocionalmente significativo.</p>
+
+<p>Os desafios surgem quando aparecem excesso de idealização, desgaste emocional ou tendência a absorver problemas além do necessário. Em determinados momentos, [P1] pode agir de forma {P1:emocionalmente vulnerável|emocionalmente vulnerável}, enquanto [P2] tende a carregar responsabilidades emocionais externas acima do saudável.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer limites emocionais, estabilidade afetiva e equilíbrio entre empatia e autocuidado. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação intuitiva, humanizada e profundamente enriquecedora.</p>
+`,
+
+"11-11": `
+
+<p>A união entre [P1] e [P2] é marcada por intensidade emocional, percepção intuitiva elevada e forte conexão metafísica. Essa combinação favorece profundidade emocional, expansão de consciência e grande sensibilidade na forma como ambos percebem a relação.</p>
+
+<p>Nos aspectos positivos, existe forte capacidade de compreensão emocional, sintonia intuitiva e percepção refinada das necessidades internas um do outro. Quando existe equilíbrio, [P1] e [P2] conseguem construir vínculo profundo, inspirador e baseado em forte conexão mental e emocional.</p>
+
+<p>Os desafios surgem quando aparecem excesso de sensibilidade, ansiedade emocional ou dificuldade em manter estabilidade diante das oscilações internas da relação. Em determinados momentos, [P1] pode agir de forma {P1:insegura|inseguro}, enquanto [P2] tende a absorver tensões emocionais e preocupações de maneira intensa.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver estabilidade emocional, clareza mental e equilíbrio entre razão e sensibilidade. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação intuitiva, metafísica e extremamente significativa.</p>
+`,
+
+"11-22": `
+
+<p>A união entre [P1] e [P2] combina sensibilidade elevada, percepção intuitiva e forte capacidade de construção material e estrutural. Essa relação tende a unir visão abstrata, profundidade emocional e grande potencial de realização concreta.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece percepção emocional, criatividade e consciência intuitiva dentro da relação, enquanto [P2] amplia estabilidade, planejamento e capacidade de transformar ideias em resultados concretos. Quando existe equilíbrio, [P1] e [P2] conseguem construir união sólida, produtiva e emocionalmente enriquecedora.</p>
+
+<p>Os desafios surgem quando aparecem excesso de cobrança, pressão emocional ou dificuldade em equilibrar sensibilidade e pragmatismo. Em determinados momentos, [P1] pode agir de forma {P1:emocionalmente instável|emocionalmente instável}, enquanto [P2] tende a assumir responsabilidades excessivas e comportamento muito rígido.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer diálogo emocional, equilíbrio interno e cooperação nas decisões importantes da relação. Quando maduros emocionalmente, [P1] e [P2] conseguem construir vínculo forte, estruturado e profundamente transformador.</p>
+`,
+
+"11-33": `
+
+<p>A união entre [P1] e [P2] é marcada por sensibilidade ampliada, forte percepção emocional e grande capacidade de acolhimento afetivo. Essa combinação favorece empatia, compreensão intuitiva e vínculos emocionais intensos.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece percepção metafísica, intuição e profundidade emocional dentro da relação, enquanto [P2] amplia acolhimento, apoio emocional e capacidade de fortalecer os laços afetivos do casal. Quando existe sintonia, [P1] e [P2] conseguem construir união inspiradora, harmoniosa e emocionalmente enriquecedora.</p>
+
+<p>Os desafios surgem quando aparecem excesso de sensibilidade, desgaste emocional ou tendência a absorver problemas além do necessário. Em determinados momentos, [P1] pode agir de forma {P1:ansiosa|ansioso}, enquanto [P2] tende a carregar responsabilidades emocionais excessivas dentro da relação.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver equilíbrio emocional, limites saudáveis e fortalecimento da individualidade emocional de cada um. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação acolhedora, intuitiva e profundamente significativa.</p>
+`,
+
+"11-44": `
+
+<p>A união entre [P1] e [P2] combina percepção intuitiva elevada com estabilidade, disciplina e forte necessidade de estrutura. Essa relação tende a unir sensibilidade emocional e visão abstrata com organização prática e capacidade de sustentação material.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece criatividade, percepção emocional e consciência intuitiva dentro da relação, enquanto [P2] amplia segurança, firmeza e estabilidade na construção da vida em conjunto. Quando existe equilíbrio, [P1] e [P2] conseguem construir união sólida, confiável e emocionalmente profunda.</p>
+
+<p>Os desafios surgem quando aparecem excesso de rigidez, cobrança emocional ou dificuldade em compreender diferenças na forma de lidar com sentimentos. Em determinados momentos, [P1] pode agir de forma {P1:sensível|sensível}, enquanto [P2] tende a demonstrar comportamento excessivamente racional ou controlador.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer diálogo emocional, flexibilidade e equilíbrio entre sensibilidade e estabilidade prática. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação segura, intuitiva e altamente estruturada.</p>
+`,
+
+"11-55": `
+
+<p>A união entre [P1] e [P2] é marcada por intensidade emocional, percepção intuitiva elevada e forte necessidade de liberdade, mudança e expansão pessoal. Essa combinação favorece experiências transformadoras, crescimento interno e relações emocionalmente intensas.</p>
+
+<p>Nos aspectos positivos, [P1] fortalece profundidade emocional, percepção metafísica e consciência intuitiva dentro da relação, enquanto [P2] amplia dinamismo, versatilidade e desejo constante de evolução e movimento. Quando existe sintonia, [P1] e [P2] conseguem construir união estimulante, criativa e cheia de experiências marcantes.</p>
+
+<p>Os desafios surgem quando aparecem instabilidade emocional, impulsividade ou dificuldade em manter constância afetiva diante das mudanças internas e externas da relação. Em determinados momentos, [P1] pode agir de forma {P1:emocionalmente dependente|emocionalmente dependente}, enquanto [P2] tende a demonstrar comportamento inquieto ou excessivamente imprevisível.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer confiança, estabilidade emocional e equilíbrio entre liberdade e compromisso afetivo. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação dinâmica, intuitiva e profundamente transformadora.</p>
+`,
+    
+  "11-66": `
+
+<p>A união entre [P1] e [P2] combina intensidade mental, sensibilidade elevada e forte senso de responsabilidade afetiva. Essa relação tende a despertar consciência emocional, necessidade de estabilidade e construção de vínculos profundos.</p>
+
+<p>Nos aspectos positivos, existe grande potencial para apoio mútuo, crescimento emocional e fortalecimento da vida em conjunto. Enquanto uma das energias amplia percepção intuitiva, análise e profundidade mental, a outra fortalece proteção, acolhimento e equilíbrio emocional. Quando existe sintonia, [P1] e [P2] conseguem construir relação madura, harmoniosa e extremamente significativa.</p>
+
+<p>Os desafios surgem quando aparecem excesso de cobrança emocional, sobrecarga afetiva ou tendência a assumir responsabilidades além do necessário. Em determinados momentos, [P1] pode agir de forma {P1:introspectiva|introspectivo}, enquanto [P2] tende a desenvolver comportamento {P2:protetora|protetor} ou excessivamente preocupado com equilíbrio da relação.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver leveza emocional, diálogo transparente e equilíbrio entre razão e sensibilidade. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação profunda, acolhedora e voltada para evolução emocional e metafísica.</p>
+`,
+
+"11-77": `
+
+<p>A união entre [P1] e [P2] é marcada por profundidade mental, busca por conhecimento e forte conexão intelectual. Essa combinação favorece reflexão, desenvolvimento intuitivo e interesse por temas existenciais, filosóficos e metafísicos.</p>
+
+<p>Nos aspectos positivos, ambos compartilham necessidade de compreensão profunda da vida, percepção refinada e capacidade de analisar emoções com intensidade. Existe potencial para relação reservada, inteligente e baseada em crescimento interno. Quando existe equilíbrio, [P1] e [P2] conseguem construir vínculo extremamente consciente e enriquecedor.</p>
+
+<p>Os desafios surgem quando aparecem excesso de isolamento emocional, dificuldade de demonstrar sentimentos ou tendência ao distanciamento afetivo. Em alguns momentos, [P1] pode agir de forma {P1:questionadora|questionador}, enquanto [P2] tende a demonstrar comportamento {P2:reservada|reservado} e excessivamente analítico.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer demonstrações afetivas, comunicação emocional e equilíbrio entre racionalidade e intimidade. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação profunda, inteligente e voltada para expansão da consciência.</p>
+`,
+
+"11-88": `
+
+<p>A combinação entre [P1] e [P2] une intensidade mental, percepção intuitiva e forte capacidade de realização. Essa relação tende a equilibrar visão estratégica, ambição e profundidade emocional com inteligência e poder de construção.</p>
+
+<p>Nos aspectos positivos, existe potencial para conquistas materiais, crescimento conjunto e fortalecimento de projetos importantes. Enquanto uma das energias amplia consciência, percepção e sensibilidade mental, a outra fortalece liderança, disciplina e concretização de objetivos. Quando existe sintonia, [P1] e [P2] conseguem formar parceria poderosa, produtiva e extremamente realizadora.</p>
+
+<p>Os desafios surgem quando aparecem excesso de cobrança, foco exagerado em resultados ou dificuldade em equilibrar emoções e responsabilidades. Em determinados momentos, [P1] pode agir de forma {P1:idealista|idealista}, enquanto [P2] tende a desenvolver comportamento {P2:controladora|controlador} ou excessivamente voltado para conquistas externas.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver empatia, equilíbrio emocional e cooperação afetiva. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação forte, estratégica e voltada para crescimento material e expansão consciente.</p>
+`,
+
+"11-99": `
+
+<p>A união entre [P1] e [P2] é marcada por intensidade emocional, percepção elevada e forte busca por significado existencial. Essa combinação favorece sensibilidade, empatia e conexão profunda baseada em propósito e consciência humana.</p>
+
+<p>Nos aspectos positivos, ambos compartilham visão ampla da vida, percepção intuitiva refinada e capacidade de compreender emoções com profundidade. Existe potencial para vínculo inspirador, acolhedor e emocionalmente transformador. Quando existe equilíbrio, [P1] e [P2] conseguem construir relação significativa, consciente e extremamente enriquecedora.</p>
+
+<p>Os desafios surgem quando aparecem excesso de sensibilidade, desgaste emocional ou tendência a absorver problemas externos além do necessário. Em alguns momentos, [P1] pode agir de forma {P1:intensa|intenso}, enquanto [P2] tende a colocar demandas emocionais externas acima das necessidades afetivas da relação.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver limites saudáveis, estabilidade emocional e equilíbrio entre idealismo e realidade cotidiana. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação inspiradora, profunda e voltada para evolução humana e metafísica.</p>
+`,
+
+"22-1": `
+
+<p>A união entre [P1] e [P2] combina liderança, visão estratégica e forte potencial de construção. Essa relação tende a despertar iniciativa, ambição equilibrada e capacidade de transformar objetivos em realizações concretas.</p>
+
+<p>Nos aspectos positivos, existe grande potencial para crescimento material, organização e fortalecimento de metas em conjunto. Enquanto uma das energias amplia disciplina, estrutura e visão de longo prazo, a outra fortalece iniciativa, coragem e capacidade de ação. Quando existe sintonia, [P1] e [P2] conseguem construir parceria poderosa, produtiva e extremamente realizadora.</p>
+
+<p>Os desafios surgem quando aparecem disputas de liderança, excesso de independência ou dificuldade em dividir decisões importantes. Em determinados momentos, [P1] pode agir de forma {P1:controladora|controlador}, enquanto [P2] tende a desenvolver comportamento {P2:impulsiva|impulsivo} ou excessivamente competitivo.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver cooperação, diálogo emocional e equilíbrio entre autoridade e sensibilidade. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação forte, estratégica e voltada para grandes realizações.</p>
+`,
+
+"22-2": `
+
+<p>A união entre [P1] e [P2] combina capacidade de construção, sensibilidade emocional e forte necessidade de equilíbrio afetivo. Essa relação tende a favorecer estabilidade, cooperação e fortalecimento emocional da vida em conjunto.</p>
+
+<p>Nos aspectos positivos, existe potencial para vínculo harmonioso, acolhedor e baseado em confiança mútua. Enquanto uma das energias fortalece disciplina, organização e visão estrutural, a outra amplia empatia, diplomacia e percepção emocional. Quando existe sintonia, [P1] e [P2] conseguem construir relação equilibrada, estável e emocionalmente significativa.</p>
+
+<p>Os desafios surgem quando aparecem excesso de dependência emocional, cobranças afetivas ou dificuldade em lidar com inseguranças. Em alguns momentos, [P1] pode agir de forma {P1:exigente|exigente}, enquanto [P2] tende a demonstrar comportamento {P2:sensível|sensível} e emocionalmente vulnerável.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer diálogo transparente, maturidade emocional e equilíbrio entre razão e afeto. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação acolhedora, segura e extremamente harmoniosa.</p>
+`,
+
+"22-3": `
+
+<p>A combinação entre [P1] e [P2] une construção, criatividade e forte capacidade de expressão. Essa relação tende a favorecer desenvolvimento intelectual, comunicação e crescimento através de ideias e projetos compartilhados.</p>
+
+<p>Nos aspectos positivos, existe potencial para relação dinâmica, criativa e inspiradora. Enquanto uma das energias fortalece disciplina, organização e visão estratégica, a outra amplia comunicação, leveza emocional e capacidade de motivar o ambiente ao redor. Quando existe equilíbrio, [P1] e [P2] conseguem construir união produtiva, inteligente e cheia de vitalidade.</p>
+
+<p>Os desafios surgem quando aparecem excesso de racionalidade, dispersão emocional ou dificuldade em alinhar prioridades. Em determinados momentos, [P1] pode agir de forma {P1:rígida|rígido}, enquanto [P2] tende a desenvolver comportamento {P2:instável|instável} ou excessivamente impulsivo nas emoções.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver constância emocional, cooperação e alinhamento de objetivos. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação criativa, forte e voltada para crescimento intelectual e material.</p>
+`,
+
+"22-4": `
+
+<p>A união entre [P1] e [P2] é marcada por estabilidade, disciplina e forte potencial de construção material. Essa combinação favorece organização, responsabilidade e capacidade de estruturar objetivos sólidos em conjunto.</p>
+
+<p>Nos aspectos positivos, ambos compartilham visão prática, comprometimento e dedicação à segurança da relação. Existe potencial para construção de patrimônio, estabilidade familiar e fortalecimento de projetos duradouros. Quando existe sintonia, [P1] e [P2] conseguem construir relação extremamente estável, confiável e produtiva.</p>
+
+<p>Os desafios surgem quando aparecem excesso de rigidez, cobrança constante ou dificuldade em lidar com mudanças emocionais. Em alguns momentos, [P1] pode agir de forma {P1:controladora|controlador}, enquanto [P2] tende a demonstrar comportamento {P2:reservada|reservado} e excessivamente preso à rotina.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver flexibilidade emocional, diálogo afetivo e momentos de leveza dentro da relação. Quando maduros emocionalmente, [P1] e [P2] conseguem construir união sólida, estável e extremamente duradoura.</p>
+`,
+
+"22-5": `
+
+<p>A combinação entre [P1] e [P2] une estabilidade, expansão e necessidade de liberdade emocional. Essa relação tende a equilibrar responsabilidade, visão estratégica e desejo por movimento, experiências e transformação.</p>
+
+<p>Nos aspectos positivos, existe potencial para crescimento conjunto, evolução pessoal e construção de projetos inovadores. Enquanto uma das energias fortalece estrutura, disciplina e planejamento, a outra amplia adaptação, criatividade e capacidade de explorar novas possibilidades. Quando existe equilíbrio, [P1] e [P2] conseguem construir relação dinâmica, inteligente e cheia de evolução.</p>
+
+<p>Os desafios surgem quando aparecem conflitos entre estabilidade e necessidade de liberdade, além de dificuldade em alinhar ritmos emocionais. Em determinados momentos, [P1] pode agir de forma {P1:controladora|controlador}, enquanto [P2] tende a desenvolver comportamento {P2:impulsiva|impulsivo} ou resistente a limitações.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver confiança, flexibilidade emocional e equilíbrio entre segurança e independência. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação estimulante, forte e voltada para crescimento contínuo.</p>
+`,
+
+    
+"22-6": `
+
+<p>A união entre [P1] e [P2] combina estabilidade, responsabilidade emocional e forte necessidade de construir segurança afetiva. Essa relação tende a favorecer equilíbrio, compromisso e fortalecimento dos vínculos familiares e emocionais.</p>
+
+<p>Nos aspectos positivos, existe grande potencial para construção de uma relação sólida, acolhedora e baseada em confiança mútua. Enquanto uma das energias fortalece visão estratégica, organização e capacidade de realização, a outra amplia proteção, empatia e dedicação emocional. Quando existe sintonia, [P1] e [P2] conseguem construir união harmoniosa, madura e extremamente estável.</p>
+
+<p>Os desafios surgem quando aparecem excesso de cobranças, rigidez emocional ou tendência ao controle dentro da relação. Em determinados momentos, [P1] pode agir de forma {P1:exigente|exigente}, enquanto [P2] tende a desenvolver comportamento {P2:protetora|protetor} em excesso ou emocionalmente sobrecarregado.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver equilíbrio emocional, diálogo afetivo e leveza na convivência cotidiana. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação acolhedora, forte e extremamente duradoura.</p>
+`,
+
+"22-7": `
+
+<p>A combinação entre [P1] e [P2] une racionalidade, profundidade mental e forte necessidade de compreensão da vida. Essa relação tende a favorecer desenvolvimento intelectual, percepção intuitiva e crescimento através de experiências internas e reflexivas.</p>
+
+<p>Nos aspectos positivos, existe potencial para vínculo inteligente, reservado e baseado em aprendizado constante. Enquanto uma das energias fortalece disciplina, planejamento e construção sólida, a outra amplia análise, percepção metafísica e busca por conhecimento profundo. Quando existe equilíbrio, [P1] e [P2] conseguem construir relação consciente, enriquecedora e intelectualmente estimulante.</p>
+
+<p>Os desafios surgem quando aparecem distanciamento emocional, excesso de racionalidade ou dificuldade em expressar sentimentos com clareza. Em alguns momentos, [P1] pode agir de forma {P1:controladora|controlador}, enquanto [P2] tende a desenvolver comportamento {P2:reservada|reservado} ou excessivamente introspectivo.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer intimidade emocional, comunicação afetiva e equilíbrio entre razão e sensibilidade. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação profunda, inteligente e voltada para expansão da consciência.</p>
+`,
+
+"22-8": `
+
+<p>A união entre [P1] e [P2] é marcada por ambição, estratégia e forte potencial de realização material. Essa combinação favorece liderança, crescimento financeiro e capacidade de construir projetos grandiosos em conjunto.</p>
+
+<p>Nos aspectos positivos, ambos compartilham visão prática, disciplina e determinação para alcançar objetivos importantes. Existe potencial para prosperidade, fortalecimento patrimonial e consolidação de metas de longo prazo. Quando existe sintonia, [P1] e [P2] conseguem formar parceria poderosa, produtiva e extremamente realizadora.</p>
+
+<p>Os desafios surgem quando aparecem disputas por controle, excesso de autoridade ou foco exagerado em resultados materiais. Em determinados momentos, [P1] pode agir de forma {P1:controladora|controlador}, enquanto [P2] tende a desenvolver comportamento {P2:ambiciosa|ambicioso} ou excessivamente voltado para conquistas externas.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver equilíbrio emocional, cooperação e atenção à vida afetiva além das metas materiais. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação forte, estratégica e extremamente próspera.</p>
+`,
+
+"22-9": `
+
+<p>A combinação entre [P1] e [P2] une capacidade de construção, sensibilidade elevada e forte percepção humana. Essa relação tende a equilibrar visão prática, responsabilidade e consciência emocional com empatia, idealismo e propósito coletivo.</p>
+
+<p>Nos aspectos positivos, existe potencial para vínculo profundo, inspirador e baseado em crescimento emocional e intelectual. Enquanto uma das energias fortalece organização, estabilidade e realização concreta, a outra amplia compreensão emocional, percepção intuitiva e consciência humanitária. Quando existe equilíbrio, [P1] e [P2] conseguem construir relação significativa, acolhedora e transformadora.</p>
+
+<p>Os desafios surgem quando aparecem excesso de responsabilidade emocional, desgaste afetivo ou dificuldade em alinhar objetivos práticos e emocionais. Em alguns momentos, [P1] pode agir de forma {P1:rígida|rígido}, enquanto [P2] tende a absorver emoções e problemas externos além do necessário.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer diálogo emocional, equilíbrio afetivo e alinhamento de valores. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação profunda, consciente e voltada para evolução humana e metafísica.</p>
+`,
+
+    
+"22-22": `
+
+<p>A união entre [P1] e [P2] é marcada por enorme capacidade de construção, visão estratégica e forte potencial de realização. Essa combinação favorece estabilidade, crescimento material e consolidação de objetivos de grande impacto.</p>
+
+<p>Nos aspectos positivos, ambos compartilham disciplina, responsabilidade e habilidade para estruturar projetos sólidos e duradouros. Existe potencial para prosperidade, fortalecimento patrimonial e desenvolvimento de uma relação baseada em confiança e compromisso. Quando existe equilíbrio, [P1] e [P2] conseguem construir parceria extremamente forte, produtiva e realizadora.</p>
+
+<p>Os desafios surgem quando aparecem excesso de cobrança, rigidez emocional ou foco exagerado em responsabilidades e metas externas. Em determinados momentos, [P1] pode agir de forma {P1:controladora|controlador}, enquanto [P2] tende a desenvolver comportamento {P2:exigente|exigente} ou emocionalmente distante.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver flexibilidade emocional, diálogo afetivo e equilíbrio entre vida material e conexão emocional. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação sólida, estratégica e extremamente duradoura.</p>
+`,
+
+"22-33": `
+
+<p>A combinação entre [P1] e [P2] une construção, criatividade e forte capacidade de expansão emocional e intelectual. Essa relação tende a favorecer desenvolvimento pessoal, comunicação e realização através de ideias e projetos significativos.</p>
+
+<p>Nos aspectos positivos, existe potencial para vínculo inspirador, produtivo e emocionalmente estimulante. Enquanto uma das energias fortalece estrutura, planejamento e visão estratégica, a outra amplia criatividade, expressão emocional e capacidade de motivar pessoas ao redor. Quando existe sintonia, [P1] e [P2] conseguem construir relação dinâmica, inteligente e cheia de crescimento.</p>
+
+<p>Os desafios surgem quando aparecem excesso de expectativas, instabilidade emocional ou dificuldade em equilibrar disciplina e espontaneidade. Em alguns momentos, [P1] pode agir de forma {P1:rígida|rígido}, enquanto [P2] tende a desenvolver comportamento {P2:impulsiva|impulsivo} ou emocionalmente disperso.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer equilíbrio emocional, alinhamento de objetivos e cooperação afetiva. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação criativa, estável e voltada para crescimento contínuo.</p>
+`,
+
+"22-44": `
+
+<p>A união entre [P1] e [P2] é marcada por disciplina, estabilidade e enorme capacidade de construção material. Essa combinação favorece organização, responsabilidade e fortalecimento de estruturas sólidas dentro da relação.</p>
+
+<p>Nos aspectos positivos, ambos compartilham comprometimento, foco e forte senso de dever. Existe potencial para prosperidade, segurança e realização de objetivos duradouros. Quando existe equilíbrio, [P1] e [P2] conseguem construir relação extremamente confiável, estruturada e resistente às dificuldades externas.</p>
+
+<p>Os desafios surgem quando aparecem excesso de rigidez, cobranças constantes ou dificuldade em lidar com mudanças emocionais. Em determinados momentos, [P1] pode agir de forma {P1:controladora|controlador}, enquanto [P2] tende a desenvolver comportamento {P2:reservada|reservado} ou excessivamente presa à rotina.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver flexibilidade, leveza emocional e maior demonstração afetiva no cotidiano. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação sólida, estável e extremamente duradoura.</p>
+`,
+
+"22-55": `
+
+<p>A combinação entre [P1] e [P2] une estabilidade, expansão e forte necessidade de crescimento contínuo. Essa relação tende a equilibrar planejamento, responsabilidade e visão estratégica com liberdade, movimento e renovação constante.</p>
+
+<p>Nos aspectos positivos, existe potencial para evolução pessoal, desenvolvimento conjunto e construção de projetos inovadores. Enquanto uma das energias fortalece organização, estrutura e segurança, a outra amplia adaptação, criatividade e capacidade de explorar novas experiências. Quando existe equilíbrio, [P1] e [P2] conseguem construir relação dinâmica, inteligente e cheia de possibilidades.</p>
+
+<p>Os desafios surgem quando aparecem conflitos entre estabilidade e independência, além de dificuldade em alinhar ritmos emocionais diferentes. Em alguns momentos, [P1] pode agir de forma {P1:controladora|controlador}, enquanto [P2] tende a desenvolver comportamento {P2:impulsiva|impulsivo} ou resistente a limitações.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer confiança, diálogo emocional e equilíbrio entre segurança e liberdade. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação estimulante, forte e voltada para evolução constante.</p>
+`,
+
+
+"22-66": `
+
+<p>A união entre [P1] e [P2] combina estabilidade, responsabilidade emocional e forte necessidade de construir segurança afetiva. Essa relação tende a favorecer acolhimento, compromisso e fortalecimento dos vínculos familiares e emocionais.</p>
+
+<p>Nos aspectos positivos, existe grande potencial para construção de uma relação madura, equilibrada e baseada em confiança mútua. Enquanto uma das energias fortalece visão estratégica, disciplina e capacidade de realização, a outra amplia proteção, empatia e dedicação emocional. Quando existe sintonia, [P1] e [P2] conseguem construir união harmoniosa, estável e extremamente significativa.</p>
+
+<p>Os desafios surgem quando aparecem excesso de cobranças, responsabilidades emocionais elevadas ou tendência ao controle afetivo. Em determinados momentos, [P1] pode agir de forma {P1:exigente|exigente}, enquanto [P2] tende a desenvolver comportamento {P2:protetora|protetor} em excesso ou emocionalmente sobrecarregado.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver equilíbrio emocional, leveza na convivência e diálogo transparente. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação acolhedora, forte e extremamente duradoura.</p>
+`,
+
+"22-77": `
+
+<p>A combinação entre [P1] e [P2] une racionalidade, profundidade mental e forte busca por compreensão da existência. Essa relação tende a favorecer desenvolvimento intelectual, percepção intuitiva e crescimento através de experiências reflexivas e metafísicas.</p>
+
+<p>Nos aspectos positivos, existe potencial para vínculo inteligente, reservado e baseado em aprendizado constante. Enquanto uma das energias fortalece estrutura, planejamento e realização concreta, a outra amplia análise, percepção profunda e interesse por conhecimentos existenciais. Quando existe equilíbrio, [P1] e [P2] conseguem construir relação consciente, enriquecedora e intelectualmente estimulante.</p>
+
+<p>Os desafios surgem quando aparecem distanciamento emocional, excesso de racionalidade ou dificuldade em expressar sentimentos de maneira clara. Em alguns momentos, [P1] pode agir de forma {P1:controladora|controlador}, enquanto [P2] tende a desenvolver comportamento {P2:introspectiva|introspectivo} ou excessivamente analítico.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer intimidade emocional, comunicação afetiva e equilíbrio entre razão e sensibilidade. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação profunda, inteligente e voltada para expansão da consciência.</p>
+`,
+
+"22-88": `
+
+<p>A união entre [P1] e [P2] é marcada por ambição, estratégia e enorme potencial de realização material. Essa combinação favorece liderança, prosperidade e capacidade de construir projetos grandiosos e duradouros.</p>
+
+<p>Nos aspectos positivos, ambos compartilham disciplina, visão prática e determinação para alcançar objetivos importantes. Existe potencial para crescimento financeiro, fortalecimento patrimonial e consolidação de metas de longo prazo. Quando existe sintonia, [P1] e [P2] conseguem formar parceria poderosa, produtiva e extremamente realizadora.</p>
+
+<p>Os desafios surgem quando aparecem disputas de autoridade, excesso de controle ou foco exagerado em conquistas externas. Em determinados momentos, [P1] pode agir de forma {P1:controladora|controlador}, enquanto [P2] tende a desenvolver comportamento {P2:ambiciosa|ambicioso} ou emocionalmente rígido.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver empatia, cooperação e equilíbrio entre vida material e afetiva. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação forte, estratégica e extremamente próspera.</p>
+`,
+
+"22-99": `
+
+<p>A combinação entre [P1] e [P2] une capacidade de construção, sensibilidade elevada e forte percepção humana. Essa relação tende a equilibrar visão prática, responsabilidade e realização concreta com empatia, consciência emocional e propósito coletivo.</p>
+
+<p>Nos aspectos positivos, existe potencial para vínculo profundo, inspirador e emocionalmente transformador. Enquanto uma das energias fortalece estabilidade, organização e capacidade de execução, a outra amplia sensibilidade, percepção intuitiva e consciência humanitária. Quando existe equilíbrio, [P1] e [P2] conseguem construir relação significativa, acolhedora e voltada para crescimento humano.</p>
+
+<p>Os desafios surgem quando aparecem desgaste emocional, excesso de responsabilidades afetivas ou dificuldade em alinhar necessidades práticas e emocionais. Em alguns momentos, [P1] pode agir de forma {P1:rígida|rígido}, enquanto [P2] tende a absorver emoções e problemas externos além do necessário.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer diálogo emocional, equilíbrio afetivo e alinhamento de valores. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação profunda, consciente e voltada para evolução humana e metafísica.</p>
+`,
+
+
+ "33-1": `
+
+<p>A união entre [P1] e [P2] combina criatividade, expressão emocional e forte impulso de liderança. Essa relação tende a favorecer crescimento pessoal, dinamismo e capacidade de transformar ideias em realizações concretas.</p>
+
+<p>Nos aspectos positivos, existe grande potencial para uma relação motivadora, intensa e cheia de vitalidade. Enquanto uma das energias amplia comunicação, criatividade e capacidade de inspirar, a outra fortalece iniciativa, coragem e determinação. Quando existe sintonia, [P1] e [P2] conseguem construir parceria dinâmica, produtiva e estimulante.</p>
+
+<p>Os desafios surgem quando aparecem impulsividade, necessidade excessiva de reconhecimento ou dificuldade em dividir espaço dentro da relação. Em determinados momentos, [P1] pode agir de forma {P1:expressiva|expressivo}, enquanto [P2] tende a desenvolver comportamento {P2:dominadora|dominador} ou excessivamente competitivo.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer cooperação, equilíbrio emocional e alinhamento de objetivos. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação criativa, forte e voltada para crescimento contínuo.</p>
+`,
+
+"33-2": `
+
+<p>A combinação entre [P1] e [P2] une criatividade, sensibilidade emocional e necessidade de equilíbrio afetivo. Essa relação tende a favorecer acolhimento, comunicação emocional e fortalecimento dos vínculos através da compreensão mútua.</p>
+
+<p>Nos aspectos positivos, existe potencial para vínculo harmonioso, inspirador e emocionalmente significativo. Enquanto uma das energias fortalece expressão, entusiasmo e leveza emocional, a outra amplia empatia, diplomacia e percepção afetiva. Quando existe equilíbrio, [P1] e [P2] conseguem construir relação acolhedora, sensível e extremamente harmoniosa.</p>
+
+<p>Os desafios surgem quando aparecem inseguranças emocionais, excesso de sensibilidade ou dificuldade em lidar com críticas e cobranças. Em alguns momentos, [P1] pode agir de forma {P1:impulsiva|impulsivo}, enquanto [P2] tende a desenvolver comportamento {P2:sensível|sensível} e emocionalmente vulnerável.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer diálogo transparente, maturidade emocional e estabilidade afetiva. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação leve, acolhedora e cheia de conexão emocional.</p>
+`,
+
+"33-3": `
+
+<p>A união entre [P1] e [P2] é marcada por criatividade, comunicação e intensa troca emocional e intelectual. Essa combinação favorece entusiasmo, dinamismo e forte capacidade de inspirar crescimento mútuo.</p>
+
+<p>Nos aspectos positivos, ambos compartilham espontaneidade, criatividade e facilidade para estimular ideias, projetos e experiências em conjunto. Existe potencial para uma relação divertida, vibrante e emocionalmente enriquecedora. Quando existe sintonia, [P1] e [P2] conseguem construir vínculo leve, inspirador e cheio de movimento.</p>
+
+<p>Os desafios surgem quando aparecem dispersão emocional, impulsividade ou dificuldade em manter constância e profundidade afetiva. Em determinados momentos, [P1] pode agir de forma {P1:instável|instável}, enquanto [P2] tende a desenvolver comportamento {P2:impulsiva|impulsivo} ou emocionalmente oscilante.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver equilíbrio emocional, responsabilidade afetiva e foco nos objetivos da relação. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação criativa, alegre e extremamente estimulante.</p>
+`,
+
+"33-4": `
+
+<p>A combinação entre [P1] e [P2] une criatividade, disciplina e necessidade de construir estabilidade emocional e material. Essa relação tende a equilibrar expressão, entusiasmo e leveza com responsabilidade, organização e comprometimento.</p>
+
+<p>Nos aspectos positivos, existe potencial para crescimento consistente, fortalecimento de metas e construção de uma relação sólida e produtiva. Enquanto uma das energias amplia criatividade, comunicação e capacidade de motivar, a outra fortalece estabilidade, disciplina e segurança. Quando existe equilíbrio, [P1] e [P2] conseguem construir relação forte, confiável e cheia de evolução.</p>
+
+<p>Os desafios surgem quando aparecem excesso de rigidez, críticas constantes ou diferenças entre espontaneidade e necessidade de controle. Em alguns momentos, [P1] pode agir de forma {P1:expansiva|expansivo}, enquanto [P2] tende a desenvolver comportamento {P2:reservada|reservado} ou excessivamente preso à rotina.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer flexibilidade emocional, diálogo afetivo e equilíbrio entre liberdade e estabilidade. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação produtiva, estável e emocionalmente enriquecedora.</p>
+`,
+
+"33-5": `
+
+<p>A união entre [P1] e [P2] combina criatividade, expansão e forte necessidade de liberdade e movimento. Essa relação tende a favorecer inovação, novas experiências e crescimento através da troca constante de ideias e vivências.</p>
+
+<p>Nos aspectos positivos, existe grande potencial para uma relação dinâmica, estimulante e cheia de vitalidade. Enquanto uma das energias fortalece expressão, criatividade e entusiasmo, a outra amplia adaptação, curiosidade e desejo de explorar novas possibilidades. Quando existe sintonia, [P1] e [P2] conseguem construir vínculo vibrante, moderno e altamente evolutivo.</p>
+
+<p>Os desafios surgem quando aparecem impulsividade, instabilidade emocional ou dificuldade em manter constância afetiva. Em determinados momentos, [P1] pode agir de forma {P1:emocional|emocional}, enquanto [P2] tende a desenvolver comportamento {P2:impulsiva|impulsivo} ou resistente a limitações.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver maturidade emocional, equilíbrio entre liberdade e compromisso e alinhamento de expectativas. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação criativa, intensa e cheia de crescimento contínuo.</p>
+`,
+
+
+"33-6": `
+
+<p>A união entre [P1] e [P2] combina criatividade, sensibilidade emocional e forte necessidade de construir vínculos afetivos profundos. Essa relação tende a favorecer acolhimento, equilíbrio emocional e fortalecimento da vida em conjunto.</p>
+
+<p>Nos aspectos positivos, existe grande potencial para uma relação harmoniosa, inspiradora e emocionalmente significativa. Enquanto uma das energias fortalece comunicação, entusiasmo e criatividade, a outra amplia proteção, empatia e dedicação afetiva. Quando existe sintonia, [P1] e [P2] conseguem construir vínculo acolhedor, estável e extremamente enriquecedor.</p>
+
+<p>Os desafios surgem quando aparecem excesso de cobranças emocionais, sensibilidade elevada ou tendência a dramatizar situações afetivas. Em determinados momentos, [P1] pode agir de forma {P1:emocional|emocional}, enquanto [P2] tende a desenvolver comportamento {P2:protetora|protetor} em excesso ou emocionalmente sobrecarregado.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer equilíbrio emocional, diálogo afetivo e leveza na convivência cotidiana. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação acolhedora, criativa e extremamente harmoniosa.</p>
+`,
+
+"33-7": `
+
+<p>A combinação entre [P1] e [P2] une criatividade, profundidade mental e forte busca por compreensão emocional e existencial. Essa relação tende a favorecer desenvolvimento intelectual, percepção intuitiva e crescimento através de reflexões e experiências internas.</p>
+
+<p>Nos aspectos positivos, existe potencial para vínculo inteligente, refinado e baseado em troca de conhecimento e sensibilidade. Enquanto uma das energias fortalece comunicação, expressão e criatividade, a outra amplia análise, introspecção e percepção metafísica. Quando existe equilíbrio, [P1] e [P2] conseguem construir relação consciente, enriquecedora e intelectualmente estimulante.</p>
+
+<p>Os desafios surgem quando aparecem distanciamento emocional, excesso de racionalidade ou dificuldade em demonstrar sentimentos de maneira clara. Em alguns momentos, [P1] pode agir de forma {P1:expansiva|expansivo}, enquanto [P2] tende a desenvolver comportamento {P2:reservada|reservado} ou excessivamente introspectivo.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer intimidade emocional, equilíbrio entre razão e afeto e comunicação transparente. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação profunda, inteligente e voltada para expansão da consciência.</p>
+`,
+
+"33-8": `
+
+<p>A união entre [P1] e [P2] é marcada por criatividade, ambição e forte potencial de realização. Essa combinação favorece liderança, crescimento material e capacidade de transformar ideias em projetos concretos e bem-sucedidos.</p>
+
+<p>Nos aspectos positivos, existe grande potencial para prosperidade, inovação e fortalecimento de metas importantes. Enquanto uma das energias amplia criatividade, expressão e capacidade de motivar, a outra fortalece disciplina, estratégia e visão prática. Quando existe sintonia, [P1] e [P2] conseguem formar parceria poderosa, produtiva e extremamente realizadora.</p>
+
+<p>Os desafios surgem quando aparecem disputas de autoridade, excesso de ego ou dificuldade em equilibrar emoções e responsabilidades. Em determinados momentos, [P1] pode agir de forma {P1:impulsiva|impulsivo}, enquanto [P2] tende a desenvolver comportamento {P2:controladora|controlador} ou excessivamente voltado para resultados materiais.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver cooperação, empatia e equilíbrio entre vida afetiva e objetivos externos. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação forte, estratégica e cheia de crescimento.</p>
+`,
+
+"33-9": `
+
+<p>A combinação entre [P1] e [P2] une criatividade, sensibilidade elevada e forte percepção emocional e humana. Essa relação tende a favorecer empatia, inspiração e conexão baseada em compreensão emocional e propósito coletivo.</p>
+
+<p>Nos aspectos positivos, existe potencial para vínculo profundo, acolhedor e emocionalmente transformador. Enquanto uma das energias fortalece expressão, entusiasmo e capacidade de inspirar, a outra amplia sensibilidade, consciência emocional e percepção intuitiva. Quando existe equilíbrio, [P1] e [P2] conseguem construir relação significativa, inspiradora e cheia de crescimento humano.</p>
+
+<p>Os desafios surgem quando aparecem excesso de idealização, desgaste emocional ou tendência a absorver problemas externos além do necessário. Em alguns momentos, [P1] pode agir de forma {P1:emocional|emocional}, enquanto [P2] tende a desenvolver comportamento {P2:sensível|sensível} e emocionalmente vulnerável.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer estabilidade emocional, limites saudáveis e equilíbrio entre idealismo e realidade cotidiana. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação profunda, acolhedora e voltada para evolução humana e metafísica.</p>
+`,
+
+"33-33": `
+
+<p>A união entre [P1] e [P2] é marcada por intensidade emocional, expansão de consciência e forte necessidade de construção de propósito elevado. Essa combinação favorece desenvolvimento intelectual, percepção metafísica e busca constante por evolução conjunta.</p>
+
+<p>Nos aspectos positivos, ambos compartilham elevada sensibilidade, criatividade e capacidade de compreender dimensões emocionais profundas da relação. Existe potencial para conexão extremamente inspiradora, intuitiva e transformadora. Quando existe equilíbrio, [P1] e [P2] conseguem formar parceria baseada em apoio mútuo, crescimento interno e construção de valores elevados.</p>
+
+<p>Os desafios surgem quando aparecem excesso de idealização, desgaste mental ou dificuldade em lidar com a realidade prática da convivência. Em determinados momentos, [P1] pode agir de forma {P1:intensa|intenso}, enquanto [P2] tende a absorver pressões emocionais e responsabilidades além do necessário.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver estabilidade emocional, equilíbrio psicológico e organização prática da vida afetiva. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação profunda, inspiradora e altamente transformadora.</p>
+`,
+
+"33-44": `
+
+<p>A combinação entre [P1] e [P2] une percepção elevada e capacidade de construção concreta. Essa relação favorece crescimento estrutural, visão estratégica e desenvolvimento de projetos sólidos voltados para objetivos relevantes.</p>
+
+<p>Nos aspectos positivos, uma das energias fortalece sensibilidade, criatividade e percepção emocional, enquanto a outra amplia disciplina, estabilidade e capacidade de materialização. Quando existe sintonia, [P1] e [P2] conseguem construir união equilibrada entre inspiração e realização prática.</p>
+
+<p>Os desafios surgem quando aparecem excesso de cobrança, rigidez emocional ou conflitos entre idealismo e pragmatismo. Em alguns momentos, [P1] pode demonstrar comportamento {P1:sensível|sensível}, enquanto [P2] tende a agir de maneira excessivamente racional ou controladora.</p>
+
+<p>Para que essa união prospere, torna-se importante equilibrar emoção e estabilidade, além de fortalecer diálogo, compreensão e flexibilidade emocional. Quando existe maturidade, [P1] e [P2] conseguem construir relação forte, produtiva e emocionalmente estruturada.</p>
+`,
+
+"33-55": `
+
+<p>A união entre [P1] e [P2] é marcada por intensidade, movimento e necessidade constante de expansão emocional e mental. Essa combinação favorece criatividade, comunicação e experiências transformadoras ao longo da relação.</p>
+
+<p>Nos aspectos positivos, ambos compartilham grande capacidade de adaptação, percepção emocional elevada e busca por crescimento interno. Existe potencial para relação dinâmica, estimulante e rica em aprendizados. Quando existe equilíbrio, [P1] e [P2] conseguem construir parceria vibrante, inspiradora e cheia de renovação.</p>
+
+<p>Os desafios surgem quando aparecem instabilidade emocional, excesso de impulsividade ou dificuldade em manter constância afetiva. Em determinados momentos, [P1] pode agir de forma {P1:emocional|emocional}, enquanto [P2] tende a buscar mudanças constantes ou evitar aprofundamento emocional.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver estabilidade, comprometimento e equilíbrio entre liberdade e responsabilidade afetiva. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação intensa, criativa e profundamente evolutiva.</p>
+`,
+
+"33-66": `
+
+<p>A combinação entre [P1] e [P2] une sensibilidade elevada e forte necessidade de construção afetiva. Essa relação favorece acolhimento emocional, conexão intuitiva e desenvolvimento de vínculos profundos baseados em cuidado e compreensão.</p>
+
+<p>Nos aspectos positivos, uma das energias fortalece criatividade, percepção metafísica e expansão emocional, enquanto a outra amplia proteção, responsabilidade afetiva e desejo de estabilidade familiar. Quando existe sintonia, [P1] e [P2] conseguem construir união harmoniosa, acolhedora e emocionalmente enriquecedora.</p>
+
+<p>Os desafios surgem quando aparecem excesso de idealização, cobrança emocional ou tendência ao sacrifício excessivo dentro da relação. Em alguns momentos, [P1] pode demonstrar comportamento {P1:sensível|sensível}, enquanto [P2] tende a assumir responsabilidades emocionais além do necessário.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver equilíbrio emocional, limites saudáveis e diálogo afetivo constante. Quando existe maturidade, [P1] e [P2] conseguem construir relação profunda, protetora e altamente significativa.</p>
+`,
+
+
+"33-77": `
+
+<p>A união entre [P1] e [P2] é marcada por profundidade mental, percepção intuitiva e forte busca por compreensão metafísica da existência. Essa combinação favorece expansão da consciência, desenvolvimento intelectual e conexão baseada em análises profundas da vida e das emoções.</p>
+
+<p>Nos aspectos positivos, ambos compartilham sensibilidade elevada, capacidade reflexiva e interesse por conhecimento oculto, psicológico e existencial. Existe potencial para relação extremamente inteligente, intuitiva e transformadora. Quando existe equilíbrio, [P1] e [P2] conseguem construir parceria baseada em crescimento interno, aprendizado e evolução constante.</p>
+
+<p>Os desafios surgem quando aparecem excesso de isolamento emocional, racionalização excessiva ou dificuldade em expressar sentimentos de maneira clara. Em determinados momentos, [P1] pode agir de forma {P1:introspectiva|introspectivo}, enquanto [P2] tende a mergulhar excessivamente em pensamentos, análises ou conflitos internos.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer diálogo emocional, presença afetiva e equilíbrio entre mente e emoções. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação profunda, inteligente e altamente evolutiva.</p>
+`,
+
+"33-88": `
+
+<p>A combinação entre [P1] e [P2] une percepção elevada e forte capacidade de realização material. Essa relação favorece crescimento estratégico, expansão de objetivos e construção de projetos ambiciosos aliados a visão mais ampla da existência.</p>
+
+<p>Nos aspectos positivos, uma das energias fortalece criatividade, sensibilidade e percepção metafísica, enquanto a outra amplia liderança, disciplina e poder de concretização. Quando existe sintonia, [P1] e [P2] conseguem construir união produtiva, inspiradora e orientada para grandes realizações.</p>
+
+<p>Os desafios surgem quando aparecem excesso de controle, desgaste mental ou conflitos entre sensibilidade emocional e pragmatismo. Em alguns momentos, [P1] pode demonstrar comportamento {P1:idealista|idealista}, enquanto [P2] tende a priorizar metas materiais acima das necessidades emocionais da relação.</p>
+
+<p>Para que essa união prospere, torna-se importante equilibrar ambição e sensibilidade, além de fortalecer compreensão emocional e cooperação afetiva. Quando existe maturidade, [P1] e [P2] conseguem construir relação forte, estratégica e profundamente transformadora.</p>
+`,
+
+"33-99": `
+
+<p>A união entre [P1] e [P2] é marcada por intensidade emocional, visão ampla da vida e forte conexão voltada para crescimento humano e expansão de consciência. Essa combinação favorece empatia, sensibilidade e percepção profunda das emoções e experiências humanas.</p>
+
+<p>Nos aspectos positivos, ambos compartilham grande capacidade intuitiva, percepção emocional elevada e desejo de contribuir de maneira significativa para o mundo ao redor. Existe potencial para vínculo inspirador, acolhedor e altamente transformador. Quando existe equilíbrio, [P1] e [P2] conseguem construir relação baseada em compreensão, propósito e evolução conjunta.</p>
+
+<p>Os desafios surgem quando aparecem excesso de idealização, desgaste emocional ou tendência a absorver problemas externos além do necessário. Em determinados momentos, [P1] pode agir de forma {P1:sensível|sensível}, enquanto [P2] tende a carregar responsabilidades emocionais intensas ou dificuldades em estabelecer limites.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver estabilidade emocional, equilíbrio psicológico e atenção às necessidades afetivas da convivência. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação profunda, inspiradora e extremamente significativa.</p>
+`,
+
+    
+"44-1": `
+
+<p>A união entre [P1] e [P2] é marcada por liderança, determinação e forte capacidade de construção. Essa combinação favorece iniciativa, organização e desenvolvimento de projetos sólidos voltados para crescimento e estabilidade.</p>
+
+<p>Nos aspectos positivos, ambos compartilham coragem para enfrentar desafios, visão estratégica e grande capacidade de realização prática. Existe potencial para relação produtiva, estruturada e orientada para conquistas importantes. Quando existe equilíbrio, [P1] e [P2] conseguem formar parceria firme, eficiente e altamente realizadora.</p>
+
+<p>Os desafios surgem quando aparecem rigidez, excesso de controle ou disputas por autoridade dentro da relação. Em determinados momentos, [P1] pode agir de forma {P1:controladora|controlador}, enquanto [P2] tende a impor decisões ou agir com excesso de independência.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver cooperação, diálogo e equilíbrio entre liderança e sensibilidade emocional. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação forte, estável e duradoura.</p>
+`,
+
+"44-2": `
+
+<p>A combinação entre [P1] e [P2] une estabilidade e sensibilidade emocional. Essa relação favorece construção afetiva sólida, equilíbrio emocional e fortalecimento gradual dos vínculos ao longo do tempo.</p>
+
+<p>Nos aspectos positivos, uma das energias fortalece disciplina, responsabilidade e capacidade de organização, enquanto a outra amplia empatia, acolhimento e percepção emocional das necessidades da relação. Quando existe sintonia, [P1] e [P2] conseguem construir união equilibrada, segura e emocionalmente harmoniosa.</p>
+
+<p>Os desafios surgem quando aparecem excesso de cobrança, sensibilidade elevada ou dificuldade em lidar com diferenças emocionais. Em alguns momentos, [P1] pode demonstrar comportamento {P1:rígida|rígido}, enquanto [P2] tende a absorver emoções de maneira intensa ou evitar confrontos necessários.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer diálogo emocional, flexibilidade e compreensão afetiva. Quando existe maturidade, [P1] e [P2] conseguem construir relação acolhedora, estável e profundamente confiável.</p>
+`,
+
+"44-3": `
+
+<p>A união entre [P1] e [P2] é marcada por criatividade, estrutura e necessidade de crescimento contínuo. Essa combinação favorece comunicação, desenvolvimento intelectual e realização de objetivos através da organização e da expressão emocional.</p>
+
+<p>Nos aspectos positivos, ambos compartilham capacidade de adaptação, inteligência prática e desejo de evolução. Existe potencial para relação dinâmica, produtiva e cheia de estímulos criativos. Quando existe equilíbrio, [P1] e [P2] conseguem construir parceria inspiradora, organizada e emocionalmente enriquecedora.</p>
+
+<p>Os desafios surgem quando aparecem críticas excessivas, rigidez emocional ou dificuldade em alinhar espontaneidade e disciplina. Em determinados momentos, [P1] pode agir de forma {P1:exigente|exigente}, enquanto [P2] tende a buscar liberdade emocional ou evitar responsabilidades mais intensas.</p>
+
+<p>Para que essa união prospere, torna-se importante equilibrar leveza e compromisso, além de fortalecer comunicação e compreensão emocional. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação criativa, sólida e estimulante.</p>
+`,
+
+"44-4": `
+
+<p>A união entre [P1] e [P2] é marcada por estabilidade, disciplina e forte necessidade de construção material e emocional. Essa combinação favorece segurança, organização e desenvolvimento de objetivos sólidos ao longo da vida.</p>
+
+<p>Nos aspectos positivos, ambos compartilham responsabilidade, persistência e grande capacidade de planejamento. Existe potencial para construção de patrimônio, estabilidade familiar e fortalecimento gradual da relação. Quando existe equilíbrio, [P1] e [P2] conseguem formar parceria extremamente confiável, estruturada e duradoura.</p>
+
+<p>Os desafios surgem quando aparecem excesso de rigidez, rotina desgastante ou dificuldade em expressar emoções com naturalidade. Em determinados momentos, [P1] pode agir de forma {P1:controladora|controlador}, enquanto [P2] tende a reforçar padrões excessivamente rígidos ou resistentes à mudança.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver flexibilidade emocional, diálogo afetivo e equilíbrio entre responsabilidades e prazer emocional. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação sólida, segura e altamente estável.</p>
+`,
+
+"44-5": `
+
+<p>A combinação entre [P1] e [P2] une estabilidade e necessidade de movimento. Essa relação favorece crescimento através de experiências, mudanças e desenvolvimento de novas perspectivas emocionais e práticas.</p>
+
+<p>Nos aspectos positivos, uma das energias fortalece organização, responsabilidade e construção sólida, enquanto a outra amplia versatilidade, comunicação e capacidade de adaptação. Quando existe sintonia, [P1] e [P2] conseguem construir união dinâmica, produtiva e cheia de aprendizado.</p>
+
+<p>Os desafios surgem quando aparecem conflitos entre necessidade de controle e desejo de liberdade. Em alguns momentos, [P1] pode demonstrar comportamento {P1:rígida|rígido}, enquanto [P2] tende a buscar mudanças constantes ou resistir a limitações excessivas.</p>
+
+<p>Para que essa união prospere, torna-se importante equilibrar estabilidade e renovação, além de fortalecer diálogo, compreensão e respeito pelas diferenças individuais. Quando existe maturidade, [P1] e [P2] conseguem construir relação equilibrada, estimulante e duradoura.</p>
+`,
+
+
+"44-6": `
+
+<p>A união entre [P1] e [P2] é marcada por responsabilidade, estabilidade emocional e forte necessidade de construção afetiva segura. Essa combinação favorece compromisso, proteção emocional e fortalecimento gradual dos vínculos familiares.</p>
+
+<p>Nos aspectos positivos, ambos compartilham senso de responsabilidade, dedicação e capacidade de construir relação sólida e confiável. Existe potencial para união madura, acolhedora e orientada para estabilidade emocional e material. Quando existe equilíbrio, [P1] e [P2] conseguem formar parceria protetora, harmoniosa e duradoura.</p>
+
+<p>Os desafios surgem quando aparecem excesso de cobrança, rigidez emocional ou tendência ao controle afetivo. Em determinados momentos, [P1] pode agir de forma {P1:controladora|controlador}, enquanto [P2] tende a assumir responsabilidades emocionais além do necessário ou demonstrar excesso de preocupação.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver leveza emocional, flexibilidade e equilíbrio entre responsabilidade e afeto espontâneo. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação estável, acolhedora e profundamente segura.</p>
+`,
+
+"44-7": `
+
+<p>A combinação entre [P1] e [P2] une estabilidade prática e profundidade mental. Essa relação favorece desenvolvimento intelectual, crescimento interno e construção de vínculos baseados em confiança, análise e maturidade emocional.</p>
+
+<p>Nos aspectos positivos, uma das energias fortalece disciplina, organização e capacidade de realização concreta, enquanto a outra amplia introspecção, percepção intuitiva e busca por conhecimento profundo. Quando existe sintonia, [P1] e [P2] conseguem construir união equilibrada entre racionalidade e reflexão emocional.</p>
+
+<p>Os desafios surgem quando aparecem distanciamento afetivo, excesso de racionalização ou dificuldade em expressar sentimentos de maneira natural. Em alguns momentos, [P1] pode demonstrar comportamento {P1:rígida|rígido}, enquanto [P2] tende ao isolamento emocional ou à análise excessiva das situações.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer comunicação emocional, flexibilidade e presença afetiva dentro da convivência. Quando existe maturidade, [P1] e [P2] conseguem construir relação inteligente, sólida e emocionalmente equilibrada.</p>
+`,
+
+"44-8": `
+
+<p>A união entre [P1] e [P2] é marcada por ambição, disciplina e forte capacidade de construção material. Essa combinação favorece liderança, crescimento financeiro e desenvolvimento de projetos sólidos voltados para estabilidade e reconhecimento.</p>
+
+<p>Nos aspectos positivos, ambos compartilham visão estratégica, persistência e elevada capacidade de organização. Existe potencial para construção de patrimônio, expansão profissional e fortalecimento da vida prática. Quando existe equilíbrio, [P1] e [P2] conseguem formar parceria extremamente produtiva, eficiente e realizadora.</p>
+
+<p>Os desafios surgem quando aparecem excesso de autoridade, cobranças constantes ou dificuldade em priorizar a vida emocional da relação. Em determinados momentos, [P1] pode agir de forma {P1:exigente|exigente}, enquanto [P2] tende a priorizar metas materiais acima das necessidades afetivas.</p>
+
+<p>Para que essa união prospere, torna-se importante equilibrar ambição e sensibilidade, além de fortalecer diálogo emocional e cooperação afetiva. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação forte, estável e altamente realizadora.</p>
+`,
+
+"44-9": `
+
+<p>A combinação entre [P1] e [P2] une estabilidade estrutural e sensibilidade humanitária. Essa relação favorece crescimento emocional, percepção ampla da vida e construção de vínculos baseados em propósito e maturidade afetiva.</p>
+
+<p>Nos aspectos positivos, uma das energias fortalece responsabilidade, organização e segurança emocional, enquanto a outra amplia empatia, compaixão e percepção das necessidades humanas. Quando existe sintonia, [P1] e [P2] conseguem construir união acolhedora, inspiradora e emocionalmente significativa.</p>
+
+<p>Os desafios surgem quando aparecem excesso de rigidez, desgaste emocional ou conflitos entre pragmatismo e idealismo. Em alguns momentos, [P1] pode demonstrar comportamento {P1:controladora|controlador}, enquanto [P2] tende a absorver emoções externas ou priorizar excessivamente questões fora da relação.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver equilíbrio emocional, compreensão afetiva e alinhamento de valores dentro da convivência. Quando existe maturidade, [P1] e [P2] conseguem construir relação profunda, estável e transformadora.</p>
+`,
+
+
+"44-44": `
+
+<p>A união entre [P1] e [P2] é marcada por extrema estabilidade, disciplina e forte capacidade de construção material e emocional. Essa combinação favorece segurança, organização e desenvolvimento de bases sólidas para a vida em conjunto.</p>
+
+<p>Nos aspectos positivos, ambos compartilham responsabilidade, persistência e visão estratégica para realização de objetivos duradouros. Existe potencial para construção de patrimônio, estabilidade familiar e fortalecimento contínuo da relação. Quando existe equilíbrio, [P1] e [P2] conseguem formar parceria extremamente confiável, madura e altamente estruturada.</p>
+
+<p>Os desafios surgem quando aparecem excesso de rigidez, rotina desgastante ou dificuldade em demonstrar emoções com espontaneidade. Em determinados momentos, [P1] pode agir de forma {P1:controladora|controlador}, enquanto [P2] tende a reforçar padrões excessivamente rígidos ou resistentes a mudanças emocionais.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver flexibilidade, leveza emocional e equilíbrio entre responsabilidades e afeto. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação sólida, segura e extremamente duradoura.</p>
+`,
+
+"44-55": `
+
+<p>A combinação entre [P1] e [P2] une estabilidade e necessidade de transformação. Essa relação favorece crescimento através de mudanças, aprendizado contínuo e experiências capazes de ampliar a visão emocional e prática da convivência.</p>
+
+<p>Nos aspectos positivos, uma das energias fortalece organização, disciplina e capacidade de construção concreta, enquanto a outra amplia versatilidade, criatividade e adaptação às mudanças. Quando existe sintonia, [P1] e [P2] conseguem construir união dinâmica, produtiva e cheia de evolução.</p>
+
+<p>Os desafios surgem quando aparecem conflitos entre necessidade de controle e desejo de liberdade emocional. Em alguns momentos, [P1] pode demonstrar comportamento {P1:rígida|rígido}, enquanto [P2] tende a resistir a limitações ou buscar mudanças constantes dentro da relação.</p>
+
+<p>Para que essa união prospere, torna-se importante equilibrar estabilidade e renovação, além de fortalecer diálogo, compreensão emocional e respeito pelas individualidades. Quando existe maturidade, [P1] e [P2] conseguem construir relação equilibrada, intensa e transformadora.</p>
+`,
+
+"44-66": `
+
+<p>A união entre [P1] e [P2] é marcada por responsabilidade afetiva, proteção emocional e forte necessidade de estabilidade. Essa combinação favorece construção familiar, compromisso e desenvolvimento de vínculos profundos e duradouros.</p>
+
+<p>Nos aspectos positivos, ambos compartilham senso de dever, maturidade emocional e capacidade de cuidar da relação com dedicação. Existe potencial para união acolhedora, estruturada e emocionalmente segura. Quando existe equilíbrio, [P1] e [P2] conseguem formar parceria harmoniosa, protetora e altamente confiável.</p>
+
+<p>Os desafios surgem quando aparecem excesso de cobrança, controle emocional ou tendência a assumir responsabilidades além do necessário. Em determinados momentos, [P1] pode agir de forma {P1:exigente|exigente}, enquanto [P2] tende a carregar preocupações emocionais intensas ou expectativas elevadas dentro da relação.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver leveza emocional, flexibilidade e equilíbrio entre responsabilidade e demonstração afetiva espontânea. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação estável, acolhedora e profundamente sólida.</p>
+`,
+
+"44-77": `
+
+<p>A combinação entre [P1] e [P2] une estrutura prática e profundidade intelectual. Essa relação favorece amadurecimento interno, percepção analítica e construção de vínculos baseados em confiança, racionalidade e crescimento mental.</p>
+
+<p>Nos aspectos positivos, uma das energias fortalece disciplina, estabilidade e organização, enquanto a outra amplia introspecção, percepção intuitiva e busca por conhecimento profundo. Quando existe sintonia, [P1] e [P2] conseguem construir união inteligente, equilibrada e emocionalmente madura.</p>
+
+<p>Os desafios surgem quando aparecem distanciamento emocional, excesso de racionalização ou dificuldade em expressar sentimentos de maneira clara. Em alguns momentos, [P1] pode demonstrar comportamento {P1:rígida|rígido}, enquanto [P2] tende ao isolamento emocional ou à análise excessiva das situações.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer diálogo emocional, presença afetiva e equilíbrio entre razão e sensibilidade. Quando existe maturidade, [P1] e [P2] conseguem construir relação profunda, estável e intelectualmente enriquecedora.</p>
+`,
+
+"44-88": `
+
+<p>A união entre [P1] e [P2] é marcada por ambição, liderança e enorme capacidade de realização material. Essa combinação favorece crescimento financeiro, expansão profissional e construção de projetos sólidos voltados para reconhecimento e estabilidade.</p>
+
+<p>Nos aspectos positivos, ambos compartilham visão estratégica, disciplina e grande poder de execução. Existe potencial para construção de patrimônio, prosperidade e fortalecimento da vida prática. Quando existe equilíbrio, [P1] e [P2] conseguem formar parceria extremamente forte, eficiente e realizadora.</p>
+
+<p>Os desafios surgem quando aparecem disputas de autoridade, excesso de controle ou foco exagerado em conquistas externas. Em determinados momentos, [P1] pode agir de forma {P1:controladora|controlador}, enquanto [P2] tende a priorizar poder, resultados materiais ou reconhecimento acima das necessidades emocionais da relação.</p>
+
+<p>Para que essa união prospere, torna-se importante equilibrar ambição e sensibilidade, além de fortalecer cooperação emocional e diálogo afetivo. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação poderosa, estável e altamente realizadora.</p>
+`,
+
+"44-99": `
+
+<p>A combinação entre [P1] e [P2] une estabilidade estrutural e elevada sensibilidade emocional. Essa relação favorece amadurecimento humano, percepção ampla da vida e construção de vínculos baseados em propósito, responsabilidade e compreensão emocional.</p>
+
+<p>Nos aspectos positivos, uma das energias fortalece organização, segurança e capacidade de realização concreta, enquanto a outra amplia empatia, percepção intuitiva e visão humanitária. Quando existe sintonia, [P1] e [P2] conseguem construir união acolhedora, inspiradora e emocionalmente significativa.</p>
+
+<p>Os desafios surgem quando aparecem conflitos entre pragmatismo e idealização emocional. Em alguns momentos, [P1] pode demonstrar comportamento {P1:rígida|rígido}, enquanto [P2] tende a absorver problemas externos ou carregar emoções além do necessário.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver equilíbrio emocional, flexibilidade e alinhamento de valores dentro da convivência. Quando existe maturidade, [P1] e [P2] conseguem construir relação profunda, estável e transformadora.</p>
+`,
+
+
+"55-1": `
+
+<p>A união entre [P1] e [P2] é marcada por movimento, iniciativa e forte necessidade de crescimento através de novas experiências. Essa combinação favorece independência, coragem e expansão constante dentro da relação.</p>
+
+<p>Nos aspectos positivos, ambos compartilham energia de ação, criatividade e capacidade de adaptação diante das mudanças. Existe potencial para relação dinâmica, estimulante e cheia de desafios construtivos. Quando existe equilíbrio, [P1] e [P2] conseguem formar parceria intensa, motivadora e voltada para evolução contínua.</p>
+
+<p>Os desafios surgem quando aparecem impulsividade, necessidade excessiva de liberdade ou disputas por autonomia. Em determinados momentos, [P1] pode agir de forma {P1:impulsiva|impulsivo}, enquanto [P2] tende a impor vontades ou resistir a limitações emocionais.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver estabilidade emocional, diálogo e equilíbrio entre independência e compromisso afetivo. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação vibrante, produtiva e cheia de crescimento.</p>
+`,
+
+"55-2": `
+
+<p>A combinação entre [P1] e [P2] une liberdade emocional e sensibilidade afetiva. Essa relação favorece aprendizado emocional, desenvolvimento da empatia e crescimento através da convivência e do equilíbrio entre movimento e acolhimento.</p>
+
+<p>Nos aspectos positivos, uma das energias fortalece adaptação, criatividade e dinamismo, enquanto a outra amplia sensibilidade, compreensão emocional e capacidade de harmonização. Quando existe sintonia, [P1] e [P2] conseguem construir união leve, afetiva e emocionalmente enriquecedora.</p>
+
+<p>Os desafios surgem quando aparecem instabilidade emocional, insegurança afetiva ou dificuldade em alinhar liberdade e compromisso. Em alguns momentos, [P1] pode demonstrar comportamento {P1:inconstante|inconstante}, enquanto [P2] tende a absorver emoções intensamente ou evitar confrontos necessários.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer confiança, diálogo emocional e equilíbrio entre autonomia e estabilidade afetiva. Quando existe maturidade, [P1] e [P2] conseguem construir relação harmoniosa, estimulante e acolhedora.</p>
+`,
+
+"55-3": `
+
+<p>A união entre [P1] e [P2] é marcada por criatividade, comunicação e necessidade constante de renovação emocional e mental. Essa combinação favorece espontaneidade, leveza e experiências enriquecedoras ao longo da convivência.</p>
+
+<p>Nos aspectos positivos, ambos compartilham versatilidade, capacidade de expressão e desejo de viver novas experiências. Existe potencial para relação divertida, inspiradora e cheia de estímulos intelectuais e emocionais. Quando existe equilíbrio, [P1] e [P2] conseguem formar parceria vibrante, criativa e emocionalmente dinâmica.</p>
+
+<p>Os desafios surgem quando aparecem dispersão, superficialidade emocional ou dificuldade em manter constância afetiva. Em determinados momentos, [P1] pode agir de forma {P1:impulsiva|impulsivo}, enquanto [P2] tende a evitar responsabilidades emocionais mais profundas.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver maturidade emocional, comprometimento e equilíbrio entre diversão e responsabilidade afetiva. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação leve, inspiradora e cheia de crescimento.</p>
+`,
+
+"55-4": `
+
+<p>A combinação entre [P1] e [P2] une necessidade de liberdade e busca por estabilidade. Essa relação favorece aprendizado através do equilíbrio entre movimento, organização e amadurecimento emocional.</p>
+
+<p>Nos aspectos positivos, uma das energias fortalece adaptação, criatividade e versatilidade, enquanto a outra amplia disciplina, responsabilidade e capacidade de construção sólida. Quando existe sintonia, [P1] e [P2] conseguem construir união equilibrada entre renovação e segurança.</p>
+
+<p>Os desafios surgem quando aparecem conflitos entre necessidade de mudança e desejo de controle ou estabilidade excessiva. Em alguns momentos, [P1] pode demonstrar comportamento {P1:inconstante|inconstante}, enquanto [P2] tende a agir de forma rígida ou resistente às transformações.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer flexibilidade, compreensão emocional e respeito pelas diferenças individuais. Quando existe maturidade, [P1] e [P2] conseguem construir relação estável, dinâmica e cheia de evolução.</p>
+`,
+
+"55-5": `
+
+<p>A união entre [P1] e [P2] é marcada por intensidade, movimento e forte necessidade de expansão emocional e mental. Essa combinação favorece liberdade, criatividade e experiências capazes de transformar profundamente a relação.</p>
+
+<p>Nos aspectos positivos, ambos compartilham versatilidade, coragem para mudanças e desejo constante de crescimento. Existe potencial para relação extremamente dinâmica, estimulante e rica em aprendizados. Quando existe equilíbrio, [P1] e [P2] conseguem formar parceria vibrante, inovadora e emocionalmente intensa.</p>
+
+<p>Os desafios surgem quando aparecem impulsividade, instabilidade emocional ou dificuldade em manter constância afetiva e compromisso duradouro. Em determinados momentos, [P1] pode agir de forma {P1:impulsiva|impulsivo}, enquanto [P2] tende a buscar liberdade excessiva ou evitar aprofundamento emocional.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver equilíbrio emocional, responsabilidade afetiva e alinhamento de objetivos dentro da convivência. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação intensa, transformadora e cheia de evolução.</p>
+`,
+
+
+"55-6": `
+
+<p>A união entre [P1] e [P2] é marcada por intensidade emocional, necessidade de liberdade e forte busca por equilíbrio afetivo. Essa combinação favorece crescimento emocional, renovação constante e desenvolvimento de vínculos profundos através das experiências da convivência.</p>
+
+<p>Nos aspectos positivos, ambos compartilham capacidade de adaptação, criatividade e desejo de construir relação emocionalmente significativa. Existe potencial para união acolhedora, dinâmica e cheia de aprendizado. Quando existe equilíbrio, [P1] e [P2] conseguem formar parceria afetiva, inspiradora e emocionalmente enriquecedora.</p>
+
+<p>Os desafios surgem quando aparecem instabilidade emocional, excesso de cobrança afetiva ou dificuldade em equilibrar liberdade e compromisso. Em determinados momentos, [P1] pode agir de forma {P1:inconstante|inconstante}, enquanto [P2] tende a assumir responsabilidades emocionais excessivas ou demonstrar forte necessidade de segurança afetiva.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer diálogo emocional, confiança e equilíbrio entre independência e estabilidade afetiva. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação acolhedora, intensa e profundamente transformadora.</p>
+`,
+
+"55-7": `
+
+<p>A combinação entre [P1] e [P2] une movimento emocional e profundidade intelectual. Essa relação favorece expansão mental, autoconhecimento e desenvolvimento de percepções mais profundas sobre a convivência e as emoções.</p>
+
+<p>Nos aspectos positivos, uma das energias fortalece criatividade, adaptação e desejo de novas experiências, enquanto a outra amplia introspecção, análise e busca por conhecimento elevado. Quando existe sintonia, [P1] e [P2] conseguem construir união inteligente, estimulante e rica em crescimento interno.</p>
+
+<p>Os desafios surgem quando aparecem instabilidade emocional, distanciamento afetivo ou excesso de racionalização das emoções. Em alguns momentos, [P1] pode demonstrar comportamento {P1:impulsiva|impulsivo}, enquanto [P2] tende ao isolamento emocional ou à análise excessiva da relação.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver equilíbrio emocional, comunicação afetiva e presença emocional dentro da convivência. Quando existe maturidade, [P1] e [P2] conseguem construir relação profunda, evolutiva e intelectualmente enriquecedora.</p>
+`,
+
+"55-8": `
+
+<p>A união entre [P1] e [P2] é marcada por intensidade, ambição e forte necessidade de crescimento e realização. Essa combinação favorece liderança, expansão material e construção de objetivos importantes através da ação e da determinação.</p>
+
+<p>Nos aspectos positivos, ambos compartilham coragem para enfrentar mudanças, capacidade de adaptação e visão estratégica para realização de metas. Existe potencial para relação produtiva, dinâmica e cheia de conquistas. Quando existe equilíbrio, [P1] e [P2] conseguem formar parceria forte, realizadora e emocionalmente estimulante.</p>
+
+<p>Os desafios surgem quando aparecem impulsividade, excesso de controle ou foco exagerado em objetivos externos. Em determinados momentos, [P1] pode agir de forma {P1:inconstante|inconstante}, enquanto [P2] tende a priorizar resultados materiais ou exercer autoridade excessiva dentro da relação.</p>
+
+<p>Para que essa união prospere, torna-se importante equilibrar ambição e sensibilidade, além de fortalecer diálogo emocional e estabilidade afetiva. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação intensa, estratégica e altamente realizadora.</p>
+`,
+
+"55-9": `
+
+<p>A combinação entre [P1] e [P2] une liberdade emocional e elevada sensibilidade humana. Essa relação favorece expansão da consciência, desenvolvimento emocional e compreensão mais ampla das experiências e emoções da vida.</p>
+
+<p>Nos aspectos positivos, uma das energias fortalece criatividade, versatilidade e desejo de renovação, enquanto a outra amplia empatia, percepção intuitiva e sensibilidade emocional. Quando existe sintonia, [P1] e [P2] conseguem construir união inspiradora, acolhedora e emocionalmente transformadora.</p>
+
+<p>Os desafios surgem quando aparecem instabilidade emocional, excesso de idealização ou tendência a absorver problemas externos além do necessário. Em alguns momentos, [P1] pode demonstrar comportamento {P1:impulsiva|impulsivo}, enquanto [P2] tende a carregar emoções intensas ou priorizar excessivamente questões externas à relação.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver equilíbrio emocional, estabilidade afetiva e alinhamento de valores dentro da convivência. Quando existe maturidade, [P1] e [P2] conseguem construir relação profunda, inspiradora e cheia de evolução humana.</p>
+`,
+
+
+ "55-55": `
+
+<p>A união entre [P1] e [P2] é marcada por intensidade emocional, necessidade de liberdade e forte impulso por transformação. Essa combinação favorece movimento, expansão de consciência e experiências profundas que estimulam mudanças constantes na relação.</p>
+
+<p>Nos aspectos positivos, ambos compartilham adaptabilidade, curiosidade mental e desejo de explorar novas possibilidades. Existe potencial para relação dinâmica, criativa e cheia de estímulos emocionais e intelectuais. Quando existe equilíbrio, [P1] e [P2] conseguem construir parceria inovadora, magnética e extremamente evolutiva.</p>
+
+<p>Os desafios surgem quando aparecem instabilidade, impulsividade ou dificuldade em manter constância emocional. Em determinados momentos, [P1] pode agir de forma {P1:inquieta|inquieto}, enquanto [P2] tende a buscar mudanças excessivas dentro da relação.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver estabilidade emocional, disciplina afetiva e clareza nas decisões. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação intensa, transformadora e cheia de crescimento pessoal.</p>
+`,
+
+"55-66": `
+
+<p>A combinação entre [P1] e [P2] une liberdade emocional e responsabilidade afetiva. Essa relação tende a equilibrar movimento, transformação e busca por experiências com acolhimento, estabilidade e necessidade de segurança emocional.</p>
+
+<p>Nos aspectos positivos, uma das energias fortalece criatividade, versatilidade e renovação, enquanto a outra amplia senso de cuidado, proteção e construção emocional sólida. Quando existe sintonia, [P1] e [P2] conseguem construir união equilibrada entre liberdade e compromisso.</p>
+
+<p>Os desafios surgem quando aparecem conflitos entre independência e necessidade de controle emocional. Em alguns momentos, [P1] pode demonstrar comportamento {P1:instável|instável}, enquanto [P2] tende a cobrar excesso de responsabilidade afetiva dentro da relação.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer diálogo emocional, respeito ao espaço individual e equilíbrio entre autonomia e compromisso. Quando existe maturidade, [P1] e [P2] conseguem construir relação acolhedora, dinâmica e emocionalmente rica.</p>
+`,
+
+"55-77": `
+
+<p>A união entre [P1] e [P2] é marcada por intensidade mental, transformação interna e forte busca por expansão metafísica e intelectual. Essa combinação favorece descobertas profundas, questionamentos existenciais e crescimento através da experiência e do conhecimento.</p>
+
+<p>Nos aspectos positivos, uma das energias fortalece movimento, adaptação e criatividade, enquanto a outra amplia introspecção, análise e percepção intuitiva das situações. Quando existe equilíbrio, [P1] e [P2] conseguem construir vínculo profundo, reflexivo e altamente transformador.</p>
+
+<p>Os desafios surgem quando aparecem distanciamento emocional, excesso de racionalização ou dificuldade em alinhar ritmos emocionais. Em determinados momentos, [P1] pode agir de forma {P1:impulsiva|impulsivo}, enquanto [P2] tende ao isolamento emocional e mental.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver confiança, comunicação emocional e equilíbrio entre liberdade e profundidade afetiva. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação intensa, inteligente e cheia de evolução interna.</p>
+`,
+
+"55-88": `
+
+<p>A combinação entre [P1] e [P2] une intensidade transformadora e forte capacidade de realização material. Essa relação tende a equilibrar dinamismo, criatividade e necessidade de movimento com liderança, estratégia e busca por conquistas concretas.</p>
+
+<p>Nos aspectos positivos, uma das energias fortalece inovação, coragem e flexibilidade, enquanto a outra amplia organização, visão estratégica e capacidade de construção sólida. Quando existe sintonia, [P1] e [P2] conseguem desenvolver parceria poderosa, produtiva e altamente realizadora.</p>
+
+<p>Os desafios surgem quando aparecem disputas por autonomia, excesso de controle ou impulsividade nas decisões. Em alguns momentos, [P1] pode demonstrar comportamento {P1:imprevisível|imprevisível}, enquanto [P2] tende a priorizar poder e resultados acima das emoções.</p>
+
+<p>Para que essa união prospere, torna-se importante fortalecer cooperação, equilíbrio emocional e alinhamento de objetivos. Quando existe maturidade, [P1] e [P2] conseguem construir relação forte, dinâmica e extremamente realizadora.</p>
+`,
+
+"55-99": `
+
+<p>A união entre [P1] e [P2] é marcada por intensidade emocional, transformação humana e forte necessidade de expansão de consciência. Essa combinação favorece experiências profundas, crescimento emocional e visão ampla sobre relações e propósito de vida.</p>
+
+<p>Nos aspectos positivos, uma das energias fortalece movimento, criatividade e renovação constante, enquanto a outra amplia empatia, sensibilidade e percepção humanitária das experiências. Quando existe equilíbrio, [P1] e [P2] conseguem construir vínculo inspirador, transformador e emocionalmente significativo.</p>
+
+<p>Os desafios surgem quando aparecem excesso de instabilidade emocional, desgaste energético ou tendência a absorver problemas externos além do necessário. Em determinados momentos, [P1] pode agir de forma {P1:impulsiva|impulsivo}, enquanto [P2] tende a carregar responsabilidades emocionais excessivas.</p>
+
+<p>Para que essa união prospere, torna-se importante desenvolver estabilidade emocional, limites saudáveis e clareza afetiva. Quando maduros emocionalmente, [P1] e [P2] conseguem construir relação profunda, evolutiva e voltada para crescimento humano e metafísico.</p>
+`,   
+
+    
   
  }
 };
