@@ -791,7 +791,7 @@ regentebb: {
 
 
 // --- SEQUÊNCIAS NEGATIVAS DO BEBÊ (DESAFIOS E BLOQUEIOS DA INFÂNCIA À ADOLESCÊNCIA) ---
-sequenciasNegativasbb: {
+sequenciasNegativabb: {
     1: `<h3>⚠️ Sequência Negativa 1 - O Desafio do Rigor, Isolamento e Orgulho</h3>
     <p>A presença da Sequência Negativa 1 alerta os pais para uma tendência ao acúmulo de tensões internas voltadas para o perfeccionismo, a rigidez e a dificuldade em lidar com frustrações. Ao longo do crescimento de <strong>MASCULINO-FEMININO-NEUTRO</strong>, essa vibração em desequilíbrio pode fazer com que a criança tente criar uma casca de extrema autossuficiência para esconder suas inseguranças.</p>
     <p>Na fase de bebê, isso pode se manifestar através de crises de choro ou irritabilidade extrema quando o pequeno não consegue realizar um movimento ou alcançar um objetivo sozinho, demonstrando uma impaciência precoce. Durante a infância, os pais notarão que a criança pode agir com teimosia excessiva ou se isolar em seu canto quando contrariada, preferindo se fechar a admitir que precisa de ajuda ou que errou em alguma brincadeira.</p>
