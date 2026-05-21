@@ -1205,8 +1205,10 @@ function formatarTextoPersonalizado(texto, nome) {
 
 function abrirModal(tipo) {
   let textoBase = "", nomePessoa = "";
+
   if (tipo.includes("1")) {
     nomePessoa = document.getElementById("social1").value || document.getElementById("nome1").value;
+
     if(tipo==="m1") textoBase = textos.motivacao[dados1.motivacao];
     if(tipo==="i1") textoBase = textos.influencia[dados1.influencia];
     if(tipo==="p1") textoBase = textos.personalidade[dados1.personalidade];
@@ -1214,8 +1216,11 @@ function abrirModal(tipo) {
     if(tipo==="pr1") textoBase = textos.proposito[dados1.proposito];
     if(tipo==="h1") textoBase = textos.harmonia[dados1.proposito];
     if(tipo==="a1") textoBase = textos.anoPessoal[dados1.anoPessoal];
+
   } else if (tipo.includes("2")) {
+
     nomePessoa = document.getElementById("social2").value || document.getElementById("nome2").value;
+
     if(tipo==="m2") textoBase = textosFeminino.motivacao[dados2.motivacao];
     if(tipo==="i2") textoBase = textosFeminino.influencia[dados2.influencia];
     if(tipo==="p2") textoBase = textosFeminino.personalidade[dados2.personalidade];
@@ -1223,66 +1228,91 @@ function abrirModal(tipo) {
     if(tipo==="pr2") textoBase = textosFeminino.proposito[dados2.proposito];
     if(tipo==="h2") textoBase = textosFeminino.harmonia[dados2.proposito];
     if(tipo==="a2") textoBase = textosFeminino.anoPessoal[dados2.anoPessoal];
+
   } else if (tipo.includes("B")) {
+
     nomePessoa = document.getElementById("socialBebe").value || document.getElementById("nomeBebe").value;
+
     if(tipo==="mB") textoBase = textos.motivacaobb[dadosBebe.motivacao];
     if(tipo==="iB") textoBase = textos.influenciabb[dadosBebe.influencia];
     if(tipo==="pB") textoBase = textos.personalidadebb[dadosBebe.personalidade];
   }
-  abrirModalTexto(formatarTextoPersonalizado(textoBase, nomePessoa));
+
+  // PEGA APENAS O PRIMEIRO NOME
+  nomePessoa = nomePessoa.trim().split(" ")[0];
+
+  abrirModalTexto(
+    formatarTextoPersonalizado(textoBase, nomePessoa)
+  );
 }
 
+    
 function abrirModalRegente(texto, idRegente) {
     let n = "";
-    let textoFinal = texto; // Mantém o texto original como padrão (para Pessoa 1 e 2)
-    
+    let textoFinal = texto;
+
     if (idRegente === "regente1") {
         n = document.getElementById("social1").value || document.getElementById("nome1").value;
+
     } else if (idRegente === "regente2") {
         n = document.getElementById("social2").value || document.getElementById("nome2").value;
+
     } else if (idRegente === "regenteBebe") {
+
         n = document.getElementById("socialBebe").value || document.getElementById("nomeBebe").value;
-        
-        // CORREÇÃO AQUI: 
-        // Se a sua função 'gerarPiramide' passa o número do regente (ex: 1, 2, 3...) no parâmetro 'texto',
-        // nós usamos esse número para buscar direto no seu objeto 'textos.regentebb' do textos.js
+
         if (dadosBebe && dadosBebe.regente) { 
             textoFinal = textos.regentebb[dadosBebe.regente];
         } else {
-            // Caso o 'texto' que vem da pirâmide já seja o número/ID do regente:
             textoFinal = textos.regentebb[texto] || texto;
         }
     }
-    
+
+    // PRIMEIRO NOME
+    n = n.trim().split(" ")[0];
+
     abrirModalTexto(formatarTextoPersonalizado(textoFinal, n));
 }
 
+
+
 function mostrarSequenciaNegativa(idRegente){
+
   let d = null;
   let n = "";
-  let bancoDeTextos = textos.sequenciaNegativa; // Padrão Pessoa 1
+  let bancoDeTextos = textos.sequenciaNegativa;
 
   if (idRegente === "regente1") {
+
       d = dados1;
       n = document.getElementById("social1").value || document.getElementById("nome1").value;
+
   } else if (idRegente === "regente2") {
+
       d = dados2;
       n = document.getElementById("social2").value || document.getElementById("nome2").value;
-      // Se tiver uma sequência feminina específica futuramente, descomente a linha abaixo:
-      // bancoDeTextos = textosFeminino.sequenciaNegativa || textos.sequenciaNegativa;
+
   } else if (idRegente === "regenteBebe") {
+
       d = dadosBebe;
       n = document.getElementById("socialBebe").value || document.getElementById("nomeBebe").value;
-      // Se você tiver um objeto 'textos.sequenciaNegativabb' no textos.js, ele usa. 
-      // Se não tiver, ele usa o padrão 'textos.sequenciaNegativa'
+
       bancoDeTextos = textos.sequenciaNegativabb || textos.sequenciaNegativa; 
   }
 
   if (!d || !d.sequenciaNegativa || d.sequenciaNegativa.length === 0) {
       return abrirModalTexto("Nenhuma sequência.");
   }
-  
-  abrirModalTexto(formatarTextoPersonalizado(d.sequenciaNegativa.map(x => bancoDeTextos[x]).join("<br><br>"), n));
+
+  // PRIMEIRO NOME
+  n = n.trim().split(" ")[0];
+
+  abrirModalTexto(
+      formatarTextoPersonalizado(
+          d.sequenciaNegativa.map(x => bancoDeTextos[x]).join("<br><br>"),
+          n
+      )
+  );
 }
 
 function gerar(){
