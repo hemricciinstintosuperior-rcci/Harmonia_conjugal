@@ -1711,42 +1711,49 @@ function extrairETratarTexto(textoBruto, nomeParceiro) {
       </div>`;
   }
 
-  // Função auxiliar interna para gerar o HTML textual da pirâmide e injetar no miolo do PDF
-  function obterHtmlTextoPiramide(valores) {
-    if(!valores || valores.length === 0) return "";
-    let lines = [valores.map(Number)];
-    while(lines[lines.length-1].length > 1){
-      let anterior = lines[lines.length-1];
-      let nova = [];
-      for(let i=0; i<anterior.length-1; i++){
-        nova.push(Number(reduzir(anterior[i] + anterior[i+1])));
-      }
-      lines.push(nova);
+function obterHtmlTextoPiramide(valores) {
+  if(!valores || valores.length === 0) return "";
+
+  // 1. Forçamos a redução de cada valor inicial para um dígito (1-9)
+  let lines = [valores.map(n => reduzir(n, false))];
+
+  while(lines[lines.length-1].length > 1){
+    let anterior = lines[lines.length-1];
+    let nova = [];
+    for(let i=0; i<anterior.length-1; i++){
+      // 2. A soma é reduzida FORÇADAMENTE (false para aceitaMestre)
+      let soma = anterior[i] + anterior[i+1];
+      nova.push(reduzir(soma, false));
     }
-    let marcacoes = [];
-    for(let l=0; l<lines.length; l++){
-      marcacoes[l] = new Set();
-      let linha = lines[l];
-      let i=0;
-      while(i < linha.length){
-        let atual = Number(linha[i]);
-        let count = 1; let j = i+1;
-        while(j < linha.length && Number(linha[j]) === atual) { count++; j++; }
-        if(count >= 3){
-          for(let k=i; k<i+count; k++) marcacoes[l].add(k);
-        }
-        i += count;
-      }
-    }
-    let txtPiramide = "";
-    for(let l=0; l<lines.length; l++){
-      txtPiramide += lines[l].map((n, idx) => {
-        if (marcacoes[l].has(idx)) return `<span class="negativo" style="color:#ff3b5c !important; font-weight:bold;">${n}</span>`;
-        return n;
-      }).join(" ") + "\n";
-    }
-    return txtPiramide;
+    lines.push(nova);
   }
+
+  // O resto da lógica de marcações permanece igual
+  let marcacoes = [];
+  for(let l=0; l<lines.length; l++){
+    marcacoes[l] = new Set();
+    let linha = lines[l];
+    let i=0;
+    while(i < linha.length){
+      let atual = Number(linha[i]);
+      let count = 1; let j = i+1;
+      while(j < linha.length && Number(linha[j]) === atual) { count++; j++; }
+      if(count >= 3){
+        for(let k=i; k<i+count; k++) marcacoes[l].add(k);
+      }
+      i += count;
+    }
+  }
+
+  let txtPiramide = "";
+  for(let l=0; l<lines.length; l++){
+    txtPiramide += lines[l].map((n, idx) => {
+      if (marcacoes[l].has(idx)) return `<span class="negativo" style="color:#ff3b5c !important; font-weight:bold;">${n}</span>`;
+      return n;
+    }).join(" ") + "\n";
+  }
+  return txtPiramide;
+}
 
   // Capa da Seção 1 com os Áudios acoplados corretamente
   relatorioHTML += criarCapaTransicao(
