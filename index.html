@@ -1026,6 +1026,10 @@ function reduzir(n, aceitaMestre = true) {
     return num;
 }
 
+
+
+    
+
 function calcularCVLinear(dia, mes, ano) {
 
     let dataCompleta =
@@ -1106,7 +1110,7 @@ function gerarPiramide(valores, elementoPiramide, elementoRegente){
     elementoPiramide.innerHTML=""; elementoRegente.innerHTML=""; return;
   }
 
-  let lines = [valores.map(Number)];
+   let lines = [valores.map(n => reduzir(n, false))]; 
   while(lines[lines.length-1].length > 1){
     let anterior = lines[lines.length-1];
     let nova = [];
