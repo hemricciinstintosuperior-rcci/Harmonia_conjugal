@@ -1498,8 +1498,12 @@ const processarMatrizCasado = (nomeCompleto) => {
         let proximaLinha = [];
         for (let i = 0; i < linhaAtual.length - 1; i++) {
             let soma = linhaAtual[i] + linhaAtual[i+1];
-            if (soma > 9) soma = Math.floor(soma / 10) + (soma % 10);
-            proximaLinha.push(soma);
+            
+            // --- A SOLUÇÃO: Use a sua função reduzir() padrão aqui ---
+            // Assim ele reduzirá recursivamente até chegar em 1-9
+            let reduzido = reduzir(soma, false); 
+            
+            proximaLinha.push(reduzido);
         }
         todasAsLinhas.push(proximaLinha);
         linhaAtual = proximaLinha;
