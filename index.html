@@ -1110,12 +1110,16 @@ function gerarPiramide(valores, elementoPiramide, elementoRegente){
     elementoPiramide.innerHTML=""; elementoRegente.innerHTML=""; return;
   }
 
-   let lines = [valores.map(n => reduzir(n, false))]; 
+  // 1. Criamos a primeira linha, já garantindo que tudo seja reduzido para 1 dígito
+  let lines = [valores.map(n => reduzir(n, false))]; 
+
   while(lines[lines.length-1].length > 1){
     let anterior = lines[lines.length-1];
     let nova = [];
-    for(let i=0;i<anterior.length-1;i++){
-      nova.push(Number(reduzir(anterior[i] + anterior[i+1])));
+    for(let i=0; i<anterior.length-1; i++){
+      // 2. A soma de dois números deve ser reduzida forçadamente (aceitaMestre = false)
+      let soma = anterior[i] + anterior[i+1];
+      nova.push(reduzir(soma, false)); 
     }
     lines.push(nova);
   }
